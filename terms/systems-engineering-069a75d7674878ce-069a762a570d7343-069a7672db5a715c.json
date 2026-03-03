@@ -1,9 +1,14 @@
 {
   "title": "Systems Engineering",
   "description": "transdisciplinary and integrative approach to enable the successful realization, use and retirement of engineered systems using systems principles and concepts and scientific, technological and management methods",
-  "id": "systems-engineering-069a75d7674878ce-069a762a570d7343",
+  "id": "systems-engineering-069a75d7674878ce-069a762a570d7343-069a7672db5a715c",
   "created": "2026-03-03",
   "updated": "2026-03-03",
   "status": "standard",
-  "references": ["iso-iec-ieee-15288-069a762a571878d2"]
+  "references": [
+    "iso-iec-ieee-15288-069a762a571878d2"
+  ],
+  "contributors": [
+    "@rcasteran"
+  ]
 }
