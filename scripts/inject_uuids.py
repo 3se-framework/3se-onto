@@ -14,7 +14,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from uuid_extensions import uuid7 as uuid7lib
+from uuid_extensions import uuid7
 
 DIRS = ["terms", "references"]
 
@@ -28,7 +28,7 @@ def has_uuid_suffix(stem: str) -> bool:
 
 def generate_suffix() -> str:
     """Return the first 16 hex characters of a UUIDv7 (without hyphens)."""
-    raw = str(uuid7lib.uuid7()).replace("-", "")
+    raw = str(uuid7()).replace("-", "")
     return raw[:16]
 
 
