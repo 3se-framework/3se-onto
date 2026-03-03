@@ -18,6 +18,11 @@
       "minLength": 1,
       "description": "Full title of the referenced work."
     },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short definition of the reference (plain text, one or two sentences)."
+    },
     "type": {
       "type": "string",
       "enum": [
