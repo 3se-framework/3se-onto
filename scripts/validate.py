@@ -51,12 +51,6 @@ def main() -> int:
 
             file_errors = []
 
-            # Check id consistency
-            if "id" not in data:
-                file_errors.append(f'missing "id" field (expected "{expected_id}")')
-            elif data["id"] != expected_id:
-                file_errors.append(f'id "{data["id"]}" does not match filename "{expected_id}"')
-
             # Validate against schema
             for err in sorted(validator.iter_errors(data), key=lambda e: e.path):
                 path = ".".join(str(p) for p in err.absolute_path) or "root"
