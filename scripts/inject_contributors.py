@@ -8,23 +8,40 @@
 # Requires git to be available in PATH and the script to run inside the repository.
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 DIRS = ["terms", "references"]
 
+# Matches a stem that ends with a 13-char hex UUID suffix
+UUID_SUFFIX_RE = re.compile(r"^(.*)-[0-9a-f]{13}$")
 
-def git_handles(file_path: Path) -> list[str]:
-    """Return all GitHub handles who committed the file, creator first."""
-    # Newest-first log of all authors
+
+def git_log_authors(file_path: Path) -> list[str]:
+    """Return git log author lines for a given path, newest first."""
     cmd = ["git", "log", "--format=%an", "--follow", "--", str(file_path)]
     result = subprocess.run(cmd, capture_output=True, text=True)
-    lines = result.stdout.strip().splitlines()
+    return result.stdout.strip().splitlines()
+
+
+def git_handles(file_path: Path) -> list[str]:
+    """Return all GitHub handles who committed the file, creator first.
+    Falls back to the pre-UUID filename if the current path has no history yet."""
+
+    lines = git_log_authors(file_path)
+
+    # Fallback: strip UUID suffix and retry with the original filename
+    if not lines:
+        match = UUID_SUFFIX_RE.match(file_path.stem)
+        if match:
+            original = file_path.with_name(f"{match.group(1)}.json")
+            lines = git_log_authors(original)
+
     if not lines:
         return []
 
-    # Convert names to handles: lowercase, spaces to hyphens
     def to_handle(name: str) -> str:
         return "@" + name.strip().lower().replace(" ", "-")
 
@@ -34,7 +51,6 @@ def git_handles(file_path: Path) -> list[str]:
     creator = all_authors[-1]
     rest = [a for a in all_authors[:-1] if a != creator]
 
-    # Deduplicate while preserving order
     seen = set()
     ordered = []
     for handle in [creator] + rest:
@@ -57,7 +73,7 @@ def main() -> int:
             try:
                 data = json.loads(file_path.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
-                continue  # let validate.py report parse errors
+                continue
 
             git_contributors = git_handles(file_path)
             if not git_contributors:
@@ -66,13 +82,10 @@ def main() -> int:
             existing = data.get("contributors", [])
             existing_set = set(existing)
 
-            # Append only new contributors; creator-first order comes from git_handles
             new_entries = [h for h in git_contributors if h not in existing_set]
             if not new_entries:
                 continue
 
-            # Merge: existing list is kept as-is, new ones appended
-            # But if contributors was empty, respect creator-first ordering
             if not existing:
                 data["contributors"] = git_contributors
             else:
