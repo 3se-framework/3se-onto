@@ -55,6 +55,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: inject missing ids, dates and contributors [skip ci]"
-          file_pattern: "terms/*.json references/*.json"
+          file_pattern: "terms/**.json references/**.json"
 
 
