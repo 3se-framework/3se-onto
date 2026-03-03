@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "terms/**/*.json"
-      - "references/**/*.json"
+      - "terms/**.json"
+      - "references/**.json"
 
 jobs:
   validate:
