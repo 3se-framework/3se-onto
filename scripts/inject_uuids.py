@@ -14,7 +14,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-import uuid7 as uuid7lib
+from uuid_extensions import uuid7 as uuid7lib
 
 DIRS = ["domains", "terms", "references"]
 
