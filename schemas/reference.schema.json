@@ -72,7 +72,7 @@
           "approved",
           "standard"
         ]
-      }
+      },
       "description": "Editorial status of this entry."
     },
     "contributors": {

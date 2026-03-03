@@ -101,7 +101,7 @@
           "approved",
           "standard"
         ]
-      }
+      },
       "description": "Editorial status of this entry."
     },
     "deprecated": {
