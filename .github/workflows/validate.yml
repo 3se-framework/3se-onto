@@ -1,6 +1,7 @@
 name: Validate glossary entries
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "terms/**/*.json"
