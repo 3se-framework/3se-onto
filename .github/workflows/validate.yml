@@ -22,11 +22,6 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0  # full history required for git_date and git_handles
 
-      - name: Ensure required directories exist
-        run: |
-          mkdir -p terms references
-          git add terms references
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -51,10 +46,22 @@ jobs:
       - name: Inject contributors
         run: python scripts/inject_contributors.py
 
+      - name: Collect changed files
+        id: changed
+        run: |
+          patterns=""
+          for dir in domains terms references; do
+            if compgen -G "$dir/*.json" > /dev/null 2>&1; then
+              patterns="$patterns $dir/*.json"
+            fi
+          done
+          echo "file_pattern=${patterns# }" >> $GITHUB_OUTPUT
+
       - name: Commit injected fields (if any)
+        if: steps.changed.outputs.file_pattern != ''
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: inject missing ids, dates and contributors [skip ci]"
-          file_pattern: "terms/**.json references/**.json"
+          file_pattern: ${{ steps.changed.outputs.file_pattern }}
 
 
