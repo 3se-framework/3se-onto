@@ -2,5 +2,8 @@
   "title": "ISO/IEC/IEEE 15288:2023",
   "description": "Systems and software engineering - System life cycle processes",
   "type": "standard",
-  "year": 2023
+  "year": 2023,
+  "id": "iso-iec-ieee-15288-069a762a571878d2",
+  "created": "2026-03-03",
+  "updated": "2026-03-03"
 }
