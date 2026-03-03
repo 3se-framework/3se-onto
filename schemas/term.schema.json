@@ -43,7 +43,7 @@
         "oneOf": [
           {
             "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
             "description": "Simple reference ID."
           },
           {
@@ -55,7 +55,7 @@
             "properties": {
               "id": {
                 "type": "string",
-                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
                 "description": "Reference entry ID."
               },
               "note": {
@@ -78,12 +78,12 @@
         "properties": {
           "id": {
             "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
             "description": "Term entry ID."
           },
           "relation": {
             "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
             "description": "Relation type."
           }
         }
