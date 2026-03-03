@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/3se-framework/3se-glossary/schemas/term.schema.json",
+  "title": "Glossary Term",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+      "description": "Unique slug identifier with UUIDv7 suffix (kebab-case). Should match the filename."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonical display name of the term."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short definition of the term (plain text, one or two sentences)."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Extended explanation, context, or examples. Markdown is supported."
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "description": "Alternative names or abbreviations for this term."
+    },
+    "references": {
+      "type": "array",
+      "description": "Pointers to reference entries, with optional inline annotations.",
+      "uniqueItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+            "description": "Simple reference ID."
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+                "description": "Reference entry ID."
+              },
+              "note": {
+                "type": "string",
+                "description": "Inline annotation, e.g. 'see section 3.2'."
+              }
+            }
+          }
+        ]
+      }
+    },
+    "related_terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+            "description": "Term entry ID."
+          },
+          "relation": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+            "description": "Relation type."
+          }
+        }
+      },
+      "uniqueItems": true,
+      "description": "IDs of semantically related terms and relation type."
+    },
+    "status": {
+      "type": {
+        "enum": [
+          "draft",
+          "under review",
+          "reviewed",
+          "under approval",
+          "approved",
+          "standard"
+        ]
+      }
+      "description": "Editorial status of this entry."
+    },
+    "deprecated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this term is considered outdated."
+    },
+    "superseded_by": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "ID of the term that replaces this one, if deprecated."
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "description": "List of contributors (names or GitHub handles)."
+    },
+    "created": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date of initial creation."
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date of last update."
+    }
+  }
+}

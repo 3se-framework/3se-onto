@@ -1,0 +1,59 @@
+name: Validate glossary entries
+
+on:
+  push:
+    paths:
+      - "terms/**/*.json"
+      - "references/**/*.json"
+
+jobs:
+  validate:
+    name: Validate, inject & commit
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to push the injected missing data back
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0  # full history required for git_date and git_handles
+
+      - name: Ensure required directories exist
+        run: |
+          mkdir -p terms references
+          git add terms references
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate all entries
+        run: python scripts/validate.py
+
+      - name: Inject UUIDs and rename files
+        run: python scripts/inject_uuids.py
+
+      - name: Inject missing IDs
+        run: python scripts/inject_ids.py
+
+      - name: Inject created/updated dates
+        run: python scripts/inject_dates.py
+
+      - name: Inject contributors
+        run: python scripts/inject_contributors.py
+
+      - name: Commit injected fields (if any)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: inject missing ids, dates and contributors [skip ci]"
+          file_pattern: "terms/*.json references/*.json"
+
+

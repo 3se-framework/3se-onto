@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/3se-framework/3se-glossary/schemas/reference.schema.json",
+  "title": "Glossary Reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$",
+      "description": "Unique slug identifier with UUIDv7 suffix (kebab-case). Should match the filename."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full title of the referenced work."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "book",
+        "paper",
+        "article",
+        "rfc",
+        "website",
+        "standard",
+        "other"
+      ],
+      "description": "Nature of the referenced work."
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Ordered list of authors (full names or handles)."
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Year of publication or last significant revision."
+    },
+    "version": {
+      "type": "string",
+      "description": "Version or edition identifier, especially relevant for standards and RFCs."
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Canonical URL of the work."
+    },
+    "doi": {
+      "type": "string",
+      "description": "Digital Object Identifier, if available."
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher, journal, or issuing body."
+    },
+    "status": {
+      "type": {
+        "enum": [
+          "draft",
+          "under review",
+          "reviewed",
+          "under approval",
+          "approved",
+          "standard"
+        ]
+      }
+      "description": "Editorial status of this entry."
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "description": "Glossary contributors who added or curated this reference entry."
+    },
+    "created": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date this entry was added to the glossary."
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date this entry was last updated."
+    }
+  }
+}
