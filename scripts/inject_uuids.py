@@ -19,7 +19,7 @@ from uuid_extensions import uuid7
 DIRS = ["terms", "references"]
 
 # Matches a stem that already ends with a 13-char hex suffix
-UUID_SUFFIX_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$")
+UUID_SUFFIX_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$")
 
 
 def has_uuid_suffix(stem: str) -> bool:
