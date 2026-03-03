@@ -16,7 +16,7 @@ from pathlib import Path
 
 from uuid_extensions import uuid7 as uuid7lib
 
-DIRS = ["domains", "terms", "references"]
+DIRS = ["terms", "references"]
 
 # Matches a stem that already ends with a 13-char hex suffix
 UUID_SUFFIX_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$")
