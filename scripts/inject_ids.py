@@ -26,11 +26,23 @@ def main() -> int:
             except json.JSONDecodeError:
                 continue  # let validate.py report parse errors
 
-            if "id" not in data:
+            current_id = data.get("id")
+
+            if current_id == expected_id:
+                continue  # already correct, nothing to do
+
+            if current_id is None:
                 data = {"id": expected_id, **data}  # keep id as first key
-                file_path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
                 print(f"  injected id \"{expected_id}\" into {dir_name}/{file_path.name}")
-                injected += 1
+            else:
+                data["id"] = expected_id
+                print(f"  corrected id \"{current_id}\" → \"{expected_id}\" in {dir_name}/{file_path.name}")
+
+            file_path.write_text(
+                json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            injected += 1
 
     print(f"\nDone — {injected} file(s) updated.")
     return 0
