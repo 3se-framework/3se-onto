@@ -24,7 +24,6 @@
       "description": "Short definition of the reference (plain text, one or two sentences)."
     },
     "type": {
-      "type": "string",
       "enum": [
         "book",
         "paper",
@@ -68,16 +67,14 @@
       "description": "Publisher, journal, or issuing body."
     },
     "status": {
-      "type": {
-        "enum": [
-          "draft",
-          "under review",
-          "reviewed",
-          "under approval",
-          "approved",
-          "standard"
-        ]
-      },
+      "enum": [
+        "draft",
+        "under review",
+        "reviewed",
+        "under approval",
+        "approved",
+        "standard"
+      ],
       "description": "Editorial status of this entry."
     },
     "contributors": {

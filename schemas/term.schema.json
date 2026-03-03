@@ -92,16 +92,14 @@
       "description": "IDs of semantically related terms and relation type."
     },
     "status": {
-      "type": {
-        "enum": [
-          "draft",
-          "under review",
-          "reviewed",
-          "under approval",
-          "approved",
-          "standard"
-        ]
-      },
+      "enum": [
+        "draft",
+        "under review",
+        "reviewed",
+        "under approval",
+        "approved",
+        "standard"
+      ],
       "description": "Editorial status of this entry."
     },
     "deprecated": {
