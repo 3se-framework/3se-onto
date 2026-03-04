@@ -81,17 +81,17 @@ def main() -> int:
             changed = False
 
             # --- creator (dcterms:creator) ---
-            existing_creator = data.get("creator")
+            existing_creator = data.get("entryCreator")
             existing_creator_names = agent_names(
                 [existing_creator] if isinstance(existing_creator, dict) else existing_creator
             )
             if creator_handle not in existing_creator_names:
-                data["creator"] = make_agent(creator_handle)
-                print(f"  set creator '{creator_handle}' on {dir_name}/{file_path.name}")
+                data["entryCreator"] = make_agent(creator_handle)
+                print(f"  set entryCreator '{creator_handle}' on {dir_name}/{file_path.name}")
                 changed = True
 
             # --- contributor (dcterms:contributor) ---
-            existing_contributors = data.get("contributor", [])
+            existing_contributors = data.get("entryContributor", [])
             # Normalise to list for uniform handling
             if isinstance(existing_contributors, dict):
                 existing_contributors = [existing_contributors]
@@ -103,9 +103,9 @@ def main() -> int:
                 if h not in existing_contributor_names
             ]
             if new_agents:
-                data["contributor"] = existing_contributors + new_agents
+                data["entryContributor"] = existing_contributors + new_agents
                 for agent in new_agents:
-                    print(f"  added contributor '{agent['name']}' to {dir_name}/{file_path.name}")
+                    print(f"  added entryContributor '{agent['name']}' to {dir_name}/{file_path.name}")
                 changed = True
 
             if not changed:
