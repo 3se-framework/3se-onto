@@ -228,14 +228,14 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
 
     # Provenance
     provenance: list[str] = []
-    if created := term.get("created"):
+    if created := term.get("entryCreated"):
         provenance.append(f"Created: {created}")
-    if modified := term.get("modified"):
+    if modified := term.get("entryModified"):
         provenance.append(f"Modified: {modified}")
-    creators = agent_names(term.get("creator"))
+    creators = agent_names(term.get("entryCreator"))
     if creators:
         provenance.append(f"Creator: {', '.join(creators)}")
-    contributors = agent_names(term.get("contributor"))
+    contributors = agent_names(term.get("entryContributor"))
     if contributors:
         provenance.append(f"Contributors: {', '.join(contributors)}")
     if provenance:
@@ -326,7 +326,7 @@ def render_reference(ref: dict) -> list[str]:
         bib_rows.append(("Language", lang))
 
     if bib_rows:
-        lines.append("| | |")
+        lines.append("| Attribute | Value |")
         lines.append("|---|---|")
         for label, value in bib_rows:
             lines.append(f"| **{label}** | {value} |")
@@ -334,14 +334,14 @@ def render_reference(ref: dict) -> list[str]:
 
     # Provenance
     provenance: list[str] = []
-    if created := ref.get("created"):
+    if created := ref.get("entryCreated"):
         provenance.append(f"Created: {created}")
-    if modified := ref.get("modified"):
+    if modified := ref.get("entryModified"):
         provenance.append(f"Modified: {modified}")
-    entry_creators = agent_names(ref.get("creator"))
+    entry_creators = agent_names(ref.get("entryCreator"))
     if entry_creators:
         provenance.append(f"Creator: {', '.join(entry_creators)}")
-    entry_contributors = agent_names(ref.get("contributor"))
+    entry_contributors = agent_names(ref.get("entryContributor"))
     if entry_contributors:
         provenance.append(f"Contributors: {', '.join(entry_contributors)}")
     if provenance:
