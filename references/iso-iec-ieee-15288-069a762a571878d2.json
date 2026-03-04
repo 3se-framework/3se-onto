@@ -14,5 +14,9 @@
   "entryContributor": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
+  },
+  "creator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
   }
 }
