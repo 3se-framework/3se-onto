@@ -42,9 +42,16 @@ jobs:
       - name: Check for changes
         id: diff
         run: |
-          git diff --quiet glossary.md \
-            && echo "changed=false" >> "$GITHUB_OUTPUT" \
-            || echo "changed=true"  >> "$GITHUB_OUTPUT"
+          # git diff catches modifications to tracked files;
+          # git ls-files --others catches glossary.md when it does not exist yet
+          # (untracked files are invisible to git diff).
+          if git ls-files --others --exclude-standard | grep -q "^glossary\.md$"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --quiet glossary.md; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit and push glossary.md
         if: steps.diff.outputs.changed == 'true'
