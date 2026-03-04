@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # Renames JSON files that do not yet have a UUIDv7 suffix in their filename,
-# and updates the `id` field accordingly.
+# and updates the `@id` URI field accordingly.
 #
 # Filename pattern before: my-term.json
-# Filename pattern after:  my-term-018f1a2b3c4d.json  (first 13 hex chars of UUIDv7)
+# Filename pattern after:  my-term-018f1a2b3c4d5e6f.json  (16 hex chars from UUIDv7)
 #
 # A file is considered already processed if its stem matches:
-#   ^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{13}$
+#   ^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$
 
 import json
 import re
@@ -16,9 +16,13 @@ from pathlib import Path
 
 from uuid_extensions import uuid7
 
-DIRS = ["terms", "references"]
+# Base IRIs must match the @base declared in each JSON-LD context file.
+BASE_IRIS: dict[str, str] = {
+    "terms":      "https://github.com/3se-framework/3se-glossary/concepts/",
+    "references": "https://github.com/3se-framework/3se-glossary/references/",
+}
 
-# Matches a stem that already ends with a 13-char hex suffix
+# Matches a stem that already ends with a 16-char hex suffix
 UUID_SUFFIX_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$")
 
 
@@ -32,6 +36,10 @@ def generate_suffix() -> str:
     return raw[:16]
 
 
+def expected_uri(dir_name: str, stem: str) -> str:
+    return BASE_IRIS[dir_name] + stem
+
+
 def git_rename(old: Path, new: Path) -> None:
     """Use git mv so the rename is tracked in history."""
     subprocess.run(["git", "mv", str(old), str(new)], check=True)
@@ -40,7 +48,7 @@ def git_rename(old: Path, new: Path) -> None:
 def main() -> int:
     renamed_count = 0
 
-    for dir_name in DIRS:
+    for dir_name in BASE_IRIS:
         data_dir = Path(dir_name)
         if not data_dir.exists():
             continue
@@ -59,15 +67,15 @@ def main() -> int:
             git_rename(file_path, new_path)
             print(f"  renamed {dir_name}/{file_path.name} → {new_path.name}")
 
-            # Update id field in the file to match new stem
+            # Update @id field in the file to the full URI with the new stem.
             # (inject_ids.py will also enforce this, but we set it explicitly here
-            #  so the file is self-consistent immediately after this script runs)
+            #  so the file is self-consistent immediately after this script runs.)
             try:
                 data = json.loads(new_path.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
                 continue  # let validate.py report parse errors
 
-            data["id"] = new_stem
+            data["@id"] = expected_uri(dir_name, new_stem)
             new_path.write_text(
                 json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                 encoding="utf-8",

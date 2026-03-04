@@ -8,127 +8,270 @@
     "title"
   ],
   "properties": {
-    "id": {
+    "@context": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
-      "description": "Unique slug identifier with UUIDv7 suffix (kebab-case). Should match the filename."
+      "format": "uri",
+      "const": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+      "description": "JSON-LD context URI. Must reference the canonical context document for this schema."
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "The globally unique IRI identifying this concept as an RDF resource (the RDF subject). Must be an absolute URI. Example: 'https://github.com/3se-framework/3se-glossary/concepts/load-balancing'."
+    },
+    "@type": {
+      "description": "RDF type declaration. Must include 'skos:Concept'. May additionally include other compatible types (e.g. 'owl:Class').",
+      "oneOf": [
+        {
+          "type": "string",
+          "const": "skos:Concept"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "skos:Concept"
+          },
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
     },
     "title": {
       "type": "string",
       "minLength": 1,
-      "description": "Canonical display name of the term."
+      "description": "skos:prefLabel — The preferred human-readable label for this concept. There MUST be at most one per language tag."
     },
     "description": {
       "type": "string",
       "minLength": 1,
-      "description": "Short definition of the term (plain text, one or two sentences)."
+      "description": "skos:definition — A complete explanation of the intended meaning of the concept. Should be a self-contained definition."
     },
     "notes": {
       "type": "string",
-      "description": "Extended explanation, context, or examples. Markdown is supported."
+      "description": "skos:scopeNote — A note that clarifies the intended use or application scope of the concept. Markdown is supported."
     },
     "aliases": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "string",
+        "minLength": 1
       },
       "uniqueItems": true,
-      "description": "Alternative names or abbreviations for this term."
+      "description": "skos:altLabel — Alternative labels (synonyms, abbreviations, variant spellings). A string that is an altLabel for one concept MUST NOT be a prefLabel for the same concept."
     },
-    "references": {
-      "type": "array",
-      "description": "Pointers to reference entries, with optional inline annotations.",
-      "uniqueItems": true,
-      "items": {
-        "oneOf": [
-          {
-            "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
-            "description": "Simple reference ID."
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string",
-                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
-                "description": "Reference entry ID."
-              },
-              "note": {
-                "type": "string",
-                "description": "Inline annotation, e.g. 'see section 3.2'."
-              }
-            }
-          }
-        ]
-      }
-    },
-    "related_terms": {
+    "broader": {
+      "description": "skos:broader — IRIs of concepts that are more general than this one in the hierarchy. Inverse of skos:narrower.",
       "type": "array",
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
-            "description": "Term entry ID."
-          },
-          "relation": {
-            "type": "string",
-            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$",
-            "description": "Relation type."
-          }
-        }
+        "$ref": "#/$defs/conceptRef"
       },
-      "uniqueItems": true,
-      "description": "IDs of semantically related terms and relation type."
+      "uniqueItems": true
     },
-    "status": {
-      "enum": [
-        "draft",
-        "under review",
-        "reviewed",
-        "under approval",
-        "approved",
-        "standard"
-      ],
-      "description": "Editorial status of this entry."
+    "narrower": {
+      "description": "skos:narrower — IRIs of concepts that are more specific than this one in the hierarchy. Inverse of skos:broader.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conceptRef"
+      },
+      "uniqueItems": true
+    },
+    "related": {
+      "description": "skos:related — IRIs of concepts that are associatively (non-hierarchically) related to this one. The property is symmetric but not transitive. A concept MUST NOT be skos:related to one of its hierarchical ancestors or descendants.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conceptRef"
+      },
+      "uniqueItems": true
+    },
+    "exactMatch": {
+      "description": "skos:exactMatch — IRIs of concepts from other schemes that can be used interchangeably with this one in all contexts. Implies skos:closeMatch.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "closeMatch": {
+      "description": "skos:closeMatch — IRIs of sufficiently similar concepts from other schemes that can be used interchangeably in some (but not all) contexts.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "broadMatch": {
+      "description": "skos:broadMatch — IRIs of concepts from other schemes that are more general counterparts of this concept (cross-scheme skos:broader).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "narrowMatch": {
+      "description": "skos:narrowMatch — IRIs of concepts from other schemes that are more specific counterparts of this concept (cross-scheme skos:narrower).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "relatedMatch": {
+      "description": "skos:relatedMatch — IRIs of concepts from other schemes that are associatively related to this concept (cross-scheme skos:related).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "semanticRelation": {
+      "description": "skos:semanticRelation — Generic semantic relation to another concept in the same scheme. Prefer the more specific sub-properties (broader, narrower, related) whenever possible.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conceptRef"
+      },
+      "uniqueItems": true
+    },
+    "isReferencedBy": {
+      "description": "dcterms:isReferencedBy — IRIs of bibliographic resources (bibo:Document) that cite or reference this concept.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "in_scheme": {
+      "type": "string",
+      "format": "uri",
+      "description": "skos:inScheme — The IRI of the skos:ConceptScheme this concept belongs to. A concept may belong to more than one scheme."
+    },
+    "top_concept_of": {
+      "type": "string",
+      "format": "uri",
+      "description": "skos:topConceptOf — The skos:ConceptScheme IRI for which this concept is a top-level entry point. Implies skos:inScheme."
     },
     "deprecated": {
       "type": "boolean",
       "default": false,
-      "description": "Whether this term is considered outdated."
+      "description": "owl:deprecated — When true, signals that this concept is obsolete and should no longer be used in new data."
     },
     "superseded_by": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-      "description": "ID of the term that replaces this one, if deprecated."
+      "format": "uri",
+      "description": "dcterms:isReplacedBy — IRI of the concept that supersedes this one when deprecated is true."
     },
-    "contributors": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "uniqueItems": true,
-      "description": "List of contributors (names or GitHub handles)."
-    },
-    "created": {
+    "entryCreated": {
       "type": "string",
       "format": "date",
-      "description": "ISO 8601 date of initial creation."
+      "description": "dcterms:created — ISO 8601 date on which this concept entry was first created."
     },
-    "updated": {
+    "entryModified": {
       "type": "string",
       "format": "date",
-      "description": "ISO 8601 date of last update."
+      "description": "dcterms:modified — ISO 8601 date on which this concept entry was last modified."
+    },
+    "entryCreator": {
+      "description": "dcterms:creator — The agent(s) who originally created this concept entry.",
+      "$ref": "#/$defs/agentOrList"
+    },
+    "entryContributor": {
+      "description": "dcterms:contributor — Agent(s) who contributed to this concept entry after its initial creation.",
+      "$ref": "#/$defs/agentOrList"
+    }
+  },
+  "$defs": {
+    "conceptRef": {
+      "description": "A reference to another skos:Concept, expressed as either a bare IRI string or an object with an @id and an optional denormalised label.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri",
+          "description": "IRI of the related concept."
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "@id"
+          ],
+          "properties": {
+            "@id": {
+              "type": "string",
+              "format": "uri",
+              "description": "IRI of the related concept."
+            },
+            "prefLabel": {
+              "type": "string",
+              "description": "Optional denormalised label for display purposes only. The authoritative label is on the referenced concept."
+            }
+          }
+        }
+      ]
+    },
+    "agent": {
+      "description": "A foaf:Agent — a person, organisation, or software agent.",
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Plain-text name of the agent."
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "@id": {
+              "type": "string",
+              "format": "uri",
+              "description": "IRI of the agent (e.g. ORCID, WebID, GitHub profile URL). Maps to foaf:Agent @id."
+            },
+            "@type": {
+              "type": "string",
+              "enum": [
+                "foaf:Person",
+                "foaf:Organization",
+                "foaf:Agent"
+              ],
+              "default": "foaf:Person"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "foaf:name — Full name or display name of the agent."
+            },
+            "mbox": {
+              "type": "string",
+              "format": "email",
+              "description": "foaf:mbox — Email address of the agent."
+            }
+          }
+        }
+      ]
+    },
+    "agentOrList": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/agent"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/agent"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
     }
   }
 }

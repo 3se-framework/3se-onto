@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://github.com/3se-framework/3se-glossary/references/",
+
+    "bibo":    "http://purl.org/ontology/bibo/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf":    "http://xmlns.com/foaf/0.1/",
+    "owl":     "http://www.w3.org/2002/07/owl#",
+    "rdfs":    "http://www.w3.org/2000/01/rdf-schema#",
+    "schema":  "https://schema.org/",
+    "xsd":     "http://www.w3.org/2001/XMLSchema#",
+
+    "title":            { "@id": "dcterms:title",       "@container": "@language" },
+    "subtitle":         { "@id": "dcterms:alternative",  "@container": "@language" },
+    "abstract":         { "@id": "bibo:abstract",        "@container": "@language" },
+
+    "authorList":       { "@id": "bibo:authorList",      "@container": "@list" },
+    "editorList":       { "@id": "bibo:editorList",      "@container": "@list" },
+    "publisher":        { "@id": "dcterms:publisher" },
+    "entryCreator":     { "@id": "dcterms:creator" },
+    "entryContributor": { "@id": "dcterms:contributor" },
+
+    "date":             { "@id": "dcterms:date" },
+    "issued":           { "@id": "dcterms:issued" },
+    "modified":         { "@id": "dcterms:modified",     "@type": "xsd:date" },
+    "entryCreated":     { "@id": "dcterms:created",      "@type": "xsd:date" },
+    "entryModified":    { "@id": "dcterms:modified",     "@type": "xsd:date" },
+
+    "identifier":       { "@id": "dcterms:identifier" },
+    "doi":              { "@id": "bibo:doi" },
+    "uri":              { "@id": "bibo:uri",             "@type": "@id" },
+    "url":              { "@id": "schema:url",           "@type": "@id" },
+    "isbn10":           { "@id": "bibo:isbn10" },
+    "isbn13":           { "@id": "bibo:isbn13" },
+    "issn":             { "@id": "bibo:issn" },
+    "eissn":            { "@id": "bibo:eissn" },
+
+    "number":           { "@id": "bibo:number" },
+    "edition":          { "@id": "bibo:edition" },
+    "volume":           { "@id": "bibo:volume" },
+    "issue":            { "@id": "bibo:issue" },
+    "pageStart":        { "@id": "bibo:pageStart" },
+    "pageEnd":          { "@id": "bibo:pageEnd" },
+    "numPages":         { "@id": "bibo:numPages",        "@type": "xsd:integer" },
+    "chapter":          { "@id": "bibo:chapter" },
+    "section":          { "@id": "bibo:section" },
+
+    "isPartOf":         { "@id": "dcterms:isPartOf",     "@type": "@id" },
+    "hasPart":          { "@id": "dcterms:hasPart",      "@type": "@id" },
+    "cites":            { "@id": "bibo:cites",           "@type": "@id" },
+    "citedBy":          { "@id": "dcterms:isReferencedBy", "@type": "@id" },
+
+    "subject":          { "@id": "dcterms:subject" },
+    "language":         { "@id": "dcterms:language" },
+    "rights":           { "@id": "dcterms:rights" },
+    "license":          { "@id": "dcterms:license",      "@type": "@id" },
+    "status":           { "@id": "bibo:status" }
+  }
+}
