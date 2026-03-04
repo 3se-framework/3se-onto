@@ -1,12 +1,18 @@
 {
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@id": "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-15288-069a762a571878d2",
+  "@type": "bibo:Standard",
   "title": "ISO/IEC/IEEE 15288:2023",
-  "description": "Systems and software engineering - System life cycle processes",
-  "type": "standard",
-  "year": 2023,
-  "id": "iso-iec-ieee-15288-069a762a571878d2",
-  "created": "2026-03-03",
-  "updated": "2026-03-04",
-  "contributors": [
-    "@rcasteran"
-  ]
+  "abstract": "Systems and software engineering - System life cycle processes",
+  "issued": "2023",
+  "entryCreated": "2026-03-03",
+  "entryModified": "2026-03-04",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "entryContributor": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
