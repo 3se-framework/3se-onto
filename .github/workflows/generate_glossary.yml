@@ -1,0 +1,55 @@
+name: Generate Glossary
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_message:
+        description: "Commit message for the generated glossary.md"
+        required: false
+        default: "docs: regenerate glossary.md"
+
+jobs:
+  generate:
+    name: Generate glossary.md
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to push the generated file back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history required by inject_contributors.py
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install jsonschema uuid-extensions
+
+      - name: Validate entries
+        run: python scripts/validate.py
+
+      - name: Generate glossary.md
+        run: python scripts/generate_glossary.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet glossary.md \
+            && echo "changed=false" >> "$GITHUB_OUTPUT" \
+            || echo "changed=true"  >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push glossary.md
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add glossary.md
+          git commit -m "${{ github.event.inputs.commit_message }}"
+          git push
