@@ -11,12 +11,14 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "entryContributor": {
-    "@type": "foaf:Person",
-    "name": "@rcasteran"
-  },
-  "creator": {
-    "@type": "foaf:Person",
-    "name": "@rcasteran"
-  }
+  "entryContributor": [
+    {
+      "@type": "foaf:Person",
+      "name": "@rcasteran"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "@regis-casteran"
+    }
+  ]
 }
