@@ -91,7 +91,7 @@
       "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"
     },
 
-    "entryModified": {
+    "modified": {
       "description": "dcterms:modified — Date of last significant revision of the resource itself.",
       "type": "string",
       "format": "date"
