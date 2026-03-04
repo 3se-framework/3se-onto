@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-# Sets `contributors` field on JSON entries based on git history.
+# Sets `creator` and `contributor` fields on JSON entries based on git history.
 #
-# - Lists all GitHub handles who ever committed the file
-# - The creator (first commit author) is always listed first
-# - Existing contributors are never duplicated (idempotent)
+# - The creator (first commit author) is written to `creator` (dcterms:creator)
+# - All subsequent contributors are written to `contributor` (dcterms:contributor)
+# - Both fields hold foaf:Agent objects: {"@type": "foaf:Person", "name": "@handle"}
+# - Existing entries are never duplicated (idempotent)
 #
 # Requires git to be available in PATH and the script to run inside the repository.
 
@@ -16,33 +17,44 @@ DIRS = ["terms", "references"]
 
 
 def git_handles(file_path: Path) -> list[str]:
-    """Return all GitHub handles who committed the file, creator first."""
-    # Newest-first log of all authors
+    """Return all GitHub handles who committed the file, creator (oldest) first."""
     cmd = ["git", "log", "--format=%an", "--follow", "--", str(file_path)]
     result = subprocess.run(cmd, capture_output=True, text=True)
     lines = result.stdout.strip().splitlines()
     if not lines:
         return []
 
-    # Convert names to handles: lowercase, spaces to hyphens
     def to_handle(name: str) -> str:
         return "@" + name.strip().lower().replace(" ", "-")
 
-    all_authors = [to_handle(l) for l in lines if l.strip()]
+    all_authors = [to_handle(line) for line in lines if line.strip()]
 
     # Creator is the last entry (oldest commit), move to front then deduplicate
     creator = all_authors[-1]
     rest = [a for a in all_authors[:-1] if a != creator]
 
-    # Deduplicate while preserving order
-    seen = set()
-    ordered = []
+    seen: set[str] = set()
+    ordered: list[str] = []
     for handle in [creator] + rest:
         if handle not in seen:
             seen.add(handle)
             ordered.append(handle)
 
     return ordered
+
+
+def make_agent(handle: str) -> dict:
+    """Build a foaf:Agent object from a GitHub handle."""
+    return {"@type": "foaf:Person", "name": handle}
+
+
+def agent_names(agents: list[dict] | dict | None) -> set[str]:
+    """Extract the set of name values from an agentOrList field."""
+    if not agents:
+        return set()
+    if isinstance(agents, dict):
+        return {agents.get("name", "")}
+    return {a.get("name", "") for a in agents if isinstance(a, dict)}
 
 
 def main() -> int:
@@ -59,27 +71,45 @@ def main() -> int:
             except json.JSONDecodeError:
                 continue  # let validate.py report parse errors
 
-            git_contributors = git_handles(file_path)
-            if not git_contributors:
+            handles = git_handles(file_path)
+            if not handles:
                 continue  # untracked file, skip
 
-            existing = data.get("contributors", [])
-            existing_set = set(existing)
+            creator_handle = handles[0]
+            contributor_handles = handles[1:]
 
-            # Append only new contributors; creator-first order comes from git_handles
-            new_entries = [h for h in git_contributors if h not in existing_set]
-            if not new_entries:
+            changed = False
+
+            # --- creator (dcterms:creator) ---
+            existing_creator = data.get("creator")
+            existing_creator_names = agent_names(
+                [existing_creator] if isinstance(existing_creator, dict) else existing_creator
+            )
+            if creator_handle not in existing_creator_names:
+                data["creator"] = make_agent(creator_handle)
+                print(f"  set creator '{creator_handle}' on {dir_name}/{file_path.name}")
+                changed = True
+
+            # --- contributor (dcterms:contributor) ---
+            existing_contributors = data.get("contributor", [])
+            # Normalise to list for uniform handling
+            if isinstance(existing_contributors, dict):
+                existing_contributors = [existing_contributors]
+            existing_contributor_names = agent_names(existing_contributors)
+
+            new_agents = [
+                make_agent(h)
+                for h in contributor_handles
+                if h not in existing_contributor_names
+            ]
+            if new_agents:
+                data["contributor"] = existing_contributors + new_agents
+                for agent in new_agents:
+                    print(f"  added contributor '{agent['name']}' to {dir_name}/{file_path.name}")
+                changed = True
+
+            if not changed:
                 continue
-
-            # Merge: existing list is kept as-is, new ones appended
-            # But if contributors was empty, respect creator-first ordering
-            if not existing:
-                data["contributors"] = git_contributors
-            else:
-                data["contributors"] = existing + new_entries
-
-            for handle in new_entries:
-                print(f"  added contributor '{handle}' to {dir_name}/{file_path.name}")
 
             file_path.write_text(
                 json.dumps(data, indent=2, ensure_ascii=False) + "\n",

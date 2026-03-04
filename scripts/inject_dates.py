@@ -49,18 +49,18 @@ def main() -> int:
 
             changed = False
 
-            # `created`: use oldest git commit date; fall back to today for new files
-            if "created" not in data:
+            # `entryCreated`: use oldest git commit date; fall back to today for new files
+            if "entryCreated" not in data:
                 created = git_date(file_path, first=True) or today()
-                data["created"] = created
-                print(f"  set created='{created}' on {dir_name}/{file_path.name}")
+                data["entryCreated"] = created
+                print(f"  set entryCreated='{created}' on {dir_name}/{file_path.name}")
                 changed = True
 
-            # `updated`: always refresh to the latest commit date (or today if uncommitted)
+            # `entryModified`: always refresh to the latest commit date (or today if uncommitted)
             updated = git_date(file_path, first=False) or today()
-            if data.get("updated") != updated:
-                data["updated"] = updated
-                print(f"  set updated='{updated}' on {dir_name}/{file_path.name}")
+            if data.get("entryModified") != updated:
+                data["entryModified"] = updated
+                print(f"  set entryModified='{updated}' on {dir_name}/{file_path.name}")
                 changed = True
 
             if changed:
