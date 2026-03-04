@@ -35,6 +35,8 @@
     "entryCreated":         { "@id": "dcterms:created",        "@type": "xsd:date" },
     "entryModified":        { "@id": "dcterms:modified",       "@type": "xsd:date" },
     "entryCreator":         { "@id": "dcterms:creator" },
-    "entryContributor":     { "@id": "dcterms:contributor" }
+    "entryContributor":     { "@id": "dcterms:contributor" },
+
+    "status":               { "@id": "https://github.com/3se-framework/3se-glossary/vocab#status" }
   }
 }

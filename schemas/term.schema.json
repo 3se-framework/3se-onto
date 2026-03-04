@@ -185,6 +185,17 @@
     "entryContributor": {
       "description": "dcterms:contributor — Agent(s) who contributed to this concept entry after its initial creation.",
       "$ref": "#/$defs/agentOrList"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "under review",
+        "reviewed",
+        "under approval",
+        "approved",
+        "standard"
+      ],
+      "description": "3SE editorial status of this concept entry. Not part of the SKOS data model; expressed as a custom 3se:status property in the RDF graph."
     }
   },
   "$defs": {
