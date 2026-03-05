@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software component - ISO 24765",
+  "description": "Functionally or logically distinct part of a sofware configuration item, distinguished for the purpose of convenience in designing or specifying a complex software configuration item as an assembly of subordinate elements.",
+  "status": "standard",
+  "isReferencedBy": [
+    "iso-iec-ieee-24765-2017"
+  ]
+}

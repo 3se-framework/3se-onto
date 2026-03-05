@@ -1,0 +1,9 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC/IEEE 24765:2017",
+  "abstract": "Systems and software engineering — Vocabulary",
+  "issued": "2017",
+  "uri": "https://www.iso.org/standard/71952.html",
+  "status": "bibo:published"
+}
