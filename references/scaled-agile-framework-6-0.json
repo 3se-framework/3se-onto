@@ -1,0 +1,8 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "Scaled Agile Framework [SAFe] - 6.0",
+  "abstract": "SAFe is a knowledge base of proven, integrated principles, practices, and competencies for achieving business agility using Lean, Agile, and DevOps",
+  "uri": "https://framework.scaledagile.com/",
+  "status": "bibo:published"
+}
