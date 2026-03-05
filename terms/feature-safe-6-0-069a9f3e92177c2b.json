@@ -3,5 +3,12 @@
   "@type": "skos:Concept",
   "title": "Feature - SAFe 6.0",
   "description": "A Feature represents solution functionality that delivers business value, fulfills a stakeholder need, and is sized to be delivered by an Agile Release Train within a PI.",
-  "status": "standard"
+  "status": "standard",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/feature-safe-6-0-069a9f3e92177c2b",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }
