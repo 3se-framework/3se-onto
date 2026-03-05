@@ -20,10 +20,6 @@
     {
       "@type": "foaf:Person",
       "name": "@rcasteran"
-    },
-    {
-      "@type": "foaf:Person",
-      "name": "@regis-casteran"
     }
   ]
 }

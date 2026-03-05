@@ -5,6 +5,8 @@
   "title": "ISO/IEC/IEEE 15288:2023",
   "abstract": "Systems and software engineering - System life cycle processes",
   "issued": "2023",
+  "uri": "https://www.iso.org/standard/81702.html",
+  "status": "published",
   "entryCreated": "2026-03-03",
   "entryModified": "2026-03-04",
   "entryCreator": {
@@ -15,10 +17,5 @@
     {
       "@type": "foaf:Person",
       "name": "@rcasteran"
-    },
-    {
-      "@type": "foaf:Person",
-      "name": "@regis-casteran"
     }
-  ]
 }
