@@ -187,6 +187,7 @@
       "$ref": "#/$defs/agentOrList"
     },
     "status": {
+      "type": "string",
       "enum": [
         "draft",
         "under review",
@@ -247,6 +248,7 @@
               "description": "IRI of the agent (e.g. ORCID, WebID, GitHub profile URL). Maps to foaf:Agent @id."
             },
             "@type": {
+              "type": "string",
               "enum": [
                 "foaf:Person",
                 "foaf:Organization",

@@ -275,16 +275,15 @@
     },
     "status": {
       "description": "bibo:status — Publication or editorial status of the resource. Expressed as a CURIE from the BIBO status vocabulary or a plain string.",
-      "type": {
-        "enum": [
-          "bibo:draft",
-          "bibo:forthcoming",
-          "bibo:peerReviewed",
-          "bibo:published",
-          "bibo:rejected",
-          "bibo:unpublished"
-        ]
-      }
+      "type": "string",
+      "enum": [
+        "bibo:draft",
+        "bibo:forthcoming",
+        "bibo:peerReviewed",
+        "bibo:published",
+        "bibo:rejected",
+        "bibo:unpublished"
+      ]
     },
     "entryCreated": {
       "type": "string",
@@ -380,14 +379,13 @@
               "description": "foaf:Agent IRI (e.g. ORCID https://orcid.org/0000-0000-0000-0000, WebID, or GitHub profile URI)."
             },
             "@type": {
-              "type": {
-                "enum": [
-                  "foaf:Person",
-                  "foaf:Organization",
-                  "foaf:Agent"
-                ],
-                "default": "foaf:Person"
-              }
+              "type": "string",
+              "enum": [
+                "foaf:Person",
+                "foaf:Organization",
+                "foaf:Agent"
+              ],
+              "default": "foaf:Person"
             },
             "name": {
               "type": "string",
