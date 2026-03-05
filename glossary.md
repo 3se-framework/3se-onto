@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-05 09:41 UTC*
+*Generated on 2026-03-05 10:06 UTC*
 
 This glossary contains **1 term(s)** and **1 reference(s)**.
 
@@ -32,6 +32,8 @@ This glossary contains **1 term(s)** and **1 reference(s)**.
 ### ISO/IEC/IEEE 15288:2023
 
 *Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
 
 > Systems and software engineering - System life cycle processes
 
