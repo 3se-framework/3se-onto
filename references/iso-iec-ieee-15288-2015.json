@@ -1,0 +1,9 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC/IEEE 15288:2015",
+  "abstract": "Systems and software engineering - System life cycle processes",
+  "issued": "2015",
+  "uri": "https://www.iso.org/standard/63711.html",
+  "status": "bibo:unpublished"
+}
