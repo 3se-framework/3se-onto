@@ -3,5 +3,12 @@
   "@type": "skos:Concept",
   "title": "Hardware component - 3SE",
   "description": "Atomic level part of a hardware block that is subjected to electrical characterization testing.",
-  "status": "draft"
+  "status": "draft",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/hardware-component-3se-069a9bc4a34678c2",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }

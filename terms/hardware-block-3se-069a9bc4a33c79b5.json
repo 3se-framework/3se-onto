@@ -3,5 +3,12 @@
   "@type": "skos:Concept",
   "title": "Hardware (functional) block - 3SE",
   "description": "Functionally distinct part of a hardware, composed of at least one hardware component, and which exposes hardware bloc interfaces.",
-  "status": "draft"
+  "status": "draft",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/hardware-block-3se-069a9bc4a33c79b5",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }
