@@ -5,7 +5,7 @@
   "title": "Systems Engineering",
   "description": "transdisciplinary and integrative approach to enable the successful realization, use and retirement of engineered systems using systems principles and concepts and scientific, technological and management methods",
   "entryCreated": "2026-03-03",
-  "entryModified": "2026-03-04",
+  "entryModified": "2026-03-05",
   "status": "standard",
   "isReferencedBy": [
     "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-15288-069a762a571878d2"
@@ -20,6 +20,10 @@
     {
       "@type": "foaf:Person",
       "name": "@rcasteran"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "@regis-casteran"
     }
   ]
 }

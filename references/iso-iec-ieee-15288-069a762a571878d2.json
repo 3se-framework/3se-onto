@@ -8,7 +8,7 @@
   "uri": "https://www.iso.org/standard/81702.html",
   "status": "published",
   "entryCreated": "2026-03-03",
-  "entryModified": "2026-03-04",
+  "entryModified": "2026-03-05",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -17,6 +17,10 @@
     {
       "@type": "foaf:Person",
       "name": "@rcasteran"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "@regis-casteran"
     }
   ]
 }
