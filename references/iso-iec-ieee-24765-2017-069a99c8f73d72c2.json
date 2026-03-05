@@ -5,5 +5,12 @@
   "abstract": "Systems and software engineering — Vocabulary",
   "issued": "2017",
   "uri": "https://www.iso.org/standard/71952.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }

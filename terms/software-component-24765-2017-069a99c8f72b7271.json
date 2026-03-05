@@ -5,6 +5,13 @@
   "description": "Functionally or logically distinct part of a sofware configuration item, distinguished for the purpose of convenience in designing or specifying a complex software configuration item as an assembly of subordinate elements.",
   "status": "standard",
   "isReferencedBy": [
-    "iso-iec-ieee-24765-2017"
-  ]
+    "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/software-component-24765-2017-069a99c8f72b7271",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }

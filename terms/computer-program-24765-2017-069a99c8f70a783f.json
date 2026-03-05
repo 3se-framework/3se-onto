@@ -5,6 +5,13 @@
   "description": "Combination of computer instructions and data definitions that enable computer hardware to perform computational or control functions.",
   "status": "standard",
   "isReferencedBy": [
-    "iso-iec-ieee-24765-2017"
-  ]
+    "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/computer-program-24765-2017-069a99c8f70a783f",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }
