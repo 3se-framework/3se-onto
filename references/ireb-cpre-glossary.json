@@ -1,0 +1,8 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "IREB CPRE Glossary",
+  "abstract": "The CPRE Glossary covers the core terms of Requirements Engineering",
+  "uri": "https://cpre.ireb.org/en/downloads-and-resources/glossary",
+  "status": "bibo:published"
+}

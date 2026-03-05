@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Requirement - IREB CPRE",
+  "description": "1. A need perceived by a stakeholder. 2. A capability or property that a system shall have. 3. A documented representation of a need, capability or property",
+  "status": "standard",
+  "isReferencedBy": [
+    "ireb-cpre_glossary"
+  ]
+}
