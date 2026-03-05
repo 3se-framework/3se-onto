@@ -91,6 +91,25 @@ def build_index(directory: Path) -> dict[str, str]:
     return index
 
 
+# Matches a stem suffix of the form "-<16 hex chars>" added by inject_uuids.py
+UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
+
+
+def stem_matches_slug(stem: str, slug: str) -> bool:
+    """
+    Return True if `stem` is either:
+      - exactly equal to `slug` (slug already includes the UUID suffix), or
+      - equal to `slug` + "-" + 16 hex chars (UUID suffix not yet in slug).
+    This prevents a slug like "ireb-cpre-glossary" from falsely matching
+    "ireb-cpre-glossary-amendment-069a..." which merely starts with the same prefix.
+    """
+    if stem == slug:
+        return True
+    # Strip the UUID suffix from the stem and compare the remainder to the slug
+    stripped = UUID_SUFFIX_RE.sub("", stem)
+    return stripped == slug
+
+
 def resolve_slug(
         slug: str,
         index: dict[str, str],
@@ -99,6 +118,11 @@ def resolve_slug(
 ) -> str:
     """
     Resolve a bare slug to its full @id URI using the given index.
+
+    Matching strategy:
+      1. Exact match against a known stem (slug already contains the UUID suffix).
+      2. UUID-suffix match: slug equals a stem with its trailing UUID suffix removed
+         (the normal case — UUID was not yet known when the file was authored).
     Exits with an error on ambiguous or unresolvable slugs.
     """
     # 1. Exact match
@@ -108,8 +132,8 @@ def resolve_slug(
             print(f"  [{file_name}] {field}: resolved \"{slug}\" -> \"{uri}\"")
         return uri
 
-    # 2. Prefix match
-    matches = {stem: uri for stem, uri in index.items() if stem.startswith(slug)}
+    # 2. UUID-suffix match
+    matches = {stem: uri for stem, uri in index.items() if stem_matches_slug(stem, slug)}
 
     if len(matches) == 1:
         resolved_stem, uri = next(iter(matches.items()))
@@ -125,7 +149,7 @@ def resolve_slug(
         )
         sys.exit(1)
 
-    # Multiple matches — ambiguous
+    # Multiple matches — ambiguous (two entries share the same base name)
     candidates = ", ".join(f'"{s}"' for s in sorted(matches.keys()))
     print(
         f"\n❌ Error in {file_name}: "
