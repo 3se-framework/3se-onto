@@ -1,8 +1,8 @@
 {
   "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
-  "@id": "https://github.com/3se-framework/3se-glossary/concepts/systems-engineering-069a75d7674878ce",
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/systems-engineering-15288-069a75d7674878ce",
   "@type": "skos:Concept",
-  "title": "Systems Engineering",
+  "title": "Systems Engineering - ISO 15288",
   "description": "transdisciplinary and integrative approach to enable the successful realization, use and retirement of engineered systems using systems principles and concepts and scientific, technological and management methods",
   "entryCreated": "2026-03-03",
   "entryModified": "2026-03-05",
