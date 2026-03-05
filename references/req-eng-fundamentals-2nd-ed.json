@@ -1,0 +1,19 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "Requirements Engineering Fundamentals ",
+  "abstract": "A Study Guide for the Certified Professional for Requirements Engineering Exam - Foundation Level - IREB compliant",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Klaus Pohl"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "Chris Rupp"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "2015",
+  "isbn13": "978-1937538835"
+}
