@@ -33,9 +33,6 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Validate all entries
-        run: python scripts/validate.py
-
       - name: Inject contributors
         run: python scripts/inject_contributors.py
 
@@ -50,6 +47,9 @@ jobs:
 
       - name: Inject created/updated dates
         run: python scripts/inject_dates.py
+
+      - name: Validate all entries
+        run: python scripts/validate.py
 
       - name: Collect changed files
         id: changed
