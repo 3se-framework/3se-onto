@@ -1,19 +1,33 @@
 # 3SE Glossary
 
-*Generated on 2026-03-05 10:06 UTC*
+*Generated on 2026-03-05 10:31 UTC*
 
-This glossary contains **1 term(s)** and **1 reference(s)**.
+This glossary contains **2 term(s)** and **2 reference(s)**.
 
 ## Contents
 
 - [Terms](#terms)
+  - [Requirement - IREB CPRE](#requirement---ireb-cpre)
   - [Systems Engineering](#systems-engineering)
 - [References](#references)
+  - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO/IEC/IEEE 15288:2023](#isoiecieee-152882023)
 
 ---
 
 ## Terms
+
+### Requirement - IREB CPRE
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> 1. A need perceived by a stakeholder. 2. A capability or property that a system shall have. 3. A documented representation of a need, capability or property
+
+**References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
+
+*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+
+---
 
 ### Systems Engineering
 
@@ -28,6 +42,22 @@ This glossary contains **1 term(s)** and **1 reference(s)**.
 ---
 
 ## References
+
+### IREB CPRE Glossary
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> The CPRE Glossary covers the core terms of Requirements Engineering
+
+| Attribute | Value |
+|---|---|
+| **URL** | [https://cpre.ireb.org/en/downloads-and-resources/glossary](https://cpre.ireb.org/en/downloads-and-resources/glossary) |
+
+*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+
+---
 
 ### ISO/IEC/IEEE 15288:2023
 
