@@ -5,5 +5,12 @@
   "abstract": "Systems and software engineering - System life cycle processes",
   "issued": "2015",
   "uri": "https://www.iso.org/standard/63711.html",
-  "status": "bibo:unpublished"
+  "status": "bibo:unpublished",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-15288-2015-069a98bf0f85760d",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }
