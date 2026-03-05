@@ -12,59 +12,70 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-TERMS_DIR      = Path("terms")
+TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
-OUTPUT_FILE    = Path("glossary.md")
+OUTPUT_FILE = Path("glossary.md")
 
 REFERENCE_BASE_IRI = "https://github.com/3se-framework/3se-glossary/references/"
 
 # Human-readable labels for bibo: types
 BIBO_TYPE_LABELS: dict[str, str] = {
-    "bibo:AcademicArticle":    "Academic Article",
-    "bibo:Article":            "Article",
-    "bibo:AudioDocument":      "Audio Document",
-    "bibo:AudioVisualDocument":"Audiovisual Document",
-    "bibo:Book":               "Book",
-    "bibo:BookSection":        "Book Section",
-    "bibo:Chapter":            "Chapter",
-    "bibo:Collection":         "Collection",
-    "bibo:CollectedDocument":  "Collected Document",
-    "bibo:Conference":         "Conference",
-    "bibo:Document":           "Document",
-    "bibo:EditedBook":         "Edited Book",
-    "bibo:Image":              "Image",
-    "bibo:Issue":              "Issue",
-    "bibo:Journal":            "Journal",
-    "bibo:LegalCaseDocument":  "Legal Case Document",
-    "bibo:LegalDocument":      "Legal Document",
-    "bibo:Legislation":        "Legislation",
-    "bibo:Manuscript":         "Manuscript",
-    "bibo:Map":                "Map",
-    "bibo:MultiVolumeBook":    "Multi-Volume Book",
-    "bibo:Newspaper":          "Newspaper",
-    "bibo:Note":               "Note",
-    "bibo:Patent":             "Patent",
-    "bibo:Periodical":         "Periodical",
-    "bibo:Proceedings":        "Proceedings",
-    "bibo:ReferenceSource":    "Reference Source",
-    "bibo:Report":             "Report",
-    "bibo:Series":             "Series",
-    "bibo:Slideshow":          "Slideshow",
-    "bibo:Standard":           "Standard",
-    "bibo:Statute":            "Statute",
-    "bibo:TechnicalDocument":  "Technical Document",
-    "bibo:Thesis":             "Thesis",
-    "bibo:Webpage":            "Webpage",
-    "bibo:Website":            "Website",
+    "bibo:AcademicArticle": "Academic Article",
+    "bibo:Article": "Article",
+    "bibo:AudioDocument": "Audio Document",
+    "bibo:AudioVisualDocument": "Audiovisual Document",
+    "bibo:Book": "Book",
+    "bibo:BookSection": "Book Section",
+    "bibo:Chapter": "Chapter",
+    "bibo:Collection": "Collection",
+    "bibo:CollectedDocument": "Collected Document",
+    "bibo:Conference": "Conference",
+    "bibo:Document": "Document",
+    "bibo:EditedBook": "Edited Book",
+    "bibo:Image": "Image",
+    "bibo:Issue": "Issue",
+    "bibo:Journal": "Journal",
+    "bibo:LegalCaseDocument": "Legal Case Document",
+    "bibo:LegalDocument": "Legal Document",
+    "bibo:Legislation": "Legislation",
+    "bibo:Manuscript": "Manuscript",
+    "bibo:Map": "Map",
+    "bibo:MultiVolumeBook": "Multi-Volume Book",
+    "bibo:Newspaper": "Newspaper",
+    "bibo:Note": "Note",
+    "bibo:Patent": "Patent",
+    "bibo:Periodical": "Periodical",
+    "bibo:Proceedings": "Proceedings",
+    "bibo:ReferenceSource": "Reference Source",
+    "bibo:Report": "Report",
+    "bibo:Series": "Series",
+    "bibo:Slideshow": "Slideshow",
+    "bibo:Standard": "Standard",
+    "bibo:Statute": "Statute",
+    "bibo:TechnicalDocument": "Technical Document",
+    "bibo:Thesis": "Thesis",
+    "bibo:Webpage": "Webpage",
+    "bibo:Website": "Website",
 }
 
-STATUS_BADGES: dict[str, str] = {
-    "draft":            "![draft](https://img.shields.io/badge/status-draft-lightgrey)",
-    "under review":     "![under review](https://img.shields.io/badge/status-under%20review-yellow)",
-    "reviewed":         "![reviewed](https://img.shields.io/badge/status-reviewed-blue)",
-    "under approval":   "![under approval](https://img.shields.io/badge/status-under%20approval-orange)",
-    "approved":         "![approved](https://img.shields.io/badge/status-approved-green)",
-    "standard":         "![standard](https://img.shields.io/badge/status-standard-brightgreen)",
+# 3SE editorial status — used on term entries (plain string values)
+TERM_STATUS_BADGES: dict[str, str] = {
+    "draft": "![draft](https://img.shields.io/badge/status-draft-lightgrey)",
+    "under review": "![under review](https://img.shields.io/badge/status-under%20review-yellow)",
+    "reviewed": "![reviewed](https://img.shields.io/badge/status-reviewed-blue)",
+    "under approval": "![under approval](https://img.shields.io/badge/status-under%20approval-orange)",
+    "approved": "![approved](https://img.shields.io/badge/status-approved-green)",
+    "standard": "![standard](https://img.shields.io/badge/status-standard-brightgreen)",
+}
+
+# BIBO publication status — used on reference entries (bibo: CURIE values)
+BIBO_STATUS_BADGES: dict[str, str] = {
+    "bibo:draft": "![draft](https://img.shields.io/badge/status-draft-lightgrey)",
+    "bibo:forthcoming": "![forthcoming](https://img.shields.io/badge/status-forthcoming-yellow)",
+    "bibo:peerReviewed": "![peer reviewed](https://img.shields.io/badge/status-peer%20reviewed-blue)",
+    "bibo:published": "![published](https://img.shields.io/badge/status-published-brightgreen)",
+    "bibo:rejected": "![rejected](https://img.shields.io/badge/status-rejected-red)",
+    "bibo:unpublished": "![unpublished](https://img.shields.io/badge/status-unpublished-lightgrey)",
 }
 
 
@@ -136,8 +147,8 @@ def build_reference_index(references: list[dict]) -> dict[str, dict]:
 def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
     lines: list[str] = []
 
-    title      = term.get("title", "*(untitled)*")
-    status     = term.get("status", "")
+    title = term.get("title", "*(untitled)*")
+    status = term.get("status", "")
     deprecated = term.get("deprecated", False)
 
     # Heading
@@ -148,8 +159,8 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
     lines.append("")
 
     # Status badge
-    if status and status in STATUS_BADGES:
-        lines.append(STATUS_BADGES[status])
+    if status and status in TERM_STATUS_BADGES:
+        lines.append(TERM_STATUS_BADGES[status])
         lines.append("")
 
     # Definition
@@ -176,9 +187,9 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
     # Hierarchical relations
     relation_rows: list[tuple[str, str]] = []
     for field, label in [
-        ("broader",  "Broader"),
+        ("broader", "Broader"),
         ("narrower", "Narrower"),
-        ("related",  "Related"),
+        ("related", "Related"),
     ]:
         items = term.get(field, [])
         if not items:
@@ -187,18 +198,18 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
         for item in items:
             uri = item if isinstance(item, str) else item.get("@id", "")
             display = (
-                item.get("prefLabel") if isinstance(item, dict) else None
-            ) or uri_to_anchor(uri)
+                          item.get("prefLabel") if isinstance(item, dict) else None
+                      ) or uri_to_anchor(uri)
             anchor = uri_to_anchor(uri)
             links.append(f"[{display}](#{anchor})")
         relation_rows.append((label, ", ".join(links)))
 
     # Mapping relations
     for field, label in [
-        ("exactMatch",   "Exact match"),
-        ("closeMatch",   "Close match"),
-        ("broadMatch",   "Broad match"),
-        ("narrowMatch",  "Narrow match"),
+        ("exactMatch", "Exact match"),
+        ("closeMatch", "Close match"),
+        ("broadMatch", "Broad match"),
+        ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ]:
         items = term.get(field, [])
@@ -252,9 +263,9 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
 def render_reference(ref: dict) -> list[str]:
     lines: list[str] = []
 
-    title    = ref.get("title", "*(untitled)*")
+    title = ref.get("title", "*(untitled)*")
     bib_type = bibo_type_label(ref.get("@type"))
-    anchor   = uri_to_anchor(ref.get("@id", ""))
+    anchor = uri_to_anchor(ref.get("@id", ""))
 
     # Heading — use anchor as the HTML id target for inbound links from terms
     lines.append(f"### {title}")
@@ -264,6 +275,12 @@ def render_reference(ref: dict) -> list[str]:
     if bib_type:
         lines.append(f"*{bib_type}*")
         lines.append("")
+
+    # Status badge (bibo:status CURIE values)
+    if status := ref.get("status"):
+        if status in BIBO_STATUS_BADGES:
+            lines.append(BIBO_STATUS_BADGES[status])
+            lines.append("")
 
     # Abstract
     if abstract := ref.get("abstract"):
@@ -306,11 +323,11 @@ def render_reference(ref: dict) -> list[str]:
         bib_rows.append(("Pages", f"{pages}–{page_end}" if page_end else str(pages)))
 
     for field, label in [
-        ("doi",    "DOI"),
+        ("doi", "DOI"),
         ("isbn13", "ISBN-13"),
         ("isbn10", "ISBN-10"),
-        ("issn",   "ISSN"),
-        ("eissn",  "eISSN"),
+        ("issn", "ISSN"),
+        ("eissn", "eISSN"),
     ]:
         if value := ref.get(field):
             bib_rows.append((label, md_inline_code(value)))
@@ -356,9 +373,9 @@ def render_reference(ref: dict) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    terms      = load_directory(TERMS_DIR)
+    terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
-    ref_index  = build_reference_index(references)
+    ref_index = build_reference_index(references)
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -380,14 +397,14 @@ def main() -> int:
     md.append("")
     md.append("- [Terms](#terms)")
     for term in terms:
-        title  = term.get("title", "")
+        title = term.get("title", "")
         anchor = title.lower().replace(" ", "-").replace("/", "").replace("(", "").replace(")", "")
         if term.get("deprecated"):
             anchor += "-deprecated"
         md.append(f"  - [{title}](#{anchor})")
     md.append("- [References](#references)")
     for ref in references:
-        title  = ref.get("title", "")
+        title = ref.get("title", "")
         anchor = title.lower().replace(" ", "-").replace("/", "").replace(".", "").replace(":", "")
         md.append(f"  - [{title}](#{anchor})")
     md.append("")
