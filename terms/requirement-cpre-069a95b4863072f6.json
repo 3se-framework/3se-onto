@@ -5,6 +5,13 @@
   "description": "1. A need perceived by a stakeholder. 2. A capability or property that a system shall have. 3. A documented representation of a need, capability or property",
   "status": "standard",
   "isReferencedBy": [
-    "ireb-cpre-glossary"
-  ]
+    "https://github.com/3se-framework/3se-glossary/references/ireb-cpre-glossary-069a95b4863c7c67"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/requirement-cpre-069a95b4863072f6",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }
