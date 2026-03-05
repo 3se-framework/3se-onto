@@ -45,6 +45,9 @@ jobs:
       - name: Inject missing IDs
         run: python scripts/inject_ids.py
 
+      - name: Inject relational URis
+        run: python scripts/inject_uris.py
+
       - name: Inject created/updated dates
         run: python scripts/inject_dates.py
 
