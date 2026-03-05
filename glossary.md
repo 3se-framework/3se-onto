@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-04 22:25 UTC*
+*Generated on 2026-03-05 09:30 UTC*
 
 This glossary contains **1 term(s)** and **1 reference(s)**.
 
@@ -23,7 +23,7 @@ This glossary contains **1 term(s)** and **1 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2023](#iso-iec-ieee-15288-069a762a571878d2)
 
-*Created: 2026-03-03 · Modified: 2026-03-04 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-05 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
 
@@ -38,7 +38,8 @@ This glossary contains **1 term(s)** and **1 reference(s)**.
 | Attribute | Value |
 |---|---|
 | **Issued** | 2023 |
+| **URL** | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) |
 
-*Created: 2026-03-03 · Modified: 2026-03-04 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-05 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
