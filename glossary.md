@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-05 10:31 UTC*
+*Generated on 2026-03-05 11:02 UTC*
 
 This glossary contains **2 term(s)** and **2 reference(s)**.
 
@@ -8,7 +8,7 @@ This glossary contains **2 term(s)** and **2 reference(s)**.
 
 - [Terms](#terms)
   - [Requirement - IREB CPRE](#requirement---ireb-cpre)
-  - [Systems Engineering](#systems-engineering)
+  - [Systems Engineering - ISO 15288](#systems-engineering---iso-15288)
 - [References](#references)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO/IEC/IEEE 15288:2023](#isoiecieee-152882023)
@@ -29,7 +29,7 @@ This glossary contains **2 term(s)** and **2 reference(s)**.
 
 ---
 
-### Systems Engineering
+### Systems Engineering - ISO 15288
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
