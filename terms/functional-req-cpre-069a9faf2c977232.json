@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://github.com/3se-framework/3se-glossary/references/ireb-cpre-glossary-069a95b4863c7c67"
-  ]
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/functional-req-cpre-069a9faf2c977232",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }

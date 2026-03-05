@@ -15,5 +15,12 @@
   ],
   "status": "bibo:published",
   "date": "2015",
-  "isbn13": "978-1937538835"
+  "isbn13": "978-1937538835",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/references/req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-05"
 }
