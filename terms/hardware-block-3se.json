@@ -1,0 +1,7 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware (functional) block - 3SE",
+  "description": "Functionally distinct part of a hardware, composed of at least one hardware component, and which exposes hardware bloc interfaces.",
+  "status": "draft"
+}
