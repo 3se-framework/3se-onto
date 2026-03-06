@@ -5,5 +5,12 @@
   "abstract": "Road vehicles — Cybersecurity engineering",
   "issued": "2021",
   "uri": "https://www.iso.org/standard/70918.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/references/iso-sae-21434-2021-069ab4000b4e771d",
+  "entryCreated": "2026-03-06",
+  "entryModified": "2026-03-06"
 }

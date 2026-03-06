@@ -1,7 +1,0 @@
-{
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
-  "@type": "skos:Concept",
-  "title": "Safety feature - 3SE",
-  "description": "An activity which is relevant for safety engineering",
-  "status": "draft"
-}
