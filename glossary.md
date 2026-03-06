@@ -1,23 +1,34 @@
 # 3SE Glossary
 
-*Generated on 2026-03-05 21:53 UTC*
+*Generated on 2026-03-06 23:15 UTC*
 
-This glossary contains **16 term(s)** and **6 reference(s)**.
+This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ## Contents
 
 - [Terms](#terms)
+  - [Activity - ISO 24765](#activity---iso-24765)
+  - [Attack path - ISO/SAE 21434](#attack-path---isosae-21434)
   - [Computer program - ISO 24765](#computer-program---iso-24765)
   - [Constraint - IREB CPRE](#constraint---ireb-cpre)
+  - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control---isosae-21434)
   - [Feature - SAFe 6.0](#feature---safe-6.0)
+  - [Function - ISO 24765](#function---iso-24765)
   - [Functional Requirement - IREB CPRE](#functional-requirement---ireb-cpre)
   - [Goal - Requirements Engineering Fundamentals 2nd Edition](#goal---requirements-engineering-fundamentals-2nd-edition)
   - [Hardware (functional) block - 3SE](#hardware-functional-block---3se)
   - [Hardware - ISO 24765](#hardware---iso-24765)
   - [Hardware component - 3SE](#hardware-component---3se)
+  - [Hazard - ISO 26262-1](#hazard---iso-26262-1)
   - [Non functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
+  - [Operational mode - Systems Opportunities and Requirements](#operational-mode---systems-opportunities-and-requirements)
   - [Quality Requirement - IREB CPRE](#quality-requirement---ireb-cpre)
   - [Requirement - IREB CPRE](#requirement---ireb-cpre)
+  - [Safety feature - 3SE](#safety-feature---3se)
+  - [Safety feature - 3SE](#safety-feature---3se)
+  - [Safety mechanism - ISO 26262-1](#safety-mechanism---iso-26262-1)
+  - [Security activity - 3SE](#security-activity---3se)
+  - [Security feature - 3SE](#security-feature---3se)
   - [Software component - ISO 24765](#software-component---iso-24765)
   - [Software unit - ISO 24765](#software-unit---iso-24765)
   - [System - ISO 15288](#system---iso-15288)
@@ -25,15 +36,42 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
   - [Systems engineering - ISO 15288](#systems-engineering---iso-15288)
 - [References](#references)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
+  - [ISO 26262-1:2018](#iso-26262-12018)
   - [ISO/IEC/IEEE 15288:2015](#isoiecieee-152882015)
   - [ISO/IEC/IEEE 15288:2023](#isoiecieee-152882023)
   - [ISO/IEC/IEEE 24765:2017](#isoiecieee-247652017)
-  - [Requirements Engineering Fundamentals ](#requirements-engineering-fundamentals-)
+  - [ISO/SAE 21434:2021](#isosae-214342021)
+  - [Requirements Engineering Fundamentals](#requirements-engineering-fundamentals)
   - [Scaled Agile Framework [SAFe] - 6.0](#scaled-agile-framework-[safe]---60)
+  - [Systems Opportunities and Requirements](#systems-opportunities-and-requirements)
 
 ---
 
 ## Terms
+
+### Activity - ISO 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Set of cohesive tasks of a process, which transforms inputs into outputs.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
+
+### Attack path - ISO/SAE 21434
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Set of deliberate actions to realize a threat scenario
+
+**References:** [ISO/SAE 21434:2021](#iso-sae-21434-2021-069ab4000b4e771d)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
 
 ### Computer program - ISO 24765
 
@@ -59,6 +97,18 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 
 ---
 
+### Cybersecurity control - ISO/SAE 21434
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> measure that is modifying risk
+
+**References:** [ISO/SAE 21434:2021](#iso-sae-21434-2021-069ab4000b4e771d)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
+
 ### Feature - SAFe 6.0
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -66,6 +116,18 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 > A Feature represents solution functionality that delivers business value, fulfills a stakeholder need, and is sized to be delivered by an Agile Release Train within a PI.
 
 *Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+
+---
+
+### Function - ISO 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Transformation of inputs to outputs, by means of some mechanisms, and subject to certain controls, that is identified by a function name and modeled by a box.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
@@ -87,7 +149,7 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 
 > Goals are a stakeholder’s (e.g., a person’s or an organization’s) description of a characteristic property of the system to be developed or the development project.
 
-**References:** [Requirements Engineering Fundamentals ](#req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3)
+**References:** [Requirements Engineering Fundamentals](#req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3)
 
 *Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
 
@@ -125,6 +187,18 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 
 ---
 
+### Hazard - ISO 26262-1
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Potential source of harm caused by malfunctioning behaviour of the item
+
+**References:** [ISO 26262-1:2018](#iso-26262-1-2018-069ab4000b417db7)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
+
 ### Non functional Requirement - IREB CPRE
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -134,6 +208,18 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
 *Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+
+---
+
+### Operational mode - Systems Opportunities and Requirements
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> An operational situation/configuration of a system characterized by its active functions.
+
+**References:** [Systems Opportunities and Requirements](#sys-opportunities-and-req-2012-069ab5fbd08f7be9)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
@@ -158,6 +244,58 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
 *Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+
+---
+
+### Safety feature - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> An activity which is relevant for safety engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+
+---
+
+### Safety feature - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A feature which is relevant for safety engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+
+---
+
+### Safety mechanism - ISO 26262-1
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Technical solution implemented by E/E functions or elements, or by other technologies, to detect and mitigate or tolerate faults or control or avoid failures in order to maintain intended functionality or achieve or maintain a safe state
+
+**References:** [ISO 26262-1:2018](#iso-26262-1-2018-069ab4000b417db7)
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
+
+### Security activity - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> An activity which is relevant for security engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+
+---
+
+### Security feature - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A feature which is relevant for security engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
@@ -239,6 +377,23 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 
 ---
 
+### ISO 26262-1:2018
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Road vehicles — Functional safety — Part 1: Vocabulary
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2018 |
+| **URL** | [https://www.iso.org/standard/68383.html](https://www.iso.org/standard/68383.html) |
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
+
 ### ISO/IEC/IEEE 15288:2015
 
 *Standard*
@@ -290,9 +445,26 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 
 ---
 
-### Requirements Engineering Fundamentals 
+### ISO/SAE 21434:2021
 
 *Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Road vehicles — Cybersecurity engineering
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2021 |
+| **URL** | [https://www.iso.org/standard/70918.html](https://www.iso.org/standard/70918.html) |
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+
+---
+
+### Requirements Engineering Fundamentals
+
+*Book*
 
 ![published](https://img.shields.io/badge/status-published-brightgreen)
 
@@ -304,7 +476,7 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 | **Date** | 2015 |
 | **ISBN-13** | `978-1937538835` |
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
@@ -321,5 +493,23 @@ This glossary contains **16 term(s)** and **6 reference(s)**.
 | **URL** | [https://framework.scaledagile.com/](https://framework.scaledagile.com/) |
 
 *Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+
+---
+
+### Systems Opportunities and Requirements
+
+*Book*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> It contains what is necessary to know for characterizing a contextual situation, identifying issues, problems, or opportunities, initiating the engineering of a potential System of Interest (new or updated product, service, enterprise/organisation) that could answer them, and defining the applicable stakeholder requirements, as well as the corresponding system requirements
+
+| Attribute | Value |
+|---|---|
+| **Authors** | Alain Faisandier |
+| **Date** | 2013 |
+| **ISBN-13** | `979-1091699020` |
+
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
