@@ -1,23 +1,23 @@
 # 3SE Glossary
 
-*Generated on 2026-03-06 23:15 UTC*
+*Generated on 2026-03-06 23:25 UTC*
 
 This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ## Contents
 
 - [Terms](#terms)
-  - [Activity - ISO 24765](#activity---iso-24765)
+  - [Activity - ISO/IEC/IEEE 24765](#activity---isoiecieee-24765)
   - [Attack path - ISO/SAE 21434](#attack-path---isosae-21434)
-  - [Computer program - ISO 24765](#computer-program---iso-24765)
+  - [Computer program - ISO/IEC/IEEE 24765](#computer-program---isoiecieee-24765)
   - [Constraint - IREB CPRE](#constraint---ireb-cpre)
   - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control---isosae-21434)
   - [Feature - SAFe 6.0](#feature---safe-6.0)
-  - [Function - ISO 24765](#function---iso-24765)
+  - [Function - ISO/IEC/IEEE 24765](#function---isoiecieee-24765)
   - [Functional Requirement - IREB CPRE](#functional-requirement---ireb-cpre)
   - [Goal - Requirements Engineering Fundamentals 2nd Edition](#goal---requirements-engineering-fundamentals-2nd-edition)
   - [Hardware (functional) block - 3SE](#hardware-functional-block---3se)
-  - [Hardware - ISO 24765](#hardware---iso-24765)
+  - [Hardware - ISO/IEC/IEEE 24765](#hardware---isoiecieee-24765)
   - [Hardware component - 3SE](#hardware-component---3se)
   - [Hazard - ISO 26262-1](#hazard---iso-26262-1)
   - [Non functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
@@ -29,11 +29,11 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
   - [Safety mechanism - ISO 26262-1](#safety-mechanism---iso-26262-1)
   - [Security activity - 3SE](#security-activity---3se)
   - [Security feature - 3SE](#security-feature---3se)
-  - [Software component - ISO 24765](#software-component---iso-24765)
-  - [Software unit - ISO 24765](#software-unit---iso-24765)
-  - [System - ISO 15288](#system---iso-15288)
-  - [System element - ISO 15288](#system-element---iso-15288)
-  - [Systems engineering - ISO 15288](#systems-engineering---iso-15288)
+  - [Software component - ISO/IEC/IEEE 24765](#software-component---isoiecieee-24765)
+  - [Software unit - ISO/IEC/IEEE 24765](#software-unit---isoiecieee-24765)
+  - [System - ISO/IEC/IEEE 15288](#system---isoiecieee-15288)
+  - [System element - ISO/IEC/IEEE 15288](#system-element---isoiecieee-15288)
+  - [Systems engineering - ISO/IEC/IEEE 15288](#systems-engineering---isoiecieee-15288)
 - [References](#references)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO 26262-1:2018](#iso-26262-12018)
@@ -49,7 +49,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ## Terms
 
-### Activity - ISO 24765
+### Activity - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -57,7 +57,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
@@ -73,7 +73,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ---
 
-### Computer program - ISO 24765
+### Computer program - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -81,7 +81,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
@@ -119,7 +119,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ---
 
-### Function - ISO 24765
+### Function - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -127,7 +127,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
@@ -165,7 +165,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ---
 
-### Hardware - ISO 24765
+### Hardware - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -173,7 +173,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
@@ -253,7 +253,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 > An activity which is relevant for safety engineering
 
-*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
@@ -263,7 +263,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 > A feature which is relevant for safety engineering
 
-*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
@@ -285,7 +285,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 > An activity which is relevant for security engineering
 
-*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
@@ -295,11 +295,11 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 > A feature which is relevant for security engineering
 
-*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
 
 ---
 
-### Software component - ISO 24765
+### Software component - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -307,11 +307,11 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
-### Software unit - ISO 24765
+### Software unit - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -319,11 +319,11 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
-### System - ISO 15288
+### System - ISO/IEC/IEEE 15288
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -331,11 +331,11 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2015](#iso-iec-ieee-15288-2015-069a98bf0f85760d)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
-### System element - ISO 15288
+### System element - ISO/IEC/IEEE 15288
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -343,11 +343,11 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2023](#iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
 
 ---
 
-### Systems engineering - ISO 15288
+### Systems engineering - ISO/IEC/IEEE 15288
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -355,7 +355,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2023](#iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-03 · Modified: 2026-03-05 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-07 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
 
