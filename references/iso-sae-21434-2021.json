@@ -1,0 +1,9 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/SAE 21434:2021",
+  "abstract": "Road vehicles — Cybersecurity engineering",
+  "issued": "2021",
+  "uri": "https://www.iso.org/standard/70918.html",
+  "status": "bibo:published"
+}
