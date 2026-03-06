@@ -1,7 +1,7 @@
 {
   "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
-  "@type": "bibo:Standard",
-  "title": "Requirements Engineering Fundamentals ",
+  "@type": "bibo:Book",
+  "title": "Requirements Engineering Fundamentals",
   "abstract": "A Study Guide for the Certified Professional for Requirements Engineering Exam - Foundation Level - IREB compliant",
   "authorList": [
     {
