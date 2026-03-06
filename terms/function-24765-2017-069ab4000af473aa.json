@@ -1,7 +1,7 @@
 {
   "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Function - ISO 24765",
+  "title": "Function - ISO/IEC/IEEE 24765",
   "description": "Transformation of inputs to outputs, by means of some mechanisms, and subject to certain controls, that is identified by a function name and modeled by a box.",
   "status": "standard",
   "isReferencedBy": [

@@ -1,7 +1,7 @@
 {
   "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Computer program - ISO 24765",
+  "title": "Computer program - ISO/IEC/IEEE 24765",
   "description": "Combination of computer instructions and data definitions that enable computer hardware to perform computational or control functions.",
   "status": "standard",
   "isReferencedBy": [

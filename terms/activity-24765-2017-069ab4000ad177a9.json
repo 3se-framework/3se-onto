@@ -1,7 +1,7 @@
 {
   "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Activity - ISO 24765",
+  "title": "Activity - ISO/IEC/IEEE 24765",
   "description": "Set of cohesive tasks of a process, which transforms inputs into outputs.",
   "status": "standard",
   "isReferencedBy": [

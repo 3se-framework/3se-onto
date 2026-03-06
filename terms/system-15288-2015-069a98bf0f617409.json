@@ -1,7 +1,7 @@
 {
   "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "System - ISO 15288",
+  "title": "System - ISO/IEC/IEEE 15288",
   "description": "Combination of interacting elements organized to achieve one or more stated purposes.",
   "status": "standard",
   "isReferencedBy": [
