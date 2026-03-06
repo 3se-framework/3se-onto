@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Operational mode - Systems Opportunities and Requirements",
+  "description": "An operational situation/configuration of a system characterized by its active functions.",
+  "status": "standard",
+  "isReferencedBy": [
+    "sys-opportunities-and-req-2012"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Book",
+  "title": "Systems Opportunities and Requirements",
+  "abstract": "It contains what is necessary to know for characterizing a contextual situation, identifying issues, problems, or opportunities, initiating the engineering of a potential System of Interest (new or updated product, service, enterprise/organisation) that could answer them, and defining the applicable stakeholder requirements, as well as the corresponding system requirements",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Alain Faisandier"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "2013",
+  "isbn13": "979-1091699020"
+}
