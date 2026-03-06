@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety mechanism - ISO 26262-1",
+  "description": "Technical solution implemented by E/E functions or elements, or by other technologies, to detect and mitigate or tolerate faults or control or avoid failures in order to maintain intended functionality or achieve or maintain a safe state",
+  "status": "standard",
+  "isReferencedBy": [
+    "iso-26262-1-2018"
+  ]
+}

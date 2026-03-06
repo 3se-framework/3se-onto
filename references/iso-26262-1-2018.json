@@ -1,0 +1,9 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO 26262-1:2018",
+  "abstract": "Road vehicles — Functional safety — Part 1: Vocabulary",
+  "issued": "2018",
+  "uri": "https://www.iso.org/standard/68383.html",
+  "status": "bibo:published"
+}
