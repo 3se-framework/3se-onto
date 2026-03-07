@@ -1,0 +1,9 @@
+{
+  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "IEEE 1012:2016",
+  "abstract": "IEEE Standard for System, Software, and Hardware Verification and Validation ",
+  "issued": "2016",
+  "uri": "https://standards.ieee.org/ieee/1012/5609/",
+  "status": "bibo:published"
+}
