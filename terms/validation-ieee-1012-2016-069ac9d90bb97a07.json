@@ -5,6 +5,13 @@
   "description": "The process of evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements.",
   "status": "standard",
   "isReferencedBy": [
-    "ieee-1012-2016"
-  ]
+    "https://github.com/3se-framework/3se-glossary/references/ieee-1012-2016-069ac9d90bcd7cb0"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/concepts/validation-ieee-1012-2016-069ac9d90bb97a07",
+  "entryCreated": "2026-03-07",
+  "entryModified": "2026-03-07"
 }

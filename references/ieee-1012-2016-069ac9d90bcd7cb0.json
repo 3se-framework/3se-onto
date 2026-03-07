@@ -5,5 +5,12 @@
   "abstract": "IEEE Standard for System, Software, and Hardware Verification and Validation ",
   "issued": "2016",
   "uri": "https://standards.ieee.org/ieee/1012/5609/",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-glossary/references/ieee-1012-2016-069ac9d90bcd7cb0",
+  "entryCreated": "2026-03-07",
+  "entryModified": "2026-03-07"
 }
