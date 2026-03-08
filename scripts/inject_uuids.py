@@ -18,8 +18,8 @@ from uuid_extensions import uuid7
 
 # Base IRIs must match the @base declared in each JSON-LD context file.
 BASE_IRIS: dict[str, str] = {
-    "terms":      "https://github.com/3se-framework/3se-glossary/concepts/",
-    "references": "https://github.com/3se-framework/3se-glossary/references/",
+    "terms":      "https://github.com/3se-framework/3se-onto/concepts/",
+    "references": "https://github.com/3se-framework/3se-onto/references/",
 }
 
 # Matches a stem that already ends with a 16-char hex suffix

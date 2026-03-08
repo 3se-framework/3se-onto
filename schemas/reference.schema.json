@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/3se-framework/3se-glossary/schemas/bibo-reference.schema.json",
+  "$id": "https://github.com/3se-framework/3se-onto/schemas/bibo-reference.schema.json",
   "title": "Glossary Bibliographic Resource",
   "description": "Represents a bibo:Document (or subclass) — a bibliographic resource as defined by the Bibliographic Ontology (BIBO, http://purl.org/ontology/bibo/). All properties are derived from BIBO, Dublin Core Terms, FOAF, and PRISM where specified. Expressed as a JSON-LD-ready document.",
   "type": "object",
@@ -13,7 +13,7 @@
     "@context": {
       "type": "string",
       "format": "uri",
-      "const": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+      "const": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
       "description": "JSON-LD context URI. Must reference the canonical context document for this schema."
     },
     "@id": {

@@ -11,7 +11,7 @@ DIRS = {
     "references": {"dir": "references", "schema": "schemas/reference.schema.json"},
 }
 
-REFERENCE_BASE_IRI = "https://github.com/3se-framework/3se-glossary/references/"
+REFERENCE_BASE_IRI = "https://github.com/3se-framework/3se-onto/references/"
 
 
 def load_json(path: Path) -> dict | None:

@@ -1,7 +1,7 @@
 {
   "@context": {
     "@version": 1.1,
-    "@base": "https://github.com/3se-framework/3se-glossary/references/",
+    "@base": "https://github.com/3se-framework/3se-onto/references/",
 
     "bibo":    "http://purl.org/ontology/bibo/",
     "dcterms": "http://purl.org/dc/terms/",

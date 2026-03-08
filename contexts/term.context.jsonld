@@ -1,7 +1,7 @@
 {
   "@context": {
     "@version": 1.1,
-    "@base": "https://github.com/3se-framework/3se-glossary/concepts/",
+    "@base": "https://github.com/3se-framework/3se-onto/concepts/",
 
     "skos":    "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
@@ -37,6 +37,6 @@
     "entryCreator":         { "@id": "dcterms:creator" },
     "entryContributor":     { "@id": "dcterms:contributor" },
 
-    "status":               { "@id": "https://github.com/3se-framework/3se-glossary/vocab#status" }
+    "status":               { "@id": "https://github.com/3se-framework/3se-onto/vocab#status" }
   }
 }
