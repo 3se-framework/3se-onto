@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
-  ]
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-onto/terms/project-24765-2017-069ad94e897e7a8f",
+  "entryCreated": "2026-03-08",
+  "entryModified": "2026-03-08"
 }
