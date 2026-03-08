@@ -23,7 +23,7 @@
 #   3. Value is a prefix of exactly one stem         → replace with its @id URI
 #   4. Value matches zero or multiple entries        → raise an error and abort
 #
-# Run this script after inject_uuids.py and before validate.py.
+# Run this script after inject_uuids.py and before validate_glossary.py.
 
 import json
 import re
@@ -85,7 +85,7 @@ def build_index(directory: Path) -> dict[str, str]:
         try:
             data = json.loads(file_path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
-            continue  # let validate.py report parse errors
+            continue  # let validate_glossary.py report parse errors
         uri = data.get("@id") or (base_iri + file_path.stem)
         index[file_path.stem] = uri
     return index
@@ -248,7 +248,7 @@ def process_terms(
         try:
             data = json.loads(file_path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
-            continue  # let validate.py report parse errors
+            continue  # let validate_glossary.py report parse errors
 
         changed = False
 

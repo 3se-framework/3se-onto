@@ -69,7 +69,7 @@ def main() -> int:
             try:
                 data = json.loads(file_path.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
-                continue  # let validate.py report parse errors
+                continue  # let validate_glossary.py report parse errors
 
             handles = git_handles(file_path)
             if not handles:

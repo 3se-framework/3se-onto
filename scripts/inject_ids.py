@@ -2,7 +2,7 @@
 # Rewrites JSON files that are missing an `@id` field,
 # injecting the @id URI derived from the filename stem and the
 # canonical base IRI for each directory.
-# Run before validate.py in the CI pipeline.
+# Run before validate_glossary.py in the CI pipeline.
 
 import json
 import sys
@@ -34,7 +34,7 @@ def main() -> int:
             try:
                 data = json.loads(file_path.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
-                continue  # let validate.py report parse errors
+                continue  # let validate_glossary.py report parse errors
 
             current = data.get("@id")
 

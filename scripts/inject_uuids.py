@@ -73,7 +73,7 @@ def main() -> int:
             try:
                 data = json.loads(new_path.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
-                continue  # let validate.py report parse errors
+                continue  # let validate_glossary.py report parse errors
 
             data["@id"] = expected_uri(dir_name, new_stem)
             new_path.write_text(

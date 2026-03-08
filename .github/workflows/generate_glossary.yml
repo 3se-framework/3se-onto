@@ -34,7 +34,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Validate entries
-        run: python scripts/validate.py
+        run: python scripts/validate_glossary.py
 
       - name: Generate glossary.md
         run: python scripts/generate_glossary.py
