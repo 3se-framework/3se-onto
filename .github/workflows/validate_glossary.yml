@@ -9,7 +9,7 @@ on:
 
 jobs:
   validate:
-    name: Validate, inject & commit
+    name: Validate glossary elements, inject attributes & commit
     runs-on: ubuntu-latest
 
     permissions:
@@ -49,7 +49,7 @@ jobs:
         run: python scripts/inject_dates.py
 
       - name: Validate all entries
-        run: python scripts/validate.py
+        run: python scripts/validate_glossary.py
 
       - name: Collect changed files
         id: changed
