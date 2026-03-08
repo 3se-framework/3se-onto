@@ -6,7 +6,7 @@ on:
       commit_message:
         description: "Commit message for the generated glossary.md"
         required: false
-        default: "docs: regenerate glossary.md"
+        default: "main: regenerate glossary.md"
 
 jobs:
   generate:

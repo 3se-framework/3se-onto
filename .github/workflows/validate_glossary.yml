@@ -66,7 +66,7 @@ jobs:
         if: steps.changed.outputs.file_pattern != ''
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: inject missing ids, dates and contributors [skip ci]"
+          commit_message: "main: inject missing ids, dates and contributors [skip ci]"
           file_pattern: ${{ steps.changed.outputs.file_pattern }}
 
 
