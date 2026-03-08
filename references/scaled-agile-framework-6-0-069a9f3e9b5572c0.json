@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Standard",
   "title": "Scaled Agile Framework [SAFe] - 6.0",
   "abstract": "SAFe is a knowledge base of proven, integrated principles, practices, and competencies for achieving business agility using Lean, Agile, and DevOps",
@@ -9,7 +9,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/references/scaled-agile-framework-6-0-069a9f3e9b5572c0",
+  "@id": "https://github.com/3se-framework/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0",
   "entryCreated": "2026-03-05",
   "entryModified": "2026-03-05"
 }

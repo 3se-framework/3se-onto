@@ -1,17 +1,17 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Verification - IEEE 1012",
   "description": "The process of evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-glossary/references/ieee-1012-2016-069ac9d90bcd7cb0"
+    "https://github.com/3se-framework/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0"
   ],
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/concepts/validation-ieee-1012-2016-069ac9d90bb97a07",
+  "@id": "https://github.com/3se-framework/3se-onto/concepts/validation-ieee-1012-2016-069ac9d90bb97a07",
   "entryCreated": "2026-03-07",
   "entryModified": "2026-03-07"
 }

@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Standard",
   "title": "IEEE 1012:2016",
   "abstract": "IEEE Standard for System, Software, and Hardware Verification and Validation ",
@@ -10,7 +10,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/references/ieee-1012-2016-069ac9d90bcd7cb0",
+  "@id": "https://github.com/3se-framework/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0",
   "entryCreated": "2026-03-07",
   "entryModified": "2026-03-07"
 }

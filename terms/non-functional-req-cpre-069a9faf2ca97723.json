@@ -1,17 +1,17 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Non functional Requirement - IREB CPRE",
   "description": "A quality requirement or a constraint",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-glossary/references/ireb-cpre-glossary-069a95b4863c7c67"
+    "https://github.com/3se-framework/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
   ],
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/concepts/non-functional-req-cpre-069a9faf2ca97723",
+  "@id": "https://github.com/3se-framework/3se-onto/concepts/non-functional-req-cpre-069a9faf2ca97723",
   "entryCreated": "2026-03-05",
   "entryModified": "2026-03-05"
 }

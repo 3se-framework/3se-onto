@@ -1,17 +1,17 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Activity - ISO/IEC/IEEE 24765",
   "description": "Set of cohesive tasks of a process, which transforms inputs into outputs.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
   ],
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/concepts/activity-24765-2017-069ab4000ad177a9",
+  "@id": "https://github.com/3se-framework/3se-onto/concepts/activity-24765-2017-069ab4000ad177a9",
   "entryCreated": "2026-03-06",
   "entryModified": "2026-03-06"
 }

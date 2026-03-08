@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Book",
   "title": "Requirements Engineering Fundamentals",
   "abstract": "A Study Guide for the Certified Professional for Requirements Engineering Exam - Foundation Level - IREB compliant",
@@ -20,7 +20,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/references/req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3",
+  "@id": "https://github.com/3se-framework/3se-onto/references/req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3",
   "entryCreated": "2026-03-05",
   "entryModified": "2026-03-06"
 }

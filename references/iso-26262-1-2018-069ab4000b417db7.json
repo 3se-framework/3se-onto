@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/reference.context.jsonld",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Standard",
   "title": "ISO 26262-1:2018",
   "abstract": "Road vehicles — Functional safety — Part 1: Vocabulary",
@@ -10,7 +10,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-glossary/references/iso-26262-1-2018-069ab4000b417db7",
+  "@id": "https://github.com/3se-framework/3se-onto/references/iso-26262-1-2018-069ab4000b417db7",
   "entryCreated": "2026-03-06",
   "entryModified": "2026-03-06"
 }

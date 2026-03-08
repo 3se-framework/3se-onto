@@ -1,6 +1,6 @@
 {
-  "@context": "https://github.com/3se-framework/3se-glossary/contexts/term.context.jsonld",
-  "@id": "https://github.com/3se-framework/3se-glossary/concepts/systems-engineering-15288-2023-069a75d7674878ce",
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@id": "https://github.com/3se-framework/3se-onto/concepts/systems-engineering-15288-2023-069a75d7674878ce",
   "@type": "skos:Concept",
   "title": "Systems engineering - ISO/IEC/IEEE 15288",
   "description": "Transdisciplinary and integrative approach to enable the successful realization, use and retirement of engineered systems using systems principles and concepts and scientific, technological and management methods",
@@ -8,7 +8,7 @@
   "entryModified": "2026-03-06",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-glossary/references/iso-iec-ieee-15288-2023-069a762a571878d2"
+    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2"
   ],
   "entryCreator": [
     {
