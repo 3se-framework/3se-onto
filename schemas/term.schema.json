@@ -17,7 +17,7 @@
     "@id": {
       "type": "string",
       "format": "uri",
-      "description": "The globally unique IRI identifying this concept as an RDF resource (the RDF subject). Must be an absolute URI. Example: 'https://github.com/3se-framework/3se-onto/concepts/load-balancing'."
+      "description": "The globally unique IRI identifying this concept as an RDF resource (the RDF subject). Must be an absolute URI. Example: 'https://github.com/3se-framework/3se-onto/terms/load-balancing'."
     },
     "@type": {
       "description": "RDF type declaration. Must include 'skos:Concept'. May additionally include other compatible types (e.g. 'owl:Class').",
