@@ -8,7 +8,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-onto/concepts/security-activity-3se-069ab4000b2772b4-069ab4192b8e7951",
+  "@id": "https://github.com/3se-framework/3se-onto/terms/security-activity-3se-069ab4000b2772b4-069ab4192b8e7951",
   "entryCreated": "2026-03-06",
   "entryModified": "2026-03-08"
 }

@@ -11,7 +11,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-onto/concepts/verification-ieee-1012-2016-069ac9d90bc27d0b",
+  "@id": "https://github.com/3se-framework/3se-onto/terms/verification-ieee-1012-2016-069ac9d90bc27d0b",
   "entryCreated": "2026-03-07",
   "entryModified": "2026-03-08"
 }

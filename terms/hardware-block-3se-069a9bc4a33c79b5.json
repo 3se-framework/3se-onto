@@ -8,7 +8,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://github.com/3se-framework/3se-onto/concepts/hardware-block-3se-069a9bc4a33c79b5",
+  "@id": "https://github.com/3se-framework/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5",
   "entryCreated": "2026-03-05",
   "entryModified": "2026-03-08"
 }
