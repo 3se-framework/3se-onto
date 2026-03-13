@@ -135,6 +135,17 @@ def md_inline_code(value: str) -> str:
     return f"`{value}`"
 
 
+def split_terms(terms: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split terms into 3SE-defined terms and other (external) terms.
+    A term is considered a 3SE term if its title ends with '- 3SE' or
+    its @id belongs to the 3SE terms namespace and has no isReferencedBy field.
+    In practice the reliable signal is the title suffix '- 3SE'.
+    """
+    se3_terms = [t for t in terms if t.get("title", "").endswith("- 3SE")]
+    other_terms = [t for t in terms if not t.get("title", "").endswith("- 3SE")]
+    return se3_terms, other_terms
+
+
 def build_reference_index(references: list[dict]) -> dict[str, dict]:
     """Build a mapping from @id URI → reference entry for fast lookup."""
     return {r["@id"]: r for r in references if "@id" in r}
@@ -377,6 +388,8 @@ def main() -> int:
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
 
+    se3_terms, other_terms = split_terms(terms)
+
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     md: list[str] = []
@@ -387,7 +400,8 @@ def main() -> int:
     md.append(f"*Generated on {now}*")
     md.append("")
     md.append(
-        f"This glossary contains **{len(terms)} term(s)** "
+        f"This glossary contains **{len(se3_terms)} 3SE term(s)**, "
+        f"**{len(other_terms)} other term(s)** "
         f"and **{len(references)} reference(s)**."
     )
     md.append("")
@@ -395,8 +409,15 @@ def main() -> int:
     # ── Table of contents ───────────────────────────────────────────────────
     md.append("## Contents")
     md.append("")
-    md.append("- [Terms](#terms)")
-    for term in terms:
+    md.append("- [3SE Terms](#3se-terms)")
+    for term in se3_terms:
+        title = term.get("title", "")
+        anchor = title.lower().replace(" ", "-").replace("/", "").replace("(", "").replace(")", "")
+        if term.get("deprecated"):
+            anchor += "-deprecated"
+        md.append(f"  - [{title}](#{anchor})")
+    md.append("- [Other Terms](#other-terms)")
+    for term in other_terms:
         title = term.get("title", "")
         anchor = title.lower().replace(" ", "-").replace("/", "").replace("(", "").replace(")", "")
         if term.get("deprecated"):
@@ -409,23 +430,42 @@ def main() -> int:
         md.append(f"  - [{title}](#{anchor})")
     md.append("")
 
-    # ── Terms ────────────────────────────────────────────────────────────────
+    # ── 3SE Terms ────────────────────────────────────────────────────────────
     md.append("---")
     md.append("")
-    md.append("## Terms")
+    md.append("## 3SE Terms")
+    md.append("")
+    md.append(f"*{len(se3_terms)} term(s) defined by the 3SE framework.*")
     md.append("")
 
-    if terms:
-        for term in terms:
+    if se3_terms:
+        for term in se3_terms:
             md.extend(render_term(term, ref_index))
             md.append("---")
             md.append("")
     else:
-        md.append("*No terms found.*")
+        md.append("*No 3SE terms found.*")
+        md.append("")
+
+    # ── Other Terms ──────────────────────────────────────────────────────────
+    md.append("## Other Terms")
+    md.append("")
+    md.append(f"*{len(other_terms)} term(s) sourced from external standards and frameworks.*")
+    md.append("")
+
+    if other_terms:
+        for term in other_terms:
+            md.extend(render_term(term, ref_index))
+            md.append("---")
+            md.append("")
+    else:
+        md.append("*No other terms found.*")
         md.append("")
 
     # ── References ───────────────────────────────────────────────────────────
     md.append("## References")
+    md.append("")
+    md.append(f"*{len(references)} reference(s).*")
     md.append("")
 
     if references:
@@ -439,7 +479,12 @@ def main() -> int:
 
     # ── Write output ─────────────────────────────────────────────────────────
     OUTPUT_FILE.write_text("\n".join(md), encoding="utf-8")
-    print(f"✅ Generated {OUTPUT_FILE} ({len(terms)} term(s), {len(references)} reference(s)).")
+    print(
+        f"✅ Generated {OUTPUT_FILE} "
+        f"({len(se3_terms)} 3SE term(s), "
+        f"{len(other_terms)} other term(s), "
+        f"{len(references)} reference(s))."
+    )
     return 0
 
 
