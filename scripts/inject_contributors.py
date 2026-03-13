@@ -1,26 +1,51 @@
 #!/usr/bin/env python3
-# Sets `creator` and `contributor` fields on JSON entries based on git history.
+# Sets `entryCreator` and `entryContributor` fields on JSON entries based on git history.
 #
-# - The creator (first commit author) is written to `creator` (dcterms:creator)
-# - All subsequent contributors are written to `contributor` (dcterms:contributor)
+# - The creator (first commit author) is written to `entryCreator` (dcterms:creator)
+# - All subsequent contributors are written to `entryContributor` (dcterms:contributor)
 # - Both fields hold foaf:Agent objects: {"@type": "foaf:Person", "name": "@handle"}
 # - Existing entries are never duplicated (idempotent)
+#
+# For files just renamed by inject_uuids.py (not yet committed under their new name),
+# git history is retried against the original pre-UUID filename as a fallback.
 #
 # Requires git to be available in PATH and the script to run inside the repository.
 
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 DIRS = ["terms", "references"]
 
+# Matches the trailing 16-char hex UUID suffix added by inject_uuids.py
+UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
 
-def git_handles(file_path: Path) -> list[str]:
-    """Return all GitHub handles who committed the file, creator (oldest) first."""
+
+def git_log_authors(file_path: Path) -> list[str]:
+    """Return git log author lines for a given path, newest first."""
     cmd = ["git", "log", "--format=%an", "--follow", "--", str(file_path)]
     result = subprocess.run(cmd, capture_output=True, text=True)
-    lines = result.stdout.strip().splitlines()
+    return result.stdout.strip().splitlines()
+
+
+def git_handles(file_path: Path) -> list[str]:
+    """
+    Return all GitHub handles who committed the file, creator (oldest) first.
+    Falls back to the pre-UUID filename if the current path has no history yet.
+    """
+    lines = git_log_authors(file_path)
+
+    # Fallback: strip UUID suffix and retry with the original filename
+    if not lines:
+        match = UUID_SUFFIX_RE.search(file_path.stem)
+        if match:
+            original = file_path.with_name(
+                UUID_SUFFIX_RE.sub("", file_path.stem) + ".json"
+            )
+            lines = git_log_authors(original)
+
     if not lines:
         return []
 
@@ -80,7 +105,7 @@ def main() -> int:
 
             changed = False
 
-            # --- creator (dcterms:creator) ---
+            # --- entryCreator (dcterms:creator) ---
             existing_creator = data.get("entryCreator")
             existing_creator_names = agent_names(
                 [existing_creator] if isinstance(existing_creator, dict) else existing_creator
@@ -90,7 +115,7 @@ def main() -> int:
                 print(f"  set entryCreator '{creator_handle}' on {dir_name}/{file_path.name}")
                 changed = True
 
-            # --- contributor (dcterms:contributor) ---
+            # --- entryContributor (dcterms:contributor) ---
             existing_contributors = data.get("entryContributor", [])
             # Normalise to list for uniform handling
             if isinstance(existing_contributors, dict):

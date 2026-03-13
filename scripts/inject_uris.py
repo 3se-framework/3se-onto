@@ -5,7 +5,7 @@
 # before a UUID was known may still contain a bare slug instead of a full URI
 # in any of its relation or reference fields.
 #
-# Fields resolved against the TERMS index (concepts/):
+# Fields resolved against the TERMS index (terms/):
 #   broader, narrower, related, semanticRelation   (array of conceptRef)
 #   exactMatch, closeMatch, broadMatch,            (array of plain URI strings)
 #   narrowMatch, relatedMatch
@@ -66,9 +66,19 @@ TERM_SCALAR_FIELDS: list[str] = [
 # A value is a URI if it starts with a scheme (e.g. https://)
 URI_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+\-.]*://")
 
+# Matches a full stem that already has a UUID suffix (used in has_uuid_suffix)
+UUID_STEM_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$")
+
+# Matches only the trailing UUID suffix (used in stem_matches_slug to strip it)
+UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
+
 
 def is_uri(value: str) -> bool:
     return bool(URI_RE.match(value))
+
+
+def has_uuid_suffix(stem: str) -> bool:
+    return bool(UUID_STEM_RE.match(stem))
 
 
 def build_index(directory: Path) -> dict[str, str]:
@@ -91,10 +101,6 @@ def build_index(directory: Path) -> dict[str, str]:
     return index
 
 
-# Matches a stem suffix of the form "-<16 hex chars>" added by inject_uuids.py
-UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
-
-
 def stem_matches_slug(stem: str, slug: str) -> bool:
     """
     Return True if `stem` is either:
@@ -105,7 +111,7 @@ def stem_matches_slug(stem: str, slug: str) -> bool:
     """
     if stem == slug:
         return True
-    # Strip the UUID suffix from the stem and compare the remainder to the slug
+    # Strip the trailing UUID suffix from the stem and compare to the slug
     stripped = UUID_SUFFIX_RE.sub("", stem)
     return stripped == slug
 

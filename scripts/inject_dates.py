@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-# Sets `created` and `updated` fields on JSON entries based on git history.
+# Sets `entryCreated` and `entryModified` fields on JSON entries based on git history.
 #
-# - `created`: date of the first commit that introduced the file (set once, never overwritten)
-# - `updated`: date of the latest commit that touched the file (refreshed on every run)
+# - `entryCreated`: date of the first commit that introduced the file (set once, never overwritten)
+# - `entryModified`: date of the latest commit that touched the file (refreshed on every run)
+#
+# For files just renamed by inject_uuids.py (not yet committed under their new name),
+# git history is retried against the original pre-UUID filename as a fallback.
 #
 # Requires git to be available in PATH and the script to run inside the repository.
 
 import json
+import re
 import subprocess
 import sys
 from datetime import date
@@ -14,15 +18,36 @@ from pathlib import Path
 
 DIRS = ["terms", "references"]
 
+# Matches the trailing 16-char hex UUID suffix added by inject_uuids.py
+UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
 
-def git_date(file_path: Path, first: bool) -> str | None:
-    """Return ISO 8601 date of the first or latest commit touching file_path."""
+
+def git_log_dates(file_path: Path, first: bool) -> list[str]:
+    """Return git log date lines for a given path, newest first."""
     cmd = ["git", "log", "--format=%cs"]
     if first:
         cmd += ["--diff-filter=A", "--follow"]
     cmd += ["--", str(file_path)]
     result = subprocess.run(cmd, capture_output=True, text=True)
-    lines = result.stdout.strip().splitlines()
+    return result.stdout.strip().splitlines()
+
+
+def git_date(file_path: Path, first: bool) -> str | None:
+    """
+    Return ISO 8601 date of the first or latest commit touching file_path.
+    Falls back to the pre-UUID filename if the current path has no history yet.
+    """
+    lines = git_log_dates(file_path, first)
+
+    # Fallback: strip UUID suffix and retry with the original filename
+    if not lines:
+        match = UUID_SUFFIX_RE.search(file_path.stem)
+        if match:
+            original = file_path.with_name(
+                UUID_SUFFIX_RE.sub("", file_path.stem) + ".json"
+            )
+            lines = git_log_dates(original, first)
+
     if not lines:
         return None
     # `git log` is newest-first; last line = oldest commit
