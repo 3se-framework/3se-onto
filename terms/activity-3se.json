@@ -4,7 +4,7 @@
   "title": "Activity - 3SE",
   "description": "Set of cohesive functions to be performed to achieve a stakeholder's goal, which transforms incoming exchanges into outgoing exchanges.",
   "status": "draft",
-  "skos:narrowMatch": [
+  "narrowMatch": [
     "https://github.com/3se-framework/3se-onto/terms/activity-24765-2017-069ab4000ad177a9"
   ]
 }

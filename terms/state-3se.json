@@ -4,7 +4,7 @@
   "title": "State - 3SE",
   "description": "An operational situation of an entity characterized by its active functions.",
   "status": "draft",
-  "skos:broadMatch": [
+  "broadMatch": [
     "https://github.com/3se-framework/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677"
   ]
 }

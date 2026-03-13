@@ -4,7 +4,7 @@
   "title": "Product - 3SE",
   "description": "Artifact that is produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.",
   "status": "draft",
-  "skos:narrowMatch": [
+  "narrowMatch": [
     "https://github.com/3se-framework/3se-onto/terms/product-24765-2017-069ad94e896d75d2"
   ]
 }

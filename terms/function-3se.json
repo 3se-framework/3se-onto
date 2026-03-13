@@ -4,7 +4,7 @@
   "title": "Function - 3SE",
   "description": "A transformation of incoming flows to outgoing flows, by means of some mechanisms, and subject to certain controls.",
   "status": "draft",
-  "skos:closeMatch": [
+  "closeMatch": [
     "https://github.com/3se-framework/3se-onto/terms/function-24765-2017-069ab4000af473aa"
   ]
 }

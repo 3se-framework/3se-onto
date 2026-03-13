@@ -4,7 +4,7 @@
   "title": "Epic - 3SE",
   "description": "Significant solution development initiative for a given release",
   "status": "draft",
-  "skos:narrowMatch": [
+  "narrowMatch": [
     "https://github.com/3se-framework/3se-onto/terms/epic-safe-6-0"
   ]
 }

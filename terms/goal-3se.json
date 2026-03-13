@@ -4,7 +4,7 @@
   "title": "Goal - 3SE",
   "description": "Stakeholder’s description of a situation he wants to achieve thanks to a solution to be developed or the development project.",
   "status": "draft",
-  "skos:broadMatch": [
+  "broadMatch": [
     "https://github.com/3se-framework/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4"
   ]
 }

@@ -4,7 +4,7 @@
   "title": "Task - 3SE",
   "description": "Required action intended to contribute to the achievement of one Epic or one iteration.",
   "status": "draft",
-  "skos:narrowMatch": [
+  "narrowMatch": [
     "https://github.com/3se-framework/3se-onto/terms/task-24765-2017"
   ]
 }

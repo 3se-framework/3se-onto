@@ -4,7 +4,7 @@
   "title": "Feature - 3SE",
   "description": "A Feature represents at least one activity that delivers value by achieving a stakeholder's goal, is evaluated against some acceptance criteria, and is delivered in a release.",
   "status": "draft",
-  "skos:closeMatch": [
+  "closeMatch": [
     "https://github.com/3se-framework/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b"
   ]
 }

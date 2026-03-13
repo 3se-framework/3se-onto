@@ -4,7 +4,7 @@
   "title": "Project - 3SE",
   "description": "Endeavor with defined start and finish criteria undertaken to create or to modify a product or a service in accordance with resources, goals and requirements allocated to planned releases.",
   "status": "draft",
-  "skos:closeMatch": [
+  "closeMatch": [
     "https://github.com/3se-framework/3se-onto/terms/project-24765-2017-069ad94e897e7a8f"
   ]
 }

@@ -4,7 +4,7 @@
   "title": "Release - 3SE",
   "description": "Collection of one or more new or changed configuration items that are made available to a wider community.",
   "status": "draft",
-  "skos:broadMatch": [
+  "broadMatch": [
     "https://github.com/3se-framework/3se-onto/terms/release-24765"
   ]
 }
