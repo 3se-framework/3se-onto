@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Iteration - 3SE",
+  "description": "Time frame in which a set of tasks is developed to produce a release.",
+  "status": "draft",
+  "skos:broadMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/iteration-24765"
+  ]
+}

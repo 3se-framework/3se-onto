@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Decision gate - 3SE",
+  "description": "Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to raise a problem.",
+  "status": "draft",
+  "skos:closeMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/decision-gate-24765-2017"
+  ]
+}

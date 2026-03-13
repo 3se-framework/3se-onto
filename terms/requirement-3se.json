@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Requirement - 3SE",
+  "description": "(1) An attribute or feature needed by a stakeholder to achieve a goal. (2) An attribute or feature that must be met or possessed by an entity to satisfy an agreement, standard, specification, or other formally imposed documents. (3) A documented representation of an attribute or feature as in (1) or (2).",
+  "status": "draft",
+  "skos:closeMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/requirement-cpre-069a95b4863072f6"
+  ]
+}

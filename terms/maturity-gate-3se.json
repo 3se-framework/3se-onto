@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Maturity gate - 3SE",
+  "description": "Verification of a candidate release during a development phase gate where a decision is made to continue to the next phase (with or without modifications) or to end the development. ",
+  "status": "draft",
+  "skos:narrowMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/phase-gate-24765-2017"
+  ]
+}
