@@ -5,7 +5,7 @@
   "description": "Time frame in which a set of tasks is developed to produce a release.",
   "status": "draft",
   "broadMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/iteration-24765"
+    "https://github.com/3se-framework/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b"
   ],
   "entryCreator": {
     "@type": "foaf:Person",
