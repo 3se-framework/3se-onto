@@ -6,5 +6,12 @@
   "status": "draft",
   "narrowMatch": [
     "https://github.com/3se-framework/3se-onto/terms/phase-gate-24765-2017"
-  ]
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-03-13"
 }

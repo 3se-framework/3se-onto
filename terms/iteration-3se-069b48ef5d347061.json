@@ -6,5 +6,12 @@
   "status": "draft",
   "broadMatch": [
     "https://github.com/3se-framework/3se-onto/terms/iteration-24765"
-  ]
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-onto/terms/iteration-3se-069b48ef5d347061",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-03-13"
 }

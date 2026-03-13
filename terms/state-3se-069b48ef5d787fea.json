@@ -6,5 +6,12 @@
   "status": "draft",
   "broadMatch": [
     "https://github.com/3se-framework/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677"
-  ]
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://github.com/3se-framework/3se-onto/terms/state-3se-069b48ef5d787fea",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-03-13"
 }
