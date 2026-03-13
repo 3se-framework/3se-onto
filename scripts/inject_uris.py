@@ -18,10 +18,11 @@
 #   in_scheme, top_concept_of
 #
 # Resolution rules (applied per value):
-#   1. Value is already a valid absolute URI         → keep as-is
-#   2. Value matches exactly one file stem           → replace with its @id URI
-#   3. Value is a prefix of exactly one stem         → replace with its @id URI
-#   4. Value matches zero or multiple entries        → raise an error and abort
+#   1. Value is an external URI (non-internal scheme)  → keep as-is
+#   2. Value is an internal URI already in the index   → keep as-is
+#   3. Value is an internal URI missing UUID suffix    → extract slug, resolve
+#   4. Value is a bare slug matching exactly one stem  → replace with its @id URI
+#   5. Value matches zero or multiple entries          → raise an error and abort
 #
 # Run this script after inject_uuids.py and before validate_glossary.py.
 
@@ -66,19 +67,22 @@ TERM_SCALAR_FIELDS: list[str] = [
 # A value is a URI if it starts with a scheme (e.g. https://)
 URI_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9+\-.]*://")
 
-# Matches a full stem that already has a UUID suffix (used in has_uuid_suffix)
-UUID_STEM_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$")
-
-# Matches only the trailing UUID suffix (used in stem_matches_slug to strip it)
-UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
-
 
 def is_uri(value: str) -> bool:
     return bool(URI_RE.match(value))
 
 
-def has_uuid_suffix(stem: str) -> bool:
-    return bool(UUID_STEM_RE.match(stem))
+def is_internal_uri(value: str) -> bool:
+    """Return True if value starts with one of our own base IRIs."""
+    return any(value.startswith(base) for base in BASE_IRIS.values())
+
+
+def uri_to_slug(value: str) -> str:
+    """Strip the base IRI prefix to get the bare slug."""
+    for base in BASE_IRIS.values():
+        if value.startswith(base):
+            return value[len(base):]
+    return value
 
 
 def build_index(directory: Path) -> dict[str, str]:
@@ -101,6 +105,10 @@ def build_index(directory: Path) -> dict[str, str]:
     return index
 
 
+# Matches a stem suffix of the form "-<16 hex chars>" added by inject_uuids.py
+UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
+
+
 def stem_matches_slug(stem: str, slug: str) -> bool:
     """
     Return True if `stem` is either:
@@ -111,7 +119,7 @@ def stem_matches_slug(stem: str, slug: str) -> bool:
     """
     if stem == slug:
         return True
-    # Strip the trailing UUID suffix from the stem and compare to the slug
+    # Strip the UUID suffix from the stem and compare the remainder to the slug
     stripped = UUID_SUFFIX_RE.sub("", stem)
     return stripped == slug
 
@@ -172,9 +180,24 @@ def resolve_value(
         field: str,
         file_name: str,
 ) -> str:
-    """Resolve a single string value: no-op if already a URI, else resolve slug."""
+    """Resolve a single string value.
+    - External URIs: kept as-is.
+    - Internal URIs already present in the index: kept as-is.
+    - Internal URIs not in the index (missing UUID suffix): slug-resolved.
+    - Bare slugs: slug-resolved.
+    """
     if is_uri(value):
-        return value
+        # External URI — leave untouched
+        if not is_internal_uri(value):
+            return value
+        # Internal URI already fully resolved and present in index — leave untouched
+        if value in index.values():
+            return value
+        # Internal URI not yet resolved (missing UUID suffix) — extract slug and resolve
+        slug = uri_to_slug(value)
+        return resolve_slug(slug, index, field, file_name)
+
+    # Bare slug
     return resolve_slug(value, index, field, file_name)
 
 
