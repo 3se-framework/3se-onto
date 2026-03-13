@@ -38,9 +38,9 @@ def collect_reference_uris(data_dir: Path) -> set[str]:
 
 
 def validate_is_referenced_by(
-    data: dict,
-    file_name: str,
-    known_reference_uris: set[str],
+        data: dict,
+        file_name: str,
+        known_reference_uris: set[str],
 ) -> list[str]:
     """
     Check that every URI in isReferencedBy resolves to a known reference entry.
