@@ -488,26 +488,29 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 {conneg}
 <header>
   <div class="header-inner">
-    <a class="logo" href="/3se-onto/">
-      <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;position:relative;top:-1px;flex-shrink:0;">
-        <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
-          <line x1="170" y1="30" x2="50"  y2="270"/>
-          <line x1="170" y1="30" x2="290" y2="270"/>
-          <line x1="170" y1="30" x2="170" y2="220"/>
-          <line x1="50"  y1="270" x2="290" y2="270"/>
-          <line x1="50"  y1="270" x2="170" y2="220"/>
-          <line x1="290" y1="270" x2="170" y2="220"/>
-        </g>
-        <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
-          <line x1="170" y1="148" x2="50"  y2="270"/>
-          <line x1="170" y1="148" x2="290" y2="270"/>
-          <line x1="170" y1="148" x2="170" y2="220"/>
-        </g>
-        <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
-        <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
-        <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
-        <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
-      </svg>3<span>SE</span>
+    <a class="logo" href="https://www.3se.info/index.html">
+      <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;">
+          <!-- Outer edges -->
+          <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
+            <line x1="170" y1="30" x2="50"  y2="270"/>
+            <line x1="170" y1="30" x2="290" y2="270"/>
+            <line x1="170" y1="30" x2="170" y2="220"/>
+            <line x1="50"  y1="270" x2="290" y2="270"/>
+            <line x1="50"  y1="270" x2="170" y2="220"/>
+            <line x1="290" y1="270" x2="170" y2="220"/>
+          </g>
+          <!-- Inner depth edges (dashed) -->
+          <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
+            <line x1="170" y1="148" x2="50"  y2="270"/>
+            <line x1="170" y1="148" x2="290" y2="270"/>
+            <line x1="170" y1="148" x2="170" y2="220"/>
+          </g>
+          <!-- Nodes -->
+          <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
+          <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+          <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+          <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
+        </svg>3<span>SE</span>
     </a>
     <nav>
       <a href="/3se-onto/">Index</a>
@@ -598,7 +601,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
 
     total = len(all_entries)
     body = f"""
-<div style="margin-bottom:3rem">
+<div style="margin-top:3rem; margin-bottom:3rem">
   <p class="section-label">
     The Ontology
   </p>
