@@ -5,9 +5,16 @@
   "description": "The execution of a sequence of test cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the test cases and to wrap up post executions.",
   "status": "draft",
   "closeMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/test-run-istqb"
+    "https://github.com/3se-framework/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c"
   ],
   "relatedMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/test-suite-istqb"
-  ]
+    "https://github.com/3se-framework/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549"
+  ],
+  "@id": "https://github.com/3se-framework/3se-onto/terms/test-run-3se-069b5b3d9eec7efa",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-03-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

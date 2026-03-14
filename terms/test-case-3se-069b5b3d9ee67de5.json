@@ -5,6 +5,13 @@
   "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a test objective and according to an evaluation method.",
   "status": "draft",
   "closeMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/test-case-1012-2016"
-  ]
+    "https://github.com/3se-framework/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30"
+  ],
+  "@id": "https://github.com/3se-framework/3se-onto/terms/test-case-3se-069b5b3d9ee67de5",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-03-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

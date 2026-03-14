@@ -5,6 +5,13 @@
   "description": "The combination of the likelihood of occurrence and the severity of consequences of an undesirable event under a given situation.",
   "status": "draft",
   "exactMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/risk-1012-2016"
-  ]
+    "https://github.com/3se-framework/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036"
+  ],
+  "@id": "https://github.com/3se-framework/3se-onto/terms/risk-3se-069b5b3d9eda7fcf",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-03-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
