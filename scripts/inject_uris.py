@@ -33,8 +33,8 @@ from pathlib import Path
 
 # Base IRIs must match the @base declared in each JSON-LD context file.
 BASE_IRIS: dict[str, str] = {
-    "terms": "https://github.com/3se-framework/3se-onto/terms/",
-    "references": "https://github.com/3se-framework/3se-onto/references/",
+    "terms": "https://www.3se.info/3se-onto/terms/",
+    "references": "https://www.3se.info/3se-onto/references/",
 }
 
 TERMS_DIR = Path("terms")
@@ -105,8 +105,15 @@ def build_index(directory: Path) -> dict[str, str]:
     return index
 
 
-# Matches a stem suffix of the form "-<16 hex chars>" added by inject_uuids.py
+# Matches a full stem that already has a UUID suffix (used in has_uuid_suffix)
+UUID_STEM_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9a-f]{16}$")
+
+# Matches only the trailing UUID suffix (used in stem_matches_slug to strip it)
 UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
+
+
+def has_uuid_suffix(stem: str) -> bool:
+    return bool(UUID_STEM_RE.match(stem))
 
 
 def stem_matches_slug(stem: str, slug: str) -> bool:
