@@ -269,13 +269,22 @@ h3 { font-size: .75rem; font-weight: 600; text-transform: uppercase;
 
 /* ── Section divider ── */
 .section-label {
-  font-family: var(--mono);
-  font-size: .72rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  color: var(--muted);
-  letter-spacing: .1em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin-bottom: .75rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--accent);
 }
 
 /* ── Blockquote definition ── */
@@ -480,7 +489,7 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 <header>
   <div class="header-inner">
     <a class="logo" href="/3se-onto/">
-      <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;flex-shrink:0;">
+      <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;position:relative;top:-1px;flex-shrink:0;">
         <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
           <line x1="170" y1="30" x2="50"  y2="270"/>
           <line x1="170" y1="30" x2="290" y2="270"/>
@@ -590,13 +599,13 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     total = len(all_entries)
     body = f"""
 <div style="margin-bottom:3rem">
-  <p class="section-label" style="margin-bottom:.5rem">
-    System · Safety · Security Engineering
+  <p class="section-label">
+    The Ontology
   </p>
   <h1>3SE Ontology</h1>
   <p style="margin-top:.75rem;color:var(--muted);font-size:.95rem;max-width:560px">
     A formal, shared vocabulary that aligns concepts across system, safety,
-    and security engineering.
+    and security engineering.<br><br>
     {len(se3_terms)} 3SE terms &nbsp;·&nbsp;
     {len(other_terms)} other terms &nbsp;·&nbsp;
     {len(references)} references.
