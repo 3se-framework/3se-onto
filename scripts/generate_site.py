@@ -180,75 +180,58 @@ body {
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-h); text-decoration: underline; }
 
-/* ── Nav — matches www.3se.info ── */
+/* ── Nav — matches www.3se.info exactly ── */
 header {
-  position: sticky;
-  top: 0; z-index: 100;
-  background: rgba(244, 247, 251, 0.95);
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem;
+  background: rgba(244, 247, 251, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule);
 }
-.header-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 0 2rem;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+.header-inner { display: contents; }
 .logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 900;
   letter-spacing: -0.02em;
   color: var(--ink);
   text-decoration: none !important;
   display: flex;
   align-items: center;
-  gap: 0;
 }
-.logo-sub {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-left: 0.75rem;
-  padding-left: 0.75rem;
-  border-left: 1px solid var(--rule);
-}
+.logo span { color: var(--accent); }
 header nav {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
+  list-style: none;
   align-items: center;
 }
 header nav a {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.82rem;
+  text-decoration: none;
+  font-size: 0.85rem;
   font-weight: 500;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-mid);
-  text-decoration: none;
   transition: color 0.2s;
 }
 header nav a:hover { color: var(--accent); text-decoration: none; }
-header nav a.nav-ext {
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 0.35rem 0.85rem;
-  font-size: 0.78rem;
-  transition: background 0.2s, color 0.2s;
-}
-header nav a.nav-ext:hover { background: var(--accent); color: var(--white); }
 
 /* ── Main ── */
 main {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 3rem 2rem 5rem;
+  padding: 5rem 2rem 5rem;
+}
+
+@media (max-width: 900px) {
+  header { padding: 1rem 1.5rem; }
+  header nav { display: none; }
 }
 
 /* ── Breadcrumb ── */
@@ -497,7 +480,7 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 <header>
   <div class="header-inner">
     <a class="logo" href="/3se-onto/">
-      <svg width="24" height="24" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;flex-shrink:0;">
+      <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;flex-shrink:0;">
         <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
           <line x1="170" y1="30" x2="50"  y2="270"/>
           <line x1="170" y1="30" x2="290" y2="270"/>
@@ -515,14 +498,12 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
         <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
         <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
         <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
-      </svg>3<span style="color:#1a5faa">SE</span>
-      <span class="logo-sub">Ontology</span>
+      </svg>3<span>SE</span>
     </a>
     <nav>
       <a href="/3se-onto/">Index</a>
       <a href="/3se-onto/terms/">Terms</a>
       <a href="/3se-onto/references/">References</a>
-      <a href="https://www.3se.info/" target="_blank" rel="noopener" class="nav-ext">3se.info ↗</a>
     </nav>
   </div>
 </header>
