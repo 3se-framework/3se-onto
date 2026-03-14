@@ -1,7 +1,7 @@
 {
   "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Verification - IEEE 1012",
+  "title": "Validation - IEEE 1012",
   "description": "The process of evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements.",
   "status": "standard",
   "isReferencedBy": [
