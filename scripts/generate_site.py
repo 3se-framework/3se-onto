@@ -137,29 +137,33 @@ def clean_jsonld(entry: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 SHARED_CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --white:     #ffffff;
-  --bg:        #f8f9fa;
-  --bg2:       #f1f3f5;
-  --border:    #e5e7eb;
-  --border2:   #d1d5db;
-  --text:      #111827;
-  --text2:     #374151;
-  --muted:     #6b7280;
+  --bg:        #f4f7fb;
+  --bg2:       #e8f0f9;
+  --border:    #c5d5e8;
+  --border2:   #b0c4de;
+  --text:      #0d1b2a;
+  --text2:     #2e4057;
+  --muted:     #6b7f96;
   --muted2:    #9ca3af;
-  --accent:    #111827;
-  --link:      #1d4ed8;
-  --link-h:    #1e40af;
+  --accent:    #1a5faa;
+  --link:      #1a5faa;
+  --link-h:    #134d8c;
   --green:     #059669;
   --amber:     #d97706;
   --mono:      'JetBrains Mono', 'Courier New', monospace;
-  --sans:      'Inter', system-ui, sans-serif;
+  --sans:      'DM Sans', system-ui, sans-serif;
   --radius:    4px;
   --max-w:     1080px;
+  --ink:       #0d1b2a;
+  --ink-mid:   #2e4057;
+  --ink-light: #6b7f96;
+  --rule:      #c5d5e8;
 }
 
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -176,48 +180,69 @@ body {
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-h); text-decoration: underline; }
 
-/* ── Header ── */
+/* ── Nav — matches www.3se.info ── */
 header {
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; z-index: 100;
+  position: sticky;
+  top: 0; z-index: 100;
+  background: rgba(244, 247, 251, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
 }
 .header-inner {
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 2rem;
-  height: 56px;
+  height: 64px;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
 }
 .logo {
-  font-size: .95rem;
-  font-weight: 600;
-  color: var(--text);
-  letter-spacing: -.01em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--ink);
   text-decoration: none !important;
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0;
 }
-.logo-tag {
-  background: var(--text);
-  color: var(--white);
-  font-size: .7rem;
-  font-weight: 600;
-  padding: .1rem .4rem;
-  border-radius: 3px;
-  letter-spacing: .04em;
+.logo-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--rule);
 }
 header nav {
-  margin-left: auto;
   display: flex;
-  gap: 1.75rem;
-  font-size: .85rem;
+  gap: 2rem;
+  align-items: center;
 }
-header nav a { color: var(--muted); font-weight: 400; }
-header nav a:hover { color: var(--text); text-decoration: none; }
+header nav a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+header nav a:hover { color: var(--accent); text-decoration: none; }
+header nav a.nav-ext {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.78rem;
+  transition: background 0.2s, color 0.2s;
+}
+header nav a.nav-ext:hover { background: var(--accent); color: var(--white); }
 
 /* ── Main ── */
 main {
@@ -240,7 +265,7 @@ main {
 .breadcrumb span { color: var(--muted2); }
 
 /* ── Typography ── */
-h1 { font-size: 2rem; font-weight: 600; letter-spacing: -.03em; line-height: 1.2; }
+h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
 h2 { font-size: 1.1rem; font-weight: 600; letter-spacing: -.01em; }
 h3 { font-size: .75rem; font-weight: 600; text-transform: uppercase;
      letter-spacing: .08em; color: var(--muted); }
@@ -418,16 +443,18 @@ h3 { font-size: .75rem; font-weight: 600; text-transform: uppercase;
   color: var(--muted2);
 }
 
-/* ── Footer ── */
+/* ── Footer — matches www.3se.info ── */
 footer {
-  border-top: 1px solid var(--border);
-  padding: 2rem;
+  background: var(--ink);
+  color: rgba(255,255,255,0.4);
   text-align: center;
-  font-size: .8rem;
-  color: var(--muted);
+  padding: 2rem 4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
 }
-footer a { color: var(--muted); }
-footer a:hover { color: var(--text); text-decoration: none; }
+footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+footer a:hover { color: var(--white); text-decoration: none; }
 """
 
 CONNEG_SCRIPT = """
@@ -470,15 +497,32 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 <header>
   <div class="header-inner">
     <a class="logo" href="/3se-onto/">
-      <span class="logo-tag">3SE</span>
-      Ontology
+      <svg width="24" height="24" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;flex-shrink:0;">
+        <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
+          <line x1="170" y1="30" x2="50"  y2="270"/>
+          <line x1="170" y1="30" x2="290" y2="270"/>
+          <line x1="170" y1="30" x2="170" y2="220"/>
+          <line x1="50"  y1="270" x2="290" y2="270"/>
+          <line x1="50"  y1="270" x2="170" y2="220"/>
+          <line x1="290" y1="270" x2="170" y2="220"/>
+        </g>
+        <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
+          <line x1="170" y1="148" x2="50"  y2="270"/>
+          <line x1="170" y1="148" x2="290" y2="270"/>
+          <line x1="170" y1="148" x2="170" y2="220"/>
+        </g>
+        <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
+        <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+        <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+        <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
+      </svg>3<span style="color:#1a5faa">SE</span>
+      <span class="logo-sub">Ontology</span>
     </a>
     <nav>
       <a href="/3se-onto/">Index</a>
       <a href="/3se-onto/terms/">Terms</a>
       <a href="/3se-onto/references/">References</a>
-      <a href="https://www.3se.info/" target="_blank" rel="noopener">3se.info ↗</a>
-      <a href="https://github.com/3se-framework/3se-onto" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.3se.info/" target="_blank" rel="noopener" class="nav-ext">3se.info ↗</a>
     </nav>
   </div>
 </header>
@@ -487,8 +531,9 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 </main>
 <footer>
   <p>
-    3SE Ontology &nbsp;·&nbsp;
+    © 2022 3SE — System, Safety &amp; Security Engineering &nbsp;·&nbsp;
     <a href="https://www.3se.info/">www.3se.info</a> &nbsp;·&nbsp;
+    <a href="/3se-onto/">3SE Ontology</a> &nbsp;·&nbsp;
     Generated {now}
   </p>
 </footer>
