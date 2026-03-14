@@ -1,6 +1,6 @@
 {
   "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
-  "@id": "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2",
+  "@id": "https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2",
   "@type": "bibo:Standard",
   "title": "ISO/IEC/IEEE 15288:2023",
   "abstract": "Systems and software engineering - System life cycle processes",

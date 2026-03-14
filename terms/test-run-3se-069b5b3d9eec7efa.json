@@ -10,7 +10,7 @@
   "relatedMatch": [
     "https://github.com/3se-framework/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549"
   ],
-  "@id": "https://github.com/3se-framework/3se-onto/terms/test-run-3se-069b5b3d9eec7efa",
+  "@id": "https://www.3se.info/3se-onto/terms/test-run-3se-069b5b3d9eec7efa",
   "entryCreated": "2026-03-14",
   "entryModified": "2026-03-14",
   "entryCreator": {
