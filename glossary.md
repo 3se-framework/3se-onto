@@ -1,40 +1,67 @@
 # 3SE Glossary
 
-*Generated on 2026-03-06 23:25 UTC*
+*Generated on 2026-03-13 23:09 UTC*
 
-This glossary contains **27 term(s)** and **9 reference(s)**.
+This glossary contains **20 3SE term(s)**, **32 other term(s)** and **10 reference(s)**.
 
 ## Contents
 
-- [Terms](#terms)
+- [3SE Terms](#3se-terms)
+  - [Activity - 3SE](#activity---3se)
+  - [Decision gate - 3SE](#decision-gate---3se)
+  - [Epic - 3SE](#epic---3se)
+  - [Feature - 3SE](#feature---3se)
+  - [Function - 3SE](#function---3se)
+  - [Goal - 3SE](#goal---3se)
+  - [Hardware (functional) block - 3SE](#hardware-functional-block---3se)
+  - [Hardware component - 3SE](#hardware-component---3se)
+  - [Iteration - 3SE](#iteration---3se)
+  - [Maturity gate - 3SE](#maturity-gate---3se)
+  - [Product - 3SE](#product---3se)
+  - [Project - 3SE](#project---3se)
+  - [Release - 3SE](#release---3se)
+  - [Requirement - 3SE](#requirement---3se)
+  - [Safety activity - 3SE](#safety-activity---3se)
+  - [Safety feature - 3SE](#safety-feature---3se)
+  - [Security activity - 3SE](#security-activity---3se)
+  - [Security feature - 3SE](#security-feature---3se)
+  - [State - 3SE](#state---3se)
+  - [Task - 3SE](#task---3se)
+- [Other Terms](#other-terms)
+  - [Acceptance - IEEE 1012](#acceptance---ieee-1012)
   - [Activity - ISO/IEC/IEEE 24765](#activity---isoiecieee-24765)
   - [Attack path - ISO/SAE 21434](#attack-path---isosae-21434)
   - [Computer program - ISO/IEC/IEEE 24765](#computer-program---isoiecieee-24765)
   - [Constraint - IREB CPRE](#constraint---ireb-cpre)
   - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control---isosae-21434)
+  - [Decision gate - ISO/IEC/IEEE 24765](#decision-gate---isoiecieee-24765)
+  - [Epic - SAFe 6.0](#epic---safe-6.0)
   - [Feature - SAFe 6.0](#feature---safe-6.0)
   - [Function - ISO/IEC/IEEE 24765](#function---isoiecieee-24765)
   - [Functional Requirement - IREB CPRE](#functional-requirement---ireb-cpre)
   - [Goal - Requirements Engineering Fundamentals 2nd Edition](#goal---requirements-engineering-fundamentals-2nd-edition)
-  - [Hardware (functional) block - 3SE](#hardware-functional-block---3se)
   - [Hardware - ISO/IEC/IEEE 24765](#hardware---isoiecieee-24765)
-  - [Hardware component - 3SE](#hardware-component---3se)
   - [Hazard - ISO 26262-1](#hazard---iso-26262-1)
+  - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
   - [Non functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
   - [Operational mode - Systems Opportunities and Requirements](#operational-mode---systems-opportunities-and-requirements)
+  - [Phase gate - ISO/IEC/IEEE 24765](#phase-gate---isoiecieee-24765)
+  - [Product - ISO/IEC/IEEE 24765](#product---isoiecieee-24765)
+  - [Project - ISO/IEC/IEEE 24765](#project---isoiecieee-24765)
   - [Quality Requirement - IREB CPRE](#quality-requirement---ireb-cpre)
+  - [Release - ISO/IEC/IEEE 24765](#release---isoiecieee-24765)
   - [Requirement - IREB CPRE](#requirement---ireb-cpre)
-  - [Safety feature - 3SE](#safety-feature---3se)
-  - [Safety feature - 3SE](#safety-feature---3se)
   - [Safety mechanism - ISO 26262-1](#safety-mechanism---iso-26262-1)
-  - [Security activity - 3SE](#security-activity---3se)
-  - [Security feature - 3SE](#security-feature---3se)
   - [Software component - ISO/IEC/IEEE 24765](#software-component---isoiecieee-24765)
   - [Software unit - ISO/IEC/IEEE 24765](#software-unit---isoiecieee-24765)
   - [System - ISO/IEC/IEEE 15288](#system---isoiecieee-15288)
   - [System element - ISO/IEC/IEEE 15288](#system-element---isoiecieee-15288)
   - [Systems engineering - ISO/IEC/IEEE 15288](#systems-engineering---isoiecieee-15288)
+  - [Task - ISO/IEC/IEEE 24765](#task---isoiecieee-24765)
+  - [Verification - IEEE 1012](#verification---ieee-1012)
+  - [Verification - IEEE 1012](#verification---ieee-1012)
 - [References](#references)
+  - [IEEE 1012:2016](#ieee-10122016)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO 26262-1:2018](#iso-26262-12018)
   - [ISO/IEC/IEEE 15288:2015](#isoiecieee-152882015)
@@ -47,7 +74,281 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 ---
 
-## Terms
+## 3SE Terms
+
+*20 term(s) defined by the 3SE framework.*
+
+### Activity - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Set of cohesive functions to be performed to achieve a stakeholder's goal, which transforms incoming exchanges into outgoing exchanges.
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://github.com/3se-framework/3se-onto/terms/activity-24765-2017-069ab4000ad177a9](https://github.com/3se-framework/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Decision gate - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to raise a problem.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://github.com/3se-framework/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb](https://github.com/3se-framework/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Epic - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Significant solution development initiative for a given release
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://github.com/3se-framework/3se-onto/terms/epic-safe-6-0-069b48ef5d067458](https://github.com/3se-framework/3se-onto/terms/epic-safe-6-0-069b48ef5d067458) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Feature - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A Feature represents at least one activity that delivers value by achieving a stakeholder's goal, is evaluated against some acceptance criteria, and is delivered in a release.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://github.com/3se-framework/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b](https://github.com/3se-framework/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Function - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A transformation of incoming flows to outgoing flows, by means of some mechanisms, and subject to certain controls.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://github.com/3se-framework/3se-onto/terms/function-24765-2017-069ab4000af473aa](https://github.com/3se-framework/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Goal - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Stakeholder’s description of a situation he wants to achieve thanks to a solution to be developed or the development project.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [https://github.com/3se-framework/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://github.com/3se-framework/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Hardware (functional) block - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Functionally distinct part of a hardware, composed of at least one hardware component, and which exposes hardware block interfaces.
+
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Hardware component - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Atomic level part of a hardware block that is subjected to electrical characterization testing.
+
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Iteration - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Time frame in which a set of tasks is developed to produce a release.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [https://github.com/3se-framework/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b](https://github.com/3se-framework/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Maturity gate - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Verification of a candidate release during a development phase gate where a decision is made to continue to the next phase (with or without modifications) or to end the development. 
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://github.com/3se-framework/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a](https://github.com/3se-framework/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Product - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Artifact that is produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://github.com/3se-framework/3se-onto/terms/product-24765-2017-069ad94e896d75d2](https://github.com/3se-framework/3se-onto/terms/product-24765-2017-069ad94e896d75d2) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Project - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Endeavor with defined start and finish criteria undertaken to create or to modify a product or a service in accordance with resources, goals and requirements allocated to planned releases.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://github.com/3se-framework/3se-onto/terms/project-24765-2017-069ad94e897e7a8f](https://github.com/3se-framework/3se-onto/terms/project-24765-2017-069ad94e897e7a8f) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Release - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Collection of one or more new or changed configuration items that are made available to a wider community.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [https://github.com/3se-framework/3se-onto/terms/release-24765-2017-069b48ef5d6173d8](https://github.com/3se-framework/3se-onto/terms/release-24765-2017-069b48ef5d6173d8) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Requirement - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> (1) An attribute or feature needed by a stakeholder to achieve a goal. (2) An attribute or feature that must be met or possessed by an entity to satisfy an agreement, standard, specification, or other formally imposed documents. (3) A documented representation of an attribute or feature as in (1) or (2).
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://github.com/3se-framework/3se-onto/terms/requirement-cpre-069a95b4863072f6](https://github.com/3se-framework/3se-onto/terms/requirement-cpre-069a95b4863072f6) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Safety activity - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> An activity which is relevant for safety engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Safety feature - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A feature which is relevant for safety engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Security activity - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> An activity which is relevant for security engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Security feature - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A feature which is relevant for security engineering
+
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### State - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> An operational situation of an entity characterized by its active functions.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [https://github.com/3se-framework/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://github.com/3se-framework/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Task - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Required action intended to contribute to the achievement of one Epic or one iteration.
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://github.com/3se-framework/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee](https://github.com/3se-framework/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee) |
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+## Other Terms
+
+*32 term(s) sourced from external standards and frameworks.*
+
+### Acceptance - IEEE 1012
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Formal testing conducted to enable a user, customer, or other authorized entity to determine whether to accept a system or component.
+
+**References:** [IEEE 1012:2016](#ieee-1012-2016-069ac9d90bcd7cb0)
+
+*Created: 2026-03-07 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
 
 ### Activity - ISO/IEC/IEEE 24765
 
@@ -57,7 +358,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -69,7 +370,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/SAE 21434:2021](#iso-sae-21434-2021-069ab4000b4e771d)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -81,7 +382,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -93,7 +394,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -105,7 +406,31 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/SAE 21434:2021](#iso-sae-21434-2021-069ab4000b4e771d)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Decision gate - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Approval event. Note: often associated with a review meeting. Entry and exit criteria are established for each decision gate; continuation beyond the decision gate is contingent on the agreement of decision-makers.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Epic - SAFe 6.0
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> An Epic is a significant solution development initiative
+
+**References:** [Scaled Agile Framework [SAFe] - 6.0](#scaled-agile-framework-6-0-069a9f3e9b5572c0)
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
 
 ---
 
@@ -115,7 +440,9 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 > A Feature represents solution functionality that delivers business value, fulfills a stakeholder need, and is sized to be delivered by an Agile Release Train within a PI.
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+**References:** [Scaled Agile Framework [SAFe] - 6.0](#scaled-agile-framework-6-0-069a9f3e9b5572c0)
+
+*Created: 2026-03-05 · Modified: 2026-03-13 · Creator: @rcasteran*
 
 ---
 
@@ -127,7 +454,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -139,7 +466,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -151,17 +478,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [Requirements Engineering Fundamentals](#req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
-
----
-
-### Hardware (functional) block - 3SE
-
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
-
-> Functionally distinct part of a hardware, composed of at least one hardware component, and which exposes hardware block interfaces.
-
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -173,17 +490,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
-
----
-
-### Hardware component - 3SE
-
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
-
-> Atomic level part of a hardware block that is subjected to electrical characterization testing.
-
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -195,7 +502,19 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO 26262-1:2018](#iso-26262-1-2018-069ab4000b417db7)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Iteration - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Short time frame in which a set of software features is developed, leading to a working product that can be demonstrated to stakeholders.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
 
 ---
 
@@ -207,7 +526,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -219,7 +538,43 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [Systems Opportunities and Requirements](#sys-opportunities-and-req-2012-069ab5fbd08f7be9)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Phase gate - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Review at the end of a phase in which a decision is made to continue to the next phase, to continue with modification, or to end a project or program.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Product - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> An artifact that is produced, is quantifiable, and can be either an end item in itself or a component item.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-08 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Project - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Endeavor with defined start and finish criteria undertaken to create a product or a service in accordance with specified resources and requirements.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-08 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -231,7 +586,19 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Release - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Collection of one or more new or changed configuration items deployed into the live environment as a result of one or more changes.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
 
 ---
 
@@ -243,27 +610,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
-
----
-
-### Safety feature - 3SE
-
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
-
-> An activity which is relevant for safety engineering
-
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
-
----
-
-### Safety feature - 3SE
-
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
-
-> A feature which is relevant for safety engineering
-
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -275,27 +622,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO 26262-1:2018](#iso-26262-1-2018-069ab4000b417db7)
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
-
----
-
-### Security activity - 3SE
-
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
-
-> An activity which is relevant for security engineering
-
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
-
----
-
-### Security feature - 3SE
-
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
-
-> A feature which is relevant for security engineering
-
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -307,7 +634,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -319,7 +646,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -331,7 +658,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2015](#iso-iec-ieee-15288-2015-069a98bf0f85760d)
 
-*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -343,7 +670,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2023](#iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-05 · Modified: 2026-03-07 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -355,11 +682,66 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 
 **References:** [ISO/IEC/IEEE 15288:2023](#iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-03 · Modified: 2026-03-07 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-08 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+
+---
+
+### Task - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Required, recommended, or permissible action, intended to contribute to the achievement of one or more outcomes of a process.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-13 · Modified: 2026-03-13 · Creator: @rcasteran*
+
+---
+
+### Verification - IEEE 1012
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> The process of evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements.
+
+**References:** [IEEE 1012:2016](#ieee-1012-2016-069ac9d90bcd7cb0)
+
+*Created: 2026-03-07 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
+
+### Verification - IEEE 1012
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> The process of evaluating a system or component to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase.
+
+**References:** [IEEE 1012:2016](#ieee-1012-2016-069ac9d90bcd7cb0)
+
+*Created: 2026-03-07 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
 ## References
+
+*10 reference(s).*
+
+### IEEE 1012:2016
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> IEEE Standard for System, Software, and Hardware Verification and Validation 
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2016 |
+| **URL** | [https://standards.ieee.org/ieee/1012/5609/](https://standards.ieee.org/ieee/1012/5609/) |
+
+*Created: 2026-03-07 · Modified: 2026-03-08 · Creator: @rcasteran*
+
+---
 
 ### IREB CPRE Glossary
 
@@ -373,7 +755,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 |---|---|
 | **URL** | [https://cpre.ireb.org/en/downloads-and-resources/glossary](https://cpre.ireb.org/en/downloads-and-resources/glossary) |
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -390,7 +772,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Issued** | 2018 |
 | **URL** | [https://www.iso.org/standard/68383.html](https://www.iso.org/standard/68383.html) |
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -407,7 +789,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Issued** | 2015 |
 | **URL** | [https://www.iso.org/standard/63711.html](https://www.iso.org/standard/63711.html) |
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -424,7 +806,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Issued** | 2023 |
 | **URL** | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) |
 
-*Created: 2026-03-03 · Modified: 2026-03-05 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-08 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
 
@@ -441,7 +823,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Issued** | 2017 |
 | **URL** | [https://www.iso.org/standard/71952.html](https://www.iso.org/standard/71952.html) |
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -458,7 +840,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Issued** | 2021 |
 | **URL** | [https://www.iso.org/standard/70918.html](https://www.iso.org/standard/70918.html) |
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -476,7 +858,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Date** | 2015 |
 | **ISBN-13** | `978-1937538835` |
 
-*Created: 2026-03-05 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -492,7 +874,7 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 |---|---|
 | **URL** | [https://framework.scaledagile.com/](https://framework.scaledagile.com/) |
 
-*Created: 2026-03-05 · Modified: 2026-03-05 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
 
@@ -510,6 +892,6 @@ This glossary contains **27 term(s)** and **9 reference(s)**.
 | **Date** | 2013 |
 | **ISBN-13** | `979-1091699020` |
 
-*Created: 2026-03-06 · Modified: 2026-03-06 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-08 · Creator: @rcasteran*
 
 ---
