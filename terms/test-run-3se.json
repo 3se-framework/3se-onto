@@ -1,0 +1,13 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Test run - 3SE",
+  "description": "The execution of a sequence of test cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the test cases and to wrap up post executions.",
+  "status": "draft",
+  "closeMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/test-run-istqb"
+  ],
+  "relatedMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/test-suite-istqb"
+  ]
+}

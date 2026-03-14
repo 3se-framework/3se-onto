@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Test case - 3SE",
+  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a test objective and according to an evaluation method.",
+  "status": "draft",
+  "closeMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/test-case-1012-2016"
+  ]
+}

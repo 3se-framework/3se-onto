@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Risk - 3SE",
+  "description": "The combination of the likelihood of occurrence and the severity of consequences of an undesirable event under a given situation.",
+  "status": "draft",
+  "exactMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/risk-1012-2016"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Change - 3SE",
+  "description": "Modification to any deliverable of a release.",
+  "status": "draft",
+  "closeMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/change-24765-2017"
+  ]
+}

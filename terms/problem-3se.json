@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Problem - 3SE",
+  "description": "Incident or undesirable situation concerning the content of a release and/or the way it has been built and/or delivered, which demands a resolution.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/problem-24765-2017"
+  ]
+}

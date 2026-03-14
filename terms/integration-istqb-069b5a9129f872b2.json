@@ -2,7 +2,7 @@
   "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Integration testing - ISTQB",
-  "description": "A test level that focuses on interactions between components or systems",
+  "description": "A test level that focuses on interactions between components or systems.",
   "status": "standard",
   "isReferencedBy": [
     "https://github.com/3se-framework/3se-onto/references/istqb-glossary-069b5a912a2c757c"
