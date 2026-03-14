@@ -5,7 +5,7 @@
   "description": "Evaluation of an entity conducted to enable a stakeholder to determine whether the right entity is built and to accept it. Note : it determines if the entity satisfies the stakeholders’ requirements and the stakeholders’ goals.",
   "status": "draft",
   "closeMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/acceptance-ieee-1012-2016-069ac9d90baa7544"
+    "https://github.com/3se-framework/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544"
   ],
   "@id": "https://github.com/3se-framework/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
   "entryCreated": "2026-03-14",
