@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Demonstration - ISO/IEC/IEEE 24765",
+  "description": "Dynamic analysis technique that relies on observation of system or component behavior during execution, without need for post-execution analysis, to detect errors, violations of development standards, and other problems.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ]
+}

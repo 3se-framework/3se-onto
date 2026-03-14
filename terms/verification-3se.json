@@ -1,0 +1,10 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Verification - 3SE",
+  "description": "Evaluation of the deliverables of a given development phase to determine whether they satisfy the conditions imposed at the end of that phase. Note: conditions are about deliverables quality criteria and satisfaction of internal standards, practices and conventions applicable to that phase.",
+  "status": "draft",
+  "closeMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/verification-ieee-1012-2016-069ac9d90bc27d0b"
+  ]
+}
