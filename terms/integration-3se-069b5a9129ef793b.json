@@ -5,6 +5,13 @@
   "description": "Evaluation of the interactions between parts of an entity which aims at ensuring that the entity is built right.",
   "status": "draft",
   "closeMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/integration-istqb"
-  ]
+    "https://github.com/3se-framework/3se-onto/terms/integration-istqb-069b5a9129f872b2"
+  ],
+  "@id": "https://github.com/3se-framework/3se-onto/terms/integration-3se-069b5a9129ef793b",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-03-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

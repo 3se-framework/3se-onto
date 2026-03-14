@@ -1,0 +1,17 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Analysis - 3SE",
+  "description": "Evaluation of a characteristic of an entity using a set of model and calculation",
+  "status": "draft",
+  "narrowMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2"
+  ],
+  "@id": "https://github.com/3se-framework/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-03-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

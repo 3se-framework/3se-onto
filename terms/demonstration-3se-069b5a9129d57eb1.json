@@ -1,0 +1,17 @@
+{
+  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Demonstration - 3SE",
+  "description": "Evaluation of a characteristic of an entity under a set of test case in its context of use.",
+  "status": "standard",
+  "relatedMatch": [
+    "https://github.com/3se-framework/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349"
+  ],
+  "@id": "https://github.com/3se-framework/3se-onto/terms/demonstration-3se-069b5a9129d57eb1",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-03-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
