@@ -1,11 +1,6 @@
 name: Deploy ontology site
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "terms/**.json"
-      - "references/**.json"
   workflow_dispatch:
 
 jobs:
