@@ -17,13 +17,18 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.0
         with:
           ref: ${{ github.head_ref || github.ref_name }}
-          fetch-depth: 0  # full history required for git_date and git_handles
+          fetch-depth: 0  # full history required for inject_dates and inject_contributors
+
+      - name: Ensure required directories exist
+        run: |
+          mkdir -p terms references
+          git add terms references
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6.2.0
         with:
           python-version: "3.12"
           cache: pip
@@ -33,8 +38,12 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Inject contributors
-        run: python scripts/inject_contributors.py
+      # ── Validation (runs first, blocks everything if it fails) ──
+
+      - name: Validate all entries
+        run: python scripts/validate_glossary.py
+
+      # ── Injection (runs only if validation passed) ──
 
       - name: Inject UUIDs and rename files
         run: python scripts/inject_uuids.py
@@ -42,20 +51,22 @@ jobs:
       - name: Inject missing IDs
         run: python scripts/inject_ids.py
 
-      - name: Inject relational URis
+      - name: Inject relational URIs
         run: python scripts/inject_uris.py
 
       - name: Inject created/updated dates
         run: python scripts/inject_dates.py
 
-      - name: Validate all entries
-        run: python scripts/validate_glossary.py
+      - name: Inject contributors
+        run: python scripts/inject_contributors.py
+
+      # ── Commit enriched fields back ──
 
       - name: Collect changed files
         id: changed
         run: |
           patterns=""
-          for dir in domains terms references; do
+          for dir in terms references; do
             if compgen -G "$dir/*.json" > /dev/null 2>&1; then
               patterns="$patterns $dir/*.json"
             fi
@@ -64,9 +75,7 @@ jobs:
 
       - name: Commit injected fields (if any)
         if: steps.changed.outputs.file_pattern != ''
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "main: inject missing ids, dates and contributors [skip ci]"
           file_pattern: ${{ steps.changed.outputs.file_pattern }}
-
-
