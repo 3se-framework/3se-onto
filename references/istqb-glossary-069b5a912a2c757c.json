@@ -7,7 +7,7 @@
   "status": "bibo:published",
   "@id": "https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c",
   "entryCreated": "2026-03-14",
-  "entryModified": "2026-03-14",
+  "entryModified": "2026-03-15",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
