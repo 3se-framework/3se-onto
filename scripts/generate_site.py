@@ -19,43 +19,52 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-TERMS_DIR      = Path("terms")
+TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
-SITE_DIR       = Path("_site")
+SITE_DIR = Path("_site")
 
 BASE_IRIS: dict[str, str] = {
-    "terms":      "https://www.3se.info/3se-onto/terms/",
+    "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
 }
 
 TERM_STATUS_LABELS: dict[str, tuple[str, str]] = {
-    "draft":          ("Draft",          "#9ca3af"),
-    "under review":   ("Under Review",   "#f59e0b"),
-    "reviewed":       ("Reviewed",       "#3b82f6"),
+    "draft": ("Draft", "#9ca3af"),
+    "under review": ("Under Review", "#f59e0b"),
+    "reviewed": ("Reviewed", "#3b82f6"),
     "under approval": ("Under Approval", "#8b5cf6"),
-    "approved":       ("Approved",       "#10b981"),
-    "standard":       ("Standard",       "#059669"),
+    "approved": ("Approved", "#10b981"),
+    "standard": ("Standard", "#059669"),
+}
+
+BIBO_STATUS_LABELS: dict[str, tuple[str, str]] = {
+    "bibo:draft": ("Draft", "#9ca3af"),
+    "bibo:forthcoming": ("Forthcoming", "#f59e0b"),
+    "bibo:peerReviewed": ("Peer Reviewed", "#3b82f6"),
+    "bibo:published": ("Published", "#059669"),
+    "bibo:rejected": ("Rejected", "#ef4444"),
+    "bibo:unpublished": ("Unpublished", "#9ca3af"),
 }
 
 SKOS_MATCH_LABELS: dict[str, str] = {
-    "exactMatch":   "Exact match",
-    "closeMatch":   "Close match",
-    "broadMatch":   "Broad match",
-    "narrowMatch":  "Narrow match",
+    "exactMatch": "Exact match",
+    "closeMatch": "Close match",
+    "broadMatch": "Broad match",
+    "narrowMatch": "Narrow match",
     "relatedMatch": "Related match",
 }
 
 BIBO_TYPE_LABELS: dict[str, str] = {
-    "bibo:Book":             "Book",
-    "bibo:AcademicArticle":  "Academic Article",
-    "bibo:Article":          "Article",
-    "bibo:Standard":         "Standard",
-    "bibo:Report":           "Report",
-    "bibo:Webpage":          "Webpage",
-    "bibo:Website":          "Website",
-    "bibo:Thesis":           "Thesis",
-    "bibo:Proceedings":      "Proceedings",
-    "bibo:TechnicalDocument":"Technical Document",
+    "bibo:Book": "Book",
+    "bibo:AcademicArticle": "Academic Article",
+    "bibo:Article": "Article",
+    "bibo:Standard": "Standard",
+    "bibo:Report": "Report",
+    "bibo:Webpage": "Webpage",
+    "bibo:Website": "Website",
+    "bibo:Thesis": "Thesis",
+    "bibo:Proceedings": "Proceedings",
+    "bibo:TechnicalDocument": "Technical Document",
 }
 
 
@@ -84,7 +93,7 @@ def load_directory(directory: Path) -> list[dict]:
 
 
 def split_terms(terms: list[dict]) -> tuple[list[dict], list[dict]]:
-    se3   = [t for t in terms if t.get("title", "").endswith("- 3SE")]
+    se3 = [t for t in terms if t.get("title", "").endswith("- 3SE")]
     other = [t for t in terms if not t.get("title", "").endswith("- 3SE")]
     return se3, other
 
@@ -116,12 +125,28 @@ def is_internal_uri(uri: str) -> bool:
 def bibo_type_label(type_field) -> str:
     if not type_field:
         return ""
-    types  = [type_field] if isinstance(type_field, str) else type_field
-    bibo   = [t for t in types if t.startswith("bibo:")]
+    types = [type_field] if isinstance(type_field, str) else type_field
+    bibo = [t for t in types if t.startswith("bibo:")]
     if not bibo:
         return ""
     specific = [t for t in bibo if t != "bibo:Document"] or bibo
     return BIBO_TYPE_LABELS.get(specific[0], specific[0].replace("bibo:", ""))
+
+
+def resolve_status(entry: dict) -> tuple[str, str, str]:
+    """Return (raw_key, display_label, color) for a term or reference entry.
+    Terms use plain string status; references use bibo:status CURIE values."""
+    # Term status (plain string)
+    status = entry.get("status", "")
+    if status and status in TERM_STATUS_LABELS:
+        label, color = TERM_STATUS_LABELS[status]
+        return status, label, color
+    # Reference bibo:status
+    bibo_status = entry.get("bibo:status", "")
+    if bibo_status and bibo_status in BIBO_STATUS_LABELS:
+        label, color = BIBO_STATUS_LABELS[bibo_status]
+        return bibo_status, label, color
+    return status, "", ""
 
 
 def build_reference_index(references: list[dict]) -> dict[str, dict]:
@@ -466,9 +491,9 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
     ld_script = ""
     if jsonld:
         ld_script = (
-            '<script type="application/ld+json">'
-            + json.dumps(jsonld, ensure_ascii=False)
-            + "</script>"
+                '<script type="application/ld+json">'
+                + json.dumps(jsonld, ensure_ascii=False)
+                + "</script>"
         )
     conneg = CONNEG_SCRIPT if jsonld else ""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -541,50 +566,54 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     all_entries: list[dict] = []
     for t in se3_terms:
         all_entries.append({
-            "title":  t.get("title", ""),
-            "type":   "3SE Term",
+            "title": t.get("title", ""),
+            "type": "3SE Term",
             "status": t.get("status", ""),
-            "stem":   t["_stem"],
-            "dir":    "terms",
-            "desc":   t.get("description", ""),
+            "stem": t["_stem"],
+            "dir": "terms",
+            "desc": t.get("description", ""),
         })
     for t in other_terms:
         all_entries.append({
-            "title":  t.get("title", ""),
-            "type":   "Term",
+            "title": t.get("title", ""),
+            "type": "Term",
             "status": t.get("status", ""),
-            "stem":   t["_stem"],
-            "dir":    "terms",
-            "desc":   t.get("description", ""),
+            "stem": t["_stem"],
+            "dir": "terms",
+            "desc": t.get("description", ""),
         })
     for r in references:
+        raw_status, _, _ = resolve_status(r)
         all_entries.append({
-            "title":  r.get("title", ""),
-            "type":   "Reference",
-            "status": "",
-            "stem":   r["_stem"],
-            "dir":    "references",
-            "desc":   r.get("abstract", ""),
+            "title": r.get("title", ""),
+            "type": "Reference",
+            "status": raw_status,
+            "stem": r["_stem"],
+            "dir": "references",
+            "desc": r.get("abstract", ""),
         })
 
     rows = ""
     for e in all_entries:
         status_cell = ""
-        if e["status"] and e["status"] in TERM_STATUS_LABELS:
-            label, color = TERM_STATUS_LABELS[e["status"]]
-            status_cell = (
-                f'<span class="badge" style="color:{color};border-color:{color}">'
-                f'{label}</span>'
-            )
+        if e["status"]:
+            # Build a temporary dict to reuse resolve_status
+            _tmp = {"status": e["status"], "bibo:status": e["status"]}
+            _, s_label, s_color = resolve_status(_tmp)
+            if s_label:
+                status_cell = (
+                    f'<span class="badge" style="color:{s_color};border-color:{s_color}">'
+                    f'{s_label}</span>'
+                )
         type_style = {
-            "3SE Term":  "color:var(--text);font-weight:500",
-            "Term":      "color:var(--text2)",
+            "3SE Term": "color:var(--text);font-weight:500",
+            "Term": "color:var(--text2)",
             "Reference": "color:var(--green)",
         }.get(e["type"], "")
         desc = e["desc"][:100] + ("…" if len(e["desc"]) > 100 else "")
-        safe_title  = e["title"].replace('"', "&quot;")
-        safe_desc   = e["desc"].replace('"', "&quot;")
-        safe_type   = e["type"].lower()
+        safe_title = e["title"].replace('"', "&quot;")
+        safe_desc = e["desc"].replace('"', "&quot;")
+        safe_type = e["type"].lower()
         safe_status = e["status"].lower()
         rows += (
             f'<tr data-q="{safe_title.lower()} {safe_desc.lower()}"'
@@ -623,10 +652,19 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
   </select>
   <select id="filter-status">
     <option value="">All statuses</option>
-    <option value="draft">Draft</option>
-    <option value="standard">Standard</option>
-    <option value="reviewed">Reviewed</option>
-    <option value="approved">Approved</option>
+    <optgroup label="Term statuses">
+      <option value="draft">Draft</option>
+      <option value="reviewed">Reviewed</option>
+      <option value="approved">Approved</option>
+      <option value="standard">Standard</option>
+    </optgroup>
+    <optgroup label="Reference statuses">
+      <option value="bibo:draft">Draft (bibo)</option>
+      <option value="bibo:published">Published</option>
+      <option value="bibo:peerreviewed">Peer Reviewed</option>
+      <option value="bibo:forthcoming">Forthcoming</option>
+      <option value="bibo:unpublished">Unpublished</option>
+    </optgroup>
   </select>
   <span id="count" style="font-family:var(--mono);font-size:.75rem;
         color:var(--muted);white-space:nowrap">{total} entries</span>
@@ -689,24 +727,24 @@ fStat.addEventListener('change', filter);
 
 def render_uri_link(uri: str, label: str | None = None) -> str:
     display = label or stem_from_uri(uri)
-    href    = href_for_uri(uri)
+    href = href_for_uri(uri)
     if is_internal_uri(uri):
         return f'<a href="{href}">{display}</a>'
     return f'<a href="{uri}" target="_blank" rel="noopener">{display} ↗</a>'
 
 
 def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
-    title      = term.get("title", "*(untitled)*")
-    status     = term.get("status", "")
+    title = term.get("title", "*(untitled)*")
+    status = term.get("status", "")
     deprecated = term.get("deprecated", False)
-    jsonld     = clean_jsonld(term)
+    jsonld = clean_jsonld(term)
 
     # Status + deprecated badges
     badges = ""
-    if status and status in TERM_STATUS_LABELS:
-        label, color = TERM_STATUS_LABELS[status]
-        badges += (f'<span class="badge" style="color:{color};border-color:{color}'
-                   f';margin-left:.75rem">{label}</span>')
+    _, s_label, s_color = resolve_status(term)
+    if s_label:
+        badges += (f'<span class="badge" style="color:{s_color};border-color:{s_color}'
+                   f';margin-left:.75rem">{s_label}</span>')
     if deprecated:
         badges += ('<span class="badge" style="color:#ef4444;border-color:#ef4444'
                    ';margin-left:.5rem">Deprecated</span>')
@@ -771,11 +809,11 @@ def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
             )
         return out
 
-    hier = rel_rows([("broader","Broader"),("narrower","Narrower"),("related","Related")])
+    hier = rel_rows([("broader", "Broader"), ("narrower", "Narrower"), ("related", "Related")])
     match = rel_rows([
-        ("exactMatch","Exact match"), ("closeMatch","Close match"),
-        ("broadMatch","Broad match"), ("narrowMatch","Narrow match"),
-        ("relatedMatch","Related match"),
+        ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
+        ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
+        ("relatedMatch", "Related match"),
     ])
     relations_html = ""
     if hier or match:
@@ -847,8 +885,8 @@ def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
 # ---------------------------------------------------------------------------
 
 def render_reference_page(ref: dict) -> str:
-    title    = ref.get("title", "*(untitled)*")
-    jsonld   = clean_jsonld(ref)
+    title = ref.get("title", "*(untitled)*")
+    jsonld = clean_jsonld(ref)
     bib_type = bibo_type_label(ref.get("@type"))
 
     id_uri = ref.get("@id", "")
@@ -856,6 +894,14 @@ def render_reference_page(ref: dict) -> str:
         f'<p style="margin-top:.35rem;font-family:var(--mono);font-size:.72rem;'
         f'color:var(--muted2)">{id_uri}</p>'
     ) if id_uri else ""
+
+    _, rs_label, rs_color = resolve_status(ref)
+    status_badge_html = ""
+    if rs_label:
+        status_badge_html = (
+            f'<span class="badge" style="color:{rs_color};border-color:{rs_color};'
+            f'margin-left:.75rem">{rs_label}</span>'
+        )
 
     type_html = (
         f'<p style="margin-top:.35rem;font-family:var(--mono);font-size:.78rem;'
@@ -877,16 +923,18 @@ def render_reference_page(ref: dict) -> str:
     if pub := ref.get("publisher"):
         name = pub.get("name", pub) if isinstance(pub, dict) else pub
         bib_rows += bib_row("Publisher", str(name))
-    if issued := ref.get("issued"):   bib_rows += bib_row("Issued", issued)
-    elif date := ref.get("date"):     bib_rows += bib_row("Date", date)
-    if ed  := ref.get("edition"):     bib_rows += bib_row("Edition", ed)
+    if issued := ref.get("issued"):
+        bib_rows += bib_row("Issued", issued)
+    elif date := ref.get("date"):
+        bib_rows += bib_row("Date", date)
+    if ed := ref.get("edition"):     bib_rows += bib_row("Edition", ed)
     if num := ref.get("number"):      bib_rows += bib_row("Number", num)
-    for f, l in [("volume","Volume"),("issue","Issue")]:
+    for f, l in [("volume", "Volume"), ("issue", "Issue")]:
         if v := ref.get(f): bib_rows += bib_row(l, str(v))
     if ps := ref.get("pageStart"):
         pe = ref.get("pageEnd")
         bib_rows += bib_row("Pages", f"{ps}–{pe}" if pe else str(ps))
-    for f, l in [("doi","DOI"),("isbn13","ISBN-13"),("isbn10","ISBN-10"),("issn","ISSN")]:
+    for f, l in [("doi", "DOI"), ("isbn13", "ISBN-13"), ("isbn10", "ISBN-10"), ("issn", "ISSN")]:
         if v := ref.get(f):
             bib_rows += bib_row(l, f'<code style="font-family:var(--mono)">{v}</code>')
     if uri := ref.get("uri") or ref.get("url"):
@@ -916,7 +964,7 @@ def render_reference_page(ref: dict) -> str:
 </nav>
 
 <div style="margin-bottom:2rem">
-  <h1>{title}</h1>
+  <h1 style="display:inline">{title}</h1>{status_badge_html}
   {id_html}
   {type_html}
   {abstract_html}
@@ -946,13 +994,13 @@ def render_listing(heading: str, subtitle: str, entries: list[dict],
                    dir_name: str, breadcrumb_label: str) -> str:
     items = ""
     for e in entries:
-        stem   = e["_stem"]
+        stem = e["_stem"]
         status = e.get("status", "")
-        badge  = ""
-        if status and status in TERM_STATUS_LABELS:
-            label, color = TERM_STATUS_LABELS[status]
-            badge = (f'<span class="badge" style="color:{color};border-color:{color}'
-                     f';margin-left:.5rem;font-size:.65rem">{label}</span>')
+        badge = ""
+        _, b_label, b_color = resolve_status(e)
+        if b_label:
+            badge = (f'<span class="badge" style="color:{b_color};border-color:{b_color}'
+                     f';margin-left:.5rem;font-size:.65rem">{b_label}</span>')
         desc = e.get("description", "")[:120]
         if len(e.get("description", "")) > 120:
             desc += "…"
@@ -987,9 +1035,9 @@ def render_listing(heading: str, subtitle: str, entries: list[dict],
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    terms      = load_directory(TERMS_DIR)
+    terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
-    ref_index  = build_reference_index(references)
+    ref_index = build_reference_index(references)
     se3_terms, other_terms = split_terms(terms)
 
     # Rebuild _site/
@@ -1024,7 +1072,7 @@ def main() -> int:
 
     # Individual term pages
     for term in terms:
-        stem    = term["_stem"]
+        stem = term["_stem"]
         out_dir = SITE_DIR / "terms" / stem
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
@@ -1037,7 +1085,7 @@ def main() -> int:
 
     # Individual reference pages
     for ref in references:
-        stem    = ref["_stem"]
+        stem = ref["_stem"]
         out_dir = SITE_DIR / "references" / stem
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
