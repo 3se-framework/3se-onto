@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-15 22:02 UTC*
+*Generated on 2026-03-15 22:07 UTC*
 
 This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
 
@@ -191,7 +191,7 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ### Demonstration - 3SE
 
-![standard](https://img.shields.io/badge/status-standard-brightgreen)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Evaluation method of an attribute or feature of an entity under a set of test case in its context of use.
 
