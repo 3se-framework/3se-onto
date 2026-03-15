@@ -2,7 +2,7 @@
   "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Test - 3SE",
-  "description": "Evaluation method of a characteristic of an entity under a set of test case in a testing environment.",
+  "description": "Evaluation method of an attribute or feature of an entity under a set of test case in a testing environment.",
   "status": "draft",
   "closeMatch": [
     "https://github.com/3se-framework/3se-onto/terms/test-24765-2017-069b5a912a097284"
