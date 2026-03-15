@@ -142,7 +142,7 @@ def resolve_status(entry: dict) -> tuple[str, str, str]:
         label, color = TERM_STATUS_LABELS[status]
         return status, label, color
     # Reference bibo:status
-    bibo_status = entry.get("bibo:status", "")
+    bibo_status = entry.get("status", "")
     if bibo_status and bibo_status in BIBO_STATUS_LABELS:
         label, color = BIBO_STATUS_LABELS[bibo_status]
         return bibo_status, label, color
