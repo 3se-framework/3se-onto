@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Functional Requirement - IREB CPRE",
   "description": "A requirement concerning a result or behavior that shall be provided by a function of a system",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
+    "https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

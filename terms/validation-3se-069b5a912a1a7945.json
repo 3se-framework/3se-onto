@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Validation - 3SE",
   "description": "Evaluation of an entity to determine whether it satisfies the requirements allocated to it at the end of a development phase. Note : it does not determine if the entity satisfies the stakeholders’ requirements nor the stakeholders’ goals",
   "status": "draft",
   "closeMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07"
+    "https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
   "entryCreated": "2026-03-14",

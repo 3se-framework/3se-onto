@@ -16,7 +16,7 @@ TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
 OUTPUT_FILE = Path("glossary.md")
 
-REFERENCE_BASE_IRI = "https://github.com/3se-framework/3se-onto/references/"
+REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
 
 # Human-readable labels for bibo: types
 BIBO_TYPE_LABELS: dict[str, str] = {

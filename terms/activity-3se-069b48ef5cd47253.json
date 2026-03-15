@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Activity - 3SE",
   "description": "Set of cohesive functions to be performed to achieve a stakeholder's goal, which transforms incoming exchanges into outgoing exchanges.",
   "status": "draft",
   "narrowMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/activity-24765-2017-069ab4000ad177a9"
+    "https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

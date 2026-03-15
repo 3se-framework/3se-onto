@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Standard",
   "title": "IEEE 1012:2016",
   "abstract": "IEEE Standard for System, Software, and Hardware Verification and Validation ",

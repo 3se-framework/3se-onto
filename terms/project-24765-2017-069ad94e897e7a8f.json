@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Project - ISO/IEC/IEEE 24765",
   "description": "Endeavor with defined start and finish criteria undertaken to create a product or a service in accordance with specified resources and requirements.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

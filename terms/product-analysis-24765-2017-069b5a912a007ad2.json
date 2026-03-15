@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Product analysis - ISO/IEC/IEEE 24765",
   "description": "Evaluating a product by manual or automated means to determine if the product has certain characteristics.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2",
   "entryCreated": "2026-03-14",

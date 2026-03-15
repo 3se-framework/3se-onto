@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Feature - SAFe 6.0",
   "description": "A Feature represents solution functionality that delivers business value, fulfills a stakeholder need, and is sized to be delivered by an Agile Release Train within a PI.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0"
+    "https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

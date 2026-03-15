@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Attack path - ISO/SAE 21434",
   "description": "Set of deliberate actions to realize a threat scenario",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d"
+    "https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

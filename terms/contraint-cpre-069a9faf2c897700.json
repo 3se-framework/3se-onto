@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Constraint - IREB CPRE",
   "description": "A requirement that limits the solution space beyond what is necessary for meeting the given functional requirements and quality requirements",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
+    "https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

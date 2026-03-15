@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/3se-framework/3se-onto/schemas/term.schema.json",
+  "$id": "https://www.3se.info/3se-onto/schemas/term.schema.json",
   "title": "Glossary Term",
   "type": "object",
   "additionalProperties": false,
@@ -11,13 +11,13 @@
     "@context": {
       "type": "string",
       "format": "uri",
-      "const": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+      "const": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
       "description": "JSON-LD context URI. Must reference the canonical context document for this schema."
     },
     "@id": {
       "type": "string",
       "format": "uri",
-      "description": "The globally unique IRI identifying this concept as an RDF resource (the RDF subject). Must be an absolute URI. Example: 'https://github.com/3se-framework/3se-onto/terms/load-balancing'."
+      "description": "The globally unique IRI identifying this concept as an RDF resource (the RDF subject). Must be an absolute URI. Example: 'https://www.3se.info/3se-onto/terms/load-balancing'."
     },
     "@type": {
       "description": "RDF type declaration. Must include 'skos:Concept'. May additionally include other compatible types (e.g. 'owl:Class').",

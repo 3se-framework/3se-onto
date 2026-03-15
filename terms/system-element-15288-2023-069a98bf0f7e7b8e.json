@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System element - ISO/IEC/IEEE 15288",
   "description": "Discrete part of a system that can be implemented to fulfil specified requirements.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2"
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Book",
   "title": "Systems Opportunities and Requirements",
   "abstract": "It contains what is necessary to know for characterizing a contextual situation, identifying issues, problems, or opportunities, initiating the engineering of a potential System of Interest (new or updated product, service, enterprise/organisation) that could answer them, and defining the applicable stakeholder requirements, as well as the corresponding system requirements",
