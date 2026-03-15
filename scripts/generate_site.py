@@ -855,7 +855,9 @@ def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
 </nav>
 
 <div style="margin-bottom:2rem">
-  <h1 style="display:inline">{title}</h1>{badges}
+  <div style="display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap">
+    <h1>{title}</h1>{badges}
+  </div>
   {id_html}
   {aliases_html}
   {superseded_html}
@@ -964,7 +966,9 @@ def render_reference_page(ref: dict) -> str:
 </nav>
 
 <div style="margin-bottom:2rem">
-  <h1 style="display:inline">{title}</h1>{status_badge_html}
+  <div style="display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap">
+    <h1>{title}</h1>{status_badge_html}
+  </div>
   {id_html}
   {type_html}
   {abstract_html}
