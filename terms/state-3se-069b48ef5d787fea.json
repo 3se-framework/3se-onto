@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "State - 3SE",
   "description": "An operational situation of an entity characterized by its active functions.",
   "status": "draft",
   "broadMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677"
+    "https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

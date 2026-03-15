@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Change - ISO/IEC/IEEE 24765",
   "description": "Modification to any formally controlled deliverable, project management plan component, or project document.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656",
   "entryCreated": "2026-03-14",

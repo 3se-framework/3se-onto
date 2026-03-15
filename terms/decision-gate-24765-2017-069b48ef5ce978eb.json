@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Decision gate - ISO/IEC/IEEE 24765",
   "description": "Approval event. Note: often associated with a review meeting. Entry and exit criteria are established for each decision gate; continuation beyond the decision gate is contingent on the agreement of decision-makers.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

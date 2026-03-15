@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Integration testing - 3SE",
   "description": "Evaluation of the interactions between parts of an entity which aims at ensuring that the entity is built right.",
   "status": "draft",
   "closeMatch": [
-    "https://github.com/3se-framework/3se-onto/terms/integration-istqb-069b5a9129f872b2"
+    "https://www.3se.info/3se-onto/terms/integration-istqb-069b5a9129f872b2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/integration-3se-069b5a9129ef793b",
   "entryCreated": "2026-03-14",

@@ -1,5 +1,5 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/reference.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
   "@type": "bibo:Standard",
   "title": "ISTQB Glossary",
   "abstract": "The ISTQB Standard Glossary of Terms Used in Software Testing contains the definitions of testing terms used in the various ISTQB Syllabi. This includes all terms stated as keywords in the ISTQB Syllabi as well as other terms of major importance to testing.",

@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Epic - SAFe 6.0",
   "description": "An Epic is a significant solution development initiative",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0"
+    "https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0"
   ],
   "entryCreator": {
     "@type": "foaf:Person",

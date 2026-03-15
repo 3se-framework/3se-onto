@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Risk - IEEE 1012",
   "description": "The combination of the likelihood of occurrence and the consequences of a given future undesirable event. Risk can be associated with products and/or projects.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0"
+    "https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036",
   "entryCreated": "2026-03-14",

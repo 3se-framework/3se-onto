@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Test suite - ISTQB",
   "description": "A set of test scripts or test procedures to be executed in a specific test run.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/istqb-glossary-069b5a912a2c757c"
+    "https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549",
   "entryCreated": "2026-03-14",

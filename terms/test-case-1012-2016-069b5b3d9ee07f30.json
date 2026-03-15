@@ -1,11 +1,11 @@
 {
-  "@context": "https://github.com/3se-framework/3se-onto/contexts/term.context.jsonld",
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Test case - IEEE 1012",
   "description": "A set of test inputs, execution conditions, and expected results developed for a particular objective, such as to exercise a particular program path or to verify compliance with a specific requirement.",
   "status": "standard",
   "isReferencedBy": [
-    "https://github.com/3se-framework/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0"
+    "https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30",
   "entryCreated": "2026-03-14",
