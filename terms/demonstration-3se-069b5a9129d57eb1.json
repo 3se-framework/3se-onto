@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Demonstration - 3SE",
   "description": "Evaluation method of an attribute or feature of an entity under a set of test case in its context of use.",
-  "status": "standard",
+  "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349"
   ],
