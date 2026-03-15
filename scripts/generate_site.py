@@ -173,7 +173,7 @@ body {
   color: var(--text);
   font-family: var(--sans);
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -201,7 +201,6 @@ header {
   letter-spacing: -0.02em;
   color: var(--ink);
   text-decoration: none !important;
-  display: flex;
   align-items: center;
 }
 .logo span { color: var(--accent); }
@@ -526,7 +525,6 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
   <p>
     © 2022 3SE — System, Safety &amp; Security Engineering &nbsp;·&nbsp;
     <a href="https://www.3se.info/">www.3se.info</a> &nbsp;·&nbsp;
-    <a href="/3se-onto/">3SE Ontology</a> &nbsp;·&nbsp;
     Generated {now}
   </p>
 </footer>
