@@ -478,7 +478,7 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title} — 3SE Ontology</title>
+  <title>3SE — Ontology — {title}</title>
   {meta_desc}
   <style>{SHARED_CSS}</style>
   {ld_script}
