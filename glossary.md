@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-16 22:31 UTC*
+*Generated on 2026-03-16 22:35 UTC*
 
 This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
 
@@ -73,7 +73,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Inspection - ISO/IEC/IEEE 24765](#inspection---isoiecieee-24765)
   - [Integration testing - ISTQB](#integration-testing---istqb)
   - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
-  - [Non functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
+  - [Non-functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
   - [Operational mode - Systems Opportunities and Requirements](#operational-mode---systems-opportunities-and-requirements)
   - [Phase gate - ISO/IEC/IEEE 24765](#phase-gate---isoiecieee-24765)
   - [Problem - ISO/IEC/IEEE 24765](#problem---isoiecieee-24765)
@@ -965,7 +965,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
-### Non functional Requirement - IREB CPRE
+### Non-functional Requirement - IREB CPRE
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -973,7 +973,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
