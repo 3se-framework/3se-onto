@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-15 22:07 UTC*
+*Generated on 2026-03-16 19:54 UTC*
 
-This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
+This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
 
 ## Contents
 
@@ -32,9 +32,17 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Risk - 3SE](#risk---3se)
   - [Safety activity - 3SE](#safety-activity---3se)
   - [Safety feature - 3SE](#safety-feature---3se)
+  - [Safety function - 3SE](#safety-function---3se)
   - [Security activity - 3SE](#security-activity---3se)
   - [Security feature - 3SE](#security-feature---3se)
+  - [Security function - 3SE](#security-function---3se)
+  - [Software component - 3SE](#software-component---3se)
+  - [Software unit - 3SE](#software-unit---3se)
   - [State - 3SE](#state---3se)
+  - [System - 3SE](#system---3se)
+  - [System element - 3SE](#system-element---3se)
+  - [Systems engineering - 3SE](#systems-engineering---3se)
+  - [Systems principles - 3SE](#systems-principles---3se)
   - [Task - 3SE](#task---3se)
   - [Test - 3SE](#test---3se)
   - [Test case - 3SE](#test-case---3se)
@@ -103,7 +111,7 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ## 3SE Terms
 
-*34 term(s) defined by the 3SE framework.*
+*42 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -439,6 +447,20 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Safety function - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Function to control failures in order to achieve or maintain a safe state.
+
+| Relation | Terms |
+|---|---|
+| Related match | [https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
 ### Security activity - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -459,6 +481,48 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Security function - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Function to control failures in order to achieve or maintain a secure state.
+
+| Relation | Terms |
+|---|---|
+| Related match | [https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
+### Software component - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Functionally distinct part of a software, composed of at least one software unit, and which exposes at least one software component interface.
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
+### Software unit - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Atomic level part of a software component that is subjected to software unit testing.
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
 ### State - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -470,6 +534,58 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 | Broad match | [https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### System - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Combination of interacting system elements organized to achieve one or more goals.
+
+| Relation | Terms |
+|---|---|
+| Narrow match | [https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409](https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
+### System element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Discrete part of a system that can be implemented to fulfil specified requirements.
+
+| Relation | Terms |
+|---|---|
+| Exact match | [https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
+### Systems engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Transdisciplinary and integrative approach to enable the successful realization, use and retirement of systems using systems principles.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce](https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
+### Systems principles - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Systems principles represent the foundations of systems engineering and are the following: (1) Holism, (2) Reductionism, (3) Mechanism, (4) Teleology
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
@@ -650,11 +766,11 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
-> measure that is modifying risk
+> Measure that is modifying risk.
 
 **References:** [ISO/SAE 21434:2021](#iso-sae-21434-2021-069ab4000b4e771d)
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
@@ -938,11 +1054,11 @@ This glossary contains **34 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
-> Technical solution implemented by E/E functions or elements, or by other technologies, to detect and mitigate or tolerate faults or control or avoid failures in order to maintain intended functionality or achieve or maintain a safe state
+> Technical solution implemented by E/E functions or elements, or by other technologies, to detect and mitigate or tolerate faults or control or avoid failures in order to maintain intended functionality or achieve or maintain a safe state.
 
 **References:** [ISO 26262-1:2018](#iso-26262-1-2018-069ab4000b417db7)
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
