@@ -6,5 +6,12 @@
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
+  "entryCreated": "2026-03-16",
+  "entryModified": "2026-03-16",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

@@ -9,5 +9,12 @@
   ],
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
+  "entryCreated": "2026-03-16",
+  "entryModified": "2026-03-16",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
