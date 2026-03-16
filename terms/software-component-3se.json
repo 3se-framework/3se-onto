@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software component - 3SE",
+  "description": "Functionally distinct part of a software, composed of at least one software unit, and which exposes at least one software component interface.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271"
+  ]
+}

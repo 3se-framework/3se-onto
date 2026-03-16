@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System - 3SE",
+  "description": "Combination of interacting system elements organized to achieve one or more goals.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409"
+  ]
+}

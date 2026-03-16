@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Systems engineering - 3SE",
+  "description": "Transdisciplinary and integrative approach to enable the successful realization, use and retirement of systems using systems principles.",
+  "status": "draft",
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety function - 3SE",
+  "description": "Function to control failures in order to achieve or maintain a safe state.",
+  "status": "draft",
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
+  ]
+}
