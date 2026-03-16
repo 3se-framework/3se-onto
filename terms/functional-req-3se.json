@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional Requirement - 3SE",
+  "description": "Requirement concerning the feature that shall be realized by the solution.",
+  "status": "draft",
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232"
+  ]
+}
