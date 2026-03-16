@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Cybersecurity control - ISO/SAE 21434",
-  "description": "measure that is modifying risk",
+  "description": "Measure that is modifying risk.",
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d"
