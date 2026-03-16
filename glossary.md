@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-16 19:54 UTC*
+*Generated on 2026-03-16 22:31 UTC*
 
-This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
+This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
 
 ## Contents
 
@@ -12,11 +12,13 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Analysis - 3SE](#analysis---3se)
   - [Attribute - 3SE](#attribute---3se)
   - [Change - 3SE](#change---3se)
+  - [Constraint - 3SE](#constraint---3se)
   - [Decision gate - 3SE](#decision-gate---3se)
   - [Demonstration - 3SE](#demonstration---3se)
   - [Epic - 3SE](#epic---3se)
   - [Feature - 3SE](#feature---3se)
   - [Function - 3SE](#function---3se)
+  - [Functional Requirement - 3SE](#functional-requirement---3se)
   - [Goal - 3SE](#goal---3se)
   - [Hardware (functional) block - 3SE](#hardware-functional-block---3se)
   - [Hardware component - 3SE](#hardware-component---3se)
@@ -24,6 +26,7 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Integration testing - 3SE](#integration-testing---3se)
   - [Iteration - 3SE](#iteration---3se)
   - [Maturity gate - 3SE](#maturity-gate---3se)
+  - [Non-functional requirement - 3SE](#non-functional-requirement---3se)
   - [Problem - 3SE](#problem---3se)
   - [Product - 3SE](#product---3se)
   - [Project - 3SE](#project---3se)
@@ -111,7 +114,7 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ## 3SE Terms
 
-*42 term(s) defined by the 3SE framework.*
+*45 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -183,6 +186,21 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Constraint - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Requirement that limits the solution space beyond what is necessary for meeting the given functional and non-functional requirements.
+
+| Relation | Terms |
+|---|---|
+| Exact match | [https://www.3se.info/3se-onto/terms/contraint-cpre-069a9faf2c897700](https://www.3se.info/3se-onto/terms/contraint-cpre-069a9faf2c897700) |
+| Narrow match | [https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
 ### Decision gate - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -250,6 +268,20 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
 | Close match | [https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Functional Requirement - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Requirement concerning the feature that shall be realized by the solution.
+
+| Relation | Terms |
+|---|---|
+| Related match | [https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
@@ -340,6 +372,21 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
 | Narrow match | [https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Non-functional requirement - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Requirement that pertains to an attribute of the solution.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af) |
+| Broad match | [https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723) |
+
+*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
@@ -838,11 +885,11 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
-> A requirement concerning a result or behavior that shall be provided by a function of a system
+> A requirement concerning a result or behavior that shall be provided by a function of a system.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
@@ -1006,11 +1053,11 @@ This glossary contains **42 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
-> A requirement that pertains to a quality concern that is not covered by functional requirements
+> A requirement that pertains to a quality concern that is not covered by functional requirements.
 
 **References:** [IREB CPRE Glossary](#ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-16 · Creator: @rcasteran*
 
 ---
 
