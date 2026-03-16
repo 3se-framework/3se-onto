@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Quality Requirement - IREB CPRE",
-  "description": "A requirement that pertains to a quality concern that is not covered by functional requirements",
+  "description": "A requirement that pertains to a quality concern that is not covered by functional requirements.",
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
