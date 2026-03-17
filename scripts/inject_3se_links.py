@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
-# Injects bidirectional skos:related links between 3SE terms based on
-# concept name mentions in descriptions.
+# Injects and prunes bidirectional skos:related links between 3SE terms
+# based on concept name mentions in descriptions.
 #
 # Algorithm:
-#   1. For each term, extract the concept name = title before the first " - "
+#   1. For each 3SE term, extract the concept name = title before the first " - "
 #   2. For every other term, check if the concept name appears in its description
-#   3. If yes, add skos:related in both directions (idempotent)
+#   3. Compute the full set of justified related links for every 3SE term
+#   4. Add missing justified links (idempotent injection)
+#   5. Remove existing related links that are no longer justified (pruning)
+#   6. Warn about standalone 3SE terms with no justified links
 #
-# Only 3SE terms (title ending with "- 3SE") are used as link sources,
-# but any term whose description mentions a concept name receives a link.
+# Pruning rules:
+#   - A related link on a 3SE term is removed if the target's concept name
+#     does not appear in the source's description AND the source's concept name
+#     does not appear in the target's description.
+#   - Links on non-3SE terms are never touched.
 #
 # Run this script after inject_uris.py and before validate_glossary.py.
 
@@ -63,12 +69,10 @@ def name_variants(name: str) -> list[str]:
     Handles multi-word concept names (e.g. 'System element' -> also 'System elements').
     """
     variants = {name}
-    # Pluralise the last word of the concept name
     words = name.split()
     plural_last = _inflect.plural(words[-1])
     if plural_last and plural_last.lower() != words[-1].lower():
         variants.add(" ".join(words[:-1] + [plural_last]) if len(words) > 1 else plural_last)
-    # Also try singular in case the concept name is already plural
     singular_last = _inflect.singular_noun(words[-1])
     if singular_last:
         variants.add(" ".join(words[:-1] + [singular_last]) if len(words) > 1 else singular_last)
@@ -91,15 +95,10 @@ def uri_for_stem(stem: str) -> str:
     return BASE_IRI + stem
 
 
-def ensure_related(data: dict, uri: str) -> bool:
-    """Add uri to data['related'] if not already present. Returns True if changed."""
-    existing = data.get("related", [])
-    if isinstance(existing, str):
-        existing = [existing]
-    if uri in existing:
-        return False
-    data["related"] = existing + [uri]
-    return True
+def stem_for_uri(uri: str) -> str | None:
+    if uri.startswith(BASE_IRI):
+        return uri[len(BASE_IRI):]
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -122,54 +121,83 @@ def main() -> int:
         if name:
             se3_concepts[stem] = name
 
-    # Track all modifications: stem -> data
-    changes: dict[str, dict] = {}
+    # ── Step 1: compute justified related links for every term ────────────────
+    # justified[stem] = set of URIs that are justified for that stem
+    justified: dict[str, set[str]] = {stem: set() for stem in index}
 
-    def get_working(stem: str) -> dict:
-        """Return the working (possibly modified) copy of a term's data."""
-        if stem not in changes:
-            changes[stem] = dict(index[stem][1])
-        return changes[stem]
-
-    # For each 3SE concept, scan all other terms' descriptions
     for src_stem, name in se3_concepts.items():
         src_uri = uri_for_stem(src_stem)
 
         for tgt_stem, (_, tgt_data) in index.items():
             if tgt_stem == src_stem:
                 continue
-
             description = tgt_data.get("description", "")
             if not description:
                 continue
 
             if name_in_description(name, description):
                 tgt_uri = uri_for_stem(tgt_stem)
+                # Forward: source 3SE term -> target (any term)
+                justified[src_stem].add(tgt_uri)
+                # Reverse: target -> source, only if target is a 3SE term
+                tgt_title = tgt_data.get("title", "")
+                if tgt_title.endswith("- 3SE"):
+                    justified[tgt_stem].add(src_uri)
 
-                # Add related on source -> target
-                src_working = get_working(src_stem)
-                if ensure_related(src_working, tgt_uri):
-                    print(f"  related: {src_stem} -> {tgt_stem}  ('{name}' found in target)")
+    # ── Step 2: inject and prune, tracking all changes ────────────────────────
+    changes: dict[str, dict] = {}
 
-                # Add related on target -> source (bidirectional)
-                tgt_working = get_working(tgt_stem)
-                if ensure_related(tgt_working, src_uri):
-                    print(f"  related: {tgt_stem} -> {src_stem}  (reverse)")
+    def get_working(stem: str) -> dict:
+        if stem not in changes:
+            changes[stem] = dict(index[stem][1])
+        return changes[stem]
 
-    # Warn about standalone 3SE terms — concept name not found in any description
-    for src_stem, name in se3_concepts.items():
-        working = changes.get(src_stem, index[src_stem][1])
-        existing_related = working.get("related", [])
-        if isinstance(existing_related, str):
-            existing_related = [existing_related]
-        if not existing_related:
+    for stem, (_, data) in index.items():
+        title = data.get("title", "")
+
+        # Only touch related links on 3SE terms
+        if not title.endswith("- 3SE"):
+            continue
+
+        existing = data.get("related", [])
+        if isinstance(existing, str):
+            existing = [existing]
+        existing_set = set(existing)
+        justified_set = justified[stem]
+
+        to_add = justified_set - existing_set
+        to_remove = existing_set - justified_set
+
+        if not to_add and not to_remove:
+            continue
+
+        working = get_working(stem)
+        # Rebuild related: keep only justified, preserving original order, then append new
+        kept = [uri for uri in existing if uri in justified_set]
+        added = sorted(justified_set - set(kept))  # sort for determinism
+        working["related"] = kept + added
+
+        for uri in sorted(to_add):
+            tgt_stem = stem_for_uri(uri) or uri
+            print(f"  + related: {stem} -> {tgt_stem}")
+        for uri in sorted(to_remove):
+            tgt_stem = stem_for_uri(uri) or uri
+            print(f"  - removed: {stem} -> {tgt_stem}  (no longer justified)")
+
+    # ── Step 3: warn about standalone 3SE terms ───────────────────────────────
+    for stem, name in se3_concepts.items():
+        working = changes.get(stem, index[stem][1])
+        existing = working.get("related", [])
+        if isinstance(existing, str):
+            existing = [existing]
+        if not existing:
             print(
-                f"  ⚠️  standalone: {src_stem}  "
+                f"  ⚠️  standalone: {stem}  "
                 f"(concept '{name}' not found in any other term's description)",
                 file=sys.stderr,
             )
 
-    # Write changed files
+    # ── Step 4: write changed files ───────────────────────────────────────────
     for stem, data in changes.items():
         path, _ = index[stem]
         path.write_text(
