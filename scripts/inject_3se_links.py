@@ -22,7 +22,7 @@ import inflect
 _inflect = inflect.engine()
 
 TERMS_DIR = Path("terms")
-BASE_IRI  = "https://www.3se.info/3se-onto/terms/"
+BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 
 
 # ---------------------------------------------------------------------------
@@ -158,7 +158,6 @@ def main() -> int:
 
     # Warn about standalone 3SE terms — concept name not found in any description
     for src_stem, name in se3_concepts.items():
-        src_uri = uri_for_stem(src_stem)
         working = changes.get(src_stem, index[src_stem][1])
         existing_related = working.get("related", [])
         if isinstance(existing_related, str):
