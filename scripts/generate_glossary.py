@@ -192,7 +192,7 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
     # Superseded by
     if superseded_by := term.get("superseded_by"):
         anchor = uri_to_anchor(superseded_by)
-        lines.append(f"**Superseded by:** [{anchor}]({superseded_by})")
+        lines.append(f"**Superseded by:** [{anchor}](#{anchor})")
         lines.append("")
 
     # Hierarchical relations
@@ -211,7 +211,8 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
             display = (
                           item.get("prefLabel") if isinstance(item, dict) else None
                       ) or uri_to_anchor(uri)
-            links.append(f"[{display}]({uri})")
+            anchor = uri_to_anchor(uri)
+            links.append(f"[{display}](#{anchor})")
         relation_rows.append((label, ", ".join(links)))
 
     # Mapping relations
@@ -225,7 +226,7 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
         items = term.get(field, [])
         if not items:
             continue
-        links = [f"[{uri}]({uri})" for uri in items]
+        links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in items]
         relation_rows.append((label, ", ".join(links)))
 
     if relation_rows:
@@ -242,7 +243,8 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
         for uri in is_referenced_by:
             ref = ref_index.get(uri)
             ref_title = ref.get("title", uri_to_anchor(uri)) if ref else uri_to_anchor(uri)
-            ref_links.append(f"[{ref_title}]({uri})")
+            anchor = uri_to_anchor(uri)
+            ref_links.append(f"[{ref_title}](#{anchor})")
         lines.append(f"**References:** {', '.join(ref_links)}")
         lines.append("")
 
