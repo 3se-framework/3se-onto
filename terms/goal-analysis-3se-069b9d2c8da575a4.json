@@ -3,5 +3,12 @@
   "@type": "skos:Concept",
   "title": "Goal analysis - 3SE",
   "description": "Analysis of the goals to determine if they can be further decomposed into goals or allocated to a feature.",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
+  "entryCreated": "2026-03-17",
+  "entryModified": "2026-03-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

@@ -3,5 +3,12 @@
   "@type": "skos:Concept",
   "title": "Enabling functional element - 3SE",
   "description": "Part of an enabling system responsible for carrying out some of the functions devolved to the enabling system, by interacting with functional elements of the system and/or actors.",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97",
+  "entryCreated": "2026-03-17",
+  "entryModified": "2026-03-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

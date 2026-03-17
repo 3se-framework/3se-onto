@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-16 22:35 UTC*
+*Generated on 2026-03-17 22:19 UTC*
 
-This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 reference(s)**.
+This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 reference(s)**.
 
 ## Contents
 
@@ -15,23 +15,40 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Constraint - 3SE](#constraint---3se)
   - [Decision gate - 3SE](#decision-gate---3se)
   - [Demonstration - 3SE](#demonstration---3se)
+  - [Enabling functional element - 3SE](#enabling-functional-element---3se)
+  - [Enabling system - 3SE](#enabling-system---3se)
   - [Epic - 3SE](#epic---3se)
+  - [Epic analysis - 3SE](#epic-analysis---3se)
   - [Feature - 3SE](#feature---3se)
+  - [Feature analysis - 3SE](#feature-analysis---3se)
   - [Function - 3SE](#function---3se)
+  - [Functional analysis - 3SE](#functional-analysis---3se)
+  - [Functional architecture - 3SE](#functional-architecture---3se)
+  - [Functional element - 3SE](#functional-element---3se)
   - [Functional Requirement - 3SE](#functional-requirement---3se)
   - [Goal - 3SE](#goal---3se)
+  - [Goal analysis - 3SE](#goal-analysis---3se)
   - [Hardware (functional) block - 3SE](#hardware-functional-block---3se)
   - [Hardware component - 3SE](#hardware-component---3se)
   - [Inspection - 3SE](#inspection---3se)
   - [Integration testing - 3SE](#integration-testing---3se)
   - [Iteration - 3SE](#iteration---3se)
+  - [Iteration analysis - 3SE](#iteration-analysis---3se)
   - [Maturity gate - 3SE](#maturity-gate---3se)
   - [Non-functional requirement - 3SE](#non-functional-requirement---3se)
+  - [Operational analysis - 3SE](#operational-analysis---3se)
+  - [Physical architecture - 3SE](#physical-architecture---3se)
+  - [Physical element - 3SE](#physical-element---3se)
+  - [Physical element - 3SE](#physical-element---3se)
   - [Problem - 3SE](#problem---3se)
   - [Product - 3SE](#product---3se)
+  - [Product analysis - 3SE](#product-analysis---3se)
   - [Project - 3SE](#project---3se)
+  - [Project analysis - 3SE](#project-analysis---3se)
   - [Release - 3SE](#release---3se)
+  - [Release analysis - 3SE](#release-analysis---3se)
   - [Requirement - 3SE](#requirement---3se)
+  - [Requirement analysis - 3SE](#requirement-analysis---3se)
   - [Risk - 3SE](#risk---3se)
   - [Safety activity - 3SE](#safety-activity---3se)
   - [Safety feature - 3SE](#safety-feature---3se)
@@ -47,6 +64,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Systems engineering - 3SE](#systems-engineering---3se)
   - [Systems principles - 3SE](#systems-principles---3se)
   - [Task - 3SE](#task---3se)
+  - [Task analysis - 3SE](#task-analysis---3se)
   - [Test - 3SE](#test---3se)
   - [Test case - 3SE](#test-case---3se)
   - [Test run - 3SE](#test-run---3se)
@@ -57,19 +75,24 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Activity - ISO/IEC/IEEE 24765](#activity---isoiecieee-24765)
   - [Attack path - ISO/SAE 21434](#attack-path---isosae-21434)
   - [Attribute - ISO/IEC/IEEE 24765](#attribute---isoiecieee-24765)
+  - [Behavioral component - ARCADIA](#behavioral-component---arcadia)
   - [Change - ISO/IEC/IEEE 24765](#change---isoiecieee-24765)
   - [Computer program - ISO/IEC/IEEE 24765](#computer-program---isoiecieee-24765)
   - [Constraint - IREB CPRE](#constraint---ireb-cpre)
   - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control---isosae-21434)
   - [Decision gate - ISO/IEC/IEEE 24765](#decision-gate---isoiecieee-24765)
   - [Demonstration - ISO/IEC/IEEE 24765](#demonstration---isoiecieee-24765)
+  - [Enabling system - ISO/IEC/IEEE 15288](#enabling-system---isoiecieee-15288)
   - [Epic - SAFe 6.0](#epic---safe-6.0)
   - [Feature - SAFe 6.0](#feature---safe-6.0)
   - [Function - ISO/IEC/IEEE 24765](#function---isoiecieee-24765)
+  - [Functional analysis - ISO/IEC/IEEE 24765](#functional-analysis---isoiecieee-24765)
+  - [Functional architecture - ISO/IEC/IEEE 24765](#functional-architecture---isoiecieee-24765)
   - [Functional Requirement - IREB CPRE](#functional-requirement---ireb-cpre)
   - [Goal - Requirements Engineering Fundamentals 2nd Edition](#goal---requirements-engineering-fundamentals-2nd-edition)
   - [Hardware - ISO/IEC/IEEE 24765](#hardware---isoiecieee-24765)
   - [Hazard - ISO 26262-1](#hazard---iso-26262-1)
+  - [Hosting physical component - ARCADIA](#hosting-physical-component---arcadia)
   - [Inspection - ISO/IEC/IEEE 24765](#inspection---isoiecieee-24765)
   - [Integration testing - ISTQB](#integration-testing---istqb)
   - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
@@ -98,6 +121,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
   - [Validation - IEEE 1012](#validation---ieee-1012)
   - [Verification - IEEE 1012](#verification---ieee-1012)
 - [References](#references)
+  - [ARCADIA language reference : meta model](#arcadia-language-reference--meta-model)
   - [IEEE 1012:2016](#ieee-10122016)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO 26262-1:2018](#iso-26262-12018)
@@ -114,7 +138,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ## 3SE Terms
 
-*45 term(s) defined by the 3SE framework.*
+*63 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -229,6 +253,26 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Enabling functional element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of an enabling system responsible for carrying out some of the functions devolved to the enabling system, by interacting with functional elements of the system and/or actors.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Enabling system - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> System that supports the system of interest during its life cycle stages to achieve the goals it is designed for.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Epic - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -240,6 +284,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 | Narrow match | [https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458](https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Epic analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the iteration to determine what Epics are assigned to it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -257,6 +311,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Feature analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the goal to determine what feature is contributing to it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Function - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -268,6 +332,48 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 | Close match | [https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Functional analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of an activity to determine what functions are contributing to it and their relation.
+
+| Relation | Terms |
+|---|---|
+| Related match | [https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Functional architecture - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the function to determine what states of a functional element are activating it.
+
+| Relation | Terms |
+|---|---|
+| Related match | [https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Functional element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of a system element responsible for carrying out some of the functions devolved to the system, by interacting with other functional elements of the system and/or enabling functional elements and/or actors.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda](https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -296,6 +402,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 | Broad match | [https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Goal analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the goals to determine if they can be further decomposed into goals or allocated to a feature.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -361,6 +477,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Iteration analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the project to determine what iterations are completing it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Maturity gate - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -387,6 +513,50 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 | Broad match | [https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723) |
 
 *Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+
+---
+
+### Operational analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of a feature to determine what activities are contributing to it and their relation.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Physical architecture - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the functional element to determine what physical element is realizing it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Physical element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of an enabling system responsible for defining the resources to carrying out the enabling functional element of the enabling system, by interacting with physical elements of the system and/or actors.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Physical element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of a system element responsible for defining the resources to carrying out the functional element of the system, by interacting with other physical elements of the system and/or enabling physical elements and/or actors.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934](https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -418,6 +588,20 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Product analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the features to determine what product is realizing it.
+
+| Relation | Terms |
+|---|---|
+| Related match | [https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Project - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -429,6 +613,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 | Close match | [https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Project analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the release to determine what project is delivering it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -446,6 +640,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Release analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the feature and its realizing product to determine what release is delivering it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Requirement - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -457,6 +661,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 | Close match | [https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6) |
 
 *Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Requirement analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of an entity to decide what requirements are specifying it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -650,6 +864,16 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Task analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of the iteration and its assigned Epic to determine what tasks are realizing it.
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Test - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -723,7 +947,7 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ## Other Terms
 
-*44 term(s) sourced from external standards and frameworks.*
+*49 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -770,6 +994,18 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
 *Created: 2026-03-15 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Behavioral component - ARCADIA
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> A system component, responsible for carrying out some of the functions devolved to the system, by interacting with its other behavioral components and external actors.
+
+**References:** [ARCADIA language reference : meta model](#arcadia-language-2023-069b9d2c8e027d4c)
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -845,6 +1081,20 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ---
 
+### Enabling system - ISO/IEC/IEEE 15288
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> System that supports a system-of-interest during its life cycle stages but does not necessarily contribute directly to its function during operation.
+
+| Relation | Terms |
+|---|---|
+| Close match | [https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
 ### Epic - SAFe 6.0
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -878,6 +1128,30 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 **References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
 *Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Functional analysis - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Examination of a defined function to identify all the sub-functions necessary to accomplish that function, to identify functional relationships and interfaces (internal and external) and capture these in a functional architecture, to flow down upper-level performance requirements and to assign these requirements to lower-level sub-functions.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
+
+### Functional architecture - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Hierarchical arrangement of functions, their internal and external (external to the aggregation itself) functional interfaces and external physical interfaces, their respective functional and performance requirements, and their design constraints.
+
+**References:** [ISO/IEC/IEEE 24765:2017](#iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -926,6 +1200,18 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 **References:** [ISO 26262-1:2018](#iso-26262-1-2018-069ab4000b417db7)
 
 *Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Hosting physical component - ARCADIA
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> A component hosting a number of behavioral components, providing them with the resources they require to function and to interact with their environment.
+
+**References:** [ARCADIA language reference : meta model](#arcadia-language-2023-069b9d2c8e027d4c)
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1255,7 +1541,25 @@ This glossary contains **45 3SE term(s)**, **44 other term(s)** and **11 referen
 
 ## References
 
-*11 reference(s).*
+*12 reference(s).*
+
+### ARCADIA language reference : meta model
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> ARCADIA stands for ARChitecture Analysis and Design Integrated Approach. This document provides a formalised view of main concepts of engineering data elaborated and exploited by ARCADIA activities, along with their relations.
+
+| Attribute | Value |
+|---|---|
+| **Authors** | Jean Luc Voirin |
+| **Date** | 2023 |
+| **URL** | [https://mbse-capella.org/resources/arcadia-reference/Arcadia%20Language%20-%20MetaModel.pdf](https://mbse-capella.org/resources/arcadia-reference/Arcadia%20Language%20-%20MetaModel.pdf) |
+
+*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+
+---
 
 ### IEEE 1012:2016
 
