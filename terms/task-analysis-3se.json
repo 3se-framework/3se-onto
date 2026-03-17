@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Task analysis - 3SE",
+  "description": "Analysis of the iteration and its assigned Epic to determine what tasks are realizing it.",
+  "status": "draft"
+}

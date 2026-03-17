@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Enabling system - 3SE",
+  "description": "System that supports the system of interest during its life cycle stages to achieve the goals it is designed for.",
+  "status": "draft"
+}

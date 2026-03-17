@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Enabling system - ISO/IEC/IEEE 15288",
+  "description": "System that supports a system-of-interest during its life cycle stages but does not necessarily contribute directly to its function during operation.",
+  "status": "standard",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/enabling-system-15288-2023"
+  ]
+}

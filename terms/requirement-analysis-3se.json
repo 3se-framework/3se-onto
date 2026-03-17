@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Requirement analysis - 3SE",
+  "description": "Analysis of an entity to decide what requirements are specifying it.",
+  "status": "draft"
+}

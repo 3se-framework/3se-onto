@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional element - 3SE",
+  "description": "Part of a system element responsible for carrying out some of the functions devolved to the system, by interacting with other functional elements of the system and/or enabling functional elements and/or actors.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023"
+  ]
+}

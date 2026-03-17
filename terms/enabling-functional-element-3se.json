@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Enabling functional element - 3SE",
+  "description": "Part of an enabling system responsible for carrying out some of the functions devolved to the enabling system, by interacting with functional elements of the system and/or actors.",
+  "status": "draft"
+}
