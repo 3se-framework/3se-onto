@@ -1,0 +1,15 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ARCADIA language reference : meta model",
+  "abstract": "ARCADIA stands for ARChitecture Analysis and Design Integrated Approach. This document provides a formalised view of main concepts of engineering data elaborated and exploited by ARCADIA activities, along with their relations.",
+  "uri": "https://mbse-capella.org/resources/arcadia-reference/Arcadia%20Language%20-%20MetaModel.pdf",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Jean Luc Voirin"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "2023"
+}
