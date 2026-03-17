@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional analysis - 3SE",
+  "description": "Analysis of an activity to determine what functions are contributing to it and their relation.",
+  "status": "draft",
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
+  "entryCreated": "2026-03-17",
+  "entryModified": "2026-03-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

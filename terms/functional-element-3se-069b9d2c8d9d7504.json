@@ -5,6 +5,13 @@
   "description": "Part of a system element responsible for carrying out some of the functions devolved to the system, by interacting with other functional elements of the system and/or enabling functional elements and/or actors.",
   "status": "draft",
   "closeMatch": [
-    "https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023"
-  ]
+    "https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
+  "entryCreated": "2026-03-17",
+  "entryModified": "2026-03-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

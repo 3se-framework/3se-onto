@@ -6,5 +6,12 @@
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
+  "entryCreated": "2026-03-17",
+  "entryModified": "2026-03-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
