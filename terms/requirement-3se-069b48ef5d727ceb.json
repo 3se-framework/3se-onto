@@ -20,21 +20,11 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
     "https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569",
-    "https://www.3se.info/3se-onto/terms/contraint-cpre-069a9faf2c897700",
-    "https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f",
-    "https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e",
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
-    "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232",
     "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
-    "https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723",
-    "https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f",
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
-    "https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af",
     "https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5",
-    "https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
-    "https://www.3se.info/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30",
-    "https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07",
     "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
   ]
 }

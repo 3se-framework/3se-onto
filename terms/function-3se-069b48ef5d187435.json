@@ -16,21 +16,11 @@
   "entryModified": "2026-03-17",
   "related": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
-    "https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda",
-    "https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f",
     "https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97",
-    "https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b",
-    "https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa",
-    "https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f",
     "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
-    "https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
-    "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232",
-    "https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934",
-    "https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677",
     "https://www.3se.info/3se-onto/terms/safety-function-3se-069b85f238b97282",
-    "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb",
     "https://www.3se.info/3se-onto/terms/security-function-3se-069b85f238da748f",
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
   ]

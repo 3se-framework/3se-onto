@@ -16,27 +16,13 @@
   },
   "related": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
-    "https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544",
-    "https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda",
-    "https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349",
     "https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97",
     "https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6",
-    "https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b",
     "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
-    "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232",
-    "https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4",
-    "https://www.3se.info/3se-onto/terms/integration-istqb-069b5a9129f872b2",
-    "https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677",
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
-    "https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6",
-    "https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
-    "https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce",
     "https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11",
-    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
-    "https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284",
-    "https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07",
-    "https://www.3se.info/3se-onto/terms/verification-1012-2016-069ac9d90bc27d0b"
+    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20"
   ]
 }
