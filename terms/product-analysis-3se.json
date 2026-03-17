@@ -4,7 +4,7 @@
   "title": "Product analysis - 3SE",
   "description": "Analysis of the features to determine what product is realizing it.",
   "status": "draft",
-  "skos:relatedMatch": [
+  "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2"
   ]
 }
