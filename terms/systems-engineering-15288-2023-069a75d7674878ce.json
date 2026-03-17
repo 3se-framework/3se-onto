@@ -25,5 +25,9 @@
       "@type": "foaf:Person",
       "name": "@regis-casteran"
     }
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20"
   ]
 }

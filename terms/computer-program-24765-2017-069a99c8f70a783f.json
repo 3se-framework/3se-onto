@@ -13,5 +13,8 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f",
   "entryCreated": "2026-03-05",
-  "entryModified": "2026-03-15"
+  "entryModified": "2026-03-15",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+  ]
 }

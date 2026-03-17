@@ -13,5 +13,18 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-03-15"
+  "entryModified": "2026-03-15",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7",
+    "https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878",
+    "https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab",
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b",
+    "https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061",
+    "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1",
+    "https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8",
+    "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
+    "https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8",
+    "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3"
+  ]
 }

@@ -13,5 +13,8 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6",
   "entryCreated": "2026-03-05",
-  "entryModified": "2026-03-15"
+  "entryModified": "2026-03-15",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ]
 }

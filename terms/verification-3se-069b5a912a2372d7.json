@@ -13,5 +13,9 @@
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878",
+    "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1"
+  ]
 }

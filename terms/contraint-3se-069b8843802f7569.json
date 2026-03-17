@@ -16,5 +16,12 @@
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e",
+    "https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723",
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
+    "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb"
+  ]
 }

@@ -13,5 +13,9 @@
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939",
+    "https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036"
+  ]
 }

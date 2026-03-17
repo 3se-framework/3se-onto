@@ -13,5 +13,8 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6",
   "entryCreated": "2026-03-05",
-  "entryModified": "2026-03-15"
+  "entryModified": "2026-03-15",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5"
+  ]
 }

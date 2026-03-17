@@ -13,5 +13,10 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4",
   "entryCreated": "2026-03-05",
-  "entryModified": "2026-03-15"
+  "entryModified": "2026-03-15",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ]
 }

@@ -13,5 +13,8 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-03-15"
+  "entryModified": "2026-03-15",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7"
+  ]
 }
