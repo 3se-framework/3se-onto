@@ -4,16 +4,19 @@
 #
 # Algorithm:
 #   1. For each 3SE term, extract the concept name = title before the first " - "
-#   2. For every other term, check if the concept name appears in its description
+#   2. For every OTHER 3SE term, check if the concept name appears in its description
 #   3. Compute the full set of justified related links for every 3SE term
 #   4. Add missing justified links (idempotent injection)
 #   5. Remove existing related links that are no longer justified (pruning)
 #   6. Warn about standalone 3SE terms with no justified links
 #
+# Only links between 3SE terms are managed. Links to external terms
+# (e.g. ISO standards, SAFe) are never injected or removed by this script.
+#
 # Pruning rules:
-#   - A related link on a 3SE term is removed if the target's concept name
-#     does not appear in the source's description AND the source's concept name
-#     does not appear in the target's description.
+#   - A related link on a 3SE term is removed if it points to a target whose
+#     concept name does not appear in the source's description AND the source's
+#     concept name does not appear in the target's description.
 #   - Links on non-3SE terms are never touched.
 #
 # Run this script after inject_uris.py and before validate_glossary.py.
@@ -137,12 +140,16 @@ def main() -> int:
 
             if name_in_description(name, description):
                 tgt_uri = uri_for_stem(tgt_stem)
-                # Forward: source 3SE term -> target (any term)
-                justified[src_stem].add(tgt_uri)
-                # Reverse: target -> source, only if target is a 3SE term
                 tgt_title = tgt_data.get("title", "")
-                if tgt_title.endswith("- 3SE"):
-                    justified[tgt_stem].add(src_uri)
+
+                # Only justify links to other 3SE terms
+                if not tgt_title.endswith("- 3SE"):
+                    continue
+
+                # Forward: source 3SE term -> target 3SE term
+                justified[src_stem].add(tgt_uri)
+                # Reverse: target 3SE term -> source 3SE term
+                justified[tgt_stem].add(src_uri)
 
     # ── Step 2: inject and prune, tracking all changes ────────────────────────
     changes: dict[str, dict] = {}
