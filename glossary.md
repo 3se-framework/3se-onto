@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-17 23:24 UTC*
+*Generated on 2026-03-17 23:43 UTC*
 
 This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 reference(s)**.
 
@@ -151,7 +151,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
 | Close match | [acceptance-1012-2016-069ac9d90baa7544](https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -163,10 +163,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [safety-activity-3se-069ab4000b0172ab-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4000b0172ab-069ab4192b7d7c00), [security-activity-3se-069ab4000b2772b4-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4000b2772b4-069ab4192b8e7951), [test-24765-2017-069b5a912a097284](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [safety-activity-3se-069ab4000b0172ab-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4000b0172ab-069ab4192b7d7c00), [security-activity-3se-069ab4000b2772b4-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4000b2772b4-069ab4192b8e7951), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 | Narrow match | [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -178,10 +178,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [inspection-24765-2017-069b5a9129de776f](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [requirement-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
+| Related | [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [requirement-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 | Narrow match | [product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -196,7 +196,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
 | Exact match | [attribute-24765-2017-069b72bee10a7f6c](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c) |
 
-*Created: 2026-03-15 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-15 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -208,10 +208,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [release-24765-2017-069b48ef5d6173d8](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Close match | [change-24765-2017-069b5b3d9ea27656](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -223,11 +223,11 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
 | Exact match | [contraint-cpre-069a9faf2c897700](https://www.3se.info/3se-onto/terms/contraint-cpre-069a9faf2c897700) |
 | Narrow match | [non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -239,10 +239,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [decision-gate-24765-2017-069b48ef5ce978eb](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7) |
+| Related | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7) |
 | Close match | [decision-gate-24765-2017-069b48ef5ce978eb](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -257,7 +257,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [test-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5) |
 | Related match | [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -297,10 +297,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [epic-safe-6-0-069b48ef5d067458](https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458), [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Narrow match | [epic-safe-6-0-069b48ef5d067458](https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -326,10 +326,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [feature-safe-6-0-069a9f3e92177c2b](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [iteration-24765-2017-069b48ef5d2a723b](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [safety-feature-3se-069ab4000b0e741a-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4000b0e741a-069ab4192b867336), [security-feature-3se-069ab4000b347137-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4000b347137-069ab4192b977269), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [safety-feature-3se-069ab4000b0e741a-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4000b0e741a-069ab4192b867336), [security-feature-3se-069ab4000b347137-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4000b347137-069ab4192b977269), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Close match | [feature-safe-6-0-069a9f3e92177c2b](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -355,10 +355,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [behavioral-component-arcadia-2023-069b9d2c8d277fda](https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda), [computer-program-24765-2017-069a99c8f70a783f](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b), [function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [functional-req-cpre-069a9faf2c977232](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232), [hosting-physical-component-arcadia-2023-069b9d2c8dad7934](https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934), [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677), [safety-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-function-3se-069b85f238b97282), [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb), [security-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-function-3se-069b85f238da748f), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [safety-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-function-3se-069b85f238b97282), [security-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-function-3se-069b85f238da748f), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Close match | [function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -385,7 +385,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Related match | [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e) |
 
 *Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
@@ -415,10 +415,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [contraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569), [contraint-cpre-069a9faf2c897700](https://www.3se.info/3se-onto/terms/contraint-cpre-069a9faf2c897700), [quality-req-cpre-069a9faf2cb177af](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [contraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
 | Related match | [functional-req-cpre-069a9faf2c977232](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -430,10 +430,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
+| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
 | Broad match | [goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -461,7 +461,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 |---|---|
 | Related | [hardware-component-3se-069a9bc4a34678c2](https://www.3se.info/3se-onto/terms/hardware-component-3se-069a9bc4a34678c2) |
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -475,7 +475,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 |---|---|
 | Related | [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5) |
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -518,7 +518,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Broad match | [iteration-24765-2017-069b48ef5d2a723b](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -547,7 +547,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7) |
 | Narrow match | [phase-gate-24765-2017-069b48ef5d46720a](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -563,7 +563,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Close match | [quality-req-cpre-069a9faf2cb177af](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af) |
 | Broad match | [non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -632,10 +632,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [inspection-24765-2017-069b5a9129de776f](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Narrow match | [problem-24765-2017-069b5b3d9ec87ba9](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -647,10 +647,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [inspection-24765-2017-069b5a9129de776f](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [iteration-24765-2017-069b48ef5d2a723b](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-24765-2017-069ad94e897e7a8f](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036), [verification-1012-2016-069ac9d90bc27d0b](https://www.3se.info/3se-onto/terms/verification-1012-2016-069ac9d90bc27d0b) |
+| Related | [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3) |
 | Narrow match | [product-24765-2017-069ad94e896d75d2](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -677,10 +677,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [change-24765-2017-069b5b3d9ea27656](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [phase-gate-24765-2017-069b48ef5d46720a](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
 | Close match | [project-24765-2017-069ad94e897e7a8f](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -706,10 +706,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7), [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [feature-safe-6-0-069a9f3e92177c2b](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3) |
+| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7), [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3) |
 | Broad match | [release-24765-2017-069b48ef5d6173d8](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -735,10 +735,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [contraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569), [contraint-cpre-069a9faf2c897700](https://www.3se.info/3se-onto/terms/contraint-cpre-069a9faf2c897700), [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [functional-req-cpre-069a9faf2c977232](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723), [project-24765-2017-069ad94e897e7a8f](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [quality-req-cpre-069a9faf2cb177af](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af), [requirement-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5), [system-element-15288-2023-069a98bf0f7e7b8e](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [test-case-1012-2016-069b5b3d9ee07f30](https://www.3se.info/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30), [validation-1012-2016-069ac9d90bb97a07](https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [contraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [requirement-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
 | Close match | [requirement-cpre-069a95b4863072f6](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -764,10 +764,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939), [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 | Exact match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -781,7 +780,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 |---|---|
 | Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -795,7 +794,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 |---|---|
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -810,7 +809,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Related match | [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -824,7 +823,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 |---|---|
 | Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -838,7 +837,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 |---|---|
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -853,7 +852,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -865,10 +864,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [software-unit-24765-2017-069a99c8f73472f6](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [software-unit-3se-069b85f238eb7572](https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572) |
+| Related | [software-unit-3se-069b85f238eb7572](https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572) |
 | Narrow match | [software-component-24765-2017-069a99c8f72b7271](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -883,7 +882,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5) |
 | Narrow match | [software-unit-24765-2017-069a99c8f73472f6](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -895,10 +894,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [safety-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-function-3se-069b85f238b97282), [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb), [security-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-function-3se-069b85f238da748f) |
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [safety-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-function-3se-069b85f238b97282), [security-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-function-3se-069b85f238da748f) |
 | Broad match | [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -910,10 +909,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [acceptance-1012-2016-069ac9d90baa7544](https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544), [behavioral-component-arcadia-2023-069b9d2c8d277fda](https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda), [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [functional-req-cpre-069a9faf2c977232](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232), [goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4), [integration-istqb-069b5a9129f872b2](https://www.3se.info/3se-onto/terms/integration-istqb-069b5a9129f872b2), [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [requirement-cpre-069a95b4863072f6](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6), [system-element-15288-2023-069a98bf0f7e7b8e](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [systems-engineering-15288-2023-069a75d7674878ce](https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [test-24765-2017-069b5a912a097284](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [validation-1012-2016-069ac9d90bb97a07](https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07), [verification-1012-2016-069ac9d90bc27d0b](https://www.3se.info/3se-onto/terms/verification-1012-2016-069ac9d90bc27d0b) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Narrow match | [system-15288-2015-069a98bf0f617409](https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -928,7 +927,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Exact match | [system-element-15288-2023-069a98bf0f7e7b8e](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -943,7 +942,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Broad match | [systems-engineering-15288-2023-069a75d7674878ce](https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -955,9 +954,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [systems-engineering-15288-2023-069a75d7674878ce](https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11) |
 
-*Created: 2026-03-16 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -969,10 +968,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e) |
+| Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e) |
 | Narrow match | [task-24765-2017-069b48ef5d7f72ee](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee) |
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -998,10 +997,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [integration-istqb-069b5a9129f872b2](https://www.3se.info/3se-onto/terms/integration-istqb-069b5a9129f872b2), [test-case-1012-2016-069b5b3d9ee07f30](https://www.3se.info/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30), [test-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5), [test-run-3se-069b5b3d9eec7efa](https://www.3se.info/3se-onto/terms/test-run-3se-069b5b3d9eec7efa), [test-run-istqb-069b5b3d9ef27c4c](https://www.3se.info/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c), [test-suite-istqb-069b5b3d9efa7549](https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [test-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5), [test-run-3se-069b5b3d9eec7efa](https://www.3se.info/3se-onto/terms/test-run-3se-069b5b3d9eec7efa) |
 | Close match | [test-24765-2017-069b5a912a097284](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1016,7 +1015,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [test-run-3se-069b5b3d9eec7efa](https://www.3se.info/3se-onto/terms/test-run-3se-069b5b3d9eec7efa) |
 | Close match | [test-case-1012-2016-069b5b3d9ee07f30](https://www.3se.info/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1028,11 +1027,11 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [test-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5), [test-suite-istqb-069b5b3d9efa7549](https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549) |
+| Related | [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [test-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5) |
 | Close match | [test-run-istqb-069b5b3d9ef27c4c](https://www.3se.info/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c) |
 | Related match | [test-suite-istqb-069b5b3d9efa7549](https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1047,7 +1046,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
 | Close match | [validation-1012-2016-069ac9d90bb97a07](https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1062,7 +1061,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 | Related | [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1) |
 | Close match | [verification-1012-2016-069ac9d90bc27d0b](https://www.3se.info/3se-onto/terms/verification-1012-2016-069ac9d90bc27d0b) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1082,7 +1081,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-07 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-07 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1098,7 +1097,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1154,7 +1153,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1170,7 +1169,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1186,7 +1185,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1202,7 +1201,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/SAE 21434:2021](https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d)
 
-*Created: 2026-03-06 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1218,7 +1217,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1234,7 +1233,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1265,7 +1264,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [Scaled Agile Framework [SAFe] - 6.0](https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0)
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1281,7 +1280,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [Scaled Agile Framework [SAFe] - 6.0](https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1297,7 +1296,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1345,7 +1344,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1361,7 +1360,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [Requirements Engineering Fundamentals](https://www.3se.info/3se-onto/references/req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1417,7 +1416,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1433,7 +1432,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1449,7 +1448,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1465,7 +1464,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1481,7 +1480,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [Systems Opportunities and Requirements](https://www.3se.info/3se-onto/references/sys-opportunities-and-req-2012-069ab5fbd08f7be9)
 
-*Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1497,7 +1496,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1537,7 +1536,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1553,7 +1552,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-08 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-08 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1569,7 +1568,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1585,7 +1584,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1601,7 +1600,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1617,7 +1616,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1633,7 +1632,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO 26262-1:2018](https://www.3se.info/3se-onto/references/iso-26262-1-2018-069ab4000b417db7)
 
-*Created: 2026-03-06 · Modified: 2026-03-16 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1661,7 +1660,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1689,7 +1688,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 15288:2023](https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1705,7 +1704,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 15288:2023](https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-03 · Modified: 2026-03-15 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-17 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
 
@@ -1733,7 +1732,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1749,7 +1748,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1765,7 +1764,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1781,7 +1780,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1797,7 +1796,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-07 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-07 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
@@ -1813,7 +1812,7 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-07 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-07 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
 
