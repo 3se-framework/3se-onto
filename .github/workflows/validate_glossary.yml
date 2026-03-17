@@ -54,6 +54,9 @@ jobs:
       - name: Inject relational URIs
         run: python scripts/inject_uris.py
 
+      - name: Inject 3SE internal links
+        run: python scripts/inject_3se_links.py
+
       - name: Inject created/updated dates
         run: python scripts/inject_dates.py
 
