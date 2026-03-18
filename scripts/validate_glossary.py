@@ -71,6 +71,9 @@ def collect_cited_reference_uris(terms_dir: Path) -> set[str]:
         for uri in data.get("isReferencedBy", []):
             cited.add(uri)
     return cited
+
+
+def main() -> int:
     total_errors = 0
 
     # Collect all known reference URIs upfront so term validation can use them
