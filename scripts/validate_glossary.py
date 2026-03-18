@@ -59,7 +59,18 @@ def validate_is_referenced_by(
     return errors
 
 
-def main() -> int:
+def collect_cited_reference_uris(terms_dir: Path) -> set[str]:
+    """Return the set of all reference URIs cited by at least one term."""
+    cited: set[str] = set()
+    if not terms_dir.exists():
+        return cited
+    for file_path in terms_dir.glob("*.json"):
+        data = load_json(file_path)
+        if data is None:
+            continue
+        for uri in data.get("isReferencedBy", []):
+            cited.add(uri)
+    return cited
     total_errors = 0
 
     # Collect all known reference URIs upfront so term validation can use them
@@ -111,6 +122,18 @@ def main() -> int:
                 total_errors += len(file_errors)
             else:
                 print(f"  ✓ {file_path.name}")
+
+    # ── Warn about unreferenced references ───────────────────────────────────
+    terms_dir = Path(DIRS["terms"]["dir"])
+    cited_reference_uris = collect_cited_reference_uris(terms_dir)
+
+    unreferenced = sorted(known_reference_uris - cited_reference_uris)
+    if unreferenced:
+        print(f"\n── Unreferenced references ({len(unreferenced)}) ──")
+        for uri in unreferenced:
+            print(f"  ⚠️  {uri}")
+    else:
+        print("\n── All references are cited by at least one term ✓ ──")
 
     print(f"\n{'─' * 40}")
     if total_errors > 0:
