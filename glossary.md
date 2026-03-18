@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-17 23:43 UTC*
+*Generated on 2026-03-18 19:07 UTC*
 
 This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 reference(s)**.
 
@@ -144,14 +144,14 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Evaluation of an entity conducted to enable a stakeholder to determine whether the right entity is built and to accept it. Note : it determines if the entity satisfies the stakeholders’ requirements and the stakeholders’ goals.
+> Evaluation of the attributes and features of an entity conducted to enable a stakeholder to determine whether the right entity is built and to accept it. Note : it determines if the entity satisfies the stakeholders’ requirements and the stakeholders’ goals.
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Close match | [acceptance-1012-2016-069ac9d90baa7544](https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544) |
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -163,10 +163,10 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [safety-activity-3se-069ab4000b0172ab-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4000b0172ab-069ab4192b7d7c00), [security-activity-3se-069ab4000b2772b4-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4000b2772b4-069ab4192b8e7951), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 | Narrow match | [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -189,14 +189,14 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Inherent property or characteristic of an entity that can be observed quantitatively or qualitatively.
+> Inherent property or characteristic of an entity that can be observed quantitatively or qualitatively and evaluated against some acceptance criteria.
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
-| Exact match | [attribute-24765-2017-069b72bee10a7f6c](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e) |
+| Narrow match | [attribute-24765-2017-069b72bee10a7f6c](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c) |
 
-*Created: 2026-03-15 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-15 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -778,9 +778,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
+| BFO subclass of | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -821,9 +821,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
+| BFO subclass of | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1075,13 +1075,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Formal testing conducted to enable a user, customer, or other authorized entity to determine whether to accept a system or component.
 
-| Relation | Terms |
-|---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-07 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-07 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1091,13 +1087,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Set of cohesive tasks of a process, which transforms inputs into outputs.
 
-| Relation | Terms |
-|---|---|
-| Related | [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1131,13 +1123,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A system component, responsible for carrying out some of the functions devolved to the system, by interacting with its other behavioral components and external actors.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [ARCADIA language reference : meta model](https://www.3se.info/3se-onto/references/arcadia-language-2023-069b9d2c8e027d4c)
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1147,13 +1135,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Modification to any formally controlled deliverable, project management plan component, or project document.
 
-| Relation | Terms |
-|---|---|
-| Related | [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1163,13 +1147,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Combination of computer instructions and data definitions that enable computer hardware to perform computational or control functions.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1179,13 +1159,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A requirement that limits the solution space beyond what is necessary for meeting the given functional requirements and quality requirements
 
-| Relation | Terms |
-|---|---|
-| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1195,13 +1171,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Measure that is modifying risk.
 
-| Relation | Terms |
-|---|---|
-| Related | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
-
 **References:** [ISO/SAE 21434:2021](https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d)
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1211,13 +1183,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Approval event. Note: often associated with a review meeting. Entry and exit criteria are established for each decision gate; continuation beyond the decision gate is contingent on the agreement of decision-makers.
 
-| Relation | Terms |
-|---|---|
-| Related | [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1227,13 +1195,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Dynamic analysis technique that relies on observation of system or component behavior during execution, without need for post-execution analysis, to detect errors, violations of development standards, and other problems.
 
-| Relation | Terms |
-|---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1245,10 +1209,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Close match | [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1258,13 +1221,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > An Epic is a significant solution development initiative
 
-| Relation | Terms |
-|---|---|
-| Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab) |
-
 **References:** [Scaled Agile Framework [SAFe] - 6.0](https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0)
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1274,13 +1233,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A Feature represents solution functionality that delivers business value, fulfills a stakeholder need, and is sized to be delivered by an Agile Release Train within a PI.
 
-| Relation | Terms |
-|---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
-
 **References:** [Scaled Agile Framework [SAFe] - 6.0](https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1290,13 +1245,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Transformation of inputs to outputs, by means of some mechanisms, and subject to certain controls, that is identified by a function name and modeled by a box.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1306,13 +1257,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Examination of a defined function to identify all the sub-functions necessary to accomplish that function, to identify functional relationships and interfaces (internal and external) and capture these in a functional architecture, to flow down upper-level performance requirements and to assign these requirements to lower-level sub-functions.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1322,13 +1269,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Hierarchical arrangement of functions, their internal and external (external to the aggregation itself) functional interfaces and external physical interfaces, their respective functional and performance requirements, and their design constraints.
 
-| Relation | Terms |
-|---|---|
-| Related | [contraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1338,13 +1281,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A requirement concerning a result or behavior that shall be provided by a function of a system.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1354,13 +1293,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Goals are a stakeholder’s (e.g., a person’s or an organization’s) description of a characteristic property of the system to be developed or the development project.
 
-| Relation | Terms |
-|---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [Requirements Engineering Fundamentals](https://www.3se.info/3se-onto/references/req-eng-fundamentals-2nd-ed-069a9faf2cb97eb3)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1394,13 +1329,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A component hosting a number of behavioral components, providing them with the resources they require to function and to interact with their environment.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
-
 **References:** [ARCADIA language reference : meta model](https://www.3se.info/3se-onto/references/arcadia-language-2023-069b9d2c8e027d4c)
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1410,13 +1341,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Static analysis technique that relies on visual examination of development products to detect errors, violations of development standards, and other problems.
 
-| Relation | Terms |
-|---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1426,13 +1353,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A test level that focuses on interactions between components or systems.
 
-| Relation | Terms |
-|---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
-
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1442,13 +1365,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Short time frame in which a set of software features is developed, leading to a working product that can be demonstrated to stakeholders.
 
-| Relation | Terms |
-|---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1458,13 +1377,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A quality requirement or a constraint
 
-| Relation | Terms |
-|---|---|
-| Related | [contraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/contraint-3se-069b8843802f7569), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1474,13 +1389,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > An operational situation/configuration of a system characterized by its active functions.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [Systems Opportunities and Requirements](https://www.3se.info/3se-onto/references/sys-opportunities-and-req-2012-069ab5fbd08f7be9)
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1490,13 +1401,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Review at the end of a phase in which a decision is made to continue to the next phase, to continue with modification, or to end a project or program.
 
-| Relation | Terms |
-|---|---|
-| Related | [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1530,13 +1437,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Evaluating a product by manual or automated means to determine if the product has certain characteristics.
 
-| Relation | Terms |
-|---|---|
-| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1546,13 +1449,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Endeavor with defined start and finish criteria undertaken to create a product or a service in accordance with specified resources and requirements.
 
-| Relation | Terms |
-|---|---|
-| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-08 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-08 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1562,13 +1461,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A requirement that pertains to a quality concern that is not covered by functional requirements.
 
-| Relation | Terms |
-|---|---|
-| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1578,13 +1473,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Collection of one or more new or changed configuration items deployed into the live environment as a result of one or more changes.
 
-| Relation | Terms |
-|---|---|
-| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1594,13 +1485,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > 1. A need perceived by a stakeholder. 2. A capability or property that a system shall have. 3. A documented representation of a need, capability or property
 
-| Relation | Terms |
-|---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1610,13 +1497,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > The combination of the likelihood of occurrence and the consequences of a given future undesirable event. Risk can be associated with products and/or projects.
 
-| Relation | Terms |
-|---|---|
-| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
-
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1626,13 +1509,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Technical solution implemented by E/E functions or elements, or by other technologies, to detect and mitigate or tolerate faults or control or avoid failures in order to maintain intended functionality or achieve or maintain a safe state.
 
-| Relation | Terms |
-|---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
-
 **References:** [ISO 26262-1:2018](https://www.3se.info/3se-onto/references/iso-26262-1-2018-069ab4000b417db7)
 
-*Created: 2026-03-06 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1654,13 +1533,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Atomic-level software component of the software architecture that can be subjected to standalone testing.
 
-| Relation | Terms |
-|---|---|
-| Related | [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1682,13 +1557,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Discrete part of a system that can be implemented to fulfil specified requirements.
 
-| Relation | Terms |
-|---|---|
-| Related | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [ISO/IEC/IEEE 15288:2023](https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-05 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1698,13 +1569,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Transdisciplinary and integrative approach to enable the successful realization, use and retirement of engineered systems using systems principles and concepts and scientific, technological and management methods
 
-| Relation | Terms |
-|---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
-
 **References:** [ISO/IEC/IEEE 15288:2023](https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2)
 
-*Created: 2026-03-03 · Modified: 2026-03-17 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
+*Created: 2026-03-03 · Modified: 2026-03-18 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
 
@@ -1726,13 +1593,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > Activity in which a system or component is executed under specified conditions, the results are observed or recorded, and an evaluation is made of some aspect of the system or component.
 
-| Relation | Terms |
-|---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1742,13 +1605,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A set of test inputs, execution conditions, and expected results developed for a particular objective, such as to exercise a particular program path or to verify compliance with a specific requirement.
 
-| Relation | Terms |
-|---|---|
-| Related | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
-
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1758,13 +1617,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > The execution of a test suite on a specific version of the test object.
 
-| Relation | Terms |
-|---|---|
-| Related | [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
-
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1774,13 +1629,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > A set of test scripts or test procedures to be executed in a specific test run.
 
-| Relation | Terms |
-|---|---|
-| Related | [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [test-run-3se-069b5b3d9eec7efa](https://www.3se.info/3se-onto/terms/test-run-3se-069b5b3d9eec7efa) |
-
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1790,13 +1641,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > The process of evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements.
 
-| Relation | Terms |
-|---|---|
-| Related | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-07 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-07 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
@@ -1806,13 +1653,9 @@ This glossary contains **63 3SE term(s)**, **49 other term(s)** and **12 referen
 
 > The process of evaluating a system or component to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase.
 
-| Relation | Terms |
-|---|---|
-| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
-*Created: 2026-03-07 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-07 · Modified: 2026-03-18 · Creator: @rcasteran*
 
 ---
 
