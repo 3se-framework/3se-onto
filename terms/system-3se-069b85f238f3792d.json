@@ -21,6 +21,10 @@
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
     "https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11",
-    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20"
+    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
+    "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
   ]
 }
