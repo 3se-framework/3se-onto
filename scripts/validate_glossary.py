@@ -73,6 +73,63 @@ def collect_cited_reference_uris(terms_dir: Path) -> set[str]:
     return cited
 
 
+SKOS_RELATION_FIELDS = [
+    "broader", "narrower", "related",
+    "exactMatch", "closeMatch", "broadMatch", "narrowMatch", "relatedMatch",
+]
+
+SE3_TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
+
+
+def collect_unrelated_non_se3_terms(terms_dir: Path) -> list[tuple[str, str]]:
+    """
+    Return (filename, title) for non-3SE terms that have no SKOS relation
+    pointing to any 3SE term (title ending with '- 3SE').
+
+    A non-3SE term is considered related to the 3SE framework if at least one
+    of its SKOS relation fields contains the URI of a 3SE term.
+    """
+    if not terms_dir.exists():
+        return []
+
+    # First pass: collect all 3SE term URIs
+    se3_uris: set[str] = set()
+    all_terms: dict[str, tuple[str, dict]] = {}  # stem -> (filename, data)
+    for file_path in sorted(terms_dir.glob("*.json")):
+        data = load_json(file_path)
+        if data is None:
+            continue
+        all_terms[file_path.stem] = (file_path.name, data)
+        if data.get("title", "").endswith("- 3SE"):
+            uri = data.get("@id") or (SE3_TERM_BASE_IRI + file_path.stem)
+            se3_uris.add(uri)
+
+    # Second pass: find non-3SE terms with no relation to any 3SE term URI
+    unrelated = []
+    for stem, (filename, data) in all_terms.items():
+        title = data.get("title", "")
+        if title.endswith("- 3SE"):
+            continue  # skip 3SE terms
+
+        related_to_se3 = False
+        for field in SKOS_RELATION_FIELDS:
+            values = data.get(field, [])
+            if isinstance(values, str):
+                values = [values]
+            for val in values:
+                uri = val if isinstance(val, str) else val.get("@id", "")
+                if uri in se3_uris:
+                    related_to_se3 = True
+                    break
+            if related_to_se3:
+                break
+
+        if not related_to_se3:
+            unrelated.append((filename, title))
+
+    return unrelated
+
+
 def main() -> int:
     total_errors = 0
 
@@ -137,6 +194,15 @@ def main() -> int:
             print(f"  ⚠️  {uri}")
     else:
         print("\n── All references are cited by at least one term ✓ ──")
+
+    # ── Warn about non-3SE terms unrelated to any 3SE term ───────────────────
+    unrelated_terms = collect_unrelated_non_se3_terms(terms_dir)
+    if unrelated_terms:
+        print(f"\n── Non-3SE terms with no relation to any 3SE term ({len(unrelated_terms)}) ──")
+        for filename, title in unrelated_terms:
+            print(f"  ⚠️  {filename}  ({title})")
+    else:
+        print("\n── All non-3SE terms are related to at least one 3SE term ✓ ──")
 
     print(f"\n{'─' * 40}")
     if total_errors > 0:
