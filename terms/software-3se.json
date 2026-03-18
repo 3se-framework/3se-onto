@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software - 3SE",
+  "description": "Part of the system that is the combination of computer instructions that enables hardware to perform computational or control functions, and that exposes software interfaces.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f"
+  ]
+}

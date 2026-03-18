@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware - 3SE",
+  "description": "Part of the system that is used to process, store, or transmit software or data, and that exposes hardware interfaces.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367"
+  ]
+}

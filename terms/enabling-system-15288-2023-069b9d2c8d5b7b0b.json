@@ -4,9 +4,6 @@
   "title": "Enabling system - ISO/IEC/IEEE 15288",
   "description": "System that supports a system-of-interest during its life cycle stages but does not necessarily contribute directly to its function during operation.",
   "status": "standard",
-  "closeMatch": [
-    "https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b"
-  ],
   "@id": "https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b",
   "entryCreated": "2026-03-17",
   "entryModified": "2026-03-18",
