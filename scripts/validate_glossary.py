@@ -82,6 +82,9 @@ def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
         return errors  # no point checking title consistency on a malformed stem
 
     title_concept = title.split(" - ", maxsplit=1)[0].strip().lower()
+    # Normalise hyphens to spaces in the title concept to match stem format
+    # (e.g. "Non-functional" -> "non functional")
+    title_concept = title_concept.replace("-", " ")
     stem_concept = stem_to_concept_name(stem)
 
     if not stem_concept:
