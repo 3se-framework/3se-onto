@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Fault - ISO 26262-1",
+  "description": "Abnormal condition that can cause an element or an item to fail.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-26262-1-2018-069ab4000b417db7"
+  ]
+}
