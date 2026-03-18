@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import re
 import sys
 from pathlib import Path
 import jsonschema
@@ -35,6 +36,64 @@ def collect_reference_uris(data_dir: Path) -> set[str]:
         uri = data.get("@id") or (REFERENCE_BASE_IRI + file_path.stem)
         uris.add(uri)
     return uris
+
+
+UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
+DOUBLE_UUID_RE = re.compile(r"-[0-9a-f]{16}-[0-9a-f]{16}$")
+SE3_STEM_RE = re.compile(r"-3se$")
+
+
+def stem_to_concept_name(stem: str) -> str:
+    """
+    Derive the expected concept name from a 3SE file stem.
+    e.g. "enabling-physical-element-3se-069b9d2c8d5375f6"
+      -> strip UUID suffix  -> "enabling-physical-element-3se"
+      -> strip "-3se" suffix -> "enabling-physical-element"
+      -> replace hyphens    -> "enabling physical element"
+    """
+    s = UUID_SUFFIX_RE.sub("", stem)
+    s = SE3_STEM_RE.sub("", s)
+    return s.replace("-", " ").lower()
+
+
+def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
+    """
+    Check that the concept name in the title is consistent with the concept
+    name derived from the file stem. Only applies to 3SE terms (title ending
+    with '- 3SE') where the naming convention is strictly enforced.
+
+    Also detects double UUID suffixes in the stem, which should never occur.
+
+    The title concept name must start with the stem concept name — this
+    tolerates stems that use abbreviated words (e.g. 'req' for 'requirement').
+    Returns a list of error messages (empty if consistent).
+    """
+    errors: list[str] = []
+    title = data.get("title", "")
+    if not title.endswith("- 3SE"):
+        return errors
+
+    # Check for double UUID suffix
+    if DOUBLE_UUID_RE.search(stem):
+        errors.append(
+            f"stem \"{stem}\" contains two UUID suffixes — "
+            f"only one is expected; please rename the file"
+        )
+        return errors  # no point checking title consistency on a malformed stem
+
+    title_concept = title.split(" - ", maxsplit=1)[0].strip().lower()
+    stem_concept = stem_to_concept_name(stem)
+
+    if not stem_concept:
+        return errors
+
+    if not title_concept.startswith(stem_concept):
+        errors.append(
+            f"title concept name \"{title_concept}\" does not match "
+            f"stem concept name \"{stem_concept}\" — "
+            f"expected title to start with \"{stem_concept.title()}\""
+        )
+    return errors
 
 
 def validate_is_referenced_by(
@@ -173,6 +232,9 @@ def main() -> int:
             if type_name == "terms":
                 file_errors.extend(
                     validate_is_referenced_by(data, file_path.name, known_reference_uris)
+                )
+                file_errors.extend(
+                    validate_title_vs_stem(data, file_path.stem)
                 )
 
             if file_errors:
