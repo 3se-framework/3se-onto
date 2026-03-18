@@ -13,10 +13,5 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232",
   "entryCreated": "2026-03-05",
-  "entryModified": "2026-03-17",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
-    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
-  ]
+  "entryModified": "2026-03-17"
 }

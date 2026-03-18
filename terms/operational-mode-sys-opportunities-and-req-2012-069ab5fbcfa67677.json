@@ -13,9 +13,5 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677",
   "entryCreated": "2026-03-06",
-  "entryModified": "2026-03-17",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
-  ]
+  "entryModified": "2026-03-17"
 }

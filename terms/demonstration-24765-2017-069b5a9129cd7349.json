@@ -13,10 +13,5 @@
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  },
-  "related": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
-    "https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
-  ]
+  }
 }
