@@ -151,11 +151,28 @@ def build_reference_index(references: list[dict]) -> dict[str, dict]:
     return {r["@id"]: r for r in references if "@id" in r}
 
 
+def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as their subClassOf. Used to compute the inverse superClassOf relation.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("subClassOf")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 # ---------------------------------------------------------------------------
 # Term rendering
 # ---------------------------------------------------------------------------
 
-def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
+def render_term(term: dict, ref_index: dict[str, dict],
+                superclass_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -220,6 +237,17 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
         uris = [subclass] if isinstance(subclass, str) else subclass
         links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in uris]
         relation_rows.append(("Subclass of", ", ".join(links)))
+
+    # superClassOf (computed inverse)
+    if superclass_index:
+        term_id = term.get("@id", "")
+        subclasses = superclass_index.get(term_id, [])
+        if subclasses:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in subclasses
+            ]
+            relation_rows.append(("Superclass of", ", ".join(links)))
 
     # Mapping relations (SKOS — cross-vocabulary alignment, non-BFO)
     for field, label in [
@@ -392,6 +420,7 @@ def main() -> int:
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
+    superclass_index = build_superclass_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
 
@@ -445,7 +474,7 @@ def main() -> int:
 
     if se3_terms:
         for term in se3_terms:
-            md.extend(render_term(term, ref_index))
+            md.extend(render_term(term, ref_index, superclass_index))
             md.append("---")
             md.append("")
     else:
@@ -460,7 +489,7 @@ def main() -> int:
 
     if other_terms:
         for term in other_terms:
-            md.extend(render_term(term, ref_index))
+            md.extend(render_term(term, ref_index, superclass_index))
             md.append("---")
             md.append("")
     else:

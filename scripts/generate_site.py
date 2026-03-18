@@ -153,6 +153,22 @@ def build_reference_index(references: list[dict]) -> dict[str, dict]:
     return {r["@id"]: r for r in references if "@id" in r}
 
 
+def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as their subClassOf. Used to compute the inverse superClassOf relation.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("subClassOf")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def clean_jsonld(entry: dict) -> dict:
     return {k: v for k, v in entry.items() if not k.startswith("_")}
 
@@ -733,7 +749,8 @@ def render_uri_link(uri: str, label: str | None = None) -> str:
     return f'<a href="{uri}" target="_blank" rel="noopener">{display} ↗</a>'
 
 
-def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
+def render_term_page(term: dict, ref_index: dict[str, dict],
+                     superclass_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -817,12 +834,25 @@ def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
     if subclass:
         uris = [subclass] if isinstance(subclass, str) else subclass
         links = [render_uri_link(uri) for uri in uris]
-        bfo_html = (
+        bfo_html += (
             f'<tr>'
             f'<td>Subclass of</td>'
             f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
             f'</tr>'
         )
+
+    # superClassOf (computed inverse)
+    if superclass_index:
+        term_id = term.get("@id", "")
+        subclasses = superclass_index.get(term_id, [])
+        if subclasses:
+            links = [render_uri_link(t.get("@id", "")) for t in subclasses]
+            bfo_html += (
+                f'<tr>'
+                f'<td>Superclass of</td>'
+                f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
+                f'</tr>'
+            )
 
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
@@ -1057,6 +1087,8 @@ def main() -> int:
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
+    superclass_index = build_superclass_index(terms)
+    
     se3_terms, other_terms = split_terms(terms)
 
     # Rebuild _site/
@@ -1095,7 +1127,7 @@ def main() -> int:
         out_dir = SITE_DIR / "terms" / stem
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
-            render_term_page(term, ref_index), encoding="utf-8"
+            render_term_page(term, ref_index, superclass_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",
