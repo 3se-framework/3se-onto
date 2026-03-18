@@ -104,6 +104,16 @@ def stem_for_uri(uri: str) -> str | None:
     return None
 
 
+def subclass_uris(data: dict) -> set[str]:
+    """Return the set of URIs declared as rdfs:subClassOf on a term."""
+    val = data.get("subClassOf")
+    if not val:
+        return set()
+    if isinstance(val, str):
+        return {val}
+    return set(val)
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -130,6 +140,8 @@ def main() -> int:
 
     for src_stem, name in se3_concepts.items():
         src_uri = uri_for_stem(src_stem)
+        src_data = index[src_stem][1]
+        src_subclass_uris = subclass_uris(src_data)
 
         for tgt_stem, (_, tgt_data) in index.items():
             if tgt_stem == src_stem:
@@ -144,6 +156,11 @@ def main() -> int:
 
                 # Only justify links to other 3SE terms
                 if not tgt_title.endswith("- 3SE"):
+                    continue
+
+                # Skip if source is already a subclass of target or vice versa
+                tgt_subclass_uris = subclass_uris(tgt_data)
+                if tgt_uri in src_subclass_uris or src_uri in tgt_subclass_uris:
                     continue
 
                 # Forward: source 3SE term -> target 3SE term

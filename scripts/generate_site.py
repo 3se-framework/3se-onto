@@ -810,18 +810,33 @@ def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
         return out
 
     hier = rel_rows([("broader", "Broader"), ("narrower", "Narrower"), ("related", "Related")])
+
+    # BFO subclass relation
+    bfo_html = ""
+    subclass = term.get("subClassOf")
+    if subclass:
+        uris = [subclass] if isinstance(subclass, str) else subclass
+        links = [render_uri_link(uri) for uri in uris]
+        bfo_html = (
+            f'<tr>'
+            f'<td>BFO subclass of</td>'
+            f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
+            f'</tr>'
+        )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
     relations_html = ""
-    if hier or match:
-        separator = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and match else ""
+    if hier or bfo_html or match:
+        sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (bfo_html or match) else ""
+        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{separator}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{match}</table>
         </div>"""
 
     # isReferencedBy

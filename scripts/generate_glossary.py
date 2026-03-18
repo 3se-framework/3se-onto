@@ -214,7 +214,14 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
             links.append(f"[{display}]({uri})")
         relation_rows.append((label, ", ".join(links)))
 
-    # Mapping relations
+    # BFO subclass relation
+    subclass = term.get("subClassOf")
+    if subclass:
+        uris = [subclass] if isinstance(subclass, str) else subclass
+        links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in uris]
+        relation_rows.append(("BFO subclass of", ", ".join(links)))
+
+    # Mapping relations (SKOS — cross-vocabulary alignment, non-BFO)
     for field, label in [
         ("exactMatch", "Exact match"),
         ("closeMatch", "Close match"),

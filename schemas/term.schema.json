@@ -131,6 +131,26 @@
       },
       "uniqueItems": true
     },
+    "subClassOf": {
+      "description": "rdfs:subClassOf — IRI of the BFO class that this concept is a subclass of. Used exclusively for formal subsumption under the Basic Formal Ontology (BFO). Every instance of this concept is also an instance of the referenced BFO class.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri",
+          "description": "IRI of the BFO class."
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "IRIs of the BFO classes (when subsumed by more than one)."
+        }
+      ]
+    },
     "semanticRelation": {
       "description": "skos:semanticRelation — Generic semantic relation to another concept in the same scheme. Prefer the more specific sub-properties (broader, narrower, related) whenever possible.",
       "type": "array",
