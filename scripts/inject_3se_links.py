@@ -82,14 +82,45 @@ def name_variants(name: str) -> list[str]:
     return list(variants)
 
 
-def name_in_description(name: str, description: str) -> bool:
+def extract_qualifier_words(se3_concepts: dict[str, str]) -> set[str]:
+    """
+    Build the set of first words from multi-word 3SE concept names.
+    These are words that, when appearing immediately before a concept name,
+    indicate a different compound concept (e.g. 'enabling' before 'physical element').
+    Only words from multi-word concept names are included, since single-word
+    names cannot form compound qualifiers.
+    """
+    qualifiers: set[str] = set()
+    for name in se3_concepts.values():
+        words = name.split()
+        if len(words) > 1:
+            qualifiers.add(words[0].lower())
+    return qualifiers
+
+
+def name_in_description(name: str, description: str,
+                        qualifier_words: set[str] | None = None) -> bool:
     """
     Return True if concept name (or its plural/singular form) appears as a
-    whole word/phrase in description. Case-insensitive, word-boundary aware.
+    whole phrase in description, and is NOT qualified by a known compound
+    concept qualifier (e.g. 'enabling' before 'physical element').
+
+    A match is rejected if the word immediately preceding the match belongs
+    to the set of known qualifier words derived from multi-word 3SE concept names.
     """
     for variant in name_variants(name):
         pattern = r"(?<![a-zA-Z0-9])" + re.escape(variant) + r"(?![a-zA-Z0-9])"
-        if re.search(pattern, description, re.IGNORECASE):
+        for m in re.finditer(pattern, description, re.IGNORECASE):
+            start = m.start()
+            # Extract the word immediately preceding the match (if any)
+            preceding_text = description[:start].rstrip()
+            if preceding_text:
+                # Get the last word before the match
+                preceding_words = preceding_text.split()
+                if preceding_words:
+                    last_word = preceding_words[-1].lower().rstrip(".,;:")
+                    if qualifier_words and last_word in qualifier_words:
+                        continue  # qualifier word precedes — this is a compound concept
             return True
     return False
 
@@ -134,6 +165,9 @@ def main() -> int:
         if name:
             se3_concepts[stem] = name
 
+    # Build qualifier words from multi-word 3SE concept names
+    qualifier_words = extract_qualifier_words(se3_concepts)
+
     # ── Step 1: compute justified related links for every term ────────────────
     # justified[stem] = set of URIs that are justified for that stem
     justified: dict[str, set[str]] = {stem: set() for stem in index}
@@ -150,7 +184,7 @@ def main() -> int:
             if not description:
                 continue
 
-            if name_in_description(name, description):
+            if name_in_description(name, description, qualifier_words):
                 tgt_uri = uri_for_stem(tgt_stem)
                 tgt_title = tgt_data.get("title", "")
 
