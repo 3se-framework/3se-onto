@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Physical element - 3SE",
+  "title": "Enabling physical element - 3SE",
   "description": "Part of an enabling system responsible for defining the resources to carrying out the enabling functional element of the enabling system, by interacting with physical elements of the system and/or actors.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6",
