@@ -18,6 +18,7 @@
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "related": [
-    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
+    "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8"
   ]
 }
