@@ -83,51 +83,51 @@ SE3_TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 
 def collect_unrelated_non_se3_terms(terms_dir: Path) -> list[tuple[str, str]]:
     """
-    Return (filename, title) for non-3SE terms that have no SKOS relation
-    pointing to any 3SE term (title ending with '- 3SE').
+    Return (filename, title) for non-3SE terms that are not referenced by any
+    SKOS relation field on any 3SE term.
 
-    A non-3SE term is considered related to the 3SE framework if at least one
-    of its SKOS relation fields contains the URI of a 3SE term.
+    Logic:
+      1. Collect the @id URI of every non-3SE term.
+      2. Scan every 3SE term's SKOS relation fields and collect all referenced URIs.
+      3. Return non-3SE terms whose URI does not appear in any 3SE relation.
     """
     if not terms_dir.exists():
         return []
 
-    # First pass: collect all 3SE term URIs
-    se3_uris: set[str] = set()
-    all_terms: dict[str, tuple[str, dict]] = {}  # stem -> (filename, data)
+    # Pass 1: collect URI -> (filename, title) for all non-3SE terms
+    non_se3: dict[str, tuple[str, str]] = {}  # uri -> (filename, title)
     for file_path in sorted(terms_dir.glob("*.json")):
         data = load_json(file_path)
         if data is None:
             continue
-        all_terms[file_path.stem] = (file_path.name, data)
-        if data.get("title", "").endswith("- 3SE"):
-            uri = data.get("@id") or (SE3_TERM_BASE_IRI + file_path.stem)
-            se3_uris.add(uri)
-
-    # Second pass: find non-3SE terms with no relation to any 3SE term URI
-    unrelated = []
-    for stem, (filename, data) in all_terms.items():
         title = data.get("title", "")
         if title.endswith("- 3SE"):
-            continue  # skip 3SE terms
+            continue
+        uri = data.get("@id") or (SE3_TERM_BASE_IRI + file_path.stem)
+        non_se3[uri] = (file_path.name, title)
 
-        related_to_se3 = False
+    # Pass 2: collect all URIs referenced by any SKOS field on any 3SE term
+    referenced_uris: set[str] = set()
+    for file_path in sorted(terms_dir.glob("*.json")):
+        data = load_json(file_path)
+        if data is None:
+            continue
+        if not data.get("title", "").endswith("- 3SE"):
+            continue
         for field in SKOS_RELATION_FIELDS:
             values = data.get(field, [])
             if isinstance(values, str):
                 values = [values]
             for val in values:
                 uri = val if isinstance(val, str) else val.get("@id", "")
-                if uri in se3_uris:
-                    related_to_se3 = True
-                    break
-            if related_to_se3:
-                break
+                referenced_uris.add(uri)
 
-        if not related_to_se3:
-            unrelated.append((filename, title))
-
-    return unrelated
+    # Pass 3: non-3SE terms whose URI is never referenced by a 3SE term
+    return [
+        (filename, title)
+        for uri, (filename, title) in non_se3.items()
+        if uri not in referenced_uris
+    ]
 
 
 def main() -> int:
