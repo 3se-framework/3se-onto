@@ -4,7 +4,7 @@
   "title": "Hazard - 3SE",
   "description": "Potential source of physical injury or damage to the health of persons caused by a failure of the system of interest.",
   "status": "draft",
-  "skos:closeMatch": [
+  "closeMatch": [
     "https://www.3se.info/3se-onto/terms/hazard-26262-1-069ab4192b747d7d"
   ]
 }
