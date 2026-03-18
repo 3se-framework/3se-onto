@@ -82,45 +82,68 @@ def name_variants(name: str) -> list[str]:
     return list(variants)
 
 
-def extract_qualifier_words(se3_concepts: dict[str, str]) -> set[str]:
+def extract_qualifier_words(se3_concepts: dict[str, str]) -> tuple[set[str], set[str]]:
     """
-    Build the set of first words from multi-word 3SE concept names.
-    These are words that, when appearing immediately before a concept name,
-    indicate a different compound concept (e.g. 'enabling' before 'physical element').
-    Only words from multi-word concept names are included, since single-word
-    names cannot form compound qualifiers.
+    Build two sets of qualifier words from multi-word 3SE concept names:
+    - prefix_qualifiers: first words (e.g. 'enabling' from 'enabling physical element')
+      A match is rejected when one of these precedes the concept name.
+    - suffix_qualifiers: last words and their plurals (e.g. 'case'/'cases' from
+      'test case', 'run' from 'test run').
+      A match is rejected when one of these follows the concept name.
+    Only words from multi-word concept names are included.
     """
-    qualifiers: set[str] = set()
+    prefix_qualifiers: set[str] = set()
+    suffix_qualifiers: set[str] = set()
     for name in se3_concepts.values():
         words = name.split()
         if len(words) > 1:
-            qualifiers.add(words[0].lower())
-    return qualifiers
+            prefix_qualifiers.add(words[0].lower())
+            last = words[-1].lower()
+            suffix_qualifiers.add(last)
+            # Add naive plural so "cases" matches "case", "elements" matches "element"
+            for plural in name_variants(last):
+                suffix_qualifiers.add(plural.lower())
+    return prefix_qualifiers, suffix_qualifiers
 
 
 def name_in_description(name: str, description: str,
-                        qualifier_words: set[str] | None = None) -> bool:
+                        prefix_qualifiers: set[str] | None = None,
+                        suffix_qualifiers: set[str] | None = None) -> bool:
     """
     Return True if concept name (or its plural/singular form) appears as a
-    whole phrase in description, and is NOT qualified by a known compound
-    concept qualifier (e.g. 'enabling' before 'physical element').
+    whole phrase in description, and is NOT part of a longer compound concept.
 
-    A match is rejected if the word immediately preceding the match belongs
-    to the set of known qualifier words derived from multi-word 3SE concept names.
+    Two compound-concept guards are applied:
+    - Prefix guard: rejects a match if the word immediately before it is a
+      known prefix qualifier (e.g. 'enabling' before 'physical element').
+    - Suffix guard: rejects a match if the word immediately after it is a
+      known suffix qualifier (e.g. 'case' after 'test', 'run' after 'test').
     """
     for variant in name_variants(name):
         pattern = r"(?<![a-zA-Z0-9])" + re.escape(variant) + r"(?![a-zA-Z0-9])"
         for m in re.finditer(pattern, description, re.IGNORECASE):
-            start = m.start()
-            # Extract the word immediately preceding the match (if any)
-            preceding_text = description[:start].rstrip()
-            if preceding_text:
-                # Get the last word before the match
-                preceding_words = preceding_text.split()
-                if preceding_words:
-                    last_word = preceding_words[-1].lower().rstrip(".,;:")
-                    if qualifier_words and last_word in qualifier_words:
-                        continue  # qualifier word precedes — this is a compound concept
+            start, end = m.start(), m.end()
+
+            # Prefix guard: check the word immediately before the match
+            if prefix_qualifiers:
+                preceding_text = description[:start].rstrip()
+                if preceding_text:
+                    preceding_words = preceding_text.split()
+                    if preceding_words:
+                        last_word = preceding_words[-1].lower().rstrip(".,;:")
+                        if last_word in prefix_qualifiers:
+                            continue  # compound concept — skip
+
+            # Suffix guard: check the word immediately after the match
+            if suffix_qualifiers:
+                following_text = description[end:].lstrip()
+                if following_text:
+                    following_words = following_text.split()
+                    if following_words:
+                        first_word = following_words[0].lower().lstrip(".,;:")
+                        if first_word in suffix_qualifiers:
+                            continue  # compound concept — skip
+
             return True
     return False
 
@@ -136,7 +159,7 @@ def stem_for_uri(uri: str) -> str | None:
 
 
 def subclass_uris(data: dict) -> set[str]:
-    """Return the set of URIs declared as rdfs:subClassOf on a term."""
+    """Return the set of URIs declared as subClassOf on a term."""
     val = data.get("subClassOf")
     if not val:
         return set()
@@ -166,7 +189,7 @@ def main() -> int:
             se3_concepts[stem] = name
 
     # Build qualifier words from multi-word 3SE concept names
-    qualifier_words = extract_qualifier_words(se3_concepts)
+    prefix_qualifiers, suffix_qualifiers = extract_qualifier_words(se3_concepts)
 
     # ── Step 1: compute justified related links for every term ────────────────
     # justified[stem] = set of URIs that are justified for that stem
@@ -184,7 +207,7 @@ def main() -> int:
             if not description:
                 continue
 
-            if name_in_description(name, description, qualifier_words):
+            if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers):
                 tgt_uri = uri_for_stem(tgt_stem)
                 tgt_title = tgt_data.get("title", "")
 

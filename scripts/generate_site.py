@@ -1088,7 +1088,7 @@ def main() -> int:
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
-    
+
     se3_terms, other_terms = split_terms(terms)
 
     # Rebuild _site/
