@@ -219,7 +219,7 @@ def render_term(term: dict, ref_index: dict[str, dict]) -> list[str]:
     if subclass:
         uris = [subclass] if isinstance(subclass, str) else subclass
         links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in uris]
-        relation_rows.append(("BFO subclass of", ", ".join(links)))
+        relation_rows.append(("Subclass of", ", ".join(links)))
 
     # Mapping relations (SKOS — cross-vocabulary alignment, non-BFO)
     for field, label in [

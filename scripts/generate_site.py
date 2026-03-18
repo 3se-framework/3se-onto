@@ -819,7 +819,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict]) -> str:
         links = [render_uri_link(uri) for uri in uris]
         bfo_html = (
             f'<tr>'
-            f'<td>BFO subclass of</td>'
+            f'<td>Subclass of</td>'
             f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
             f'</tr>'
         )
