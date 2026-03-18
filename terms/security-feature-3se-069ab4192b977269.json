@@ -1,14 +1,14 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Safety feature - 3SE",
-  "description": "A feature which is relevant for safety engineering",
+  "title": "Security feature - 3SE",
+  "description": "A feature which is relevant for security engineering",
   "status": "draft",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4000b0e741a-069ab4192b867336",
+  "@id": "https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4192b977269",
   "entryCreated": "2026-03-06",
   "entryModified": "2026-03-18",
   "subClassOf": [
