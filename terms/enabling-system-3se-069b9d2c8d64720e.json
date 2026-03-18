@@ -11,10 +11,12 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97",
     "https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6",
-    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
   ]
 }
