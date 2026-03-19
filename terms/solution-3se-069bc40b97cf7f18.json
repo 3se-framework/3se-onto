@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Solution - 3SE",
+  "description": "Combination of people, processes, and technologies to implement a system.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569",
+    "https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab",
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-03-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Stakeholder - 3SE",
+  "description": "A person or organization who influences a system attribute, or a system feature, or who is impacted by one of them.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
+    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-03-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

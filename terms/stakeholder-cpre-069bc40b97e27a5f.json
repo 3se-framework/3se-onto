@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f",
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-03-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
