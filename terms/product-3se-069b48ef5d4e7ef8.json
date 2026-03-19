@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Product - 3SE",
-  "description": "Artifact that is produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.",
+  "description": "Implementation of a system that is produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.",
   "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2"
