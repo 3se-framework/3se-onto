@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Stakeholder - IREB CPRE",
+  "description": "A person or organization who influences a system's requirements or who is impacted by that system.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
+  ]
+}
