@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Data - 3SE",
+  "description": "Functional flow made of symbols.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/flow-3se"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e"
+  ],
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-03-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

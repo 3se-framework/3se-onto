@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Exchange - 3SE",
+  "description": "Output produced by an activity and consumed by another activity.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253"
+  ],
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-03-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
