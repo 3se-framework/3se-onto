@@ -4,7 +4,7 @@
   "title": "Functional interface - 3SE",
   "description": "Boundary across which two functional elements and/or functional enabling elements and/or actors meet and exchange flows.",
   "status": "draft",
-  "relatedMatch ": [
+  "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/behavioral-port-arcadia-2023"
   ]
 }
