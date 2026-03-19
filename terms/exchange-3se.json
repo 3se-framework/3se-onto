@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Exchange - 3SE",
+  "description": "Output produced by an activity and consumed by another activity.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023"
+  ]
+}

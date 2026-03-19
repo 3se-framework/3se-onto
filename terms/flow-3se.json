@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Flow - 3SE",
+  "description": "Output produced by a function and consumed by another function.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023"
+  ]
+}

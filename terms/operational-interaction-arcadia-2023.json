@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Operational interaction - ARCADIA",
+  "description": "A possible dependency between two operational activities – the interaction source and destination, in the form of transmitting elements conveyed by the interaction.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/arcadia-language-2023-069b9d2c8e027d4c"
+  ]
+}
