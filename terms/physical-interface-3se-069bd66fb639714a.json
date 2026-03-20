@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Physical interface - 3SE",
+  "description": "Part of system interface across which two physical elements and/or physical enabling elements and/or actors meet and exchange flows.",
+  "status": "draft",
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+  ],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

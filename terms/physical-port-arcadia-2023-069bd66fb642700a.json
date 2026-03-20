@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/arcadia-language-2023-069b9d2c8e027d4c"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a",
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
