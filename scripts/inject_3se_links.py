@@ -167,6 +167,12 @@ def name_in_description(name: str, description: str,
     is_single_word = len(name.split()) == 1
 
     for variant in name_variants(name):
+        # Only apply the POS guard to the base form of the concept name.
+        # Inflected forms (plurals, singulars) are almost never verbs —
+        # e.g. "activities", "functions", "states" — so tagging them is
+        # unreliable and causes false negatives.
+        apply_pos_guard = is_single_word and variant.lower() == name.lower()
+
         pattern = r"(?<![a-zA-Z0-9])" + re.escape(variant) + r"(?![a-zA-Z0-9])"
         for m in re.finditer(pattern, description, re.IGNORECASE):
             start, end = m.start(), m.end()
@@ -191,8 +197,8 @@ def name_in_description(name: str, description: str,
                         if first_word in suffix_qualifiers:
                             continue  # compound concept — skip
 
-            # POS guard: for single-word names, reject verb usages
-            if is_single_word:
+            # POS guard: for the base form of single-word names, reject verb usages
+            if apply_pos_guard:
                 # Find the sentence containing the match using character offsets
                 sentences = nltk.sent_tokenize(description)
                 containing = description  # fallback to full description
