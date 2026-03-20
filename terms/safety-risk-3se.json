@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety risk - 3SE",
+  "description": "Risk related to an hazard.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
+  ]
+}

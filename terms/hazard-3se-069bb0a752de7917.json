@@ -2,15 +2,12 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Hazard - 3SE",
-  "description": "Risk of physical injury or damage to the health of persons caused by a failure of the system of interest.",
+  "description": "Potential source of physical injury or damage to the health of persons caused by a failure of the system of interest.",
   "status": "draft",
-  "relatedMatch": [
+  "closeMatch": [
     "https://www.3se.info/3se-onto/terms/hazard-26262-1-069ab4192b747d7d"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
-  "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
-  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8"
