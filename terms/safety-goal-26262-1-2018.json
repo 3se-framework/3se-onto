@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety goal - ISO 26262-1",
+  "description": "Top-level safety requirement as a result of the hazard analysis and risk assessment at the vehicle level.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-26262-1-2018-069ab4000b417db7"
+  ]
+}
