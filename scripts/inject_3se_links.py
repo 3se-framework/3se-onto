@@ -166,7 +166,9 @@ def name_in_description(name: str, description: str,
     """
     is_single_word = len(name.split()) == 1
 
+    print(name)
     for variant in name_variants(name):
+        print(f"variant: {variant}")
         # Only apply the POS guard to the base form of the concept name.
         # Inflected forms (plurals, singulars) are almost never verbs —
         # e.g. "activities", "functions", "states" — so tagging them is
@@ -185,6 +187,7 @@ def name_in_description(name: str, description: str,
                     if preceding_words:
                         last_word = preceding_words[-1].lower().rstrip(".,;:")
                         if last_word in prefix_qualifiers:
+                            print(f"compound concept — prefix — skip")
                             continue  # compound concept — skip
 
             # Suffix guard: check the word immediately after the match
@@ -195,6 +198,7 @@ def name_in_description(name: str, description: str,
                     if following_words:
                         first_word = following_words[0].lower().lstrip(".,;:")
                         if first_word in suffix_qualifiers:
+                            print(f"compound concept — suffix — skip")
                             continue  # compound concept — skip
 
             # POS guard: for the base form of single-word names, reject verb usages
@@ -211,6 +215,7 @@ def name_in_description(name: str, description: str,
                     if s_start != -1:
                         offset = s_start + len(s)
                 if not is_noun_in_context(variant, containing):
+                    print(f"verb usage — skip")
                     continue  # verb usage — skip
 
             return True
@@ -276,6 +281,7 @@ def main() -> int:
             if not description:
                 continue
 
+            print(src_stem)
             if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers):
                 tgt_uri = uri_for_stem(tgt_stem)
                 tgt_title = tgt_data.get("title", "")
