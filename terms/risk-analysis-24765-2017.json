@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Risk analysis - ISO/IEC/IEEE 24765",
+  "description": "Process of examining identified risk factors for probability of occurrence, potential loss, and potential risk-handling strategies.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ]
+}

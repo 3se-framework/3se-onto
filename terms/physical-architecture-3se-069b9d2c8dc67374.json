@@ -11,8 +11,10 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+  ],
   "related": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
   ]
