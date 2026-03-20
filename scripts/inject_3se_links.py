@@ -20,6 +20,7 @@
 #   - Links on non-3SE terms are never touched.
 #
 # Run this script after inject_uris.py and before validate_glossary.py.
+# Requires: inflect, nltk (with punkt_tab and averaged_perceptron_tagger_eng data)
 
 import json
 import re
@@ -27,6 +28,31 @@ import sys
 from pathlib import Path
 
 import inflect
+import nltk
+
+# Ensure required NLTK data is available (downloaded once, cached locally)
+for _pkg in ("punkt_tab", "averaged_perceptron_tagger_eng"):
+    try:
+        nltk.data.find(f"tokenizers/{_pkg}" if "punkt" in _pkg else f"taggers/{_pkg}")
+    except LookupError:
+        nltk.download(_pkg, quiet=True)
+
+
+def is_noun_in_context(word: str, sentence: str) -> bool:
+    """
+    Return True if `word` appears in `sentence` tagged as a noun (NN*).
+    Used to disambiguate single-word concept names that are also common verbs
+    (e.g. 'exchange', 'flow', 'change', 'test') — only noun usages justify
+    a skos:related link.
+    The check is applied only for single-word concept names.
+    """
+    tokens = nltk.word_tokenize(sentence)
+    tags = nltk.pos_tag(tokens)
+    for token, tag in tags:
+        if token.lower() == word.lower() and tag.startswith("NN"):
+            return True
+    return False
+
 
 _inflect = inflect.engine()
 
@@ -118,7 +144,13 @@ def name_in_description(name: str, description: str,
       known prefix qualifier (e.g. 'enabling' before 'physical element').
     - Suffix guard: rejects a match if the word immediately after it is a
       known suffix qualifier (e.g. 'case' after 'test', 'run' after 'test').
+
+    For single-word concept names, an additional POS guard is applied:
+    the matched word must be tagged as a noun (NN*) in context, rejecting
+    verb usages (e.g. 'exchange flows' where 'exchange' is a verb).
     """
+    is_single_word = len(name.split()) == 1
+
     for variant in name_variants(name):
         pattern = r"(?<![a-zA-Z0-9])" + re.escape(variant) + r"(?![a-zA-Z0-9])"
         for m in re.finditer(pattern, description, re.IGNORECASE):
@@ -143,6 +175,18 @@ def name_in_description(name: str, description: str,
                         first_word = following_words[0].lower().lstrip(".,;:")
                         if first_word in suffix_qualifiers:
                             continue  # compound concept — skip
+
+            # POS guard: for single-word names, reject verb usages
+            if is_single_word:
+                # Find the sentence containing the match for better POS context
+                sentences = nltk.sent_tokenize(description)
+                containing = next(
+                    (s for s in sentences if m.start() >= description.find(s)
+                     and m.start() < description.find(s) + len(s)),
+                    description,
+                )
+                if not is_noun_in_context(variant, containing):
+                    continue  # verb usage — skip
 
             return True
     return False

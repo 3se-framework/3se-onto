@@ -1,3 +1,4 @@
 jsonschema[format]>=4.26.0
 uuid7>=0.1.0
 inflect>=7.0.0
+nltk>=3.8
