@@ -8,6 +8,13 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
   ],
   "relatedMatch": [
-    "https://www.3se.info/3se-onto/terms/cybersecurity-goal-21434-2021"
-  ]
+    "https://www.3se.info/3se-onto/terms/cybersecurity-goal-21434-2021-069bdc311ff97c0b"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-goal-3se-069bdc3120f77833",
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

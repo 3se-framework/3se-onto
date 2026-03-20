@@ -8,6 +8,13 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
   ],
   "relatedMatch": [
-    "https://www.3se.info/3se-onto/terms/safety-goal-26262-1-2018"
-  ]
+    "https://www.3se.info/3se-onto/terms/safety-goal-26262-1-2018-069bdc31209a70e3"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/safety-goal-3se-069bdc3120a277c9",
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

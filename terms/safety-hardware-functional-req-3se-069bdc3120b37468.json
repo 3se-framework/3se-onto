@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety hardware functional requirement - 3SE",
+  "description": "Functional requirement about a hardware which is relevant for safety engineering.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
+  ],
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-functional-req-3se-069bdc3120b37468",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+  ],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
