@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Physical port - ARCADIA",
+  "description": "A hosting physical component’s point of connection with its environment. A physical port is not oriented.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/arcadia-language-2023-069b9d2c8e027d4c"
+  ]
+}
