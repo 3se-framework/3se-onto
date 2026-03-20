@@ -111,13 +111,16 @@ def name_variants(name: str) -> list[str]:
     """
     Return all forms to search for: singular and plural.
     Handles multi-word concept names (e.g. 'System element' -> also 'System elements').
+    Note: inflect is called with the lowercased last word to ensure correct
+    pluralisation (e.g. 'Activity' -> 'activities', not 'Activitys').
     """
     variants = {name}
     words = name.split()
-    plural_last = _inflect.plural(words[-1])
-    if plural_last and plural_last.lower() != words[-1].lower():
+    last_lower = words[-1].lower()
+    plural_last = _inflect.plural(last_lower)
+    if plural_last and plural_last.lower() != last_lower:
         variants.add(" ".join(words[:-1] + [plural_last]) if len(words) > 1 else plural_last)
-    singular_last = _inflect.singular_noun(words[-1])
+    singular_last = _inflect.singular_noun(last_lower)
     if singular_last:
         variants.add(" ".join(words[:-1] + [singular_last]) if len(words) > 1 else singular_last)
     return list(variants)
@@ -166,9 +169,7 @@ def name_in_description(name: str, description: str,
     """
     is_single_word = len(name.split()) == 1
 
-    print(name)
     for variant in name_variants(name):
-        print(f"variant: {variant}")
         # Only apply the POS guard to the base form of the concept name.
         # Inflected forms (plurals, singulars) are almost never verbs —
         # e.g. "activities", "functions", "states" — so tagging them is
@@ -187,7 +188,6 @@ def name_in_description(name: str, description: str,
                     if preceding_words:
                         last_word = preceding_words[-1].lower().rstrip(".,;:")
                         if last_word in prefix_qualifiers:
-                            print(f"compound concept — prefix — skip")
                             continue  # compound concept — skip
 
             # Suffix guard: check the word immediately after the match
@@ -198,7 +198,6 @@ def name_in_description(name: str, description: str,
                     if following_words:
                         first_word = following_words[0].lower().lstrip(".,;:")
                         if first_word in suffix_qualifiers:
-                            print(f"compound concept — suffix — skip")
                             continue  # compound concept — skip
 
             # POS guard: for the base form of single-word names, reject verb usages
@@ -215,7 +214,6 @@ def name_in_description(name: str, description: str,
                     if s_start != -1:
                         offset = s_start + len(s)
                 if not is_noun_in_context(variant, containing):
-                    print(f"verb usage — skip")
                     continue  # verb usage — skip
 
             return True
@@ -281,7 +279,6 @@ def main() -> int:
             if not description:
                 continue
 
-            print(src_stem)
             if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers):
                 tgt_uri = uri_for_stem(tgt_stem)
                 tgt_title = tgt_data.get("title", "")
