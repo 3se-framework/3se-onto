@@ -4,9 +4,6 @@
   "title": "Analysis - 3SE",
   "description": "Evaluation method of an attribute or feature of an entity using a set of model and calculation",
   "status": "draft",
-  "narrowMatch": [
-    "https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2"
-  ],
   "@id": "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
   "entryCreated": "2026-03-14",
   "entryModified": "2026-03-20",
