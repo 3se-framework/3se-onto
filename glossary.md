@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-20 23:11 UTC*
+*Generated on 2026-03-20 23:30 UTC*
 
-This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 reference(s)**.
+This glossary contains **113 3SE term(s)**, **64 other term(s)** and **12 reference(s)**.
 
 ## Contents
 
@@ -73,6 +73,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
   - [Safety hardware function - 3SE](#safety-hardware-function---3se)
   - [Safety hardware functional requirement - 3SE](#safety-hardware-functional-requirement---3se)
   - [Safety hardware non-functional requirement - 3SE](#safety-hardware-non-functional-requirement---3se)
+  - [Safety risk - 3SE](#safety-risk---3se)
   - [Safety software constraint - 3SE](#safety-software-constraint---3se)
   - [Safety software function - 3SE](#safety-software-function---3se)
   - [Safety software functional requirement - 3SE](#safety-software-functional-requirement---3se)
@@ -88,6 +89,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
   - [Security hardware function - 3SE](#security-hardware-function---3se)
   - [Security hardware functional requirement - 3SE](#security-hardware-functional-requirement---3se)
   - [Security hardware non-functional requirement - 3SE](#security-hardware-non-functional-requirement---3se)
+  - [Security risk - 3SE](#security-risk---3se)
   - [Security software constraint - 3SE](#security-software-constraint---3se)
   - [Security software function - 3SE](#security-software-function---3se)
   - [Security software functional requirement - 3SE](#security-software-functional-requirement---3se)
@@ -201,7 +203,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 
 ## 3SE Terms
 
-*111 term(s) defined by the 3SE framework.*
+*113 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -230,7 +232,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 | Superclass of | [safety-activity-3se-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4192b7d7c00), [security-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4192b8e7951) |
 | Narrow match | [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
 
-*Created: 2026-03-13 · Modified: 2026-03-19 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -253,15 +255,14 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Risk of deliberate actions to compromise one or more attributes of the system of interest that is worth protecting.
+> Set of deliberate actions to compromise one or more attributes of the system of interest that is worth protecting.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
-| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
-| Related match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
+| Broad match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
 
-*Created: 2026-03-18 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-03-21 · Creator: @rcasteran*
 
 ---
 
@@ -727,15 +728,14 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Risk of physical injury or damage to the health of persons caused by a failure of the system of interest.
+> Potential source of physical injury or damage to the health of persons caused by a failure of the system of interest.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8) |
-| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
-| Related match | [hazard-26262-1-069ab4192b747d7d](https://www.3se.info/3se-onto/terms/hazard-26262-1-069ab4192b747d7d) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0) |
+| Close match | [hazard-26262-1-069ab4192b747d7d](https://www.3se.info/3se-onto/terms/hazard-26262-1-069ab4192b747d7d) |
 
-*Created: 2026-03-18 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-03-21 · Creator: @rcasteran*
 
 ---
 
@@ -1081,7 +1081,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 
 | Relation | Terms |
 |---|---|
-| Superclass of | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4) |
+| Superclass of | [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
 | Close match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 
 *Created: 2026-03-14 · Modified: 2026-03-20 · Creator: @rcasteran*
@@ -1206,6 +1206,21 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 | Broad match | [technical-safety-requirement-26262-1-2018-069bdc31214e72c2](https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2) |
 
 *Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Safety risk - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Risk related to an hazard.
+
+| Relation | Terms |
+|---|---|
+| Related | [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+
+*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
 
 ---
 
@@ -1435,6 +1450,21 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 | Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
 
 *Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Security risk - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Risk related to an attack.
+
+| Relation | Terms |
+|---|---|
+| Related | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+
+*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
 
 ---
 
