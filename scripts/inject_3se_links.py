@@ -325,12 +325,26 @@ def main() -> int:
             print(f"  - removed: {stem} -> {tgt_stem}  (no longer justified)")
 
     # ── Step 3: warn about standalone 3SE terms ───────────────────────────────
+    # Build a set of all 3SE term URIs that are referenced by any subClassOf
+    # field — these are superclasses and are never truly standalone
+    superclass_uris: set[str] = set()
+    for stem2, (_, data2) in index.items():
+        for uri in subclass_uris(data2):
+            superclass_uris.add(uri)
+
     for stem, name in se3_concepts.items():
         working = changes.get(stem, index[stem][1])
         existing = working.get("related", [])
         if isinstance(existing, str):
             existing = [existing]
         if not existing:
+            term_uri = uri_for_stem(stem)
+            # Not standalone if it declares subClassOf (is itself a subclass)
+            if subclass_uris(working):
+                continue
+            # Not standalone if other terms declare it as subClassOf (is a superclass)
+            if term_uri in superclass_uris:
+                continue
             print(
                 f"  ⚠️  standalone: {stem}  "
                 f"(concept '{name}' not found in any other term's description)",
