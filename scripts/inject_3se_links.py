@@ -40,16 +40,34 @@ for _pkg in ("punkt_tab", "averaged_perceptron_tagger_eng"):
 
 def is_noun_in_context(word: str, sentence: str) -> bool:
     """
-    Return True if `word` appears in `sentence` tagged as a noun (NN*).
-    Used to disambiguate single-word concept names that are also common verbs
-    (e.g. 'exchange', 'flow', 'change', 'test') — only noun usages justify
-    a skos:related link.
-    The check is applied only for single-word concept names.
+    Return True if `word` appears in `sentence` tagged as a noun (NN*) and
+    not in a verbal context. Used to disambiguate single-word concept names
+    that are also common verbs (e.g. 'exchange', 'flow', 'change', 'test').
+
+    Rejects the match if:
+    - The token is tagged as a verb (VB*), OR
+    - It is preceded by a coordinating conjunction ('and', 'or', 'and/or'),
+      which signals a coordinated verb phrase (e.g. 'meet and exchange flows')
     """
     tokens = nltk.word_tokenize(sentence)
     tags = nltk.pos_tag(tokens)
-    for token, tag in tags:
-        if token.lower() == word.lower() and tag.startswith("NN"):
+    for i, (token, tag) in enumerate(tags):
+        if token.lower() != word.lower():
+            continue
+        # Reject if tagged as a verb
+        if tag.startswith("VB"):
+            return False
+        # Reject if immediately preceded by a coordinating conjunction
+        # (covers "meet and exchange", "interact and/or exchange")
+        if i > 0:
+            prev_token = tags[i - 1][0].lower()
+            if prev_token in ("and", "or", "and/or", "/"):
+                return False
+            # Also reject if preceded by conj + conj (e.g. "and / or exchange")
+            if i > 1 and tags[i - 2][0].lower() in ("and", "or"):
+                return False
+        # Accept only if tagged as a noun
+        if tag.startswith("NN"):
             return True
     return False
 
