@@ -1,13 +1,13 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Security function - 3SE",
-  "description": "Function to control failures in order to achieve or maintain a secure state.",
+  "title": "Safety system function - 3SE",
+  "description": "Function of a system to control failures in order to achieve or maintain a safe state.",
   "status": "draft",
   "relatedMatch": [
-    "https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939"
+    "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/security-function-3se-069b85f238da748f",
+  "@id": "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282",
   "entryCreated": "2026-03-16",
   "entryModified": "2026-03-18",
   "entryCreator": {
