@@ -9,7 +9,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
   "related": [
-    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],
   "entryCreated": "2026-03-18",
