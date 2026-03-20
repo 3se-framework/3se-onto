@@ -193,13 +193,17 @@ def name_in_description(name: str, description: str,
 
             # POS guard: for single-word names, reject verb usages
             if is_single_word:
-                # Find the sentence containing the match for better POS context
+                # Find the sentence containing the match using character offsets
                 sentences = nltk.sent_tokenize(description)
-                containing = next(
-                    (s for s in sentences if m.start() >= description.find(s)
-                     and m.start() < description.find(s) + len(s)),
-                    description,
-                )
+                containing = description  # fallback to full description
+                offset = 0
+                for s in sentences:
+                    s_start = description.find(s, offset)
+                    if s_start != -1 and s_start <= start < s_start + len(s):
+                        containing = s
+                        break
+                    if s_start != -1:
+                        offset = s_start + len(s)
                 if not is_noun_in_context(variant, containing):
                     continue  # verb usage — skip
 
