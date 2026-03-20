@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Project risk - 3SE",
+  "description": "Risk related to a project uncertainty (customer satisfaction, project quality, project cost, project schedule, project resources, project expertise...) about a maturity gate or a decision gate.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
+  ],
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878",
+    "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1",
+    "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf"
+  ],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -15,19 +15,6 @@
     "name": "@rcasteran"
   },
   "related": [
-    "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
-    "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
-    "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
-    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
-    "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
-    "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
-    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
-    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
-    "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
-    "https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8",
-    "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",
-    "https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5",
-    "https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e",
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ]
 }

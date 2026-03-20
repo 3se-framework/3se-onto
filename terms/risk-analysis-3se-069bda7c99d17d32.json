@@ -5,9 +5,16 @@
   "description": "Analysis of an entity to determine what undesirable event it can encounter and how to treat it.",
   "status": "draft",
   "narrowMatch": [
-    "https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017"
+    "https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad"
   ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32",
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

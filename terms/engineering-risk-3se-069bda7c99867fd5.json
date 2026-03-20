@@ -6,5 +6,15 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595"
+  ],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
