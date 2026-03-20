@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-20 13:39 UTC*
+*Generated on 2026-03-20 20:17 UTC*
 
-This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 reference(s)**.
+This glossary contains **84 3SE term(s)**, **60 other term(s)** and **12 reference(s)**.
 
 ## Contents
 
@@ -20,6 +20,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
   - [Enabling functional element - 3SE](#enabling-functional-element---3se)
   - [Enabling physical element - 3SE](#enabling-physical-element---3se)
   - [Enabling system - 3SE](#enabling-system---3se)
+  - [Engineering risk - 3SE](#engineering-risk---3se)
   - [Epic - 3SE](#epic---3se)
   - [Epic analysis - 3SE](#epic-analysis---3se)
   - [Exchange - 3SE](#exchange---3se)
@@ -39,6 +40,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
   - [Hardware - 3SE](#hardware---3se)
   - [Hardware block - 3SE](#hardware-block---3se)
   - [Hardware component - 3SE](#hardware-component---3se)
+  - [Hardware interface - 3SE](#hardware-interface---3se)
   - [Hazard - 3SE](#hazard---3se)
   - [Information - 3SE](#information---3se)
   - [Inspection - 3SE](#inspection---3se)
@@ -48,18 +50,22 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
   - [Maturity gate - 3SE](#maturity-gate---3se)
   - [Non-functional requirement - 3SE](#non-functional-requirement---3se)
   - [Operational analysis - 3SE](#operational-analysis---3se)
+  - [Organization risk - 3SE](#organization-risk---3se)
   - [Physical architecture - 3SE](#physical-architecture---3se)
   - [Physical element - 3SE](#physical-element---3se)
+  - [Physical interface - 3SE](#physical-interface---3se)
   - [Problem - 3SE](#problem---3se)
   - [Product - 3SE](#product---3se)
   - [Product analysis - 3SE](#product-analysis---3se)
   - [Project - 3SE](#project---3se)
   - [Project analysis - 3SE](#project-analysis---3se)
+  - [Project risk - 3SE](#project-risk---3se)
   - [Release - 3SE](#release---3se)
   - [Release analysis - 3SE](#release-analysis---3se)
   - [Requirement - 3SE](#requirement---3se)
   - [Requirement analysis - 3SE](#requirement-analysis---3se)
   - [Risk - 3SE](#risk---3se)
+  - [Risk analysis - 3SE](#risk-analysis---3se)
   - [Safety activity - 3SE](#safety-activity---3se)
   - [Safety feature - 3SE](#safety-feature---3se)
   - [Safety function - 3SE](#safety-function---3se)
@@ -68,12 +74,14 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
   - [Security function - 3SE](#security-function---3se)
   - [Software - 3SE](#software---3se)
   - [Software component - 3SE](#software-component---3se)
+  - [Software interface - 3SE](#software-interface---3se)
   - [Software unit - 3SE](#software-unit---3se)
   - [Solution - 3SE](#solution---3se)
   - [Stakeholder - 3SE](#stakeholder---3se)
   - [State - 3SE](#state---3se)
   - [System - 3SE](#system---3se)
   - [System element - 3SE](#system-element---3se)
+  - [System interface - 3SE](#system-interface---3se)
   - [Systems engineering - 3SE](#systems-engineering---3se)
   - [Systems principles - 3SE](#systems-principles---3se)
   - [Task - 3SE](#task---3se)
@@ -112,19 +120,23 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
   - [Hosting physical component - ARCADIA](#hosting-physical-component---arcadia)
   - [Inspection - ISO/IEC/IEEE 24765](#inspection---isoiecieee-24765)
   - [Integration testing - ISTQB](#integration-testing---istqb)
+  - [Interface - ISO/IEC/IEEE 24765](#interface---isoiecieee-24765)
   - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
   - [Non-functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
   - [Operational interaction - ARCADIA](#operational-interaction---arcadia)
   - [Operational mode - Systems Opportunities and Requirements](#operational-mode---systems-opportunities-and-requirements)
   - [Phase gate - ISO/IEC/IEEE 24765](#phase-gate---isoiecieee-24765)
+  - [Physical port - ARCADIA](#physical-port---arcadia)
   - [Problem - ISO/IEC/IEEE 24765](#problem---isoiecieee-24765)
   - [Product - ISO/IEC/IEEE 24765](#product---isoiecieee-24765)
   - [Product analysis - ISO/IEC/IEEE 24765](#product-analysis---isoiecieee-24765)
   - [Project - ISO/IEC/IEEE 24765](#project---isoiecieee-24765)
+  - [Project risk - ISO/IEC/IEEE 24765](#project-risk---isoiecieee-24765)
   - [Quality Requirement - IREB CPRE](#quality-requirement---ireb-cpre)
   - [Release - ISO/IEC/IEEE 24765](#release---isoiecieee-24765)
   - [Requirement - IREB CPRE](#requirement---ireb-cpre)
   - [Risk - IEEE 1012](#risk---ieee-1012)
+  - [Risk analysis - ISO/IEC/IEEE 24765](#risk-analysis---isoiecieee-24765)
   - [Safety mechanism - ISO 26262-1](#safety-mechanism---iso-26262-1)
   - [Software component - ISO/IEC/IEEE 24765](#software-component---isoiecieee-24765)
   - [Software unit - ISO/IEC/IEEE 24765](#software-unit---isoiecieee-24765)
@@ -158,7 +170,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ## 3SE Terms
 
-*76 term(s) defined by the 3SE framework.*
+*84 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -199,7 +211,8 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [requirement-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Superclass of | [epic-analysis-3se-069b9d2c8d6c7640](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [requirement-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [task-analysis-3se-069b9d2c8df9750e](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e) |
 | Narrow match | [product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2) |
 
 *Created: 2026-03-14 · Modified: 2026-03-20 · Creator: @rcasteran*
@@ -210,12 +223,13 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Set of deliberate actions to compromise one or more attributes of the system of interest that is worth protecting.
+> Risk of deliberate actions to compromise one or more attributes of the system of interest that is worth protecting.
 
 | Relation | Terms |
 |---|---|
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
-| Broad match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+| Related match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
 
 *Created: 2026-03-18 · Modified: 2026-03-20 · Creator: @rcasteran*
 
@@ -291,10 +305,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7) |
+| Related | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4) |
 | Close match | [decision-gate-24765-2017-069b48ef5ce978eb](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb) |
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -349,11 +363,26 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Close match | [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b) |
 
-*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Engineering risk - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Risk related to a technical uncertainty (feasability, scope...) about a release.
+
+| Relation | Terms |
+|---|---|
+| Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -380,9 +409,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061) |
+| Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -455,9 +485,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -469,7 +500,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 | Close match | [functional-exchange-arcadia-2023-069bc4ea532a72d7](https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023-069bc4ea532a72d7) |
 
 *Created: 2026-03-19 · Modified: 2026-03-20 · Creator: @rcasteran*
@@ -500,10 +531,11 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -515,10 +547,11 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -541,11 +574,11 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Boundary across which two functional elements and/or functional enabling elements and/or actors meet and exchange flows.
+> Part of system interface across which two functional elements and/or functional enabling elements and/or actors meet and exchange flows.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 | Related match | [behavioral-port-arcadia-2023-069bc53af24b724a](https://www.3se.info/3se-onto/terms/behavioral-port-arcadia-2023-069bc53af24b724a) |
 
 *Created: 2026-03-19 · Modified: 2026-03-20 · Creator: @rcasteran*
@@ -591,9 +624,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -605,7 +639,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
+| Related | [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920) |
 | Subclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Narrow match | [hardware-24765-2017-069a9bc4a30f7367](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367) |
 
@@ -641,18 +675,34 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ---
 
+### Hardware interface - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Boundary across which two hardware elements meet and exchange flows.
+
+| Relation | Terms |
+|---|---|
+| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
+| Subclass of | [physical-interface-3se](https://www.3se.info/3se-onto/terms/physical-interface-3se) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
 ### Hazard - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Potential source of physical injury or damage to the health of persons caused by a failure of the system of interest.
+> Risk of physical injury or damage to the health of persons caused by a failure of the system of interest.
 
 | Relation | Terms |
 |---|---|
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8) |
-| Close match | [hazard-26262-1-069ab4192b747d7d](https://www.3se.info/3se-onto/terms/hazard-26262-1-069ab4192b747d7d) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+| Related match | [hazard-26262-1-069ab4192b747d7d](https://www.3se.info/3se-onto/terms/hazard-26262-1-069ab4192b747d7d) |
 
-*Created: 2026-03-18 · Modified: 2026-03-18 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -722,9 +772,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
+| Related | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -736,10 +787,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7) |
+| Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4) |
 | Narrow match | [phase-gate-24765-2017-069b48ef5d46720a](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a) |
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -768,9 +819,24 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Organization risk - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Risk related to an uncertainty about the organization governance and mission (funding, legal...).
+
+| Relation | Terms |
+|---|---|
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -782,9 +848,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -796,11 +863,26 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3) |
+| Related | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 | Superclass of | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
 | Close match | [hosting-physical-component-arcadia-2023-069b9d2c8dad7934](https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934) |
 
-*Created: 2026-03-17 · Modified: 2026-03-18 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Physical interface - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of system interface across which two physical elements and/or physical enabling elements and/or actors meet and exchange flows.
+
+| Relation | Terms |
+|---|---|
+| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
+| Related match | [physical-port-arcadia-2023-069bd66fb642700a](https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -842,10 +924,11 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -857,7 +940,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [iteration-analysis-3se-069b9d2c8db57db4](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4) |
 | Close match | [project-24765-2017-069ad94e897e7a8f](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f) |
 
 *Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
@@ -872,9 +955,26 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Project risk - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Risk related to a project uncertainty (customer satisfaction, project quality, project cost, project schedule, project resources, project expertise...) about a maturity gate or a decision gate.
+
+| Relation | Terms |
+|---|---|
+| Related | [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+| Broad match | [project-risk-24765-2017-069bda7c99b971fb](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -886,10 +986,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7), [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3) |
+| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7), [decision-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5) |
 | Broad match | [release-24765-2017-069b48ef5d6173d8](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8) |
 
-*Created: 2026-03-13 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -901,9 +1001,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -931,9 +1032,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Related | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -945,9 +1047,25 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Exact match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
+| Superclass of | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4) |
+| Close match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 
-*Created: 2026-03-14 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
+### Risk analysis - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Analysis of an entity to determine what undesirable event it can encounter and how to treat it.
+
+| Relation | Terms |
+|---|---|
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+| Narrow match | [risk-analysis-24765-2017-069bda7c99c97bad](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -1047,7 +1165,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c) |
 | Subclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Close match | [computer-program-24765-2017-069a99c8f70a783f](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f) |
 
@@ -1067,6 +1185,21 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 | Narrow match | [software-component-24765-2017-069a99c8f72b7271](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271) |
 
 *Created: 2026-03-16 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Software interface - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Boundary across which a software element and a hardware elements meet and exchange flows.
+
+| Relation | Terms |
+|---|---|
+| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
+| Subclass of | [physical-interface-3se](https://www.3se.info/3se-onto/terms/physical-interface-3se) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -1138,7 +1271,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [solution-3se-069bc40b97cf7f18](https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [solution-3se-069bc40b97cf7f18](https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 | Superclass of | [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 | Narrow match | [system-15288-2015-069a98bf0f617409](https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409) |
 
@@ -1159,6 +1292,21 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 | Exact match | [system-element-15288-2023-069a98bf0f7e7b8e](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e) |
 
 *Created: 2026-03-16 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### System interface - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Boundary across which two systems and/or enabling systems and/or actors meet and exchange flows.
+
+| Relation | Terms |
+|---|---|
+| Related | [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Narrow match | [interface-24765-2017-069bd66fb62f7f5f](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f) |
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -1214,9 +1362,10 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8) |
+| Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8) |
+| Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
@@ -1298,7 +1447,7 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ## Other Terms
 
-*56 term(s) sourced from external standards and frameworks.*
+*60 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -1634,6 +1783,18 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ---
 
+### Interface - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Shared boundary between two functional units, defined by various characteristics pertaining to the functions, physical signal exchanges, and other characteristics.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
 ### Iteration - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -1694,6 +1855,18 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ---
 
+### Physical port - ARCADIA
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> A hosting physical component’s point of connection with its environment. A physical port is not oriented.
+
+**References:** [ARCADIA language reference : meta model](https://www.3se.info/3se-onto/references/arcadia-language-2023-069b9d2c8e027d4c)
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
 ### Problem - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -1742,6 +1915,18 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 
 ---
 
+### Project risk - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Risk related to the management of a project.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+
+---
+
 ### Quality Requirement - IREB CPRE
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -1787,6 +1972,18 @@ This glossary contains **76 3SE term(s)**, **56 other term(s)** and **12 referen
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
 *Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Risk analysis - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Process of examining identified risk factors for probability of occurrence, potential loss, and potential risk-handling strategies.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
 
 ---
 
