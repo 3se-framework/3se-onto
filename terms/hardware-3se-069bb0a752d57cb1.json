@@ -20,7 +20,9 @@
     "https://www.3se.info/3se-onto/terms/safety-hardware-non-functional-req-3se-069bdc3120bb78da",
     "https://www.3se.info/3se-onto/terms/security-hardware-constraint-3se-069bdc3121007939",
     "https://www.3se.info/3se-onto/terms/security-hardware-functional-req-3se-069bdc312109712d",
-    "https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c"
+    "https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c",
+    "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
+    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8"
   ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-20",

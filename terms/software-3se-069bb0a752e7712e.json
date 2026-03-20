@@ -21,7 +21,9 @@
     "https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249",
     "https://www.3se.info/3se-onto/terms/security-software-constraint-3se-069bdc31211a740f",
     "https://www.3se.info/3se-onto/terms/security-software-functional-req-3se-069bdc3121227d90",
-    "https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd"
+    "https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd",
+    "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51"
   ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-20",

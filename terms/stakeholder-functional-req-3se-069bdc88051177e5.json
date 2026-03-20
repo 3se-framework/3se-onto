@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Stakeholder functional requirement - 3SE",
+  "description": "Stakeholder's functional requirement.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
+  ],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
