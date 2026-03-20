@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-20 22:45 UTC*
+*Generated on 2026-03-20 23:11 UTC*
 
 This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 reference(s)**.
 
@@ -226,7 +226,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c) |
 | Superclass of | [safety-activity-3se-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4192b7d7c00), [security-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4192b8e7951) |
 | Narrow match | [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
 
@@ -853,7 +853,7 @@ This glossary contains **111 3SE term(s)**, **64 other term(s)** and **12 refere
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 *Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
