@@ -63,9 +63,6 @@ def is_noun_in_context(word: str, sentence: str) -> bool:
             prev_token = tags[i - 1][0].lower()
             if prev_token in ("and", "or", "and/or", "/"):
                 return False
-            # Also reject if preceded by conj + conj (e.g. "and / or exchange")
-            if i > 1 and tags[i - 2][0].lower() in ("and", "or"):
-                return False
         # Accept only if tagged as a noun
         if tag.startswith("NN"):
             return True
