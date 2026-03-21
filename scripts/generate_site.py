@@ -14,6 +14,7 @@
 #   JS snippet that redirects non-browser user-agents to index.jsonld.
 
 import json
+import re
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -754,8 +755,6 @@ def render_uri_link(uri: str, label: str | None = None) -> str:
     return f'<a href="{uri}" target="_blank" rel="noopener">{display} ↗</a>'
 
 
-
-
 BREAKDOWN_STEM_RE = re.compile(r"^(.+?)-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
 
 
@@ -899,10 +898,10 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
             rx = pos[src][0] + BW
             ry = pos[src][1] + BH / 2
             parts += [
-                f'<path d="M{rx},{ry} C{rx+44},{ry-28} {rx+44},{ry+28} {rx},{ry}"',
+                f'<path d="M{rx},{ry} C{rx + 44},{ry - 28} {rx + 44},{ry + 28} {rx},{ry}"',
                 f' fill="none" stroke="var(--muted)" stroke-width="1.5"',
                 f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>',
-                f'<text x="{rx+26}" y="{ry+4}" font-size="10" fill="var(--muted)" text-anchor="middle">can be</text>',
+                f'<text x="{rx + 26}" y="{ry + 4}" font-size="10" fill="var(--muted)" text-anchor="middle">can be</text>',
             ]
         elif rel == "recursion":
             parts.append(
@@ -925,20 +924,24 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
                 f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>'
             )
 
+    # Nodes with no incoming composition edge are roots of the diagram
+    composition_targets = {o for s, rel, o in edges if rel == "composition"}
+
     for n, (x, y) in pos.items():
-        is_root = (n == root)
+        is_root = n not in composition_targets
         fill = "var(--accent-bg, var(--bg2))" if is_root else "var(--bg2)"
         stroke = "var(--accent, var(--text2))" if is_root else "var(--border)"
         sw = "2" if is_root else "1.5"
         parts += [
             f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="4"'
             f' fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>',
-            f'<text x="{x + BW/2}" y="{y + BH/2 + 5}" text-anchor="middle"'
+            f'<text x="{x + BW / 2}" y="{y + BH / 2 + 5}" text-anchor="middle"'
             f' font-size="13" fill="var(--text)">{n}</text>',
         ]
 
     parts.append('</svg>')
     return "\n".join(parts)
+
 
 def render_term_page(term: dict, ref_index: dict[str, dict],
                      superclass_index: dict[str, list[dict]] | None = None,
@@ -1057,9 +1060,9 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
 
     # Breakdown structure constituent relations (shown on individual concept pages)
     for field, label in [
-        ("isComposedOf",  "Composed of"),
+        ("isComposedOf", "Composed of"),
         ("isDescribedBy", "Described by"),
-        ("canBe",         "Can be"),
+        ("canBe", "Can be"),
     ]:
         val = term.get(field)
         if not val:
