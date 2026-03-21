@@ -27,6 +27,10 @@
     "subClassOf":           { "@id": "rdfs:subClassOf",        "@type": "@id" },
     "isReferencedBy":       { "@id": "dcterms:isReferencedBy", "@type": "@id" },
 
+    "isComposedOf":         { "@id": "https://www.3se.info/3se-onto/vocab#isComposedOf",   "@type": "@id" },
+    "isDescribedBy":        { "@id": "https://www.3se.info/3se-onto/vocab#isDescribedBy",  "@type": "@id" },
+    "canBe":                { "@id": "https://www.3se.info/3se-onto/vocab#canBe",        "@type": "@id" },
+
     "in_scheme":            { "@id": "skos:inScheme",          "@type": "@id" },
     "top_concept_of":       { "@id": "skos:topConceptOf",      "@type": "@id" },
 

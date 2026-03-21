@@ -159,6 +159,33 @@
       },
       "uniqueItems": true
     },
+    "isComposedOf": {
+      "description": "3se:isComposedOf — IRIs of concepts that this breakdown structure is composed of (composition relation). Used in breakdown structure terms.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "isDescribedBy": {
+      "description": "3se:isDescribedBy — IRIs of concepts that describe elements of this breakdown structure (description relation). Used in breakdown structure terms.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "canBe": {
+      "description": "3se:canBe — IRIs of concepts that an element of this breakdown structure can be (recursion relation). Used in breakdown structure terms.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isReferencedBy": {
       "description": "dcterms:isReferencedBy — IRIs of bibliographic resources (bibo:Document) that cite or reference this concept.",
       "type": "array",
