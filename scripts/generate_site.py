@@ -829,26 +829,61 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
             continue
-        node_id(rel_uri)
-        label_for(rel_uri)
+        # Do NOT pre-register rel_uri as a node — only register it if it
+        # actually has structural relations (i.e. appears in at least one edge)
+        has_edges = False
         for obj_uri in (rel_term.get("isComposedOf") or []):
+            node_id(rel_uri)
+            label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "composition", obj_uri))
+            has_edges = True
         for obj_uri in (rel_term.get("isDescribedBy") or []):
+            node_id(rel_uri)
+            label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "description", obj_uri))
+            has_edges = True
         for obj_uri in (rel_term.get("canBe") or []):
+            node_id(rel_uri)
+            label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "recursion", obj_uri))
+            has_edges = True
 
     if not edges:
         return ""
 
     # Deduplicate edges (same subject, relation, object may appear from multiple sources)
     edges = list(dict.fromkeys(edges))
+
+    # Deduplicate nodes by label — if two URIs resolve to the same display label,
+    # keep only the first one and remap all references to it
+    label_to_primary_uri: dict[str, str] = {}  # label -> first URI seen
+    uri_remap: dict[str, str] = {}  # duplicate URI -> primary URI
+
+    for uri in list(node_ids.keys()):
+        lbl = node_labels.get(uri, "")
+        if lbl in label_to_primary_uri:
+            # This URI is a duplicate — remap to the primary
+            uri_remap[uri] = label_to_primary_uri[lbl]
+        else:
+            label_to_primary_uri[lbl] = uri
+
+    # Apply remap to edges
+    if uri_remap:
+        edges = [
+            (uri_remap.get(s, s), rel, uri_remap.get(o, o))
+            for s, rel, o in edges
+        ]
+        edges = list(dict.fromkeys(edges))  # deduplicate again after remap
+        # Remove remapped URIs from node_ids
+        for uri in uri_remap:
+            node_ids.pop(uri, None)
+            node_labels.pop(uri, None)
 
     lines = ["flowchart TD"]
     for uri, nid in node_ids.items():
