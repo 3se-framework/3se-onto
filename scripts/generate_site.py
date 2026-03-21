@@ -847,6 +847,9 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
     if not edges:
         return ""
 
+    # Deduplicate edges (same subject, relation, object may appear from multiple sources)
+    edges = list(dict.fromkeys(edges))
+
     lines = ["flowchart TD"]
     for uri, nid in node_ids.items():
         lbl = node_labels.get(uri, nid).replace('"', "'")
@@ -859,11 +862,14 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
         elif rel == "description":
             lines.append(f"    {s} -.->|described by| {o}")
         else:
-            lines.append(f"    {s} --o|can be| {o}")
+            lines.append(f"    {s} -->|can be| {o}")
 
     mermaid_src = "\n".join(lines)
     return (
-        '<div class="card" style="margin-top:1rem">'        '<p class="section-label" style="margin-bottom:.5rem">Structure</p>'        f'<div class="mermaid" style="margin-top:.5rem">{mermaid_src}</div>'        '</div>'
+        '<div class="card" style="margin-top:1.5rem">'
+        '<h3 style="margin-bottom:1rem">Structure</h3>'
+        f'<div class="mermaid">{mermaid_src}</div>'
+        '</div>'
     )
 
 
