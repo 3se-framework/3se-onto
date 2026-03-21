@@ -27,6 +27,9 @@
     "https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c",
     "https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd",
     "https://www.3se.info/3se-onto/terms/security-system-non-functional-req-3se-069bdc31214573e2",
-    "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e"
+    "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
+    "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed",
+    "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ]
 }
