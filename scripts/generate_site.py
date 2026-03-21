@@ -24,6 +24,8 @@ TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
 SITE_DIR = Path("_site")
 
+SEP = " &nbsp;&middot;&nbsp; "  # separator used between inline link lists
+
 BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
@@ -528,6 +530,8 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
   <title>3SE — Ontology — {title}</title>
   {meta_desc}
   <style>{SHARED_CSS}</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({{startOnLoad:true, theme:'neutral'}});</script>
   {ld_script}
 </head>
 <body>
@@ -774,18 +778,16 @@ def is_breakdown_structure(term: dict) -> str | None:
 
 def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
     """
-    Render a breakdown structure diagram as inline SVG.
+    Render a breakdown structure diagram as a Mermaid flowchart.
 
-    Algorithm:
-    1. Detect that this is a breakdown structure term via its @id stem.
-    2. For each URI in its 'related' list, fetch the related term from ref_index.
-    3. Collect isComposedOf, isDescribedBy, canBe fields from each related term.
-    4. Build a directed graph and render as SVG.
+    Traverses the breakdown structure's 'related' list, collects
+    isComposedOf / isDescribedBy / canBe from each related term, and
+    emits a Mermaid flowchart TD definition.
 
     Edge styles:
-    - isComposedOf  -> solid arrows   (composition)
-    - isDescribedBy -> dashed arrows  (description)
-    - canBe         -> curved arrow   (recursion / can-be)
+    - isComposedOf  --> solid arrow   (composed of)
+    - isDescribedBy -.-> dashed arrow (described by)
+    - canBe         --o circle head   (can be)
     """
     if not is_breakdown_structure(term):
         return ""
@@ -796,151 +798,73 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
     if not related_uris:
         return ""
 
-    def label_for(uri):
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
         entry = terms_index.get(uri)
         if entry:
             title = entry.get("title", "")
-            if " - " in title:
-                return title.split(" - ", 1)[0].strip()
-            return title
-        stem = uri.rstrip("/").rsplit("/", 1)[-1]
-        stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
-        stem = re.sub(r"-3se$", "", stem)
-        return stem.replace("-", " ").title()
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
 
-    nodes = set()
-    edges = []  # (from_label, rel, to_label)
+    edges = []  # (subj_uri, rel, obj_uri)
 
     for rel_uri in related_uris:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
             continue
-        subj_label = label_for(rel_uri)
-        nodes.add(subj_label)
-
+        node_id(rel_uri)
+        label_for(rel_uri)
         for obj_uri in (rel_term.get("isComposedOf") or []):
-            o = label_for(obj_uri)
-            nodes.add(o)
-            edges.append((subj_label, "composition", o))
-
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, "composition", obj_uri))
         for obj_uri in (rel_term.get("isDescribedBy") or []):
-            o = label_for(obj_uri)
-            nodes.add(o)
-            edges.append((subj_label, "description", o))
-
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, "description", obj_uri))
         for obj_uri in (rel_term.get("canBe") or []):
-            o = label_for(obj_uri)
-            nodes.add(o)
-            edges.append((subj_label, "recursion", o))
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, "recursion", obj_uri))
 
     if not edges:
         return ""
 
-    # Layer assignment via BFS on composition edges
-    comp_children = {}
-    for s, rel, o in edges:
+    lines = ["flowchart TD"]
+    for uri, nid in node_ids.items():
+        lbl = node_labels.get(uri, nid).replace('"', "'")
+        lines.append(f'    {nid}["{lbl}"]')
+    lines.append("")
+    for subj_uri, rel, obj_uri in edges:
+        s, o = node_id(subj_uri), node_id(obj_uri)
         if rel == "composition":
-            comp_children.setdefault(s, []).append(o)
-    composed_targets = {o for s, rel, o in edges if rel == "composition"}
-    bfs_roots = [n for n in nodes if n not in composed_targets]
-    layers = {}
-    queue = [(r, 0) for r in bfs_roots]
-    while queue:
-        node, depth = queue.pop(0)
-        if node in layers:
-            continue
-        layers[node] = depth
-        for child in comp_children.get(node, []):
-            queue.append((child, depth + 1))
-    max_layer = max(layers.values()) if layers else 0
-    for n in nodes:
-        if n not in layers:
-            layers[n] = max_layer + 1
-
-    by_layer: dict[int, list[str]] = {}
-    for n, d in layers.items():
-        by_layer.setdefault(d, []).append(n)
-
-    # Layout
-    BW, BH, HG, VG, PAD = 180, 36, 40, 60, 24
-    total_layers = max(by_layer) + 1
-    max_per_layer = max(len(v) for v in by_layer.values())
-    svgw = PAD * 2 + max_per_layer * BW + (max_per_layer - 1) * HG
-    svgh = PAD * 2 + total_layers * BH + (total_layers - 1) * VG
-
-    pos: dict[str, tuple[float, float]] = {}
-    for depth, layer_nodes in by_layer.items():
-        snodes = sorted(layer_nodes)
-        total_w = len(snodes) * BW + (len(snodes) - 1) * HG
-        x0 = (svgw - total_w) / 2
-        y = PAD + depth * (BH + VG)
-        for i, n in enumerate(snodes):
-            pos[n] = (x0 + i * (BW + HG), y)
-
-    def cx(n: str) -> float:
-        return pos[n][0] + BW / 2
-
-    parts = [
-        f'<svg viewBox="0 0 {svgw} {svgh}" xmlns="http://www.w3.org/2000/svg"',
-        f' style="width:100%;max-width:{svgw}px;font-family:var(--sans);margin-top:1rem">',
-        '<defs>',
-        '<marker id="bsd-a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">',
-        '<path d="M0,0 L0,6 L8,3 z" fill="var(--text2)"/></marker>',
-        '<marker id="bsd-ad" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">',
-        '<path d="M0,0 L0,6 L8,3 z" fill="var(--muted)"/></marker>',
-        '</defs>',
-    ]
-
-    for src, rel, tgt in edges:
-        if src not in pos or tgt not in pos:
-            continue
-        if rel == "recursion" and src == tgt:
-            rx = pos[src][0] + BW
-            ry = pos[src][1] + BH / 2
-            parts += [
-                f'<path d="M{rx},{ry} C{rx + 44},{ry - 28} {rx + 44},{ry + 28} {rx},{ry}"',
-                f' fill="none" stroke="var(--muted)" stroke-width="1.5"',
-                f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>',
-                f'<text x="{rx + 26}" y="{ry + 4}" font-size="10" fill="var(--muted)" text-anchor="middle">can be</text>',
-            ]
-        elif rel == "recursion":
-            parts.append(
-                f'<line x1="{cx(src)}" y1="{pos[src][1]}"'
-                f' x2="{cx(tgt)}" y2="{pos[tgt][1] + BH}"'
-                f' stroke="var(--muted)" stroke-width="1.5"'
-                f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>'
-            )
-        elif rel == "composition":
-            parts.append(
-                f'<line x1="{cx(src)}" y1="{pos[src][1] + BH}"'
-                f' x2="{cx(tgt)}" y2="{pos[tgt][1]}"'
-                f' stroke="var(--text2)" stroke-width="1.5" marker-end="url(#bsd-a)"/>'
-            )
+            lines.append(f"    {s} -->|composed of| {o}")
+        elif rel == "description":
+            lines.append(f"    {s} -.->|described by| {o}")
         else:
-            parts.append(
-                f'<line x1="{cx(src)}" y1="{pos[src][1] + BH}"'
-                f' x2="{cx(tgt)}" y2="{pos[tgt][1]}"'
-                f' stroke="var(--muted)" stroke-width="1.5"'
-                f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>'
-            )
+            lines.append(f"    {s} --o|can be| {o}")
 
-    # Nodes with no incoming composition edge are roots of the diagram
-    composition_targets = {o for s, rel, o in edges if rel == "composition"}
-
-    for n, (x, y) in pos.items():
-        is_root = n not in composition_targets
-        fill = "var(--accent-bg, var(--bg2))" if is_root else "var(--bg2)"
-        stroke = "var(--accent, var(--text2))" if is_root else "var(--border)"
-        sw = "2" if is_root else "1.5"
-        parts += [
-            f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="4"'
-            f' fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>',
-            f'<text x="{x + BW / 2}" y="{y + BH / 2 + 5}" text-anchor="middle"'
-            f' font-size="13" fill="var(--text)">{n}</text>',
-        ]
-
-    parts.append('</svg>')
-    return "\n".join(parts)
+    mermaid_src = "\n".join(lines)
+    return (
+        '<div class="card" style="margin-top:1rem">'        '<p class="section-label" style="margin-bottom:.5rem">Structure</p>'        f'<div class="mermaid" style="margin-top:.5rem">{mermaid_src}</div>'        '</div>'
+    )
 
 
 def render_term_page(term: dict, ref_index: dict[str, dict],
@@ -987,14 +911,9 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     if desc := term.get("description"):
         desc_escaped = desc.replace("\n", "<br>")
         description_html = f'<blockquote class="definition">{desc_escaped}</blockquote>'
-        # If this is a breakdown structure term, render a structure diagram
-        diagram_svg = render_breakdown_diagram(term, terms_index or {})
-        if diagram_svg:
-            description_html += (
-                '\n        <div class="card" style="margin-top:1rem">'
-                '<p class="section-label" style="margin-bottom:.5rem">Structure</p>'
-                f'{diagram_svg}</div>'
-            )
+
+    # Breakdown structure diagram (only for breakdown structure terms)
+    diagram_html = render_breakdown_diagram(term, terms_index or {})
 
     notes_html = ""
     if notes := term.get("notes"):
@@ -1025,7 +944,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             out += (
                 f'<tr>'
                 f'<td>{label}</td>'
-                f'<td>{" &nbsp;·&nbsp; ".join(links)}</td>'
+                f'<td>{SEP.join(links)}</td>'
                 f'</tr>'
             )
         return out
@@ -1041,7 +960,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
         bfo_html += (
             f'<tr>'
             f'<td>Subclass of</td>'
-            f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
+            f'<td>{SEP.join(links)}</td>'
             f'</tr>'
         )
 
@@ -1054,7 +973,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             bfo_html += (
                 f'<tr>'
                 f'<td>Superclass of</td>'
-                f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
+                f'<td>{SEP.join(links)}</td>'
                 f'</tr>'
             )
 
@@ -1072,7 +991,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
         bfo_html += (
             f'<tr>'
             f'<td>{label}</td>'
-            f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
+            f'<td>{SEP.join(links)}</td>'
             f'</tr>'
         )
 
@@ -1102,7 +1021,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
         refs_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:.75rem">Source References</h3>
-          <p style="font-size:.9rem">{" &nbsp;·&nbsp; ".join(ref_links)}</p>
+          <p style="font-size:.9rem">{SEP.join(ref_links)}</p>
         </div>"""
 
     # Provenance
@@ -1110,7 +1029,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     if c := term.get("entryCreated"):   prov.append(f"Created {c}")
     if m := term.get("entryModified"):  prov.append(f"Modified {m}")
     if cr := agent_names(term.get("entryCreator")): prov.append(f"by {', '.join(cr)}")
-    prov_html = f'<div class="provenance">{" &nbsp;·&nbsp; ".join(prov)}</div>' if prov else ""
+    prov_html = f'<div class="provenance">{SEP.join(prov)}</div>' if prov else ""
 
     body = f"""
 <nav class="breadcrumb">
@@ -1131,6 +1050,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
   {description_html}
 </div>
 
+{diagram_html}
 {notes_html}
 {relations_html}
 {refs_html}
@@ -1221,7 +1141,7 @@ def render_reference_page(ref: dict) -> str:
     if c := ref.get("entryCreated"):  prov.append(f"Created {c}")
     if m := ref.get("entryModified"): prov.append(f"Modified {m}")
     if cr := agent_names(ref.get("entryCreator")): prov.append(f"by {', '.join(cr)}")
-    prov_html = f'<div class="provenance">{" &nbsp;·&nbsp; ".join(prov)}</div>' if prov else ""
+    prov_html = f'<div class="provenance">{SEP.join(prov)}</div>' if prov else ""
 
     body = f"""
 <nav class="breadcrumb">
