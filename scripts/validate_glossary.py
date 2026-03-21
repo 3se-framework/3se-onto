@@ -143,6 +143,56 @@ SKOS_RELATION_FIELDS = [
 SE3_TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 
 
+BREAKDOWN_STEM_RE = re.compile(r"-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
+BREAKDOWN_RELATION_FIELDS = ["isComposedOf", "isDescribedBy", "canBe"]
+
+
+def validate_breakdown_structure(
+    data: dict,
+    file_name: str,
+    terms_index: dict[str, dict],
+) -> list[str]:
+    """
+    For breakdown structure terms: verify that at least one of the related
+    concepts declares an isComposedOf relation (composition is mandatory),
+    and that every related concept declares at least one structural relation
+    (isComposedOf, isDescribedBy, or canBe).
+    Returns a list of error messages.
+    """
+    errors: list[str] = []
+    term_id = data.get("@id", file_name)
+
+    # Detect breakdown structure by @id stem
+    stem = term_id.rstrip("/").rsplit("/", 1)[-1]
+    if not BREAKDOWN_STEM_RE.search(stem):
+        return errors
+
+    related_uris = data.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+
+    if not related_uris:
+        errors.append("breakdown structure has no related concepts")
+        return errors
+
+    any_composed = False
+    for uri in related_uris:
+        related_data = terms_index.get(uri)
+        if related_data is None:
+            errors.append(f"related URI \"{uri}\" not found in terms index")
+            continue
+        if related_data.get("isComposedOf"):
+            any_composed = True
+
+    if not any_composed:
+        errors.append(
+            "no related concept declares isComposedOf — "
+            "at least one composition relation is required in a breakdown structure"
+        )
+
+    return errors
+
+
 def collect_unrelated_non_se3_terms(terms_dir: Path) -> list[tuple[str, str]]:
     """
     Return (filename, title) for non-3SE terms that are not referenced by any
@@ -199,6 +249,15 @@ def main() -> int:
     reference_dir = Path(DIRS["references"]["dir"])
     known_reference_uris = collect_reference_uris(reference_dir)
 
+    # Build a URI -> data index for all terms (needed for breakdown validation)
+    terms_index: dict[str, dict] = {}
+    terms_data_dir = Path(DIRS["terms"]["dir"])
+    if terms_data_dir.exists():
+        for fp in sorted(terms_data_dir.glob("*.json")):
+            d = load_json(fp)
+            if d and d.get("@id"):
+                terms_index[d["@id"]] = d
+
     for type_name, cfg in DIRS.items():
         schema_path = Path(cfg["schema"])
         data_dir = Path(cfg["dir"])
@@ -238,6 +297,9 @@ def main() -> int:
                 )
                 file_errors.extend(
                     validate_title_vs_stem(data, file_path.stem)
+                )
+                file_errors.extend(
+                    validate_breakdown_structure(data, file_path.name, terms_index)
                 )
 
             if file_errors:

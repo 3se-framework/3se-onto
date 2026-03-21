@@ -169,6 +169,11 @@ def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_terms_index(terms: list[dict]) -> dict[str, dict]:
+    """Return a mapping of @id URI -> term data for all terms."""
+    return {t["@id"]: t for t in terms if "@id" in t}
+
+
 def clean_jsonld(entry: dict) -> dict:
     return {k: v for k, v in entry.items() if not k.startswith("_")}
 
@@ -749,8 +754,195 @@ def render_uri_link(uri: str, label: str | None = None) -> str:
     return f'<a href="{uri}" target="_blank" rel="noopener">{display} ↗</a>'
 
 
+
+
+BREAKDOWN_STEM_RE = re.compile(r"^(.+?)-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
+
+
+def is_breakdown_structure(term: dict) -> str | None:
+    """
+    Return the decomposed concept name if this term is a breakdown structure,
+    or None otherwise. Detection is based on the @id stem.
+    e.g. ".../system-breakdown-structure-3se-<UUID>" -> "System"
+    """
+    term_id = term.get("@id", "")
+    stem = term_id.rstrip("/").rsplit("/", 1)[-1]
+    m = BREAKDOWN_STEM_RE.match(stem)
+    if m:
+        return m.group(1).replace("-", " ").title()
+    return None
+
+
+def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
+    """
+    Render a breakdown structure diagram as inline SVG.
+
+    Algorithm:
+    1. Detect that this is a breakdown structure term via its @id stem.
+    2. For each URI in its 'related' list, fetch the related term from ref_index.
+    3. Collect isComposedOf, isDescribedBy, canBe fields from each related term.
+    4. Build a directed graph and render as SVG.
+
+    Edge styles:
+    - isComposedOf  -> solid arrows   (composition)
+    - isDescribedBy -> dashed arrows  (description)
+    - canBe         -> curved arrow   (recursion / can-be)
+    """
+    if not is_breakdown_structure(term):
+        return ""
+
+    related_uris = term.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+    if not related_uris:
+        return ""
+
+    def label_for(uri):
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            if " - " in title:
+                return title.split(" - ", 1)[0].strip()
+            return title
+        stem = uri.rstrip("/").rsplit("/", 1)[-1]
+        stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+        stem = re.sub(r"-3se$", "", stem)
+        return stem.replace("-", " ").title()
+
+    nodes = set()
+    edges = []  # (from_label, rel, to_label)
+
+    for rel_uri in related_uris:
+        rel_term = terms_index.get(rel_uri)
+        if rel_term is None:
+            continue
+        subj_label = label_for(rel_uri)
+        nodes.add(subj_label)
+
+        for obj_uri in (rel_term.get("isComposedOf") or []):
+            o = label_for(obj_uri)
+            nodes.add(o)
+            edges.append((subj_label, "composition", o))
+
+        for obj_uri in (rel_term.get("isDescribedBy") or []):
+            o = label_for(obj_uri)
+            nodes.add(o)
+            edges.append((subj_label, "description", o))
+
+        for obj_uri in (rel_term.get("canBe") or []):
+            o = label_for(obj_uri)
+            nodes.add(o)
+            edges.append((subj_label, "recursion", o))
+
+    if not edges:
+        return ""
+
+    # Layer assignment via BFS on composition edges
+    comp_children = {}
+    for s, rel, o in edges:
+        if rel == "composition":
+            comp_children.setdefault(s, []).append(o)
+    composed_targets = {o for s, rel, o in edges if rel == "composition"}
+    bfs_roots = [n for n in nodes if n not in composed_targets]
+    layers = {}
+    queue = [(r, 0) for r in bfs_roots]
+    while queue:
+        node, depth = queue.pop(0)
+        if node in layers:
+            continue
+        layers[node] = depth
+        for child in comp_children.get(node, []):
+            queue.append((child, depth + 1))
+    max_layer = max(layers.values()) if layers else 0
+    for n in nodes:
+        if n not in layers:
+            layers[n] = max_layer + 1
+
+    by_layer: dict[int, list[str]] = {}
+    for n, d in layers.items():
+        by_layer.setdefault(d, []).append(n)
+
+    # Layout
+    BW, BH, HG, VG, PAD = 180, 36, 40, 60, 24
+    total_layers = max(by_layer) + 1
+    max_per_layer = max(len(v) for v in by_layer.values())
+    svgw = PAD * 2 + max_per_layer * BW + (max_per_layer - 1) * HG
+    svgh = PAD * 2 + total_layers * BH + (total_layers - 1) * VG
+
+    pos: dict[str, tuple[float, float]] = {}
+    for depth, layer_nodes in by_layer.items():
+        snodes = sorted(layer_nodes)
+        total_w = len(snodes) * BW + (len(snodes) - 1) * HG
+        x0 = (svgw - total_w) / 2
+        y = PAD + depth * (BH + VG)
+        for i, n in enumerate(snodes):
+            pos[n] = (x0 + i * (BW + HG), y)
+
+    def cx(n: str) -> float:
+        return pos[n][0] + BW / 2
+
+    parts = [
+        f'<svg viewBox="0 0 {svgw} {svgh}" xmlns="http://www.w3.org/2000/svg"',
+        f' style="width:100%;max-width:{svgw}px;font-family:var(--sans);margin-top:1rem">',
+        '<defs>',
+        '<marker id="bsd-a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">',
+        '<path d="M0,0 L0,6 L8,3 z" fill="var(--text2)"/></marker>',
+        '<marker id="bsd-ad" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">',
+        '<path d="M0,0 L0,6 L8,3 z" fill="var(--muted)"/></marker>',
+        '</defs>',
+    ]
+
+    for src, rel, tgt in edges:
+        if src not in pos or tgt not in pos:
+            continue
+        if rel == "recursion" and src == tgt:
+            rx = pos[src][0] + BW
+            ry = pos[src][1] + BH / 2
+            parts += [
+                f'<path d="M{rx},{ry} C{rx+44},{ry-28} {rx+44},{ry+28} {rx},{ry}"',
+                f' fill="none" stroke="var(--muted)" stroke-width="1.5"',
+                f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>',
+                f'<text x="{rx+26}" y="{ry+4}" font-size="10" fill="var(--muted)" text-anchor="middle">can be</text>',
+            ]
+        elif rel == "recursion":
+            parts.append(
+                f'<line x1="{cx(src)}" y1="{pos[src][1]}"'
+                f' x2="{cx(tgt)}" y2="{pos[tgt][1] + BH}"'
+                f' stroke="var(--muted)" stroke-width="1.5"'
+                f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>'
+            )
+        elif rel == "composition":
+            parts.append(
+                f'<line x1="{cx(src)}" y1="{pos[src][1] + BH}"'
+                f' x2="{cx(tgt)}" y2="{pos[tgt][1]}"'
+                f' stroke="var(--text2)" stroke-width="1.5" marker-end="url(#bsd-a)"/>'
+            )
+        else:
+            parts.append(
+                f'<line x1="{cx(src)}" y1="{pos[src][1] + BH}"'
+                f' x2="{cx(tgt)}" y2="{pos[tgt][1]}"'
+                f' stroke="var(--muted)" stroke-width="1.5"'
+                f' stroke-dasharray="4,3" marker-end="url(#bsd-ad)"/>'
+            )
+
+    for n, (x, y) in pos.items():
+        is_root = (n == root)
+        fill = "var(--accent-bg, var(--bg2))" if is_root else "var(--bg2)"
+        stroke = "var(--accent, var(--text2))" if is_root else "var(--border)"
+        sw = "2" if is_root else "1.5"
+        parts += [
+            f'<rect x="{x}" y="{y}" width="{BW}" height="{BH}" rx="4"'
+            f' fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>',
+            f'<text x="{x + BW/2}" y="{y + BH/2 + 5}" text-anchor="middle"'
+            f' font-size="13" fill="var(--text)">{n}</text>',
+        ]
+
+    parts.append('</svg>')
+    return "\n".join(parts)
+
 def render_term_page(term: dict, ref_index: dict[str, dict],
-                     superclass_index: dict[str, list[dict]] | None = None) -> str:
+                     superclass_index: dict[str, list[dict]] | None = None,
+                     terms_index: dict[str, dict] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -790,7 +982,16 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
 
     description_html = ""
     if desc := term.get("description"):
-        description_html = f'<blockquote class="definition">{desc}</blockquote>'
+        desc_escaped = desc.replace("\n", "<br>")
+        description_html = f'<blockquote class="definition">{desc_escaped}</blockquote>'
+        # If this is a breakdown structure term, render a structure diagram
+        diagram_svg = render_breakdown_diagram(term, terms_index or {})
+        if diagram_svg:
+            description_html += (
+                '\n        <div class="card" style="margin-top:1rem">'
+                '<p class="section-label" style="margin-bottom:.5rem">Structure</p>'
+                f'{diagram_svg}</div>'
+            )
 
     notes_html = ""
     if notes := term.get("notes"):
@@ -853,6 +1054,24 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
                 f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
                 f'</tr>'
             )
+
+    # Breakdown structure constituent relations (shown on individual concept pages)
+    for field, label in [
+        ("isComposedOf",  "Composed of"),
+        ("isDescribedBy", "Described by"),
+        ("canBe",         "Can be"),
+    ]:
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        bfo_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{" &nbsp;\u00b7&nbsp; ".join(links)}</td>'
+            f'</tr>'
+        )
 
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
@@ -1088,6 +1307,7 @@ def main() -> int:
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
+    terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
 
@@ -1127,7 +1347,7 @@ def main() -> int:
         out_dir = SITE_DIR / "terms" / stem
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
-            render_term_page(term, ref_index, superclass_index), encoding="utf-8"
+            render_term_page(term, ref_index, superclass_index, terms_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",

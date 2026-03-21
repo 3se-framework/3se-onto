@@ -292,6 +292,19 @@ def main() -> int:
                 if tgt_uri in src_subclass_uris or src_uri in tgt_subclass_uris:
                     continue
 
+                # Skip if source or target already has a structural breakdown
+                # relation (isComposedOf / isDescribedBy / canBe) linking them —
+                # those relations supersede skos:related
+                src_structural = set()
+                tgt_structural = set()
+                for field in ("isComposedOf", "isDescribedBy", "canBe"):
+                    for uri in (src_data.get(field) or []):
+                        src_structural.add(uri)
+                    for uri in (tgt_data.get(field) or []):
+                        tgt_structural.add(uri)
+                if tgt_uri in src_structural or src_uri in tgt_structural:
+                    continue
+
                 # Forward: source 3SE term -> target 3SE term
                 justified[src_stem].add(tgt_uri)
                 # Reverse: target 3SE term -> source 3SE term
