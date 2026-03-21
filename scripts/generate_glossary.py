@@ -8,6 +8,7 @@
 #   - References section: alphabetically sorted, with all available fields
 
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -167,12 +168,132 @@ def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_terms_index(terms: list[dict]) -> dict[str, dict]:
+    """Return a mapping of @id URI -> term data for all terms."""
+    return {t["@id"]: t for t in terms if "@id" in t}
+
+
+BREAKDOWN_STEM_RE = re.compile(r"-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
+
+
+def is_breakdown_structure(term: dict) -> bool:
+    """Return True if this term is a breakdown structure term."""
+    term_id = term.get("@id", "")
+    stem = term_id.rstrip("/").rsplit("/", 1)[-1]
+    return bool(BREAKDOWN_STEM_RE.search(stem))
+
+
+def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> list[str]:
+    """
+    Render a breakdown structure Mermaid diagram as Markdown lines.
+    Returns a fenced mermaid code block, or empty list if not applicable.
+    """
+    if not is_breakdown_structure(term):
+        return []
+
+    related_uris = term.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+    if not related_uris:
+        return []
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    edges: list[tuple[str, str, str]] = []
+
+    for rel_uri in related_uris:
+        rel_term = terms_index.get(rel_uri)
+        if rel_term is None:
+            continue
+        for obj_uri in (rel_term.get("isComposedOf") or []):
+            node_id(rel_uri);
+            label_for(rel_uri)
+            node_id(obj_uri);
+            label_for(obj_uri)
+            edges.append((rel_uri, "composition", obj_uri))
+        for obj_uri in (rel_term.get("isDescribedBy") or []):
+            node_id(rel_uri);
+            label_for(rel_uri)
+            node_id(obj_uri);
+            label_for(obj_uri)
+            edges.append((rel_uri, "description", obj_uri))
+        for obj_uri in (rel_term.get("canBe") or []):
+            node_id(rel_uri);
+            label_for(rel_uri)
+            node_id(obj_uri);
+            label_for(obj_uri)
+            edges.append((rel_uri, "recursion", obj_uri))
+
+    if not edges:
+        return []
+
+    # Deduplicate edges
+    edges = list(dict.fromkeys(edges))
+
+    # Deduplicate nodes by label
+    label_to_primary: dict[str, str] = {}
+    uri_remap: dict[str, str] = {}
+    for uri in list(node_ids.keys()):
+        lbl = node_labels.get(uri, "")
+        if lbl in label_to_primary:
+            uri_remap[uri] = label_to_primary[lbl]
+        else:
+            label_to_primary[lbl] = uri
+    if uri_remap:
+        edges = [(uri_remap.get(s, s), rel, uri_remap.get(o, o)) for s, rel, o in edges]
+        edges = list(dict.fromkeys(edges))
+        for uri in uri_remap:
+            node_ids.pop(uri, None)
+            node_labels.pop(uri, None)
+
+    mermaid_lines = ["```mermaid", "flowchart TD"]
+    for uri, nid in node_ids.items():
+        lbl = node_labels.get(uri, nid).replace('"', "'")
+        mermaid_lines.append(f'    {nid}["{lbl}"]')
+    mermaid_lines.append("")
+    for subj_uri, rel, obj_uri in edges:
+        s, o = node_id(subj_uri), node_id(obj_uri)
+        if rel == "composition":
+            mermaid_lines.append(f"    {s} -->|composed of| {o}")
+        elif rel == "description":
+            mermaid_lines.append(f"    {s} -.->|described by| {o}")
+        else:
+            mermaid_lines.append(f"    {s} -->|can be| {o}")
+    mermaid_lines.append("```")
+
+    return ["**Structure**", ""] + mermaid_lines + [""]
+
+
 # ---------------------------------------------------------------------------
 # Term rendering
 # ---------------------------------------------------------------------------
 
 def render_term(term: dict, ref_index: dict[str, dict],
-                superclass_index: dict[str, list[dict]] | None = None) -> list[str]:
+                superclass_index: dict[str, list[dict]] | None = None,
+                terms_index: dict[str, dict] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -263,12 +384,28 @@ def render_term(term: dict, ref_index: dict[str, dict],
         links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in items]
         relation_rows.append((label, ", ".join(links)))
 
+    # Breakdown structure constituent relations
+    for field, label in [
+        ("isComposedOf", "Composed of"),
+        ("isDescribedBy", "Described by"),
+        ("canBe", "Can be"),
+    ]:
+        items = term.get(field, [])
+        if not items:
+            continue
+        links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in items]
+        relation_rows.append((label, ", ".join(links)))
+
     if relation_rows:
         lines.append("| Relation | Terms |")
         lines.append("|---|---|")
         for label, value in relation_rows:
             lines.append(f"| {label} | {value} |")
         lines.append("")
+
+    # Breakdown structure diagram
+    if terms_index:
+        lines.extend(render_breakdown_diagram_md(term, terms_index))
 
     # References
     is_referenced_by = term.get("isReferencedBy", [])
@@ -421,6 +558,7 @@ def main() -> int:
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
+    terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
 
@@ -474,7 +612,7 @@ def main() -> int:
 
     if se3_terms:
         for term in se3_terms:
-            md.extend(render_term(term, ref_index, superclass_index))
+            md.extend(render_term(term, ref_index, superclass_index, terms_index))
             md.append("---")
             md.append("")
     else:
@@ -489,7 +627,7 @@ def main() -> int:
 
     if other_terms:
         for term in other_terms:
-            md.extend(render_term(term, ref_index, superclass_index))
+            md.extend(render_term(term, ref_index, superclass_index, terms_index))
             md.append("---")
             md.append("")
     else:
