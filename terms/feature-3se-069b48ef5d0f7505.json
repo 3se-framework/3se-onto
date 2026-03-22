@@ -27,5 +27,8 @@
     "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
   ]
 }

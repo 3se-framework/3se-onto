@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "High level functional element - 3SE",
+  "description": "Combination of interacting functional elements.",
+  "status": "draft",
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-function-3se"
+  ]
+}
