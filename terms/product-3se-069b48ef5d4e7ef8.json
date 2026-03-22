@@ -19,7 +19,8 @@
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
     "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
-    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d"
+    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/product-element-3se"
