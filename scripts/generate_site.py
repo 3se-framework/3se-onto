@@ -781,13 +781,8 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
     Render a breakdown structure diagram as a Mermaid flowchart.
 
     Traverses the breakdown structure's 'related' list, collects
-    isComposedOf / isDescribedBy / canBe from each related term, and
+    isComposedOf / isDescribedBy / isRepresentedBy / canBe from each related term, and
     emits a Mermaid flowchart TD definition.
-
-    Edge styles:
-    - isComposedOf  --> solid arrow   (composed of)
-    - isDescribedBy -.-> dashed arrow (described by)
-    - canBe         --o circle head   (can be)
     """
     if not is_breakdown_structure(term):
         return ""
@@ -831,28 +826,30 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
             continue
         # Do NOT pre-register rel_uri as a node — only register it if it
         # actually has structural relations (i.e. appears in at least one edge)
-        has_edges = False
         for obj_uri in (rel_term.get("isComposedOf") or []):
             node_id(rel_uri)
             label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "composition", obj_uri))
-            has_edges = True
         for obj_uri in (rel_term.get("isDescribedBy") or []):
             node_id(rel_uri)
             label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "description", obj_uri))
-            has_edges = True
+        for obj_uri in (rel_term.get("isRepresentedBy") or []):
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, "representation", obj_uri))
         for obj_uri in (rel_term.get("canBe") or []):
             node_id(rel_uri)
             label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "recursion", obj_uri))
-            has_edges = True
 
     if not edges:
         return ""
@@ -895,8 +892,10 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
             lines.append(f"    {s} -->|composed of| {o}")
         elif rel == "description":
             lines.append(f"    {s} -.->|described by| {o}")
+        elif rel == "representation":
+            lines.append(f"    {s} -.->|represented by| {o}")
         else:
-            lines.append(f"    {s} -->|can be| {o}")
+            lines.append(f"    {s} -.->|can be| {o}")
 
     mermaid_src = "\n".join(lines)
     return (
@@ -1021,6 +1020,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     for field, label in [
         ("isComposedOf", "Composed of"),
         ("isDescribedBy", "Described by"),
+        ("isRepresentedBy", "Represented by"),
         ("canBe", "Can be"),
     ]:
         val = term.get(field)

@@ -229,21 +229,27 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
         if rel_term is None:
             continue
         for obj_uri in (rel_term.get("isComposedOf") or []):
-            node_id(rel_uri);
+            node_id(rel_uri)
             label_for(rel_uri)
-            node_id(obj_uri);
+            node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "composition", obj_uri))
         for obj_uri in (rel_term.get("isDescribedBy") or []):
-            node_id(rel_uri);
+            node_id(rel_uri)
             label_for(rel_uri)
-            node_id(obj_uri);
+            node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "description", obj_uri))
-        for obj_uri in (rel_term.get("canBe") or []):
-            node_id(rel_uri);
+        for obj_uri in (rel_term.get("isRepresentedBy") or []):
+            node_id(rel_uri)
             label_for(rel_uri)
-            node_id(obj_uri);
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, "representation", obj_uri))
+        for obj_uri in (rel_term.get("canBe") or []):
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "recursion", obj_uri))
 
@@ -280,8 +286,10 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
             mermaid_lines.append(f"    {s} -->|composed of| {o}")
         elif rel == "description":
             mermaid_lines.append(f"    {s} -.->|described by| {o}")
+        elif rel == "representation":
+            mermaid_lines.append(f"    {s} -.->|described by| {o}")
         else:
-            mermaid_lines.append(f"    {s} -->|can be| {o}")
+            mermaid_lines.append(f"    {s} -.->|can be| {o}")
     mermaid_lines.append("```")
 
     return ["**Structure**", ""] + mermaid_lines + [""]
@@ -388,6 +396,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
     for field, label in [
         ("isComposedOf", "Composed of"),
         ("isDescribedBy", "Described by"),
+        ("isRepresentedBy", "Represented by"),
         ("canBe", "Can be"),
     ]:
         items = term.get(field, [])

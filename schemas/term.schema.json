@@ -160,7 +160,7 @@
       "uniqueItems": true
     },
     "isComposedOf": {
-      "description": "3se:isComposedOf — IRIs of concepts that this breakdown structure is composed of (composition relation). Used in breakdown structure terms.",
+      "description": "3se:isComposedOf — IRIs of concepts that compose an element in a breakdown structure (composition relation).",
       "type": "array",
       "items": {
         "type": "string",
@@ -169,7 +169,16 @@
       "uniqueItems": true
     },
     "isDescribedBy": {
-      "description": "3se:isDescribedBy — IRIs of concepts that describe elements of this breakdown structure (description relation). Used in breakdown structure terms.",
+      "description": "3se:isDescribedBy — IRIs of concepts that describe elements of a breakdown structure (description relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "isRepresentedBy": {
+      "description": "3se:isRepresentedBy — IRIs of concepts that represent elements of a breakdown structure (description relation).",
       "type": "array",
       "items": {
         "type": "string",
@@ -178,7 +187,7 @@
       "uniqueItems": true
     },
     "canBe": {
-      "description": "3se:canBe — IRIs of concepts that an element of this breakdown structure can be (recursion relation). Used in breakdown structure terms.",
+      "description": "3se:canBe — IRIs of concepts that an element of a breakdown structure can be (recursion relation).",
       "type": "array",
       "items": {
         "type": "string",
