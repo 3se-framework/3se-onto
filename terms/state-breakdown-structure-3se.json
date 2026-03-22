@@ -4,5 +4,9 @@
   "title": "State breakdown structure - 3SE",
   "description": "State hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A high level state is composed of at least two states.\n(2) A high level state allocates at least one high level function.\n(3) A state allocates at least one function.\n(4) A state can be a high level state.",
   "status": "draft",
-  "@id": "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d"
+  "@id": "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/high-level-state-3se",
+    "https://www.3se.info/3se-onto/terms/state-3se"
+  ]
 }
