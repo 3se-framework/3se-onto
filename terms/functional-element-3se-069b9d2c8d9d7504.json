@@ -19,9 +19,10 @@
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
-    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
-    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
+    "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
+    "https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2"
   ]
 }

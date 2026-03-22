@@ -9,7 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399",
   "related": [
-    "https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2"
+    "https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2",
+    "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6"
   ],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-03-22",
@@ -18,6 +19,6 @@
     "name": "@rcasteran"
   },
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se"
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
   ]
 }
