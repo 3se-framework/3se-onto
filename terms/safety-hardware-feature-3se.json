@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety hardware feature - 3SE",
+  "description": "A feature about a hardware product which is relevant for safety engineering",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+  ]
+}
