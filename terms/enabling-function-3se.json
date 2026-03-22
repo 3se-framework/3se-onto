@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Enabling function - 3SE",
+  "description": "Function devolved to an enabling system.",
+  "status": "draft"
+}
