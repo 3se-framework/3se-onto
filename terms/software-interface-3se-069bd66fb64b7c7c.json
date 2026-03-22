@@ -5,7 +5,7 @@
   "description": "Boundary across which a software element and a hardware elements meet and exchange flows.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/physical-interface-3se"
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
   "related": [
