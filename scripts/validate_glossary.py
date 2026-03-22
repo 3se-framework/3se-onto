@@ -143,7 +143,6 @@ SKOS_RELATION_FIELDS = [
 SE3_TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 
 BREAKDOWN_STEM_RE = re.compile(r"-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
-BREAKDOWN_RELATION_FIELDS = ["isComposedOf", "isDescribedBy", "canBe"]
 
 
 def validate_breakdown_structure(
@@ -155,7 +154,7 @@ def validate_breakdown_structure(
     For breakdown structure terms: verify that at least one of the related
     concepts declares an isComposedOf relation (composition is mandatory),
     and that every related concept declares at least one structural relation
-    (isComposedOf, isDescribedBy, or canBe).
+    (isComposedOf).
     Returns a list of error messages.
     """
     errors: list[str] = []

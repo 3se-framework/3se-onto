@@ -28,8 +28,8 @@
     "isReferencedBy":       { "@id": "dcterms:isReferencedBy", "@type": "@id" },
 
     "isComposedOf":         { "@id": "https://www.3se.info/3se-onto/vocab#isComposedOf",    "@type": "@id" },
-    "isDescribedBy":        { "@id": "https://www.3se.info/3se-onto/vocab#isDescribedBy",   "@type": "@id" },
     "isRepresentedBy":      { "@id": "https://www.3se.info/3se-onto/vocab#isRepresentedBy", "@type": "@id" },
+    "allocates":            { "@id": "https://www.3se.info/3se-onto/vocab#allocates",   "@type": "@id" },
     "canBe":                { "@id": "https://www.3se.info/3se-onto/vocab#canBe",           "@type": "@id" },
 
     "in_scheme":            { "@id": "skos:inScheme",          "@type": "@id" },

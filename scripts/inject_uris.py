@@ -54,8 +54,8 @@ TERM_ARRAY_FIELDS: list[str] = [
     "relatedMatch",
     "subClassOf",
     "isComposedOf",
-    "isDescribedBy",
     "isRepresentedBy",
+    "allocates",
     "canBe",
 ]
 

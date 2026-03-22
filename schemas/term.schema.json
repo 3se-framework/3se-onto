@@ -168,8 +168,8 @@
       },
       "uniqueItems": true
     },
-    "isDescribedBy": {
-      "description": "3se:isDescribedBy — IRIs of concepts that describe elements of a breakdown structure (description relation).",
+    "allocates": {
+      "description": "3se:allocates — IRIs of concepts that are allocated to elements of a breakdown structure (allocation relation).",
       "type": "array",
       "items": {
         "type": "string",

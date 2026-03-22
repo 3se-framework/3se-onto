@@ -48,7 +48,7 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],
-  "isDescribedBy": [
+  "allocates": [
     "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
   ]
 }

@@ -781,7 +781,7 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
     Render a breakdown structure diagram as a Mermaid flowchart.
 
     Traverses the breakdown structure's 'related' list, collects
-    isComposedOf / isDescribedBy / isRepresentedBy / canBe from each related term, and
+    isComposedOf / isRepresentedBy / allocates / canBe from each related term, and
     emits a Mermaid flowchart TD definition.
     """
     if not is_breakdown_structure(term):
@@ -832,18 +832,18 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "composition", obj_uri))
-        for obj_uri in (rel_term.get("isDescribedBy") or []):
-            node_id(rel_uri)
-            label_for(rel_uri)
-            node_id(obj_uri)
-            label_for(obj_uri)
-            edges.append((rel_uri, "description", obj_uri))
         for obj_uri in (rel_term.get("isRepresentedBy") or []):
             node_id(rel_uri)
             label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "representation", obj_uri))
+        for obj_uri in (rel_term.get("allocates") or []):
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, "allocation", obj_uri))
         for obj_uri in (rel_term.get("canBe") or []):
             node_id(rel_uri)
             label_for(rel_uri)
@@ -890,10 +890,10 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
         s, o = node_id(subj_uri), node_id(obj_uri)
         if rel == "composition":
             lines.append(f"    {s} -->|composed of| {o}")
-        elif rel == "description":
-            lines.append(f"    {s} -.->|described by| {o}")
         elif rel == "representation":
             lines.append(f"    {s} -.->|represented by| {o}")
+        elif rel == "allocation":
+            lines.append(f"    {s} -.->|allocates| {o}")
         else:
             lines.append(f"    {s} -.->|can be| {o}")
 
@@ -1019,8 +1019,8 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     # Breakdown structure constituent relations (shown on individual concept pages)
     for field, label in [
         ("isComposedOf", "Composed of"),
-        ("isDescribedBy", "Described by"),
         ("isRepresentedBy", "Represented by"),
+        ("allocates", "Allocates"),
         ("canBe", "Can be"),
     ]:
         val = term.get(field)
