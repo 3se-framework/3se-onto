@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-22 18:29 UTC*
+*Generated on 2026-03-22 18:49 UTC*
 
 This glossary contains **131 3SE term(s)**, **66 other term(s)** and **12 reference(s)**.
 
@@ -345,7 +345,7 @@ This glossary contains **131 3SE term(s)**, **66 other term(s)** and **12 refere
 | Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e) |
 | Subclass of | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-03-19 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -787,7 +787,7 @@ This glossary contains **131 3SE term(s)**, **66 other term(s)** and **12 refere
 | Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
 | Subclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -847,7 +847,7 @@ This glossary contains **131 3SE term(s)**, **66 other term(s)** and **12 refere
 | Related | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
 | Subclass of | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 
-*Created: 2026-03-19 · Modified: 2026-03-19 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -1029,8 +1029,8 @@ flowchart TD
     N1 -->|composed of| N2
     N2 -.->|can be| N1
     N3 -->|composed of| N4
-    N3 -.->|described by| N1
-    N4 -.->|described by| N2
+    N3 -.->|allocates| N1
+    N4 -.->|allocates| N2
     N4 -.->|can be| N3
 ```
 
@@ -1080,8 +1080,8 @@ flowchart TD
 | Related | [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d) |
 | Narrow match | [product-24765-2017-069ad94e896d75d2](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2) |
 | Composed of | [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631) |
-| Described by | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 | Represented by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Allocates | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
 *Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -1124,17 +1124,17 @@ flowchart TD
 flowchart TD
     N1["Product"]
     N2["Product element"]
-    N3["Feature"]
-    N4["System"]
+    N3["System"]
+    N4["Feature"]
     N5["System element"]
     N6["High level physical element"]
 
     N1 -->|composed of| N2
     N1 -.->|described by| N3
-    N1 -.->|described by| N4
+    N1 -.->|allocates| N4
     N2 -.->|can be| N1
-    N4 -->|composed of| N5
-    N4 -.->|described by| N6
+    N3 -->|composed of| N5
+    N3 -.->|allocates| N6
 ```
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
@@ -1868,7 +1868,7 @@ flowchart TD
 | Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
 | Subclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -2004,7 +2004,7 @@ flowchart TD
 | Superclass of | [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e) |
 | Narrow match | [system-15288-2015-069a98bf0f617409](https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409) |
 | Composed of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
-| Described by | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
+| Allocates | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
 
 *Created: 2026-03-16 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -2021,7 +2021,7 @@ flowchart TD
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 
-*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -2048,8 +2048,8 @@ flowchart TD
     N4["Physical element"]
 
     N1 -->|composed of| N2
-    N1 -.->|described by| N3
-    N2 -.->|described by| N4
+    N1 -.->|allocates| N3
+    N2 -.->|allocates| N4
     N2 -.->|can be| N1
 ```
 
@@ -2082,10 +2082,10 @@ flowchart TD
 |---|---|
 | Related | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2) |
 | Exact match | [system-element-15288-2023-069a98bf0f7e7b8e](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e) |
-| Described by | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
+| Allocates | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Can be | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
-*Created: 2026-03-16 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
