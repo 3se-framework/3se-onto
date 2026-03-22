@@ -9,5 +9,15 @@
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d"
+  ],
+  "entryCreated": "2026-03-22",
+  "entryModified": "2026-03-22",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
