@@ -42,8 +42,7 @@
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
     "https://www.3se.info/3se-onto/terms/system-activity-3se-069bee1cdb1b787a",
     "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6",
-    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
-    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
