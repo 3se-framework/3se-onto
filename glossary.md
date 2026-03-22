@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-22 16:57 UTC*
+*Generated on 2026-03-22 17:49 UTC*
 
 This glossary contains **129 3SE term(s)**, **66 other term(s)** and **12 reference(s)**.
 
@@ -523,7 +523,7 @@ This glossary contains **129 3SE term(s)**, **66 other term(s)** and **12 refere
 | Superclass of | [safety-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4192b867336), [security-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4192b977269) |
 | Close match | [feature-safe-6-0-069a9f3e92177c2b](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b) |
 
-*Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -1024,7 +1024,8 @@ This glossary contains **129 3SE term(s)**, **66 other term(s)** and **12 refere
 | Related | [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d) |
 | Narrow match | [product-24765-2017-069ad94e896d75d2](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2) |
 | Composed of | [product-element-3se](https://www.3se.info/3se-onto/terms/product-element-3se) |
-| Described by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Described by | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
+| Represented by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
 *Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -1052,8 +1053,8 @@ This glossary contains **129 3SE term(s)**, **66 other term(s)** and **12 refere
 
 > Product hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:
 (1) A product is composed of at least two product elements.
-(2) A product is described by a system.
-(3) A product element is described by a feature.
+(2) A product is described by a feature.
+(3) A product is represented by a system.
 (4) A product element can be a product.
 
 | Relation | Terms |
@@ -1067,17 +1068,17 @@ This glossary contains **129 3SE term(s)**, **66 other term(s)** and **12 refere
 flowchart TD
     N1["Product"]
     N2["Product Element"]
-    N3["System"]
-    N5["Feature"]
+    N3["Feature"]
+    N4["System"]
     N6["System element"]
     N7["System Activity"]
 
     N1 -->|composed of| N2
     N1 -.->|described by| N3
-    N2 -.->|described by| N5
-    N2 -->|can be| N1
-    N3 -->|composed of| N6
-    N3 -.->|described by| N7
+    N1 -.->|described by| N4
+    N2 -.->|can be| N1
+    N4 -->|composed of| N6
+    N4 -.->|described by| N7
 ```
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
@@ -1093,7 +1094,6 @@ flowchart TD
 | Relation | Terms |
 |---|---|
 | Related | [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d) |
-| Described by | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 | Can be | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
@@ -1950,7 +1950,7 @@ flowchart TD
 | Composed of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 | Described by | [system-activity-3se](https://www.3se.info/3se-onto/terms/system-activity-3se) |
 
-*Created: 2026-03-16 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -1996,7 +1996,7 @@ flowchart TD
     N1 -->|composed of| N2
     N1 -.->|described by| N3
     N2 -.->|described by| N4
-    N2 -->|can be| N1
+    N2 -.->|can be| N1
 ```
 
 *Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
