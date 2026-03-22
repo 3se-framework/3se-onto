@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware product - 3SE",
+  "description": "Implementation of a system composed of hardware only.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-product-3se-069c058ef4de7a0a",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346",
+    "https://www.3se.info/3se-onto/terms/safety-hardware-feature-3se-069c058ef4e6774e",
+    "https://www.3se.info/3se-onto/terms/security-hardware-feature-3se-069c058ef5007083",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "entryCreated": "2026-03-22",
+  "entryModified": "2026-03-22",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

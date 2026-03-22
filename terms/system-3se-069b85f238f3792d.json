@@ -41,7 +41,13 @@
     "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9",
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
     "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6",
-    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d"
+    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
+    "https://www.3se.info/3se-onto/terms/hardware-product-3se-069c058ef4de7a0a",
+    "https://www.3se.info/3se-onto/terms/safety-hardware-product-3se-069c058ef4ec7f65",
+    "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55",
+    "https://www.3se.info/3se-onto/terms/security-hardware-product-3se-069c058ef506753d",
+    "https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb",
+    "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"

@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software feature - 3SE",
+  "description": "A feature about a software product",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93"
+  ],
+  "entryCreated": "2026-03-22",
+  "entryModified": "2026-03-22",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
