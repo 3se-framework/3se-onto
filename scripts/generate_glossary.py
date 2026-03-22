@@ -253,15 +253,15 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
     # Deduplicate edges
     edges = list(dict.fromkeys(edges))
 
-    # Deduplicate nodes by label
+    # Deduplicate nodes by label (case-insensitive)
     label_to_primary: dict[str, str] = {}
     uri_remap: dict[str, str] = {}
     for uri in list(node_ids.keys()):
-        lbl = node_labels.get(uri, "")
-        if lbl in label_to_primary:
-            uri_remap[uri] = label_to_primary[lbl]
+        lbl_lower = node_labels.get(uri, "").lower()
+        if lbl_lower in label_to_primary:
+            uri_remap[uri] = label_to_primary[lbl_lower]
         else:
-            label_to_primary[lbl] = uri
+            label_to_primary[lbl_lower] = uri
     if uri_remap:
         edges = [(uri_remap.get(s, s), rel, uri_remap.get(o, o)) for s, rel, o in edges]
         edges = list(dict.fromkeys(edges))

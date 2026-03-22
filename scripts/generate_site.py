@@ -862,16 +862,15 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
 
     # Deduplicate nodes by label — if two URIs resolve to the same display label,
     # keep only the first one and remap all references to it
-    label_to_primary_uri: dict[str, str] = {}  # label -> first URI seen
+    label_to_primary_uri: dict[str, str] = {}  # lower(label) -> first URI seen
     uri_remap: dict[str, str] = {}  # duplicate URI -> primary URI
 
     for uri in list(node_ids.keys()):
-        lbl = node_labels.get(uri, "")
-        if lbl in label_to_primary_uri:
-            # This URI is a duplicate — remap to the primary
-            uri_remap[uri] = label_to_primary_uri[lbl]
+        lbl_lower = node_labels.get(uri, "").lower()
+        if lbl_lower in label_to_primary_uri:
+            uri_remap[uri] = label_to_primary_uri[lbl_lower]
         else:
-            label_to_primary_uri[lbl] = uri
+            label_to_primary_uri[lbl_lower] = uri
 
     # Apply remap to edges
     if uri_remap:
