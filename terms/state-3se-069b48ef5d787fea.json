@@ -23,5 +23,8 @@
     "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
     "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
     "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/function-3se"
   ]
 }

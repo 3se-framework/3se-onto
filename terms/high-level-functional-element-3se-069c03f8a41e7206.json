@@ -8,7 +8,7 @@
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a"
+    "https://www.3se.info/3se-onto/terms/high-level-state-3se"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206",
   "related": [

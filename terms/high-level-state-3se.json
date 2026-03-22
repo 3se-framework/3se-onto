@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "High level state - 3SE",
+  "description": "Combination of interacting states.",
+  "status": "draft",
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/state-3se"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-function-3se"
+  ]
+}

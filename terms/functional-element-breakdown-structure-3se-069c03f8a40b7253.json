@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Functional element breakdown structure - 3SE",
-  "description": "Functional element hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A high level functional element is composed of at least two functional elements.\n(2) A high level functional element allocates at least one high level function.\n(3) A functional element allocates at least one function.\n(4) A functional element can be a high level functional element.",
+  "description": "Functional element hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A high level functional element is composed of at least two functional elements.\n(2) A high level functional element allocates at least one high level state.\n(3) A functional element allocates at least one state.\n(4) A functional element can be a high level functional element.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
   "related": [
