@@ -27,5 +27,8 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
   ]
 }

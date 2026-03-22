@@ -25,5 +25,8 @@
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
     "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a"
   ]
 }
