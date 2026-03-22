@@ -12,6 +12,7 @@ DIRS = {
     "references": {"dir": "references", "schema": "schemas/reference.schema.json"},
 }
 
+TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
 
 
@@ -140,8 +141,6 @@ SKOS_RELATION_FIELDS = [
     "exactMatch", "closeMatch", "broadMatch", "narrowMatch", "relatedMatch",
 ]
 
-SE3_TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
-
 BREAKDOWN_STEM_RE = re.compile(r"-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
 
 
@@ -213,7 +212,7 @@ def collect_unrelated_non_se3_terms(terms_dir: Path) -> list[tuple[str, str]]:
         title = data.get("title", "")
         if title.endswith("- 3SE"):
             continue
-        uri = data.get("@id") or (SE3_TERM_BASE_IRI + file_path.stem)
+        uri = data.get("@id") or (TERM_BASE_IRI + file_path.stem)
         non_se3[uri] = (file_path.name, title)
 
     # Pass 2: collect all URIs referenced by any SKOS field on any 3SE term
@@ -247,14 +246,23 @@ def main() -> int:
     reference_dir = Path(DIRS["references"]["dir"])
     known_reference_uris = collect_reference_uris(reference_dir)
 
-    # Build a URI -> data index for all terms (needed for breakdown validation)
+    # Build a URI -> data index for all terms (needed for breakdown validation).
+    # Terms are indexed by @id if present, and also by the URI derived from
+    # the filename stem — so new terms that have not yet been through
+    # inject_uuids.py (no @id) can still be resolved by their stem URI.
     terms_index: dict[str, dict] = {}
     terms_data_dir = Path(DIRS["terms"]["dir"])
     if terms_data_dir.exists():
         for fp in sorted(terms_data_dir.glob("*.json")):
             d = load_json(fp)
-            if d and d.get("@id"):
+            if d is None:
+                continue
+            # Index by @id if present
+            if d.get("@id"):
                 terms_index[d["@id"]] = d
+            # Always also index by derived stem URI as fallback
+            stem_uri = TERM_BASE_IRI + fp.stem
+            terms_index.setdefault(stem_uri, d)
 
     for type_name, cfg in DIRS.items():
         schema_path = Path(cfg["schema"])
