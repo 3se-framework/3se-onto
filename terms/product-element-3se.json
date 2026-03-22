@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Product element - 3SE",
+  "description": "Constituent of a product.",
+  "status": "draft",
+  "isDescribedBy": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+  ]
+}
