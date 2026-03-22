@@ -5,7 +5,7 @@
   "description": "Implementation of a system composed of software only.",
   "status": "draft",
   "closeMatch": [
-    "https://www.3se.info/3se-onto/terms/software-product-24765-2017"
+    "https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951"
   ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"

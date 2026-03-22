@@ -13,18 +13,19 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-03-22",
   "related": [
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282",
     "https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f",
     "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
     "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
     "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
-    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51"
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
+    "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
+    "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/function-3se"
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ]
 }
