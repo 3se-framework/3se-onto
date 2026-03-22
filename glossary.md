@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-22 21:04 UTC*
+*Generated on 2026-03-22 21:46 UTC*
 
-This glossary contains **146 3SE term(s)**, **66 other term(s)** and **12 reference(s)**.
+This glossary contains **148 3SE term(s)**, **67 other term(s)** and **12 reference(s)**.
 
 ## Contents
 
@@ -53,6 +53,7 @@ This glossary contains **146 3SE term(s)**, **66 other term(s)** and **12 refere
   - [High level function - 3SE](#high-level-function---3se)
   - [High level functional element - 3SE](#high-level-functional-element---3se)
   - [High level physical element - 3SE](#high-level-physical-element---3se)
+  - [High level state - 3SE](#high-level-state---3se)
   - [Information - 3SE](#information---3se)
   - [Inspection - 3SE](#inspection---3se)
   - [Integration testing - 3SE](#integration-testing---3se)
@@ -136,6 +137,7 @@ This glossary contains **146 3SE term(s)**, **66 other term(s)** and **12 refere
   - [Stakeholder functional requirement - 3SE](#stakeholder-functional-requirement---3se)
   - [Stakeholder non-functional requirement - 3SE](#stakeholder-non-functional-requirement---3se)
   - [State - 3SE](#state---3se)
+  - [State breakdown structure - 3SE](#state-breakdown-structure---3se)
   - [System - 3SE](#system---3se)
   - [System breakdown structure - 3SE](#system-breakdown-structure---3se)
   - [System constraint - 3SE](#system-constraint---3se)
@@ -205,6 +207,7 @@ This glossary contains **146 3SE term(s)**, **66 other term(s)** and **12 refere
   - [Safety goal - ISO 26262-1](#safety-goal---iso-26262-1)
   - [Safety mechanism - ISO 26262-1](#safety-mechanism---iso-26262-1)
   - [Software component - ISO/IEC/IEEE 24765](#software-component---isoiecieee-24765)
+  - [Software product - ISO/IEC/IEEE 24765](#software-product---isoiecieee-24765)
   - [Software unit - ISO/IEC/IEEE 24765](#software-unit---isoiecieee-24765)
   - [Solution - ISO/IEC/IEEE 24765](#solution---isoiecieee-24765)
   - [Stakeholder - IREB CPRE](#stakeholder---ireb-cpre)
@@ -238,7 +241,7 @@ This glossary contains **146 3SE term(s)**, **66 other term(s)** and **12 refere
 
 ## 3SE Terms
 
-*146 term(s) defined by the 3SE framework.*
+*148 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -586,7 +589,7 @@ This glossary contains **146 3SE term(s)**, **66 other term(s)** and **12 refere
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253) |
+| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d), [state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d) |
 | Superclass of | [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Close match | [function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
 
@@ -667,6 +670,7 @@ flowchart TD
 |---|---|
 | Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2) |
 | Close match | [behavioral-component-arcadia-2023-069b9d2c8d277fda](https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda) |
+| Allocates | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 
 *Created: 2026-03-17 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -678,28 +682,31 @@ flowchart TD
 
 > Functional element hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:
 (1) A high level functional element is composed of at least two functional elements.
-(2) A high level functional element allocates at least one high level function.
-(3) A functional element allocates at least one function.
+(2) A high level functional element allocates at least one high level state.
+(3) A functional element allocates at least one state.
 (4) A functional element can be a high level functional element.
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [high-level-function-3se-069c03f8a415717a](https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a), [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206), [high-level-state-3se-069c062b3637735e](https://www.3se.info/3se-onto/terms/high-level-state-3se-069c062b3637735e), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 
 **Structure**
 
 ```mermaid
 flowchart TD
-    N1["High level function"]
-    N2["Function"]
-    N3["Activity"]
-    N4["High level functional element"]
-    N5["Functional element"]
+    N1["Functional element"]
+    N2["State"]
+    N3["High level functional element"]
+    N4["High level state"]
+    N5["High level function"]
+    N6["Function"]
 
-    N1 -->|composed of| N2
-    N1 -.->|allocates| N3
-    N4 -->|composed of| N5
-    N4 -.->|allocates| N1
+    N1 -.->|allocates| N2
+    N3 -->|composed of| N1
+    N3 -.->|allocates| N4
+    N4 -->|composed of| N2
+    N4 -.->|allocates| N5
+    N2 -.->|allocates| N6
 ```
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
@@ -781,7 +788,7 @@ flowchart TD
 | Subclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Narrow match | [hardware-24765-2017-069a9bc4a30f7367](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367) |
 
-*Created: 2026-03-18 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -941,7 +948,7 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253) |
+| Related | [function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d), [state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d) |
 | Composed of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Allocates | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 
@@ -959,7 +966,7 @@ flowchart TD
 |---|---|
 | Related | [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2) |
 | Composed of | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504) |
-| Allocates | [high-level-function-3se-069c03f8a415717a](https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a) |
+| Allocates | [high-level-state-3se-069c062b3637735e](https://www.3se.info/3se-onto/terms/high-level-state-3se-069c062b3637735e) |
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -976,6 +983,22 @@ flowchart TD
 | Related | [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6) |
 | Composed of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Allocates | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206) |
+
+*Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
+
+---
+
+### High level state - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Combination of interacting states.
+
+| Relation | Terms |
+|---|---|
+| Related | [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d) |
+| Composed of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Allocates | [high-level-function-3se-069c03f8a415717a](https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a) |
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -1171,14 +1194,16 @@ flowchart TD
     N2["Physical element"]
     N3["High level functional element"]
     N4["Functional element"]
-    N5["High level function"]
+    N5["State"]
+    N6["High level state"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
     N2 -.->|allocates| N4
     N2 -.->|can be| N1
+    N4 -.->|allocates| N5
     N3 -->|composed of| N4
-    N3 -.->|allocates| N5
+    N3 -.->|allocates| N6
 ```
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
@@ -2066,7 +2091,7 @@ flowchart TD
 | Subclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Close match | [computer-program-24765-2017-069a99c8f70a783f](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f) |
 
-*Created: 2026-03-18 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -2186,6 +2211,7 @@ flowchart TD
 |---|---|
 | Related | [safety-software-feature-3se-069c058ef4f372bc](https://www.3se.info/3se-onto/terms/safety-software-feature-3se-069c058ef4f372bc), [security-software-feature-3se-069c058ef50c77bb](https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [software-feature-3se-069c058ef5187d78](https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
+| Close match | [software-product-24765-2017-069c062b36567951](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951) |
 
 *Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
 
@@ -2289,10 +2315,46 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51) |
+| Related | [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d) |
 | Broad match | [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
+| Allocates | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 
-*Created: 2026-03-13 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
+
+---
+
+### State breakdown structure - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> State hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:
+(1) A high level state is composed of at least two states.
+(2) A high level state allocates at least one high level function.
+(3) A state allocates at least one function.
+(4) A state can be a high level state.
+
+| Relation | Terms |
+|---|---|
+| Related | [high-level-state-3se-069c062b3637735e](https://www.3se.info/3se-onto/terms/high-level-state-3se-069c062b3637735e), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [high-level-function-3se-069c03f8a415717a](https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a) |
+
+**Structure**
+
+```mermaid
+flowchart TD
+    N1["High level state"]
+    N2["State"]
+    N3["High level function"]
+    N4["Function"]
+    N5["Activity"]
+
+    N1 -->|composed of| N2
+    N1 -.->|allocates| N3
+    N2 -.->|allocates| N4
+    N3 -->|composed of| N4
+    N3 -.->|allocates| N5
+```
+
+*Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -2583,7 +2645,7 @@ flowchart TD
 
 ## Other Terms
 
-*66 term(s) sourced from external standards and frameworks.*
+*67 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -3192,6 +3254,18 @@ flowchart TD
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### Software product - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Complete set of software designed for delivery to a software consumer or end-user which can include computer programs, procedures and associated documentation and data.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
