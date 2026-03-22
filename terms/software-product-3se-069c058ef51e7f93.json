@@ -4,6 +4,9 @@
   "title": "Software product - 3SE",
   "description": "Implementation of a system composed of software only.",
   "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/software-product-24765-2017"
+  ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
   ],
