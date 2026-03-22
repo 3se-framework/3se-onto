@@ -52,6 +52,11 @@ TERM_ARRAY_FIELDS: list[str] = [
     "broadMatch",
     "narrowMatch",
     "relatedMatch",
+    "subClassOf",
+    "isComposedOf",
+    "isDescribedBy",
+    "isRepresentedBy",
+    "canBe",
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
