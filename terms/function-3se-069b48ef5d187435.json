@@ -16,7 +16,6 @@
   "entryModified": "2026-03-22",
   "related": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
-    "https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97",
     "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
@@ -24,7 +23,8 @@
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
     "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
-    "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d"
+    "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d",
+    "https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a"
