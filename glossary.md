@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-22 16:47 UTC*
+*Generated on 2026-03-22 16:57 UTC*
 
 This glossary contains **129 3SE term(s)**, **66 other term(s)** and **12 reference(s)**.
 
@@ -1068,15 +1068,14 @@ flowchart TD
     N1["Product"]
     N2["Product Element"]
     N3["System"]
-    N4["Product element"]
     N5["Feature"]
     N6["System element"]
     N7["System Activity"]
 
     N1 -->|composed of| N2
     N1 -.->|described by| N3
-    N4 -.->|described by| N5
-    N4 -->|can be| N1
+    N2 -.->|described by| N5
+    N2 -->|can be| N1
     N3 -->|composed of| N6
     N3 -.->|described by| N7
 ```
