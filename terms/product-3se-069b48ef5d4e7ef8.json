@@ -25,6 +25,9 @@
     "https://www.3se.info/3se-onto/terms/product-element-3se"
   ],
   "isDescribedBy": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+  ],
+  "isRepresentedBy": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ]
 }
