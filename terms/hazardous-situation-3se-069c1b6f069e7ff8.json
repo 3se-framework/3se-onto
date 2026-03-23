@@ -4,6 +4,9 @@
   "title": "Hazardous situation - 3SE",
   "description": "Situation in which the system of interest generates a hazard.",
   "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
+  ],
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/hazardous-event-26262-1-069c1b6f069670f5"
   ],
@@ -12,7 +15,6 @@
     "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
     "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e",
     "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50",
-    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],
   "entryCreated": "2026-03-23",
