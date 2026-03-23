@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Security risk analysis - 3SE",
+  "description": "Risk analysis which is relevant for security engineering.\nIt includes the following steps:\n(1) Identify the assets.\n(2) For each asset, evaluate its severity level.\n(3) Identify the threatening situations.\n(4) For each threatening situation, determine the modus operandi, the threat type, the threat group and the impacted asset.\n(5) For each threatening situation, evaluate the likelihood of its occurrence.\n(6) For each threatening situation, evaluate the targeted security risk level based on its asset severity and the likelihood of its occurrence.\n(7) For each threatening situation, decide the security risk treatment: avoid, reduce, retain or share.\n(8) For each threatening situation, evaluate the residual security risk level after treatment.\n(9) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.\n",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
+  ],
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/threat-analysis-and-risk-assessment-21434-2021"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Threat analysis and risk assessment - ISO/SAE 21434",
+  "description": "Methods to determine the extent to which a road user can be impacted by a threat scenario. These methods and their work products are performed from the viewpoint of affected road users.\nThe methods defined in this clause are generic modules that can be invoked systematically, and from any point in the lifecycle of an item or component:\n— asset identification.\n— threat scenario identification.\n— impact rating.\n— attack path analysis.\n— attack feasibility rating.\n— risk value determination.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d"
+  ]
+}
