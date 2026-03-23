@@ -9,7 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed",
   "related": [
-    "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6"
+    "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
+    "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50"
   ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-03-21",

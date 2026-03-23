@@ -8,6 +8,18 @@
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
   ],
   "closeMatch": [
-    "https://www.3se.info/3se-onto/terms/threat-analysis-and-risk-assessment-21434-2021"
-  ]
+    "https://www.3se.info/3se-onto/terms/threat-analysis-and-risk-assessment-21434-2021-069c1ab34bb77d01"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed",
+    "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5"
+  ],
+  "entryCreated": "2026-03-23",
+  "entryModified": "2026-03-23",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

@@ -9,7 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0",
   "related": [
-    "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917"
+    "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
+    "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e"
   ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-03-21",

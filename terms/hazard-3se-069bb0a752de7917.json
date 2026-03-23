@@ -11,7 +11,8 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
-    "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0"
+    "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0",
+    "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e"
   ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-21",

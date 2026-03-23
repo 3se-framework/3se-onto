@@ -13,7 +13,8 @@
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/vulnerability-3se-069c1a2fb8f177a4",
-    "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea"
+    "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea",
+    "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50"
   ],
   "entryCreated": "2026-03-23",
   "entryModified": "2026-03-23",
