@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Risk - 3SE",
-  "description": "The combination of the likelihood of occurrence and the severity of consequences of an undesirable event under a given situation.",
+  "description": "The combination of the likelihood of occurrence and the severity of consequences of an undesirable event under a given situation:\n(1) Likelihood of occurrence: Rare, Unlikely, Possible, Likely, Almost certain.\n(2) Severity of consequences: Insignificant, Minor, Moderate, Major, Blocker.\n(3) Combination: Acceptable, Tolerable, Undesirable, Unacceptable.",
   "status": "draft",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036"
