@@ -11,7 +11,8 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
-    "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed"
+    "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed",
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
   ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-21",

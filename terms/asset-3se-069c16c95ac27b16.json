@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Asset - 3SE",
+  "description": "Flow, physical interface or physical element that is worth protecting from attacks.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/asset-21434-2021-069c16c95aa67c53"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ],
+  "entryCreated": "2026-03-23",
+  "entryModified": "2026-03-23",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
