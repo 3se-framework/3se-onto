@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Attack - 3SE",
-  "description": "Set of deliberate actions to compromise one or more attributes of the system of interest that is worth protecting.",
+  "description": "Set of deliberate actions to compromise one or more assets.",
   "status": "draft",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a"
