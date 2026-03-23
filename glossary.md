@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-23 13:58 UTC*
+*Generated on 2026-03-23 16:41 UTC*
 
-This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 reference(s)**.
+This glossary contains **151 3SE term(s)**, **69 other term(s)** and **12 reference(s)**.
 
 ## Contents
 
@@ -10,6 +10,7 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
   - [Acceptance - 3SE](#acceptance---3se)
   - [Activity - 3SE](#activity---3se)
   - [Analysis - 3SE](#analysis---3se)
+  - [Asset - 3SE](#asset---3se)
   - [Attack - 3SE](#attack---3se)
   - [Attribute - 3SE](#attribute---3se)
   - [Change - 3SE](#change---3se)
@@ -160,6 +161,7 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
 - [Other Terms](#other-terms)
   - [Acceptance - IEEE 1012](#acceptance---ieee-1012)
   - [Activity - ISO/IEC/IEEE 24765](#activity---isoiecieee-24765)
+  - [Asset - ISO/SAE 21434](#asset---isosae-21434)
   - [Attack path - ISO/SAE 21434](#attack-path---isosae-21434)
   - [Attribute - ISO/IEC/IEEE 24765](#attribute---isoiecieee-24765)
   - [Behavioral component - ARCADIA](#behavioral-component---arcadia)
@@ -244,7 +246,7 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
 
 ## 3SE Terms
 
-*150 term(s) defined by the 3SE framework.*
+*151 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -293,6 +295,21 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
 
 ---
 
+### Asset - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Flow, physical interface or physical element that is worth protecting from attacks.
+
+| Relation | Terms |
+|---|---|
+| Related | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Narrow match | [asset-21434-2021-069c16c95aa67c53](https://www.3se.info/3se-onto/terms/asset-21434-2021-069c16c95aa67c53) |
+
+*Created: 2026-03-23 · Modified: 2026-03-23 · Creator: @rcasteran*
+
+---
+
 ### Attack - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -301,7 +318,7 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
 | Broad match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
 
 *Created: 2026-03-18 · Modified: 2026-03-21 · Creator: @rcasteran*
@@ -455,7 +472,7 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Close match | [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b) |
 
-*Created: 2026-03-17 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-23 · Creator: @rcasteran*
 
 ---
 
@@ -590,7 +607,7 @@ This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 refere
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
 | Superclass of | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
 | Close match | [functional-exchange-arcadia-2023-069bc4ea532a72d7](https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023-069bc4ea532a72d7) |
 
@@ -1184,7 +1201,7 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6) |
+| Related | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
 | Superclass of | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
 | Close match | [hosting-physical-component-arcadia-2023-069b9d2c8dad7934](https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934) |
 | Allocates | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504) |
@@ -1241,7 +1258,7 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
+| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
 | Superclass of | [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c) |
 | Related match | [physical-port-arcadia-2023-069bd66fb642700a](https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a) |
 
@@ -1471,7 +1488,8 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
+| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
+| Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
 | Exact match | [residual-risk-24765-2017-069c1469f43474c4](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4) |
 
 *Created: 2026-03-23 · Modified: 2026-03-23 · Creator: @rcasteran*
@@ -1482,15 +1500,18 @@ flowchart TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> The combination of the likelihood of occurrence and the severity of consequences of an undesirable event under a given situation.
+> The combination of the likelihood of occurrence and the severity of consequences of an undesirable event under a given situation:
+(1) Likelihood of occurrence: Rare, Unlikely, Possible, Likely, Almost certain.
+(2) Severity of consequences: Insignificant, Minor, Moderate, Major, Blocker.
+(3) Combination: Acceptable, Tolerable, Undesirable, Unacceptable.
 
 | Relation | Terms |
 |---|---|
-| Related | [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
-| Superclass of | [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
+| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
+| Superclass of | [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
 | Close match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 
-*Created: 2026-03-14 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-23 · Creator: @rcasteran*
 
 ---
 
@@ -1504,7 +1525,7 @@ flowchart TD
 |---|---|
 | Related | [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
-| Narrow match | [risk-analysis-24765-2017-069bda7c99c97bad](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad) |
+| Close match | [risk-analysis-24765-2017-069bda7c99c97bad](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad) |
 
 *Created: 2026-03-20 · Modified: 2026-03-23 · Creator: @rcasteran*
 
@@ -2688,7 +2709,7 @@ flowchart TD
 
 ## Other Terms
 
-*68 term(s) sourced from external standards and frameworks.*
+*69 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -2711,6 +2732,18 @@ flowchart TD
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
 *Created: 2026-03-06 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Asset - ISO/SAE 21434
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Object that has value, or contributes to value.
+
+**References:** [ISO/SAE 21434:2021](https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d)
+
+*Created: 2026-03-23 · Modified: 2026-03-23 · Creator: @rcasteran*
 
 ---
 
