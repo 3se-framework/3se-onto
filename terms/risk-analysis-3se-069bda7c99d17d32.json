@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Risk analysis - 3SE",
-  "description": "Analysis of an entity to determine what undesirable event it can encounter and how to treat it.",
+  "description": "Analysis of an entity to determine what risk it can encounter, how to treat it, and what is the residual risk after treatment.",
   "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad"
