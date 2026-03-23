@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-03-22 22:04 UTC*
+*Generated on 2026-03-23 13:58 UTC*
 
-This glossary contains **149 3SE term(s)**, **67 other term(s)** and **12 reference(s)**.
+This glossary contains **150 3SE term(s)**, **68 other term(s)** and **12 reference(s)**.
 
 ## Contents
 
@@ -80,6 +80,7 @@ This glossary contains **149 3SE term(s)**, **67 other term(s)** and **12 refere
   - [Release analysis - 3SE](#release-analysis---3se)
   - [Requirement - 3SE](#requirement---3se)
   - [Requirement analysis - 3SE](#requirement-analysis---3se)
+  - [Residual risk - 3SE](#residual-risk---3se)
   - [Risk - 3SE](#risk---3se)
   - [Risk analysis - 3SE](#risk-analysis---3se)
   - [Safety activity - 3SE](#safety-activity---3se)
@@ -203,6 +204,7 @@ This glossary contains **149 3SE term(s)**, **67 other term(s)** and **12 refere
   - [Quality Requirement - IREB CPRE](#quality-requirement---ireb-cpre)
   - [Release - ISO/IEC/IEEE 24765](#release---isoiecieee-24765)
   - [Requirement - IREB CPRE](#requirement---ireb-cpre)
+  - [Residual risk - ISO/IEC/IEEE 24765](#residual-risk---isoiecieee-24765)
   - [Risk - IEEE 1012](#risk---ieee-1012)
   - [Risk analysis - ISO/IEC/IEEE 24765](#risk-analysis---isoiecieee-24765)
   - [Safety goal - ISO 26262-1](#safety-goal---iso-26262-1)
@@ -242,7 +244,7 @@ This glossary contains **149 3SE term(s)**, **67 other term(s)** and **12 refere
 
 ## 3SE Terms
 
-*149 term(s) defined by the 3SE framework.*
+*150 term(s) defined by the 3SE framework.*
 
 ### Acceptance - 3SE
 
@@ -453,7 +455,7 @@ This glossary contains **149 3SE term(s)**, **67 other term(s)** and **12 refere
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Close match | [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b) |
 
-*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-22 · Creator: @rcasteran*
 
 ---
 
@@ -1461,6 +1463,21 @@ flowchart TD
 
 ---
 
+### Residual risk - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Risk remaining after risk treatment.
+
+| Relation | Terms |
+|---|---|
+| Related | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
+| Exact match | [residual-risk-24765-2017-069c1469f43474c4](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4) |
+
+*Created: 2026-03-23 · Modified: 2026-03-23 · Creator: @rcasteran*
+
+---
+
 ### Risk - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -1469,6 +1486,7 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
+| Related | [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 | Superclass of | [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
 | Close match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 
@@ -1480,14 +1498,15 @@ flowchart TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of an entity to determine what undesirable event it can encounter and how to treat it.
+> Analysis of an entity to determine what risk it can encounter, how to treat it, and what is the residual risk after treatment.
 
 | Relation | Terms |
 |---|---|
+| Related | [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Narrow match | [risk-analysis-24765-2017-069bda7c99c97bad](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-03-23 · Creator: @rcasteran*
 
 ---
 
@@ -2669,7 +2688,7 @@ flowchart TD
 
 ## Other Terms
 
-*67 term(s) sourced from external standards and frameworks.*
+*68 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -3218,6 +3237,18 @@ flowchart TD
 **References:** [IREB CPRE Glossary](https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67)
 
 *Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Residual risk - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Risk remaining after risk treatment.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-03-23 · Modified: 2026-03-23 · Creator: @rcasteran*
 
 ---
 
