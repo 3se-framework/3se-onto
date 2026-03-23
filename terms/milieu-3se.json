@@ -1,7 +1,0 @@
-{
-  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
-  "@type": "skos:Concept",
-  "title": "Milieu - 3SE",
-  "description": "The broader operational environment surrounding the system of interest, populated by interdependent systems and actors that are neither subordinate to nor in a defined relationship with the system of interest, but whose existence and behavior are consequential to it.",
-  "status": "draft"
-}

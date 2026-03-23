@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Context - 3SE",
+  "description": "A specific, bounded configuration of relevant conditions, actors, constraints, and relationships, defined by the presence of a subset of the actors and systems of the milieu within a geometrically closed area, that frames the operation of the system of interest at a given point in time.",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f",
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569",
+    "https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1",
+    "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
+    "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e",
+    "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50",
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "entryCreated": "2026-03-23",
+  "entryModified": "2026-03-23",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
