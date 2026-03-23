@@ -11,7 +11,8 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f"
   ],
   "entryCreated": "2026-03-19",
   "entryModified": "2026-03-20",
