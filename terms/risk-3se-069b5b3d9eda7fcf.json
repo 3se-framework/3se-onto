@@ -14,5 +14,8 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "related": []
+  "related": [
+    "https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770",
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
+  ]
 }

@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Residual risk - 3SE",
+  "description": "Risk remaining after risk treatment.",
+  "status": "draft",
+  "exactMatch": [
+    "https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf",
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
+  ],
+  "entryCreated": "2026-03-23",
+  "entryModified": "2026-03-23",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
