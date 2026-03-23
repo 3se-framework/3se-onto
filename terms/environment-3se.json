@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Environment - 3SE",
+  "description": "The set of pre-existing conditions — physical, regulatory, technological, social, temporal — that constitute the background reality within which any system operates, independently of any particular system of interest, and that shapes the milieu by constraining and enabling what is possible within it.",
+  "status": "draft"
+}

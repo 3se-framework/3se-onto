@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Situation - 3SE",
+  "description": "A transient state that arises within a context in response to one or more events, capturing a distinct configuration of conditions that the system of interest must interpret and respond to.\nMultiple situations may be active concurrently within the same context and may combine into a compound situation.",
+  "status": "draft"
+}
