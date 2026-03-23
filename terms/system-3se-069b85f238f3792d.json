@@ -20,7 +20,6 @@
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
     "https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11",
-    "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
     "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
     "https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3",
@@ -47,7 +46,9 @@
     "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55",
     "https://www.3se.info/3se-onto/terms/security-hardware-product-3se-069c058ef506753d",
     "https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb",
-    "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93"
+    "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93",
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
