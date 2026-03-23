@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety risk analysis - 3SE",
+  "description": "Risk analysis which is relevant for safety engineering.\nIt includes the following steps:\n(1) Identify the hazards.\n(2) For each hazard, evaluate its severity level.\n(3) Identify the hazardous situations.\n(4) For each hazardous situation, determine the different operating conditions and the generated hazard.\n(5) For each hazardous situation, evaluate the likelihood of its occurrence.\n(6) For each hazardous situation, evaluate the targeted safety risk level based on its hazard severity and the likelihood of its occurrence.\n(7) For each hazardous situation, decide the safety risk treatment: avoid, reduce, retain or share.\n(8) For each hazardous situation, evaluate the residual safety risk level after treatment.\n(9) For each hazardous situation, determine if the safety risk treatment leads to a threatening situation in the same context.\n",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
+  ],
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/hazard-analysis-and-risk-assessment-26262-1"
+  ]
+}
