@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Context - 3SE",
-  "description": "A specific, bounded configuration of relevant conditions, actors, constraints, and relationships, defined by the presence of a subset of the actors and systems of the milieu within a geometrically closed area, that frames the operation of the system of interest at a given point in time.",
+  "description": "Presence of a subset of the interdependent actors and/orC interdependent systems of the milieu within a geometrically closed area surrounding the system of interest, that frames its behavior in a given situation.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
   "related": [
