@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-24 22:59 UTC*
+*Generated on 2026-03-24 23:07 UTC*
 
 This glossary contains **169 3SE term(s)**, **80 other term(s)** and **16 reference(s)**.
 
@@ -384,7 +384,7 @@ This glossary contains **169 3SE term(s)**, **80 other term(s)** and **16 refere
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [holism-3se-069c316c19067fbe](https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 | Narrow match | [attribute-24765-2017-069b72bee10a7f6c](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c) |
 
-*Created: 2026-03-15 · Modified: 2026-03-23 · Creator: @rcasteran*
+*Created: 2026-03-15 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -656,7 +656,7 @@ This glossary contains **169 3SE term(s)**, **80 other term(s)** and **16 refere
 | Close match | [feature-safe-6-0-069a9f3e92177c2b](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b) |
 | Allocates | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 
-*Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -704,7 +704,7 @@ This glossary contains **169 3SE term(s)**, **80 other term(s)** and **16 refere
 | Close match | [function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
 | Can be | [high-level-function-3se-069c03f8a415717a](https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a) |
 
-*Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -752,7 +752,7 @@ flowchart TD
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f) |
 
-*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -872,7 +872,7 @@ flowchart TD
 | Superclass of | [safety-goal-3se-069bdc3120a277c9](https://www.3se.info/3se-onto/terms/safety-goal-3se-069bdc3120a277c9), [security-goal-3se-069bdc3120f77833](https://www.3se.info/3se-onto/terms/security-goal-3se-069bdc3120f77833) |
 | Broad match | [goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4) |
 
-*Created: 2026-03-13 · Modified: 2026-03-23 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -887,7 +887,7 @@ flowchart TD
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -1368,7 +1368,7 @@ flowchart TD
 | Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -1598,7 +1598,7 @@ flowchart TD
 
 ### Reductionism - 3SE
 
-![standard](https://img.shields.io/badge/status-standard-brightgreen)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Principle of understanding a system by decomposing it into its system elements and their interactions.
 
@@ -1607,7 +1607,7 @@ flowchart TD
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Narrow match | [reductionism-perspective-systems-science-1974-069c316c1940757e](https://www.3se.info/3se-onto/terms/reductionism-perspective-systems-science-1974-069c316c1940757e) |
 
-*Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-03-25 · Creator: @rcasteran*
 
 ---
 
@@ -1705,7 +1705,7 @@ flowchart TD
 | Superclass of | [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
 | Close match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
 
-*Created: 2026-03-14 · Modified: 2026-03-23 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -2773,7 +2773,7 @@ flowchart TD
 | Allocates | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Can be | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
-*Created: 2026-03-16 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
