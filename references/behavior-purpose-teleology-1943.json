@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:AcademicArticle",
+  "title": "Behavior, Purpose and Teleology",
+  "abstract": "This essay has two goals. The first is to define the behavioristic study of natural events and to classify behavior. The second is to stress the importance of the concept of purpose.",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Arturo Rosenblueth"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "Norbert Wiener"
+    },
+    {
+      "@type": "foaf:Person",
+      "name": "Julian Bigelow"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "1943",
+  "doi": "10.1086/286788"
+}

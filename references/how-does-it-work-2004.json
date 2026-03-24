@@ -1,0 +1,15 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:AcademicArticle",
+  "title": "How Does It Work? The Search for Explanatory Mechanisms",
+  "abstract": "This article addresses the following problems: What is a mechanism, how can it be discovered, and what is the role of the knowledge of mechanisms in scientific explanation and technological control?",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Mario Bunge"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "2004",
+  "doi": "10.1177/0048393103262550"
+}

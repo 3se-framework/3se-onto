@@ -1,0 +1,15 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:AcademicArticle",
+  "title": "A perspective on systems science and systems philosophy",
+  "abstract": "A philosophical survey of systems science and systems philosophy is offered to provide an integrated, if personal, view of the ideas within the contemporary systems movement.",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Philip K. M'Pherson"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "1974",
+  "doi": "10.1016/0016-3287(74)90046-9"
+}

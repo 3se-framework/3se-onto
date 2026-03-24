@@ -1,0 +1,15 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Book",
+  "title": "General System Theory: Foundations, Development, Applications Revised Edition 1973",
+  "abstract": "This book presents the foundations, development and applications of general system theory and discusses the role of systems in biology, psychology, psychiatry and the social sciences..",
+  "authorList": [
+    {
+      "@type": "foaf:Person",
+      "name": "Ludwig von Bertalanffy"
+    }
+  ],
+  "status": "bibo:published",
+  "date": "1973",
+  "publisher": "George Braziller"
+}

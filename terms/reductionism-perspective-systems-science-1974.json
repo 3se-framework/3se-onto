@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Reductionism - A perspective on systems science and systems philosophy 1974",
+  "description": "An approach to understanding the nature of complex things by reducing them to the interactions of their parts.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/perspective-systems-science-1974"
+  ]
+}

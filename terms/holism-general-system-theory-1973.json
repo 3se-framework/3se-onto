@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Holism - General System Theory: Foundations, Development, Applications Revised Edition 1973",
+  "description": "The meaning of the somewhat mystical expression, 'The whole is more than the sum of its parts' is simply that constitutive characteristics are not explainable from the characteristics of the isolated parts. The characteristics of the complex, therefore, appear as new or emergent.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/general-system-theory-revised-1973"
+  ]
+}

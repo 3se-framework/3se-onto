@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Systems principles - 3SE",
-  "description": "Systems principles represent the foundations of systems engineering and are the following: (1) Holism, (2) Reductionism, (3) Mechanism, (4) Teleology",
+  "description": "Systems principles represent the foundations of systems engineering and are the following:\n(1) Holism, covered by the interdependence analysis.\n(2) Reductionism, covered by the physical architecture.\n(3) Mechanism, covered by functional analysis.\n(4) Teleology, covered by the goal analysis.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
   "entryCreated": "2026-03-16",

@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Teleological behavior - Behavior, Purpose and Teleology 1943",
+  "description": "Purposeful reactions which are controlled by the error of the reaction — i.e., by the difference between the state of the behaving object at any time and the final state interpreted as the purpose.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/behavior-purpose-teleology-1943"
+  ]
+}

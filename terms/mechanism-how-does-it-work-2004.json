@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Mechanism - How does it work ? 2004",
+  "description": "A mechanism is one of the processes in a concrete system that makes it what it is — for example, metabolism in cells, interneuronal connections in brains, work in factories and offices, research in laboratories, and litigation in courts of law.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/how-does-it-work-2004"
+  ]
+}
