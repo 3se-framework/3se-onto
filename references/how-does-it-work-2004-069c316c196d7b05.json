@@ -11,5 +11,12 @@
   ],
   "status": "bibo:published",
   "date": "2004",
-  "doi": "10.1177/0048393103262550"
+  "doi": "10.1177/0048393103262550",
+  "@id": "https://www.3se.info/3se-onto/references/how-does-it-work-2004-069c316c196d7b05",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

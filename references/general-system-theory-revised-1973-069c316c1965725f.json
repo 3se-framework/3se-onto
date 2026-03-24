@@ -10,5 +10,12 @@
     }
   ],
   "status": "bibo:published",
-  "date": "1973"
+  "date": "1973",
+  "@id": "https://www.3se.info/3se-onto/references/general-system-theory-revised-1973-069c316c1965725f",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

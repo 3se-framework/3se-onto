@@ -5,6 +5,13 @@
   "description": "The meaning of the somewhat mystical expression, 'The whole is more than the sum of its parts' is simply that constitutive characteristics are not explainable from the characteristics of the isolated parts. The characteristics of the complex, therefore, appear as new or emergent.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/general-system-theory-revised-1973"
-  ]
+    "https://www.3se.info/3se-onto/references/general-system-theory-revised-1973-069c316c1965725f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/holism-general-system-theory-revised-1973-069c316c1913736d",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

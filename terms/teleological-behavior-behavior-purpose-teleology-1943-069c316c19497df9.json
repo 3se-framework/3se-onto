@@ -5,6 +5,13 @@
   "description": "Purposeful reactions which are controlled by the error of the reaction — i.e., by the difference between the state of the behaving object at any time and the final state interpreted as the purpose.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/behavior-purpose-teleology-1943"
-  ]
+    "https://www.3se.info/3se-onto/references/behavior-purpose-teleology-1943-069c316c195c794a"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/teleological-behavior-behavior-purpose-teleology-1943-069c316c19497df9",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

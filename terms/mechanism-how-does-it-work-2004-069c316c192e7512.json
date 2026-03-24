@@ -5,6 +5,13 @@
   "description": "A mechanism is one of the processes in a concrete system that makes it what it is — for example, metabolism in cells, interneuronal connections in brains, work in factories and offices, research in laboratories, and litigation in courts of law.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/how-does-it-work-2004"
-  ]
+    "https://www.3se.info/3se-onto/references/how-does-it-work-2004-069c316c196d7b05"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/mechanism-how-does-it-work-2004-069c316c192e7512",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

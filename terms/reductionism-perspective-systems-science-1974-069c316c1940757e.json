@@ -5,6 +5,13 @@
   "description": "An approach to understanding the nature of complex things by reducing them to the interactions of their parts.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/perspective-systems-science-1974"
-  ]
+    "https://www.3se.info/3se-onto/references/perspective-systems-science-1974-069c316c197672b3"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/reductionism-perspective-systems-science-1974-069c316c1940757e",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

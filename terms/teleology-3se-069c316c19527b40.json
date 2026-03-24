@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Teleology - 3SE",
+  "description": "Teleology is the property of a system to be oriented toward a goal.",
+  "status": "draft",
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/teleological-behavior-behavior-purpose-teleology-1943-069c316c19497df9"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/teleology-3se-069c316c19527b40",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20"
+  ],
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

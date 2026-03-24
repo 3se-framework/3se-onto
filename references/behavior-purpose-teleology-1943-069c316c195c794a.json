@@ -19,5 +19,12 @@
   ],
   "status": "bibo:published",
   "date": "1943",
-  "doi": "10.1086/286788"
+  "doi": "10.1086/286788",
+  "@id": "https://www.3se.info/3se-onto/references/behavior-purpose-teleology-1943-069c316c195c794a",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

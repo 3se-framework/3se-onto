@@ -11,5 +11,12 @@
   ],
   "status": "bibo:published",
   "date": "1974",
-  "doi": "10.1016/0016-3287(74)90046-9"
+  "doi": "10.1016/0016-3287(74)90046-9",
+  "@id": "https://www.3se.info/3se-onto/references/perspective-systems-science-1974-069c316c197672b3",
+  "entryCreated": "2026-03-24",
+  "entryModified": "2026-03-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
