@@ -7,15 +7,17 @@
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+  "@id": "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
   "related": [
-    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253"
+    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],
   "entryCreated": "2026-03-19",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-03-24",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

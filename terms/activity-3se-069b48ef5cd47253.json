@@ -21,7 +21,11 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
-    "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d"
+    "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
+    "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f",
+    "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
+    "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
+    "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"

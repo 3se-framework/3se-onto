@@ -6,7 +6,7 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
   "entryCreated": "2026-03-17",
-  "entryModified": "2026-03-23",
+  "entryModified": "2026-03-24",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -23,6 +23,8 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
     "https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a",
-    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
+    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e"
   ]
 }

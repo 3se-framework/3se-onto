@@ -19,10 +19,11 @@
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
     "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
-    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
+    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253"
   ],
   "entryCreated": "2026-03-23",
-  "entryModified": "2026-03-23",
+  "entryModified": "2026-03-24",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
