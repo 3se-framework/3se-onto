@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-03-24 19:21 UTC*
+*Generated on 2026-03-24 19:30 UTC*
 
 This glossary contains **164 3SE term(s)**, **76 other term(s)** and **12 reference(s)**.
 
@@ -296,7 +296,7 @@ This glossary contains **164 3SE term(s)**, **76 other term(s)** and **12 refere
 | Narrow match | [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
 | Allocates | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
-*Created: 2026-03-13 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -432,7 +432,7 @@ This glossary contains **164 3SE term(s)**, **76 other term(s)** and **12 refere
 |---|---|
 | Subclass of | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-03-19 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
@@ -1169,7 +1169,7 @@ flowchart TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Human being who carries out its own activities within the milieu of the system of interest that mutually and durably shape those of the system of interest over time.
+> Human being whose own activities within the milieu of the system of interest mutually and durably shape those of the system of interest over time.
 
 | Relation | Terms |
 |---|---|
@@ -1183,7 +1183,7 @@ flowchart TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> System that carries out its own activities within the milieu of the system of interest that mutually and durably shape those of the system of interest over time.
+> System whose own activities within the milieu of the system of interest mutually and durably shape those of the system of interest over time.
 
 | Relation | Terms |
 |---|---|
@@ -2628,7 +2628,7 @@ flowchart TD
 | Composed of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 | Allocates | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
 
-*Created: 2026-03-16 · Modified: 2026-03-23 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
 
