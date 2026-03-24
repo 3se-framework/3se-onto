@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Reductionism - 3SE",
   "description": "Principle of understanding a system by decomposing it into its system elements and their interactions.",
-  "status": "standard",
+  "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/reductionism-perspective-systems-science-1974-069c316c1940757e"
   ],
