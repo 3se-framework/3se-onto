@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Interdependent system - 3SE",
+  "description": "System that carries out its own activities within the milieu of the system of interest that mutually and durably shape those of the system of interest over time.",
+  "status": "draft"
+}
