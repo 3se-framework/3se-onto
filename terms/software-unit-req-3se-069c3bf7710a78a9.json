@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software unit requirement - 3SE",
+  "description": "Requirement about a software unit.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572",
+    "https://www.3se.info/3se-onto/terms/software-unit-validation-3se-069c3bf77114763f"
+  ],
+  "entryCreated": "2026-03-25",
+  "entryModified": "2026-03-25",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

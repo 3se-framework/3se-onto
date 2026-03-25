@@ -19,7 +19,9 @@
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6",
     "https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe",
-    "https://www.3se.info/3se-onto/terms/reductionism-3se-069c316c193771cc"
+    "https://www.3se.info/3se-onto/terms/reductionism-3se-069c316c193771cc",
+    "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d",
+    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"

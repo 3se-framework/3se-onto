@@ -9,12 +9,14 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572",
   "entryCreated": "2026-03-16",
-  "entryModified": "2026-03-18",
+  "entryModified": "2026-03-25",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
   "related": [
-    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5"
+    "https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9",
+    "https://www.3se.info/3se-onto/terms/software-unit-validation-3se-069c3bf77114763f",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
   ]
 }
