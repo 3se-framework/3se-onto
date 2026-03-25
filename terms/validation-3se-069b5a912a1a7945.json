@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Validation - 3SE",
-  "description": "Evaluation of an entity to determine whether it satisfies the requirements allocated to it at the end of a development phase. Note : it does not determine if the entity satisfies the stakeholders’ requirements nor the stakeholders’ goals",
+  "description": "Evaluation of an entity to determine whether it satisfies the requirements allocated to it at the end of a development phase.\nNote: it does not determine if the entity satisfies the stakeholders’ requirements nor the stakeholders’ goals",
   "status": "draft",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07"

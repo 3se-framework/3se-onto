@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Acceptance - 3SE",
-  "description": "Evaluation of the attributes and features of an entity conducted to enable a stakeholder to determine whether the right entity is built and to accept it. Note : it determines if the entity satisfies the stakeholders’ requirements and the stakeholders’ goals.",
+  "description": "Evaluation of the attributes and features of an entity conducted to enable a stakeholder to determine whether the right entity is built and to accept it.\nNote: it determines if the entity satisfies the stakeholders’ requirements and the stakeholders’ goals.",
   "status": "draft",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544"

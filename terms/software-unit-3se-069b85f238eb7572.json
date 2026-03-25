@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Software unit - 3SE",
-  "description": "Atomic level part of a software component that is subjected to software unit testing.",
+  "description": "Atomic level part of a software component that is subjected to software unit validation.",
   "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6"
