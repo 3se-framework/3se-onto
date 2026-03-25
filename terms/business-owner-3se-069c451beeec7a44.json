@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Business owner - 3SE",
+  "description": "Role that is responsible of stakeholder's goals and stakeholder's requirements.\nTherefore, it is also responsible of the value analysis.\nIt contributes to the product analysis.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
+    "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
+  ],
+  "entryCreated": "2026-03-25",
+  "entryModified": "2026-03-25",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

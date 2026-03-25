@@ -4,5 +4,12 @@
   "title": "The Organization Ontology",
   "abstract": "A core ontology for organizational structures, aimed at supporting linked data publishing of organizational information across a number of domains.",
   "uri": "https://www.w3.org/TR/vocab-org/",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/w3c-vocab-org-2014-069c451bef45787a",
+  "entryCreated": "2026-03-25",
+  "entryModified": "2026-03-25",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

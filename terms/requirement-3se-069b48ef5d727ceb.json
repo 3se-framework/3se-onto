@@ -13,7 +13,7 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-03-22",
+  "entryModified": "2026-03-25",
   "related": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
@@ -25,6 +25,10 @@
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
     "https://www.3se.info/3se-onto/terms/software-component-validation-3se-069c3bf770f17c85",
     "https://www.3se.info/3se-onto/terms/software-unit-validation-3se-069c3bf77114763f",
-    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12"
+    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
+    "https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44",
+    "https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68",
+    "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
+    "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63"
   ]
 }

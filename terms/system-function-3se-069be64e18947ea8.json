@@ -9,7 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3"
   ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-03-21",

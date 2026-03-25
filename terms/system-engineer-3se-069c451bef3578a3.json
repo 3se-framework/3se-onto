@@ -1,0 +1,29 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System engineer - 3SE",
+  "description": "Role that is responsible of the system requirements, the system activities, the system interfaces, the system functions, the system states.\nTherefore, it is also responsible of the operational analysis, the functional analysis and the requirements analysis.\nIt contributes to the functional architecture and to the physical architecture.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+    "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351"
+  ],
+  "entryCreated": "2026-03-25",
+  "entryModified": "2026-03-25",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
