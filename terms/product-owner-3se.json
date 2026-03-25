@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Product owner - 3SE",
+  "description": "Role that is responsible of a product, its features and its releases.\nTherefore, it is also responsible of the feature analysis, the product analysis and the release analysis.\nIt contributes to the value analysis, the operational analysis and to the variability analysis.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-3se"
+  ]
+}

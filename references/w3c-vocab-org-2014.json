@@ -1,0 +1,8 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "The Organization Ontology",
+  "abstract": "A core ontology for organizational structures, aimed at supporting linked data publishing of organizational information across a number of domains.",
+  "uri": "https://www.w3.org/TR/vocab-org/",
+  "status": "bibo:published"
+}

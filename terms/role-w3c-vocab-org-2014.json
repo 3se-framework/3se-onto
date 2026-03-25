@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Role - W3C Organization Ontology",
+  "description": "Denotes a role that a Person or other Agent can take in an organization.\nInstances of this class describe the abstract role; to denote a specific instance of a person playing that role in a specific organization use an instance of org:Membership.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/w3c-vocab-org-2014"
+  ]
+}
