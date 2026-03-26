@@ -4,5 +4,12 @@
   "title": "The PROV Namespace",
   "abstract": "he namespace name http://www.w3.org/ns/prov# is intended for use with the PROV family of documents that support the interchange of provenance on the web.",
   "uri": "https://www.w3.org/ns/prov",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49",
+  "entryCreated": "2026-03-26",
+  "entryModified": "2026-03-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
