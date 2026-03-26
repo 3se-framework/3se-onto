@@ -77,10 +77,10 @@ BIBO_TYPE_LABELS: dict[str, str] = {
 
 # Human-readable labels for role relation fields rendered on term pages.
 BREAKDOWN_RELATION_LABELS: dict[str, str] = {
-        "isComposedOf": "Composed of",
-        "isRepresentedBy": "Represented by",
-        "allocates": "Allocates",
-        "canBe": "Can be",
+    "isComposedOf": "Composed of",
+    "isRepresentedBy": "Represented by",
+    "allocates": "Allocates",
+    "canBe": "Can be",
 }
 
 # Human-readable labels for role relation fields rendered on term pages.
@@ -164,6 +164,7 @@ def resolve_status(entry: dict) -> tuple[str, str, str]:
     Both cases are resolved here so callers need no special-casing.
     """
     status = entry.get("status", "")
+    # Plain-string status — covers terms AND properties
     if status and status in TERM_STATUS_LABELS:
         label, color = TERM_STATUS_LABELS[status]
         return status, label, color
@@ -197,6 +198,16 @@ def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
+
+
+def split_properties(properties: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split properties into 3SE properties and other (external) properties.
+
+    A 3SE property has a title ending with '- 3SE', mirroring split_terms().
+    """
+    se3 = [p for p in properties if p.get("title", "").endswith("- 3SE")]
+    other = [p for p in properties if not p.get("title", "").endswith("- 3SE")]
+    return se3, other
 
 
 def clean_jsonld(entry: dict) -> dict:
@@ -611,7 +622,8 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 # ---------------------------------------------------------------------------
 
 def render_index(se3_terms: list[dict], other_terms: list[dict],
-                 references: list[dict], properties: list[dict]) -> str:
+                 references: list[dict],
+                 se3_properties: list[dict], other_properties: list[dict]) -> str:
     all_entries: list[dict] = []
     for t in se3_terms:
         all_entries.append({
@@ -641,7 +653,17 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
             "dir": "references",
             "desc": r.get("abstract", ""),
         })
-    for p in properties:
+    for p in se3_properties:
+        raw_status, _, _ = resolve_status(p)
+        all_entries.append({
+            "title": p.get("title", ""),
+            "type": "3SE Property",
+            "status": raw_status,
+            "stem": p["_stem"],
+            "dir": "properties",
+            "desc": p.get("description", ""),
+        })
+    for p in other_properties:
         raw_status, _, _ = resolve_status(p)
         all_entries.append({
             "title": p.get("title", ""),
@@ -668,7 +690,8 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
             "3SE Term": "color:var(--text);font-weight:500",
             "Term": "color:var(--text2)",
             "Reference": "color:var(--green)",
-            "Property": "color:var(--accent)",
+            "3SE Property": "color:var(--accent);font-weight:500",
+            "Property": "color:var(--muted)",
         }.get(e["type"], "")
         desc = e["desc"][:100] + ("…" if len(e["desc"]) > 100 else "")
         safe_title = e["title"].replace('"', "&quot;")
@@ -698,8 +721,9 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     and security engineering.<br><br>
     {len(se3_terms)} 3SE terms &nbsp;·&nbsp;
     {len(other_terms)} other terms &nbsp;·&nbsp;
+    {f'{len(se3_properties)} 3SE properties &nbsp;·&nbsp;' if se3_properties else ''}
+    {f'{len(other_properties)} other properties &nbsp;·&nbsp;' if other_properties else ''}
     {len(references)} references.
-    {f'&nbsp;·&nbsp; {len(properties)} properties.' if properties else ''}
   </p>
 </div>
 
@@ -709,21 +733,24 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     <option value="">All types</option>
     <option value="3se term">3SE Terms</option>
     <option value="term">Other Terms</option>
+    <option value="3se property">3SE Properties</option>
+    <option value="property">Other Properties</option>
     <option value="reference">References</option>
-    <option value="property">Properties</option>
   </select>
   <select id="filter-status">
     <option value="">All statuses</option>
-    <optgroup label="Term statuses">
+    <optgroup label="Term & Property statuses">
       <option value="draft">Draft</option>
+      <option value="reviewed">Under Review</option>
       <option value="reviewed">Reviewed</option>
       <option value="approved">Approved</option>
+      <option value="reviewed">Under Approval</option>
       <option value="standard">Standard</option>
     </optgroup>
     <optgroup label="Reference statuses">
       <option value="bibo:draft">Draft (bibo)</option>
       <option value="bibo:published">Published</option>
-      <option value="bibo:peerreviewed">Peer Reviewed</option>
+      <option value="bibo:peerReviewed">Peer Reviewed</option>
       <option value="bibo:forthcoming">Forthcoming</option>
       <option value="bibo:unpublished">Unpublished</option>
     </optgroup>
@@ -1089,7 +1116,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     relations_html = ""
     if hier or bfo_html or role_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                    bfo_html or role_html or match) else ""
+                bfo_html or role_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (role_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and match else ""
         relations_html = f"""
@@ -1442,6 +1469,7 @@ def main() -> int:
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
+    se3_properties, other_properties = split_properties(properties)
 
     # Rebuild _site/
     if SITE_DIR.exists():
@@ -1453,7 +1481,8 @@ def main() -> int:
 
     # Index
     (SITE_DIR / "index.html").write_text(
-        render_index(se3_terms, other_terms, references, properties), encoding="utf-8"
+        render_index(se3_terms, other_terms, references,
+                     se3_properties, other_properties), encoding="utf-8"
     )
 
     # Terms listing
@@ -1478,7 +1507,9 @@ def main() -> int:
     (SITE_DIR / "properties" / "index.html").write_text(
         render_listing(
             "Properties",
-            f"{len(properties)} RDF properties.",
+            f"{len(se3_properties)} 3SE properties"
+            + (f" and {len(other_properties)} external properties." if other_properties
+               else "."),
             properties, "properties", "Properties"
         ), encoding="utf-8"
     )
@@ -1525,7 +1556,8 @@ def main() -> int:
     print(
         f"✅ Site generated in {SITE_DIR}/ "
         f"({len(se3_terms)} 3SE terms, {len(other_terms)} other terms, "
-        f"{len(references)} references, {len(properties)} properties)."
+        f"{len(references)} references, "
+        f"{len(se3_properties)} 3SE properties, {len(other_properties)} other properties)."
     )
     return 0
 
