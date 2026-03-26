@@ -63,6 +63,9 @@ TERM_ARRAY_FIELDS: list[str] = [
     "isRepresentedBy",
     "allocates",
     "canBe",
+    "isResponsibleFor",
+    "isAccountableFor",
+    "isSupporting"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
