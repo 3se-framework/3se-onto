@@ -3,7 +3,9 @@
   "@type": "rdf:Property",
   "title": "wasAssociatedWith - W3C",
   "description": "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity.\nIt further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity",
-  "subPropertyOf": "https://www.w3.org/ns/prov#wasAssociatedWith",
+  "subPropertyOf": [
+    "https://www.w3.org/ns/prov#wasAssociatedWith"
+  ],
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/w3c-prov-2013"
   ],
