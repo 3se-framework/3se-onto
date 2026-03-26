@@ -1073,6 +1073,7 @@ def render_role_analysis_matrix(
 
     # Column headers
     if term.get("title", "").startswith("Role - 3SE"):
+        col_head_title = "Role"
         col_heads = "".join(
             f'<th style="font-family:var(--mono);font-size:.65rem;font-weight:600;'
             f'color:var(--muted);letter-spacing:.06em;text-transform:uppercase;'
@@ -1084,6 +1085,7 @@ def render_role_analysis_matrix(
             for a in child_analyses
         )
     else:
+        col_head_title = "Analysis"
         col_heads = "".join(
             f'<th style="font-family:var(--mono);font-size:.65rem;font-weight:600;'
             f'color:var(--muted);letter-spacing:.06em;text-transform:uppercase;'
@@ -1188,7 +1190,7 @@ def render_role_analysis_matrix(
       <tr>
         <th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);
                    font-size:.65rem;font-weight:600;color:var(--muted);
-                   letter-spacing:.06em;text-transform:uppercase">Role</th>
+                   letter-spacing:.06em;text-transform:uppercase">{col_head_title}</th>
         {col_heads}
       </tr>
     </thead>
