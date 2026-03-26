@@ -1020,28 +1020,50 @@ def render_role_analysis_matrix(
     child_analyses = sorted(child_analyses, key=lambda t: t.get("title", ""))
 
     # ── Build the matrix ─────────────────────────────────────────────────
-    # Build a set of analysis URIs for quick membership test
-    analysis_uris: set[str] = {a.get("@id", "") for a in child_analyses}
-
-    # matrix[role_uri][analysis_uri] = "R" | "S" | ""
     matrix: dict[str, dict[str, str]] = {}
 
-    for role in child_roles:
-        role_uri = role.get("@id", "")
-        row: dict[str, str] = {a_uri: "" for a_uri in analysis_uris}
+    if term.get("title", "").startswith("Role - 3SE"):
+        # Build a set of analysis URIs for quick membership test
+        analysis_uris: set[str] = {a.get("@id", "") for a in child_analyses}
 
-        # Primary: typed role properties
-        for a_uri in role.get("isResponsibleFor", []):
-            if a_uri in analysis_uris:
-                row[a_uri] = "R"
-        for a_uri in role.get("isAccountableFor", []):
-            if a_uri in analysis_uris:
-                row[a_uri] = "A"
-        for a_uri in role.get("isSupporting", []):
-            if a_uri in analysis_uris:
-                row[a_uri] = "S"
+        # matrix[role_uri][analysis_uri] = "R" | "S" | ""
+        for role in child_roles:
+            role_uri = role.get("@id", "")
+            row: dict[str, str] = {a_uri: "" for a_uri in analysis_uris}
 
-        matrix[role_uri] = row
+            # Primary: typed role properties
+            for a_uri in role.get("isResponsibleFor", []):
+                if a_uri in analysis_uris:
+                    row[a_uri] = "R"
+            for a_uri in role.get("isAccountableFor", []):
+                if a_uri in analysis_uris:
+                    row[a_uri] = "A"
+            for a_uri in role.get("isSupporting", []):
+                if a_uri in analysis_uris:
+                    row[a_uri] = "S"
+
+            matrix[role_uri] = row
+    else:
+        # Build a set of roles URIs for quick membership test
+        roles_uris: set[str] = {a.get("@id", "") for a in child_roles}
+
+        # matrix[analysis_uri][role_uri] = "R" | "S" | ""
+        for analysis in child_analyses:
+            analysis_uri = analysis.get("@id", "")
+            row: dict[str, str] = {r_uri: "" for r_uri in roles_uris}
+
+            for role in child_roles:
+                for a_uri in role.get("isResponsibleFor", []):
+                    if analysis in a_uri:
+                        row[role.get("@id", "")] = "R"
+                for a_uri in role.get("isAccountableFor", []):
+                    if analysis in a_uri:
+                        row[role.get("@id", "")] = "A"
+                for a_uri in role.get("isSupporting", []):
+                    if analysis in a_uri:
+                        row[role.get("@id", "")] = "S"
+
+            matrix[analysis_uri] = row
 
     # ── Render HTML ───────────────────────────────────────────────────────
     def short_label(title: str) -> str:
