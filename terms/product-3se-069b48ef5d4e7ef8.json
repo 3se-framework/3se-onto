@@ -21,9 +21,7 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
     "https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4192b867336",
-    "https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4192b977269",
-    "https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44",
-    "https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221"
+    "https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4192b977269"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631"
