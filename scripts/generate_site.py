@@ -1006,6 +1006,8 @@ def render_role_analysis_matrix(
     else:
         child_roles = superclass_index.get(ROLE_BASE_URI, [])
 
+    print(term.get("title", ""))
+    print(child_roles)
     if not child_roles:
         return ""
     child_roles = sorted(child_roles, key=lambda t: t.get("title", ""))
@@ -1016,14 +1018,15 @@ def render_role_analysis_matrix(
     else:
         child_analyses = superclass_index.get(ANALYSIS_BASE_URI, [])
 
+    print(child_analyses)
     if not child_analyses:
         return ""
     child_analyses = sorted(child_analyses, key=lambda t: t.get("title", ""))
 
+    # ── Build the matrix ─────────────────────────────────────────────────
     # Build a set of analysis URIs for quick membership test
     analysis_uris: set[str] = {a.get("@id", "") for a in child_analyses}
 
-    # ── Build the matrix ─────────────────────────────────────────────────
     # matrix[role_uri][analysis_uri] = "R" | "S" | ""
     matrix: dict[str, dict[str, str]] = {}
 
