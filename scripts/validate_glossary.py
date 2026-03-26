@@ -366,9 +366,12 @@ def main() -> int:
 
     # ── Warn about unreferenced references ───────────────────────────────────
     terms_dir = Path(DIRS["terms"]["dir"])
-    cited_reference_uris = collect_cited_reference_uris(terms_dir)
+    cited_reference_uris_terms = collect_cited_reference_uris(terms_dir)
 
-    unreferenced = sorted(known_reference_uris - cited_reference_uris)
+    properties_dir = Path(DIRS["properties"]["dir"])
+    cited_reference_uris_properties = collect_cited_reference_uris(properties_dir)
+
+    unreferenced = sorted(known_reference_uris - cited_reference_uris_terms - cited_reference_uris_properties)
     if unreferenced:
         print(f"\n── Unreferenced references ({len(unreferenced)}) ──")
         for uri in unreferenced:
