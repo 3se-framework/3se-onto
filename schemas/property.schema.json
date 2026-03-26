@@ -59,22 +59,14 @@
       "description": "rdfs:range — The class of objects this property relates to. May be a URI or a prefixed name (e.g. skos:Concept)."
     },
     "subPropertyOf": {
-      "description": "rdfs:subPropertyOf — The parent property or properties this property specialises.",
-      "oneOf": [
-        {
-          "type": "string",
-          "format": "uri"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "uri"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        }
-      ]
+      "description": "rdfs:subPropertyOf — The parent properties this property specialises.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true
     },
     "isReferencedBy": {
       "description": "dcterms:isReferencedBy — IRIs of bibliographic resources (bibo:Document) that cite or reference this property.",

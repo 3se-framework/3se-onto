@@ -6,7 +6,9 @@
   "description": "Relates a role to a concept for which the role owns the outcome and bears ultimate responsibility, regardless of who executes the work. Only one role should be accountable for a given concept.",
   "domain": "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773",
   "range": "skos:Concept",
-  "subPropertyOf": "https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov",
+  "subPropertyOf": [
+    "https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov"
+  ],
   "status": "draft",
   "entryCreated": "2026-03-26",
   "entryModified": "2026-03-26",

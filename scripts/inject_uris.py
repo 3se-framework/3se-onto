@@ -113,7 +113,7 @@ def build_index(directory: Path) -> dict[str, str]:
     index: dict[str, str] = {}
     if not directory.exists():
         return index
-    dir_key = directory.name  # "terms" or "references"
+    dir_key = directory.name  # "terms" or "references" or "properties"
     base_iri = BASE_IRIS.get(dir_key, "")
     for file_path in directory.glob("*.json"):
         try:
