@@ -106,22 +106,61 @@
   },
   "$defs": {
     "agent": {
-      "type": "object",
-      "description": "A foaf:Agent node representing a person or organisation.",
-      "additionalProperties": false,
-      "required": ["@type", "name"],
-      "properties": {
-        "@type": {
+      "description": "A foaf:Agent — a person, organisation, or software agent.",
+      "oneOf": [
+        {
           "type": "string",
-          "const": "foaf:Person",
-          "description": "RDF type of the agent."
+          "description": "Plain-text name of the agent."
         },
-        "name": {
-          "type": "string",
-          "minLength": 1,
-          "description": "foaf:name — Display name or GitHub handle of the agent."
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "@id": {
+              "type": "string",
+              "format": "uri",
+              "description": "IRI of the agent (e.g. ORCID, WebID, GitHub profile URL). Maps to foaf:Agent @id."
+            },
+            "@type": {
+              "type": "string",
+              "enum": [
+                "foaf:Person",
+                "foaf:Organization",
+                "foaf:Agent"
+              ],
+              "default": "foaf:Person"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "foaf:name — Full name or display name of the agent."
+            },
+            "mbox": {
+              "type": "string",
+              "format": "email",
+              "description": "foaf:mbox — Email address of the agent."
+            }
+          }
         }
-      }
+      ]
+    },
+    "agentOrList": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/agent"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/agent"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
     }
   }
 }
