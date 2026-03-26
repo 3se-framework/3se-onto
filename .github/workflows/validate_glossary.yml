@@ -6,6 +6,7 @@ on:
     paths:
       - "terms/**.json"
       - "references/**.json"
+      - "properties/**.json"
 
 jobs:
   validate:
@@ -69,7 +70,7 @@ jobs:
         id: changed
         run: |
           patterns=""
-          for dir in terms references; do
+          for dir in terms references properties; do
             if compgen -G "$dir/*.json" > /dev/null 2>&1; then
               patterns="$patterns $dir/*.json"
             fi
