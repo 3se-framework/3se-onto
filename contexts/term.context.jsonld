@@ -29,8 +29,12 @@
 
     "isComposedOf":         { "@id": "https://www.3se.info/3se-onto/vocab#isComposedOf",    "@type": "@id" },
     "isRepresentedBy":      { "@id": "https://www.3se.info/3se-onto/vocab#isRepresentedBy", "@type": "@id" },
-    "allocates":            { "@id": "https://www.3se.info/3se-onto/vocab#allocates",   "@type": "@id" },
+    "allocates":            { "@id": "https://www.3se.info/3se-onto/vocab#allocates",       "@type": "@id" },
     "canBe":                { "@id": "https://www.3se.info/3se-onto/vocab#canBe",           "@type": "@id" },
+
+    "isResponsibleFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-responsible-for-3se-069c50dd4d64710e",   "@type": "@id" },
+    "isAccountableFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-accountable-for-3se-069c50dd4d47724a",   "@type": "@id" },
+    "isSupporting":         { "@id": "https://www.3se.info/3se-onto/properties/is-supporting-3se-069c50dd4d6c7daf",        "@type": "@id" },
 
     "in_scheme":            { "@id": "skos:inScheme",          "@type": "@id" },
     "top_concept_of":       { "@id": "skos:topConceptOf",      "@type": "@id" },

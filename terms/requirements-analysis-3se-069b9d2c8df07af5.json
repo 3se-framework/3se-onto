@@ -1,10 +1,10 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Requirement analysis - 3SE",
+  "title": "Requirements analysis - 3SE",
   "description": "Analysis of an entity to decide what requirements are specifying it.",
   "status": "draft",
-  "@id": "https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5",
+  "@id": "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
   "entryCreated": "2026-03-17",
   "entryModified": "2026-03-26",
   "entryCreator": {

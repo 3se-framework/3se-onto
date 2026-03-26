@@ -187,6 +187,33 @@
       },
       "uniqueItems": true
     },
+    "isAccountableFor": {
+      "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "isResponsibleFor": {
+      "description": "3se:isResponsibleFor — IRIs of concepts for which the element is responsible (association relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "isSupporting": {
+      "description": "3se:isSupporting — IRIs of concepts that the element is supporting (association relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isReferencedBy": {
       "description": "dcterms:isReferencedBy — IRIs of bibliographic resources (bibo:Document) that cite or reference this concept.",
       "type": "array",

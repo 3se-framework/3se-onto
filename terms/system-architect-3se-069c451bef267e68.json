@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System architect - 3SE",
-  "description": "Role that is responsible of the system architecture requirements, the system element interfaces, the system element functions, the system element states.\nTherefore, it is also responsible of the functional architecture and to the physical architecture.\nIt contributes to the operational analysis and the functional analysis.",
+  "description": "Role that is responsible for the system architecture requirements, the system element interfaces, the system element functions, the system element states.\nTherefore, it is accountable for the functional architecture and to the physical architecture.\nIt contributes to the operational analysis and the functional analysis.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
@@ -10,13 +10,17 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68",
   "related": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
-    "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
-    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
-    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
-    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
+  ],
+  "isAccountableFor": [
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374"
+  ],
+  "isSupporting": [
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-03-25",

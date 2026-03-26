@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System validation engineer - 3SE",
-  "description": "Role that is responsible of the system validation and the system element validation.\nTherefore, it is responsible of the validation analysis.\nIt contributes to the requirement analysis.",
+  "description": "Role that is responsible for the system validation and the system element validation.\nTherefore, it is accountable for the validation analysis.\nIt contributes to the requirements analysis.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
@@ -11,11 +11,15 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
-    "https://www.3se.info/3se-onto/terms/requirement-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
-    "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
     "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "isResponsibleFor": [
+    "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b"
+  ],
+  "isSupporting": [
+    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-03-25",
