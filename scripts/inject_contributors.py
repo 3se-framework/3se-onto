@@ -17,7 +17,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-DIRS = ["terms", "references"]
+DIRS = ["terms", "references", "properties"]
 
 # Matches the trailing 16-char hex UUID suffix added by inject_uuids.py
 UUID_SUFFIX_RE = re.compile(r"-[0-9a-f]{16}$")
