@@ -975,8 +975,7 @@ ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773/"
 
 def render_role_analysis_matrix(
         term: dict,
-        superclass_index: dict[str, list[dict]],
-        terms_index: dict[str, dict],
+        superclass_index: dict[str, list[dict]]
 ) -> str:
     """
     Render a responsibility matrix table on the Role - 3SE page.
@@ -1000,13 +999,16 @@ def render_role_analysis_matrix(
     if not (term.get("title", "").startswith("Role - 3SE") or term.get("title", "").startswith("Analysis - 3SE")):
         return ""
 
+    print(term.get("title", ""))
+    print(term_id)
+    print(superclass_index)
+
     # ── Collect child roles ──────────────────────────────────────────────
     if term.get("title", "").startswith("Role - 3SE"):
         child_roles = superclass_index.get(term_id, [])
     else:
         child_roles = superclass_index.get(ROLE_BASE_URI, [])
 
-    print(term.get("title", ""))
     print(child_roles)
     if not child_roles:
         return ""
@@ -1230,7 +1232,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
 
     # Role × Analysis matrix (only for the Role - 3SE page)
     role_matrix_html = render_role_analysis_matrix(
-        term, superclass_index or {}, terms_index or {})
+        term, superclass_index or {})
 
     notes_html = ""
     if notes := term.get("notes"):
