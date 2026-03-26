@@ -970,7 +970,7 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
 
 
 ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
-ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773/"
+ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
 
 
 def render_role_analysis_matrix(
@@ -999,17 +999,12 @@ def render_role_analysis_matrix(
     if not (term.get("title", "").startswith("Role - 3SE") or term.get("title", "").startswith("Analysis - 3SE")):
         return ""
 
-    print(term.get("title", ""))
-    print(term_id)
-    print(superclass_index)
-
     # ── Collect child roles ──────────────────────────────────────────────
     if term.get("title", "").startswith("Role - 3SE"):
         child_roles = superclass_index.get(term_id, [])
     else:
         child_roles = superclass_index.get(ROLE_BASE_URI, [])
 
-    print(child_roles)
     if not child_roles:
         return ""
     child_roles = sorted(child_roles, key=lambda t: t.get("title", ""))
@@ -1020,7 +1015,6 @@ def render_role_analysis_matrix(
     else:
         child_analyses = superclass_index.get(ANALYSIS_BASE_URI, [])
 
-    print(child_analyses)
     if not child_analyses:
         return ""
     child_analyses = sorted(child_analyses, key=lambda t: t.get("title", ""))
