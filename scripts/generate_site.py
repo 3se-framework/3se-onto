@@ -995,8 +995,8 @@ def render_role_analysis_matrix(
     """
     term_id = term.get("@id", "")
 
-    # Only render on the Role - 3SE page
-    if not term.get("title", "").startswith("Role - 3SE"):
+    # Only render on the Role - 3SE page and on the Analysis - 3SE page
+    if not (term.get("title", "").startswith("Role - 3SE") or term.get("title", "").startswith("Analysis - 3SE")):
         return ""
 
     # ── Collect child roles ──────────────────────────────────────────────
@@ -1073,7 +1073,7 @@ def render_role_analysis_matrix(
                 cell = (
                     '<td style="text-align:center;padding:.4rem .5rem">'
                     '<span style="font-family:var(--mono);font-size:.8rem;'
-                    'color:var(--text2)">S</span></td>'
+                    'color:var(--text2)">A</span></td>'
                 )
             elif val == "S":
                 cell = (
