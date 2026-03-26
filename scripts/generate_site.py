@@ -970,6 +970,7 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
 
 
 ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773/"
 
 
 def render_role_analysis_matrix(
@@ -1000,13 +1001,21 @@ def render_role_analysis_matrix(
         return ""
 
     # ── Collect child roles ──────────────────────────────────────────────
-    child_roles = superclass_index.get(term_id, [])
+    if term.get("title", "").startswith("Role - 3SE"):
+        child_roles = superclass_index.get(term_id, [])
+    else:
+        child_roles = superclass_index.get(ROLE_BASE_URI, [])
+
     if not child_roles:
         return ""
     child_roles = sorted(child_roles, key=lambda t: t.get("title", ""))
 
     # ── Collect child analyses ───────────────────────────────────────────
-    child_analyses = superclass_index.get(ANALYSIS_BASE_URI, [])
+    if term.get("title", "").startswith("Analysis - 3SE"):
+        child_analyses = superclass_index.get(term_id, [])
+    else:
+        child_analyses = superclass_index.get(ANALYSIS_BASE_URI, [])
+
     if not child_analyses:
         return ""
     child_analyses = sorted(child_analyses, key=lambda t: t.get("title", ""))
@@ -1042,55 +1051,105 @@ def render_role_analysis_matrix(
         return name
 
     # Column headers
-    col_heads = "".join(
-        f'<th style="font-family:var(--mono);font-size:.65rem;font-weight:600;'
-        f'color:var(--muted);letter-spacing:.06em;text-transform:uppercase;'
-        f'padding:.4rem .5rem;white-space:nowrap;'
-        f'writing-mode:vertical-rl;transform:rotate(180deg);min-width:2rem">'
-        f'<a href="{href_for_uri(a.get("@id", ""))}" '
-        f'style="color:inherit;text-decoration:none">'
-        f'{short_label(a.get("title", ""))}</a></th>'
-        for a in child_analyses
-    )
+    if term.get("title", "").startswith("Role - 3SE"):
+        col_heads = "".join(
+            f'<th style="font-family:var(--mono);font-size:.65rem;font-weight:600;'
+            f'color:var(--muted);letter-spacing:.06em;text-transform:uppercase;'
+            f'padding:.4rem .5rem;white-space:nowrap;'
+            f'writing-mode:vertical-rl;transform:rotate(180deg);min-width:2rem">'
+            f'<a href="{href_for_uri(a.get("@id", ""))}" '
+            f'style="color:inherit;text-decoration:none">'
+            f'{short_label(a.get("title", ""))}</a></th>'
+            for a in child_analyses
+        )
+    else:
+        col_heads = "".join(
+            f'<th style="font-family:var(--mono);font-size:.65rem;font-weight:600;'
+            f'color:var(--muted);letter-spacing:.06em;text-transform:uppercase;'
+            f'padding:.4rem .5rem;white-space:nowrap;'
+            f'writing-mode:vertical-rl;transform:rotate(180deg);min-width:2rem">'
+            f'<a href="{href_for_uri(a.get("@id", ""))}" '
+            f'style="color:inherit;text-decoration:none">'
+            f'{short_label(a.get("title", ""))}</a></th>'
+            for a in child_roles
+        )
 
     # Table rows
     table_rows = ""
-    for role in child_roles:
-        role_uri = role.get("@id", "")
-        role_href = href_for_uri(role_uri)
-        role_name = short_label(role.get("title", ""))
-        cells = ""
-        for a in child_analyses:
-            a_uri = a.get("@id", "")
-            val = matrix[role_uri].get(a_uri, "")
-            if val == "R":
-                cell = (
-                    '<td style="text-align:center;padding:.4rem .5rem">'
-                    '<span style="font-family:var(--mono);font-size:.8rem;'
-                    'font-weight:700;color:var(--text)">R</span></td>'
-                )
-            elif val == "A":
-                cell = (
-                    '<td style="text-align:center;padding:.4rem .5rem">'
-                    '<span style="font-family:var(--mono);font-size:.8rem;'
-                    'color:var(--text2)">A</span></td>'
-                )
-            elif val == "S":
-                cell = (
-                    '<td style="text-align:center;padding:.4rem .5rem">'
-                    '<span style="font-family:var(--mono);font-size:.8rem;'
-                    'color:var(--muted)">S</span></td>'
-                )
-            else:
-                cell = '<td style="text-align:center;padding:.4rem .5rem;color:var(--border2)">—</td>'
-            cells += cell
-        table_rows += (
-            f'<tr style="border-bottom:1px solid var(--border)">'
-            f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap">'
-            f'<a href="{role_href}">{role_name}</a></td>'
-            f'{cells}</tr>'
-        )
+    if term.get("title", "").startswith("Role - 3SE"):
+        for role in child_roles:
+            role_uri = role.get("@id", "")
+            role_href = href_for_uri(role_uri)
+            role_name = short_label(role.get("title", ""))
+            cells = ""
+            for a in child_analyses:
+                a_uri = a.get("@id", "")
+                val = matrix[role_uri].get(a_uri, "")
+                if val == "R":
+                    cell = (
+                        '<td style="text-align:center;padding:.4rem .5rem">'
+                        '<span style="font-family:var(--mono);font-size:.8rem;'
+                        'font-weight:700;color:var(--text)">R</span></td>'
+                    )
+                elif val == "A":
+                    cell = (
+                        '<td style="text-align:center;padding:.4rem .5rem">'
+                        '<span style="font-family:var(--mono);font-size:.8rem;'
+                        'color:var(--text2)">A</span></td>'
+                    )
+                elif val == "S":
+                    cell = (
+                        '<td style="text-align:center;padding:.4rem .5rem">'
+                        '<span style="font-family:var(--mono);font-size:.8rem;'
+                        'color:var(--muted)">S</span></td>'
+                    )
+                else:
+                    cell = '<td style="text-align:center;padding:.4rem .5rem;color:var(--border2)">—</td>'
+                cells += cell
+            table_rows += (
+                f'<tr style="border-bottom:1px solid var(--border)">'
+                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap">'
+                f'<a href="{role_href}">{role_name}</a></td>'
+                f'{cells}</tr>'
+            )
+    else:
+        for analysis in child_analyses:
+            analysis_uri = analysis.get("@id", "")
+            analysis_href = href_for_uri(analysis_uri)
+            analysis_name = short_label(analysis.get("title", ""))
+            cells = ""
+            for a in child_roles:
+                a_uri = a.get("@id", "")
+                val = matrix[analysis_uri].get(a_uri, "")
+                if val == "R":
+                    cell = (
+                        '<td style="text-align:center;padding:.4rem .5rem">'
+                        '<span style="font-family:var(--mono);font-size:.8rem;'
+                        'font-weight:700;color:var(--text)">R</span></td>'
+                    )
+                elif val == "A":
+                    cell = (
+                        '<td style="text-align:center;padding:.4rem .5rem">'
+                        '<span style="font-family:var(--mono);font-size:.8rem;'
+                        'color:var(--text2)">A</span></td>'
+                    )
+                elif val == "S":
+                    cell = (
+                        '<td style="text-align:center;padding:.4rem .5rem">'
+                        '<span style="font-family:var(--mono);font-size:.8rem;'
+                        'color:var(--muted)">S</span></td>'
+                    )
+                else:
+                    cell = '<td style="text-align:center;padding:.4rem .5rem;color:var(--border2)">—</td>'
+                cells += cell
+            table_rows += (
+                f'<tr style="border-bottom:1px solid var(--border)">'
+                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap">'
+                f'<a href="{analysis_href}">{analysis_name}</a></td>'
+                f'{cells}</tr>'
+            )
 
+    # Table legend
     legend = (
         '<p style="margin-top:.75rem;font-family:var(--mono);font-size:.72rem;'
         'color:var(--muted)">'
