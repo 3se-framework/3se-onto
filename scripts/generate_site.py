@@ -1054,13 +1054,13 @@ def render_role_analysis_matrix(
 
             for role in child_roles:
                 for a_uri in role.get("isResponsibleFor", []):
-                    if analysis in a_uri:
+                    if analysis_uri in a_uri:
                         row[role.get("@id", "")] = "R"
                 for a_uri in role.get("isAccountableFor", []):
-                    if analysis in a_uri:
+                    if analysis_uri in a_uri:
                         row[role.get("@id", "")] = "A"
                 for a_uri in role.get("isSupporting", []):
-                    if analysis in a_uri:
+                    if analysis_uri in a_uri:
                         row[role.get("@id", "")] = "S"
 
             matrix[analysis_uri] = row
