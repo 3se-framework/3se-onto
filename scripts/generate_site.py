@@ -22,6 +22,7 @@ from pathlib import Path
 
 TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
+PROPERTIES_DIR = Path("properties")
 SITE_DIR = Path("_site")
 
 SEP = " &nbsp;&middot;&nbsp; "  # separator used between inline link lists
@@ -29,6 +30,7 @@ SEP = " &nbsp;&middot;&nbsp; "  # separator used between inline link lists
 BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
+    "properties": "https://www.3se.info/3se-onto/properties/",
 }
 
 TERM_STATUS_LABELS: dict[str, tuple[str, str]] = {
@@ -39,6 +41,9 @@ TERM_STATUS_LABELS: dict[str, tuple[str, str]] = {
     "approved": ("Approved", "#10b981"),
     "standard": ("Standard", "#059669"),
 }
+
+# Property entries share the same plain-string status values as terms.
+# They are intentionally resolved via TERM_STATUS_LABELS in resolve_status().
 
 BIBO_STATUS_LABELS: dict[str, tuple[str, str]] = {
     "bibo:draft": ("Draft", "#9ca3af"),
@@ -68,6 +73,21 @@ BIBO_TYPE_LABELS: dict[str, str] = {
     "bibo:Thesis": "Thesis",
     "bibo:Proceedings": "Proceedings",
     "bibo:TechnicalDocument": "Technical Document",
+}
+
+# Human-readable labels for role relation fields rendered on term pages.
+BREAKDOWN_RELATION_LABELS: dict[str, str] = {
+        "isComposedOf": "Composed of",
+        "isRepresentedBy": "Represented by",
+        "allocates": "Allocates",
+        "canBe": "Can be",
+}
+
+# Human-readable labels for role relation fields rendered on term pages.
+ROLE_RELATION_LABELS: dict[str, str] = {
+    "isResponsibleFor": "Responsible for",
+    "isAccountableFor": "Accountable for",
+    "isSupporting": "Supporting",
 }
 
 
@@ -137,18 +157,20 @@ def bibo_type_label(type_field) -> str:
 
 
 def resolve_status(entry: dict) -> tuple[str, str, str]:
-    """Return (raw_key, display_label, color) for a term or reference entry.
-    Terms use plain string status; references use bibo:status CURIE values."""
-    # Term status (plain string)
+    """Return (raw_key, display_label, color) for a term, property, or reference entry.
+
+    Terms and properties use plain string status values (e.g. "draft", "approved").
+    References use bibo:status CURIE values (e.g. "bibo:published").
+    Both cases are resolved here so callers need no special-casing.
+    """
     status = entry.get("status", "")
     if status and status in TERM_STATUS_LABELS:
         label, color = TERM_STATUS_LABELS[status]
         return status, label, color
-    # Reference bibo:status
-    bibo_status = entry.get("status", "")
-    if bibo_status and bibo_status in BIBO_STATUS_LABELS:
-        label, color = BIBO_STATUS_LABELS[bibo_status]
-        return bibo_status, label, color
+    # bibo:status CURIE — covers references
+    if status and status in BIBO_STATUS_LABELS:
+        label, color = BIBO_STATUS_LABELS[status]
+        return status, label, color
     return status, "", ""
 
 
@@ -566,6 +588,7 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
       <a href="/3se-onto/">Index</a>
       <a href="/3se-onto/terms/">Terms</a>
       <a href="/3se-onto/references/">References</a>
+      <a href="/3se-onto/properties/">Properties</a>
     </nav>
   </div>
 </header>
@@ -588,7 +611,7 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 # ---------------------------------------------------------------------------
 
 def render_index(se3_terms: list[dict], other_terms: list[dict],
-                 references: list[dict]) -> str:
+                 references: list[dict], properties: list[dict]) -> str:
     all_entries: list[dict] = []
     for t in se3_terms:
         all_entries.append({
@@ -618,6 +641,16 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
             "dir": "references",
             "desc": r.get("abstract", ""),
         })
+    for p in properties:
+        raw_status, _, _ = resolve_status(p)
+        all_entries.append({
+            "title": p.get("title", ""),
+            "type": "Property",
+            "status": raw_status,
+            "stem": p["_stem"],
+            "dir": "properties",
+            "desc": p.get("description", ""),
+        })
 
     rows = ""
     for e in all_entries:
@@ -635,6 +668,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
             "3SE Term": "color:var(--text);font-weight:500",
             "Term": "color:var(--text2)",
             "Reference": "color:var(--green)",
+            "Property": "color:var(--accent)",
         }.get(e["type"], "")
         desc = e["desc"][:100] + ("…" if len(e["desc"]) > 100 else "")
         safe_title = e["title"].replace('"', "&quot;")
@@ -665,6 +699,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     {len(se3_terms)} 3SE terms &nbsp;·&nbsp;
     {len(other_terms)} other terms &nbsp;·&nbsp;
     {len(references)} references.
+    {f'&nbsp;·&nbsp; {len(properties)} properties.' if properties else ''}
   </p>
 </div>
 
@@ -675,6 +710,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     <option value="3se term">3SE Terms</option>
     <option value="term">Other Terms</option>
     <option value="reference">References</option>
+    <option value="property">Properties</option>
   </select>
   <select id="filter-status">
     <option value="">All statuses</option>
@@ -1017,12 +1053,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             )
 
     # Breakdown structure constituent relations (shown on individual concept pages)
-    for field, label in [
-        ("isComposedOf", "Composed of"),
-        ("isRepresentedBy", "Represented by"),
-        ("allocates", "Allocates"),
-        ("canBe", "Can be"),
-    ]:
+    for field, label in BREAKDOWN_RELATION_LABELS.items():
         val = term.get(field)
         if not val:
             continue
@@ -1035,19 +1066,36 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             f'</tr>'
         )
 
+    # Role relations (isResponsibleFor / isAccountableFor / isSupporting)
+    role_html = ""
+    for field, label in ROLE_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        role_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
     relations_html = ""
-    if hier or bfo_html or match:
-        sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (bfo_html or match) else ""
-        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and match else ""
+    if hier or bfo_html or role_html or match:
+        sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
+                    bfo_html or role_html or match) else ""
+        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (role_html or match) else ""
+        sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{match}</table>
         </div>"""
 
     # isReferencedBy
@@ -1218,6 +1266,126 @@ def render_reference_page(ref: dict) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Property page
+# ---------------------------------------------------------------------------
+
+def render_property_page(prop: dict, ref_index: dict[str, dict]) -> str:
+    title = prop.get("title", "*(untitled)*")
+    jsonld = clean_jsonld(prop)
+    id_uri = prop.get("@id", "")
+
+    id_html = (
+        f'<p style="margin-top:.35rem;font-family:var(--mono);font-size:.72rem;'
+        f'color:var(--muted2)">{id_uri}</p>'
+    ) if id_uri else ""
+
+    _, rs_label, rs_color = resolve_status(prop)
+    status_badge_html = ""
+    if rs_label:
+        status_badge_html = (
+            f'<span class="badge" style="color:{rs_color};border-color:{rs_color};'
+            f'margin-left:.75rem">{rs_label}</span>'
+        )
+
+    description_html = ""
+    if desc := prop.get("description"):
+        desc_escaped = desc.replace("\n", "<br>")
+        description_html = f'<blockquote class="definition">{desc_escaped}</blockquote>'
+
+    # ── Relations rows ──
+    def prop_rel_row(label: str, value: str) -> str:
+        return f"<tr><td>{label}</td><td>{value}</td></tr>"
+
+    rel_rows_html = ""
+
+    # domain
+    if domain := prop.get("domain", ""):
+        rel_rows_html += prop_rel_row("Domain", render_uri_link(domain))
+
+    # range
+    if range_val := prop.get("range", ""):
+        if is_internal_uri(range_val):
+            rel_rows_html += prop_rel_row("Range", render_uri_link(range_val))
+        else:
+            rel_rows_html += prop_rel_row(
+                "Range",
+                f'<code style="font-family:var(--mono);font-size:.82rem">{range_val}</code>'
+            )
+
+    # subPropertyOf
+    sub_of = prop.get("subPropertyOf", [])
+    if isinstance(sub_of, str):
+        sub_of = [sub_of]
+    if sub_of:
+        links = [render_uri_link(uri) for uri in sub_of]
+        rel_rows_html += prop_rel_row("Sub-property of", SEP.join(links))
+
+    relations_html = ""
+    if rel_rows_html:
+        relations_html = f"""
+        <div class="card" style="margin-top:1.5rem">
+          <h3 style="margin-bottom:1rem">Relations</h3>
+          <table class="relations-table">{rel_rows_html}</table>
+        </div>"""
+
+    # ── isReferencedBy ──
+    refs_html = ""
+    if is_ref_by := prop.get("isReferencedBy", []):
+        if isinstance(is_ref_by, str):
+            is_ref_by = [is_ref_by]
+        ref_links = []
+        for uri in is_ref_by:
+            ref = ref_index.get(uri)
+            label = ref.get("title", stem_from_uri(uri)) if ref else stem_from_uri(uri)
+            ref_links.append(render_uri_link(uri, label))
+        refs_html = f"""
+        <div class="card" style="margin-top:1.5rem">
+          <h3 style="margin-bottom:.75rem">Source References</h3>
+          <p style="font-size:.9rem">{SEP.join(ref_links)}</p>
+        </div>"""
+
+    # ── Provenance ──
+    prov = []
+    if c := prop.get("entryCreated"):   prov.append(f"Created {c}")
+    if m := prop.get("entryModified"):  prov.append(f"Modified {m}")
+    if cr := agent_names(prop.get("entryCreator")): prov.append(f"by {', '.join(cr)}")
+    prov_html = f'<div class="provenance">{SEP.join(prov)}</div>' if prov else ""
+
+    body = f"""
+<nav class="breadcrumb">
+  <a href="/3se-onto/">Index</a>
+  <span>/</span>
+  <a href="/3se-onto/properties/">Properties</a>
+  <span>/</span>
+  <span>{title}</span>
+</nav>
+
+<div style="margin-bottom:2rem">
+  <div style="display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap">
+    <h1>{title}</h1>{status_badge_html}
+  </div>
+  {id_html}
+  {description_html}
+</div>
+
+{relations_html}
+{refs_html}
+
+<div class="card" style="margin-top:1.5rem">
+  <h3 style="margin-bottom:.75rem">JSON-LD</h3>
+  <pre class="code-block">{json.dumps(jsonld, indent=2, ensure_ascii=False)}</pre>
+  <p style="margin-top:.75rem;font-size:.8rem;color:var(--muted)">
+    Raw JSON-LD: <a href="./index.jsonld">index.jsonld</a>
+  </p>
+</div>
+
+{prov_html}
+"""
+    return html_shell(title, body, jsonld=jsonld,
+                      description=prop.get("description", "")[:160])
+
+
+# ---------------------------------------------------------------------------
 # Directory listing pages
 # ---------------------------------------------------------------------------
 
@@ -1268,6 +1436,7 @@ def render_listing(heading: str, subtitle: str, entries: list[dict],
 def main() -> int:
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
+    properties = load_directory(PROPERTIES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
     terms_index = build_terms_index(terms)
@@ -1280,10 +1449,11 @@ def main() -> int:
     SITE_DIR.mkdir(parents=True)
     (SITE_DIR / "terms").mkdir()
     (SITE_DIR / "references").mkdir()
+    (SITE_DIR / "properties").mkdir()
 
     # Index
     (SITE_DIR / "index.html").write_text(
-        render_index(se3_terms, other_terms, references), encoding="utf-8"
+        render_index(se3_terms, other_terms, references, properties), encoding="utf-8"
     )
 
     # Terms listing
@@ -1301,6 +1471,15 @@ def main() -> int:
             "References",
             f"{len(references)} bibliographic references.",
             references, "references", "References"
+        ), encoding="utf-8"
+    )
+
+    # Properties listing
+    (SITE_DIR / "properties" / "index.html").write_text(
+        render_listing(
+            "Properties",
+            f"{len(properties)} RDF properties.",
+            properties, "properties", "Properties"
         ), encoding="utf-8"
     )
 
@@ -1330,10 +1509,23 @@ def main() -> int:
             encoding="utf-8"
         )
 
+    # Individual property pages
+    for prop in properties:
+        stem = prop["_stem"]
+        out_dir = SITE_DIR / "properties" / stem
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "index.html").write_text(
+            render_property_page(prop, ref_index), encoding="utf-8"
+        )
+        (out_dir / "index.jsonld").write_text(
+            json.dumps(clean_jsonld(prop), indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8"
+        )
+
     print(
         f"✅ Site generated in {SITE_DIR}/ "
         f"({len(se3_terms)} 3SE terms, {len(other_terms)} other terms, "
-        f"{len(references)} references)."
+        f"{len(references)} references, {len(properties)} properties)."
     )
     return 0
 
