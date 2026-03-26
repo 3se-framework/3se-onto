@@ -6,7 +6,7 @@
   "description": "Relates a role to a concept for which the role executes the work and ensures its delivery. A role can be responsible for a concept without being accountable for it.",
   "domain": "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773",
   "range": "skos:Concept",
-  "subPropertyOf": "https://www.w3.org/ns/prov#wasAssociatedWith",
+  "subPropertyOf": "https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov",
   "status": "draft",
   "entryCreated": "2026-03-26",
   "entryModified": "2026-03-26",

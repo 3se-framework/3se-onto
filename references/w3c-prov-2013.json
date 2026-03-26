@@ -1,0 +1,8 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "The PROV Namespace",
+  "abstract": "he namespace name http://www.w3.org/ns/prov# is intended for use with the PROV family of documents that support the interchange of provenance on the web.",
+  "uri": "https://www.w3.org/ns/prov",
+  "status": "bibo:published"
+}

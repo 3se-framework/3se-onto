@@ -76,6 +76,15 @@
         }
       ]
     },
+    "isReferencedBy": {
+      "description": "dcterms:isReferencedBy — IRIs of bibliographic resources (bibo:Document) that cite or reference this property.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "entryCreated": {
       "type": "string",
       "format": "date",

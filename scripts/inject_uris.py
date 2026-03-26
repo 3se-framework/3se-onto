@@ -1,21 +1,25 @@
 #!/usr/bin/env python3
-# Resolves bare slugs in term URI fields to their full @id URIs.
+# Resolves bare slugs in term and property URI fields to their full @id URIs.
 #
-# After inject_uuids.py renames files and assigns @id URIs, a term written
-# before a UUID was known may still contain a bare slug instead of a full URI
-# in any of its relation or reference fields.
+# After inject_uuids.py renames files and assigns @id URIs, a term or property
+# written before a UUID was known may still contain a bare slug instead of a
+# full URI in any of its relation or reference fields.
 #
 # Fields resolved against the TERMS index (terms/):
-#   broader, narrower, related, semanticRelation   (array of conceptRef)
-#   exactMatch, closeMatch, broadMatch,            (array of plain URI strings)
+#   broader, narrower, related, semanticRelation  (array of conceptRef)
+#   exactMatch, closeMatch, broadMatch,           (array of plain URI strings)
 #   narrowMatch, relatedMatch
-#   superseded_by                                  (scalar)
+#   subClassOf, isComposedOf, isRepresentedBy, allocates, canBe
+#   superseded_by                                 (scalar)
 #
 # Fields resolved against the REFERENCES index (references/):
-#   isReferencedBy                                 (array of plain URI strings)
+#   isReferencedBy                                (array) — terms AND properties
+#
+# Fields resolved against the PROPERTIES index (properties/):
+#   subPropertyOf                                 (array) — properties only
 #
 # Fields left untouched (external scheme IRIs):
-#   in_scheme, top_concept_of
+#   in_scheme, top_concept_of, domain, range
 #
 # Resolution rules (applied per value):
 #   1. Value is an external URI (non-internal scheme)  → keep as-is
@@ -35,10 +39,12 @@ from pathlib import Path
 BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
+    "properties": "https://www.3se.info/3se-onto/properties/",
 }
 
 TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
+PROPERTIES_DIR = Path("properties")
 
 # Fields whose plain-string values (or @id inside a conceptRef object)
 # resolve against the TERMS index.
@@ -60,6 +66,7 @@ TERM_ARRAY_FIELDS: list[str] = [
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
+# Used by both terms and properties.
 REFERENCE_ARRAY_FIELDS: list[str] = [
     "isReferencedBy",
 ]
@@ -67,6 +74,12 @@ REFERENCE_ARRAY_FIELDS: list[str] = [
 # Scalar fields that resolve against the TERMS index.
 TERM_SCALAR_FIELDS: list[str] = [
     "superseded_by",
+]
+
+# Fields whose plain-string values resolve against the PROPERTIES index.
+# Used by property entries only.
+PROPERTY_ARRAY_FIELDS: list[str] = [
+    "subPropertyOf",
 ]
 
 # A value is a URI if it starts with a scheme (e.g. https://)
@@ -92,8 +105,10 @@ def uri_to_slug(value: str) -> str:
 
 def build_index(directory: Path) -> dict[str, str]:
     """
-    Return a mapping of file stem -> @id URI for all JSON files in a directory.
-    Falls back to deriving the URI from BASE_IRIS if @id is absent.
+    Return a mapping of stem -> @id URI for all JSON files in a directory.
+
+    For terms/, references/ and properties/ : the stem is the UUID-suffixed filename stem,
+    and the @id is derived from it (or read from the file).
     """
     index: dict[str, str] = {}
     if not directory.exists():
@@ -105,8 +120,10 @@ def build_index(directory: Path) -> dict[str, str]:
             data = json.loads(file_path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue  # let validate_glossary.py report parse errors
+
         uri = data.get("@id") or (base_iri + file_path.stem)
         index[file_path.stem] = uri
+
     return index
 
 
@@ -318,20 +335,74 @@ def process_terms(
     return updated_count
 
 
+def process_properties(
+        properties_dir: Path,
+        prop_index: dict[str, str],
+        ref_index: dict[str, str],
+) -> int:
+    """
+    Walk all property files and resolve bare slugs in every URI field.
+
+    Fields resolved:
+    - isReferencedBy  → REFERENCES index
+    - subPropertyOf   → PROPERTIES index
+
+    Returns the count of files updated.
+    """
+    updated_count = 0
+
+    for file_path in sorted(properties_dir.glob("*.json")):
+        try:
+            data = json.loads(file_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+
+        changed = False
+
+        # isReferencedBy → resolved against references
+        for field in REFERENCE_ARRAY_FIELDS:
+            if process_array_field(data, field, ref_index, file_path.name):
+                changed = True
+
+        # subPropertyOf → resolved against properties
+        for field in PROPERTY_ARRAY_FIELDS:
+            if process_array_field(data, field, prop_index, file_path.name):
+                changed = True
+
+        if changed:
+            file_path.write_text(
+                json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            updated_count += 1
+
+    return updated_count
+
+
 def main() -> int:
     term_index = build_index(TERMS_DIR)
     ref_index = build_index(REFERENCES_DIR)
+    prop_index = build_index(PROPERTIES_DIR)
 
-    if not term_index and not ref_index:
-        print("⚠️  No entries found in terms/ or references/ — nothing to resolve.")
+    if not term_index and not ref_index and not prop_index:
+        print("⚠️  No entries found in terms/, references/, or properties/ — nothing to resolve.")
         return 0
 
-    if not TERMS_DIR.exists():
-        print("⚠️  No terms/ directory found — nothing to resolve.")
-        return 0
+    total_updated = 0
 
-    updated = process_terms(TERMS_DIR, term_index, ref_index)
-    print(f"\nDone — {updated} file(s) updated.")
+    if TERMS_DIR.exists():
+        updated = process_terms(TERMS_DIR, term_index, ref_index)
+        total_updated += updated
+    else:
+        print("⚠️  No terms/ directory found — skipping term resolution.")
+
+    if PROPERTIES_DIR.exists():
+        updated = process_properties(PROPERTIES_DIR, prop_index, ref_index)
+        total_updated += updated
+    else:
+        print("⚠️  No properties/ directory found — skipping property resolution.")
+
+    print(f"\nDone — {total_updated} file(s) updated.")
     return 0
 
 
