@@ -24,8 +24,8 @@ jobs:
 
       - name: Ensure required directories exist
         run: |
-          mkdir -p terms references
-          git add terms references
+          mkdir -p terms references properties
+          git add terms references properties
 
       - name: Set up Python
         uses: actions/setup-python@v6.2.0

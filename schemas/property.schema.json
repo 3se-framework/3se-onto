@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.3se.info/3se-onto/schemas/property.schema.json",
+  "title": "3SE Ontology Property",
+  "description": "Represents an rdf:Property defined in the 3SE ontology. Used to describe typed relations between roles and concepts (e.g. isResponsibleFor, isAccountableFor, isSupporting). Expressed as a JSON-LD-ready document.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "@context",
+    "@type",
+    "title"
+  ],
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "const": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+      "description": "JSON-LD context URI. Must reference the canonical context document for this schema."
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "The globally unique IRI identifying this property. Must start with the canonical properties base IRI."
+    },
+    "@type": {
+      "type": "string",
+      "const": "rdf:Property",
+      "description": "RDF type. Must be rdf:Property."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "rdfs:label — The camelCase name of the property (e.g. isResponsibleFor)."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "rdfs:comment — A human-readable definition of the property's semantics."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "under review",
+        "reviewed",
+        "under approval",
+        "approved",
+        "standard"
+      ],
+      "description": "3SE editorial status of this concept entry."
+    },
+    "domain": {
+      "type": "string",
+      "format": "uri",
+      "description": "rdfs:domain — The class of subjects this property applies to. Should be a URI."
+    },
+    "range": {
+      "type": "string",
+      "description": "rdfs:range — The class of objects this property relates to. May be a URI or a prefixed name (e.g. skos:Concept)."
+    },
+    "subPropertyOf": {
+      "description": "rdfs:subPropertyOf — The parent property or properties this property specialises.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
+    },
+    "entryCreated": {
+      "type": "string",
+      "format": "date",
+      "description": "dcterms:created — ISO 8601 date on which this concept entry was first created."
+    },
+    "entryModified": {
+      "type": "string",
+      "format": "date",
+      "description": "dcterms:modified — ISO 8601 date on which this concept entry was last modified."
+    },
+    "entryCreator": {
+      "description": "dcterms:creator — The agent(s) who originally created this concept entry.",
+      "$ref": "#/$defs/agentOrList"
+    },
+    "entryContributor": {
+      "description": "dcterms:contributor — Agent(s) who contributed to this concept entry after its initial creation.",
+      "$ref": "#/$defs/agentOrList"
+    }
+  },
+  "$defs": {
+    "agent": {
+      "type": "object",
+      "description": "A foaf:Agent node representing a person or organisation.",
+      "additionalProperties": false,
+      "required": ["@type", "name"],
+      "properties": {
+        "@type": {
+          "type": "string",
+          "const": "foaf:Person",
+          "description": "RDF type of the agent."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "foaf:name — Display name or GitHub handle of the agent."
+        }
+      }
+    }
+  }
+}

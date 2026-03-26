@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "title": "rdfs:label",
+    "description": "rdfs:comment",
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id"
+    },
+    "subPropertyOf": {
+      "@id": "rdfs:subPropertyOf",
+      "@type": "@id"
+    },
+    "status": "rdfs:isDefinedBy",
+    "entryCreated": "http://purl.org/dc/terms/created",
+    "entryModified": "http://purl.org/dc/terms/modified",
+    "entryCreator": "http://purl.org/dc/terms/creator",
+    "entryContributor": "http://purl.org/dc/terms/contributor"
+  }
+}

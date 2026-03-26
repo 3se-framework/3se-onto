@@ -5,6 +5,8 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
+    "@context",
+    "@type",
     "title"
   ],
   "properties": {
@@ -252,7 +254,7 @@
         "approved",
         "standard"
       ],
-      "description": "3SE editorial status of this concept entry. Not part of the SKOS data model; expressed as a custom 3se:status property in the RDF graph."
+      "description": "3SE editorial status of this concept entry."
     }
   },
   "$defs": {

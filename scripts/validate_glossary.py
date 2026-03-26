@@ -10,10 +10,18 @@ from jsonschema import validate, Draft202012Validator
 DIRS = {
     "terms": {"dir": "terms", "schema": "schemas/term.schema.json"},
     "references": {"dir": "references", "schema": "schemas/reference.schema.json"},
+    "properties": {"dir": "properties", "schema": "schemas/property.schema.json"},
 }
 
 TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
+PROPERTY_BASE_IRI = "https://www.3se.info/3se-onto/properties/"
+
+BASE_IRIS = {
+    "terms": TERM_BASE_IRI,
+    "references": REFERENCE_BASE_IRI,
+    "properties": PROPERTY_BASE_IRI,
+}
 
 
 def load_json(path: Path) -> dict | None:
@@ -119,6 +127,28 @@ def validate_is_referenced_by(
             errors.append(
                 f"isReferencedBy: URI \"{uri}\" does not match any known reference entry"
             )
+    return errors
+
+
+def validate_id_base_iri(
+        data: dict,
+        file_name: str,
+        type_name: str,
+) -> list[str]:
+    """
+    Check that @id, if present, starts with the expected base IRI for
+    the entry's folder type (terms, references, or properties).
+    """
+    errors: list[str] = []
+    entry_id = data.get("@id")
+    if not entry_id:
+        return errors
+    expected_base = BASE_IRIS.get(type_name)
+    if expected_base and not entry_id.startswith(expected_base):
+        errors.append(
+            f"@id \"{entry_id}\" does not start with the expected "
+            f"base IRI \"{expected_base}\" for folder '{type_name}/'"
+        )
     return errors
 
 
@@ -264,6 +294,19 @@ def main() -> int:
             stem_uri = TERM_BASE_IRI + fp.stem
             terms_index.setdefault(stem_uri, d)
 
+    # Build URI -> data index for properties
+    properties_index: dict[str, dict] = {}
+    properties_data_dir = Path(DIRS["properties"]["dir"])
+    if properties_data_dir.exists():
+        for fp in sorted(properties_data_dir.glob("*.json")):
+            d = load_json(fp)
+            if d is None:
+                continue
+            if d.get("@id"):
+                properties_index[d["@id"]] = d
+            stem_uri = PROPERTY_BASE_IRI + fp.stem
+            properties_index.setdefault(stem_uri, d)
+
     for type_name, cfg in DIRS.items():
         schema_path = Path(cfg["schema"])
         data_dir = Path(cfg["dir"])
@@ -296,7 +339,12 @@ def main() -> int:
                 path = ".".join(str(p) for p in err.absolute_path) or "root"
                 file_errors.append(f"{path}: {err.message}")
 
-            # Cross-reference validation: isReferencedBy URIs (terms only)
+            # @id base IRI validation (all folder types)
+            file_errors.extend(
+                validate_id_base_iri(data, file_path.name, type_name)
+            )
+
+            # Cross-reference and naming validations (terms only)
             if type_name == "terms":
                 file_errors.extend(
                     validate_is_referenced_by(data, file_path.name, known_reference_uris)
