@@ -4,5 +4,12 @@
   "title": "Service-Oriented Architecture Ontology - 2.0",
   "abstract": "The purpose of this Technical Standard is to contribute to The Open Group mission of Boundaryless Information Flow, by developing and fostering common understanding of ServiceOriented Architecture (SOA) in order to improve alignment between the business and information technology communities, and facilitate SOA adoption.",
   "status": "bibo:published",
-  "url": "https://www.opengroup.org/bookstore/catalog/c144.htm"
+  "url": "https://www.opengroup.org/bookstore/catalog/c144.htm",
+  "@id": "https://www.3se.info/3se-onto/references/soa-ontology-2-0-069c5aee6a497f01",
+  "entryCreated": "2026-03-26",
+  "entryModified": "2026-03-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

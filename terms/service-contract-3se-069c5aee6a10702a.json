@@ -5,6 +5,17 @@
   "description": "A service contract defines the terms, conditions, and interaction rules that a service provider and a service consumer must agree to (directly or indirectly). A service contract is binding them in the interaction, including the service itself and the service means that provides it for the particular interaction in question.",
   "status": "draft",
   "narrowMatch": [
-    "https://www.3se.info/3se-onto/terms/service-contract-soa-ontology-2-0"
-  ]
+    "https://www.3se.info/3se-onto/terms/service-contract-soa-ontology-2-0-069c5aee6a187dc8"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+    "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05"
+  ],
+  "entryCreated": "2026-03-26",
+  "entryModified": "2026-03-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

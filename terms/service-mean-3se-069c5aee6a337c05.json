@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Service mean - 3SE",
+  "description": "Entity that performs a service.",
+  "status": "draft",
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+    "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a"
+  ],
+  "entryCreated": "2026-03-26",
+  "entryModified": "2026-03-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
