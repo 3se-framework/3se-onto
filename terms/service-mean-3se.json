@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Service mean - 3SE",
+  "description": "Entity that performs a service.",
+  "status": "draft",
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/service-3se"
+  ]
+}

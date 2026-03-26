@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Service - 3SE",
+  "description": "Set of service mean, provided by a contract between the service provider and the service consumer, which adds value for the service user by helping him to achieve its goal under a service level agreement.\n.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/service-24765-2017"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/service-mean-3se",
+    "https://www.3se.info/3se-onto/terms/service-contract-3se",
+    "https://www.3se.info/3se-onto/terms/service-level-agreement-3se"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+  ],
+  "isRepresentedBy": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
+  ]
+}

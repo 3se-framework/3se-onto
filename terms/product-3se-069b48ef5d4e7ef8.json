@@ -31,5 +31,8 @@
   ],
   "isRepresentedBy": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
   ]
 }
