@@ -26,10 +26,11 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
     "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
-    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93"
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+    "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595"
   ],
   "entryCreated": "2026-03-26",
-  "entryModified": "2026-03-26",
+  "entryModified": "2026-03-28",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

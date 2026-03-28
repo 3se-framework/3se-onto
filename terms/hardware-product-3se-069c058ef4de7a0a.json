@@ -12,11 +12,10 @@
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
     "https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346",
     "https://www.3se.info/3se-onto/terms/safety-hardware-feature-3se-069c058ef4e6774e",
-    "https://www.3se.info/3se-onto/terms/security-hardware-feature-3se-069c058ef5007083",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/security-hardware-feature-3se-069c058ef5007083"
   ],
   "entryCreated": "2026-03-22",
-  "entryModified": "2026-03-22",
+  "entryModified": "2026-03-28",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
