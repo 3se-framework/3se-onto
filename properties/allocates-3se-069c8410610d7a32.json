@@ -4,9 +4,16 @@
   "title": "isRepresentedBy - 3SE",
   "description": "Relates a source element to a target element to which some or all of the responsibility to realize the intent of the source is assigned.\nSuch a relation defines a mapping across the various structures and hierarchies of a system, and may serve as a precursor to more rigorous specifications and implementations.",
   "subPropertyOf": [
-    "https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1"
+    "https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919"
   ],
   "domain": "skos:Concept",
   "range": "skos:Concept",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32",
+  "entryCreated": "2026-03-28",
+  "entryModified": "2026-03-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

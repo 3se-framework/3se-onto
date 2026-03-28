@@ -4,7 +4,14 @@
   "title": "abstraction - UML",
   "description": "Relationship that relates two elements or sets of elements that represent the same concept at different levels of abstraction or from different viewpoints.",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/uml-spec-2-5-1"
+    "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4"
   ],
-  "status": "standard"
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/abstraction-uml-spec-2-5-1-069c841061057b63",
+  "entryCreated": "2026-03-28",
+  "entryModified": "2026-03-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

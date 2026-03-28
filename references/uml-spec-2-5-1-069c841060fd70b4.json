@@ -4,5 +4,12 @@
   "title": "OMG® Unified Modeling Language® (OMG UML®)",
   "abstract": "This specification defines the Unified Modeling Language (UML), revision 2. The objective of UML is to provide system architects, software engineers, and software developers with tools for analysis, design, and implementation of software-based systems as well as for modeling business and similar processes.",
   "uri": "https://www.omg.org/spec/UML/2.5.1/PDF",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4",
+  "entryCreated": "2026-03-28",
+  "entryModified": "2026-03-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

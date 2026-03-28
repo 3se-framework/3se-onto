@@ -5,5 +5,12 @@
   "description": "Relates a source concept to a target concept which may, under certain conditions, be an instance or a realisation of the source concept.\nThis relation expresses a potential, contingent relationship between two concepts.",
   "domain": "skos:Concept",
   "range": "skos:Concept",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975",
+  "entryCreated": "2026-03-28",
+  "entryModified": "2026-03-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

@@ -4,5 +4,12 @@
   "title": "OMG Systems Modeling Language™ (SysML®) 2.0 - Part 1: Language Specification",
   "abstract": "The purpose of this standard is to specify the Systems Modeling Language™ (SysML), to guide the implementation of conformant modeling tools, and to provide the basis for the development of material and other resources to train users in the application of SysML.",
   "uri": "https://www.omg.org/spec/SysML/2.0/Language/PDF",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/sysml-spec-2-0-part-1-069c841060f375be",
+  "entryCreated": "2026-03-28",
+  "entryModified": "2026-03-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
