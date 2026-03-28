@@ -973,6 +973,126 @@ ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129
 ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
 
 
+def is_analysis_subclass(term: dict) -> bool:
+    """Return True if this term declares subClassOf analysis-3se-069b5a9129c37ebe."""
+    subclass = term.get("subClassOf")
+    if not subclass:
+        return False
+    uris = [subclass] if isinstance(subclass, str) else subclass
+    return ANALYSIS_BASE_URI in uris
+
+
+def render_analysis_allocates_diagram(
+        term: dict,
+        terms_index: dict) -> str:
+    """
+    Render a Mermaid flowchart showing the allocates relation of the elements
+    related to an analysis term (any subclass of analysis-3se).
+
+    For each URI in the term's 'related' list, look up the term in terms_index
+    and collect its 'allocates' targets. Emit one node per subject and one node
+    per allocated target, connected by a labelled dashed arrow.
+
+    Only rendered when the term is a direct subclass of analysis-3se.
+    Returns an empty string when there is nothing to show.
+    """
+    if not is_analysis_subclass(term):
+        return ""
+
+    related_uris = term.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+    if not related_uris:
+        return ""
+
+    # -- Node registry (mirrors render_breakdown_diagram) --------------------
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    edges = []  # (subj_uri, obj_uri)
+
+    for rel_uri in related_uris:
+        rel_term = terms_index.get(rel_uri)
+        if rel_term is None:
+            continue
+        allocates = rel_term.get("allocates") or []
+        if isinstance(allocates, str):
+            allocates = [allocates]
+        for obj_uri in allocates:
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((rel_uri, obj_uri))
+
+    if not edges:
+        return ""
+
+    # Deduplicate
+    edges = list(dict.fromkeys(edges))
+
+    # Deduplicate nodes by label (same logic as render_breakdown_diagram)
+    label_to_primary_uri: dict[str, str] = {}
+    uri_remap: dict[str, str] = {}
+
+    for uri in list(node_ids.keys()):
+        lbl_lower = node_labels.get(uri, "").lower()
+        if lbl_lower in label_to_primary_uri:
+            uri_remap[uri] = label_to_primary_uri[lbl_lower]
+        else:
+            label_to_primary_uri[lbl_lower] = uri
+
+    if uri_remap:
+        edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in edges
+        ]
+        edges = list(dict.fromkeys(edges))
+        for uri in uri_remap:
+            node_ids.pop(uri, None)
+            node_labels.pop(uri, None)
+
+    lines = ["flowchart TD"]
+    for uri, nid in node_ids.items():
+        lbl = node_labels.get(uri, nid).replace('"', "'")
+        lines.append(f'    {nid}["{lbl}"]')
+    lines.append("")
+    for subj_uri, obj_uri in edges:
+        s = node_id(subj_uri)
+        o = node_id(obj_uri)
+        lines.append(f"    {s} -.->|allocates| {o}")
+
+    mermaid_src = "\n".join(lines)
+    return (
+        '<div class="card" style="margin-top:1.5rem">'
+        '<h3 style="margin-bottom:1rem">Allocations</h3>'
+        f'<div class="mermaid">{mermaid_src}</div>'
+        '</div>'
+    )
+
+
 def render_role_analysis_matrix(
         term: dict,
         superclass_index: dict[str, list[dict]]
@@ -1248,6 +1368,10 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     # Breakdown structure diagram (only for breakdown structure terms)
     diagram_html = render_breakdown_diagram(term, terms_index or {})
 
+    # Allocates diagram (only for subclasses of analysis-3se)
+    analysis_allocates_html = render_analysis_allocates_diagram(
+        term, terms_index or {})
+
     # Role × Analysis matrix (only for the Role - 3SE page)
     role_matrix_html = render_role_analysis_matrix(
         term, superclass_index or {})
@@ -1401,6 +1525,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
 </div>
 
 {diagram_html}
+{analysis_allocates_html}
 {role_matrix_html}
 {notes_html}
 {relations_html}
