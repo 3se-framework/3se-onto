@@ -14,8 +14,10 @@
   "@id": "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
   "entryCreated": "2026-03-13",
   "entryModified": "2026-03-26",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253"
+  ],
   "related": [
-    "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
     "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
