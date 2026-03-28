@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Epic - 3SE",
-  "description": "Significant solution development initiative for a given release",
+  "description": "Significant solution development initiative for a given release done in an iteration",
   "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458"
@@ -14,6 +14,9 @@
   "@id": "https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab",
   "entryCreated": "2026-03-13",
   "entryModified": "2026-03-26",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
     "https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8",
