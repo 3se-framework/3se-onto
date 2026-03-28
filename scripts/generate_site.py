@@ -1563,7 +1563,13 @@ def render_property_page(prop: dict, ref_index: dict[str, dict]) -> str:
 
     # domain
     if domain := prop.get("domain", ""):
-        rel_rows_html += prop_rel_row("Domain", render_uri_link(domain))
+        if is_internal_uri(domain):
+            rel_rows_html += prop_rel_row("Domain", render_uri_link(domain))
+        else:
+            rel_rows_html += prop_rel_row(
+                "Domain",
+                f'<code style="font-family:var(--mono);font-size:.82rem">{domain}</code>'
+            )
 
     # range
     if range_val := prop.get("range", ""):
