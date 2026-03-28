@@ -68,6 +68,16 @@
       "minItems": 1,
       "uniqueItems": true
     },
+    "inverseOf": {
+      "description": "owl:inverseOf — The parent properties this property inverses.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
     "isReferencedBy": {
       "description": "dcterms:isReferencedBy — IRIs of bibliographic resources (bibo:Document) that cite or reference this property.",
       "type": "array",

@@ -1,0 +1,8 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "OMG® Unified Modeling Language® (OMG UML®)",
+  "abstract": "This specification defines the Unified Modeling Language (UML), revision 2. The objective of UML is to provide system architects, software engineers, and software developers with tools for analysis, design, and implementation of software-based systems as well as for modeling business and similar processes.",
+  "uri": "https://www.omg.org/spec/UML/2.5.1/PDF",
+  "status": "bibo:published"
+}

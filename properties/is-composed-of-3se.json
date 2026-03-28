@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "isComposedOf - 3SE",
+  "description": "Strong form of aggregation that relates a composite entity to its parts, where each part instance is included in at most one composite instance at a time.\n If the composite instance is decommissioned, all of its parts instances are decommissioned.",
+  "inverseOf": [
+    "https://www.3se.info/3se-onto/properties/composite-aggregation-uml-spec-2-5-1"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}

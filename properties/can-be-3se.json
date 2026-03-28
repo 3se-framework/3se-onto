@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "canBe - 3SE",
+  "description": "Relates a source concept to a target concept which may, under certain conditions, be an instance or a realisation of the source concept.\nThis relation expresses a potential, contingent relationship between two concepts.",
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}

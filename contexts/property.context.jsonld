@@ -9,6 +9,7 @@
     "dcterms": "http://purl.org/dc/terms/",
     "foaf": "http://xmlns.com/foaf/0.1/",
     "prov": "http://www.w3.org/ns/prov#",
+    "owl": "http://www.w3.org/2002/07/owl#",
 
     "title": "rdfs:label",
     "description": "rdfs:comment",
@@ -16,6 +17,7 @@
     "domain":               { "@id": "rdfs:domain",             "@type": "@id" },
     "range":                { "@id": "rdfs:range",              "@type": "@id" },
     "subPropertyOf":        { "@id": "rdfs:subPropertyOf",      "@type": "@id" },
+    "inverseOf":            { "@id": "owl:inverseOf",           "@type": "@id" },
     "isReferencedBy":       { "@id": "dcterms:isReferencedBy",  "@type": "@id" },
 
     "entryCreated":         { "@id": "dcterms:created",         "@type": "xsd:date" },

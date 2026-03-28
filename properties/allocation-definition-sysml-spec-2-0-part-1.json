@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "allocation definition - SysML",
+  "description": "An AllocationDefinition is a ConnectionDefinition that specifies that some or all of the responsibility to realize the intent of the source is allocated to the target instances.\nSuch allocations define mappings across the various structures and hierarchies of a system model, perhaps as a precursor to more rigorous specifications and implementations.\nAn AllocationDefinition can itself be refined using nested allocations that give a finer-grained decomposition of the containing allocation mapping.",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/sysml-spec-2-0-part-1"
+  ],
+  "status": "standard"
+}

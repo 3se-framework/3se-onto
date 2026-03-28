@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "isRepresentedBy - 3SE",
+  "description": "Relationship that relates an entity to a more abstract element that represents the same concept at a higher level of abstraction.",
+  "inverseOf": [
+    "https://www.3se.info/3se-onto/properties/abstraction-uml-spec-2-5-1"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}

@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "composite aggregation - UML",
+  "description": "Composite aggregation is a strong form of aggregation that requires a part object be included in at most one composite object at a time. If a composite object is deleted, all of its part instances that are objects are deleted with it.",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/uml-spec-2-5-1"
+  ],
+  "status": "standard"
+}
