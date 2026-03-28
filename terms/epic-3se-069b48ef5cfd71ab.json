@@ -13,13 +13,12 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-03-26",
+  "entryModified": "2026-03-28",
   "allocates": [
     "https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
-    "https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8",
     "https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e",
     "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
     "https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18"
