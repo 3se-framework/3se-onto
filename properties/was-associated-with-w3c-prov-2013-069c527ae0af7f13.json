@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
   "@type": "rdf:Property",
   "title": "wasAssociatedWith - W3C",
-  "description": "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity.\nIt further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity",
+  "description": "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity.\nIt further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.",
   "subPropertyOf": [
     "https://www.w3.org/ns/prov#wasAssociatedWith"
   ],
@@ -10,7 +10,7 @@
     "https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49"
   ],
   "status": "standard",
-  "@id": "https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-069c527ae0af7f13",
+  "@id": "https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13",
   "entryCreated": "2026-03-26",
   "entryModified": "2026-03-26",
   "entryCreator": {
