@@ -262,6 +262,10 @@ def main() -> int:
 
     # Build qualifier words from multi-word 3SE concept names
     prefix_qualifiers, suffix_qualifiers = extract_qualifier_words(se3_concepts)
+    print("prefix:")
+    print(prefix_qualifiers)
+    print("suffix:")
+    print(suffix_qualifiers)
 
     # ── Step 1: compute justified related links for every term ────────────────
     # justified[stem] = set of URIs that are justified for that stem
