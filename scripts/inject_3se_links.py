@@ -283,6 +283,10 @@ def main() -> int:
             if not description:
                 continue
 
+            if name == 'System validation':
+                print('System validation')
+                print(name_in_description(name, description, prefix_qualifiers, suffix_qualifiers))
+
             if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers):
                 tgt_uri = uri_for_stem(tgt_stem)
                 tgt_title = tgt_data.get("title", "")
