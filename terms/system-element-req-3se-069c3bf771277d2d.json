@@ -10,7 +10,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d",
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
-    "https://www.3se.info/3se-onto/terms/system-architecture-req-3se"
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
