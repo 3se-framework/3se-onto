@@ -8,9 +8,7 @@
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93"
-  ],
+  "related": [],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-03-29",
   "entryCreator": {

@@ -8,7 +8,10 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68",
-  "related": [],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2",
+    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
+  ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374"

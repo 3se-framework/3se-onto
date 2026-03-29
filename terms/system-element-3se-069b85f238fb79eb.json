@@ -23,7 +23,9 @@
     "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d",
     "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
-    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473"
+    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473",
+    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2",
+    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
