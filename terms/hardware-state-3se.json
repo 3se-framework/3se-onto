@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware state - 3SE",
+  "description": "State of a hardware.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488"
+  ]
+}
