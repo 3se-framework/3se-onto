@@ -5,7 +5,7 @@
   "description": "Implementation of a system composed of software only which is relevant for safety engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+    "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55",
   "related": [

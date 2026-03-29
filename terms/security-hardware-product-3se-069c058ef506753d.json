@@ -5,7 +5,7 @@
   "description": "Implementation of a system composed of hardware only which is relevant for security engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+    "https://www.3se.info/3se-onto/terms/hardware-product-3se-069c058ef4de7a0a"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-hardware-product-3se-069c058ef506753d",
   "related": [
