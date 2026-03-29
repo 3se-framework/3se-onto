@@ -12,13 +12,13 @@
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
-    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473",
-    "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"
+    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473"
   ],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b"
+  ],
+  "isAccountableFor": [
+    "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5"
