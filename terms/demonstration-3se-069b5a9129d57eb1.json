@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Demonstration - 3SE",
-  "description": "Evaluation method of an attribute or feature of an entity under a set of test case in its context of use.",
+  "description": "Evaluation method of an attribute or feature of an entity under a set of validation case in its context of use.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349"
@@ -16,7 +16,7 @@
   },
   "related": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
-    "https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5",
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e"
   ]
 }

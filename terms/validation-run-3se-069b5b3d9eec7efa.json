@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Test run - 3SE",
-  "description": "The execution of a sequence of test cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the test cases and to wrap up post executions.",
+  "description": "The execution of a sequence of validation cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the validation cases and to wrap up post executions.",
   "status": "draft",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c"
@@ -10,7 +10,7 @@
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/test-run-3se-069b5b3d9eec7efa",
+  "@id": "https://www.3se.info/3se-onto/terms/validation-run-3se-069b5b3d9eec7efa",
   "entryCreated": "2026-03-14",
   "entryModified": "2026-03-19",
   "entryCreator": {
@@ -18,6 +18,6 @@
     "name": "@rcasteran"
   },
   "related": [
-    "https://www.3se.info/3se-onto/terms/test-case-3se-069b5b3d9ee67de5"
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ]
 }
