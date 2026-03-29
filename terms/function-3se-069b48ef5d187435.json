@@ -27,7 +27,13 @@
     "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d",
     "https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a",
-    "https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b"
+    "https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b",
+    "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
+    "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
+    "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282",
+    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
+    "https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-function-3se-069c03f8a415717a"
