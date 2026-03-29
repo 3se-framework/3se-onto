@@ -129,11 +129,28 @@ def name_variants(name: str) -> list[str]:
 def extract_qualifier_words(se3_concepts: dict[str, str]) -> tuple[set[str], set[str]]:
     """
     Build two sets of qualifier words from multi-word 3SE concept names:
-    - prefix_qualifiers: first words (e.g. 'enabling' from 'enabling physical element')
-      A match is rejected when one of these precedes the concept name.
-    - suffix_qualifiers: last words and their plurals (e.g. 'case'/'cases' from
-      'test case', 'run' from 'test run').
-      A match is rejected when one of these follows the concept name.
+    - prefix_qualifiers: for every proper suffix of every multi-word concept name,
+      the word that immediately precedes that suffix in the full name.
+      A match is rejected when one of these precedes the matched phrase.
+
+      Example: for 'System element validation' (3 words):
+        - suffix 'validation'         -> preceding word 'element'   -> 'element' in prefix_qualifiers
+        - suffix 'element validation' -> preceding word 'system'    -> 'system' in prefix_qualifiers
+      This ensures that 'validation' is not matched when preceded by 'element', and
+      'element validation' is not matched when preceded by 'system'.
+
+    - suffix_qualifiers: for every proper prefix of every multi-word concept name,
+      the word that immediately follows that prefix in the full name.
+      A match is rejected when one of these follows the matched phrase.
+
+      Example: for 'System element validation' (3 words):
+        - prefix 'System'         -> next word 'element'    -> 'element' in suffix_qualifiers
+        - prefix 'System element' -> next word 'validation' -> 'validation' in suffix_qualifiers
+      This ensures that 'System' is not matched when followed by 'element', and
+      'System element' is not matched when followed by 'validation', regardless of
+      whether longer compound terms (e.g. 'System element validation - 3SE') already
+      exist in the repository.
+
     Only words from multi-word concept names are included.
     """
     prefix_qualifiers: set[str] = set()
@@ -141,12 +158,20 @@ def extract_qualifier_words(se3_concepts: dict[str, str]) -> tuple[set[str], set
     for name in se3_concepts.values():
         words = name.split()
         if len(words) > 1:
-            prefix_qualifiers.add(words[0].lower())
-            last = words[-1].lower()
-            suffix_qualifiers.add(last)
-            # Add naive plural so "cases" matches "case", "elements" matches "element"
-            for plural in name_variants(last):
-                suffix_qualifiers.add(plural.lower())
+            # For every proper suffix of this concept name, record the word that
+            # precedes it as a prefix qualifier (with singular/plural variants).
+            for i in range(1, len(words)):
+                preceding_word = words[i - 1].lower()
+                prefix_qualifiers.add(preceding_word)
+                for variant in name_variants(preceding_word):
+                    prefix_qualifiers.add(variant.lower())
+            # For every proper prefix of this concept name, record the word that
+            # follows it as a suffix qualifier (with singular/plural variants).
+            for i in range(1, len(words)):
+                following_word = words[i].lower()
+                suffix_qualifiers.add(following_word)
+                for variant in name_variants(following_word):
+                    suffix_qualifiers.add(variant.lower())
     return prefix_qualifiers, suffix_qualifiers
 
 
@@ -196,7 +221,7 @@ def name_in_description(name: str, description: str,
                 if following_text:
                     following_words = following_text.split()
                     if following_words:
-                        first_word = following_words[0].lower().lstrip(".,;:")
+                        first_word = following_words[0].lower().strip(".,;:")
                         if first_word in suffix_qualifiers:
                             continue  # compound concept — skip
 
@@ -262,10 +287,6 @@ def main() -> int:
 
     # Build qualifier words from multi-word 3SE concept names
     prefix_qualifiers, suffix_qualifiers = extract_qualifier_words(se3_concepts)
-    print("prefix:")
-    print(prefix_qualifiers)
-    print("suffix:")
-    print(suffix_qualifiers)
 
     # ── Step 1: compute justified related links for every term ────────────────
     # justified[stem] = set of URIs that are justified for that stem
@@ -282,10 +303,6 @@ def main() -> int:
             description = tgt_data.get("description", "")
             if not description:
                 continue
-
-            if name == 'System validation':
-                print('System validation')
-                print(name_in_description(name, description, prefix_qualifiers, suffix_qualifiers))
 
             if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers):
                 tgt_uri = uri_for_stem(tgt_stem)
