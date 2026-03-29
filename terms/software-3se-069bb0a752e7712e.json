@@ -32,7 +32,8 @@
     "https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb",
     "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93",
     "https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3",
-    "https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db"
+    "https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db",
+    "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
   ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-29",

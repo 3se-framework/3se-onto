@@ -9,7 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
   "related": [
-    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5"
+    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
   ],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",

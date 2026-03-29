@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System state - 3SE",
+  "description": "State of a system.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
+    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351"
+  ],
+  "entryCreated": "2026-03-29",
+  "entryModified": "2026-03-29",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
