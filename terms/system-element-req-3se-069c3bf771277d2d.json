@@ -2,12 +2,16 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System element requirement - 3SE",
-  "description": "Requirement about a system element.",
+  "description": "Requirement about a system element interface, a system element function, a system element attribute or a system element state.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
+    "https://www.3se.info/3se-onto/terms/system-architecture-req-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
