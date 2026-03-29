@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "High level goal - 3SE",
+  "description": "Combination of interacting goals.",
+  "status": "draft",
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a"
+  ],
+  "entryCreated": "2026-03-29",
+  "entryModified": "2026-03-29",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
