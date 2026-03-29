@@ -19,6 +19,11 @@
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572",
-    "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63"
+    "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63",
+    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473",
+    "https://www.3se.info/3se-onto/terms/system-architecture-validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/system-element-validation-case-3se-069c957ec9e77311",
+    "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ]
 }

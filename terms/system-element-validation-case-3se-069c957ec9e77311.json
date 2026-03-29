@@ -9,5 +9,18 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-element-validation-case-3se-069c957ec9e77311",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
+    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-03-29",
+  "entryModified": "2026-03-29",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

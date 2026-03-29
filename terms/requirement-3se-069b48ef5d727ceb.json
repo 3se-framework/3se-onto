@@ -29,6 +29,10 @@
     "https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44",
     "https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68",
     "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
-    "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63"
+    "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63",
+    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473",
+    "https://www.3se.info/3se-onto/terms/system-element-validation-case-3se-069c957ec9e77311",
+    "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de",
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ]
 }

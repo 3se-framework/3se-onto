@@ -1,4 +1,5 @@
 {
+  "@id": "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System validation case - 3SE",
@@ -9,5 +10,16 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351"
-  ]
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-03-29",
+  "entryModified": "2026-03-29",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
