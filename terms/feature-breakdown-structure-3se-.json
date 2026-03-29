@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Feature breakdown structure - 3SE",
+  "description": "Feature hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A high level feature is composed of at least two features.\n(2) A feature can be an high level feature.\n(3) A feature allocates a goal.\nNote: principle (3) excludes principle (2)",
+  "status": "draft"
+}

@@ -29,5 +29,8 @@
     "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
     "https://www.3se.info/3se-onto/terms/teleology-3se-069c316c19527b40",
     "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/high-level-goal-3se"
   ]
 }
