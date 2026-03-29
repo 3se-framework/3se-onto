@@ -8,10 +8,7 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
-  ],
+  "related": [],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
   ],

@@ -9,7 +9,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9",
   "related": [
-    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
     "https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572",
     "https://www.3se.info/3se-onto/terms/software-unit-validation-3se-069c3bf77114763f"
   ],

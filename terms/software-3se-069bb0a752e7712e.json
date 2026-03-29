@@ -33,9 +33,7 @@
     "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55",
     "https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb",
     "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93",
-    "https://www.3se.info/3se-onto/terms/software-component-req-3se-069c3bf770d271d6",
     "https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3",
-    "https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9",
     "https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db"
   ],
   "entryCreated": "2026-03-18",

@@ -9,7 +9,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-component-req-3se-069c3bf770d271d6",
   "related": [
-    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
     "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5",
     "https://www.3se.info/3se-onto/terms/software-component-validation-3se-069c3bf770f17c85"
   ],

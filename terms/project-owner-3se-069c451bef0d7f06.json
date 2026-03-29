@@ -8,9 +8,7 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/project-owner-3se-069c451bef0d7f06",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595"
-  ],
+  "related": [],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
     "https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab",

@@ -14,10 +14,7 @@
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
-    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
-    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
-    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-03-29",
