@@ -16,5 +16,8 @@
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/safety-goal-3se-069bdc3120a277c9"
   ]
 }

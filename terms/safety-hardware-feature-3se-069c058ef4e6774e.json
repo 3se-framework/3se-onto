@@ -5,7 +5,7 @@
   "description": "A feature about a hardware product which is relevant for safety engineering",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+    "https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4192b867336"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-feature-3se-069c058ef4e6774e",
   "related": [
