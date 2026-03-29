@@ -8,7 +8,7 @@
     "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
   ],
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
   "related": [
