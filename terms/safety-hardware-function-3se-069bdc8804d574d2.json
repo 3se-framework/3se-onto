@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Safety hardware function - 3SE",
-  "description": "Function of a hardware to control failures in order to achieve or maintain a safe state.",
+  "description": "Hardware function to control failures in order to achieve or maintain a safe state.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
