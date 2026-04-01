@@ -10,7 +10,20 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7",
   "related": [],
   "isSupporting": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+    "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
+    "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
+    "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
+    "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
+    "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
+    "https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8",
+    "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",
+    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32",
+    "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
+    "https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e",
+    "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-03-29",
