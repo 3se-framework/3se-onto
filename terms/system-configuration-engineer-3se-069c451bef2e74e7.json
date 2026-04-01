@@ -8,7 +8,9 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7",
-  "related": [],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+  ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
@@ -26,7 +28,7 @@
     "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-03-29",
+  "entryModified": "2026-04-01",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
