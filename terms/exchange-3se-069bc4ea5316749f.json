@@ -10,7 +10,6 @@
   "@id": "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
   "related": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
-    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
   ],
   "isComposedOf": [
