@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System architect - 3SE",
-  "description": "Role that is responsible for the system architecture requirements, the system element interfaces, the system element functions, the system element states.\nTherefore, it is accountable for the functional architecture and to the physical architecture.\nIt contributes to the operational analysis, the functional analysis and the validation analysis.",
+  "description": "Role that is responsible for the system architecture requirements, the system element interfaces, the system element functions, the system element states.\nTherefore, it is accountable for the functional architecture and to the physical architecture.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"

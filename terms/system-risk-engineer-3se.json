@@ -1,0 +1,29 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System risk engineer - 3SE",
+  "description": "Role that is responsible for the identification of the hazardous situation and threatening situations and the assessment of the related safety risk and security risk.\nTherefore, it is accountable for the risk analysis.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
+  ],
+  "isResponsibleFor": [
+    "https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8",
+    "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5",
+    "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0",
+    "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed"
+  ],
+  "isAccountableFor": [
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
+  ],
+  "isSupporting": [
+    "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780",
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/functional-analysis-3se-069b9d2c8d85724b",
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
+    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"
+  ]
+}
