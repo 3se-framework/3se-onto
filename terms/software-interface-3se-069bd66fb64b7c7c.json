@@ -9,7 +9,9 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
   "related": [
-    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
+  ],
+  "isExposedBy": [
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
   ],
   "entryCreated": "2026-03-20",

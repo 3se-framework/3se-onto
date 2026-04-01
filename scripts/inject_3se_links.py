@@ -320,11 +320,12 @@ def main() -> int:
                 # Skip if source or target already has a structural breakdown
                 # relation (isComposedOf / isRepresentedBy / allocates / canBe)
                 # or a role relation (isResponsibleFor / isAccountableFor /
-                # isSupporting) linking them — those relations supersede skos:related
+                # isSupporting) or an exposure relation (isExposedBy) linking them
+                # — those relations supersede skos:related
                 src_structural = set()
                 tgt_structural = set()
                 for field in ("isComposedOf", "isRepresentedBy", "allocates", "canBe",
-                              "isResponsibleFor", "isAccountableFor", "isSupporting"):
+                              "isExposedBy", "isResponsibleFor", "isAccountableFor", "isSupporting"):
                     for uri in (src_data.get(field) or []):
                         src_structural.add(uri)
                     for uri in (tgt_data.get(field) or []):

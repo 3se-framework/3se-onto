@@ -75,7 +75,7 @@ BIBO_TYPE_LABELS: dict[str, str] = {
     "bibo:TechnicalDocument": "Technical Document",
 }
 
-# Human-readable labels for role relation fields rendered on term pages.
+# Human-readable labels for structural breakdown relation fields rendered on term pages.
 BREAKDOWN_RELATION_LABELS: dict[str, str] = {
     "isComposedOf": "Composed of",
     "isRepresentedBy": "Represented by",
@@ -88,6 +88,11 @@ ROLE_RELATION_LABELS: dict[str, str] = {
     "isResponsibleFor": "Responsible for",
     "isAccountableFor": "Accountable for",
     "isSupporting": "Supporting",
+}
+
+# Human-readable labels for exposure relation fields rendered on term pages.
+EXPOSURE_RELATION_LABELS: dict[str, str] = {
+    "isExposedBy": "Exposed by",
 }
 
 
@@ -1228,6 +1233,121 @@ def render_classification_diagram(
     )
 
 
+def render_architecture_diagram(term: dict, terms_index: dict) -> str:
+    """
+    Render a Mermaid flowchart for terms whose title contains 'Architecture'.
+
+    For each URI in the term's 'related' list, look up the term in terms_index
+    and collect those whose 'isExposedBy' field contains the current term's URI.
+    Each such related term is shown as a node linked to the architecture term
+    with an 'exposed by' dashed arrow.
+
+    Only rendered when the term title contains 'Architecture' and at least one
+    related term exposes it.  Returns an empty string otherwise.
+    """
+    title = term.get("title", "")
+    if "architecture" not in title.lower():
+        return ""
+
+    term_uri = term.get("@id", "")
+    if not term_uri:
+        return ""
+
+    related_uris = term.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+    if not related_uris:
+        return ""
+
+    # ── Node registry (mirrors existing diagram helpers) ──────────────────
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            t = entry.get("title", "")
+            lbl = t.split(" - ", 1)[0].strip() if " - " in t else t
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    # Pre-register the architecture term as the root node
+    node_id(term_uri)
+    label_for(term_uri)
+
+    edges = []  # (related_uri, architecture_uri) — "related term exposed by architecture"
+
+    for rel_uri in related_uris:
+        rel_term = terms_index.get(rel_uri)
+        if rel_term is None:
+            continue
+        exposed_by = rel_term.get("isExposedBy") or []
+        if isinstance(exposed_by, str):
+            exposed_by = [exposed_by]
+        if term_uri in exposed_by:
+            node_id(rel_uri)
+            label_for(rel_uri)
+            edges.append((rel_uri, term_uri))
+
+    if not edges:
+        return ""
+
+    # Deduplicate
+    edges = list(dict.fromkeys(edges))
+
+    # Deduplicate nodes by label (same logic as existing diagram functions)
+    label_to_primary_uri: dict[str, str] = {}
+    uri_remap: dict[str, str] = {}
+
+    for uri in list(node_ids.keys()):
+        lbl_lower = node_labels.get(uri, "").lower()
+        if lbl_lower in label_to_primary_uri:
+            uri_remap[uri] = label_to_primary_uri[lbl_lower]
+        else:
+            label_to_primary_uri[lbl_lower] = uri
+
+    if uri_remap:
+        edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in edges
+        ]
+        edges = list(dict.fromkeys(edges))
+        for uri in uri_remap:
+            node_ids.pop(uri, None)
+            node_labels.pop(uri, None)
+
+    lines = ["flowchart TD"]
+    for uri, nid in node_ids.items():
+        lbl = node_labels.get(uri, nid).replace('"', "'")
+        lines.append(f'    {nid}["{lbl}"]')
+    lines.append("")
+    for rel_uri, arch_uri in edges:
+        r, a = node_id(rel_uri), node_id(arch_uri)
+        lines.append(f"    {r} -.->|exposed by| {a}")
+
+    mermaid_src = "\n".join(lines)
+    return (
+        '<div class="card" style="margin-top:1.5rem">'
+        '<h3 style="margin-bottom:1rem">Architecture</h3>'
+        f'<div class="mermaid">{mermaid_src}</div>'
+        '</div>'
+    )
+
+
 def render_role_analysis_matrix(
         term: dict,
         superclass_index: dict[str, list[dict]]
@@ -1511,6 +1631,10 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     classification_html = render_classification_diagram(
         term, superclass_index or {}, terms_index or {})
 
+    # Architecture diagram (for terms containing 'Architecture')
+    architecture_html = render_architecture_diagram(
+        term, terms_index or {})
+
     # Role × Analysis matrix (only for the Role - 3SE page)
     role_matrix_html = render_role_analysis_matrix(
         term, superclass_index or {})
@@ -1606,21 +1730,37 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             f'</tr>'
         )
 
+    # Exposure relations (isExposedBy)
+    exposure_html = ""
+    for field, label in EXPOSURE_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        exposure_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
     relations_html = ""
-    if hier or bfo_html or role_html or match:
+    if hier or bfo_html or role_html or exposure_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                bfo_html or role_html or match) else ""
-        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (role_html or match) else ""
-        sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and match else ""
+                bfo_html or role_html or exposure_html or match) else ""
+        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (role_html or exposure_html or match) else ""
+        sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (exposure_html or match) else ""
+        sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{match}</table>
         </div>"""
 
     # isReferencedBy
@@ -1666,6 +1806,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
 {diagram_html}
 {analysis_allocates_html}
 {classification_html}
+{architecture_html}
 {role_matrix_html}
 {notes_html}
 {relations_html}
