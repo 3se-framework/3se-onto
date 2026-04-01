@@ -1291,12 +1291,16 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
         node_labels[uri] = lbl
         return lbl
 
-    edges = []  # (source_uri, interface_uri)
+    exposes_edges = []  # (source_uri, interface_uri)
+    allocates_edges = []  # (source_uri, allocated_uri)
 
+    # ── Scan related terms for exposes and allocates ──────────────────────
     for rel_uri in related_uris:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
             continue
+
+        # exposes: related_term -.->|exposes| interface
         exposes = rel_term.get("exposes") or []
         if isinstance(exposes, str):
             exposes = [exposes]
@@ -1305,13 +1309,38 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
             label_for(rel_uri)
             node_id(interface_uri)
             label_for(interface_uri)
-            edges.append((rel_uri, interface_uri))
+            exposes_edges.append((rel_uri, interface_uri))
 
-    if not edges:
+            # allocates from the interface term: interface -.->|allocates| target
+            iface_term = terms_index.get(interface_uri)
+            if iface_term:
+                iface_allocates = iface_term.get("allocates") or []
+                if isinstance(iface_allocates, str):
+                    iface_allocates = [iface_allocates]
+                for alloc_uri in iface_allocates:
+                    node_id(interface_uri)
+                    label_for(interface_uri)
+                    node_id(alloc_uri)
+                    label_for(alloc_uri)
+                    allocates_edges.append((interface_uri, alloc_uri))
+
+        # allocates: related_term -.->|allocates| target
+        allocates = rel_term.get("allocates") or []
+        if isinstance(allocates, str):
+            allocates = [allocates]
+        for alloc_uri in allocates:
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(alloc_uri)
+            label_for(alloc_uri)
+            allocates_edges.append((rel_uri, alloc_uri))
+
+    if not exposes_edges and not allocates_edges:
         return ""
 
     # Deduplicate
-    edges = list(dict.fromkeys(edges))
+    exposes_edges = list(dict.fromkeys(exposes_edges))
+    allocates_edges = list(dict.fromkeys(allocates_edges))
 
     # Deduplicate nodes by label (same logic as existing diagram functions)
     label_to_primary_uri: dict[str, str] = {}
@@ -1325,11 +1354,16 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
             label_to_primary_uri[lbl_lower] = uri
 
     if uri_remap:
-        edges = [
+        exposes_edges = [
             (uri_remap.get(s, s), uri_remap.get(o, o))
-            for s, o in edges
+            for s, o in exposes_edges
         ]
-        edges = list(dict.fromkeys(edges))
+        allocates_edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in allocates_edges
+        ]
+        exposes_edges = list(dict.fromkeys(exposes_edges))
+        allocates_edges = list(dict.fromkeys(allocates_edges))
         for uri in uri_remap:
             node_ids.pop(uri, None)
             node_labels.pop(uri, None)
@@ -1339,9 +1373,12 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
         lbl = node_labels.get(uri, nid).replace('"', "'")
         lines.append(f'    {nid}["{lbl}"]')
     lines.append("")
-    for src_uri, iface_uri in edges:
+    for src_uri, iface_uri in exposes_edges:
         s, i = node_id(src_uri), node_id(iface_uri)
         lines.append(f"    {s} -.->|exposes| {i}")
+    for src_uri, alloc_uri in allocates_edges:
+        s, a = node_id(src_uri), node_id(alloc_uri)
+        lines.append(f"    {s} -.->|allocates| {a}")
 
     mermaid_src = "\n".join(lines)
     return (
@@ -1759,9 +1796,9 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
                 bfo_html or role_html or exposure_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
-                    role_html or exposure_html or match) else ""
+                role_html or exposure_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
-                    exposure_html or match) else ""
+                exposure_html or match) else ""
         sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
