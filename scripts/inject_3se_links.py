@@ -325,7 +325,7 @@ def main() -> int:
                 src_structural = set()
                 tgt_structural = set()
                 for field in ("isComposedOf", "isRepresentedBy", "allocates", "canBe",
-                              "isExposedBy", "isResponsibleFor", "isAccountableFor", "isSupporting"):
+                              "exposes", "isResponsibleFor", "isAccountableFor", "isSupporting"):
                     for uri in (src_data.get(field) or []):
                         src_structural.add(uri)
                     for uri in (tgt_data.get(field) or []):

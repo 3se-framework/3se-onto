@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
   "@type": "rdf:Property",
-  "title": "isExposedBy - UML",
+  "title": "Exposes - UML",
   "description": "Relates a source element to an interface through which it exchanges flows with its environment.",
   "subPropertyOf": [
     "https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912",
@@ -10,7 +10,7 @@
   "domain": "skos:Concept",
   "range": "skos:Concept",
   "status": "draft",
-  "@id": "https://www.3se.info/3se-onto/properties/is-exposed-by-3se-069cd94b8959766f",
+  "@id": "https://www.3se.info/3se-onto/properties/exposes-3se-069cd94b8959766f",
   "entryCreated": "2026-04-01",
   "entryModified": "2026-04-01",
   "entryCreator": {

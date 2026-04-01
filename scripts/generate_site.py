@@ -92,7 +92,7 @@ ROLE_RELATION_LABELS: dict[str, str] = {
 
 # Human-readable labels for exposure relation fields rendered on term pages.
 EXPOSURE_RELATION_LABELS: dict[str, str] = {
-    "isExposedBy": "Exposed by",
+    "exposes": "Exposes",
 }
 
 

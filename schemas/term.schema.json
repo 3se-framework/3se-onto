@@ -187,8 +187,8 @@
       },
       "uniqueItems": true
     },
-    "isExposedBy": {
-      "description": "3se:isExposedBy — IRIs of concepts that an element exposes (exposure relation).",
+    "exposes": {
+      "description": "3se:exposes — IRIs of concepts that an element exposes (exposure relation).",
       "type": "array",
       "items": {
         "type": "string",

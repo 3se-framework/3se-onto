@@ -30,5 +30,8 @@
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
   ]
 }

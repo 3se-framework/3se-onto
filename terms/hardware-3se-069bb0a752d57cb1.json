@@ -32,6 +32,9 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
   ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
+  ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-29",
   "entryCreator": {

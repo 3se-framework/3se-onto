@@ -35,6 +35,9 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
   ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
+  ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-03-29",
   "entryCreator": {
