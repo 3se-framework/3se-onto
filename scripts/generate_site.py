@@ -1235,15 +1235,21 @@ def render_classification_diagram(
 
 def render_architecture_diagram(term: dict, terms_index: dict) -> str:
     """
-    Render a Mermaid flowchart for terms whose title contains 'Architecture'.
+    Render a Mermaid flowchart for terms whose title contains 'architecture'
+    (case-insensitive, e.g. 'Functional architecture', 'Physical architecture').
 
-    For each URI in the term's 'related' list, look up the term in terms_index
-    and collect those whose 'isExposedBy' field contains the current term's URI.
-    Each such related term is shown as a node linked to the architecture term
-    with an 'exposes' dashed arrow.
+    For each URI in the term's 'related' list, look up the related term and
+    check whether it carries an 'exposes' field. The 'exposes' property relates
+    a source element to an interface it exchanges flows through. For every such
+    (related_term, interface) pair found, an edge is drawn:
 
-    Only rendered when the term title contains 'Architecture' and at least one
-    related term exposes it.  Returns an empty string otherwise.
+        related_term -.->|exposes| interface_target
+
+    The architecture term itself is NOT included as a node — the diagram shows
+    the elements related to this architecture and the interfaces they expose.
+
+    Only rendered when at least one related term has an 'exposes' field.
+    Returns an empty string otherwise.
     """
     title = term.get("title", "")
     if "architecture" not in title.lower():
@@ -1285,23 +1291,21 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
         node_labels[uri] = lbl
         return lbl
 
-    # Pre-register the architecture term as the root node
-    node_id(term_uri)
-    label_for(term_uri)
-
-    edges = []  # (related_uri, architecture_uri) — "related term exposed by architecture"
+    edges = []  # (source_uri, interface_uri)
 
     for rel_uri in related_uris:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
             continue
-        exposed_by = rel_term.get("exposes") or []
-        if isinstance(exposed_by, str):
-            exposed_by = [exposed_by]
-        if term_uri in exposed_by:
+        exposes = rel_term.get("exposes") or []
+        if isinstance(exposes, str):
+            exposes = [exposes]
+        for interface_uri in exposes:
             node_id(rel_uri)
             label_for(rel_uri)
-            edges.append((rel_uri, term_uri))
+            node_id(interface_uri)
+            label_for(interface_uri)
+            edges.append((rel_uri, interface_uri))
 
     if not edges:
         return ""
@@ -1335,9 +1339,9 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
         lbl = node_labels.get(uri, nid).replace('"', "'")
         lines.append(f'    {nid}["{lbl}"]')
     lines.append("")
-    for rel_uri, arch_uri in edges:
-        r, a = node_id(rel_uri), node_id(arch_uri)
-        lines.append(f"    {r} -.->|exposes| {a}")
+    for src_uri, iface_uri in edges:
+        s, i = node_id(src_uri), node_id(iface_uri)
+        lines.append(f"    {s} -.->|exposes| {i}")
 
     mermaid_src = "\n".join(lines)
     return (
