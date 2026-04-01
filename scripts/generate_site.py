@@ -1152,7 +1152,7 @@ def render_classification_diagram(
     node_id(term_uri)
     label_for(term_uri)
 
-    subclass_edges = []    # (child_uri, parent_uri)
+    subclass_edges = []  # (child_uri, parent_uri)
     allocation_edges = []  # (subject_uri, target_uri)
 
     # ── (1) Subclass edges ────────────────────────────────────────────────
@@ -1183,7 +1183,7 @@ def render_classification_diagram(
         return ""
 
     # Deduplicate
-    subclass_edges   = list(dict.fromkeys(subclass_edges))
+    subclass_edges = list(dict.fromkeys(subclass_edges))
     allocation_edges = list(dict.fromkeys(allocation_edges))
 
     # Deduplicate nodes by label (same logic as existing diagram functions)
@@ -1206,7 +1206,7 @@ def render_classification_diagram(
             (uri_remap.get(s, s), uri_remap.get(o, o))
             for s, o in allocation_edges
         ]
-        subclass_edges   = list(dict.fromkeys(subclass_edges))
+        subclass_edges = list(dict.fromkeys(subclass_edges))
         allocation_edges = list(dict.fromkeys(allocation_edges))
         for uri in uri_remap:
             node_ids.pop(uri, None)
@@ -1240,7 +1240,7 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
     For each URI in the term's 'related' list, look up the term in terms_index
     and collect those whose 'isExposedBy' field contains the current term's URI.
     Each such related term is shown as a node linked to the architecture term
-    with an 'exposed by' dashed arrow.
+    with an 'exposes' dashed arrow.
 
     Only rendered when the term title contains 'Architecture' and at least one
     related term exposes it.  Returns an empty string otherwise.
@@ -1295,7 +1295,7 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
             continue
-        exposed_by = rel_term.get("isExposedBy") or []
+        exposed_by = rel_term.get("exposes") or []
         if isinstance(exposed_by, str):
             exposed_by = [exposed_by]
         if term_uri in exposed_by:
@@ -1337,7 +1337,7 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
     lines.append("")
     for rel_uri, arch_uri in edges:
         r, a = node_id(rel_uri), node_id(arch_uri)
-        lines.append(f"    {r} -.->|exposed by| {a}")
+        lines.append(f"    {r} -.->|exposes| {a}")
 
     mermaid_src = "\n".join(lines)
     return (
@@ -1754,8 +1754,10 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
     if hier or bfo_html or role_html or exposure_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
                 bfo_html or role_html or exposure_html or match) else ""
-        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (role_html or exposure_html or match) else ""
-        sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (exposure_html or match) else ""
+        sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
+                    role_html or exposure_html or match) else ""
+        sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
+                    exposure_html or match) else ""
         sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
