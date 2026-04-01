@@ -6,5 +6,12 @@
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4"
   ],
-  "status": "standard"
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/required-uml-spec-2-5-1-069cd94b898170f1",
+  "entryCreated": "2026-04-01",
+  "entryModified": "2026-04-01",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
