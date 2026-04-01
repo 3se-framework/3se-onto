@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
   "@type": "rdf:Property",
-  "title": "Exposes - 3SE",
+  "title": "exposes - 3SE",
   "description": "Relates a source element to an interface through which it exchanges flows with its environment.",
   "subPropertyOf": [
     "https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912",
