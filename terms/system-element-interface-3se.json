@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element interface - 3SE",
+  "description": "Boundary across which two system elements and/or enabling systems and/or actors meet and exchange flows.",
+  "status": "draft",
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ]
+}

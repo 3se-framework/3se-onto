@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Functional interface - 3SE",
-  "description": "Part of system interface across which two functional elements and/or functional enabling elements and/or actors meet and exchange flows.",
+  "description": "Part of a system element interface responsible for carrying out some of the flows that are exchanged with other functional elements of the system and/or enabling functional elements and/or actors.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/behavioral-port-arcadia-2023-069bc53af24b724a"
@@ -10,9 +10,11 @@
   "@id": "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
-    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
     "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
   ],
   "entryCreated": "2026-03-19",
   "entryModified": "2026-03-23",
