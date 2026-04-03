@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Architecture - ISO/IEC/IEEE 15288",
+  "description": "Fundamental concepts or properties of a system in its environment and governing principles for the realization and evolution of this system and its related life cycle processes.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2"
+  ]
+}
