@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC/IEEE 42010:2022",
+  "abstract": "Software, systems and enterprise — Architecture description",
+  "issued": "2022",
+  "uri": "https://www.iso.org/standard/74393.html",
+  "status": "bibo:published"
+}
