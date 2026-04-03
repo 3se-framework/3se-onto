@@ -5,7 +5,7 @@
   "description": "Termination of the ability of a system to perform a function as specified due to a fault.",
   "status": "draft",
   "closeMatch": [
-    "https://www.3se.info/3se-onto/terms/failure-26262-1-069bb0f6e7d079d7"
+    "https://www.3se.info/3se-onto/terms/failure-26262-1-2018-069bb0f6e7d079d7"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
   "related": [
