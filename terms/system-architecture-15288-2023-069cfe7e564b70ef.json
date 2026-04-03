@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/iso-iec-ieee-15288-2023-069a762a571878d2"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-architecture-15288-2023-069cfe7e564b70ef",
+  "entryCreated": "2026-04-03",
+  "entryModified": "2026-04-03",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
