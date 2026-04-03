@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/iso-26262-1-2018-069ab4000b417db7"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16",
+  "entryCreated": "2026-04-03",
+  "entryModified": "2026-04-03",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

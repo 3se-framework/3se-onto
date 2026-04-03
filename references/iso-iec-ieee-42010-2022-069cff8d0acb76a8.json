@@ -5,5 +5,12 @@
   "abstract": "Software, systems and enterprise — Architecture description",
   "issued": "2022",
   "uri": "https://www.iso.org/standard/74393.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-iec-ieee-42010-2022-069cff8d0acb76a8",
+  "entryCreated": "2026-04-03",
+  "entryModified": "2026-04-03",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
