@@ -5,7 +5,7 @@
   "description": "Abnormal condition of a physical element that can cause a system to fail.",
   "status": "draft",
   "narrowMatch": [
-    "https://www.3se.info/3se-onto/terms/fault-26262-1-069bb0f6e7ef785b"
+    "https://www.3se.info/3se-onto/terms/fault-26262-1-2018-069bb0f6e7ef785b"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3",
   "related": [
