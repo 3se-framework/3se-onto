@@ -6,15 +6,16 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
-    "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327"
+    "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327",
+    "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84"
   ],
   "entryCreated": "2026-03-29",
-  "entryModified": "2026-03-29",
+  "entryModified": "2026-04-04",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

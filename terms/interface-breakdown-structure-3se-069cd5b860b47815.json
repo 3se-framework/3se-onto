@@ -6,15 +6,16 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/interface-breakdown-structure-3se-069cd5b860b47815",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
     "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
-    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac"
   ],
   "entryCreated": "2026-04-01",
-  "entryModified": "2026-04-01",
+  "entryModified": "2026-04-04",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

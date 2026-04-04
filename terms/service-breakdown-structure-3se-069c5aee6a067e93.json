@@ -6,7 +6,7 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
@@ -15,10 +15,11 @@
     "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a",
     "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1",
     "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb"
   ],
   "entryCreated": "2026-03-26",
-  "entryModified": "2026-03-26",
+  "entryModified": "2026-04-04",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

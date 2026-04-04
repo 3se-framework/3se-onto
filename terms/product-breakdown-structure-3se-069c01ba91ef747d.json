@@ -9,17 +9,18 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d"
   ],
   "entryCreated": "2026-03-22",
-  "entryModified": "2026-03-26",
+  "entryModified": "2026-04-04",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

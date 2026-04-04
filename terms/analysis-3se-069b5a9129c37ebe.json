@@ -6,7 +6,7 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
   "entryCreated": "2026-03-14",
-  "entryModified": "2026-04-01",
+  "entryModified": "2026-04-04",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -16,6 +16,7 @@
     "https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44",
     "https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221",
     "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d",
-    "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7"
+    "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7",
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
   ]
 }
