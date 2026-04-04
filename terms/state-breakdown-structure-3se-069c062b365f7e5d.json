@@ -2,9 +2,12 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "State breakdown structure - 3SE",
-  "description": "State hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A high level state is composed of at least two states.\n(2) A high level state allocates at least one high level function.\n(3) A state allocates at least one function.\n(4) A state can be a high level state.",
+  "description": "Breakdown structure of the state that supports the functional architecture by following the principles below:\n(1) A high level state is composed of at least two states.\n(2) A high level state allocates at least one high level function.\n(3) A state allocates at least one function.\n(4) A state can be a high level state.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/high-level-state-3se-069c062b3637735e",
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",

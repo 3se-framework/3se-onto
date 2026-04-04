@@ -2,9 +2,12 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Service breakdown structure - 3SE",
-  "description": "Service hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A service is composed of one or more service means, a service contract and a service level agreement.\n(2) A service allocates at least one feature.\n(3) A service is represented by a system.\n(4) A service can be an asset\n(5) A service mean can be a service.",
+  "description": "Breakdown structure of the service that supports the service analysis by following the principles below:\n(1) A service is composed of one or more service means, a service contract and a service level agreement.\n(2) A service allocates at least one feature.\n(3) A service is represented by a system.\n(4) A service can be an asset\n(5) A service mean can be a service.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",

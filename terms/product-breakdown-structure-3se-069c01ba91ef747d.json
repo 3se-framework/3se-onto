@@ -2,12 +2,15 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Product breakdown structure - 3SE",
-  "description": "Product hierarchy that is typically used to partition the assigned work and associated resource by following the principles below:\n(1) A product is composed of at least two product elements.\n(2) A product allocates at least one feature.\n(3) A product is represented by a system.\n(4) A product can be an asset\n(5) A product element can be a product.",
+  "description": "Breakdown structure of the product that supports the product analysis by following the principles below:\n(1) A product is composed of at least two product elements.\n(2) A product allocates at least one feature.\n(3) A product is represented by a system.\n(4) A product can be an asset\n(5) A product element can be a product.",
   "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",

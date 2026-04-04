@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Breakdown structure - 3SE",
+  "description": "Hierarchy that supports an analysis and is used to partition the assigned work and associated resources.",
+  "status": "draft"
+}
