@@ -55,6 +55,9 @@ jobs:
       - name: Inject relational URIs
         run: python scripts/inject_uris.py
 
+      - name: Inject breakdown structure role links
+        run: python scripts/inject_bs_roles.py
+
       - name: Inject 3SE internal links
         run: python scripts/inject_3se_links.py
 
