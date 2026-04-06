@@ -1498,16 +1498,6 @@ def render_role_analysis_matrix(
             f'{short_label(entry.get("title", ""))}</a></th>'
         )
 
-    def group_separator_th(label: str) -> str:
-        """Vertical rotated group-label header cell used between column groups."""
-        return (
-            f'<th style="font-family:var(--mono);font-size:.6rem;font-weight:600;'
-            f'color:var(--accent);letter-spacing:.1em;text-transform:uppercase;'
-            f'padding:.4rem .3rem;white-space:nowrap;border-left:2px solid var(--border2);'
-            f'writing-mode:vertical-rl;transform:rotate(180deg);min-width:1.2rem">'
-            f'{label}</th>'
-        )
-
     def group_separator_td() -> str:
         return '<td style="border-left:2px solid var(--border2);padding:0"></td>'
 
@@ -1542,9 +1532,8 @@ def render_role_analysis_matrix(
         # Header row: "Role" stub | [analysis cols] | separator | [breakdown cols]
         analysis_headers = "".join(col_header(a) for a in child_analyses)
         breakdown_headers = "".join(col_header(b) for b in child_breakdowns)
-        sep_header = group_separator_th("BS") if child_analyses and child_breakdowns else ""
 
-        col_heads_html = analysis_headers + sep_header + breakdown_headers
+        col_heads_html = analysis_headers + breakdown_headers
 
         table_rows = ""
         for role in child_roles:
@@ -1561,7 +1550,8 @@ def render_role_analysis_matrix(
 
             table_rows += (
                 f'<tr style="border-bottom:1px solid var(--border)">'
-                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap">'
+                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap;'
+                f'position:sticky;left:0;z-index:2;background:var(--white)">'
                 f'<a href="{role_href}">{role_name}</a></td>'
                 f'{analysis_cells}{sep_cell}{breakdown_cells}</tr>'
             )
@@ -1570,7 +1560,7 @@ def render_role_analysis_matrix(
         analysis_span = len(child_analyses)
         breakdown_span = len(child_breakdowns)
         group_row = '<tr>'
-        group_row += '<th></th>'  # stub cell above row-label column
+        group_row += '<th style="position:sticky;left:0;z-index:3;background:var(--white)"></th>'  # stub cell above row-label column
         if analysis_span:
             group_row += (
                 f'<th colspan="{analysis_span}" style="font-family:var(--mono);'
@@ -1591,7 +1581,7 @@ def render_role_analysis_matrix(
             )
         group_row += '</tr>'
 
-        thead_html = f'{group_row}<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase">Role</th>{col_heads_html}</tr>'
+        thead_html = f'{group_row}<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;position:sticky;left:0;z-index:3;background:var(--white)">Role</th>{col_heads_html}</tr>'
         matrix_title = "Role × Analysis / Breakdown structure responsibility matrix"
 
     # ── PAGE: Analysis - 3SE ─────────────────────────────────────────────
@@ -1627,12 +1617,13 @@ def render_role_analysis_matrix(
                             for r in child_roles)
             table_rows += (
                 f'<tr style="border-bottom:1px solid var(--border)">'
-                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap">'
+                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap;'
+                f'position:sticky;left:0;z-index:2;background:var(--white)">'
                 f'<a href="{analysis_href}">{analysis_name}</a></td>'
                 f'{cells}</tr>'
             )
 
-        thead_html = f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase">Analysis</th>{col_heads_html}</tr>'
+        thead_html = f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;position:sticky;left:0;z-index:3;background:var(--white)">Analysis</th>{col_heads_html}</tr>'
         matrix_title = "Analysis × Role responsibility matrix"
 
     # ── PAGE: Breakdown structure - 3SE ──────────────────────────────────
@@ -1668,12 +1659,13 @@ def render_role_analysis_matrix(
                             for r in child_roles)
             table_rows += (
                 f'<tr style="border-bottom:1px solid var(--border)">'
-                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap">'
+                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap;'
+                f'position:sticky;left:0;z-index:2;background:var(--white)">'
                 f'<a href="{bd_href}">{bd_name}</a></td>'
                 f'{cells}</tr>'
             )
 
-        thead_html = f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase">Breakdown structure</th>{col_heads_html}</tr>'
+        thead_html = f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;position:sticky;left:0;z-index:3;background:var(--white)">Breakdown structure</th>{col_heads_html}</tr>'
         matrix_title = "Breakdown structure × Role responsibility matrix"
 
     # ── Legend & wrapper ─────────────────────────────────────────────────
@@ -1687,12 +1679,14 @@ def render_role_analysis_matrix(
     )
 
     return f"""
-<div class="card" style="margin-top:1.5rem;overflow-x:auto">
+<div class="card" style="margin-top:1.5rem">
   <h3 style="margin-bottom:1rem">{matrix_title}</h3>
-  <table style="border-collapse:collapse;min-width:100%">
-    <thead>{thead_html}</thead>
-    <tbody>{table_rows}</tbody>
-  </table>
+  <div style="overflow-x:auto">
+    <table style="border-collapse:collapse;min-width:100%">
+      <thead>{thead_html}</thead>
+      <tbody>{table_rows}</tbody>
+    </table>
+  </div>
   {legend}
 </div>"""
 
