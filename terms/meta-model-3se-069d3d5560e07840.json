@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Meta model - 3SE",
-  "description": "Model that specifies the rules that governs a model.",
+  "description": "Model that specifies the rules that govern a model.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9"

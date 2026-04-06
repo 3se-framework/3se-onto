@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Mathematical model - 3SE",
-  "description": "Model that describes an entity using mathematical language.",
+  "description": "Abstract model that describes an entity using mathematical language.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1"

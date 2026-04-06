@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Computational model - 3SE",
-  "description": "Model that uses software to simulate an entity.",
+  "description": "Abstract model that uses software to simulate an entity.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1"
