@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Concrete model - 3SE",
+  "description": "Specific instantiation of abstract model.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/concrete-model-3se-069d3d5560c77d97",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1"
+  ],
+  "entryCreated": "2026-04-06",
+  "entryModified": "2026-04-06",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

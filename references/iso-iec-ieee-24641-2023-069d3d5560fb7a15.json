@@ -5,5 +5,12 @@
   "abstract": "Systems and software engineering — Methods and tools for model-based systems and software engineering",
   "issued": "2023",
   "uri": "https://www.iso.org/standard/79111.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-iec-ieee-24641-2023-069d3d5560fb7a15",
+  "entryCreated": "2026-04-06",
+  "entryModified": "2026-04-06",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

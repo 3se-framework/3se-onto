@@ -5,6 +5,13 @@
   "description": "Abstract representation of an entity or collection of entities that provides the ability to portray, understand or predict the properties or characteristics of the entity or collection under conditions or situations of interest.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24641-2023"
-  ]
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24641-2023-069d3d5560fb7a15"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/model-24641-2023-069d3d5560e87cde",
+  "entryCreated": "2026-04-06",
+  "entryModified": "2026-04-06",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
