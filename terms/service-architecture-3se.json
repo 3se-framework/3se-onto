@@ -1,0 +1,14 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Service architecture - 3SE",
+  "description": "Analysis of the service to determine what service means are realizing it.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+  ],
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44",
+    "https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16"
+  ]
+}
