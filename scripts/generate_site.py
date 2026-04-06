@@ -977,6 +977,7 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
 ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
 ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
 BREAKDOWN_BASE_URI = "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+CONCEPTUAL_MODEL_BASE_URI = "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
 
 
 def is_analysis_subclass(term: dict) -> bool:
@@ -1419,13 +1420,14 @@ def render_role_analysis_matrix(
         superclass_index: dict[str, list[dict]]
 ) -> str:
     """
-    Render a responsibility matrix on three pages:
+    Render a responsibility matrix on four pages:
 
     Role - 3SE
         rows  = child roles   (subclasses of role-3se)
         cols  = child analyses (subclasses of analysis-3se)
                + child breakdown structures (subclasses of breakdown-structure-3se)
-               with a column-group separator between the two sets
+               + child conceptual models   (subclasses of conceptual-model-3se)
+               with a column-group separator between each set
 
     Analysis - 3SE
         rows  = child analyses (subclasses of analysis-3se)
@@ -1435,8 +1437,12 @@ def render_role_analysis_matrix(
         rows  = child breakdown structures (subclasses of breakdown-structure-3se)
         cols  = child roles                (subclasses of role-3se)
 
+    Conceptual model - 3SE
+        rows  = child conceptual models (subclasses of conceptual-model-3se)
+        cols  = child roles             (subclasses of role-3se)
+
     Cell values are drawn from the role's isResponsibleFor / isAccountableFor /
-    isSupporting fields, which can point at either analyses or breakdown structures.
+    isSupporting fields.
 
     Cell values:
       R  — isResponsibleFor
@@ -1450,8 +1456,9 @@ def render_role_analysis_matrix(
     is_role_page = title.startswith("Role - 3SE")
     is_analysis_page = title.startswith("Analysis - 3SE")
     is_breakdown_page = title.startswith("Breakdown structure - 3SE")
+    is_model_page = title.startswith("Conceptual model - 3SE")
 
-    if not (is_role_page or is_analysis_page or is_breakdown_page):
+    if not (is_role_page or is_analysis_page or is_breakdown_page or is_model_page):
         return ""
 
     # ── Collect child roles ──────────────────────────────────────────────
@@ -1478,38 +1485,48 @@ def render_role_analysis_matrix(
         child_breakdowns = superclass_index.get(BREAKDOWN_BASE_URI, [])
     child_breakdowns = sorted(child_breakdowns or [], key=lambda t: t.get("title", ""))
 
+    # ── Collect child conceptual models ──────────────────────────────────
+    if is_model_page:
+        child_models = superclass_index.get(term_id, [])
+    else:
+        child_models = superclass_index.get(CONCEPTUAL_MODEL_BASE_URI, [])
+    child_models = sorted(child_models or [], key=lambda t: t.get("title", ""))
+
     # Guard: each page needs the columns it is responsible for
-    if is_role_page and not child_analyses and not child_breakdowns:
+    if is_role_page and not child_analyses and not child_breakdowns and not child_models:
         return ""
     if is_analysis_page and not child_analyses:
         return ""
     if is_breakdown_page and not child_breakdowns:
+        return ""
+    if is_model_page and not child_models:
         return ""
 
     # ── Shared helpers ────────────────────────────────────────────────────
     def short_label(t: str) -> str:
         return t.split(" - ")[0].strip()
 
-    def cell_html(val: str) -> str:
+    def cell_html(val: str, first_in_group: bool = False) -> str:
+        border = "border-left:2px solid var(--border2);" if first_in_group else ""
         if val == "R":
             return (
-                '<td style="text-align:center;padding:.4rem .5rem">'
+                f'<td style="text-align:center;padding:.4rem .5rem;{border}">'
                 '<span style="font-family:var(--mono);font-size:.8rem;'
                 'font-weight:700;color:var(--text)">R</span></td>'
             )
         if val == "A":
             return (
-                '<td style="text-align:center;padding:.4rem .5rem">'
+                f'<td style="text-align:center;padding:.4rem .5rem;{border}">'
                 '<span style="font-family:var(--mono);font-size:.8rem;'
                 'color:var(--text2)">A</span></td>'
             )
         if val == "S":
             return (
-                '<td style="text-align:center;padding:.4rem .5rem">'
+                f'<td style="text-align:center;padding:.4rem .5rem;{border}">'
                 '<span style="font-family:var(--mono);font-size:.8rem;'
                 'color:var(--muted)">S</span></td>'
             )
-        return '<td style="text-align:center;padding:.4rem .5rem;color:var(--border2)">—</td>'
+        return f'<td style="text-align:center;padding:.4rem .5rem;{border}color:var(--border2)">—</td>'
 
     def col_header(entry: dict) -> str:
         return (
@@ -1522,9 +1539,17 @@ def render_role_analysis_matrix(
             f'{short_label(entry.get("title", ""))}</a></th>'
         )
 
+    def group_header_th(label: str, span: int, first: bool = False) -> str:
+        border = "border-left:2px solid var(--border2);" if not first else ""
+        return (
+            f'<th colspan="{span}" style="{border}font-family:var(--mono);'
+            f'font-size:.6rem;font-weight:600;color:var(--accent);'
+            f'letter-spacing:.1em;text-transform:uppercase;'
+            f'padding:.2rem .5rem;text-align:center;'
+            f'border-bottom:1px solid var(--border2)">{label}</th>'
+        )
+
     # ── Build lookup: role_uri → {col_uri: "R"|"A"|"S"|""} ───────────────
-    # (used for Role page and Breakdown structure page where roles are the
-    #  dimension from which relations are read)
     def build_role_matrix(col_uris: set[str]) -> dict[str, dict[str, str]]:
         matrix: dict[str, dict[str, str]] = {}
         for role in child_roles:
@@ -1542,19 +1567,36 @@ def render_role_analysis_matrix(
             matrix[role_uri] = row
         return matrix
 
+    # ── Build lookup: row_uri → {role_uri: "R"|"A"|"S"|""} ──────────────
+    # Used for Analysis, Breakdown structure and Conceptual model pages where
+    # row items are looked up against each role's typed fields.
+    def build_row_matrix(row_uris: list[str]) -> dict[str, dict[str, str]]:
+        roles_uris = {r.get("@id", "") for r in child_roles}
+        matrix: dict[str, dict[str, str]] = {}
+        for row_uri in row_uris:
+            row: dict[str, str] = {r_uri: "" for r_uri in roles_uris}
+            for role in child_roles:
+                role_id = role.get("@id", "")
+                for u in role.get("isResponsibleFor", []):
+                    if u == row_uri:
+                        row[role_id] = "R"
+                for u in role.get("isAccountableFor", []):
+                    if u == row_uri:
+                        row[role_id] = "A"
+                for u in role.get("isSupporting", []):
+                    if u == row_uri:
+                        row[role_id] = "S"
+            matrix[row_uri] = row
+        return matrix
+
     # ── PAGE: Role - 3SE ─────────────────────────────────────────────────
-    # rows = roles, cols = analyses | breakdown structures
+    # rows = roles, cols = analyses | breakdown structures | conceptual models
     if is_role_page:
         analysis_uris = {a.get("@id", "") for a in child_analyses}
         breakdown_uris = {b.get("@id", "") for b in child_breakdowns}
-        all_col_uris = analysis_uris | breakdown_uris
+        model_uris = {m.get("@id", "") for m in child_models}
+        all_col_uris = analysis_uris | breakdown_uris | model_uris
         matrix = build_role_matrix(all_col_uris)
-
-        # Header row: "Role" stub | [analysis cols] | [breakdown cols]
-        analysis_headers = "".join(col_header(a) for a in child_analyses)
-        breakdown_headers = "".join(col_header(b) for b in child_breakdowns)
-
-        col_heads_html = analysis_headers + breakdown_headers
 
         table_rows = ""
         for role in child_roles:
@@ -1563,68 +1605,61 @@ def render_role_analysis_matrix(
             role_name = short_label(role.get("title", ""))
             row_data = matrix[role_uri]
 
-            analysis_cells = "".join(cell_html(row_data.get(a.get("@id", ""), ""))
-                                     for a in child_analyses)
-            breakdown_cells = "".join(cell_html(row_data.get(b.get("@id", ""), ""))
-                                      for b in child_breakdowns)
+            analysis_cells = "".join(
+                cell_html(row_data.get(a.get("@id", ""), ""), first_in_group=(i == 0 and False))
+                for i, a in enumerate(child_analyses)
+            )
+            breakdown_cells = "".join(
+                cell_html(row_data.get(b.get("@id", ""), ""), first_in_group=(i == 0 and bool(child_analyses)))
+                for i, b in enumerate(child_breakdowns)
+            )
+            model_cells = "".join(
+                cell_html(row_data.get(m.get("@id", ""), ""),
+                          first_in_group=(i == 0 and bool(child_analyses or child_breakdowns)))
+                for i, m in enumerate(child_models)
+            )
 
             table_rows += (
                 f'<tr style="border-bottom:1px solid var(--border)">'
                 f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap;'
                 f'position:sticky;left:0;z-index:2;background:var(--white)">'
                 f'<a href="{role_href}">{role_name}</a></td>'
-                f'{analysis_cells}{breakdown_cells}</tr>'
+                f'{analysis_cells}{breakdown_cells}{model_cells}</tr>'
             )
 
-        # Column-group labels in a spanning header row above the column headers
-        analysis_span = len(child_analyses)
-        breakdown_span = len(child_breakdowns)
+        # Column-group labels above the rotated column headers
         group_row = '<tr>'
-        group_row += '<th style="position:sticky;left:0;z-index:3;background:var(--white)"></th>'  # stub cell above row-label column
-        if analysis_span:
-            group_row += (
-                f'<th colspan="{analysis_span}" style="font-family:var(--mono);'
-                f'font-size:.6rem;font-weight:600;color:var(--accent);'
-                f'letter-spacing:.1em;text-transform:uppercase;'
-                f'padding:.2rem .5rem;text-align:center;'
-                f'border-bottom:1px solid var(--border2)">Analyses</th>'
-            )
-        if breakdown_span:
-            group_row += (
-                f'<th colspan="{breakdown_span}" style="border-left:2px solid var(--border2); font-family:var(--mono);'
-                f'font-size:.6rem;font-weight:600;color:var(--accent);'
-                f'letter-spacing:.1em;text-transform:uppercase;'
-                f'padding:.2rem .5rem;text-align:center;'
-                f'border-bottom:1px solid var(--border2)">Breakdown structures</th>'
-            )
+        group_row += '<th style="position:sticky;left:0;z-index:3;background:var(--white)"></th>'
+        if child_analyses:
+            group_row += group_header_th("Analyses", len(child_analyses), first=True)
+        if child_breakdowns:
+            group_row += group_header_th("Breakdown structures", len(child_breakdowns),
+                                         first=not child_analyses)
+        if child_models:
+            group_row += group_header_th("Models", len(child_models),
+                                         first=not child_analyses and not child_breakdowns)
         group_row += '</tr>'
 
-        thead_html = f'{group_row}<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;position:sticky;left:0;z-index:3;background:var(--white)">Role</th>{col_heads_html}</tr>'
-        matrix_title = "Role × Analysis / Breakdown structure responsibility matrix"
+        col_heads_html = (
+                "".join(col_header(a) for a in child_analyses)
+                + "".join(col_header(b) for b in child_breakdowns)
+                + "".join(col_header(m) for m in child_models)
+        )
+        thead_html = (
+            f'{group_row}'
+            f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);'
+            f'font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;'
+            f'text-transform:uppercase;position:sticky;left:0;z-index:3;'
+            f'background:var(--white)">Role</th>{col_heads_html}</tr>'
+        )
+        matrix_title = "Role × Analysis / Breakdown structure / Model responsibility matrix"
 
     # ── PAGE: Analysis - 3SE ─────────────────────────────────────────────
     # rows = analyses, cols = roles
     elif is_analysis_page:
         if not child_analyses:
             return ""
-        roles_uris = {r.get("@id", "") for r in child_roles}
-        matrix: dict[str, dict[str, str]] = {}
-        for analysis in child_analyses:
-            analysis_uri = analysis.get("@id", "")
-            row: dict[str, str] = {r_uri: "" for r_uri in roles_uris}
-            for role in child_roles:
-                role_id = role.get("@id", "")
-                for u in role.get("isResponsibleFor", []):
-                    if u == analysis_uri:
-                        row[role_id] = "R"
-                for u in role.get("isAccountableFor", []):
-                    if u == analysis_uri:
-                        row[role_id] = "A"
-                for u in role.get("isSupporting", []):
-                    if u == analysis_uri:
-                        row[role_id] = "S"
-            matrix[analysis_uri] = row
-
+        matrix = build_row_matrix([a.get("@id", "") for a in child_analyses])
         col_heads_html = "".join(col_header(r) for r in child_roles)
         table_rows = ""
         for analysis in child_analyses:
@@ -1640,33 +1675,20 @@ def render_role_analysis_matrix(
                 f'<a href="{analysis_href}">{analysis_name}</a></td>'
                 f'{cells}</tr>'
             )
-
-        thead_html = f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;position:sticky;left:0;z-index:3;background:var(--white)">Analysis</th>{col_heads_html}</tr>'
+        thead_html = (
+            f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);'
+            f'font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;'
+            f'text-transform:uppercase;position:sticky;left:0;z-index:3;'
+            f'background:var(--white)">Analysis</th>{col_heads_html}</tr>'
+        )
         matrix_title = "Analysis × Role responsibility matrix"
 
     # ── PAGE: Breakdown structure - 3SE ──────────────────────────────────
     # rows = breakdown structures, cols = roles
-    else:
+    elif is_breakdown_page:
         if not child_breakdowns:
             return ""
-        roles_uris = {r.get("@id", "") for r in child_roles}
-        matrix: dict[str, dict[str, str]] = {}
-        for bd in child_breakdowns:
-            bd_uri = bd.get("@id", "")
-            row: dict[str, str] = {r_uri: "" for r_uri in roles_uris}
-            for role in child_roles:
-                role_id = role.get("@id", "")
-                for u in role.get("isResponsibleFor", []):
-                    if u == bd_uri:
-                        row[role_id] = "R"
-                for u in role.get("isAccountableFor", []):
-                    if u == bd_uri:
-                        row[role_id] = "A"
-                for u in role.get("isSupporting", []):
-                    if u == bd_uri:
-                        row[role_id] = "S"
-            matrix[bd_uri] = row
-
+        matrix = build_row_matrix([b.get("@id", "") for b in child_breakdowns])
         col_heads_html = "".join(col_header(r) for r in child_roles)
         table_rows = ""
         for bd in child_breakdowns:
@@ -1682,9 +1704,42 @@ def render_role_analysis_matrix(
                 f'<a href="{bd_href}">{bd_name}</a></td>'
                 f'{cells}</tr>'
             )
-
-        thead_html = f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;position:sticky;left:0;z-index:3;background:var(--white)">Breakdown structure</th>{col_heads_html}</tr>'
+        thead_html = (
+            f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);'
+            f'font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;'
+            f'text-transform:uppercase;position:sticky;left:0;z-index:3;'
+            f'background:var(--white)">Breakdown structure</th>{col_heads_html}</tr>'
+        )
         matrix_title = "Breakdown structure × Role responsibility matrix"
+
+    # ── PAGE: Conceptual model - 3SE ─────────────────────────────────────
+    # rows = conceptual models, cols = roles
+    else:
+        if not child_models:
+            return ""
+        matrix = build_row_matrix([m.get("@id", "") for m in child_models])
+        col_heads_html = "".join(col_header(r) for r in child_roles)
+        table_rows = ""
+        for model in child_models:
+            model_uri = model.get("@id", "")
+            model_href = href_for_uri(model_uri)
+            model_name = short_label(model.get("title", ""))
+            cells = "".join(cell_html(matrix[model_uri].get(r.get("@id", ""), ""))
+                            for r in child_roles)
+            table_rows += (
+                f'<tr style="border-bottom:1px solid var(--border)">'
+                f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap;'
+                f'position:sticky;left:0;z-index:2;background:var(--white)">'
+                f'<a href="{model_href}">{model_name}</a></td>'
+                f'{cells}</tr>'
+            )
+        thead_html = (
+            f'<tr><th style="padding:.4rem .75rem;text-align:left;font-family:var(--mono);'
+            f'font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.06em;'
+            f'text-transform:uppercase;position:sticky;left:0;z-index:3;'
+            f'background:var(--white)">Model</th>{col_heads_html}</tr>'
+        )
+        matrix_title = "Model × Role responsibility matrix"
 
     # ── Legend & wrapper ─────────────────────────────────────────────────
     legend = (
