@@ -1565,11 +1565,9 @@ def render_role_analysis_matrix(
                 f'padding:.2rem .5rem;text-align:center;'
                 f'border-bottom:1px solid var(--border2)">Analyses</th>'
             )
-        if child_analyses and child_breakdowns:
-            group_row += '<th style="border-left:2px solid var(--border2)"></th>'
         if breakdown_span:
             group_row += (
-                f'<th colspan="{breakdown_span}" style="font-family:var(--mono);'
+                f'<th colspan="{breakdown_span}" style="border-left:2px solid var(--border2) font-family:var(--mono);'
                 f'font-size:.6rem;font-weight:600;color:var(--accent);'
                 f'letter-spacing:.1em;text-transform:uppercase;'
                 f'padding:.2rem .5rem;text-align:center;'
