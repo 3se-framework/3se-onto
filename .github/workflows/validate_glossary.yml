@@ -58,8 +58,8 @@ jobs:
       - name: Inject 3SE internal links
         run: python scripts/inject_3se_links.py
 
-      - name: Inject breakdown structure role links
-        run: python scripts/inject_bs_roles.py
+      - name: Inject analysis role links
+        run: python scripts/inject_analysis_roles.py
 
       - name: Inject created/updated dates
         run: python scripts/inject_dates.py

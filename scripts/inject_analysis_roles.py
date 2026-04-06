@@ -1,14 +1,22 @@
 #!/usr/bin/env python3
-# Propagates typed role→breakdown-structure relations derived from existing
-# role→analysis typed relations.
+# Propagates typed role relations derived from existing role→analysis typed
+# relations to the concepts that are linked to each analysis.
 #
-# Rule:
-#   If a role R has a typed relation P (isResponsibleFor | isAccountableFor |
-#   isSupporting) pointing at an analysis A, and A has a breakdown structure BS
-#   listed in its related field, then R must also have relation P pointing at BS.
+# Two propagation rules are applied, both using the same relation P
+# (isResponsibleFor | isAccountableFor | isSupporting):
 #
-# The script is idempotent: running it multiple times produces the same result.
-# Only role files that actually change are written back to disk.
+# Rule 1 — Breakdown structures:
+#   If a role R has relation P pointing at an analysis A, and A has a
+#   breakdown structure BS in its related field, then R must also have
+#   relation P pointing at BS.
+#
+# Rule 2 — Conceptual models:
+#   If a role R has relation P pointing at an analysis A, and A has a
+#   conceptual model CM in its related field, then R must also have
+#   relation P pointing at CM.
+#
+# Both rules are idempotent: running this script multiple times produces the
+# same result. Only role files that actually change are written back to disk.
 #
 # Run this script after inject_uris.py and before validate_glossary.py.
 
@@ -22,6 +30,7 @@ BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 ROLE_BASE_URI = BASE_IRI + "role-3se-069c451bef157773"
 ANALYSIS_BASE_URI = BASE_IRI + "analysis-3se-069b5a9129c37ebe"
 BREAKDOWN_BASE_URI = BASE_IRI + "breakdown-structure-3se-069d166fa9037b67"
+CONCEPTUAL_MODEL_BASE_URI = BASE_IRI + "conceptual-model-3se-069d3d5560bf7635"
 
 # Typed relation fields on role terms that are propagated
 ROLE_RELATION_FIELDS = ("isResponsibleFor", "isAccountableFor", "isSupporting")
@@ -87,20 +96,38 @@ def main() -> int:
         if is_subclass_of(data, BREAKDOWN_BASE_URI)
     }
 
-    # ── Build analysis URI → [breakdown structure URIs] index ────────────────
+    # ── Build conceptual model URI set ───────────────────────────────────────
+    # Collect every term that declares subClassOf CONCEPTUAL_MODEL_BASE_URI.
+    conceptual_model_uris: set[str] = {
+        BASE_IRI + stem
+        for stem, (_, data) in index.items()
+        if is_subclass_of(data, CONCEPTUAL_MODEL_BASE_URI)
+    }
+
+    # ── Build analysis URI → [breakdown structure URIs, conceptual model URIs] index
     # For every analysis term (subclass of analysis-3se), collect the breakdown
-    # structure URIs present in its related field.
-    analysis_to_bs: dict[str, list[str]] = {}
+    # structure URIs and conceptual model URIs present in its related field.
+    # Warn when either kind is absent.
+    analysis_to_targets: dict[str, list[str]] = {}
     for stem, (_, data) in index.items():
         if not is_subclass_of(data, ANALYSIS_BASE_URI):
             continue
-        bs_uris = [
-            uri
-            for uri in ensure_list(data.get("related"))
-            if uri in breakdown_uris
-        ]
-        if bs_uris:
-            analysis_to_bs[BASE_IRI + stem] = bs_uris
+        related = ensure_list(data.get("related"))
+        bs_found = [uri for uri in related if uri in breakdown_uris]
+        cm_found = [uri for uri in related if uri in conceptual_model_uris]
+        if not bs_found:
+            print(
+                f"  ⚠️  no breakdown structure: {stem}",
+                file=sys.stderr,
+            )
+        if not cm_found:
+            print(
+                f"  ⚠️  no conceptual model: {stem}",
+                file=sys.stderr,
+            )
+        targets = bs_found + cm_found
+        if targets:
+            analysis_to_targets[BASE_IRI + stem] = targets
 
     # ── Propagate to role terms ───────────────────────────────────────────────
     changes: dict[str, dict] = {}
@@ -120,11 +147,11 @@ def main() -> int:
             additions: list[str] = []
 
             for analysis_uri in current:
-                for bs_uri in analysis_to_bs.get(analysis_uri, []):
-                    if bs_uri not in current_set and bs_uri not in additions:
-                        additions.append(bs_uri)
-                        bs_stem = stem_for_uri(bs_uri) or bs_uri
-                        print(f"  + {field}: {stem} -> {bs_stem}")
+                for target_uri in analysis_to_targets.get(analysis_uri, []):
+                    if target_uri not in current_set and target_uri not in additions:
+                        additions.append(target_uri)
+                        target_stem = stem_for_uri(target_uri) or target_uri
+                        print(f"  + {field}: {stem} -> {target_stem}")
 
             if additions:
                 working = get_working(stem)
