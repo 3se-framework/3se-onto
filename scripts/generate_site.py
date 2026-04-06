@@ -1240,16 +1240,19 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
     (case-insensitive, e.g. 'Functional architecture', 'Physical architecture').
 
     For each URI in the term's 'related' list, look up the related term and
-    check whether it carries an 'exposes' field. The 'exposes' property relates
-    a source element to an interface it exchanges flows through. For every such
-    (related_term, interface) pair found, an edge is drawn:
+    collect three kinds of structural relations it carries:
 
-        related_term -.->|exposes| interface_target
+    - 'exposes': source element exposes an interface
+          related_term -.->|exposes| interface_target
+    - 'allocates': source element allocates a target (direct, or via interface)
+          related_term -.->|allocates| target
+    - 'isComposedOf': source element is composed of a component
+          related_term -->|composed of| component
 
     The architecture term itself is NOT included as a node — the diagram shows
-    the elements related to this architecture and the interfaces they expose.
+    the elements related to this architecture and their structural relations.
 
-    Only rendered when at least one related term has an 'exposes' field.
+    Only rendered when at least one related term carries one of these fields.
     Returns an empty string otherwise.
     """
     title = term.get("title", "")
@@ -1294,8 +1297,9 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
 
     exposes_edges = []  # (source_uri, interface_uri)
     allocates_edges = []  # (source_uri, allocated_uri)
+    composed_edges = []  # (source_uri, component_uri)
 
-    # ── Scan related terms for exposes and allocates ──────────────────────
+    # ── Scan related terms for exposes, allocates, and isComposedOf ───────
     for rel_uri in related_uris:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
@@ -1336,12 +1340,24 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
             label_for(alloc_uri)
             allocates_edges.append((rel_uri, alloc_uri))
 
-    if not exposes_edges and not allocates_edges:
+        # isComposedOf: related_term -->|composed of| component
+        composed = rel_term.get("isComposedOf") or []
+        if isinstance(composed, str):
+            composed = [composed]
+        for comp_uri in composed:
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(comp_uri)
+            label_for(comp_uri)
+            composed_edges.append((rel_uri, comp_uri))
+
+    if not exposes_edges and not allocates_edges and not composed_edges:
         return ""
 
     # Deduplicate
     exposes_edges = list(dict.fromkeys(exposes_edges))
     allocates_edges = list(dict.fromkeys(allocates_edges))
+    composed_edges = list(dict.fromkeys(composed_edges))
 
     # Deduplicate nodes by label (same logic as existing diagram functions)
     label_to_primary_uri: dict[str, str] = {}
@@ -1363,8 +1379,13 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
             (uri_remap.get(s, s), uri_remap.get(o, o))
             for s, o in allocates_edges
         ]
+        composed_edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in composed_edges
+        ]
         exposes_edges = list(dict.fromkeys(exposes_edges))
         allocates_edges = list(dict.fromkeys(allocates_edges))
+        composed_edges = list(dict.fromkeys(composed_edges))
         for uri in uri_remap:
             node_ids.pop(uri, None)
             node_labels.pop(uri, None)
@@ -1374,6 +1395,9 @@ def render_architecture_diagram(term: dict, terms_index: dict) -> str:
         lbl = node_labels.get(uri, nid).replace('"', "'")
         lines.append(f'    {nid}["{lbl}"]')
     lines.append("")
+    for src_uri, comp_uri in composed_edges:
+        s, c = node_id(src_uri), node_id(comp_uri)
+        lines.append(f"    {s} -->|composed of| {c}")
     for src_uri, iface_uri in exposes_edges:
         s, i = node_id(src_uri), node_id(iface_uri)
         lines.append(f"    {s} -.->|exposes| {i}")
