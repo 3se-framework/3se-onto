@@ -22,12 +22,15 @@
     "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
     "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",
     "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
-    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93"
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+    "https://www.3se.info/3se-onto/terms/feature-model-3se-069d3f26ae067509"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
-    "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a"
+    "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a",
+    "https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10",
+    "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-04-06",
