@@ -54,6 +54,19 @@ def git_date(file_path: Path, first: bool) -> str | None:
     return lines[-1] if first else lines[0]
 
 
+def is_dirty(file_path: Path) -> bool:
+    """
+    Return True if the file has uncommitted changes in the working tree.
+    Covers both tracked modifications (M) and untracked new files (??)
+    so that any in-run CI modification is treated as a change made today.
+    """
+    result = subprocess.run(
+        ["git", "status", "--porcelain", "--", str(file_path)],
+        capture_output=True, text=True,
+    )
+    return bool(result.stdout.strip())
+
+
 def today() -> str:
     return date.today().isoformat()
 
@@ -81,8 +94,10 @@ def main() -> int:
                 print(f"  set entryCreated='{created}' on {dir_name}/{file_path.name}")
                 changed = True
 
-            # `entryModified`: always refresh to the latest commit date (or today if uncommitted)
-            updated = git_date(file_path, first=False) or today()
+            # `entryModified`: always refresh to the latest commit date (or today if
+            # uncommitted). If the file is dirty (modified by a CI script in this run
+            # but not yet committed), today() takes precedence over the git date.
+            updated = today() if is_dirty(file_path) else (git_date(file_path, first=False) or today())
             if data.get("entryModified") != updated:
                 data["entryModified"] = updated
                 print(f"  set entryModified='{updated}' on {dir_name}/{file_path.name}")
