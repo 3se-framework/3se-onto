@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC/IEEE 24641:2023",
+  "abstract": "Systems and software engineering — Methods and tools for model-based systems and software engineering",
+  "issued": "2023",
+  "uri": "https://www.iso.org/standard/79111.html",
+  "status": "bibo:published"
+}
