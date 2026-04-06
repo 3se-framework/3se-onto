@@ -108,6 +108,66 @@ def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
     return errors
 
 
+def _camel_to_kebab(name: str) -> str:
+    """
+    Convert a camelCase or PascalCase identifier to kebab-case.
+    e.g. "isAccountableFor" -> "is-accountable-for"
+         "wasAssociatedWith" -> "was-associated-with"
+    """
+    # Insert a hyphen before every uppercase letter that follows a lowercase letter
+    # or before an uppercase letter that is followed by a lowercase letter (handles
+    # sequences like "XMLParser" -> "xml-parser", though not expected here).
+    s = re.sub(r"([a-z])([A-Z])", r"\1-\2", name)
+    return s.lower()
+
+
+def validate_property_title_vs_stem(data: dict, stem: str) -> list[str]:
+    """
+    Check that the concept name in a property title is consistent with the
+    concept name derived from the file stem.  Only applies to 3SE properties
+    (title ending with '- 3SE') where the naming convention is strictly
+    enforced.
+
+    Property titles use camelCase (e.g. "isAccountableFor - 3SE") while stems
+    use kebab-case (e.g. "is-accountable-for-3se-<uuid>").  Both sides are
+    normalised to kebab-case before comparison.
+
+    Also detects double UUID suffixes in the stem.
+    Returns a list of error messages (empty if consistent).
+    """
+    errors: list[str] = []
+    title = data.get("title", "")
+    if not title.endswith("- 3SE"):
+        return errors
+
+    if DOUBLE_UUID_RE.search(stem):
+        errors.append(
+            f"stem \"{stem}\" contains two UUID suffixes — "
+            f"only one is expected; please rename the file"
+        )
+        return errors
+
+    # Derive expected kebab-case name from title: take the part before " - 3SE"
+    # and convert camelCase to kebab-case.
+    title_concept_camel = title.split(" - ", maxsplit=1)[0].strip()
+    title_concept_kebab = _camel_to_kebab(title_concept_camel)
+
+    # Derive expected kebab-case name from stem: strip UUID suffix and "-3se"
+    stem_concept = UUID_SUFFIX_RE.sub("", stem)
+    stem_concept = SE3_STEM_RE.sub("", stem_concept)
+
+    if not stem_concept:
+        return errors
+
+    if not stem_concept.startswith(title_concept_kebab):
+        errors.append(
+            f"title concept name \"{title_concept_camel}\" (kebab: \"{title_concept_kebab}\") "
+            f"does not match stem concept name \"{stem_concept}\" — "
+            f"expected stem to start with \"{title_concept_kebab}\""
+        )
+    return errors
+
+
 def validate_is_referenced_by(
         data: dict,
         file_name: str,
@@ -217,6 +277,52 @@ def validate_breakdown_structure(
             "at least one composition relation is required in a breakdown structure"
         )
 
+    return errors
+
+
+ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+
+
+def validate_breakdown_analysis_link(
+        data: dict,
+        file_name: str,
+        terms_index: dict[str, dict],
+) -> list[str]:
+    """
+    For breakdown structure terms: verify that at least one URI in the
+    'related' field points to an analysis term (a term whose subClassOf
+    includes analysis-3se-069b5a9129c37ebe).
+
+    Every breakdown structure must be linked to at least one analysis —
+    this is the mirror of the check that an analysis must link back to
+    a breakdown structure via its own related field.
+    Returns a list of error messages.
+    """
+    errors: list[str] = []
+    term_id = data.get("@id", file_name)
+
+    stem = term_id.rstrip("/").rsplit("/", 1)[-1]
+    if not BREAKDOWN_STEM_RE.search(stem):
+        return errors
+
+    related_uris = data.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+
+    for uri in related_uris:
+        related_data = terms_index.get(uri)
+        if related_data is None:
+            continue
+        subclass_of = related_data.get("subClassOf", [])
+        if isinstance(subclass_of, str):
+            subclass_of = [subclass_of]
+        if ANALYSIS_BASE_URI in subclass_of:
+            return errors  # found at least one — valid
+
+    errors.append(
+        "breakdown structure has no related analysis — "
+        "at least one subclass of analysis-3se must appear in the related field"
+    )
     return errors
 
 
@@ -354,6 +460,15 @@ def main() -> int:
                 )
                 file_errors.extend(
                     validate_breakdown_structure(data, file_path.name, terms_index)
+                )
+                file_errors.extend(
+                    validate_breakdown_analysis_link(data, file_path.name, terms_index)
+                )
+
+            # Naming validation (properties only)
+            if type_name == "properties":
+                file_errors.extend(
+                    validate_property_title_vs_stem(data, file_path.stem)
                 )
 
             if file_errors:
