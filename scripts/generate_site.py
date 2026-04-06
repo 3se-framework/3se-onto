@@ -1498,9 +1498,6 @@ def render_role_analysis_matrix(
             f'{short_label(entry.get("title", ""))}</a></th>'
         )
 
-    def group_separator_td() -> str:
-        return '<td style="border-left:2px solid var(--border2);padding:0"></td>'
-
     # ── Build lookup: role_uri → {col_uri: "R"|"A"|"S"|""} ───────────────
     # (used for Role page and Breakdown structure page where roles are the
     #  dimension from which relations are read)
@@ -1529,7 +1526,7 @@ def render_role_analysis_matrix(
         all_col_uris = analysis_uris | breakdown_uris
         matrix = build_role_matrix(all_col_uris)
 
-        # Header row: "Role" stub | [analysis cols] | separator | [breakdown cols]
+        # Header row: "Role" stub | [analysis cols] | [breakdown cols]
         analysis_headers = "".join(col_header(a) for a in child_analyses)
         breakdown_headers = "".join(col_header(b) for b in child_breakdowns)
 
@@ -1546,14 +1543,13 @@ def render_role_analysis_matrix(
                                      for a in child_analyses)
             breakdown_cells = "".join(cell_html(row_data.get(b.get("@id", ""), ""))
                                       for b in child_breakdowns)
-            sep_cell = group_separator_td() if child_analyses and child_breakdowns else ""
 
             table_rows += (
                 f'<tr style="border-bottom:1px solid var(--border)">'
                 f'<td style="padding:.4rem .75rem;font-size:.88rem;white-space:nowrap;'
                 f'position:sticky;left:0;z-index:2;background:var(--white)">'
                 f'<a href="{role_href}">{role_name}</a></td>'
-                f'{analysis_cells}{sep_cell}{breakdown_cells}</tr>'
+                f'{analysis_cells}{breakdown_cells}</tr>'
             )
 
         # Column-group labels in a spanning header row above the column headers
