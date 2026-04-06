@@ -20,11 +20,14 @@
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
     "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
-    "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3"
+    "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",
+    "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
+    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
-    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c"
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-04-01",

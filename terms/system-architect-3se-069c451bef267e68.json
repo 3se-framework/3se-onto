@@ -16,7 +16,11 @@
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
-    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac"
+    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
+    "https://www.3se.info/3se-onto/terms/state-breakdown-structure-3se-069c062b365f7e5d",
+    "https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2",
+    "https://www.3se.info/3se-onto/terms/interface-breakdown-structure-3se-069cd5b860b47815",
+    "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -25,7 +29,9 @@
     "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
     "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
-    "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb"
+    "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
+    "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-04-04",
