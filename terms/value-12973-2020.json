@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Value - EN 12973",
+  "description": "An assessment (sometimes measure) of how well an organization, project or product satisfies both the need of the users and the objectives of stakeholders considering the impacts, uncertainties and resources required to satisfy the need.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/en-12973-2020"
+  ]
+}

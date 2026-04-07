@@ -34,5 +34,8 @@
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/value-3se"
   ]
 }
