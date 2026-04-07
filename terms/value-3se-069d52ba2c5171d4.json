@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Value - 3SE",
+  "description": "An assessment of the benefits that stakeholders will derive from achieving their objectives, taking into account the resources required to provide them with the solution needed to achieve them.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/value-12973-2020-069d52ba2c3376a8"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d",
+    "https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+    "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844"
+  ],
+  "entryCreated": "2026-04-07",
+  "entryModified": "2026-04-07",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

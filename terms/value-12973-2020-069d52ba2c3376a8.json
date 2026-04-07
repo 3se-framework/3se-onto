@@ -5,6 +5,13 @@
   "description": "An assessment (sometimes measure) of how well an organization, project or product satisfies both the need of the users and the objectives of stakeholders considering the impacts, uncertainties and resources required to satisfy the need.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/en-12973-2020"
-  ]
+    "https://www.3se.info/3se-onto/references/en-12973-2020-069d52ba2c63709e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/value-12973-2020-069d52ba2c3376a8",
+  "entryCreated": "2026-04-07",
+  "entryModified": "2026-04-07",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
