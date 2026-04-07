@@ -1978,10 +1978,7 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
         term_id = term.get("@id", "")
         represented_terms = represents_index.get(term_id, [])
         if represented_terms:
-            links = [render_uri_link(t.get("@id", ""),
-                                     t.get("title", "").split(" - ", 1)[0].strip()
-                                     if " - " in t.get("title", "") else t.get("title", ""))
-                     for t in represented_terms]
+            links = [render_uri_link(t.get("@id", "")) for t in represented_terms]
             bfo_html += (
                 f'<tr>'
                 f'<td>Represents</td>'
