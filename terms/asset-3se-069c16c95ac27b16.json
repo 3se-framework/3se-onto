@@ -21,10 +21,6 @@
     "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
     "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d"
   ],
-  "canBe": [
-    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
-    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
-  ],
   "entryCreated": "2026-03-23",
   "entryModified": "2026-03-26",
   "entryCreator": {
