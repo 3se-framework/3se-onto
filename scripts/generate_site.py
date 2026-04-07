@@ -200,6 +200,23 @@ def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_represents_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as their isRepresentedBy target.  Used to compute the inverse 'represents'
+    relation: if A isRepresentedBy B, then B represents A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isRepresentedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -844,13 +861,17 @@ def is_breakdown_structure(term: dict) -> str | None:
     return None
 
 
-def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
+def render_breakdown_diagram(term: dict, terms_index: dict,
+                             represents_index: dict | None = None) -> str:
     """
     Render a breakdown structure diagram as a Mermaid flowchart.
 
     Traverses the breakdown structure's 'related' list, collects
     isComposedOf / isRepresentedBy / allocates / canBe from each related term, and
-    emits a Mermaid flowchart TD definition.
+    also adds the computed inverse 'represents' relation (derived from other terms'
+    isRepresentedBy fields via represents_index).
+
+    Emits a Mermaid flowchart TD definition.
     """
     if not is_breakdown_structure(term):
         return ""
@@ -918,6 +939,18 @@ def render_breakdown_diagram(term: dict, terms_index: dict) -> str:
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "recursion", obj_uri))
+        # represents: inverse of isRepresentedBy — other terms that declare
+        # isRepresentedBy pointing at rel_uri are "represented by" rel_uri,
+        # so rel_uri "represents" those terms.
+        if represents_index:
+            for represented_term in (represents_index.get(rel_uri) or []):
+                represented_uri = represented_term.get("@id", "")
+                if represented_uri:
+                    node_id(rel_uri)
+                    label_for(rel_uri)
+                    node_id(represented_uri)
+                    label_for(represented_uri)
+                    edges.append((represented_uri, "representation", rel_uri))
 
     if not edges:
         return ""
@@ -1103,7 +1136,8 @@ def render_analysis_allocates_diagram(
 def render_classification_diagram(
         term: dict,
         superclass_index: dict[str, list[dict]],
-        terms_index: dict) -> str:
+        terms_index: dict,
+        represents_index: dict | None = None) -> str:
     """
     Render a Mermaid flowchart showing the classification of the considered term.
 
@@ -1112,6 +1146,9 @@ def render_classification_diagram(
        each linked to the considered term with a 'subclass of' arrow.
     2. For each subclass found in (1), and for the considered term itself,
        any allocates targets, each linked with an 'allocates' arrow.
+    3. For each subclass found in (1), and for the considered term itself,
+       any isRepresentedBy targets AND their computed inverse 'represents' relations,
+       each linked with a 'represented by' / 'represents' arrow.
 
     Only rendered when at least one subclass exists.
     Returns an empty string when there is nothing to show.
@@ -1156,6 +1193,7 @@ def render_classification_diagram(
 
     subclass_edges = []  # (child_uri, parent_uri)
     allocation_edges = []  # (subject_uri, target_uri)
+    representation_edges = []  # (subject_uri, target_uri) — isRepresentedBy
 
     # ── (1) Subclass edges ────────────────────────────────────────────────
     for subclass_term in sorted(subclasses, key=lambda t: t.get("title", "")):
@@ -1181,12 +1219,44 @@ def render_classification_diagram(
             label_for(obj_uri)
             allocation_edges.append((subject_uri, obj_uri))
 
-    if not subclass_edges and not allocation_edges:
+    # ── (3) Representation edges — isRepresentedBy (direct) and its inverse ─
+    # (a) Direct: subject isRepresentedBy target
+    for subject_uri in [term_uri] + [s.get("@id", "") for s in subclasses]:
+        if not subject_uri:
+            continue
+        subject_data = terms_index.get(subject_uri) or term
+        is_rep_by = subject_data.get("isRepresentedBy") or []
+        if isinstance(is_rep_by, str):
+            is_rep_by = [is_rep_by]
+        for obj_uri in is_rep_by:
+            node_id(subject_uri)
+            label_for(subject_uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            representation_edges.append((subject_uri, obj_uri))
+    # (b) Inverse: any term that declares isRepresentedBy pointing at
+    #     the considered term or one of its subclasses is "represented by"
+    #     that node — so we add an edge (represented_term → representer)
+    if represents_index:
+        for representer_uri in [term_uri] + [s.get("@id", "") for s in subclasses]:
+            if not representer_uri:
+                continue
+            for represented_term in (represents_index.get(representer_uri) or []):
+                represented_uri = represented_term.get("@id", "")
+                if represented_uri:
+                    node_id(represented_uri)
+                    label_for(represented_uri)
+                    node_id(representer_uri)
+                    label_for(representer_uri)
+                    representation_edges.append((represented_uri, representer_uri))
+
+    if not subclass_edges and not allocation_edges and not representation_edges:
         return ""
 
     # Deduplicate
     subclass_edges = list(dict.fromkeys(subclass_edges))
     allocation_edges = list(dict.fromkeys(allocation_edges))
+    representation_edges = list(dict.fromkeys(representation_edges))
 
     # Deduplicate nodes by label (same logic as existing diagram functions)
     label_to_primary_uri: dict[str, str] = {}
@@ -1208,8 +1278,13 @@ def render_classification_diagram(
             (uri_remap.get(s, s), uri_remap.get(o, o))
             for s, o in allocation_edges
         ]
+        representation_edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in representation_edges
+        ]
         subclass_edges = list(dict.fromkeys(subclass_edges))
         allocation_edges = list(dict.fromkeys(allocation_edges))
+        representation_edges = list(dict.fromkeys(representation_edges))
         for uri in uri_remap:
             node_ids.pop(uri, None)
             node_labels.pop(uri, None)
@@ -1225,6 +1300,9 @@ def render_classification_diagram(
     for subj_uri, obj_uri in allocation_edges:
         s, o = node_id(subj_uri), node_id(obj_uri)
         lines.append(f"    {s} -.->|allocates| {o}")
+    for subj_uri, obj_uri in representation_edges:
+        s, o = node_id(subj_uri), node_id(obj_uri)
+        lines.append(f"    {s} -.->|represented by| {o}")
 
     mermaid_src = "\n".join(lines)
     return (
@@ -1766,7 +1844,8 @@ def render_role_analysis_matrix(
 
 def render_term_page(term: dict, ref_index: dict[str, dict],
                      superclass_index: dict[str, list[dict]] | None = None,
-                     terms_index: dict[str, dict] | None = None) -> str:
+                     terms_index: dict[str, dict] | None = None,
+                     represents_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -1810,7 +1889,8 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
         description_html = f'<blockquote class="definition">{desc_escaped}</blockquote>'
 
     # Breakdown structure diagram (only for breakdown structure terms)
-    diagram_html = render_breakdown_diagram(term, terms_index or {})
+    diagram_html = render_breakdown_diagram(term, terms_index or {},
+                                            represents_index or {})
 
     # Allocates diagram (only for subclasses of analysis-3se)
     analysis_allocates_html = render_analysis_allocates_diagram(
@@ -1818,7 +1898,8 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
 
     # Classification diagram (subclasses + their allocates targets)
     classification_html = render_classification_diagram(
-        term, superclass_index or {}, terms_index or {})
+        term, superclass_index or {}, terms_index or {},
+              represents_index or {})
 
     # Architecture diagram (for terms containing 'Architecture')
     architecture_html = render_architecture_diagram(
@@ -1886,6 +1967,24 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             bfo_html += (
                 f'<tr>'
                 f'<td>Superclass of</td>'
+                f'<td>{SEP.join(links)}</td>'
+                f'</tr>'
+            )
+
+    # represents (computed inverse of isRepresentedBy)
+    # If other terms declare isRepresentedBy pointing at this term,
+    # then this term "represents" those other terms.
+    if represents_index:
+        term_id = term.get("@id", "")
+        represented_terms = represents_index.get(term_id, [])
+        if represented_terms:
+            links = [render_uri_link(t.get("@id", ""),
+                                     t.get("title", "").split(" - ", 1)[0].strip()
+                                     if " - " in t.get("title", "") else t.get("title", ""))
+                     for t in represented_terms]
+            bfo_html += (
+                f'<tr>'
+                f'<td>Represents</td>'
                 f'<td>{SEP.join(links)}</td>'
                 f'</tr>'
             )
@@ -2305,6 +2404,7 @@ def main() -> int:
     properties = load_directory(PROPERTIES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
+    represents_index = build_represents_index(terms)
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
@@ -2359,7 +2459,8 @@ def main() -> int:
         out_dir = SITE_DIR / "terms" / stem
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
-            render_term_page(term, ref_index, superclass_index, terms_index), encoding="utf-8"
+            render_term_page(term, ref_index, superclass_index, terms_index,
+                             represents_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",
