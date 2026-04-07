@@ -5,11 +5,13 @@
   "description": "System whose own activities within the milieu of the system of interest mutually and durably shape those of the system of interest over time.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
-    "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34"
   ],
   "entryCreated": "2026-03-24",
   "entryModified": "2026-03-24",
