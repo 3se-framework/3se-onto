@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Value breakdown structure - 3SE",
+  "description": "Breakdown structure of the value that supports the value analysis by following the principles below:\n(1) A high level value is composed of at least two values.\n(2) A value can be an high level value.\n(3) A value is allocated to a goal.\nNote: principle (3) excludes principle (2)",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608",
+    "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4",
+    "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844",
+    "https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f"
+  ],
+  "entryCreated": "2026-04-08",
+  "entryModified": "2026-04-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

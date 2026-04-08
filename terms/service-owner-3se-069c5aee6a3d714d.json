@@ -10,8 +10,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d",
   "related": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
-    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
-    "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844"
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
   ],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
@@ -32,10 +31,12 @@
     "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a",
     "https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10",
     "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b",
-    "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844"
+    "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844",
+    "https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722",
+    "https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-07",
+  "entryModified": "2026-04-08",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
