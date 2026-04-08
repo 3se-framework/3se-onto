@@ -1,8 +1,8 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Decision gate - 3SE",
-  "description": "Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to raise a problem.",
+  "title": "Assessment gate - 3SE",
+  "description": "Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to redefine it.",
   "status": "draft",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb"
@@ -11,7 +11,7 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878",
+  "@id": "https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878",
   "entryCreated": "2026-03-13",
   "entryModified": "2026-03-20",
   "related": [

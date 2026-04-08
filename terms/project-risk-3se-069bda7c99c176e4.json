@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Project risk - 3SE",
-  "description": "Risk related to a project uncertainty (customer satisfaction, project quality, project cost, project schedule, project resources, project expertise...) about a maturity gate or a decision gate.",
+  "description": "Risk related to a project uncertainty (customer satisfaction, project quality, project cost, project schedule, project resources, project expertise...) about a maturity gate or an assessment gate.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
@@ -12,7 +12,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4",
   "related": [
-    "https://www.3se.info/3se-onto/terms/decision-gate-3se-069b48ef5cf37878",
+    "https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878",
     "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1",
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf"
   ],
