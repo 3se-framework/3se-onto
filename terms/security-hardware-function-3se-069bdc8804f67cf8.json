@@ -13,10 +13,11 @@
   "@id": "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
   "related": [
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
-    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
+    "https://www.3se.info/3se-onto/terms/security-hardware-3se-069d96aa1eb3758d"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-29",
+  "entryModified": "2026-04-10",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

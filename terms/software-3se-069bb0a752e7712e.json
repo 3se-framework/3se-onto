@@ -27,8 +27,6 @@
     "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd",
     "https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b",
     "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c",
-    "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55",
-    "https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb",
     "https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3",
     "https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db",
     "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
@@ -41,7 +39,7 @@
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-04-06",
+  "entryModified": "2026-04-10",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

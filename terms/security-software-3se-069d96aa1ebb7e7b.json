@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Security software - 3SE",
+  "description": "Software that performs some security software functions.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-software-3se-069d96aa1ebb7e7b",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
+    "https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb"
+  ],
+  "entryCreated": "2026-04-10",
+  "entryModified": "2026-04-10",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

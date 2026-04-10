@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety software - 3SE",
+  "description": "Software that performs some safety software functions.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/safety-software-3se-069d96aa1ea97bd9",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
+    "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55"
+  ],
+  "entryCreated": "2026-04-10",
+  "entryModified": "2026-04-10",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
