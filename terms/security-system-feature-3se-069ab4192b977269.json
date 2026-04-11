@@ -8,13 +8,17 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://www.3se.info/3se-onto/terms/security-feature-3se-069ab4192b977269",
+  "@id": "https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269",
   "entryCreated": "2026-03-06",
-  "entryModified": "2026-03-29",
+  "entryModified": "2026-04-11",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/system-feature-3se"
+    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/security-goal-3se-069bdc3120f77833"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ]
 }

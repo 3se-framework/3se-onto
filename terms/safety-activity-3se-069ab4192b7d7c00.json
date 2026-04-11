@@ -10,7 +10,7 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4192b7d7c00",
   "entryCreated": "2026-03-06",
-  "entryModified": "2026-03-29",
+  "entryModified": "2026-04-11",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253"
   ],
