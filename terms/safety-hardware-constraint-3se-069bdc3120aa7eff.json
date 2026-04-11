@@ -5,7 +5,7 @@
   "description": "Constraint about a hardware which is relevant for safety engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+    "https://www.3se.info/3se-onto/terms/hardware-constraint-3se-069be64e18377cf1"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-constraint-3se-069bdc3120aa7eff",
   "related": [

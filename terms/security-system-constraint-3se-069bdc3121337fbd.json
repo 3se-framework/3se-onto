@@ -5,7 +5,7 @@
   "description": "Constraint about a system which is relevant for security engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd",
   "related": [

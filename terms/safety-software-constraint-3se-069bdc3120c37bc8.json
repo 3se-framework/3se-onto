@@ -5,7 +5,7 @@
   "description": "Constraint about a software which is relevant for safety engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+    "https://www.3se.info/3se-onto/terms/software-constraint-3se-069be64e18697419"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-constraint-3se-069bdc3120c37bc8",
   "related": [

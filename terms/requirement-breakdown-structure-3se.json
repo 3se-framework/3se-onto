@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Requirement breakdown structure - 3SE",
+  "description": "Breakdown structure of the stakeholder requirement that supports the system architecture by following the principles below:\n(1) A stakeholder functional requirement is composed of at least one system functional requirement.\n(2) A stakeholder non-functional requirement is composed of at least one system non-functional requirement.\n(3) A stakeholder constraint is composed of at least one system constraint.\n(4) A stakeholder requirement is allocated to a feature\n(5) A system functional requirement is allocated to a function\n(6) A system non-functional requirement is allocated to a flow, a state, a functional interface or a functional element\n(7) A system constraint is allocated to a physical interface or a physical element",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ]
+}

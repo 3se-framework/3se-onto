@@ -15,7 +15,8 @@
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
   ],
   "entryCreated": "2026-03-20",
   "entryModified": "2026-04-02",
