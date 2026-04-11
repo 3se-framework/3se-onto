@@ -24,8 +24,7 @@
     "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
     "https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc",
     "https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408",
-    "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442",
-    "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -35,6 +34,7 @@
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
     "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
     "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
+    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
     "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
     "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
