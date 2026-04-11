@@ -13,6 +13,9 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
+  ],
   "entryCreated": "2026-03-20",
   "entryModified": "2026-04-11",
   "entryCreator": {
