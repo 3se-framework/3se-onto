@@ -5,7 +5,7 @@
   "description": "A feature about a software product which is relevant for safety engineering",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/safety-feature-3se-069ab4192b867336"
+    "https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-feature-3se-069c058ef4f372bc",
   "related": [
