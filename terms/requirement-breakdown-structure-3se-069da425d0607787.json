@@ -11,7 +11,6 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
@@ -22,10 +21,10 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2",
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
-    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
     "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
     "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9",
-    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
   ],
   "entryCreated": "2026-04-11",
   "entryModified": "2026-04-11",
