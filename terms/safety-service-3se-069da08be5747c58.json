@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety service - 3SE",
+  "description": "Service which adds value for the service user by helping him to achieve some safety goals.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/safety-service-3se-069da08be5747c58",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/safety-goal-3se-069bdc3120a277c9",
+    "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
+  ],
+  "entryCreated": "2026-04-11",
+  "entryModified": "2026-04-11",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -12,9 +12,12 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-goal-3se-069bdc3120f77833",
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/security-service-3se-069da08be5957ee2"
+  ]
 }
