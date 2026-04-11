@@ -9,10 +9,11 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-constraint-3se-069bdc3120c37bc8",
   "related": [
-    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

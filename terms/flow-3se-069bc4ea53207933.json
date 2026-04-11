@@ -14,14 +14,15 @@
     "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
-    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a"
+    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
+    "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
   "entryCreated": "2026-03-19",
-  "entryModified": "2026-04-01",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

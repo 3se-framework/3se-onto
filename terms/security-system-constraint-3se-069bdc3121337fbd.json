@@ -9,10 +9,11 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -19,10 +19,11 @@
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/interface-breakdown-structure-3se-069cd5b860b47815",
     "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6",
-    "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442"
+    "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442",
+    "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ],
   "entryCreated": "2026-04-03",
-  "entryModified": "2026-04-06",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

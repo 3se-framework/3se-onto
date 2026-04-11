@@ -6,15 +6,16 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-3se"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
-    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+    "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

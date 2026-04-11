@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
   "entryCreated": "2026-03-16",
-  "entryModified": "2026-03-21",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -30,6 +30,7 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
     "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed",
     "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c",
-    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
+    "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ]
 }
