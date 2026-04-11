@@ -10,14 +10,13 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
     "https://www.3se.info/3se-onto/terms/interface-breakdown-structure-3se-069cd5b860b47815"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-04-02",
+  "entryModified": "2026-04-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
