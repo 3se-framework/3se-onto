@@ -28,8 +28,7 @@
     "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
-    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-state-3se-069c062b3637735e"

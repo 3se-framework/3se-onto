@@ -8,7 +8,8 @@
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
   "related": [
