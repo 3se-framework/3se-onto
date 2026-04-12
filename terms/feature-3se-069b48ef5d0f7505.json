@@ -48,7 +48,7 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5",
     "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
-    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+    "https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327"
