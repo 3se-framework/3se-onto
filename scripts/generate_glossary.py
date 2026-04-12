@@ -168,6 +168,40 @@ def build_superclass_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_represents_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as their isRepresentedBy target. Used to compute the inverse 'represents'
+    relation: if A isRepresentedBy B, then B represents A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isRepresentedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_allocated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an allocates target. Used to compute the inverse 'allocated by'
+    relation: if A allocates B, then B is allocated by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("allocates")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -183,10 +217,18 @@ def is_breakdown_structure(term: dict) -> bool:
     return bool(BREAKDOWN_STEM_RE.search(stem))
 
 
-def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> list[str]:
+def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict],
+                                represents_index: dict[str, list[dict]] | None = None) -> list[str]:
     """
     Render a breakdown structure Mermaid diagram as Markdown lines.
     Returns a fenced mermaid code block, or empty list if not applicable.
+
+    Mirrors render_breakdown_diagram in generate_site.py:
+    - Primary pass: isComposedOf / isRepresentedBy / allocates / canBe / represents (inverse)
+    - Secondary pass: subClassOf / exposes / allocates-to-registered, run after the
+      primary pass so that registered_uris is complete. Covers both terms that only
+      carry subClassOf/exposes (e.g. system-feature) and target-only nodes that carry
+      further allocates relations (e.g. activity).
     """
     if not is_breakdown_structure(term):
         return []
@@ -224,6 +266,7 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
 
     edges: list[tuple[str, str, str]] = []
 
+    # Primary pass: structural relations declared directly on each related term
     for rel_uri in related_uris:
         rel_term = terms_index.get(rel_uri)
         if rel_term is None:
@@ -252,6 +295,53 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
             node_id(obj_uri)
             label_for(obj_uri)
             edges.append((rel_uri, "recursion", obj_uri))
+        # represents: inverse of isRepresentedBy — other terms that declare
+        # isRepresentedBy pointing at rel_uri are "represented by" rel_uri,
+        # so rel_uri "represents" those terms.
+        if represents_index:
+            for represented_term in (represents_index.get(rel_uri) or []):
+                represented_uri = represented_term.get("@id", "")
+                if represented_uri:
+                    node_id(rel_uri)
+                    label_for(rel_uri)
+                    node_id(represented_uri)
+                    label_for(represented_uri)
+                    edges.append((represented_uri, "representation", rel_uri))
+
+    # Secondary pass: run once after the primary pass so registered_uris is complete.
+    # Candidates = related_uris union already-registered nodes, to cover:
+    #   (a) terms in related with only subClassOf/exposes/allocates (e.g. system-feature)
+    #   (b) target-only nodes that carry further relations (e.g. activity)
+    registered_uris = set(node_ids.keys())
+    related_set = set(related_uris)
+    candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
+    for child_uri in candidates:
+        child_term = terms_index.get(child_uri)
+        if child_term is None:
+            continue
+        subclass_of = child_term.get("subClassOf") or []
+        if isinstance(subclass_of, str):
+            subclass_of = [subclass_of]
+        for parent_uri in subclass_of:
+            if parent_uri in registered_uris:
+                node_id(child_uri)
+                label_for(child_uri)
+                edges.append((child_uri, "subclassof", parent_uri))
+        exposes = child_term.get("exposes") or []
+        if isinstance(exposes, str):
+            exposes = [exposes]
+        for iface_uri in exposes:
+            if iface_uri in registered_uris:
+                node_id(child_uri)
+                label_for(child_uri)
+                edges.append((child_uri, "exposes", iface_uri))
+        for obj_uri in (child_term.get("allocates") or []):
+            if obj_uri in registered_uris or obj_uri in related_set:
+                node_id(child_uri)
+                label_for(child_uri)
+                node_id(obj_uri)
+                label_for(obj_uri)
+                edges.append((child_uri, "allocation", obj_uri))
 
     if not edges:
         return []
@@ -285,9 +375,13 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
         if rel == "composition":
             mermaid_lines.append(f"    {s} -->|composed of| {o}")
         elif rel == "representation":
-            mermaid_lines.append(f"    {s} -.->|described by| {o}")
+            mermaid_lines.append(f"    {s} -.->|represented by| {o}")
         elif rel == "allocation":
             mermaid_lines.append(f"    {s} -.->|allocates| {o}")
+        elif rel == "subclassof":
+            mermaid_lines.append(f"    {s} -->|subclass of| {o}")
+        elif rel == "exposes":
+            mermaid_lines.append(f"    {s} -.->|exposes| {o}")
         else:
             mermaid_lines.append(f"    {s} -.->|can be| {o}")
     mermaid_lines.append("```")
@@ -301,7 +395,9 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict]) -> lis
 
 def render_term(term: dict, ref_index: dict[str, dict],
                 superclass_index: dict[str, list[dict]] | None = None,
-                terms_index: dict[str, dict] | None = None) -> list[str]:
+                terms_index: dict[str, dict] | None = None,
+                represents_index: dict[str, list[dict]] | None = None,
+                allocated_by_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -378,6 +474,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
             ]
             relation_rows.append(("Superclass of", ", ".join(links)))
 
+    # Represents (computed inverse of isRepresentedBy)
+    if represents_index:
+        term_id = term.get("@id", "")
+        represented_terms = represents_index.get(term_id, [])
+        if represented_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in represented_terms
+            ]
+            relation_rows.append(("Represents", ", ".join(links)))
+
     # Mapping relations (SKOS — cross-vocabulary alignment, non-BFO)
     for field, label in [
         ("exactMatch", "Exact match"),
@@ -398,12 +505,24 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("isRepresentedBy", "Represented by"),
         ("allocates", "Allocates"),
         ("canBe", "Can be"),
+        ("exposes", "Exposes"),
     ]:
         items = term.get(field, [])
         if not items:
             continue
         links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in items]
         relation_rows.append((label, ", ".join(links)))
+
+    # Allocated by (computed inverse of allocates)
+    if allocated_by_index:
+        term_id = term.get("@id", "")
+        allocating_terms = allocated_by_index.get(term_id, [])
+        if allocating_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in allocating_terms
+            ]
+            relation_rows.append(("Allocated by", ", ".join(links)))
 
     if relation_rows:
         lines.append("| Relation | Terms |")
@@ -414,7 +533,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
 
     # Breakdown structure diagram
     if terms_index:
-        lines.extend(render_breakdown_diagram_md(term, terms_index))
+        lines.extend(render_breakdown_diagram_md(term, terms_index, represents_index))
 
     # References
     is_referenced_by = term.get("isReferencedBy", [])
@@ -567,6 +686,8 @@ def main() -> int:
     references = load_directory(REFERENCES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
+    represents_index = build_represents_index(terms)
+    allocated_by_index = build_allocated_by_index(terms)
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
@@ -621,7 +742,8 @@ def main() -> int:
 
     if se3_terms:
         for term in se3_terms:
-            md.extend(render_term(term, ref_index, superclass_index, terms_index))
+            md.extend(render_term(term, ref_index, superclass_index, terms_index,
+                                  represents_index, allocated_by_index))
             md.append("---")
             md.append("")
     else:
@@ -636,7 +758,8 @@ def main() -> int:
 
     if other_terms:
         for term in other_terms:
-            md.extend(render_term(term, ref_index, superclass_index, terms_index))
+            md.extend(render_term(term, ref_index, superclass_index, terms_index,
+                                  represents_index, allocated_by_index))
             md.append("---")
             md.append("")
     else:
