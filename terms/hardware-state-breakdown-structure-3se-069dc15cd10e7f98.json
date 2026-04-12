@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware state breakdown structure - 3SE",
+  "description": "Breakdown structure of the hardware state that supports the hardware architecture by following the principles below:\n(1) A hardware state is composed of at least two hardware block states.\n(2) A hardware state allocates at least one hardware function.\n(3) A hardware block state allocates at least one hardware block function.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516",
+    "https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be",
+    "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86",
+    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488",
+    "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

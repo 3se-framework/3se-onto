@@ -11,7 +11,9 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
     "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a",
-    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
+    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5"
   ],
   "entryCreated": "2026-04-12",
   "entryModified": "2026-04-12",

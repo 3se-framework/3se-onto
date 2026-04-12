@@ -14,13 +14,16 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516",
     "https://www.3se.info/3se-onto/terms/hardware-block-breakdown-structure-3se-069dc0c117f07144",
-    "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71"
+    "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71",
+    "https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be",
+    "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340",
+    "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/hardware-component-3se-069a9bc4a34678c2"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/hardware-block-state-3se"
+    "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86"
   ],
   "exposes": [
     "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se"

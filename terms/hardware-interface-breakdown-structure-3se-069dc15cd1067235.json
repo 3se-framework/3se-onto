@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware interface breakdown structure - 3SE",
+  "description": "Breakdown structure of the hardware interface that supports the hardware architecture by following the principles below:\n(1) A hardware interface is composed of at least one hardware block interface.\n(2) A hardware exposes at least one hardware interface.\n(3) A hardware block exposes at least one hardware block interface.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516",
+    "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5",
+    "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340",
+    "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -10,7 +10,6 @@
   "@id": "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5",
     "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025"
   ],
   "entryCreated": "2026-04-12",
