@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Security system function - 3SE",
-  "description": "System function to control failures in order to achieve or maintain a secure state.",
+  "description": "System function to control failures in order to achieve or maintain a secure system state.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939"

@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Functional architecture - 3SE",
-  "description": "Analysis of the function to determine what states of a functional element are activating it.",
+  "description": "Analysis of the function to determine what system states of a functional element are activating it.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e"
