@@ -1,363 +1,363 @@
 # 3SE Glossary
 
-*Generated on 2026-04-12 17:40 UTC*
+*Generated on 2026-04-12 17:56 UTC*
 
-This glossary contains **250 3SE term(s)**, **93 other term(s)** and **24 reference(s)**.
+This glossary contains **250 3SE term(s)**, **93 other term(s)**, **24 reference(s)**,**8 property(ies)**,and **6 other property(ies) 
 
 ## Contents
 
 - [3SE Terms](#3se-terms)
-  - [Abstract model - 3SE](#abstract-model---3se)
-  - [Acceptance - 3SE](#acceptance---3se)
-  - [Activity - 3SE](#activity---3se)
-  - [Actor - 3SE](#actor---3se)
-  - [Analysis - 3SE](#analysis---3se)
-  - [Assessment gate - 3SE](#assessment-gate---3se)
-  - [Asset - 3SE](#asset---3se)
-  - [Attack - 3SE](#attack---3se)
-  - [Attribute - 3SE](#attribute---3se)
-  - [Breakdown structure - 3SE](#breakdown-structure---3se)
-  - [Business owner - 3SE](#business-owner---3se)
-  - [Change - 3SE](#change---3se)
-  - [Computational model - 3SE](#computational-model---3se)
-  - [Conceptual model - 3SE](#conceptual-model---3se)
-  - [Concrete model - 3SE](#concrete-model---3se)
-  - [Constraint - 3SE](#constraint---3se)
-  - [Context - 3SE](#context---3se)
-  - [Data - 3SE](#data---3se)
-  - [Demonstration - 3SE](#demonstration---3se)
-  - [Enabling function - 3SE](#enabling-function---3se)
-  - [Enabling functional element - 3SE](#enabling-functional-element---3se)
-  - [Enabling physical element - 3SE](#enabling-physical-element---3se)
-  - [Enabling system - 3SE](#enabling-system---3se)
-  - [Engineering risk - 3SE](#engineering-risk---3se)
-  - [Environment - 3SE](#environment---3se)
-  - [Epic - 3SE](#epic---3se)
-  - [Epic analysis - 3SE](#epic-analysis---3se)
-  - [Exchange - 3SE](#exchange---3se)
-  - [Failure - 3SE](#failure---3se)
-  - [Fault - 3SE](#fault---3se)
-  - [Feature - 3SE](#feature---3se)
-  - [Feature analysis - 3SE](#feature-analysis---3se)
-  - [Feature breakdown structure - 3SE](#feature-breakdown-structure---3se)
-  - [Feature model - 3SE](#feature-model---3se)
-  - [Flow - 3SE](#flow---3se)
-  - [Function - 3SE](#function---3se)
-  - [Functional architecture - 3SE](#functional-architecture---3se)
-  - [Functional architecture model - 3SE](#functional-architecture-model---3se)
-  - [Functional element - 3SE](#functional-element---3se)
-  - [Functional element breakdown structure - 3SE](#functional-element-breakdown-structure---3se)
-  - [Functional interface - 3SE](#functional-interface---3se)
-  - [Functional Requirement - 3SE](#functional-requirement---3se)
-  - [Goal - 3SE](#goal---3se)
-  - [Goal analysis - 3SE](#goal-analysis---3se)
-  - [Goal breakdown structure - 3SE](#goal-breakdown-structure---3se)
-  - [Goal model - 3SE](#goal-model---3se)
-  - [Hardware - 3SE](#hardware---3se)
-  - [Hardware architecture - 3SE](#hardware-architecture---3se)
-  - [Hardware block - 3SE](#hardware-block---3se)
-  - [Hardware component - 3SE](#hardware-component---3se)
-  - [Hardware constraint - 3SE](#hardware-constraint---3se)
-  - [Hardware feature - 3SE](#hardware-feature---3se)
-  - [Hardware function - 3SE](#hardware-function---3se)
-  - [Hardware functional requirement - 3SE](#hardware-functional-requirement---3se)
-  - [Hardware interface - 3SE](#hardware-interface---3se)
-  - [Hardware non-functional requirement - 3SE](#hardware-non-functional-requirement---3se)
-  - [Hardware product - 3SE](#hardware-product---3se)
-  - [Hardware state - 3SE](#hardware-state---3se)
-  - [Hazard - 3SE](#hazard---3se)
-  - [Hazardous situation - 3SE](#hazardous-situation---3se)
-  - [High level feature - 3SE](#high-level-feature---3se)
-  - [High level functional element - 3SE](#high-level-functional-element---3se)
-  - [High level goal - 3SE](#high-level-goal---3se)
-  - [High level physical element - 3SE](#high-level-physical-element---3se)
-  - [High level system function - 3SE](#high-level-system-function---3se)
-  - [High level system state - 3SE](#high-level-system-state---3se)
-  - [High level value - 3SE](#high-level-value---3se)
-  - [Holism - 3SE](#holism---3se)
-  - [Information - 3SE](#information---3se)
-  - [Inspection - 3SE](#inspection---3se)
-  - [Integration testing - 3SE](#integration-testing---3se)
-  - [Interdependence analysis - 3SE](#interdependence-analysis---3se)
-  - [Interdependent actor - 3SE](#interdependent-actor---3se)
-  - [Interdependent system - 3SE](#interdependent-system---3se)
-  - [Interface breakdown structure - 3SE](#interface-breakdown-structure---3se)
-  - [Iteration - 3SE](#iteration---3se)
-  - [Iteration analysis - 3SE](#iteration-analysis---3se)
-  - [Mathematical model - 3SE](#mathematical-model---3se)
-  - [Maturity gate - 3SE](#maturity-gate---3se)
-  - [Mechanism - 3SE](#mechanism---3se)
-  - [Meta model - 3SE](#meta-model---3se)
-  - [Milieu - 3SE](#milieu---3se)
-  - [Model - 3SE](#model---3se)
-  - [Non-functional requirement - 3SE](#non-functional-requirement---3se)
-  - [Operating model - 3SE](#operating-model---3se)
-  - [Operational analysis - 3SE](#operational-analysis---3se)
-  - [Organization risk - 3SE](#organization-risk---3se)
-  - [Physical architecture - 3SE](#physical-architecture---3se)
-  - [Physical architecture model - 3SE](#physical-architecture-model---3se)
-  - [Physical element - 3SE](#physical-element---3se)
-  - [Physical element breakdown structure - 3SE](#physical-element-breakdown-structure---3se)
-  - [Physical interface - 3SE](#physical-interface---3se)
-  - [Problem - 3SE](#problem---3se)
-  - [Product - 3SE](#product---3se)
-  - [Product analysis - 3SE](#product-analysis---3se)
-  - [Product architecture - 3SE](#product-architecture---3se)
-  - [Product architecture model - 3SE](#product-architecture-model---3se)
-  - [Product breakdown structure - 3SE](#product-breakdown-structure---3se)
-  - [Product element - 3SE](#product-element---3se)
-  - [Product owner - 3SE](#product-owner---3se)
-  - [Project - 3SE](#project---3se)
-  - [Project analysis - 3SE](#project-analysis---3se)
-  - [Project owner - 3SE](#project-owner---3se)
-  - [Project risk - 3SE](#project-risk---3se)
-  - [Reductionism - 3SE](#reductionism---3se)
-  - [Release - 3SE](#release---3se)
-  - [Release analysis - 3SE](#release-analysis---3se)
-  - [Requirement - 3SE](#requirement---3se)
-  - [Requirements analysis - 3SE](#requirements-analysis---3se)
-  - [Residual risk - 3SE](#residual-risk---3se)
-  - [Risk - 3SE](#risk---3se)
-  - [Risk analysis - 3SE](#risk-analysis---3se)
-  - [Role - 3SE](#role---3se)
-  - [Safety activity - 3SE](#safety-activity---3se)
-  - [Safety functional element - 3SE](#safety-functional-element---3se)
-  - [Safety goal - 3SE](#safety-goal---3se)
-  - [Safety hardware - 3SE](#safety-hardware---3se)
-  - [Safety hardware constraint - 3SE](#safety-hardware-constraint---3se)
-  - [Safety hardware feature - 3SE](#safety-hardware-feature---3se)
-  - [Safety hardware function - 3SE](#safety-hardware-function---3se)
-  - [Safety hardware functional requirement - 3SE](#safety-hardware-functional-requirement---3se)
-  - [Safety hardware non-functional requirement - 3SE](#safety-hardware-non-functional-requirement---3se)
-  - [Safety hardware product - 3SE](#safety-hardware-product---3se)
-  - [Safety risk - 3SE](#safety-risk---3se)
-  - [Safety risk analysis - 3SE](#safety-risk-analysis---3se)
-  - [Safety service - 3SE](#safety-service---3se)
-  - [Safety software - 3SE](#safety-software---3se)
-  - [Safety software constraint - 3SE](#safety-software-constraint---3se)
-  - [Safety software feature - 3SE](#safety-software-feature---3se)
-  - [Safety software function - 3SE](#safety-software-function---3se)
-  - [Safety software functional requirement - 3SE](#safety-software-functional-requirement---3se)
-  - [Safety software non-functional requirement - 3SE](#safety-software-non-functional-requirement---3se)
-  - [Safety software product - 3SE](#safety-software-product---3se)
-  - [Safety system constraint - 3SE](#safety-system-constraint---3se)
-  - [Safety system feature - 3SE](#safety-system-feature---3se)
-  - [Safety system function - 3SE](#safety-system-function---3se)
-  - [Safety system functional requirement - 3SE](#safety-system-functional-requirement---3se)
-  - [Safety system non-functional requirement - 3SE](#safety-system-non-functional-requirement---3se)
-  - [Security activity - 3SE](#security-activity---3se)
-  - [Security functional element - 3SE](#security-functional-element---3se)
-  - [Security goal - 3SE](#security-goal---3se)
-  - [Security hardware - 3SE](#security-hardware---3se)
-  - [Security hardware constraint - 3SE](#security-hardware-constraint---3se)
-  - [Security hardware feature - 3SE](#security-hardware-feature---3se)
-  - [Security hardware function - 3SE](#security-hardware-function---3se)
-  - [Security hardware functional requirement - 3SE](#security-hardware-functional-requirement---3se)
-  - [Security hardware non-functional requirement - 3SE](#security-hardware-non-functional-requirement---3se)
-  - [Security hardware product - 3SE](#security-hardware-product---3se)
-  - [Security risk - 3SE](#security-risk---3se)
-  - [Security risk analysis - 3SE](#security-risk-analysis---3se)
-  - [Security service - 3SE](#security-service---3se)
-  - [Security software - 3SE](#security-software---3se)
-  - [Security software constraint - 3SE](#security-software-constraint---3se)
-  - [Security software feature - 3SE](#security-software-feature---3se)
-  - [Security software function - 3SE](#security-software-function---3se)
-  - [Security software functional requirement - 3SE](#security-software-functional-requirement---3se)
-  - [Security software non-functional requirement - 3SE](#security-software-non-functional-requirement---3se)
-  - [Security software product - 3SE](#security-software-product---3se)
-  - [Security system constraint - 3SE](#security-system-constraint---3se)
-  - [Security system feature - 3SE](#security-system-feature---3se)
-  - [Security system function - 3SE](#security-system-function---3se)
-  - [Security system functional requirement - 3SE](#security-system-functional-requirement---3se)
-  - [Security system non-functional requirement - 3SE](#security-system-non-functional-requirement---3se)
-  - [Service - 3SE](#service---3se)
-  - [Service analysis - 3SE](#service-analysis---3se)
-  - [Service architecture - 3SE](#service-architecture---3se)
-  - [Service architecture model - 3SE](#service-architecture-model---3se)
-  - [Service breakdown structure - 3SE](#service-breakdown-structure---3se)
-  - [Service contract - 3SE](#service-contract---3se)
-  - [Service level agreement - 3SE](#service-level-agreement---3se)
-  - [Service mean - 3SE](#service-mean---3se)
-  - [Service owner - 3SE](#service-owner---3se)
-  - [Situation - 3SE](#situation---3se)
-  - [Software - 3SE](#software---3se)
-  - [Software architecture - 3SE](#software-architecture---3se)
-  - [Software component - 3SE](#software-component---3se)
-  - [Software component requirement - 3SE](#software-component-requirement---3se)
-  - [Software component validation - 3SE](#software-component-validation---3se)
-  - [Software constraint - 3SE](#software-constraint---3se)
-  - [Software feature - 3SE](#software-feature---3se)
-  - [Software function - 3SE](#software-function---3se)
-  - [Software functional requirement - 3SE](#software-functional-requirement---3se)
-  - [Software interface - 3SE](#software-interface---3se)
-  - [Software non-functional requirement - 3SE](#software-non-functional-requirement---3se)
-  - [Software product - 3SE](#software-product---3se)
-  - [Software requirement - 3SE](#software-requirement---3se)
-  - [Software state - 3SE](#software-state---3se)
-  - [Software unit - 3SE](#software-unit---3se)
-  - [Software unit requirement - 3SE](#software-unit-requirement---3se)
-  - [Software unit validation - 3SE](#software-unit-validation---3se)
-  - [Software validation - 3SE](#software-validation---3se)
-  - [Solution - 3SE](#solution---3se)
-  - [Stakeholder - 3SE](#stakeholder---3se)
-  - [Stakeholder constraint - 3SE](#stakeholder-constraint---3se)
-  - [Stakeholder functional requirement - 3SE](#stakeholder-functional-requirement---3se)
-  - [Stakeholder non-functional requirement - 3SE](#stakeholder-non-functional-requirement---3se)
-  - [Stakeholder requirement - 3SE](#stakeholder-requirement---3se)
-  - [Stakeholder requirement breakdown structure - 3SE](#stakeholder-requirement-breakdown-structure---3se)
-  - [State - 3SE](#state---3se)
-  - [System - 3SE](#system---3se)
-  - [System architect - 3SE](#system-architect---3se)
-  - [System architecture - 3SE](#system-architecture---3se)
-  - [System architecture constraint - 3SE](#system-architecture-constraint---3se)
-  - [System architecture model - 3SE](#system-architecture-model---3se)
-  - [System architecture validation - 3SE](#system-architecture-validation---3se)
-  - [System architecture validation case - 3SE](#system-architecture-validation-case---3se)
-  - [System breakdown structure - 3SE](#system-breakdown-structure---3se)
-  - [System configuration engineer - 3SE](#system-configuration-engineer---3se)
-  - [System constraint - 3SE](#system-constraint---3se)
-  - [System element - 3SE](#system-element---3se)
-  - [System element function - 3SE](#system-element-function---3se)
-  - [System element interface - 3SE](#system-element-interface---3se)
-  - [System element requirement - 3SE](#system-element-requirement---3se)
-  - [System element state - 3SE](#system-element-state---3se)
-  - [System element validation - 3SE](#system-element-validation---3se)
-  - [System element validation case - 3SE](#system-element-validation-case---3se)
-  - [System engineer - 3SE](#system-engineer---3se)
-  - [System feature - 3SE](#system-feature---3se)
-  - [System function - 3SE](#system-function---3se)
-  - [System function breakdown structure - 3SE](#system-function-breakdown-structure---3se)
-  - [System function model - 3SE](#system-function-model---3se)
-  - [System functional analysis - 3SE](#system-functional-analysis---3se)
-  - [System functional requirement - 3SE](#system-functional-requirement---3se)
-  - [System interface - 3SE](#system-interface---3se)
-  - [System non-functional requirement - 3SE](#system-non-functional-requirement---3se)
-  - [System requirement - 3SE](#system-requirement---3se)
-  - [System risk engineer - 3SE](#system-risk-engineer---3se)
-  - [System state - 3SE](#system-state---3se)
-  - [System state breakdown structure - 3SE](#system-state-breakdown-structure---3se)
-  - [System validation - 3SE](#system-validation---3se)
-  - [System validation case - 3SE](#system-validation-case---3se)
-  - [System validation engineer - 3SE](#system-validation-engineer---3se)
-  - [Systems engineering - 3SE](#systems-engineering---3se)
-  - [Systems principles - 3SE](#systems-principles---3se)
-  - [Task - 3SE](#task---3se)
-  - [Task analysis - 3SE](#task-analysis---3se)
-  - [Teleology - 3SE](#teleology---3se)
-  - [Test - 3SE](#test---3se)
-  - [Threatening situation - 3SE](#threatening-situation---3se)
-  - [Validation - 3SE](#validation---3se)
-  - [Validation analysis - 3SE](#validation-analysis---3se)
-  - [Validation case - 3SE](#validation-case---3se)
-  - [Validation run - 3SE](#validation-run---3se)
-  - [Value - 3SE](#value---3se)
-  - [Value analysis - 3SE](#value-analysis---3se)
-  - [Value breakdown structure - 3SE](#value-breakdown-structure---3se)
-  - [Value model - 3SE](#value-model---3se)
-  - [Verification - 3SE](#verification---3se)
-  - [Vulnerability - 3SE](#vulnerability---3se)
-  - [Weakness - 3SE](#weakness---3se)
+  - [Abstract model - 3SE](#abstract-model-3se)
+  - [Acceptance - 3SE](#acceptance-3se)
+  - [Activity - 3SE](#activity-3se)
+  - [Actor - 3SE](#actor-3se)
+  - [Analysis - 3SE](#analysis-3se)
+  - [Assessment gate - 3SE](#assessment-gate-3se)
+  - [Asset - 3SE](#asset-3se)
+  - [Attack - 3SE](#attack-3se)
+  - [Attribute - 3SE](#attribute-3se)
+  - [Breakdown structure - 3SE](#breakdown-structure-3se)
+  - [Business owner - 3SE](#business-owner-3se)
+  - [Change - 3SE](#change-3se)
+  - [Computational model - 3SE](#computational-model-3se)
+  - [Conceptual model - 3SE](#conceptual-model-3se)
+  - [Concrete model - 3SE](#concrete-model-3se)
+  - [Constraint - 3SE](#constraint-3se)
+  - [Context - 3SE](#context-3se)
+  - [Data - 3SE](#data-3se)
+  - [Demonstration - 3SE](#demonstration-3se)
+  - [Enabling function - 3SE](#enabling-function-3se)
+  - [Enabling functional element - 3SE](#enabling-functional-element-3se)
+  - [Enabling physical element - 3SE](#enabling-physical-element-3se)
+  - [Enabling system - 3SE](#enabling-system-3se)
+  - [Engineering risk - 3SE](#engineering-risk-3se)
+  - [Environment - 3SE](#environment-3se)
+  - [Epic - 3SE](#epic-3se)
+  - [Epic analysis - 3SE](#epic-analysis-3se)
+  - [Exchange - 3SE](#exchange-3se)
+  - [Failure - 3SE](#failure-3se)
+  - [Fault - 3SE](#fault-3se)
+  - [Feature - 3SE](#feature-3se)
+  - [Feature analysis - 3SE](#feature-analysis-3se)
+  - [Feature breakdown structure - 3SE](#feature-breakdown-structure-3se)
+  - [Feature model - 3SE](#feature-model-3se)
+  - [Flow - 3SE](#flow-3se)
+  - [Function - 3SE](#function-3se)
+  - [Functional architecture - 3SE](#functional-architecture-3se)
+  - [Functional architecture model - 3SE](#functional-architecture-model-3se)
+  - [Functional element - 3SE](#functional-element-3se)
+  - [Functional element breakdown structure - 3SE](#functional-element-breakdown-structure-3se)
+  - [Functional interface - 3SE](#functional-interface-3se)
+  - [Functional Requirement - 3SE](#functional-requirement-3se)
+  - [Goal - 3SE](#goal-3se)
+  - [Goal analysis - 3SE](#goal-analysis-3se)
+  - [Goal breakdown structure - 3SE](#goal-breakdown-structure-3se)
+  - [Goal model - 3SE](#goal-model-3se)
+  - [Hardware - 3SE](#hardware-3se)
+  - [Hardware architecture - 3SE](#hardware-architecture-3se)
+  - [Hardware block - 3SE](#hardware-block-3se)
+  - [Hardware component - 3SE](#hardware-component-3se)
+  - [Hardware constraint - 3SE](#hardware-constraint-3se)
+  - [Hardware feature - 3SE](#hardware-feature-3se)
+  - [Hardware function - 3SE](#hardware-function-3se)
+  - [Hardware functional requirement - 3SE](#hardware-functional-requirement-3se)
+  - [Hardware interface - 3SE](#hardware-interface-3se)
+  - [Hardware non-functional requirement - 3SE](#hardware-non-functional-requirement-3se)
+  - [Hardware product - 3SE](#hardware-product-3se)
+  - [Hardware state - 3SE](#hardware-state-3se)
+  - [Hazard - 3SE](#hazard-3se)
+  - [Hazardous situation - 3SE](#hazardous-situation-3se)
+  - [High level feature - 3SE](#high-level-feature-3se)
+  - [High level functional element - 3SE](#high-level-functional-element-3se)
+  - [High level goal - 3SE](#high-level-goal-3se)
+  - [High level physical element - 3SE](#high-level-physical-element-3se)
+  - [High level system function - 3SE](#high-level-system-function-3se)
+  - [High level system state - 3SE](#high-level-system-state-3se)
+  - [High level value - 3SE](#high-level-value-3se)
+  - [Holism - 3SE](#holism-3se)
+  - [Information - 3SE](#information-3se)
+  - [Inspection - 3SE](#inspection-3se)
+  - [Integration testing - 3SE](#integration-testing-3se)
+  - [Interdependence analysis - 3SE](#interdependence-analysis-3se)
+  - [Interdependent actor - 3SE](#interdependent-actor-3se)
+  - [Interdependent system - 3SE](#interdependent-system-3se)
+  - [Interface breakdown structure - 3SE](#interface-breakdown-structure-3se)
+  - [Iteration - 3SE](#iteration-3se)
+  - [Iteration analysis - 3SE](#iteration-analysis-3se)
+  - [Mathematical model - 3SE](#mathematical-model-3se)
+  - [Maturity gate - 3SE](#maturity-gate-3se)
+  - [Mechanism - 3SE](#mechanism-3se)
+  - [Meta model - 3SE](#meta-model-3se)
+  - [Milieu - 3SE](#milieu-3se)
+  - [Model - 3SE](#model-3se)
+  - [Non-functional requirement - 3SE](#non-functional-requirement-3se)
+  - [Operating model - 3SE](#operating-model-3se)
+  - [Operational analysis - 3SE](#operational-analysis-3se)
+  - [Organization risk - 3SE](#organization-risk-3se)
+  - [Physical architecture - 3SE](#physical-architecture-3se)
+  - [Physical architecture model - 3SE](#physical-architecture-model-3se)
+  - [Physical element - 3SE](#physical-element-3se)
+  - [Physical element breakdown structure - 3SE](#physical-element-breakdown-structure-3se)
+  - [Physical interface - 3SE](#physical-interface-3se)
+  - [Problem - 3SE](#problem-3se)
+  - [Product - 3SE](#product-3se)
+  - [Product analysis - 3SE](#product-analysis-3se)
+  - [Product architecture - 3SE](#product-architecture-3se)
+  - [Product architecture model - 3SE](#product-architecture-model-3se)
+  - [Product breakdown structure - 3SE](#product-breakdown-structure-3se)
+  - [Product element - 3SE](#product-element-3se)
+  - [Product owner - 3SE](#product-owner-3se)
+  - [Project - 3SE](#project-3se)
+  - [Project analysis - 3SE](#project-analysis-3se)
+  - [Project owner - 3SE](#project-owner-3se)
+  - [Project risk - 3SE](#project-risk-3se)
+  - [Reductionism - 3SE](#reductionism-3se)
+  - [Release - 3SE](#release-3se)
+  - [Release analysis - 3SE](#release-analysis-3se)
+  - [Requirement - 3SE](#requirement-3se)
+  - [Requirements analysis - 3SE](#requirements-analysis-3se)
+  - [Residual risk - 3SE](#residual-risk-3se)
+  - [Risk - 3SE](#risk-3se)
+  - [Risk analysis - 3SE](#risk-analysis-3se)
+  - [Role - 3SE](#role-3se)
+  - [Safety activity - 3SE](#safety-activity-3se)
+  - [Safety functional element - 3SE](#safety-functional-element-3se)
+  - [Safety goal - 3SE](#safety-goal-3se)
+  - [Safety hardware - 3SE](#safety-hardware-3se)
+  - [Safety hardware constraint - 3SE](#safety-hardware-constraint-3se)
+  - [Safety hardware feature - 3SE](#safety-hardware-feature-3se)
+  - [Safety hardware function - 3SE](#safety-hardware-function-3se)
+  - [Safety hardware functional requirement - 3SE](#safety-hardware-functional-requirement-3se)
+  - [Safety hardware non-functional requirement - 3SE](#safety-hardware-non-functional-requirement-3se)
+  - [Safety hardware product - 3SE](#safety-hardware-product-3se)
+  - [Safety risk - 3SE](#safety-risk-3se)
+  - [Safety risk analysis - 3SE](#safety-risk-analysis-3se)
+  - [Safety service - 3SE](#safety-service-3se)
+  - [Safety software - 3SE](#safety-software-3se)
+  - [Safety software constraint - 3SE](#safety-software-constraint-3se)
+  - [Safety software feature - 3SE](#safety-software-feature-3se)
+  - [Safety software function - 3SE](#safety-software-function-3se)
+  - [Safety software functional requirement - 3SE](#safety-software-functional-requirement-3se)
+  - [Safety software non-functional requirement - 3SE](#safety-software-non-functional-requirement-3se)
+  - [Safety software product - 3SE](#safety-software-product-3se)
+  - [Safety system constraint - 3SE](#safety-system-constraint-3se)
+  - [Safety system feature - 3SE](#safety-system-feature-3se)
+  - [Safety system function - 3SE](#safety-system-function-3se)
+  - [Safety system functional requirement - 3SE](#safety-system-functional-requirement-3se)
+  - [Safety system non-functional requirement - 3SE](#safety-system-non-functional-requirement-3se)
+  - [Security activity - 3SE](#security-activity-3se)
+  - [Security functional element - 3SE](#security-functional-element-3se)
+  - [Security goal - 3SE](#security-goal-3se)
+  - [Security hardware - 3SE](#security-hardware-3se)
+  - [Security hardware constraint - 3SE](#security-hardware-constraint-3se)
+  - [Security hardware feature - 3SE](#security-hardware-feature-3se)
+  - [Security hardware function - 3SE](#security-hardware-function-3se)
+  - [Security hardware functional requirement - 3SE](#security-hardware-functional-requirement-3se)
+  - [Security hardware non-functional requirement - 3SE](#security-hardware-non-functional-requirement-3se)
+  - [Security hardware product - 3SE](#security-hardware-product-3se)
+  - [Security risk - 3SE](#security-risk-3se)
+  - [Security risk analysis - 3SE](#security-risk-analysis-3se)
+  - [Security service - 3SE](#security-service-3se)
+  - [Security software - 3SE](#security-software-3se)
+  - [Security software constraint - 3SE](#security-software-constraint-3se)
+  - [Security software feature - 3SE](#security-software-feature-3se)
+  - [Security software function - 3SE](#security-software-function-3se)
+  - [Security software functional requirement - 3SE](#security-software-functional-requirement-3se)
+  - [Security software non-functional requirement - 3SE](#security-software-non-functional-requirement-3se)
+  - [Security software product - 3SE](#security-software-product-3se)
+  - [Security system constraint - 3SE](#security-system-constraint-3se)
+  - [Security system feature - 3SE](#security-system-feature-3se)
+  - [Security system function - 3SE](#security-system-function-3se)
+  - [Security system functional requirement - 3SE](#security-system-functional-requirement-3se)
+  - [Security system non-functional requirement - 3SE](#security-system-non-functional-requirement-3se)
+  - [Service - 3SE](#service-3se)
+  - [Service analysis - 3SE](#service-analysis-3se)
+  - [Service architecture - 3SE](#service-architecture-3se)
+  - [Service architecture model - 3SE](#service-architecture-model-3se)
+  - [Service breakdown structure - 3SE](#service-breakdown-structure-3se)
+  - [Service contract - 3SE](#service-contract-3se)
+  - [Service level agreement - 3SE](#service-level-agreement-3se)
+  - [Service mean - 3SE](#service-mean-3se)
+  - [Service owner - 3SE](#service-owner-3se)
+  - [Situation - 3SE](#situation-3se)
+  - [Software - 3SE](#software-3se)
+  - [Software architecture - 3SE](#software-architecture-3se)
+  - [Software component - 3SE](#software-component-3se)
+  - [Software component requirement - 3SE](#software-component-requirement-3se)
+  - [Software component validation - 3SE](#software-component-validation-3se)
+  - [Software constraint - 3SE](#software-constraint-3se)
+  - [Software feature - 3SE](#software-feature-3se)
+  - [Software function - 3SE](#software-function-3se)
+  - [Software functional requirement - 3SE](#software-functional-requirement-3se)
+  - [Software interface - 3SE](#software-interface-3se)
+  - [Software non-functional requirement - 3SE](#software-non-functional-requirement-3se)
+  - [Software product - 3SE](#software-product-3se)
+  - [Software requirement - 3SE](#software-requirement-3se)
+  - [Software state - 3SE](#software-state-3se)
+  - [Software unit - 3SE](#software-unit-3se)
+  - [Software unit requirement - 3SE](#software-unit-requirement-3se)
+  - [Software unit validation - 3SE](#software-unit-validation-3se)
+  - [Software validation - 3SE](#software-validation-3se)
+  - [Solution - 3SE](#solution-3se)
+  - [Stakeholder - 3SE](#stakeholder-3se)
+  - [Stakeholder constraint - 3SE](#stakeholder-constraint-3se)
+  - [Stakeholder functional requirement - 3SE](#stakeholder-functional-requirement-3se)
+  - [Stakeholder non-functional requirement - 3SE](#stakeholder-non-functional-requirement-3se)
+  - [Stakeholder requirement - 3SE](#stakeholder-requirement-3se)
+  - [Stakeholder requirement breakdown structure - 3SE](#stakeholder-requirement-breakdown-structure-3se)
+  - [State - 3SE](#state-3se)
+  - [System - 3SE](#system-3se)
+  - [System architect - 3SE](#system-architect-3se)
+  - [System architecture - 3SE](#system-architecture-3se)
+  - [System architecture constraint - 3SE](#system-architecture-constraint-3se)
+  - [System architecture model - 3SE](#system-architecture-model-3se)
+  - [System architecture validation - 3SE](#system-architecture-validation-3se)
+  - [System architecture validation case - 3SE](#system-architecture-validation-case-3se)
+  - [System breakdown structure - 3SE](#system-breakdown-structure-3se)
+  - [System configuration engineer - 3SE](#system-configuration-engineer-3se)
+  - [System constraint - 3SE](#system-constraint-3se)
+  - [System element - 3SE](#system-element-3se)
+  - [System element function - 3SE](#system-element-function-3se)
+  - [System element interface - 3SE](#system-element-interface-3se)
+  - [System element requirement - 3SE](#system-element-requirement-3se)
+  - [System element state - 3SE](#system-element-state-3se)
+  - [System element validation - 3SE](#system-element-validation-3se)
+  - [System element validation case - 3SE](#system-element-validation-case-3se)
+  - [System engineer - 3SE](#system-engineer-3se)
+  - [System feature - 3SE](#system-feature-3se)
+  - [System function - 3SE](#system-function-3se)
+  - [System function breakdown structure - 3SE](#system-function-breakdown-structure-3se)
+  - [System function model - 3SE](#system-function-model-3se)
+  - [System functional analysis - 3SE](#system-functional-analysis-3se)
+  - [System functional requirement - 3SE](#system-functional-requirement-3se)
+  - [System interface - 3SE](#system-interface-3se)
+  - [System non-functional requirement - 3SE](#system-non-functional-requirement-3se)
+  - [System requirement - 3SE](#system-requirement-3se)
+  - [System risk engineer - 3SE](#system-risk-engineer-3se)
+  - [System state - 3SE](#system-state-3se)
+  - [System state breakdown structure - 3SE](#system-state-breakdown-structure-3se)
+  - [System validation - 3SE](#system-validation-3se)
+  - [System validation case - 3SE](#system-validation-case-3se)
+  - [System validation engineer - 3SE](#system-validation-engineer-3se)
+  - [Systems engineering - 3SE](#systems-engineering-3se)
+  - [Systems principles - 3SE](#systems-principles-3se)
+  - [Task - 3SE](#task-3se)
+  - [Task analysis - 3SE](#task-analysis-3se)
+  - [Teleology - 3SE](#teleology-3se)
+  - [Test - 3SE](#test-3se)
+  - [Threatening situation - 3SE](#threatening-situation-3se)
+  - [Validation - 3SE](#validation-3se)
+  - [Validation analysis - 3SE](#validation-analysis-3se)
+  - [Validation case - 3SE](#validation-case-3se)
+  - [Validation run - 3SE](#validation-run-3se)
+  - [Value - 3SE](#value-3se)
+  - [Value analysis - 3SE](#value-analysis-3se)
+  - [Value breakdown structure - 3SE](#value-breakdown-structure-3se)
+  - [Value model - 3SE](#value-model-3se)
+  - [Verification - 3SE](#verification-3se)
+  - [Vulnerability - 3SE](#vulnerability-3se)
+  - [Weakness - 3SE](#weakness-3se)
 - [Other Terms](#other-terms)
-  - [Acceptance - IEEE 1012](#acceptance---ieee-1012)
-  - [Activity - ISO/IEC/IEEE 24765](#activity---isoiecieee-24765)
-  - [Analytical Model - ISO/IEC/IEEE 24641](#analytical-model---isoiecieee-24641)
-  - [Architecture - ISO 26262-1](#architecture---iso-26262-1)
-  - [Architecture - ISO/IEC/IEEE 15288](#architecture---isoiecieee-15288)
-  - [Architecture - ISO/IEC/IEEE 42010](#architecture---isoiecieee-42010)
-  - [Asset - ISO/IEC/IEEE 24765](#asset---isoiecieee-24765)
-  - [Asset - ISO/SAE 21434](#asset---isosae-21434)
-  - [Attack path - ISO/SAE 21434](#attack-path---isosae-21434)
-  - [Attribute - ISO/IEC/IEEE 24765](#attribute---isoiecieee-24765)
-  - [Behavioral component - ARCADIA](#behavioral-component---arcadia)
-  - [Behavioral port - ARCADIA](#behavioral-port---arcadia)
-  - [Change - ISO/IEC/IEEE 24765](#change---isoiecieee-24765)
-  - [Computer program - ISO/IEC/IEEE 24765](#computer-program---isoiecieee-24765)
-  - [Constraint - IREB CPRE](#constraint---ireb-cpre)
-  - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control---isosae-21434)
-  - [Cybersecurity goal - ISO/SAE 21434](#cybersecurity-goal---isosae-21434)
-  - [Decision gate - ISO/IEC/IEEE 24765](#decision-gate---isoiecieee-24765)
-  - [Demonstration - ISO/IEC/IEEE 24765](#demonstration---isoiecieee-24765)
-  - [Descriptive Model - ISO/IEC/IEEE 24641](#descriptive-model---isoiecieee-24641)
-  - [Enabling system - ISO/IEC/IEEE 15288](#enabling-system---isoiecieee-15288)
-  - [Epic - SAFe 6.0](#epic---safe-6.0)
-  - [Failure - ISO 26262-1](#failure---iso-26262-1)
-  - [Fault - ISO 26262-1](#fault---iso-26262-1)
-  - [Feature - SAFe 6.0](#feature---safe-6.0)
-  - [Function - ISO/IEC/IEEE 24765](#function---isoiecieee-24765)
-  - [Functional analysis - ISO/IEC/IEEE 24765](#functional-analysis---isoiecieee-24765)
-  - [Functional architecture - ISO/IEC/IEEE 24765](#functional-architecture---isoiecieee-24765)
-  - [Functional exchange - ARCADIA](#functional-exchange---arcadia)
-  - [Functional Requirement - IREB CPRE](#functional-requirement---ireb-cpre)
-  - [Functional safety requirement - ISO 26262-1](#functional-safety-requirement---iso-26262-1)
-  - [Goal - Requirements Engineering Fundamentals 2nd Edition](#goal---requirements-engineering-fundamentals-2nd-edition)
-  - [Hardware - ISO/IEC/IEEE 24765](#hardware---isoiecieee-24765)
-  - [Hazard - ISO 26262-1](#hazard---iso-26262-1)
-  - [Hazard analysis and risk assessment - ISO 26262-1](#hazard-analysis-and-risk-assessment---iso-26262-1)
-  - [Hazardous event - ISO 26262-1](#hazardous-event---iso-26262-1)
-  - [Holism - General System Theory: Foundations, Development, Applications Revised Edition 1973](#holism---general-system-theory:-foundations,-development,-applications-revised-edition-1973)
-  - [Hosting physical component - ARCADIA](#hosting-physical-component---arcadia)
-  - [Inspection - ISO/IEC/IEEE 24765](#inspection---isoiecieee-24765)
-  - [Integration testing - ISTQB](#integration-testing---istqb)
-  - [Interface - ISO/IEC/IEEE 24765](#interface---isoiecieee-24765)
-  - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
-  - [Mechanism - How does it work ? 2004](#mechanism---how-does-it-work-?-2004)
-  - [Meta model - ISO/IEC/IEEE 24641](#meta-model---isoiecieee-24641)
-  - [Model - ISO/IEC/IEEE 24641](#model---isoiecieee-24641)
-  - [Non-functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
-  - [Operational interaction - ARCADIA](#operational-interaction---arcadia)
-  - [Operational mode - Systems Opportunities and Requirements](#operational-mode---systems-opportunities-and-requirements)
-  - [Phase gate - ISO/IEC/IEEE 24765](#phase-gate---isoiecieee-24765)
-  - [Physical port - ARCADIA](#physical-port---arcadia)
-  - [Problem - ISO/IEC/IEEE 24765](#problem---isoiecieee-24765)
-  - [Product - ISO/IEC/IEEE 24765](#product---isoiecieee-24765)
-  - [Product analysis - ISO/IEC/IEEE 24765](#product-analysis---isoiecieee-24765)
-  - [Product breakdown structure - ISO/IEC/IEEE 24765](#product-breakdown-structure---isoiecieee-24765)
-  - [Project - ISO/IEC/IEEE 24765](#project---isoiecieee-24765)
-  - [Project risk - ISO/IEC/IEEE 24765](#project-risk---isoiecieee-24765)
-  - [Quality Requirement - IREB CPRE](#quality-requirement---ireb-cpre)
-  - [Reductionism - A perspective on systems science and systems philosophy 1974](#reductionism---a-perspective-on-systems-science-and-systems-philosophy-1974)
-  - [Release - ISO/IEC/IEEE 24765](#release---isoiecieee-24765)
-  - [Requirement - IREB CPRE](#requirement---ireb-cpre)
-  - [Residual risk - ISO/IEC/IEEE 24765](#residual-risk---isoiecieee-24765)
-  - [Risk - IEEE 1012](#risk---ieee-1012)
-  - [Risk analysis - ISO/IEC/IEEE 24765](#risk-analysis---isoiecieee-24765)
-  - [Role - W3C Organization Ontology](#role---w3c-organization-ontology)
-  - [Safety goal - ISO 26262-1](#safety-goal---iso-26262-1)
-  - [Safety mechanism - ISO 26262-1](#safety-mechanism---iso-26262-1)
-  - [Service - ISO/IEC/IEEE 24765](#service---isoiecieee-24765)
-  - [Service contract - Service-Oriented Architecture Ontology 2.0](#service-contract---service-oriented-architecture-ontology-2.0)
-  - [Service level agreement - ISO/IEC/IEEE 24765](#service-level-agreement---isoiecieee-24765)
-  - [Software component - ISO/IEC/IEEE 24765](#software-component---isoiecieee-24765)
-  - [Software product - ISO/IEC/IEEE 24765](#software-product---isoiecieee-24765)
-  - [Software unit - ISO/IEC/IEEE 24765](#software-unit---isoiecieee-24765)
-  - [Solution - ISO/IEC/IEEE 24765](#solution---isoiecieee-24765)
-  - [Stakeholder - IREB CPRE](#stakeholder---ireb-cpre)
-  - [System - ISO/IEC/IEEE 15288](#system---isoiecieee-15288)
-  - [System actor - ARCADIA](#system-actor---arcadia)
-  - [System breakdown structure - ISO/IEC/IEEE 24765](#system-breakdown-structure---isoiecieee-24765)
-  - [System element - ISO/IEC/IEEE 15288](#system-element---isoiecieee-15288)
-  - [Systems engineering - ISO/IEC/IEEE 15288](#systems-engineering---isoiecieee-15288)
-  - [Task - ISO/IEC/IEEE 24765](#task---isoiecieee-24765)
-  - [Technical safety requirement - ISO 26262-1](#technical-safety-requirement---iso-26262-1)
-  - [Teleological behavior - Behavior, Purpose and Teleology 1943](#teleological-behavior---behavior,-purpose-and-teleology-1943)
-  - [Test - ISO/IEC/IEEE 24765](#test---isoiecieee-24765)
-  - [Test case - IEEE 1012](#test-case---ieee-1012)
-  - [Test run - ISTQB](#test-run---istqb)
-  - [Test suite - ISTQB](#test-suite---istqb)
-  - [Threat analysis and risk assessment - ISO/SAE 21434](#threat-analysis-and-risk-assessment---isosae-21434)
-  - [Threat scenario - ISO/SAE 21434](#threat-scenario---isosae-21434)
-  - [Validation - IEEE 1012](#validation---ieee-1012)
-  - [Value - EN 12973](#value---en-12973)
-  - [Verification - IEEE 1012](#verification---ieee-1012)
-  - [Vulnerability - ISO/SAE 21434](#vulnerability---isosae-21434)
-  - [Weakness - ISO/SAE 21434](#weakness---isosae-21434)
+  - [Acceptance - IEEE 1012](#acceptance-ieee-1012)
+  - [Activity - ISO/IEC/IEEE 24765](#activity-isoiecieee-24765)
+  - [Analytical Model - ISO/IEC/IEEE 24641](#analytical-model-isoiecieee-24641)
+  - [Architecture - ISO 26262-1](#architecture-iso-26262-1)
+  - [Architecture - ISO/IEC/IEEE 15288](#architecture-isoiecieee-15288)
+  - [Architecture - ISO/IEC/IEEE 42010](#architecture-isoiecieee-42010)
+  - [Asset - ISO/IEC/IEEE 24765](#asset-isoiecieee-24765)
+  - [Asset - ISO/SAE 21434](#asset-isosae-21434)
+  - [Attack path - ISO/SAE 21434](#attack-path-isosae-21434)
+  - [Attribute - ISO/IEC/IEEE 24765](#attribute-isoiecieee-24765)
+  - [Behavioral component - ARCADIA](#behavioral-component-arcadia)
+  - [Behavioral port - ARCADIA](#behavioral-port-arcadia)
+  - [Change - ISO/IEC/IEEE 24765](#change-isoiecieee-24765)
+  - [Computer program - ISO/IEC/IEEE 24765](#computer-program-isoiecieee-24765)
+  - [Constraint - IREB CPRE](#constraint-ireb-cpre)
+  - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control-isosae-21434)
+  - [Cybersecurity goal - ISO/SAE 21434](#cybersecurity-goal-isosae-21434)
+  - [Decision gate - ISO/IEC/IEEE 24765](#decision-gate-isoiecieee-24765)
+  - [Demonstration - ISO/IEC/IEEE 24765](#demonstration-isoiecieee-24765)
+  - [Descriptive Model - ISO/IEC/IEEE 24641](#descriptive-model-isoiecieee-24641)
+  - [Enabling system - ISO/IEC/IEEE 15288](#enabling-system-isoiecieee-15288)
+  - [Epic - SAFe 6.0](#epic-safe-60)
+  - [Failure - ISO 26262-1](#failure-iso-26262-1)
+  - [Fault - ISO 26262-1](#fault-iso-26262-1)
+  - [Feature - SAFe 6.0](#feature-safe-60)
+  - [Function - ISO/IEC/IEEE 24765](#function-isoiecieee-24765)
+  - [Functional analysis - ISO/IEC/IEEE 24765](#functional-analysis-isoiecieee-24765)
+  - [Functional architecture - ISO/IEC/IEEE 24765](#functional-architecture-isoiecieee-24765)
+  - [Functional exchange - ARCADIA](#functional-exchange-arcadia)
+  - [Functional Requirement - IREB CPRE](#functional-requirement-ireb-cpre)
+  - [Functional safety requirement - ISO 26262-1](#functional-safety-requirement-iso-26262-1)
+  - [Goal - Requirements Engineering Fundamentals 2nd Edition](#goal-requirements-engineering-fundamentals-2nd-edition)
+  - [Hardware - ISO/IEC/IEEE 24765](#hardware-isoiecieee-24765)
+  - [Hazard - ISO 26262-1](#hazard-iso-26262-1)
+  - [Hazard analysis and risk assessment - ISO 26262-1](#hazard-analysis-and-risk-assessment-iso-26262-1)
+  - [Hazardous event - ISO 26262-1](#hazardous-event-iso-26262-1)
+  - [Holism - General System Theory: Foundations, Development, Applications Revised Edition 1973](#holism-general-system-theory-foundations-development-applications-revised-edition-1973)
+  - [Hosting physical component - ARCADIA](#hosting-physical-component-arcadia)
+  - [Inspection - ISO/IEC/IEEE 24765](#inspection-isoiecieee-24765)
+  - [Integration testing - ISTQB](#integration-testing-istqb)
+  - [Interface - ISO/IEC/IEEE 24765](#interface-isoiecieee-24765)
+  - [Iteration - ISO/IEC/IEEE 24765](#iteration-isoiecieee-24765)
+  - [Mechanism - How does it work ? 2004](#mechanism-how-does-it-work-2004)
+  - [Meta model - ISO/IEC/IEEE 24641](#meta-model-isoiecieee-24641)
+  - [Model - ISO/IEC/IEEE 24641](#model-isoiecieee-24641)
+  - [Non-functional Requirement - IREB CPRE](#non-functional-requirement-ireb-cpre)
+  - [Operational interaction - ARCADIA](#operational-interaction-arcadia)
+  - [Operational mode - Systems Opportunities and Requirements](#operational-mode-systems-opportunities-and-requirements)
+  - [Phase gate - ISO/IEC/IEEE 24765](#phase-gate-isoiecieee-24765)
+  - [Physical port - ARCADIA](#physical-port-arcadia)
+  - [Problem - ISO/IEC/IEEE 24765](#problem-isoiecieee-24765)
+  - [Product - ISO/IEC/IEEE 24765](#product-isoiecieee-24765)
+  - [Product analysis - ISO/IEC/IEEE 24765](#product-analysis-isoiecieee-24765)
+  - [Product breakdown structure - ISO/IEC/IEEE 24765](#product-breakdown-structure-isoiecieee-24765)
+  - [Project - ISO/IEC/IEEE 24765](#project-isoiecieee-24765)
+  - [Project risk - ISO/IEC/IEEE 24765](#project-risk-isoiecieee-24765)
+  - [Quality Requirement - IREB CPRE](#quality-requirement-ireb-cpre)
+  - [Reductionism - A perspective on systems science and systems philosophy 1974](#reductionism-a-perspective-on-systems-science-and-systems-philosophy-1974)
+  - [Release - ISO/IEC/IEEE 24765](#release-isoiecieee-24765)
+  - [Requirement - IREB CPRE](#requirement-ireb-cpre)
+  - [Residual risk - ISO/IEC/IEEE 24765](#residual-risk-isoiecieee-24765)
+  - [Risk - IEEE 1012](#risk-ieee-1012)
+  - [Risk analysis - ISO/IEC/IEEE 24765](#risk-analysis-isoiecieee-24765)
+  - [Role - W3C Organization Ontology](#role-w3c-organization-ontology)
+  - [Safety goal - ISO 26262-1](#safety-goal-iso-26262-1)
+  - [Safety mechanism - ISO 26262-1](#safety-mechanism-iso-26262-1)
+  - [Service - ISO/IEC/IEEE 24765](#service-isoiecieee-24765)
+  - [Service contract - Service-Oriented Architecture Ontology 2.0](#service-contract-service-oriented-architecture-ontology-20)
+  - [Service level agreement - ISO/IEC/IEEE 24765](#service-level-agreement-isoiecieee-24765)
+  - [Software component - ISO/IEC/IEEE 24765](#software-component-isoiecieee-24765)
+  - [Software product - ISO/IEC/IEEE 24765](#software-product-isoiecieee-24765)
+  - [Software unit - ISO/IEC/IEEE 24765](#software-unit-isoiecieee-24765)
+  - [Solution - ISO/IEC/IEEE 24765](#solution-isoiecieee-24765)
+  - [Stakeholder - IREB CPRE](#stakeholder-ireb-cpre)
+  - [System - ISO/IEC/IEEE 15288](#system-isoiecieee-15288)
+  - [System actor - ARCADIA](#system-actor-arcadia)
+  - [System breakdown structure - ISO/IEC/IEEE 24765](#system-breakdown-structure-isoiecieee-24765)
+  - [System element - ISO/IEC/IEEE 15288](#system-element-isoiecieee-15288)
+  - [Systems engineering - ISO/IEC/IEEE 15288](#systems-engineering-isoiecieee-15288)
+  - [Task - ISO/IEC/IEEE 24765](#task-isoiecieee-24765)
+  - [Technical safety requirement - ISO 26262-1](#technical-safety-requirement-iso-26262-1)
+  - [Teleological behavior - Behavior, Purpose and Teleology 1943](#teleological-behavior-behavior-purpose-and-teleology-1943)
+  - [Test - ISO/IEC/IEEE 24765](#test-isoiecieee-24765)
+  - [Test case - IEEE 1012](#test-case-ieee-1012)
+  - [Test run - ISTQB](#test-run-istqb)
+  - [Test suite - ISTQB](#test-suite-istqb)
+  - [Threat analysis and risk assessment - ISO/SAE 21434](#threat-analysis-and-risk-assessment-isosae-21434)
+  - [Threat scenario - ISO/SAE 21434](#threat-scenario-isosae-21434)
+  - [Validation - IEEE 1012](#validation-ieee-1012)
+  - [Value - EN 12973](#value-en-12973)
+  - [Verification - IEEE 1012](#verification-ieee-1012)
+  - [Vulnerability - ISO/SAE 21434](#vulnerability-isosae-21434)
+  - [Weakness - ISO/SAE 21434](#weakness-isosae-21434)
 - [References](#references)
   - [A perspective on systems science and systems philosophy](#a-perspective-on-systems-science-and-systems-philosophy)
-  - [ARCADIA language reference : meta model](#arcadia-language-reference--meta-model)
-  - [Behavior, Purpose and Teleology](#behavior,-purpose-and-teleology)
+  - [ARCADIA language reference : meta model](#arcadia-language-reference-meta-model)
+  - [Behavior, Purpose and Teleology](#behavior-purpose-and-teleology)
   - [EN 12973:2020](#en-129732020)
-  - [General System Theory: Foundations, Development, Applications Revised Edition 1973](#general-system-theory-foundations,-development,-applications-revised-edition-1973)
-  - [How Does It Work? The Search for Explanatory Mechanisms](#how-does-it-work?-the-search-for-explanatory-mechanisms)
+  - [General System Theory: Foundations, Development, Applications Revised Edition 1973](#general-system-theory-foundations-development-applications-revised-edition-1973)
+  - [How Does It Work? The Search for Explanatory Mechanisms](#how-does-it-work-the-search-for-explanatory-mechanisms)
   - [IEEE 1012:2016](#ieee-10122016)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO 26262-1:2018](#iso-26262-12018)
@@ -368,14 +368,30 @@ This glossary contains **250 3SE term(s)**, **93 other term(s)** and **24 refere
   - [ISO/IEC/IEEE 42010:2022](#isoiecieee-420102022)
   - [ISO/SAE 21434:2021](#isosae-214342021)
   - [ISTQB Glossary](#istqb-glossary)
-  - [OMG Systems Modeling Language™ (SysML®) 2.0 - Part 1: Language Specification](#omg-systems-modeling-language™-(sysml®)-20---part-1-language-specification)
-  - [OMG® Unified Modeling Language® (OMG UML®)](#omg®-unified-modeling-language®-(omg-uml®))
+  - [OMG Systems Modeling Language™ (SysML®) 2.0 - Part 1: Language Specification](#omg-systems-modeling-language-sysml-20-part-1-language-specification)
+  - [OMG® Unified Modeling Language® (OMG UML®)](#omg-unified-modeling-language-omg-uml)
   - [Requirements Engineering Fundamentals](#requirements-engineering-fundamentals)
-  - [Scaled Agile Framework [SAFe] - 6.0](#scaled-agile-framework-[safe]---60)
-  - [Service-Oriented Architecture Ontology - 2.0](#service-oriented-architecture-ontology---20)
+  - [Scaled Agile Framework [SAFe] - 6.0](#scaled-agile-framework-safe-60)
+  - [Service-Oriented Architecture Ontology - 2.0](#service-oriented-architecture-ontology-20)
   - [Systems Opportunities and Requirements](#systems-opportunities-and-requirements)
   - [The Organization Ontology](#the-organization-ontology)
   - [The PROV Namespace](#the-prov-namespace)
+- [3SE Properties](#3se-properties)
+  - [allocates - 3SE](#allocates-3se)
+  - [canBe - 3SE](#canbe-3se)
+  - [exposes - 3SE](#exposes-3se)
+  - [isAccountableFor - 3SE](#isaccountablefor-3se)
+  - [isComposedOf - 3SE](#iscomposedof-3se)
+  - [isRepresentedBy - 3SE](#isrepresentedby-3se)
+  - [isResponsibleFor - 3SE](#isresponsiblefor-3se)
+  - [isSupporting - 3SE](#issupporting-3se)
+- [Other Properties](#other-properties)
+  - [abstraction - UML](#abstraction-uml)
+  - [allocation definition - SysML](#allocation-definition-sysml)
+  - [composite aggregation - UML](#composite-aggregation-uml)
+  - [provided - UML](#provided-uml)
+  - [required - UML](#required-uml)
+  - [wasAssociatedWith - W3C](#wasassociatedwith-w3c)
 
 ---
 
@@ -2095,8 +2111,8 @@ flowchart TD
     N9 -->|composed of| N13
     N9 -.->|allocates| N14
     N15 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N15 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3816,10 +3832,10 @@ flowchart TD
     N10 -.->|exposes| N13
     N14 -.->|exposes| N17
     N23 -->|subclass of| N1
-    N16 -.->|allocates| N12
-    N22 -.->|allocates| N21
     N20 -.->|allocates| N23
+    N16 -.->|allocates| N12
     N12 -.->|allocates| N22
+    N22 -.->|allocates| N21
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6291,5 +6307,220 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **URL** | [https://www.w3.org/ns/prov](https://www.w3.org/ns/prov) |
 
 *Created: 2026-03-26 · Modified: 2026-03-26 · Creator: @rcasteran*
+
+---
+
+## 3SE Properties
+
+*8 propert(ies) defined by the 3SE framework.*
+
+### allocates - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a source element to a target element to which some or all of the responsibility to realize the intent of the source is assigned.
+Such a relation defines a mapping across the various structures and hierarchies of a system, and may serve as a precursor to more rigorous specifications and implementations.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+| Sub-property of | [allocation-definition-sysml-spec-2-0-part-1-069c841061157919](https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919) |
+
+*Created: 2026-03-28 · Modified: 2026-04-04 · Creator: @rcasteran*
+
+---
+
+### canBe - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a source concept to a target concept which may, under certain conditions, be an instance or a realisation of the source concept.
+This relation expresses a potential, contingent relationship between two concepts.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+
+*Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### exposes - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a source element to an interface through which it exchanges flows with its environment.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+| Sub-property of | [provided-uml-spec-2-5-1-069cd94b89777912](https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912), [required-uml-spec-2-5-1-069cd94b898170f1](https://www.3se.info/3se-onto/properties/required-uml-spec-2-5-1-069cd94b898170f1) |
+
+*Created: 2026-04-01 · Modified: 2026-04-02 · Creator: @rcasteran*
+
+---
+
+### isAccountableFor - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a role to a concept for which the role owns the outcome and bears ultimate responsibility, regardless of who executes the work. Only one role should be accountable for a given concept.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773` |
+| Range | `skos:Concept` |
+| Sub-property of | [was-associated-with-w3c-prov-2013-069c527ae0af7f13](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13) |
+
+*Created: 2026-03-26 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### isComposedOf - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Strong form of aggregation that relates a composite entity to its parts, where each part instance is included in at most one composite instance at a time.
+ If the composite instance is decommissioned, all of its parts instances are decommissioned.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+
+*Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### isRepresentedBy - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relationship that relates an entity to a more abstract element that represents the same concept at a higher level of abstraction.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+
+*Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### isResponsibleFor - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a role to a concept for which the role executes the work and ensures its delivery. A role can be responsible for a concept without being accountable for it.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773` |
+| Range | `skos:Concept` |
+| Sub-property of | [was-associated-with-w3c-prov-2013-069c527ae0af7f13](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13) |
+
+*Created: 2026-03-26 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### isSupporting - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a role to a concept to which the role contributes resources, expertise, or effort without bearing primary responsibility or accountability for it.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773` |
+| Range | `skos:Concept` |
+| Sub-property of | [was-associated-with-w3c-prov-2013-069c527ae0af7f13](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13) |
+
+*Created: 2026-03-26 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+## Other Properties
+
+*6 propert(ies) sourced from external standards and frameworks.*
+
+### abstraction - UML
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Relationship that relates two elements or sets of elements that represent the same concept at different levels of abstraction or from different viewpoints.
+
+**References:** [OMG® Unified Modeling Language® (OMG UML®)](https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4)
+
+*Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### allocation definition - SysML
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> An AllocationDefinition is a ConnectionDefinition that specifies that some or all of the responsibility to realize the intent of the source is allocated to the target instances.
+Such allocations define mappings across the various structures and hierarchies of a system model, perhaps as a precursor to more rigorous specifications and implementations.
+An AllocationDefinition can itself be refined using nested allocations that give a finer-grained decomposition of the containing allocation mapping.
+
+**References:** [OMG Systems Modeling Language™ (SysML®) 2.0 - Part 1: Language Specification](https://www.3se.info/3se-onto/references/sysml-spec-2-0-part-1-069c841060f375be)
+
+*Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### composite aggregation - UML
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Composite aggregation is a strong form of aggregation that requires a part object be included in at most one composite object at a time. If a composite object is deleted, all of its part instances that are objects are deleted with it.
+
+**References:** [OMG® Unified Modeling Language® (OMG UML®)](https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4)
+
+*Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### provided - UML
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Association end that denotes the Interface that the Component exposes to its environment.
+
+**References:** [OMG® Unified Modeling Language® (OMG UML®)](https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4)
+
+*Created: 2026-04-01 · Modified: 2026-04-01 · Creator: @rcasteran*
+
+---
+
+### required - UML
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Association end that denotes the Interface that the Component requires from other Components in its environment in order to be able to offer its full set of provided functionality.
+
+**References:** [OMG® Unified Modeling Language® (OMG UML®)](https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4)
+
+*Created: 2026-04-01 · Modified: 2026-04-01 · Creator: @rcasteran*
+
+---
+
+### wasAssociatedWith - W3C
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity.
+It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.
+
+| Relation | Value |
+|---|---|
+| Sub-property of | [prov#wasAssociatedWith](https://www.w3.org/ns/prov#wasAssociatedWith) |
+
+**References:** [The PROV Namespace](https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49)
+
+*Created: 2026-03-26 · Modified: 2026-03-28 · Creator: @rcasteran*
 
 ---
