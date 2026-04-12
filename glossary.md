@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-12 23:09 UTC*
+*Generated on 2026-04-12 23:24 UTC*
 
 This glossary contains **266 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -1388,7 +1388,6 @@ flowchart TD
     N7["Hardware component function"]
     N8["Hardware function"]
     N9["Hardware feature"]
-    N10["System element function"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
@@ -1397,7 +1396,6 @@ flowchart TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N8 -.->|allocates| N10
     N3 -.->|allocates| N8
     N5 -.->|allocates| N6
     N4 -.->|allocates| N7
@@ -1482,8 +1480,8 @@ flowchart TD
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Superclass of | [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8) |
 | Composed of | [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be) |
-| Allocates | [hardware-feature-3se-069c058ef4b77346](https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
-| Allocated by | [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c) |
+| Allocates | [hardware-feature-3se-069c058ef4b77346](https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346) |
+| Allocated by | [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
 
 *Created: 2026-03-21 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -1602,8 +1600,8 @@ flowchart TD
 | Related | [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Composed of | [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86) |
-| Allocates | [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
-| Allocated by | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
+| Allocates | [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488) |
+| Allocated by | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 
 *Created: 2026-03-29 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -1632,19 +1630,14 @@ flowchart TD
     N3["Hardware block state"]
     N4["Hardware function"]
     N5["Hardware feature"]
-    N6["System element function"]
-    N7["Hardware state"]
-    N8["System element state"]
+    N6["Hardware state"]
 
     N1 -->|composed of| N2
     N3 -.->|allocates| N1
     N4 -->|composed of| N1
     N4 -.->|allocates| N5
-    N4 -.->|allocates| N6
-    N7 -->|composed of| N3
-    N7 -.->|allocates| N4
-    N7 -.->|allocates| N8
-    N8 -.->|allocates| N6
+    N6 -->|composed of| N3
+    N6 -.->|allocates| N4
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2330,8 +2323,8 @@ flowchart TD
     N9 -.->|allocates| N14
     N9 -.->|allocates| N15
     N16 -.->|represented by| N9
-    N16 -.->|allocates| N10
     N10 -->|subclass of| N1
+    N16 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3503,8 +3496,8 @@ flowchart TD
     N11 -.->|allocates| N15
     N11 -.->|allocates| N16
     N17 -.->|represented by| N11
-    N17 -.->|allocates| N12
     N12 -->|subclass of| N1
+    N17 -.->|allocates| N12
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3653,7 +3646,6 @@ flowchart TD
     N7["Software unit function"]
     N8["Software function"]
     N9["Software feature"]
-    N10["System element function"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
@@ -3662,10 +3654,9 @@ flowchart TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N8 -.->|allocates| N10
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3845,8 +3836,8 @@ flowchart TD
 | Superclass of | [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51) |
 | Related match | [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
 | Composed of | [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da) |
-| Allocates | [software-feature-3se-069c058ef5187d78](https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
-| Allocated by | [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597) |
+| Allocates | [software-feature-3se-069c058ef5187d78](https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78) |
+| Allocated by | [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
 
 *Created: 2026-03-21 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -3981,8 +3972,8 @@ flowchart TD
 | Related | [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Composed of | [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625) |
-| Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
-| Allocated by | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
+| Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd) |
+| Allocated by | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 
 *Created: 2026-03-29 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -4011,19 +4002,14 @@ flowchart TD
     N3["Software component state"]
     N4["Software function"]
     N5["Software feature"]
-    N6["System element function"]
-    N7["Software state"]
-    N8["System element state"]
+    N6["Software state"]
 
     N1 -->|composed of| N2
     N3 -.->|allocates| N1
     N4 -->|composed of| N1
     N4 -.->|allocates| N5
-    N4 -.->|allocates| N6
-    N7 -->|composed of| N3
-    N7 -.->|allocates| N4
-    N7 -.->|allocates| N8
-    N8 -.->|allocates| N6
+    N6 -->|composed of| N3
+    N6 -.->|allocates| N4
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4287,10 +4273,10 @@ flowchart TD
     N10 -.->|exposes| N13
     N14 -.->|exposes| N17
     N25 -->|subclass of| N1
+    N21 -.->|allocates| N25
+    N12 -.->|allocates| N24
     N16 -.->|allocates| N12
     N23 -.->|allocates| N20
-    N12 -.->|allocates| N24
-    N21 -.->|allocates| N25
     N24 -.->|allocates| N22
 ```
 
@@ -4542,9 +4528,10 @@ Therefore, it is accountable for the variability analysis.
 |---|---|
 | Related | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
-| Allocated by | [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
+| Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488) |
+| Allocated by | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 
-*Created: 2026-03-29 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-13 · Creator: @rcasteran*
 
 ---
 
@@ -4591,10 +4578,10 @@ Therefore, it is accountable for the variability analysis.
 |---|---|
 | Related | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
-| Allocates | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
-| Allocated by | [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
+| Allocates | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597) |
+| Allocated by | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 
-*Created: 2026-03-29 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-13 · Creator: @rcasteran*
 
 ---
 
@@ -4678,7 +4665,7 @@ Therefore, it is accountable for the operational analysis, the system functional
 | Can be | [high-level-system-function-3se-069c03f8a415717a](https://www.3se.info/3se-onto/terms/high-level-system-function-3se-069c03f8a415717a) |
 | Allocated by | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 
-*Created: 2026-03-21 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -4709,6 +4696,8 @@ flowchart TD
     N5["System element function"]
     N6["System functional requirement"]
     N7["System non-functional requirement"]
+    N8["Software function"]
+    N9["Hardware function"]
 
     N1 -.->|allocates| N2
     N3 -->|composed of| N4
@@ -4717,6 +4706,8 @@ flowchart TD
     N4 -.->|allocates| N6
     N4 -.->|allocates| N7
     N4 -.->|can be| N3
+    N5 -.->|allocates| N8
+    N5 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4941,6 +4932,10 @@ flowchart TD
     N7["Activity"]
     N8["System functional requirement"]
     N9["High level system function"]
+    N10["Software function"]
+    N11["Hardware function"]
+    N12["Hardware state"]
+    N13["Software state"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
@@ -4954,7 +4949,13 @@ flowchart TD
     N9 -->|composed of| N3
     N5 -->|composed of| N1
     N5 -.->|allocates| N9
+    N6 -.->|allocates| N10
+    N6 -.->|allocates| N11
     N2 -.->|allocates| N6
+    N2 -.->|allocates| N12
+    N2 -.->|allocates| N13
+    N12 -.->|allocates| N11
+    N13 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
