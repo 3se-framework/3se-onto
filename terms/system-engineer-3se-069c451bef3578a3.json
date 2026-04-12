@@ -9,7 +9,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
   "related": [
-    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
   ],
   "isResponsibleFor": [
@@ -23,7 +22,8 @@
     "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b",
-    "https://www.3se.info/3se-onto/terms/function-model-3se-069d3f26ae0e7b05"
+    "https://www.3se.info/3se-onto/terms/function-model-3se-069d3f26ae0e7b05",
+    "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
