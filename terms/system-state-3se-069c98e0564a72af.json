@@ -13,7 +13,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
