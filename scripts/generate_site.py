@@ -952,31 +952,31 @@ def render_breakdown_diagram(term: dict, terms_index: dict,
                     label_for(represented_uri)
                     edges.append((represented_uri, "representation", rel_uri))
 
-        # subClassOf and exposes: iterate over ALL related URIs (not just already-
-        # registered ones) so that terms carrying only these relations — and no
-        # primary-pass relations — are still included when their target is registered.
-        # A node is registered here for the first time when needed.
-        registered_uris = set(node_ids.keys())
-        for child_uri in related_uris:
-            child_term = terms_index.get(child_uri)
-            if child_term is None:
-                continue
-            subclass_of = child_term.get("subClassOf") or []
-            if isinstance(subclass_of, str):
-                subclass_of = [subclass_of]
-            for parent_uri in subclass_of:
-                if parent_uri in registered_uris:
-                    node_id(child_uri)
-                    label_for(child_uri)
-                    edges.append((child_uri, "subclassof", parent_uri))
-            exposes = child_term.get("exposes") or []
-            if isinstance(exposes, str):
-                exposes = [exposes]
-            for iface_uri in exposes:
-                if iface_uri in registered_uris:
-                    node_id(child_uri)
-                    label_for(child_uri)
-                    edges.append((child_uri, "exposes", iface_uri))
+    # subClassOf and exposes: iterate over ALL related URIs (not just already-
+    # registered ones) so that terms carrying only these relations — and no
+    # primary-pass relations — are still included when their target is registered.
+    # A node is registered here for the first time when needed.
+    registered_uris = set(node_ids.keys())
+    for child_uri in related_uris:
+        child_term = terms_index.get(child_uri)
+        if child_term is None:
+            continue
+        subclass_of = child_term.get("subClassOf") or []
+        if isinstance(subclass_of, str):
+            subclass_of = [subclass_of]
+        for parent_uri in subclass_of:
+            if parent_uri in registered_uris:
+                node_id(child_uri)
+                label_for(child_uri)
+                edges.append((child_uri, "subclassof", parent_uri))
+        exposes = child_term.get("exposes") or []
+        if isinstance(exposes, str):
+            exposes = [exposes]
+        for iface_uri in exposes:
+            if iface_uri in registered_uris:
+                node_id(child_uri)
+                label_for(child_uri)
+                edges.append((child_uri, "exposes", iface_uri))
 
     if not edges:
         return ""
