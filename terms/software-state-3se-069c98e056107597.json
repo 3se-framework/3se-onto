@@ -15,6 +15,9 @@
     "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
     "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
   ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
+  ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-04-12",
   "entryCreator": {
