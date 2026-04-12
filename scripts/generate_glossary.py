@@ -800,9 +800,9 @@ def main() -> int:
     md: list[str] = ["# 3SE Glossary", "", f"*Generated on {now}*", "",
                      f"This glossary contains **{len(se3_terms)} 3SE term(s)**, "
                      f"**{len(other_terms)} other term(s)**, "
-                     f"**{len(references)} reference(s)**,"
-                     f"**{len(se3_properties)} property(ies)**,"
-                     f"and **{len(other_properties)} other property(ies) ", "", "## Contents", "",
+                     f"**{len(se3_properties)} 3SE property(ies)**,"
+                     f"**{len(other_properties)} other property(ies)**,"
+                     f"and **{len(references)} reference(s)**.", "", "## Contents", "",
                      "- [3SE Terms](#3se-terms)"]
 
     # ── Header ──────────────────────────────────────────────────────────────
