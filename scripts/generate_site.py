@@ -217,6 +217,23 @@ def build_represents_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_allocated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an allocates target. Used to compute the inverse 'allocated by'
+    relation: if A allocates B, then B is allocated by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("allocates")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -1905,10 +1922,10 @@ def render_role_analysis_matrix(
 </div>"""
 
 
-def render_term_page(term: dict, ref_index: dict[str, dict],
-                     superclass_index: dict[str, list[dict]] | None = None,
+def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None = None,
                      terms_index: dict[str, dict] | None = None,
-                     represents_index: dict[str, list[dict]] | None = None) -> str:
+                     represents_index: dict[str, list[dict]] | None = None,
+                     allocated_by_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2062,6 +2079,19 @@ def render_term_page(term: dict, ref_index: dict[str, dict],
             f'<td>{SEP.join(links)}</td>'
             f'</tr>'
         )
+
+    # Allocated by (computed inverse of allocates)
+    if allocated_by_index:
+        term_id = term.get("@id", "")
+        allocating_terms = allocated_by_index.get(term_id, [])
+        if allocating_terms:
+            links = [render_uri_link(t.get("@id", "")) for t in allocating_terms]
+            bfo_html += (
+                f'<tr>'
+                f'<td>Allocated by</td>'
+                f'<td>{SEP.join(links)}</td>'
+                f'</tr>'
+            )
 
     # Role relations (isResponsibleFor / isAccountableFor / isSupporting)
     role_html = ""
@@ -2465,6 +2495,7 @@ def main() -> int:
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
     represents_index = build_represents_index(terms)
+    allocated_by_index = build_allocated_by_index(terms)
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
@@ -2520,7 +2551,7 @@ def main() -> int:
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
             render_term_page(term, ref_index, superclass_index, terms_index,
-                             represents_index), encoding="utf-8"
+                             represents_index, allocated_by_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",
