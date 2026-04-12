@@ -26,6 +26,6 @@
     "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86"
   ],
   "exposes": [
-    "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se"
+    "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340"
   ]
 }
