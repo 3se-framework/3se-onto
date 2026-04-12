@@ -1,13 +1,13 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Function model - 3SE",
-  "description": "Conceptual model which represents the sytem functional analysis based on the system function breakdown structure.",
+  "title": "System function model - 3SE",
+  "description": "Conceptual model which represents the system functional analysis based on the system function breakdown structure.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/function-model-3se-069d3f26ae0e7b05",
+  "@id": "https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d"
   ],
