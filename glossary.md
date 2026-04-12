@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-04-12 18:01 UTC*
+*Generated on 2026-04-12 18:03 UTC*
 
-This glossary contains **250 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**,**6 other property(ies)**,and **24 reference(s)**.
+This glossary contains **250 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
 ## Contents
 
@@ -2111,8 +2111,8 @@ flowchart TD
     N9 -->|composed of| N13
     N9 -.->|allocates| N14
     N15 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N15 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3834,8 +3834,8 @@ flowchart TD
     N23 -->|subclass of| N1
     N20 -.->|allocates| N23
     N22 -.->|allocates| N21
-    N16 -.->|allocates| N12
     N12 -.->|allocates| N22
+    N16 -.->|allocates| N12
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-12 · Creator: @rcasteran*
