@@ -1071,7 +1071,7 @@ def render_analysis_allocates_diagram(
         node_labels[uri] = lbl
         return lbl
 
-    edges = []  # (subj_uri, obj_uri)
+    allocates_edges = []  # (subj_uri, obj_uri)
 
     for rel_uri in related_uris:
         rel_term = terms_index.get(rel_uri)
@@ -1085,13 +1085,28 @@ def render_analysis_allocates_diagram(
             label_for(rel_uri)
             node_id(obj_uri)
             label_for(obj_uri)
-            edges.append((rel_uri, obj_uri))
+            allocates_edges.append((rel_uri, obj_uri))
 
-    if not edges:
+    if not allocates_edges:
         return ""
 
+    # Collect subClassOf edges between nodes already registered in the diagram
+    subclassof_edges = []  # (child_uri, parent_uri)
+    registered_uris = set(node_ids.keys())
+    for child_uri in list(registered_uris):
+        child_term = terms_index.get(child_uri)
+        if child_term is None:
+            continue
+        subclass_of = child_term.get("subClassOf") or []
+        if isinstance(subclass_of, str):
+            subclass_of = [subclass_of]
+        for parent_uri in subclass_of:
+            if parent_uri in registered_uris:
+                subclassof_edges.append((child_uri, parent_uri))
+
     # Deduplicate
-    edges = list(dict.fromkeys(edges))
+    allocates_edges = list(dict.fromkeys(allocates_edges))
+    subclassof_edges = list(dict.fromkeys(subclassof_edges))
 
     # Deduplicate nodes by label (same logic as render_breakdown_diagram)
     label_to_primary_uri: dict[str, str] = {}
@@ -1105,11 +1120,16 @@ def render_analysis_allocates_diagram(
             label_to_primary_uri[lbl_lower] = uri
 
     if uri_remap:
-        edges = [
+        allocates_edges = [
             (uri_remap.get(s, s), uri_remap.get(o, o))
-            for s, o in edges
+            for s, o in allocates_edges
         ]
-        edges = list(dict.fromkeys(edges))
+        allocates_edges = list(dict.fromkeys(allocates_edges))
+        subclassof_edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in subclassof_edges
+        ]
+        subclassof_edges = list(dict.fromkeys(subclassof_edges))
         for uri in uri_remap:
             node_ids.pop(uri, None)
             node_labels.pop(uri, None)
@@ -1119,10 +1139,14 @@ def render_analysis_allocates_diagram(
         lbl = node_labels.get(uri, nid).replace('"', "'")
         lines.append(f'    {nid}["{lbl}"]')
     lines.append("")
-    for subj_uri, obj_uri in edges:
+    for subj_uri, obj_uri in allocates_edges:
         s = node_id(subj_uri)
         o = node_id(obj_uri)
         lines.append(f"    {s} -.->|allocates| {o}")
+    for child_uri, parent_uri in subclassof_edges:
+        c = node_id(child_uri)
+        p = node_id(parent_uri)
+        lines.append(f"    {c} -->|subclass of| {p}")
 
     mermaid_src = "\n".join(lines)
     return (
