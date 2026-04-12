@@ -9,7 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488",
   "related": [
-    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346"

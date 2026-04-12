@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software breakdown structure - 3SE",
+  "description": "Breakdown structure of the software that supports the software architecture by following the principles below:\n(1) A software is composed of at least two software components.\n(2) A software allocates a software function.\n(3) A software component allocates a software component function.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
+    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5",
+    "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da",
+    "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

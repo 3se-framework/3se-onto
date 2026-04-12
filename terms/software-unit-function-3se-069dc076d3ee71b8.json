@@ -12,5 +12,9 @@
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/software-unit-function-3se-069dc076d3ee71b8",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81"
+  ]
 }

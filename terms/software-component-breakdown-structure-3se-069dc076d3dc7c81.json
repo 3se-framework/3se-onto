@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software component breakdown structure - 3SE",
+  "description": "Breakdown structure of the software component that supports the software architecture by following the principles below:\n(1) A software component is composed of at least one software unit.\n(2) A software unit allocates a software unit function.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
+    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5",
+    "https://www.3se.info/3se-onto/terms/software-unit-3se-069b85f238eb7572",
+    "https://www.3se.info/3se-onto/terms/software-unit-function-3se-069dc076d3ee71b8"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
