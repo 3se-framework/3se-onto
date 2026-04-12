@@ -1,13 +1,13 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Requirement breakdown structure - 3SE",
-  "description": "Breakdown structure of the stakeholder requirement that supports the requirements analysis by following the principles below:\n(1) A stakeholder functional requirement is composed of at least one system functional requirement.\n(2) A stakeholder non-functional requirement is composed of at least one system non-functional requirement.\n(3) A stakeholder constraint is composed of at least one system constraint.\n(4) A stakeholder requirement is allocated to a feature.\n(5) A system functional requirement is allocated to a system function.\n(6) A system non-functional requirement is allocated to a flow, a system state, a functional interface or a functional element.\n(7) A system constraint is allocated to a physical interface or a physical element.",
+  "title": "Stakeholder requirement breakdown structure - 3SE",
+  "description": "Breakdown structure of the stakeholder requirement that supports the requirements analysis by following the principles below:\n(1) A stakeholder functional requirement is composed of at least one system functional requirement.\n(2) A stakeholder non-functional requirement is composed of at least one system non-functional requirement.\n(3) A stakeholder constraint is composed of at least one system constraint.\n(4) A stakeholder requirement is allocated to a feature.\n(5) A system functional requirement is allocated to a system function.\n(6) A system non-functional requirement is allocated to a flow, a system state, a functional interface or a functional element.\n(7) A system constraint is allocated to a physical interface or a physical element.\nNote: (4) implies that a stakeholder functional requirement or a stakeholder non-functional requirement is allocated to a system feature.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/requirement-breakdown-structure-3se-069da425d0607787",
+  "@id": "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787",
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
