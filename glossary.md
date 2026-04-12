@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-12 18:10 UTC*
+*Generated on 2026-04-12 18:18 UTC*
 
 This glossary contains **250 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -457,11 +457,11 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
+| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253) |
 | Narrow match | [system-actor-arcadia-2023-069c1a2fb8e277c9](https://www.3se.info/3se-onto/terms/system-actor-arcadia-2023-069c1a2fb8e277c9) |
 | Exposes | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
 
-*Created: 2026-03-23 · Modified: 2026-04-01 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -656,13 +656,13 @@ It contributes to the feature analysis and the requirements analysis.
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Presence of a subset of the interdependent actors and/orC interdependent systems of the milieu within a geometrically closed area surrounding the system of interest, that frames its behavior in a given situation.
+> Presence of a subset of the interdependent actors and/or interdependent systems of the milieu within a geometrically closed area surrounding the system of interest, that frames its behavior in a given situation.
 
 | Relation | Terms |
 |---|---|
 | Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
 
-*Created: 2026-03-23 · Modified: 2026-03-24 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -1605,14 +1605,14 @@ flowchart TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of the milieu of the system of interest to identify its interdependent entities, characterize their interactions with the system of interest, evaluate the emergent attributes and features as well as the resulting opportunities and risks, and determine the appropriate response strategies.
+> Analysis of the milieu of the system of interest to identify the interdependent systems and/or interdependent actors, characterize their dependence with the system of interest, evaluate the emergent attributes and features as well as the resulting opportunities and risks, and determine the appropriate response strategies.
 
 | Relation | Terms |
 |---|---|
-| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -1624,9 +1624,9 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 
-*Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -1638,10 +1638,10 @@ flowchart TD
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34) |
+| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
-*Created: 2026-03-24 · Modified: 2026-04-07 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -1776,13 +1776,13 @@ flowchart TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> The broader operational environment surrounding the system of interest, populated by interdependent systems and/or actors that are neither subordinate to nor in a defined relationship with the system of interest, but whose existence and behavior are consequential to it.
+> The broader operational environment surrounding the system of interest, populated by interdependent systems and/or interdependent actors that are neither subordinate to nor in a defined relationship with the system of interest, but whose existence and behavior are consequential to it.
 
 | Relation | Terms |
 |---|---|
-| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
+| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 
-*Created: 2026-03-23 · Modified: 2026-03-24 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
 
@@ -2111,8 +2111,8 @@ flowchart TD
     N9 -->|composed of| N13
     N9 -.->|allocates| N14
     N15 -.->|represented by| N9
-    N15 -.->|allocates| N10
     N10 -->|subclass of| N1
+    N15 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3282,8 +3282,8 @@ flowchart TD
     N11 -->|composed of| N14
     N11 -.->|allocates| N15
     N16 -.->|represented by| N11
-    N16 -.->|allocates| N12
     N12 -->|subclass of| N1
+    N16 -.->|allocates| N12
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3832,10 +3832,10 @@ flowchart TD
     N10 -.->|exposes| N13
     N14 -.->|exposes| N17
     N23 -->|subclass of| N1
-    N22 -.->|allocates| N21
     N16 -.->|allocates| N12
-    N12 -.->|allocates| N22
     N20 -.->|allocates| N23
+    N22 -.->|allocates| N21
+    N12 -.->|allocates| N22
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-12 · Creator: @rcasteran*
