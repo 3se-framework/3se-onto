@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-# Generates glossary.md from the terms/ and references/ directories.
+# Generates glossary.md from the terms/, references/ and properties/ directories.
 # Intended to be called by the GitHub Actions workflow generate_glossary.yml.
 #
 # Output structure:
 #   - Header with generation timestamp
 #   - Terms section: alphabetically sorted, with all available fields
 #   - References section: alphabetically sorted, with all available fields
+#   - Properties section: alphabetically sorted, with all available fields
 
 import json
 import re
@@ -15,6 +16,7 @@ from pathlib import Path
 
 TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
+PROPERTIES_DIR = Path("properties")
 OUTPUT_FILE = Path("glossary.md")
 
 REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
@@ -59,7 +61,7 @@ BIBO_TYPE_LABELS: dict[str, str] = {
     "bibo:Website": "Website",
 }
 
-# 3SE editorial status — used on term entries (plain string values)
+# 3SE editorial status — used on term and property entries (plain string values)
 TERM_STATUS_BADGES: dict[str, str] = {
     "draft": "![draft](https://img.shields.io/badge/status-draft-lightgrey)",
     "under review": "![under review](https://img.shields.io/badge/status-under%20review-yellow)",
@@ -119,6 +121,20 @@ def uri_to_anchor(uri: str) -> str:
     return uri.rstrip("/").rsplit("/", 1)[-1]
 
 
+def title_to_anchor(title: str) -> str:
+    """
+    Convert a heading title to a GitHub Markdown anchor fragment.
+    GitHub lowercases the title, replaces spaces with hyphens, and strips
+    all characters that are not alphanumeric, hyphens, or underscores.
+    Consecutive hyphens are collapsed to a single hyphen.
+    """
+    anchor = title.lower()
+    anchor = anchor.replace(" ", "-")
+    anchor = re.sub(r"[^\w\-]", "", anchor)
+    anchor = re.sub(r"-{2,}", "-", anchor)
+    return anchor
+
+
 def bibo_type_label(type_field) -> str:
     """Return a human-readable label for a bibo: type value or list."""
     if not type_field:
@@ -138,13 +154,20 @@ def md_inline_code(value: str) -> str:
 
 def split_terms(terms: list[dict]) -> tuple[list[dict], list[dict]]:
     """Split terms into 3SE-defined terms and other (external) terms.
-    A term is considered a 3SE term if its title ends with '- 3SE' or
-    its @id belongs to the 3SE terms namespace and has no isReferencedBy field.
-    In practice the reliable signal is the title suffix '- 3SE'.
+    A term is considered a 3SE term if its title ends with '- 3SE'.
     """
     se3_terms = [t for t in terms if t.get("title", "").endswith("- 3SE")]
     other_terms = [t for t in terms if not t.get("title", "").endswith("- 3SE")]
     return se3_terms, other_terms
+
+
+def split_properties(properties: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split properties into 3SE properties and other (external) properties.
+    A 3SE property has a title ending with '- 3SE', mirroring split_terms().
+    """
+    se3 = [p for p in properties if p.get("title", "").endswith("- 3SE")]
+    other = [p for p in properties if not p.get("title", "").endswith("- 3SE")]
+    return se3, other
 
 
 def build_reference_index(references: list[dict]) -> dict[str, dict]:
@@ -574,9 +597,8 @@ def render_reference(ref: dict) -> list[str]:
 
     title = ref.get("title", "*(untitled)*")
     bib_type = bibo_type_label(ref.get("@type"))
-    anchor = uri_to_anchor(ref.get("@id", ""))
 
-    # Heading — use anchor as the HTML id target for inbound links from terms
+    # Heading
     lines.append(f"### {title}")
     lines.append("")
 
@@ -678,12 +700,92 @@ def render_reference(ref: dict) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# Property rendering
+# ---------------------------------------------------------------------------
+
+def render_property(prop: dict, ref_index: dict[str, dict]) -> list[str]:
+    lines: list[str] = []
+
+    title = prop.get("title", "*(untitled)*")
+    status = prop.get("status", "")
+
+    # Heading
+    lines.append(f"### {title}")
+    lines.append("")
+
+    # Status badge (same plain-string values as terms)
+    if status and status in TERM_STATUS_BADGES:
+        lines.append(TERM_STATUS_BADGES[status])
+        lines.append("")
+
+    # Definition
+    if description := prop.get("description"):
+        lines.append(f"> {description}")
+        lines.append("")
+
+    # Relations table: domain, range, subPropertyOf
+    relation_rows: list[tuple[str, str]] = []
+
+    if domain := prop.get("domain"):
+        relation_rows.append(("Domain", md_inline_code(domain)))
+
+    if range_val := prop.get("range"):
+        relation_rows.append(("Range", md_inline_code(range_val)))
+
+    sub_of = prop.get("subPropertyOf", [])
+    if isinstance(sub_of, str):
+        sub_of = [sub_of]
+    if sub_of:
+        links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in sub_of]
+        relation_rows.append(("Sub-property of", ", ".join(links)))
+
+    if relation_rows:
+        lines.append("| Relation | Value |")
+        lines.append("|---|---|")
+        for label, value in relation_rows:
+            lines.append(f"| {label} | {value} |")
+        lines.append("")
+
+    # Source references
+    is_ref_by = prop.get("isReferencedBy", [])
+    if isinstance(is_ref_by, str):
+        is_ref_by = [is_ref_by]
+    if is_ref_by:
+        ref_links = []
+        for uri in is_ref_by:
+            ref = ref_index.get(uri)
+            ref_title = ref.get("title", uri_to_anchor(uri)) if ref else uri_to_anchor(uri)
+            ref_links.append(f"[{ref_title}]({uri})")
+        lines.append(f"**References:** {', '.join(ref_links)}")
+        lines.append("")
+
+    # Provenance
+    provenance: list[str] = []
+    if created := prop.get("entryCreated"):
+        provenance.append(f"Created: {created}")
+    if modified := prop.get("entryModified"):
+        provenance.append(f"Modified: {modified}")
+    creators = agent_names(prop.get("entryCreator"))
+    if creators:
+        provenance.append(f"Creator: {', '.join(creators)}")
+    contributors = agent_names(prop.get("entryContributor"))
+    if contributors:
+        provenance.append(f"Contributors: {', '.join(contributors)}")
+    if provenance:
+        lines.append(f"*{' · '.join(provenance)}*")
+        lines.append("")
+
+    return lines
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 def main() -> int:
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
+    properties = load_directory(PROPERTIES_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
     represents_index = build_represents_index(terms)
@@ -691,44 +793,48 @@ def main() -> int:
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
+    se3_properties, other_properties = split_properties(properties)
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    md: list[str] = []
+    md: list[str] = ["# 3SE Glossary", "", f"*Generated on {now}*", "",
+                     f"This glossary contains **{len(se3_terms)} 3SE term(s)**, "
+                     f"**{len(other_terms)} other term(s)**, "
+                     f"**{len(references)} reference(s)**,"
+                     f"**{len(se3_properties)} property(ies)**,"
+                     f"and **{len(other_properties)} other property(ies) ", "", "## Contents", "",
+                     "- [3SE Terms](#3se-terms)"]
 
     # ── Header ──────────────────────────────────────────────────────────────
-    md.append("# 3SE Glossary")
-    md.append("")
-    md.append(f"*Generated on {now}*")
-    md.append("")
-    md.append(
-        f"This glossary contains **{len(se3_terms)} 3SE term(s)**, "
-        f"**{len(other_terms)} other term(s)** "
-        f"and **{len(references)} reference(s)**."
-    )
-    md.append("")
 
     # ── Table of contents ───────────────────────────────────────────────────
-    md.append("## Contents")
-    md.append("")
-    md.append("- [3SE Terms](#3se-terms)")
     for term in se3_terms:
         title = term.get("title", "")
-        anchor = title.lower().replace(" ", "-").replace("/", "").replace("(", "").replace(")", "")
+        anchor = title_to_anchor(title)
         if term.get("deprecated"):
             anchor += "-deprecated"
         md.append(f"  - [{title}](#{anchor})")
     md.append("- [Other Terms](#other-terms)")
     for term in other_terms:
         title = term.get("title", "")
-        anchor = title.lower().replace(" ", "-").replace("/", "").replace("(", "").replace(")", "")
+        anchor = title_to_anchor(title)
         if term.get("deprecated"):
             anchor += "-deprecated"
         md.append(f"  - [{title}](#{anchor})")
     md.append("- [References](#references)")
     for ref in references:
         title = ref.get("title", "")
-        anchor = title.lower().replace(" ", "-").replace("/", "").replace(".", "").replace(":", "")
+        anchor = title_to_anchor(title)
+        md.append(f"  - [{title}](#{anchor})")
+    md.append("- [3SE Properties](#3se-properties)")
+    for prop in se3_properties:
+        title = prop.get("title", "")
+        anchor = title_to_anchor(title)
+        md.append(f"  - [{title}](#{anchor})")
+    md.append("- [Other Properties](#other-properties)")
+    for prop in other_properties:
+        title = prop.get("title", "")
+        anchor = title_to_anchor(title)
         md.append(f"  - [{title}](#{anchor})")
     md.append("")
 
@@ -781,13 +887,45 @@ def main() -> int:
         md.append("*No references found.*")
         md.append("")
 
+    # ── 3SE Properties ───────────────────────────────────────────────────────
+    md.append("## 3SE Properties")
+    md.append("")
+    md.append(f"*{len(se3_properties)} propert(ies) defined by the 3SE framework.*")
+    md.append("")
+
+    if se3_properties:
+        for prop in se3_properties:
+            md.extend(render_property(prop, ref_index))
+            md.append("---")
+            md.append("")
+    else:
+        md.append("*No 3SE properties found.*")
+        md.append("")
+
+    # ── Other Properties ─────────────────────────────────────────────────────
+    md.append("## Other Properties")
+    md.append("")
+    md.append(f"*{len(other_properties)} propert(ies) sourced from external standards and frameworks.*")
+    md.append("")
+
+    if other_properties:
+        for prop in other_properties:
+            md.extend(render_property(prop, ref_index))
+            md.append("---")
+            md.append("")
+    else:
+        md.append("*No other properties found.*")
+        md.append("")
+
     # ── Write output ─────────────────────────────────────────────────────────
     OUTPUT_FILE.write_text("\n".join(md), encoding="utf-8")
     print(
         f"✅ Generated {OUTPUT_FILE} "
         f"({len(se3_terms)} 3SE term(s), "
         f"{len(other_terms)} other term(s), "
-        f"{len(references)} reference(s))."
+        f"{len(references)} reference(s), "
+        f"{len(se3_properties)} 3SE propert(ies), "
+        f"{len(other_properties)} other propert(ies))."
     )
     return 0
 
