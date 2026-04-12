@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software component function - 3SE",
+  "description": "Function of a software component.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/software-unit-function-3se"
+  ],
+  "entryCreated": "2026-03-21",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
