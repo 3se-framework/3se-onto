@@ -15,7 +15,8 @@
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
     "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
-    "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",

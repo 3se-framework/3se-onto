@@ -9,5 +9,15 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
