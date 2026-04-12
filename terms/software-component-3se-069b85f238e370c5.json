@@ -25,6 +25,6 @@
     "https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da"
+    "https://www.3se.info/3se-onto/terms/software-component-state-3se"
   ]
 }

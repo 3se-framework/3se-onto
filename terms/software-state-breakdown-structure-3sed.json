@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software state breakdown structure - 3SE",
+  "description": "Breakdown structure of the software state that supports the software architecture by following the principles below:\n(1) A software state is composed of at least two software component states.\n(2) A software state allocates at least one software function.\n(3) A software component state allocates at least one software component function.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ]
+}

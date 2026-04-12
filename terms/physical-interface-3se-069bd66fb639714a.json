@@ -10,7 +10,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/interface-breakdown-structure-3se-069cd5b860b47815",
+    "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787"

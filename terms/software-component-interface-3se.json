@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software component interface - 3SE",
+  "description": "Boundary across which a software component and a hardware element or two software components meet and exchange flows.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ]
+}
