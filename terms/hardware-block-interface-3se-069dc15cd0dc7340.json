@@ -10,7 +10,6 @@
   "@id": "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5",
     "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235"
   ],
   "entryCreated": "2026-04-12",
