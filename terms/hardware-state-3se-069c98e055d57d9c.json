@@ -8,8 +8,7 @@
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488",
-    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
+    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c",
   "related": [
