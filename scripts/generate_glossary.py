@@ -124,14 +124,14 @@ def uri_to_anchor(uri: str) -> str:
 def title_to_anchor(title: str) -> str:
     """
     Convert a heading title to a GitHub Markdown anchor fragment.
-    GitHub lowercases the title, replaces spaces with hyphens, and strips
-    all characters that are not alphanumeric, hyphens, or underscores.
-    Consecutive hyphens are collapsed to a single hyphen.
+    GitHub's algorithm: lowercase, strip everything that is not a unicode
+    word character (letter/digit/underscore), space, or hyphen, then replace
+    spaces with hyphens. Consecutive hyphens are NOT collapsed — ' - '
+    (space-hyphen-space) correctly produces '---'.
     """
     anchor = title.lower()
+    anchor = re.sub(r"[^\w\s\-]", "", anchor)
     anchor = anchor.replace(" ", "-")
-    anchor = re.sub(r"[^\w\-]", "", anchor)
-    anchor = re.sub(r"-{2,}", "-", anchor)
     return anchor
 
 
