@@ -14,7 +14,8 @@
     "https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81",
     "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597",
     "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025",
-    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
+    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a",
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
   ],
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44",

@@ -14,7 +14,8 @@
     "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71",
     "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c",
     "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235",
-    "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98"
+    "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98",
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
   ],
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44",

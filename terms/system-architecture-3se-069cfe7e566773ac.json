@@ -19,7 +19,8 @@
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
     "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6",
     "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442",
-    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],
   "entryCreated": "2026-04-03",
   "entryModified": "2026-04-12",

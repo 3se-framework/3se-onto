@@ -28,7 +28,8 @@
     "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed",
     "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71",
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
-    "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235"
+    "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
