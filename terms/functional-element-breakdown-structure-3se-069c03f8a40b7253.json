@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Functional element breakdown structure - 3SE",
-  "description": "Breakdown structure of the functional element that supports the functional architecture by following the principles below:\n(1) A high level functional element is composed of at least two functional elements.\n(2) A high level functional element allocates at least one high level state.\n(3) A functional element allocates at least one system state.\n(4) A functional element can be a high level functional element.",
+  "description": "Breakdown structure of the functional element that supports the functional architecture by following the principles below:\n(1) A high level functional element is composed of at least two functional elements.\n(2) A high level functional element allocates at least one high level system state.\n(3) A functional element allocates at least one system state.\n(4) A functional element can be a high level functional element.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
   "subClassOf": [
@@ -11,7 +11,7 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
     "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206",
-    "https://www.3se.info/3se-onto/terms/high-level-state-3se-069c062b3637735e",
+    "https://www.3se.info/3se-onto/terms/high-level-system-state-3se-069c062b3637735e",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
     "https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc",
     "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
