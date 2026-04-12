@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System interface breakdown structure - 3SE",
-  "description": "Breakdown structure of the system interface that supports the system architecture by following the principles below:\n(1) A system interface is composed of at least one system element interface.\n(2) A system element interface allocates a physical interface.\n(3) A system element interface can be a system interface.",
+  "description": "Breakdown structure of the system interface that supports the system architecture by following the principles below:\n(1) A system interface is composed of at least one system element interface.\n(2) A system exposes at least one system interface.\n(3) A system element exposes at least one system element interface.\n(4) A system element interface allocates a physical interface.\n(5) A system element interface can be a system interface.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
   "subClassOf": [

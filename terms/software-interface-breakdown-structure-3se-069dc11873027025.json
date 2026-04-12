@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Software interface breakdown structure - 3SE",
-  "description": "Breakdown structure of the software interface that supports the software architecture by following the principles below:\n(1) A software interface is composed of at least one software component interface.",
+  "description": "Breakdown structure of the software interface that supports the software architecture by following the principles below:\n(1) A software interface is composed of at least one software component interface.\n(2) A software exposes at least one software interface.\n(3) A software component exposes at least one software component interface.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
