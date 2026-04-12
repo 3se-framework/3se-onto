@@ -17,7 +17,8 @@
     "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78"
+    "https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78",
+    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da"

@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System state breakdown structure - 3SE",
-  "description": "Breakdown structure of the system state that supports the functional architecture by following the principles below:\n(1) A high level system state is composed of at least two system states.\n(2) A high level system state allocates at least one high level system function.\n(3) A system state allocates at least one system function.\n(4) A system state can be a high level system state.",
+  "description": "Breakdown structure of the system state that supports the functional architecture by following the principles below:\n(1) A high level system state is composed of at least two system states.\n(2) A system state is composed of at least two system element states.\n(3) A high level system state allocates at least one high level system function.\n(4) A system state allocates at least one system function.\n(5) A system element state allocates at least one system element function.\n(6) A system state can be a high level system state.\nNote: principle (6) excludes principe (2)",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d",
   "subClassOf": [

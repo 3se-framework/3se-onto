@@ -17,7 +17,8 @@
     "https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346"
+    "https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346",
+    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
   ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-04-12",

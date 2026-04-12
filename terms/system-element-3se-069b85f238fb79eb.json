@@ -31,7 +31,8 @@
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
+    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
+    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
