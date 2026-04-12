@@ -16,5 +16,8 @@
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/hardware-component-3se-069a9bc4a34678c2"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/hardware-block-function-3se"
   ]
 }
