@@ -952,12 +952,14 @@ def render_breakdown_diagram(term: dict, terms_index: dict,
                     label_for(represented_uri)
                     edges.append((represented_uri, "representation", rel_uri))
 
-    # subClassOf and exposes: iterate over ALL related URIs (not just already-
-    # registered ones) so that terms carrying only these relations — and no
-    # primary-pass relations — are still included when their target is registered.
-    # A node is registered here for the first time when needed.
+    # Secondary pass: run once after the primary pass so registered_uris is complete.
+    # Candidates = related_uris union already-registered nodes, to cover:
+    #   (a) terms in related with only subClassOf/exposes/allocates (e.g. system-feature)
+    #   (b) target-only nodes that carry further relations (e.g. activity)
     registered_uris = set(node_ids.keys())
-    for child_uri in related_uris:
+    related_set = set(related_uris)
+    candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
+    for child_uri in candidates:
         child_term = terms_index.get(child_uri)
         if child_term is None:
             continue
@@ -977,6 +979,13 @@ def render_breakdown_diagram(term: dict, terms_index: dict,
                 node_id(child_uri)
                 label_for(child_uri)
                 edges.append((child_uri, "exposes", iface_uri))
+        for obj_uri in (child_term.get("allocates") or []):
+            if obj_uri in registered_uris or obj_uri in related_set:
+                node_id(child_uri)
+                label_for(child_uri)
+                node_id(obj_uri)
+                label_for(obj_uri)
+                edges.append((child_uri, "allocation", obj_uri))
 
     if not edges:
         return ""
