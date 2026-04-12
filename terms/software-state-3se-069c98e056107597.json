@@ -11,9 +11,11 @@
     "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597",
-  "related": [],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b"
+  ],
   "entryCreated": "2026-03-29",
-  "entryModified": "2026-03-29",
+  "entryModified": "2026-04-12",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware block breakdown structure - 3SE",
+  "description": "Breakdown structure of the hardware block that supports the hardware architecture by following the principles below:\n(1) A hardware block is composed of at least two hardware components.\n(2) A hardware component allocates a hardware component function.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-block-breakdown-structure-3se-069dc0c117f07144",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516",
+    "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5",
+    "https://www.3se.info/3se-onto/terms/hardware-component-3se-069a9bc4a34678c2",
+    "https://www.3se.info/3se-onto/terms/hardware-component-function-3se-069dc0c118257eea"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

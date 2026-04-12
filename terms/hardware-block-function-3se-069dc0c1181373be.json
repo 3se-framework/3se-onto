@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware block function - 3SE",
+  "description": "Function of a hardware block.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/hardware-component-function-3se-069dc0c118257eea"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-04-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

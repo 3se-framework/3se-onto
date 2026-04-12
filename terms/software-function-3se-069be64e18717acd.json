@@ -13,7 +13,6 @@
   "@id": "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd",
   "related": [
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
-    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
     "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1"
   ],
   "allocates": [
