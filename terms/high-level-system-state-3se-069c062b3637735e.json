@@ -12,7 +12,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/high-level-system-state-3se-069c062b3637735e",
   "related": [
-    "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253"
+    "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
+    "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d"
   ],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-04-12",
