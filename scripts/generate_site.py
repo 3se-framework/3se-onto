@@ -1167,6 +1167,23 @@ def render_analysis_allocates_diagram(
             label_for(parent_uri)
             subclassof_edges.append((child_uri, parent_uri))
 
+    # Third pass: for each parent registered in the second pass, follow its
+    # allocates relation and collect the targeted URIs as new allocates edges.
+    parent_uris = set(node_ids.keys()) - allocates_nodes
+    for parent_uri in list(parent_uris):
+        parent_term = terms_index.get(parent_uri)
+        if parent_term is None:
+            continue
+        parent_allocates = parent_term.get("allocates") or []
+        if isinstance(parent_allocates, str):
+            parent_allocates = [parent_allocates]
+        for obj_uri in parent_allocates:
+            node_id(parent_uri)
+            label_for(parent_uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            allocates_edges.append((parent_uri, obj_uri))
+
     # Deduplicate
     allocates_edges = list(dict.fromkeys(allocates_edges))
     subclassof_edges = list(dict.fromkeys(subclassof_edges))
