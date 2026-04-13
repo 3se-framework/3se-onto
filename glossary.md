@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-13 15:44 UTC*
+*Generated on 2026-04-13 16:03 UTC*
 
 This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -848,7 +848,7 @@ It contributes to the feature analysis and the requirements analysis.
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Epic"]
     N2["Iteration"]
     N3["Release"]
@@ -943,7 +943,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -980,7 +980,7 @@ Note: principle (3) excludes principle (2)
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -1086,7 +1086,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Functional element"]
     N2["System state"]
     N3["Functional element attribute"]
@@ -1179,7 +1179,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Functional element"]
     N2["System state"]
     N3["Functional element attribute"]
@@ -1291,7 +1291,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -1328,7 +1328,7 @@ Note: principle (3) excludes principle (2)
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -1402,7 +1402,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Hardware block"]
     N2["Hardware block state"]
     N3["Hardware state"]
@@ -1466,7 +1466,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Hardware block"]
     N2["Hardware component"]
     N3["Hardware block state"]
@@ -1547,7 +1547,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Hardware"]
     N2["Hardware block"]
     N3["Hardware state"]
@@ -1565,8 +1565,8 @@ flowchart TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
 ```
 
@@ -1704,7 +1704,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Hardware"]
     N2["Hardware block"]
     N3["Hardware state"]
@@ -1794,7 +1794,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Hardware block function"]
     N2["Hardware component function"]
     N3["Hardware block state"]
@@ -2030,7 +2030,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Attribute"]
     N2["Goal"]
     N3["Stakeholder non-functional requirement"]
@@ -2120,7 +2120,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Iteration"]
     N2["Release"]
     N3["Project"]
@@ -2271,7 +2271,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -2320,7 +2320,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Functional element"]
     N2["System state"]
     N3["Functional element attribute"]
@@ -2390,7 +2390,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["High level physical element"]
     N2["Physical element"]
     N3["High level functional element"]
@@ -2485,7 +2485,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -2521,7 +2521,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Product"]
     N2["System feature"]
 
@@ -2567,7 +2567,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -2674,7 +2674,7 @@ Note: when the product is an asset, the product owner is also called asset owner
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Project"]
     N2["Release"]
     N3["Product"]
@@ -2765,7 +2765,7 @@ It contributes to the release analysis.
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -3704,7 +3704,7 @@ It includes the following steps:
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -3740,7 +3740,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Service"]
     N2["System feature"]
 
@@ -3785,7 +3785,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -3822,8 +3822,8 @@ flowchart TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
     N18 -.->|represented by| N11
-    N18 -.->|allocates| N12
     N12 -->|subclass of| N1
+    N18 -.->|allocates| N12
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3944,7 +3944,7 @@ Multiple situations may be active concurrently within the same context and may c
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Software component"]
     N2["Software component state"]
     N3["Software state"]
@@ -3992,7 +3992,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Software"]
     N2["Software component"]
     N3["Software state"]
@@ -4010,9 +4010,9 @@ flowchart TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4053,7 +4053,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Software component"]
     N2["Software unit"]
     N3["Software component state"]
@@ -4247,7 +4247,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Software interface"]
     N2["Software component interface"]
     N3["Software"]
@@ -4353,7 +4353,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Software component function"]
     N2["Software unit function"]
     N3["Software component state"]
@@ -4562,13 +4562,14 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Attribute"]
     N2["Goal"]
     N3["Stakeholder non-functional requirement"]
     N4["Feature"]
     N5["Stakeholder functional requirement"]
     N6["Stakeholder constraint"]
+    N7["Stakeholder requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -4576,6 +4577,8 @@ flowchart TD
     N4 -.->|allocates| N5
     N4 -.->|allocates| N3
     N4 -.->|allocates| N6
+    N3 -->|subclass of| N7
+    N5 -->|subclass of| N7
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4604,7 +4607,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Feature"]
     N2["Goal"]
     N3["Stakeholder functional requirement"]
@@ -4661,11 +4664,11 @@ flowchart TD
     N23 -->|subclass of| N20
     N24 -->|subclass of| N20
     N25 -->|subclass of| N20
+    N18 -->|subclass of| N20
+    N18 -.->|allocates| N14
     N12 -.->|allocates| N24
     N8 -.->|exposes| N12
     N8 -.->|allocates| N23
-    N18 -->|subclass of| N20
-    N18 -.->|allocates| N14
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4755,7 +4758,7 @@ Therefore, it is accountable for the functional architecture and to the physical
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["System element"]
     N2["Physical element"]
     N3["System element state"]
@@ -4875,7 +4878,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["System attribute"]
     N2["System function attribute"]
     N3["System state attribute"]
@@ -4911,7 +4914,7 @@ Note 1: principle (3) excludes principle (2)
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["System attribute"]
     N2["System element attribute"]
     N3["System function attribute"]
@@ -4969,7 +4972,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["System"]
     N2["System element"]
     N3["High level physical element"]
@@ -4999,8 +5002,8 @@ flowchart TD
     N8 -.->|allocates| N12
     N8 -.->|allocates| N13
     N8 -.->|can be| N3
-    N12 -.->|allocates| N4
     N5 -.->|allocates| N12
+    N12 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-04 · Creator: @rcasteran*
@@ -5262,7 +5265,7 @@ Note : principle (4) excludes principle (2)
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Activity"]
     N2["System feature"]
     N3["High level system function"]
@@ -5318,7 +5321,7 @@ flowchart TD
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Activity"]
     N2["System feature"]
     N3["System function"]
@@ -5386,7 +5389,7 @@ flowchart TD
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Physical interface"]
     N2["Functional interface"]
     N3["System constraint"]
@@ -5533,7 +5536,7 @@ Note: principle (6) excludes principe (2)
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["System state"]
     N2["System element state"]
     N3["System function"]
@@ -5566,8 +5569,8 @@ flowchart TD
     N2 -.->|allocates| N6
     N2 -.->|allocates| N13
     N2 -.->|allocates| N14
-    N14 -.->|allocates| N11
     N13 -.->|allocates| N12
+    N14 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5683,7 +5686,7 @@ Therefore, it is accountable for the validation analysis.
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Epic"]
     N2["Iteration"]
     N3["Release"]
@@ -5842,7 +5845,7 @@ Note: it does not determine if the entity satisfies the stakeholders’ requirem
 **Allocations**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Goal"]
     N2["Value"]
 
@@ -5871,7 +5874,7 @@ Note: principle (3) excludes principle (2)
 **Structure**
 
 ```mermaid
-flowchart TD
+graph TD
     N1["Goal"]
     N2["Value"]
     N3["High level goal"]
