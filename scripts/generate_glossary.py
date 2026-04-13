@@ -388,7 +388,7 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict],
             node_ids.pop(uri, None)
             node_labels.pop(uri, None)
 
-    mermaid_lines = ["```mermaid", "flowchart TD"]
+    mermaid_lines = ["```mermaid", "graph TD"]
     for uri, nid in node_ids.items():
         lbl = node_labels.get(uri, nid).replace('"', "'")
         mermaid_lines.append(f'    {nid}["{lbl}"]')
@@ -495,8 +495,13 @@ def render_analysis_allocates_diagram_md(term: dict,
     # and already-registered nodes so that terms carrying only subClassOf — and
     # no allocates relation of their own — are still included when their parent
     # is registered by the primary allocates pass.
+    # The parent guard admits two cases:
+    #   (a) parent already registered by the primary pass, OR
+    #   (b) parent is explicitly in related_uris (e.g. a superclass listed as
+    #       a related term but not itself carrying any allocates edges).
     subclassof_edges = []  # (child_uri, parent_uri)
     registered_uris = set(node_ids.keys())
+    related_set = set(related_uris)
     candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
     for child_uri in candidates:
         child_term = terms_index.get(child_uri)
@@ -506,9 +511,11 @@ def render_analysis_allocates_diagram_md(term: dict,
         if isinstance(subclass_of, str):
             subclass_of = [subclass_of]
         for parent_uri in subclass_of:
-            if parent_uri in registered_uris:
+            if parent_uri in registered_uris or parent_uri in related_set:
                 node_id(child_uri)
                 label_for(child_uri)
+                node_id(parent_uri)
+                label_for(parent_uri)
                 subclassof_edges.append((child_uri, parent_uri))
 
     # Deduplicate
@@ -539,7 +546,7 @@ def render_analysis_allocates_diagram_md(term: dict,
             node_ids.pop(uri, None)
             node_labels.pop(uri, None)
 
-    mermaid_lines = ["```mermaid", "flowchart TD"]
+    mermaid_lines = ["```mermaid", "graph TD"]
     for uri, nid in node_ids.items():
         lbl = node_labels.get(uri, nid).replace('"', "'")
         mermaid_lines.append(f'    {nid}["{lbl}"]')
