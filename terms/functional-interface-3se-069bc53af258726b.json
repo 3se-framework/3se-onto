@@ -10,8 +10,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
