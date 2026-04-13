@@ -13,8 +13,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93",
   "allocates": [
     "https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78",
-    "https://www.3se.info/3se-onto/terms/safety-software-feature-3se-069c058ef4f372bc",
-    "https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb"
+    "https://www.3se.info/3se-onto/terms/software-attribute-3se"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"

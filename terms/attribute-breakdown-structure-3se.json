@@ -1,0 +1,11 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Attribute breakdown structure - 3SE",
+  "description": "Breakdown structure of the attribute that supports the attribute analysis by following the principles below:\n(1) A high level attribute is composed of at least two attributes.\n(2) An attribute can be an high level attribute.\n(3) An attribute allocates a goal.\nNote: principle (3) excludes principle (2)",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ]
+}

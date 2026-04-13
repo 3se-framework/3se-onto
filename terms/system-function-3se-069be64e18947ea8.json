@@ -10,7 +10,7 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253",
     "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9",
-    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-3se"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
   "related": [

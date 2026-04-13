@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Attribute model - 3SE",
+  "description": "Conceptual model which represents the attribute analysis based on the attribute breakdown structure.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
+  ]
+}
