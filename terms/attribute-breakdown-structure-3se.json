@@ -7,5 +7,12 @@
   "@id": "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/high-level-attribute-3se",
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/attribute-analysis-3se",
+    "https://www.3se.info/3se-onto/terms/attribute-model-3se"
   ]
 }
