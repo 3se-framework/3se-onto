@@ -19,7 +19,7 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
-    "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504"
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864"
   ],
   "entryCreated": "2026-04-13",
   "entryModified": "2026-04-13",
