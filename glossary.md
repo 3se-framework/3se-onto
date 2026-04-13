@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-13 15:30 UTC*
+*Generated on 2026-04-13 15:44 UTC*
 
 This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -845,6 +845,20 @@ It contributes to the feature analysis and the requirements analysis.
 | Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Epic"]
+    N2["Iteration"]
+    N3["Release"]
+    N4["Project"]
+
+    N1 -.->|allocates| N2
+    N2 -.->|allocates| N3
+    N2 -.->|allocates| N4
+```
+
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
 
 ---
@@ -925,6 +939,24 @@ It contributes to the feature analysis and the requirements analysis.
 |---|---|
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [feature-breakdown-structure-3se-069c96f861447442](https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442), [feature-model-3se-069d3f26ae067509](https://www.3se.info/3se-onto/terms/feature-model-3se-069d3f26ae067509) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Feature"]
+    N2["Goal"]
+    N3["Stakeholder functional requirement"]
+    N4["Stakeholder non-functional requirement"]
+    N5["Stakeholder constraint"]
+    N6["Value"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N2 -.->|allocates| N6
+```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
 
@@ -1050,6 +1082,28 @@ flowchart TD
 | Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Functional element"]
+    N2["System state"]
+    N3["Functional element attribute"]
+    N4["System function"]
+    N5["System state attribute"]
+    N6["Activity"]
+    N7["System functional requirement"]
+    N8["System function attribute"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N2 -.->|allocates| N4
+    N2 -.->|allocates| N5
+    N4 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N4 -.->|allocates| N8
+```
 
 *Created: 2026-03-17 · Modified: 2026-04-12 · Creator: @rcasteran*
 
@@ -1234,6 +1288,24 @@ flowchart TD
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [goal-breakdown-structure-3se-069c96f8615f7b6a](https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a), [goal-model-3se-069d3f26ae1e7e10](https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Feature"]
+    N2["Goal"]
+    N3["Stakeholder functional requirement"]
+    N4["Stakeholder non-functional requirement"]
+    N5["Stakeholder constraint"]
+    N6["Value"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N2 -.->|allocates| N6
+```
+
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
 
 ---
@@ -1326,6 +1398,21 @@ flowchart TD
 | Related | [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [hardware-block-breakdown-structure-3se-069dc0c117f07144](https://www.3se.info/3se-onto/terms/hardware-block-breakdown-structure-3se-069dc0c117f07144), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Hardware block"]
+    N2["Hardware block state"]
+    N3["Hardware state"]
+    N4["Hardware function"]
+    N5["Hardware"]
+
+    N1 -.->|allocates| N2
+    N3 -.->|allocates| N4
+    N5 -.->|allocates| N3
+```
 
 *Created: 2026-04-03 · Modified: 2026-04-12 · Creator: @rcasteran*
 
@@ -1940,6 +2027,35 @@ flowchart TD
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Attribute"]
+    N2["Goal"]
+    N3["Stakeholder non-functional requirement"]
+    N4["Feature"]
+    N5["Stakeholder functional requirement"]
+    N6["Stakeholder constraint"]
+    N7["System"]
+    N8["High level physical element"]
+    N9["System state"]
+    N10["System attribute"]
+    N11["Interdependent system"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N4 -.->|allocates| N2
+    N4 -.->|allocates| N5
+    N4 -.->|allocates| N3
+    N4 -.->|allocates| N6
+    N7 -.->|allocates| N8
+    N7 -.->|allocates| N9
+    N7 -.->|allocates| N10
+    N11 -->|subclass of| N7
+    N10 -->|subclass of| N1
+```
+
 *Created: 2026-03-24 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
@@ -2000,6 +2116,19 @@ flowchart TD
 |---|---|
 | Related | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Iteration"]
+    N2["Release"]
+    N3["Project"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N2
+```
 
 *Created: 2026-03-17 · Modified: 2026-03-20 · Creator: @rcasteran*
 
@@ -2139,6 +2268,26 @@ flowchart TD
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [operating-model-3se-069d3f26ae27722b](https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Feature"]
+    N2["Goal"]
+    N3["Stakeholder functional requirement"]
+    N4["Stakeholder non-functional requirement"]
+    N5["Stakeholder constraint"]
+    N6["Activity"]
+    N7["System feature"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N6 -.->|allocates| N7
+    N7 -->|subclass of| N1
+```
+
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
 
 ---
@@ -2167,6 +2316,22 @@ flowchart TD
 |---|---|
 | Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [physical-architecture-model-3se-069d3f26ae2f7408](https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Functional element"]
+    N2["System state"]
+    N3["Functional element attribute"]
+    N4["Physical element"]
+    N5["System constraint"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N4 -.->|allocates| N1
+    N4 -.->|allocates| N5
+```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
 
@@ -2317,6 +2482,26 @@ flowchart TD
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Feature"]
+    N2["Goal"]
+    N3["Stakeholder functional requirement"]
+    N4["Stakeholder non-functional requirement"]
+    N5["Stakeholder constraint"]
+    N6["Product"]
+    N7["System feature"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N6 -.->|allocates| N7
+    N7 -->|subclass of| N1
+```
+
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
 
 ---
@@ -2332,6 +2517,16 @@ flowchart TD
 | Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Product"]
+    N2["System feature"]
+
+    N1 -.->|allocates| N2
+```
 
 *Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
 
@@ -2476,6 +2671,18 @@ Note: when the product is an asset, the product owner is also called asset owner
 | Related | [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Project"]
+    N2["Release"]
+    N3["Product"]
+
+    N1 -.->|allocates| N2
+    N2 -.->|allocates| N3
+```
+
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
 
 ---
@@ -2554,6 +2761,28 @@ It contributes to the release analysis.
 |---|---|
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Feature"]
+    N2["Goal"]
+    N3["Stakeholder functional requirement"]
+    N4["Stakeholder non-functional requirement"]
+    N5["Stakeholder constraint"]
+    N6["Product"]
+    N7["System feature"]
+    N8["Release"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N6 -.->|allocates| N7
+    N8 -.->|allocates| N6
+    N7 -->|subclass of| N1
+```
 
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
 
@@ -3472,6 +3701,26 @@ It includes the following steps:
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Feature"]
+    N2["Goal"]
+    N3["Stakeholder functional requirement"]
+    N4["Stakeholder non-functional requirement"]
+    N5["Stakeholder constraint"]
+    N6["Service"]
+    N7["System feature"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N6 -.->|allocates| N7
+    N7 -->|subclass of| N1
+```
+
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
 
 ---
@@ -3487,6 +3736,16 @@ It includes the following steps:
 | Related | [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Service"]
+    N2["System feature"]
+
+    N1 -.->|allocates| N2
+```
 
 *Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
 
@@ -3563,8 +3822,8 @@ flowchart TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3681,6 +3940,21 @@ Multiple situations may be active concurrently within the same context and may c
 | Related | [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-component-breakdown-structure-3se-069dc076d3dc7c81](https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Software component"]
+    N2["Software component state"]
+    N3["Software state"]
+    N4["Software function"]
+    N5["Software"]
+
+    N1 -.->|allocates| N2
+    N3 -.->|allocates| N4
+    N5 -.->|allocates| N3
+```
 
 *Created: 2026-04-03 · Modified: 2026-04-12 · Creator: @rcasteran*
 
@@ -4285,6 +4559,25 @@ flowchart TD
 | Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [stakeholder-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Attribute"]
+    N2["Goal"]
+    N3["Stakeholder non-functional requirement"]
+    N4["Feature"]
+    N5["Stakeholder functional requirement"]
+    N6["Stakeholder constraint"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N4 -.->|allocates| N2
+    N4 -.->|allocates| N5
+    N4 -.->|allocates| N3
+    N4 -.->|allocates| N6
+```
+
 *Created: 2026-03-17 · Modified: 2026-04-13 · Creator: @rcasteran*
 
 ---
@@ -4369,10 +4662,10 @@ flowchart TD
     N24 -->|subclass of| N20
     N25 -->|subclass of| N20
     N12 -.->|allocates| N24
-    N18 -->|subclass of| N20
-    N18 -.->|allocates| N14
     N8 -.->|exposes| N12
     N8 -.->|allocates| N23
+    N18 -->|subclass of| N20
+    N18 -.->|allocates| N14
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4458,6 +4751,31 @@ Therefore, it is accountable for the functional architecture and to the physical
 | Related | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [system-architecture-model-3se-069d3f26ae587442](https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [system-architecture-15288-2023-069cfe7e564b70ef](https://www.3se.info/3se-onto/terms/system-architecture-15288-2023-069cfe7e564b70ef), [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["System element"]
+    N2["Physical element"]
+    N3["System element state"]
+    N4["System element attribute"]
+    N5["System state"]
+    N6["System function"]
+    N7["System state attribute"]
+    N8["System"]
+    N9["High level physical element"]
+    N10["System attribute"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N5 -.->|allocates| N6
+    N5 -.->|allocates| N7
+    N8 -.->|allocates| N9
+    N8 -.->|allocates| N5
+    N8 -.->|allocates| N10
+```
 
 *Created: 2026-04-03 · Modified: 2026-04-12 · Creator: @rcasteran*
 
@@ -4553,6 +4871,23 @@ Therefore, it is accountable for the functional architecture and to the physical
 |---|---|
 | Related | [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e), [system-attribute-model-3se-069dcf9369887f72](https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["System attribute"]
+    N2["System function attribute"]
+    N3["System state attribute"]
+    N4["Functional element"]
+    N5["Goal"]
+    N6["Value"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N5 -.->|allocates| N6
+```
 
 *Created: 2026-04-13 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -4664,8 +4999,8 @@ flowchart TD
     N8 -.->|allocates| N12
     N8 -.->|allocates| N13
     N8 -.->|can be| N3
-    N5 -.->|allocates| N12
     N12 -.->|allocates| N4
+    N5 -.->|allocates| N12
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-04 · Creator: @rcasteran*
@@ -4980,6 +5315,22 @@ flowchart TD
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f) |
 
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Activity"]
+    N2["System feature"]
+    N3["System function"]
+    N4["System functional requirement"]
+    N5["System function attribute"]
+
+    N1 -.->|allocates| N2
+    N3 -.->|allocates| N1
+    N3 -.->|allocates| N4
+    N3 -.->|allocates| N5
+```
+
 *Created: 2026-03-17 · Modified: 2026-04-12 · Creator: @rcasteran*
 
 ---
@@ -5215,8 +5566,8 @@ flowchart TD
     N2 -.->|allocates| N6
     N2 -.->|allocates| N13
     N2 -.->|allocates| N14
-    N13 -.->|allocates| N12
     N14 -.->|allocates| N11
+    N13 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5328,6 +5679,23 @@ Therefore, it is accountable for the validation analysis.
 |---|---|
 | Related | [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [task-3se-069b48ef5d8579f8](https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Epic"]
+    N2["Iteration"]
+    N3["Release"]
+    N4["Project"]
+    N5["Task"]
+
+    N1 -.->|allocates| N2
+    N2 -.->|allocates| N3
+    N2 -.->|allocates| N4
+    N5 -.->|allocates| N1
+    N5 -.->|allocates| N2
+```
 
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
 
@@ -5470,6 +5838,16 @@ Note: it does not determine if the entity satisfies the stakeholders’ requirem
 |---|---|
 | Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [value-breakdown-structure-3se-069d6aadc05c7722](https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722), [value-model-3se-069d6aadc065744f](https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+
+**Allocations**
+
+```mermaid
+flowchart TD
+    N1["Goal"]
+    N2["Value"]
+
+    N1 -.->|allocates| N2
+```
 
 *Created: 2026-04-07 · Modified: 2026-04-08 · Creator: @rcasteran*
 
