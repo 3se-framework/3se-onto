@@ -8,11 +8,14 @@
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "isComposedOf": [
-    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se"
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e"
+    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a"
   ],
   "entryCreated": "2026-04-13",
   "entryModified": "2026-04-13",

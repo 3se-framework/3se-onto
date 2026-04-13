@@ -64,7 +64,8 @@
     "https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336",
     "https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269",
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
-    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac"
+    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
