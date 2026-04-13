@@ -11,9 +11,11 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
     "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
-    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
-    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72"
+    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72",
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
   ],
   "entryCreated": "2026-04-13",
   "entryModified": "2026-04-13",

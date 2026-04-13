@@ -33,8 +33,7 @@
     "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a",
     "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844",
     "https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722",
-    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
-    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e"
+    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
