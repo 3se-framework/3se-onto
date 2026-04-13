@@ -65,6 +65,31 @@ def stem_to_concept_name(stem: str) -> str:
     return s.replace("-", " ").lower()
 
 
+def _words_match(title_words: list[str], stem_words: list[str]) -> bool:
+    """
+    Return True if stem_words is a word-level prefix match of title_words,
+    where each stem word may be an abbreviation (prefix) of the corresponding
+    title word.
+
+    Examples:
+      ["stakeholder", "requirements", "analysis"] vs ["stakeholder", "req", "analysis"]
+        -> True  ("req" is a prefix of "requirements")
+      ["enabling", "physical", "element"] vs ["enabling", "physical", "element"]
+        -> True  (exact match)
+      ["system", "function"] vs ["system", "functional"]
+        -> False ("function" is not a prefix of "functional" — it is the other way)
+
+    The match is anchored to the start: stem_words must not be longer than
+    title_words, and every stem word must be a prefix of its paired title word.
+    """
+    if len(stem_words) > len(title_words):
+        return False
+    return all(
+        t_word.startswith(s_word)
+        for s_word, t_word in zip(stem_words, title_words)
+    )
+
+
 def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
     """
     Check that the concept name in the title is consistent with the concept
@@ -73,8 +98,14 @@ def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
 
     Also detects double UUID suffixes in the stem, which should never occur.
 
-    The title concept name must start with the stem concept name — this
-    tolerates stems that use abbreviated words (e.g. 'req' for 'requirement').
+    Matching rules (applied in order, first match wins):
+      1. String-prefix match: title_concept.startswith(stem_concept)
+         e.g. stem "enabling physical element" matches title "enabling physical element"
+      2. Word-level abbreviation match: each stem word is a prefix of the
+         corresponding title word.
+         e.g. stem "stakeholder req analysis" matches title "stakeholder requirements analysis"
+         because "req" is a prefix of "requirements".
+
     Returns a list of error messages (empty if consistent).
     """
     errors: list[str] = []
@@ -99,12 +130,22 @@ def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
     if not stem_concept:
         return errors
 
-    if not title_concept.startswith(stem_concept):
-        errors.append(
-            f"title concept name \"{title_concept}\" does not match "
-            f"stem concept name \"{stem_concept}\" — "
-            f"expected title to start with \"{stem_concept.title()}\""
-        )
+    # Rule 1: plain string-prefix match (covers exact and trailing-word cases)
+    if title_concept.startswith(stem_concept):
+        return errors
+
+    # Rule 2: word-level abbreviation match
+    title_words = title_concept.split()
+    stem_words = stem_concept.split()
+    if _words_match(title_words, stem_words):
+        return errors
+
+    errors.append(
+        f"title concept name \"{title_concept}\" does not match "
+        f"stem concept name \"{stem_concept}\" — "
+        f"expected title to start with \"{stem_concept.title()}\""
+    )
+
     return errors
 
 
