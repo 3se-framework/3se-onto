@@ -29,10 +29,11 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
     "https://www.3se.info/3se-onto/terms/feature-model-3se-069d3f26ae067509",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-13",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

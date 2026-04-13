@@ -23,7 +23,8 @@
     "https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b",
     "https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
@@ -43,7 +44,7 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-13",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

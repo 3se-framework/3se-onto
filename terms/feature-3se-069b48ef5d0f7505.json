@@ -13,7 +13,7 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-13",
   "related": [
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
     "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
@@ -42,7 +42,8 @@
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
     "https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336",
     "https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb",
-    "https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269"
+    "https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
