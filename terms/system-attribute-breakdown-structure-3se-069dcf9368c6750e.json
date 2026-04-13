@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System attribute breakdown structure - 3SE",
+  "description": "Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:\n(1) A system attribute is composed of at least two system element attributes.\n(2) A system element attribute can be a system attribute.\n(3) A system attribute allocates a goal.\nNote: principle (3) excludes principle (2)",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
+    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72"
+  ],
+  "entryCreated": "2026-04-13",
+  "entryModified": "2026-04-13",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
