@@ -412,6 +412,149 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict],
     return ["**Structure**", ""] + mermaid_lines + [""]
 
 
+ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+
+
+def is_analysis_subclass(term: dict) -> bool:
+    """Return True if this term declares subClassOf analysis-3se."""
+    subclass = term.get("subClassOf")
+    if not subclass:
+        return False
+    uris = [subclass] if isinstance(subclass, str) else subclass
+    return ANALYSIS_BASE_URI in uris
+
+
+def render_analysis_allocates_diagram_md(term: dict,
+                                         terms_index: dict[str, dict]) -> list[str]:
+    """
+    Render an Allocations Mermaid diagram for analysis terms as Markdown lines.
+    Returns a fenced mermaid code block, or empty list if not applicable.
+
+    Mirrors render_analysis_allocates_diagram in generate_site.py:
+    - Primary pass: for each related term, collect its allocates targets.
+    - Secondary pass: collect subClassOf edges using the union of related_uris
+      and already-registered nodes, so terms carrying only subClassOf (and no
+      allocates of their own) are still included when their parent is registered.
+
+    Only rendered when the term is a direct subclass of analysis-3se.
+    """
+    if not is_analysis_subclass(term):
+        return []
+
+    related_uris = term.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+    if not related_uris:
+        return []
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    # Primary pass: collect allocates edges from each related term
+    allocates_edges = []  # (subj_uri, obj_uri)
+    for rel_uri in related_uris:
+        rel_term = terms_index.get(rel_uri)
+        if rel_term is None:
+            continue
+        allocates = rel_term.get("allocates") or []
+        if isinstance(allocates, str):
+            allocates = [allocates]
+        for obj_uri in allocates:
+            node_id(rel_uri)
+            label_for(rel_uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            allocates_edges.append((rel_uri, obj_uri))
+
+    if not allocates_edges:
+        return []
+
+    # Secondary pass: collect subClassOf edges using the union of related_uris
+    # and already-registered nodes so that terms carrying only subClassOf — and
+    # no allocates relation of their own — are still included when their parent
+    # is registered by the primary allocates pass.
+    subclassof_edges = []  # (child_uri, parent_uri)
+    registered_uris = set(node_ids.keys())
+    candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
+    for child_uri in candidates:
+        child_term = terms_index.get(child_uri)
+        if child_term is None:
+            continue
+        subclass_of = child_term.get("subClassOf") or []
+        if isinstance(subclass_of, str):
+            subclass_of = [subclass_of]
+        for parent_uri in subclass_of:
+            if parent_uri in registered_uris:
+                node_id(child_uri)
+                label_for(child_uri)
+                subclassof_edges.append((child_uri, parent_uri))
+
+    # Deduplicate
+    allocates_edges = list(dict.fromkeys(allocates_edges))
+    subclassof_edges = list(dict.fromkeys(subclassof_edges))
+
+    # Deduplicate nodes by label (case-insensitive)
+    label_to_primary: dict[str, str] = {}
+    uri_remap: dict[str, str] = {}
+    for uri in list(node_ids.keys()):
+        lbl_lower = node_labels.get(uri, "").lower()
+        if lbl_lower in label_to_primary:
+            uri_remap[uri] = label_to_primary[lbl_lower]
+        else:
+            label_to_primary[lbl_lower] = uri
+    if uri_remap:
+        allocates_edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in allocates_edges
+        ]
+        allocates_edges = list(dict.fromkeys(allocates_edges))
+        subclassof_edges = [
+            (uri_remap.get(s, s), uri_remap.get(o, o))
+            for s, o in subclassof_edges
+        ]
+        subclassof_edges = list(dict.fromkeys(subclassof_edges))
+        for uri in uri_remap:
+            node_ids.pop(uri, None)
+            node_labels.pop(uri, None)
+
+    mermaid_lines = ["```mermaid", "flowchart TD"]
+    for uri, nid in node_ids.items():
+        lbl = node_labels.get(uri, nid).replace('"', "'")
+        mermaid_lines.append(f'    {nid}["{lbl}"]')
+    mermaid_lines.append("")
+    for subj_uri, obj_uri in allocates_edges:
+        s, o = node_id(subj_uri), node_id(obj_uri)
+        mermaid_lines.append(f"    {s} -.->|allocates| {o}")
+    for child_uri, parent_uri in subclassof_edges:
+        c, p = node_id(child_uri), node_id(parent_uri)
+        mermaid_lines.append(f"    {c} -->|subclass of| {p}")
+    mermaid_lines.append("```")
+
+    return ["**Allocations**", ""] + mermaid_lines + [""]
+
+
 # ---------------------------------------------------------------------------
 # Term rendering
 # ---------------------------------------------------------------------------
@@ -557,6 +700,10 @@ def render_term(term: dict, ref_index: dict[str, dict],
     # Breakdown structure diagram
     if terms_index:
         lines.extend(render_breakdown_diagram_md(term, terms_index, represents_index))
+
+    # Allocations diagram (analysis terms only)
+    if terms_index:
+        lines.extend(render_analysis_allocates_diagram_md(term, terms_index))
 
     # References
     is_referenced_by = term.get("isReferencedBy", [])
