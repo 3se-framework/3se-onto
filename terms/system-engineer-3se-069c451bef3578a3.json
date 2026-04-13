@@ -19,11 +19,11 @@
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
     "https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b",
-    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b",
     "https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05",
-    "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
@@ -40,7 +40,7 @@
     "https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc",
     "https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408",
     "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442",
-    "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-04-12",

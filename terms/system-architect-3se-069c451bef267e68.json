@@ -34,13 +34,13 @@
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
     "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
     "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
-    "https://www.3se.info/3se-onto/terms/requirements-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
     "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
     "https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b",
     "https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05",
-    "https://www.3se.info/3se-onto/terms/stakeholder-requirement-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-04-12",
