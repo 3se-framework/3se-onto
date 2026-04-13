@@ -1146,10 +1146,14 @@ def render_analysis_allocates_diagram(
     if not allocates_edges:
         return ""
 
-    # Collect subClassOf edges between nodes already registered in the diagram
+    # Collect subClassOf edges: iterate over the union of related_uris and
+    # already-registered nodes so that terms carrying only subClassOf — and
+    # no allocates relation of their own — are still included when their
+    # parent is registered by the primary allocates pass.
     subclassof_edges = []  # (child_uri, parent_uri)
     registered_uris = set(node_ids.keys())
-    for child_uri in list(registered_uris):
+    candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
+    for child_uri in candidates:
         child_term = terms_index.get(child_uri)
         if child_term is None:
             continue
@@ -1158,6 +1162,8 @@ def render_analysis_allocates_diagram(
             subclass_of = [subclass_of]
         for parent_uri in subclass_of:
             if parent_uri in registered_uris:
+                node_id(child_uri)
+                label_for(child_uri)
                 subclassof_edges.append((child_uri, parent_uri))
 
     # Deduplicate
