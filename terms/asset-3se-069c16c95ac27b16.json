@@ -11,7 +11,6 @@
   "@id": "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
   "related": [
     "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
-    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/vulnerability-3se-069c1a2fb8f177a4",
     "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea",
@@ -22,7 +21,7 @@
     "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d"
   ],
   "entryCreated": "2026-03-23",
-  "entryModified": "2026-04-07",
+  "entryModified": "2026-04-13",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -9,5 +9,15 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/high-level-attribute-3se-069dcf9369b672e3",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/attribute-breakdown-structure-3se-069dcf9368c6750e"
+  ],
+  "entryCreated": "2026-04-13",
+  "entryModified": "2026-04-13",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
