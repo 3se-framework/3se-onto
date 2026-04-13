@@ -1156,9 +1156,14 @@ def render_analysis_allocates_diagram(
     #   (b) parent is explicitly in related_uris (e.g. attribute, the direct
     #       superclass of system-attribute, listed as a related term of the
     #       analysis but not itself carrying any allocates edges).
+    # The child must be in related_uris or already registered (primary pass).
+    # The parent is always admitted — no guard — because the expansion is
+    # already bounded by the child being in candidates. This handles the case
+    # where the parent (e.g. 'attribute') is neither in related_uris nor
+    # registered by the primary pass, but is the direct superclass of a
+    # related term (e.g. 'system-attribute') that is registered.
     subclassof_edges = []  # (child_uri, parent_uri)
     registered_uris = set(node_ids.keys())
-    related_set = set(related_uris)
     candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
     for child_uri in candidates:
         child_term = terms_index.get(child_uri)
@@ -1168,12 +1173,11 @@ def render_analysis_allocates_diagram(
         if isinstance(subclass_of, str):
             subclass_of = [subclass_of]
         for parent_uri in subclass_of:
-            if parent_uri in registered_uris or parent_uri in related_set:
-                node_id(child_uri)
-                label_for(child_uri)
-                node_id(parent_uri)
-                label_for(parent_uri)
-                subclassof_edges.append((child_uri, parent_uri))
+            node_id(child_uri)
+            label_for(child_uri)
+            node_id(parent_uri)
+            label_for(parent_uri)
+            subclassof_edges.append((child_uri, parent_uri))
 
     # Deduplicate
     allocates_edges = list(dict.fromkeys(allocates_edges))
