@@ -1146,26 +1146,14 @@ def render_analysis_allocates_diagram(
     if not allocates_edges:
         return ""
 
-    # Collect subClassOf edges: iterate over the union of related_uris and
-    # already-registered nodes so that terms carrying only subClassOf — and
-    # no allocates relation of their own — are still included when their
-    # parent is registered by the primary allocates pass.
-    # The parent guard admits two cases:
-    #   (a) parent already registered by the primary pass (e.g. registered
-    #       as a subject of its own allocates edges), OR
-    #   (b) parent is explicitly in related_uris (e.g. attribute, the direct
-    #       superclass of system-attribute, listed as a related term of the
-    #       analysis but not itself carrying any allocates edges).
-    # The child must be in related_uris or already registered (primary pass).
-    # The parent is always admitted — no guard — because the expansion is
-    # already bounded by the child being in candidates. This handles the case
-    # where the parent (e.g. 'attribute') is neither in related_uris nor
-    # registered by the primary pass, but is the direct superclass of a
-    # related term (e.g. 'system-attribute') that is registered.
+    # Second pass: for every URI that appears in the allocates edges
+    # (both subjects and targets), follow its subClassOf relation and
+    # emit a subclass-of edge to its parent.
+    # Strictly limited to nodes registered by the first pass — no other
+    # candidates are considered, preventing unrelated terms from appearing.
     subclassof_edges = []  # (child_uri, parent_uri)
-    registered_uris = set(node_ids.keys())
-    candidates = list(dict.fromkeys(list(related_uris) + list(registered_uris)))
-    for child_uri in candidates:
+    allocates_nodes = set(node_ids.keys())  # all nodes from the first pass
+    for child_uri in list(allocates_nodes):
         child_term = terms_index.get(child_uri)
         if child_term is None:
             continue
