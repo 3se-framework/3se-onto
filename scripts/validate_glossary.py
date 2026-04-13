@@ -77,7 +77,8 @@ def _words_match(title_words: list[str], stem_words: list[str]) -> bool:
       ["enabling", "physical", "element"] vs ["enabling", "physical", "element"]
         -> True  (exact match)
       ["system", "function"] vs ["system", "functional"]
-        -> False ("function" is not a prefix of "functional" — it is the other way)
+        -> False ("function" is not a prefix of "functional" — it is the other
+                  way around; the stem word must be the shorter one)
 
     The match is anchored to the start: stem_words must not be longer than
     title_words, and every stem word must be a prefix of its paired title word.
@@ -103,8 +104,9 @@ def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
          e.g. stem "enabling physical element" matches title "enabling physical element"
       2. Word-level abbreviation match: each stem word is a prefix of the
          corresponding title word.
-         e.g. stem "stakeholder req analysis" matches title "stakeholder requirements analysis"
-         because "req" is a prefix of "requirements".
+         e.g. stem "stakeholder req analysis" matches title
+         "stakeholder requirements analysis" because "req" is a prefix of
+         "requirements".
 
     Returns a list of error messages (empty if consistent).
     """
@@ -134,10 +136,9 @@ def validate_title_vs_stem(data: dict, stem: str) -> list[str]:
     if title_concept.startswith(stem_concept):
         return errors
 
-    # Rule 2: word-level abbreviation match
-    title_words = title_concept.split()
-    stem_words = stem_concept.split()
-    if _words_match(title_words, stem_words):
+    # Rule 2: word-level abbreviation match — each stem word may be a prefix
+    # of the corresponding title word (e.g. "req" matches "requirements")
+    if _words_match(title_concept.split(), stem_concept.split()):
         return errors
 
     errors.append(
