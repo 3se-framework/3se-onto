@@ -40,11 +40,15 @@
     "https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408",
     "https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476",
+    "https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580",
+    "https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c",
+    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
+    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc",
   "entryCreated": "2026-04-01",
-  "entryModified": "2026-04-13",
+  "entryModified": "2026-04-14",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
