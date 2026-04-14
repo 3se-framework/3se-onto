@@ -8,7 +8,6 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63",
-  "related": [],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
     "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473",

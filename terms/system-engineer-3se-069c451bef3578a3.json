@@ -8,13 +8,11 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
-  ],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
-    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
