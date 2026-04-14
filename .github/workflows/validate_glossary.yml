@@ -61,6 +61,9 @@ jobs:
       - name: Inject analysis role links
         run: python scripts/inject_analysis_roles.py
 
+      - name: Inject isResponsibleFor targets
+        run: python scripts/inject_responsible_roles.py
+
       - name: Inject created/updated dates
         run: python scripts/inject_dates.py
 
