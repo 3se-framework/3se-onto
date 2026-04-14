@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Product owner - 3SE",
-  "description": "Role that is responsible for a product, its features and its releases.\nTherefore, it is accountable for the feature analysis, the product analysis and the release analysis.\nIt contributes to the value analysis, the operational analysis and to the variability analysis.\nNote: when the product is an asset, the product owner is also called asset owner",
+  "description": "Role that is accountable for the feature analysis, the product analysis and the release analysis.\nIt contributes to the value analysis, the goal analysis, the operational analysis and to the variability analysis.\nNote: when the product is an asset, the product owner is also called asset owner",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"

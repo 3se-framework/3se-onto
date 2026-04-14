@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System configuration engineer - 3SE",
-  "description": "Role that is responsible for the system configuration and the system element configuration.\nTherefore, it is accountable for the variability analysis.",
+  "description": "Role that is accountable for the variability analysis.\nIt contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system attribute analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the risk analysis, the service analysis, the task analysis and the validation analysis.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
