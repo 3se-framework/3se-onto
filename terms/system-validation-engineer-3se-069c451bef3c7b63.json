@@ -9,9 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63",
   "isResponsibleFor": [
-    "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
-    "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473",
-    "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12"
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"

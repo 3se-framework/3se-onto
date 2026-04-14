@@ -8,10 +8,8 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "isResponsibleFor": [
-    "https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8",
-    "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5",
-    "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0",
-    "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed"
+    "https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770",
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
