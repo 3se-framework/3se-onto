@@ -129,6 +129,13 @@ def main() -> int:
         if targets:
             analysis_to_targets[BASE_IRI + stem] = targets
 
+    # ── Build inverse index: BS/CM URI → set of analysis URIs that reference it
+    # Used by the removal pass to check whether a backing analysis still exists.
+    target_to_analyses: dict[str, set[str]] = {}
+    for analysis_uri, targets in analysis_to_targets.items():
+        for target_uri in targets:
+            target_to_analyses.setdefault(target_uri, set()).add(analysis_uri)
+
     # ── Propagate to role terms ───────────────────────────────────────────────
     changes: dict[str, dict] = {}
 
@@ -144,8 +151,11 @@ def main() -> int:
         for field in ROLE_RELATION_FIELDS:
             current = ensure_list(data.get(field))
             current_set = set(current)
-            additions: list[str] = []
 
+            # ── Addition pass ────────────────────────────────────────────
+            # For each analysis A in the field, add its linked BS and CM
+            # targets when they are not already present.
+            additions: list[str] = []
             for analysis_uri in current:
                 for target_uri in analysis_to_targets.get(analysis_uri, []):
                     if target_uri not in current_set and target_uri not in additions:
@@ -153,9 +163,30 @@ def main() -> int:
                         target_stem = stem_for_uri(target_uri) or target_uri
                         print(f"  + {field}: {stem} -> {target_stem}")
 
-            if additions:
+            # ── Removal pass ─────────────────────────────────────────────
+            # For each BS/CM target T in the field, check whether at least
+            # one analysis that references T is also present in the same
+            # field. If not, T is stale and must be removed.
+            analyses_in_field = {
+                uri for uri in current if uri in analysis_to_targets
+            }
+            removals: list[str] = []
+            for uri in current:
+                # Only consider URIs that are a BS or CM (i.e. appear in
+                # the inverse index) — analyses and other URIs are left alone.
+                backing_analyses = target_to_analyses.get(uri)
+                if backing_analyses is None:
+                    continue
+                if not backing_analyses & analyses_in_field:
+                    removals.append(uri)
+                    target_stem = stem_for_uri(uri) or uri
+                    print(f"  - {field}: {stem} -> {target_stem}")
+
+            if additions or removals:
                 working = get_working(stem)
-                working[field] = current + additions
+                removal_set = set(removals)
+                kept = [u for u in current if u not in removal_set]
+                working[field] = kept + additions
 
     # ── Write changed files ───────────────────────────────────────────────────
     for stem, data in changes.items():
