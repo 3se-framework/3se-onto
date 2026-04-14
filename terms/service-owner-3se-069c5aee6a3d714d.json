@@ -9,8 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d",
   "related": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
-    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
   ],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
