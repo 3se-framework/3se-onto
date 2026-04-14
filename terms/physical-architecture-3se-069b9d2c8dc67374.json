@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Physical architecture - 3SE",
-  "description": "Analysis of the functional element to determine what physical element is realizing it.",
+  "description": "Analysis of the functional element to determine:\n(1) what physical element is realizing it.\n(2) what physical interface is allocating its functional interfaces.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
   "entryCreated": "2026-03-17",
