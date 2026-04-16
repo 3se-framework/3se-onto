@@ -5,9 +5,11 @@
   "description": "Function devolved to an enabling system.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
+  "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e"
   ],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-04-16",
