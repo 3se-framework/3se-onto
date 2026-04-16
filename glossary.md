@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-14 20:34 UTC*
+*Generated on 2026-04-16 21:05 UTC*
 
 This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -532,10 +532,10 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 
 | Relation | Terms |
 |---|---|
-| Related | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [vulnerability-3se-069c1a2fb8f177a4](https://www.3se.info/3se-onto/terms/vulnerability-3se-069c1a2fb8f177a4), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [product-owner-3se-069c451bef057221](https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [service-owner-3se-069c5aee6a3d714d](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d) |
+| Related | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [vulnerability-3se-069c1a2fb8f177a4](https://www.3se.info/3se-onto/terms/vulnerability-3se-069c1a2fb8f177a4), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93) |
 | Narrow match | [asset-21434-2021-069c16c95aa67c53](https://www.3se.info/3se-onto/terms/asset-21434-2021-069c16c95aa67c53), [asset-24765-2017-069c5aee69ca7d63](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63) |
 
-*Created: 2026-03-23 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -591,16 +591,14 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for stakeholder's goals and stakeholder's requirements.
-Therefore, it is accountable for the goal analysis and the value analysis.
-It contributes to the feature analysis and the requirements analysis.
+> Role that is accountable for the goal analysis and the value analysis.
+It contributes to the feature analysis and the stakeholder requirement analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -735,9 +733,10 @@ It contributes to the feature analysis and the requirements analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Related | [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Allocated by | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97) |
 
-*Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-04-16 · Creator: @rcasteran*
 
 ---
 
@@ -749,10 +748,12 @@ It contributes to the feature analysis and the requirements analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f) |
+| Allocates | [enabling-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a) |
 | Exposes | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
+| Allocated by | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6) |
 
-*Created: 2026-03-17 · Modified: 2026-04-01 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-16 · Creator: @rcasteran*
 
 ---
 
@@ -764,10 +765,12 @@ It contributes to the feature analysis and the requirements analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f) |
+| Related | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f) |
+| Allocates | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97) |
 | Exposes | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Allocated by | [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e) |
 
-*Created: 2026-03-17 · Modified: 2026-04-01 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-16 · Creator: @rcasteran*
 
 ---
 
@@ -779,12 +782,13 @@ It contributes to the feature analysis and the requirements analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [enabling-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e) |
+| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [enabling-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e) |
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Close match | [enabling-system-15288-2023-069b9d2c8d5b7b0b](https://www.3se.info/3se-onto/terms/enabling-system-15288-2023-069b9d2c8d5b7b0b) |
+| Allocates | [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
 
-*Created: 2026-03-17 · Modified: 2026-04-01 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-16 · Creator: @rcasteran*
 
 ---
 
@@ -950,9 +954,9 @@ graph TD
     N4["Stakeholder non-functional requirement"]
     N5["Stakeholder constraint"]
     N6["Value"]
-    N7["Constraint"]
-    N8["Non-functional requirement"]
-    N9["Stakeholder requirement"]
+    N7["Non-functional requirement"]
+    N8["Stakeholder requirement"]
+    N9["Constraint"]
     N10["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -960,11 +964,11 @@ graph TD
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N2 -.->|allocates| N6
-    N5 -->|subclass of| N7
+    N4 -->|subclass of| N7
     N4 -->|subclass of| N8
-    N4 -->|subclass of| N9
+    N5 -->|subclass of| N9
     N3 -->|subclass of| N10
-    N3 -->|subclass of| N9
+    N3 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -1111,10 +1115,10 @@ graph TD
     N11["Flow attribute"]
     N12["Functional interface"]
     N13["Functional interface attribute"]
-    N14["State"]
-    N15["Function"]
-    N16["Attribute"]
-    N17["Functional Requirement"]
+    N14["Attribute"]
+    N15["State"]
+    N16["Functional Requirement"]
+    N17["Function"]
     N18["Goal"]
     N19["Stakeholder non-functional requirement"]
 
@@ -1129,17 +1133,17 @@ graph TD
     N9 -.->|allocates| N11
     N12 -.->|allocates| N9
     N12 -.->|allocates| N13
-    N16 -.->|allocates| N18
-    N16 -.->|allocates| N19
-    N14 -.->|allocates| N15
-    N2 -->|subclass of| N14
-    N4 -->|subclass of| N15
-    N8 -->|subclass of| N16
-    N3 -->|subclass of| N16
-    N11 -->|subclass of| N16
-    N7 -->|subclass of| N17
-    N5 -->|subclass of| N16
-    N13 -->|subclass of| N16
+    N14 -.->|allocates| N18
+    N14 -.->|allocates| N19
+    N15 -.->|allocates| N17
+    N8 -->|subclass of| N14
+    N3 -->|subclass of| N14
+    N5 -->|subclass of| N14
+    N2 -->|subclass of| N15
+    N11 -->|subclass of| N14
+    N7 -->|subclass of| N16
+    N13 -->|subclass of| N14
+    N4 -->|subclass of| N17
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -1335,9 +1339,9 @@ graph TD
     N4["Stakeholder non-functional requirement"]
     N5["Stakeholder constraint"]
     N6["Value"]
-    N7["Constraint"]
-    N8["Non-functional requirement"]
-    N9["Stakeholder requirement"]
+    N7["Non-functional requirement"]
+    N8["Stakeholder requirement"]
+    N9["Constraint"]
     N10["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -1345,11 +1349,11 @@ graph TD
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N2 -.->|allocates| N6
-    N5 -->|subclass of| N7
+    N4 -->|subclass of| N7
     N4 -->|subclass of| N8
-    N4 -->|subclass of| N9
+    N5 -->|subclass of| N9
     N3 -->|subclass of| N10
-    N3 -->|subclass of| N9
+    N3 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -1454,21 +1458,21 @@ graph TD
     N3["Hardware state"]
     N4["Hardware function"]
     N5["Hardware"]
-    N6["Physical element"]
+    N6["Function"]
     N7["State"]
-    N8["Function"]
+    N8["Physical element"]
     N9["Functional element"]
     N10["System constraint"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N4
     N5 -.->|allocates| N3
-    N6 -.->|allocates| N9
-    N6 -.->|allocates| N10
-    N7 -.->|allocates| N8
-    N5 -->|subclass of| N6
+    N8 -.->|allocates| N9
+    N8 -.->|allocates| N10
+    N7 -.->|allocates| N6
+    N4 -->|subclass of| N6
     N2 -->|subclass of| N7
-    N4 -->|subclass of| N8
+    N5 -->|subclass of| N8
     N3 -->|subclass of| N7
 ```
 
@@ -1623,8 +1627,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
 ```
 
@@ -2099,10 +2103,10 @@ graph TD
     N8["High level physical element"]
     N9["System state"]
     N10["System attribute"]
-    N11["State"]
-    N12["Constraint"]
-    N13["Non-functional requirement"]
-    N14["Stakeholder requirement"]
+    N11["Non-functional requirement"]
+    N12["Stakeholder requirement"]
+    N13["State"]
+    N14["Constraint"]
     N15["Functional Requirement"]
     N16["Function"]
 
@@ -2115,14 +2119,14 @@ graph TD
     N7 -.->|allocates| N8
     N7 -.->|allocates| N9
     N7 -.->|allocates| N10
-    N11 -.->|allocates| N16
-    N9 -->|subclass of| N11
+    N13 -.->|allocates| N16
+    N3 -->|subclass of| N11
+    N3 -->|subclass of| N12
+    N9 -->|subclass of| N13
     N10 -->|subclass of| N1
-    N6 -->|subclass of| N12
-    N3 -->|subclass of| N13
-    N3 -->|subclass of| N14
+    N6 -->|subclass of| N14
     N5 -->|subclass of| N15
-    N5 -->|subclass of| N14
+    N5 -->|subclass of| N12
 ```
 
 *Created: 2026-03-24 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2348,9 +2352,9 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Activity"]
     N7["System feature"]
-    N8["Constraint"]
-    N9["Non-functional requirement"]
-    N10["Stakeholder requirement"]
+    N8["Non-functional requirement"]
+    N9["Stakeholder requirement"]
+    N10["Constraint"]
     N11["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -2359,11 +2363,11 @@ graph TD
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
     N7 -->|subclass of| N1
-    N5 -->|subclass of| N8
+    N4 -->|subclass of| N8
     N4 -->|subclass of| N9
-    N4 -->|subclass of| N10
+    N5 -->|subclass of| N10
     N3 -->|subclass of| N11
-    N3 -->|subclass of| N10
+    N3 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2410,9 +2414,9 @@ graph TD
     N7["Flow"]
     N8["Functional interface attribute"]
     N9["Physical interface"]
-    N10["State"]
+    N10["Constraint"]
     N11["Attribute"]
-    N12["Constraint"]
+    N12["State"]
     N13["Goal"]
     N14["Stakeholder non-functional requirement"]
     N15["Function"]
@@ -2427,11 +2431,11 @@ graph TD
     N9 -.->|allocates| N5
     N11 -.->|allocates| N13
     N11 -.->|allocates| N14
-    N10 -.->|allocates| N15
-    N2 -->|subclass of| N10
+    N12 -.->|allocates| N15
+    N5 -->|subclass of| N10
     N3 -->|subclass of| N11
+    N2 -->|subclass of| N12
     N8 -->|subclass of| N11
-    N5 -->|subclass of| N12
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -2594,9 +2598,9 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Product"]
     N7["System feature"]
-    N8["Constraint"]
-    N9["Non-functional requirement"]
-    N10["Stakeholder requirement"]
+    N8["Non-functional requirement"]
+    N9["Stakeholder requirement"]
+    N10["Constraint"]
     N11["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -2604,12 +2608,12 @@ graph TD
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
-    N5 -->|subclass of| N8
-    N4 -->|subclass of| N9
-    N4 -->|subclass of| N10
     N7 -->|subclass of| N1
+    N4 -->|subclass of| N8
+    N4 -->|subclass of| N9
+    N5 -->|subclass of| N10
     N3 -->|subclass of| N11
-    N3 -->|subclass of| N10
+    N3 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2722,8 +2726,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N17 -.->|allocates| N10
     N10 -->|subclass of| N1
+    N17 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2749,17 +2753,16 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for a product, its features and its releases.
-Therefore, it is accountable for the feature analysis, the product analysis and the release analysis.
-It contributes to the value analysis, the operational analysis and to the variability analysis.
+> Role that is accountable for the feature analysis, the product analysis and the release analysis.
+It contributes to the value analysis, the goal analysis, the operational analysis and to the variability analysis.
 Note: when the product is an asset, the product owner is also called asset owner
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-08 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -2811,15 +2814,14 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for a project, its Epics and its tasks.
-Therefore, it is accountable for the project analysis, the epic analysis and the task analysis.
+> Role that is accountable for the project analysis, the iteration analysis, the epic analysis and the task analysis.
 It contributes to the release analysis.
 
 | Relation | Terms |
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-01 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -2894,9 +2896,9 @@ graph TD
     N6["Product"]
     N7["System feature"]
     N8["Release"]
-    N9["Constraint"]
-    N10["Non-functional requirement"]
-    N11["Stakeholder requirement"]
+    N9["Non-functional requirement"]
+    N10["Stakeholder requirement"]
+    N11["Constraint"]
     N12["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -2905,12 +2907,12 @@ graph TD
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
     N8 -.->|allocates| N6
-    N5 -->|subclass of| N9
-    N4 -->|subclass of| N10
-    N4 -->|subclass of| N11
     N7 -->|subclass of| N1
+    N4 -->|subclass of| N9
+    N4 -->|subclass of| N10
+    N5 -->|subclass of| N11
     N3 -->|subclass of| N12
-    N3 -->|subclass of| N11
+    N3 -->|subclass of| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
@@ -2927,11 +2929,11 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44), [validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de), [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de), [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5) |
 | Superclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [software-component-req-3se-069c3bf770d271d6](https://www.3se.info/3se-onto/terms/software-component-req-3se-069c3bf770d271d6), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3), [software-unit-req-3se-069c3bf7710a78a9](https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351) |
 | Close match | [requirement-cpre-069a95b4863072f6](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6) |
 
-*Created: 2026-03-13 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -3841,9 +3843,9 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Service"]
     N7["System feature"]
-    N8["Constraint"]
-    N9["Non-functional requirement"]
-    N10["Stakeholder requirement"]
+    N8["Non-functional requirement"]
+    N9["Stakeholder requirement"]
+    N10["Constraint"]
     N11["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -3851,12 +3853,12 @@ graph TD
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
-    N5 -->|subclass of| N8
-    N4 -->|subclass of| N9
-    N4 -->|subclass of| N10
     N7 -->|subclass of| N1
+    N4 -->|subclass of| N8
+    N4 -->|subclass of| N9
+    N5 -->|subclass of| N10
     N3 -->|subclass of| N11
-    N3 -->|subclass of| N10
+    N3 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3970,8 +3972,8 @@ graph TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
     N18 -.->|represented by| N11
-    N18 -.->|allocates| N12
     N12 -->|subclass of| N1
+    N18 -.->|allocates| N12
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4027,17 +4029,16 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for a service, its features and its releases.
-Therefore, it is accountable for the feature analysis, the service analysis and the release analysis.
-It contributes to the value analysis, the operational analysis and to the variability analysis.
+> Role that is accountable for the feature analysis, the service analysis and the release analysis.
+It contributes to the value analysis, the goal analysis, the operational analysis and to the variability analysis.
 Note: when the service is an asset, the service owner is also called asset owner
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-08 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -4098,8 +4099,8 @@ graph TD
     N3["Software state"]
     N4["Software function"]
     N5["Software"]
-    N6["State"]
-    N7["Physical element"]
+    N6["Physical element"]
+    N7["State"]
     N8["Function"]
     N9["Functional element"]
     N10["System constraint"]
@@ -4107,12 +4108,12 @@ graph TD
     N1 -.->|allocates| N2
     N3 -.->|allocates| N4
     N5 -.->|allocates| N3
-    N7 -.->|allocates| N9
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N8
-    N3 -->|subclass of| N6
-    N2 -->|subclass of| N6
-    N5 -->|subclass of| N7
+    N6 -.->|allocates| N9
+    N6 -.->|allocates| N10
+    N7 -.->|allocates| N8
+    N5 -->|subclass of| N6
+    N2 -->|subclass of| N7
+    N3 -->|subclass of| N7
     N4 -->|subclass of| N8
 ```
 
@@ -4170,9 +4171,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4633,10 +4634,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03), [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [value-analysis-3se-069d52ba2c597844](https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
+| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03), [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [value-analysis-3se-069d52ba2c597844](https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Close match | [stakeholder-cpre-069bc40b97e27a5f](https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f) |
 
-*Created: 2026-03-19 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -4729,9 +4730,9 @@ graph TD
     N4["Feature"]
     N5["Stakeholder functional requirement"]
     N6["Stakeholder constraint"]
-    N7["Constraint"]
-    N8["Non-functional requirement"]
-    N9["Stakeholder requirement"]
+    N7["Non-functional requirement"]
+    N8["Stakeholder requirement"]
+    N9["Constraint"]
     N10["Functional Requirement"]
 
     N1 -.->|allocates| N2
@@ -4740,11 +4741,11 @@ graph TD
     N4 -.->|allocates| N5
     N4 -.->|allocates| N3
     N4 -.->|allocates| N6
-    N6 -->|subclass of| N7
+    N3 -->|subclass of| N7
     N3 -->|subclass of| N8
-    N3 -->|subclass of| N9
+    N6 -->|subclass of| N9
     N5 -->|subclass of| N10
-    N5 -->|subclass of| N9
+    N5 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4830,11 +4831,11 @@ graph TD
     N23 -->|subclass of| N20
     N24 -->|subclass of| N20
     N25 -->|subclass of| N20
+    N18 -->|subclass of| N20
+    N18 -.->|allocates| N14
     N12 -.->|allocates| N24
     N8 -.->|exposes| N12
     N8 -.->|allocates| N23
-    N18 -->|subclass of| N20
-    N18 -.->|allocates| N14
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4897,12 +4898,11 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for the system architecture requirements, the system element interfaces, the system element functions, the system element states.
-Therefore, it is accountable for the functional architecture and to the physical architecture.
+> Role that is accountable for the functional architecture, the physical architecture, the system architecture, the system attribute analysis, the product architecture and the service architecture.
+It contributes to the stakeholder requirement analysis, the operational analysis, the system functional analysis, the validation analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
 *Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -4935,9 +4935,9 @@ graph TD
     N8["System"]
     N9["High level physical element"]
     N10["System attribute"]
-    N11["State"]
-    N12["Function"]
-    N13["Attribute"]
+    N11["Attribute"]
+    N12["State"]
+    N13["Function"]
     N14["Goal"]
     N15["Stakeholder non-functional requirement"]
 
@@ -4949,15 +4949,15 @@ graph TD
     N8 -.->|allocates| N9
     N8 -.->|allocates| N5
     N8 -.->|allocates| N10
-    N13 -.->|allocates| N14
-    N13 -.->|allocates| N15
-    N11 -.->|allocates| N12
-    N5 -->|subclass of| N11
-    N6 -->|subclass of| N12
-    N10 -->|subclass of| N13
-    N3 -->|subclass of| N11
-    N4 -->|subclass of| N13
-    N7 -->|subclass of| N13
+    N11 -.->|allocates| N14
+    N11 -.->|allocates| N15
+    N12 -.->|allocates| N13
+    N4 -->|subclass of| N11
+    N3 -->|subclass of| N12
+    N7 -->|subclass of| N11
+    N5 -->|subclass of| N12
+    N10 -->|subclass of| N11
+    N6 -->|subclass of| N13
 ```
 
 *Created: 2026-04-03 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5074,10 +5074,10 @@ graph TD
     N5 -.->|allocates| N6
     N7 -.->|allocates| N5
     N7 -.->|allocates| N8
-    N1 -->|subclass of| N7
-    N2 -->|subclass of| N7
     N4 -->|subclass of| N7
     N3 -->|subclass of| N7
+    N1 -->|subclass of| N7
+    N2 -->|subclass of| N7
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -5199,8 +5199,8 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for the system configuration and the system element configuration.
-Therefore, it is accountable for the variability analysis.
+> Role that is accountable for the variability analysis.
+It contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system attribute analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the risk analysis, the service analysis, the task analysis and the validation analysis.
 
 | Relation | Terms |
 |---|---|
@@ -5271,12 +5271,12 @@ Therefore, it is accountable for the variability analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
+| Related | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488) |
 | Allocated by | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 
-*Created: 2026-03-29 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -5288,11 +5288,11 @@ Therefore, it is accountable for the variability analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d) |
+| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d) |
 | Allocates | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 | Can be | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 
-*Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -5321,12 +5321,12 @@ Therefore, it is accountable for the variability analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
+| Related | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Allocates | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597) |
 | Allocated by | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 
-*Created: 2026-03-29 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-14 · Creator: @rcasteran*
 
 ---
 
@@ -5365,8 +5365,8 @@ Therefore, it is accountable for the variability analysis.
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for the system requirements, the system activities, the system interfaces, the system functions, the system states.
-Therefore, it is accountable for the operational analysis, the system functional analysis and the requirements analysis.
+> Role that is accountable for the operational analysis, the system functional analysis and the stakeholder requirement analysis.
+It contributes to the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system attribute analysis, the validation analysis, the iteration analysis and the epic analysis.
 
 | Relation | Terms |
 |---|---|
@@ -5511,10 +5511,10 @@ graph TD
     N3["System function"]
     N4["System functional requirement"]
     N5["System function attribute"]
-    N6["Function"]
-    N7["Feature"]
-    N8["Attribute"]
-    N9["Functional Requirement"]
+    N6["Feature"]
+    N7["Attribute"]
+    N8["Functional Requirement"]
+    N9["Function"]
     N10["Goal"]
     N11["Stakeholder non-functional requirement"]
     N12["Stakeholder functional requirement"]
@@ -5524,16 +5524,16 @@ graph TD
     N3 -.->|allocates| N1
     N3 -.->|allocates| N4
     N3 -.->|allocates| N5
-    N8 -.->|allocates| N10
-    N8 -.->|allocates| N11
     N7 -.->|allocates| N10
-    N7 -.->|allocates| N12
     N7 -.->|allocates| N11
-    N7 -.->|allocates| N13
-    N3 -->|subclass of| N6
-    N2 -->|subclass of| N7
-    N5 -->|subclass of| N8
-    N4 -->|subclass of| N9
+    N6 -.->|allocates| N10
+    N6 -.->|allocates| N12
+    N6 -.->|allocates| N11
+    N6 -.->|allocates| N13
+    N2 -->|subclass of| N6
+    N5 -->|subclass of| N7
+    N4 -->|subclass of| N8
+    N3 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5670,8 +5670,8 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for the identification of the hazardous situation and threatening situations and the assessment of the related safety risk and security risk.
-Therefore, it is accountable for the risk analysis.
+> Role that is accountable for the risk analysis.
+It contributes to the interdependence analysis, the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system attribute analysis, the stakeholder requirement analysis and the validation analysis.
 
 | Relation | Terms |
 |---|---|
@@ -5814,8 +5814,8 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Role that is responsible for the system validation, the system architecture validation and the system element validation.
-Therefore, it is accountable for the validation analysis.
+> Role that is accountable for the validation analysis.
+It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system attribute analysis, the epic analysis and the stakeholder requirement analysis.
 
 | Relation | Terms |
 |---|---|
