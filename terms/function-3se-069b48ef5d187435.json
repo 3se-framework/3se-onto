@@ -13,12 +13,11 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-16",
   "related": [
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
-    "https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a",
     "https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b",
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
   ]
