@@ -20,5 +20,8 @@
   ],
   "exposes": [
     "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97"
   ]
 }

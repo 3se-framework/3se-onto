@@ -21,5 +21,8 @@
   ],
   "exposes": [
     "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a"
   ]
 }
