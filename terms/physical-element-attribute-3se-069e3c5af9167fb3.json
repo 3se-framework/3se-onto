@@ -8,7 +8,8 @@
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864"
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
   "entryCreated": "2026-04-13",
