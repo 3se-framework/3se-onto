@@ -36,7 +36,8 @@
     "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
     "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
-    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
@@ -76,7 +77,7 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-14",
+  "entryModified": "2026-04-18",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
