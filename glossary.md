@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-18 18:18 UTC*
+*Generated on 2026-04-18 18:23 UTC*
 
 This glossary contains **281 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -974,21 +974,21 @@ graph TD
     N4["Stakeholder non-functional requirement"]
     N5["Stakeholder constraint"]
     N6["Value"]
-    N7["Non-functional requirement"]
-    N8["Stakeholder requirement"]
-    N9["Functional Requirement"]
-    N10["Constraint"]
+    N7["Constraint"]
+    N8["Functional Requirement"]
+    N9["Stakeholder requirement"]
+    N10["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N2 -.->|allocates| N6
-    N4 -->|subclass of| N7
-    N4 -->|subclass of| N8
-    N3 -->|subclass of| N9
+    N5 -->|subclass of| N7
     N3 -->|subclass of| N8
-    N5 -->|subclass of| N10
+    N3 -->|subclass of| N9
+    N4 -->|subclass of| N10
+    N4 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -1136,9 +1136,9 @@ graph TD
     N12["Functional interface"]
     N13["Functional interface attribute"]
     N14["Attribute"]
-    N15["State"]
-    N16["Function"]
-    N17["Functional Requirement"]
+    N15["Functional Requirement"]
+    N16["State"]
+    N17["Function"]
     N18["Goal"]
     N19["Stakeholder non-functional requirement"]
 
@@ -1153,17 +1153,17 @@ graph TD
     N9 -.->|allocates| N11
     N12 -.->|allocates| N9
     N12 -.->|allocates| N13
-    N15 -.->|allocates| N16
     N14 -.->|allocates| N18
     N14 -.->|allocates| N19
+    N16 -.->|allocates| N17
     N3 -->|subclass of| N14
-    N5 -->|subclass of| N14
-    N2 -->|subclass of| N15
+    N7 -->|subclass of| N15
     N11 -->|subclass of| N14
-    N13 -->|subclass of| N14
-    N4 -->|subclass of| N16
-    N7 -->|subclass of| N17
+    N2 -->|subclass of| N16
     N8 -->|subclass of| N14
+    N13 -->|subclass of| N14
+    N4 -->|subclass of| N17
+    N5 -->|subclass of| N14
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -1360,21 +1360,21 @@ graph TD
     N4["Stakeholder non-functional requirement"]
     N5["Stakeholder constraint"]
     N6["Value"]
-    N7["Non-functional requirement"]
-    N8["Stakeholder requirement"]
-    N9["Functional Requirement"]
-    N10["Constraint"]
+    N7["Constraint"]
+    N8["Functional Requirement"]
+    N9["Stakeholder requirement"]
+    N10["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N2 -.->|allocates| N6
-    N4 -->|subclass of| N7
-    N4 -->|subclass of| N8
-    N3 -->|subclass of| N9
+    N5 -->|subclass of| N7
     N3 -->|subclass of| N8
-    N5 -->|subclass of| N10
+    N3 -->|subclass of| N9
+    N4 -->|subclass of| N10
+    N4 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -1479,22 +1479,22 @@ graph TD
     N3["Hardware state"]
     N4["Hardware function"]
     N5["Hardware"]
-    N6["Function"]
-    N7["State"]
-    N8["Physical element"]
+    N6["State"]
+    N7["Physical element"]
+    N8["Function"]
     N9["Functional element"]
     N10["Physical element attribute"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N4
     N5 -.->|allocates| N3
-    N7 -.->|allocates| N6
-    N8 -.->|allocates| N9
-    N8 -.->|allocates| N10
-    N4 -->|subclass of| N6
-    N3 -->|subclass of| N7
-    N5 -->|subclass of| N8
-    N2 -->|subclass of| N7
+    N7 -.->|allocates| N9
+    N7 -.->|allocates| N10
+    N6 -.->|allocates| N8
+    N3 -->|subclass of| N6
+    N5 -->|subclass of| N7
+    N4 -->|subclass of| N8
+    N2 -->|subclass of| N6
 ```
 
 *Created: 2026-04-03 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -1649,8 +1649,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N3 -.->|allocates| N8
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2124,11 +2124,11 @@ graph TD
     N8["High level physical element"]
     N9["System state"]
     N10["System attribute"]
-    N11["Non-functional requirement"]
-    N12["Stakeholder requirement"]
+    N11["Constraint"]
+    N12["State"]
     N13["Functional Requirement"]
-    N14["Constraint"]
-    N15["State"]
+    N14["Stakeholder requirement"]
+    N15["Non-functional requirement"]
     N16["Function"]
 
     N1 -.->|allocates| N2
@@ -2140,14 +2140,14 @@ graph TD
     N7 -.->|allocates| N8
     N7 -.->|allocates| N9
     N7 -.->|allocates| N10
-    N15 -.->|allocates| N16
-    N3 -->|subclass of| N11
-    N3 -->|subclass of| N12
+    N12 -.->|allocates| N16
+    N6 -->|subclass of| N11
     N10 -->|subclass of| N1
+    N9 -->|subclass of| N12
     N5 -->|subclass of| N13
-    N5 -->|subclass of| N12
-    N6 -->|subclass of| N14
-    N9 -->|subclass of| N15
+    N5 -->|subclass of| N14
+    N3 -->|subclass of| N15
+    N3 -->|subclass of| N14
 ```
 
 *Created: 2026-03-24 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2373,22 +2373,22 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Activity"]
     N7["System feature"]
-    N8["Non-functional requirement"]
-    N9["Stakeholder requirement"]
-    N10["Functional Requirement"]
-    N11["Constraint"]
+    N8["Constraint"]
+    N9["Functional Requirement"]
+    N10["Stakeholder requirement"]
+    N11["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
-    N4 -->|subclass of| N8
-    N4 -->|subclass of| N9
+    N5 -->|subclass of| N8
     N7 -->|subclass of| N1
-    N3 -->|subclass of| N10
     N3 -->|subclass of| N9
-    N5 -->|subclass of| N11
+    N3 -->|subclass of| N10
+    N4 -->|subclass of| N11
+    N4 -->|subclass of| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2439,9 +2439,9 @@ graph TD
     N11["Attribute"]
     N12["Constraint"]
     N13["State"]
-    N14["Function"]
-    N15["Goal"]
-    N16["Stakeholder non-functional requirement"]
+    N14["Goal"]
+    N15["Stakeholder non-functional requirement"]
+    N16["Function"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -2451,14 +2451,14 @@ graph TD
     N6 -.->|allocates| N8
     N9 -.->|allocates| N6
     N9 -.->|allocates| N10
-    N13 -.->|allocates| N14
+    N11 -.->|allocates| N14
     N11 -.->|allocates| N15
-    N11 -.->|allocates| N16
+    N13 -.->|allocates| N16
     N3 -->|subclass of| N11
+    N5 -->|subclass of| N11
+    N8 -->|subclass of| N11
     N10 -->|subclass of| N12
     N2 -->|subclass of| N13
-    N8 -->|subclass of| N11
-    N5 -->|subclass of| N11
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -2509,7 +2509,7 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
-| Allocates | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864) |
+| Allocates | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
 | Allocated by | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4) |
 
 *Created: 2026-04-13 · Modified: 2026-04-18 · Creator: @rcasteran*
@@ -2638,22 +2638,22 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Product"]
     N7["System feature"]
-    N8["Non-functional requirement"]
-    N9["Stakeholder requirement"]
-    N10["Functional Requirement"]
-    N11["Constraint"]
+    N8["Constraint"]
+    N9["Functional Requirement"]
+    N10["Stakeholder requirement"]
+    N11["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
-    N4 -->|subclass of| N8
-    N4 -->|subclass of| N9
+    N5 -->|subclass of| N8
     N7 -->|subclass of| N1
-    N3 -->|subclass of| N10
     N3 -->|subclass of| N9
-    N5 -->|subclass of| N11
+    N3 -->|subclass of| N10
+    N4 -->|subclass of| N11
+    N4 -->|subclass of| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2766,8 +2766,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2936,10 +2936,10 @@ graph TD
     N6["Product"]
     N7["System feature"]
     N8["Release"]
-    N9["Non-functional requirement"]
-    N10["Stakeholder requirement"]
-    N11["Functional Requirement"]
-    N12["Constraint"]
+    N9["Constraint"]
+    N10["Functional Requirement"]
+    N11["Stakeholder requirement"]
+    N12["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -2947,12 +2947,12 @@ graph TD
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
     N8 -.->|allocates| N6
-    N4 -->|subclass of| N9
-    N4 -->|subclass of| N10
+    N5 -->|subclass of| N9
     N7 -->|subclass of| N1
-    N3 -->|subclass of| N11
     N3 -->|subclass of| N10
-    N5 -->|subclass of| N12
+    N3 -->|subclass of| N11
+    N4 -->|subclass of| N12
+    N4 -->|subclass of| N11
 ```
 
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
@@ -3883,22 +3883,22 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Service"]
     N7["System feature"]
-    N8["Non-functional requirement"]
-    N9["Stakeholder requirement"]
-    N10["Functional Requirement"]
-    N11["Constraint"]
+    N8["Constraint"]
+    N9["Functional Requirement"]
+    N10["Stakeholder requirement"]
+    N11["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
-    N4 -->|subclass of| N8
-    N4 -->|subclass of| N9
+    N5 -->|subclass of| N8
     N7 -->|subclass of| N1
-    N3 -->|subclass of| N10
     N3 -->|subclass of| N9
-    N5 -->|subclass of| N11
+    N3 -->|subclass of| N10
+    N4 -->|subclass of| N11
+    N4 -->|subclass of| N10
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4012,8 +4012,8 @@ graph TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4140,21 +4140,21 @@ graph TD
     N4["Software function"]
     N5["Software"]
     N6["State"]
-    N7["Physical element"]
-    N8["Function"]
+    N7["Function"]
+    N8["Physical element"]
     N9["Functional element"]
     N10["Physical element attribute"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N4
     N5 -.->|allocates| N3
-    N6 -.->|allocates| N8
-    N7 -.->|allocates| N9
-    N7 -.->|allocates| N10
+    N8 -.->|allocates| N9
+    N8 -.->|allocates| N10
+    N6 -.->|allocates| N7
     N3 -->|subclass of| N6
+    N4 -->|subclass of| N7
+    N5 -->|subclass of| N8
     N2 -->|subclass of| N6
-    N5 -->|subclass of| N7
-    N4 -->|subclass of| N8
 ```
 
 *Created: 2026-04-03 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4770,10 +4770,10 @@ graph TD
     N4["Feature"]
     N5["Stakeholder functional requirement"]
     N6["Stakeholder constraint"]
-    N7["Non-functional requirement"]
-    N8["Stakeholder requirement"]
-    N9["Functional Requirement"]
-    N10["Constraint"]
+    N7["Constraint"]
+    N8["Functional Requirement"]
+    N9["Stakeholder requirement"]
+    N10["Non-functional requirement"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -4781,11 +4781,11 @@ graph TD
     N4 -.->|allocates| N5
     N4 -.->|allocates| N3
     N4 -.->|allocates| N6
-    N3 -->|subclass of| N7
-    N3 -->|subclass of| N8
-    N5 -->|subclass of| N9
+    N6 -->|subclass of| N7
     N5 -->|subclass of| N8
-    N6 -->|subclass of| N10
+    N5 -->|subclass of| N9
+    N3 -->|subclass of| N10
+    N3 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4874,13 +4874,14 @@ graph TD
     N24 -->|subclass of| N21
     N26 -->|subclass of| N21
     N25 -->|subclass of| N21
-    N12 -.->|allocates| N26
     N8 -.->|exposes| N12
     N8 -.->|allocates| N24
-    N9 -->|subclass of| N21
-    N9 -.->|allocates| N24
+    N12 -.->|allocates| N26
     N19 -->|subclass of| N21
     N19 -.->|allocates| N15
+    N9 -->|subclass of| N21
+    N9 -.->|allocates| N24
+    N9 -.->|allocates| N15
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -4994,13 +4995,13 @@ graph TD
     N8 -.->|allocates| N9
     N8 -.->|allocates| N5
     N8 -.->|allocates| N10
-    N12 -.->|allocates| N13
     N11 -.->|allocates| N14
     N11 -.->|allocates| N15
+    N12 -.->|allocates| N13
     N7 -->|subclass of| N11
-    N10 -->|subclass of| N11
-    N5 -->|subclass of| N12
     N3 -->|subclass of| N12
+    N5 -->|subclass of| N12
+    N10 -->|subclass of| N11
     N6 -->|subclass of| N13
     N4 -->|subclass of| N11
 ```
@@ -5149,6 +5150,7 @@ graph TD
     N5 -.->|allocates| N7
     N5 -.->|allocates| N6
     N3 -.->|allocates| N4
+    N3 -.->|allocates| N6
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -5219,8 +5221,8 @@ graph TD
     N8 -.->|allocates| N12
     N8 -.->|allocates| N13
     N8 -.->|can be| N3
-    N12 -.->|allocates| N4
     N10 -.->|allocates| N13
+    N12 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-04 · Creator: @rcasteran*
@@ -5546,29 +5548,29 @@ graph TD
     N3["System function"]
     N4["System functional requirement"]
     N5["System function attribute"]
-    N6["Feature"]
-    N7["Function"]
-    N8["Functional Requirement"]
-    N9["Attribute"]
+    N6["Functional Requirement"]
+    N7["Attribute"]
+    N8["Function"]
+    N9["Feature"]
     N10["Goal"]
-    N11["Stakeholder functional requirement"]
-    N12["Stakeholder non-functional requirement"]
+    N11["Stakeholder non-functional requirement"]
+    N12["Stakeholder functional requirement"]
     N13["Stakeholder constraint"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N1
     N3 -.->|allocates| N4
     N3 -.->|allocates| N5
-    N6 -.->|allocates| N10
-    N6 -.->|allocates| N11
-    N6 -.->|allocates| N12
-    N6 -.->|allocates| N13
+    N7 -.->|allocates| N10
+    N7 -.->|allocates| N11
     N9 -.->|allocates| N10
     N9 -.->|allocates| N12
-    N2 -->|subclass of| N6
-    N3 -->|subclass of| N7
-    N4 -->|subclass of| N8
-    N5 -->|subclass of| N9
+    N9 -.->|allocates| N11
+    N9 -.->|allocates| N13
+    N4 -->|subclass of| N6
+    N5 -->|subclass of| N7
+    N3 -->|subclass of| N8
+    N2 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5662,8 +5664,8 @@ graph TD
     N8 -.->|can be| N7
     N7 -.->|exposes| N6
     N8 -.->|exposes| N4
-    N14 -.->|exposes| N1
     N15 -.->|allocates| N5
+    N14 -.->|exposes| N1
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5680,7 +5682,7 @@ graph TD
 |---|---|
 | Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
 | Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
-| Allocated by | [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
+| Allocated by | [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
 
 *Created: 2026-03-21 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -5811,8 +5813,8 @@ graph TD
     N2 -.->|allocates| N14
     N2 -.->|allocates| N15
     N2 -.->|allocates| N13
-    N14 -.->|allocates| N12
     N4 -.->|allocates| N9
+    N14 -.->|allocates| N12
     N15 -.->|allocates| N11
 ```
 
