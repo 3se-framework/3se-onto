@@ -1146,14 +1146,15 @@ def render_analysis_allocates_diagram(
     if not allocates_edges:
         return ""
 
-    # Second pass: for every URI that appears in the allocates edges
-    # (both subjects and targets), follow its subClassOf relation and
-    # emit a subclass-of edge to its parent.
-    # Strictly limited to nodes registered by the first pass — no other
-    # candidates are considered, preventing unrelated terms from appearing.
+    # Second pass: for every URI in related_uris union the first-pass nodes,
+    # follow its subClassOf relation and emit a subclass-of edge to its parent.
+    # A parent is registered when it is already a first-pass node OR when it
+    # has an allocates relation pointing to a first-pass node — this surfaces
+    # superclass terms (e.g. attribute) that allocate a related term (e.g. goal).
     subclassof_edges = []  # (child_uri, parent_uri)
     allocates_nodes = set(node_ids.keys())  # all nodes from the first pass
-    for child_uri in list(allocates_nodes):
+    second_pass_candidates = list(dict.fromkeys(list(related_uris) + list(allocates_nodes)))
+    for child_uri in second_pass_candidates:
         child_term = terms_index.get(child_uri)
         if child_term is None:
             continue
@@ -1161,16 +1162,27 @@ def render_analysis_allocates_diagram(
         if isinstance(subclass_of, str):
             subclass_of = [subclass_of]
         for parent_uri in subclass_of:
+            already_registered = parent_uri in allocates_nodes
+            if not already_registered:
+                parent_term = terms_index.get(parent_uri)
+                if parent_term is None:
+                    continue
+                p_alloc = parent_term.get("allocates") or []
+                if isinstance(p_alloc, str):
+                    p_alloc = [p_alloc]
+                if not any(t in allocates_nodes for t in p_alloc):
+                    continue
             node_id(child_uri)
             label_for(child_uri)
             node_id(parent_uri)
             label_for(parent_uri)
             subclassof_edges.append((child_uri, parent_uri))
 
-    # Third pass: for each parent registered in the second pass, follow its
-    # allocates relation and collect the targeted URIs as new allocates edges.
-    parent_uris = set(node_ids.keys())
-    for parent_uri in list(parent_uris):
+    # Third pass: for each node registered so far, follow its allocates relation
+    # and collect edges — but only to targets already registered, to avoid pulling
+    # in unrelated terms reachable via the newly registered superclass nodes.
+    registered_before_third = set(node_ids.keys())
+    for parent_uri in list(registered_before_third):
         parent_term = terms_index.get(parent_uri)
         if parent_term is None:
             continue
@@ -1178,10 +1190,10 @@ def render_analysis_allocates_diagram(
         if isinstance(parent_allocates, str):
             parent_allocates = [parent_allocates]
         for obj_uri in parent_allocates:
+            if obj_uri not in registered_before_third:
+                continue
             node_id(parent_uri)
             label_for(parent_uri)
-            node_id(obj_uri)
-            label_for(obj_uri)
             allocates_edges.append((parent_uri, obj_uri))
 
     # Deduplicate
