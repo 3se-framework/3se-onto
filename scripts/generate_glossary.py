@@ -514,7 +514,7 @@ def render_analysis_allocates_diagram_md(term: dict,
 
     # Third pass: for each parent registered in the second pass, follow its
     # allocates relation and collect the targeted URIs as new allocates edges.
-    parent_uris = set(node_ids.keys()) - allocates_nodes
+    parent_uris = set(node_ids.keys())
     for parent_uri in list(parent_uris):
         parent_term = terms_index.get(parent_uri)
         if parent_term is None:
