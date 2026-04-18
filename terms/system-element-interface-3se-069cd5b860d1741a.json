@@ -8,14 +8,14 @@
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
-    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
     "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d"
   ],
   "entryCreated": "2026-04-01",

@@ -10,6 +10,9 @@
   "canBe": [
     "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
   ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
