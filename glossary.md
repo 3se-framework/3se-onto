@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-18 20:23 UTC*
+*Generated on 2026-04-19 10:44 UTC*
 
 This glossary contains **281 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -1115,32 +1115,33 @@ graph TD
 ```mermaid
 graph TD
     N1["Functional element"]
-    N2["System state"]
+    N2["System element state"]
     N3["Functional element attribute"]
-    N4["System function"]
-    N5["System state attribute"]
-    N6["Activity"]
-    N7["System functional requirement"]
-    N8["System function attribute"]
-    N9["Flow"]
-    N10["Exchange"]
-    N11["Flow attribute"]
-    N12["Functional interface"]
-    N13["Functional interface attribute"]
+    N4["System state"]
+    N5["System function"]
+    N6["System state attribute"]
+    N7["Activity"]
+    N8["System functional requirement"]
+    N9["System function attribute"]
+    N10["Flow"]
+    N11["Exchange"]
+    N12["Flow attribute"]
+    N13["Functional interface"]
+    N14["Functional interface attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
-    N2 -.->|allocates| N4
-    N2 -.->|allocates| N5
+    N4 -.->|allocates| N5
     N4 -.->|allocates| N6
-    N4 -.->|allocates| N7
-    N4 -.->|allocates| N8
-    N9 -.->|allocates| N10
-    N9 -.->|allocates| N11
-    N12 -.->|allocates| N9
-    N12 -.->|allocates| N13
-    N3 -.->|allocates| N5
+    N5 -.->|allocates| N7
     N5 -.->|allocates| N8
+    N5 -.->|allocates| N9
+    N10 -.->|allocates| N11
+    N10 -.->|allocates| N12
+    N13 -.->|allocates| N10
+    N13 -.->|allocates| N14
+    N3 -.->|allocates| N6
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -1173,12 +1174,12 @@ graph TD
 | Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Superclass of | [safety-functional-element-3se-069d95f51fa47c45](https://www.3se.info/3se-onto/terms/safety-functional-element-3se-069d95f51fa47c45), [security-functional-element-3se-069d95f51fc374c7](https://www.3se.info/3se-onto/terms/security-functional-element-3se-069d95f51fc374c7) |
 | Close match | [behavioral-component-arcadia-2023-069b9d2c8d277fda](https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda) |
-| Allocates | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864) |
+| Allocates | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864) |
 | Can be | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206) |
 | Exposes | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
 | Allocated by | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 
-*Created: 2026-03-17 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-19 · Creator: @rcasteran*
 
 ---
 
@@ -1206,12 +1207,12 @@ graph TD
 > Breakdown structure of the functional element that supports the functional architecture by following the principles below:
 (1) A high level functional element is composed of at least two functional elements.
 (2) A high level functional element allocates at least one high level system state.
-(3) A functional element allocates at least one system state.
+(3) A functional element allocates at least one system element state.
 (4) A functional element can be a high level functional element.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206), [high-level-system-state-3se-069c062b3637735e](https://www.3se.info/3se-onto/terms/high-level-system-state-3se-069c062b3637735e), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206), [high-level-system-state-3se-069c062b3637735e](https://www.3se.info/3se-onto/terms/high-level-system-state-3se-069c062b3637735e), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 
 **Structure**
@@ -1219,30 +1220,32 @@ graph TD
 ```mermaid
 graph TD
     N1["Functional element"]
-    N2["System state"]
+    N2["System element state"]
     N3["Functional element attribute"]
     N4["High level functional element"]
     N5["High level system state"]
-    N6["High level system function"]
-    N7["System element state"]
-    N8["System function"]
-    N9["System state attribute"]
+    N6["System state"]
+    N7["High level system function"]
+    N8["System element function"]
+    N9["Hardware state"]
+    N10["Software state"]
+    N11["System architecture constraint"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|can be| N4
     N4 -->|composed of| N1
     N4 -.->|allocates| N5
-    N5 -->|composed of| N2
-    N5 -.->|allocates| N6
-    N2 -->|composed of| N7
+    N5 -->|composed of| N6
+    N5 -.->|allocates| N7
     N2 -.->|allocates| N8
     N2 -.->|allocates| N9
-    N2 -.->|can be| N5
-    N3 -.->|allocates| N9
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N11
+    N8 -.->|allocates| N11
 ```
 
-*Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
 
 ---
 
@@ -1605,8 +1608,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2363,7 +2366,7 @@ graph TD
 ```mermaid
 graph TD
     N1["Functional element"]
-    N2["System state"]
+    N2["System element state"]
     N3["Functional element attribute"]
     N4["Physical element"]
     N5["Physical element attribute"]
@@ -2464,7 +2467,7 @@ graph TD
     N3["High level functional element"]
     N4["Functional element"]
     N5["Physical element attribute"]
-    N6["System state"]
+    N6["System element state"]
     N7["Functional element attribute"]
     N8["High level system state"]
 
@@ -4076,9 +4079,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4730,14 +4733,14 @@ graph TD
     N24 -->|subclass of| N21
     N26 -->|subclass of| N21
     N25 -->|subclass of| N21
+    N8 -.->|exposes| N12
+    N8 -.->|allocates| N24
     N19 -->|subclass of| N21
     N19 -.->|allocates| N15
     N9 -->|subclass of| N21
     N9 -.->|allocates| N24
     N9 -.->|allocates| N15
     N12 -.->|allocates| N26
-    N8 -.->|exposes| N12
-    N8 -.->|allocates| N24
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-13 · Creator: @rcasteran*
@@ -5072,7 +5075,7 @@ graph TD
     N8 -.->|allocates| N13
     N8 -.->|can be| N3
     N10 -.->|allocates| N13
-    N12 -.->|allocates| N4
+    N12 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-18 · Creator: @rcasteran*
@@ -5206,12 +5209,12 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
-| Related | [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d) |
+| Related | [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Allocates | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
-| Allocated by | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
+| Allocated by | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 
-*Created: 2026-03-29 · Modified: 2026-04-18 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-19 · Creator: @rcasteran*
 
 ---
 
@@ -5560,14 +5563,14 @@ It contributes to the interdependence analysis, the operational analysis, the sy
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac) |
+| Related | [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Composed of | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 | Allocates | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
 | Can be | [high-level-system-state-3se-069c062b3637735e](https://www.3se.info/3se-onto/terms/high-level-system-state-3se-069c062b3637735e) |
-| Allocated by | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Allocated by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
-*Created: 2026-03-29 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-19 · Creator: @rcasteran*
 
 ---
 
@@ -5645,9 +5648,9 @@ graph TD
     N2 -.->|allocates| N14
     N2 -.->|allocates| N15
     N2 -.->|allocates| N13
-    N14 -.->|allocates| N12
-    N15 -.->|allocates| N11
     N4 -.->|allocates| N9
+    N15 -.->|allocates| N11
+    N14 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
