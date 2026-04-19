@@ -30,7 +30,8 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
-    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
   ],
   "exposes": [
     "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
