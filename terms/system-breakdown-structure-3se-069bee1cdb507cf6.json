@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System breakdown structure - 3SE",
-  "description": "Breakdown structure of the system that supports the system architecture by following the principles below:\n(1) A system is composed of at least two system elements.\n(2) A system allocates a high level physical element.\n(3) A system element allocates a physical element.\n(4) A system element can be a system.\nNote: principle (4) excludes principle (3)",
+  "description": "Breakdown structure of the system that supports the system architecture by following the principles below:\n(1) A system is composed of at least two system elements.\n(2) A system allocates a high level physical element.\n(3) A system element allocates a physical element.\n(4) A system element can be a system.\nNote: principle (4) excludes principle (3).",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
