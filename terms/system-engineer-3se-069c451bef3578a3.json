@@ -29,7 +29,10 @@
     "https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7",
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
     "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
-    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
+    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
+    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -65,7 +68,7 @@
     "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-14",
+  "entryModified": "2026-04-19",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
