@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System interface attribute breakdown structure - 3SE",
+  "description": "Breakdown structure of the system interface attribute that supports the system architecture by following the principles below:\n(1) A system interface attribute is composed of at least one system element interface attribute.\n(2) A system element interface attribute allocates a physical interface attribute.\n(3) A system element interface attribute can be a system interface attribute.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ]
+}

@@ -8,7 +8,7 @@
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d"
