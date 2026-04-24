@@ -39,7 +39,9 @@
     "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4",
     "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e",
     "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf",
-    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b"
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
@@ -62,7 +64,8 @@
     "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72",
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
-    "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368"
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368",
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",

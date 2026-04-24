@@ -1,0 +1,27 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System interface attribute - 3SE",
+  "description": "Attribute of a system interface.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
+  ],
+  "entryCreated": "2026-04-24",
+  "entryModified": "2026-04-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Physical interface attribute - 3SE",
+  "description": "Attribute of a functional interface.",
+  "status": "draft",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
+  ],
+  "entryCreated": "2026-04-24",
+  "entryModified": "2026-04-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
