@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System attribute breakdown structure - 3SE",
-  "description": "Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:\n(1) A system attribute is composed of at least two system element attributes.\n(2) A system element attribute can be a system attribute.\n(3) A system element attribute allocates a physical element attribute.\n(4) A physical element attribute allocates a functional element attribute.\n(5) A functional element attribute allocates a system state attribute.\n(6) A system state attribute allocates a system function attribute.\nNote: principle (3) excludes principle (2).",
+  "description": "Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:\n(1) A system attribute is composed of at least two system element attributes.\n(2) A system attribute allocates a high level physical element attribute.\n(3) A system element attribute allocates a physical element attribute.\n(4) A system element attribute can be a system attribute.\nNote: principle (4) excludes principle (3).",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
   "subClassOf": [

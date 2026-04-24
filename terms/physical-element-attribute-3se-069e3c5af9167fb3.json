@@ -11,6 +11,9 @@
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se"
+  ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
   "entryCreated": "2026-04-13",
   "entryModified": "2026-04-18",

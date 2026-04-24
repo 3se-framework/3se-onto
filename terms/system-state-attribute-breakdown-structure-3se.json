@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System state attribute breakdown structure - 3SE",
+  "description": "Breakdown structure of the system state attribute that supports the functional architecture by following the principles below:\n(1) A system state attribute is composed of at least two system element state attributes.\n(2) A system state attribute allocates at least one system function attribute.\n(3) A system element state attribute allocates at least one system element function attribute.\n(4) A system element state attribute can be a system state attribute.\nNote: principle (4) excludes principe (3).",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ]
+}

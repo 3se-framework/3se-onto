@@ -19,6 +19,7 @@
     "name": "@rcasteran"
   },
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se"
   ]
 }
