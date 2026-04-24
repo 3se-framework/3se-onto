@@ -11,7 +11,7 @@
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
   "isComposedOf": [
-    "https://www.3se.info/3se-onto/terms/system-element-function-atttribute-3se"
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
   "entryCreated": "2026-04-13",
