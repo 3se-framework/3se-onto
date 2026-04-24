@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-24 18:51 UTC*
+*Generated on 2026-04-24 19:00 UTC*
 
 This glossary contains **291 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
@@ -251,7 +251,7 @@ This glossary contains **291 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [System element function - 3SE](#system-element-function---3se)
   - [System element function attribute - 3SE](#system-element-function-attribute---3se)
   - [System element interface - 3SE](#system-element-interface---3se)
-  - [System element interface attribute- 3SE](#system-element-interface-attribute--3se)
+  - [System element interface attribute - 3SE](#system-element-interface-attribute---3se)
   - [System element requirement - 3SE](#system-element-requirement---3se)
   - [System element state - 3SE](#system-element-state---3se)
   - [System element state attribute - 3SE](#system-element-state-attribute---3se)
@@ -1305,10 +1305,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N7 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -4221,9 +4221,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4850,7 +4850,7 @@ graph TD
     N31["System element function attribute"]
     N32["System architecture constraint"]
     N33["System element interface"]
-    N34["System element interface attribute- 3SE"]
+    N34["System element interface attribute"]
     N35["System interface"]
     N36["System element state"]
     N37["Hardware state"]
@@ -4907,28 +4907,28 @@ graph TD
     N24 -->|subclass of| N21
     N27 -->|subclass of| N21
     N28 -->|subclass of| N21
-    N37 -.->|allocates| N30
-    N20 -->|subclass of| N21
-    N20 -.->|allocates| N16
-    N38 -.->|allocates| N29
-    N13 -.->|allocates| N27
-    N13 -.->|allocates| N16
-    N34 -->|subclass of| N21
-    N34 -.->|allocates| N13
-    N34 -.->|allocates| N32
     N8 -.->|exposes| N14
     N8 -.->|allocates| N36
     N8 -.->|allocates| N24
     N14 -.->|allocates| N27
-    N31 -->|subclass of| N21
-    N31 -.->|allocates| N32
+    N13 -.->|allocates| N27
+    N13 -.->|allocates| N16
+    N37 -.->|allocates| N30
+    N39 -.->|allocates| N17
+    N39 -.->|allocates| N28
+    N34 -->|subclass of| N21
+    N34 -.->|allocates| N13
+    N34 -.->|allocates| N32
     N25 -->|subclass of| N21
     N25 -.->|allocates| N32
+    N38 -.->|allocates| N29
     N26 -->|subclass of| N21
     N26 -.->|allocates| N28
     N26 -.->|allocates| N16
-    N39 -.->|allocates| N17
-    N39 -.->|allocates| N28
+    N31 -->|subclass of| N21
+    N31 -.->|allocates| N32
+    N20 -->|subclass of| N21
+    N20 -.->|allocates| N16
     N9 -->|subclass of| N21
     N9 -.->|allocates| N24
     N9 -.->|allocates| N16
@@ -5397,7 +5397,7 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 ---
 
-### System element interface attribute- 3SE
+### System element interface attribute - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
@@ -5405,6 +5405,7 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
+| Related | [system-interface-attribute-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Allocates | [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Can be | [system-interface-attribute-3se-069ebbb4e70f70e6](https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6) |
@@ -5752,7 +5753,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [system-interface-attribute-3se-069ebbb4e70f70e6](https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6) |
+| Related | [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [system-interface-attribute-3se-069ebbb4e70f70e6](https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6), [system-element-interface-attribute-3se-069ebbb4e70678ed](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 
 **Structure**
@@ -5763,14 +5764,17 @@ graph TD
     N2["Functional interface attribute"]
     N3["System non-functional requirement"]
     N4["System interface attribute"]
-    N5["System element interface attribute- 3SE"]
+    N5["System element interface attribute"]
+    N6["System architecture constraint"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N4 -->|composed of| N5
     N4 -.->|allocates| N3
-    N2 -.->|allocates| N3
     N5 -.->|allocates| N1
+    N5 -.->|allocates| N6
+    N5 -.->|can be| N4
+    N2 -.->|allocates| N3
 ```
 
 *Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5803,7 +5807,7 @@ graph TD
     N4["System constraint"]
     N5["System element interface"]
     N6["System architecture constraint"]
-    N7["System element interface attribute- 3SE"]
+    N7["System element interface attribute"]
     N8["System interface"]
     N9["System"]
     N10["System element"]
@@ -5836,11 +5840,11 @@ graph TD
     N10 -.->|can be| N9
     N9 -.->|exposes| N8
     N10 -.->|exposes| N5
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N6
-    N17 -.->|allocates| N6
     N16 -.->|exposes| N1
     N16 -.->|allocates| N4
+    N17 -.->|allocates| N6
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N6
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6027,11 +6031,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N4 -.->|allocates| N8
     N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
     N14 -.->|allocates| N9
-    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
+    N11 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
