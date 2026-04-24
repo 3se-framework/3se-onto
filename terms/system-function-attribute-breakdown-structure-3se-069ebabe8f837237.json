@@ -5,8 +5,10 @@
   "description": "Breakdown structure of the system function attribute that supports the system functional analysis by following the principles below:\n(1) A system function attribute is composed of at least two system element function attributes.\n(2) A system element function attribute can be a system function attribute.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
   "related": [
-    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67",
     "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
     "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
     "https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b"
