@@ -32,7 +32,8 @@
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
     "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
     "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534",
-    "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -42,7 +43,8 @@
     "https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b",
     "https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
