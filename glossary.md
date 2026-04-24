@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-04-19 15:41 UTC*
+*Generated on 2026-04-24 17:46 UTC*
 
-This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
+This glossary contains **287 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
 ## Contents
 
@@ -49,6 +49,7 @@ This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [Functional architecture model - 3SE](#functional-architecture-model---3se)
   - [Functional element - 3SE](#functional-element---3se)
   - [Functional element attribute - 3SE](#functional-element-attribute---3se)
+  - [Functional element attribute breakdown structure - 3SE](#functional-element-attribute-breakdown-structure---3se)
   - [Functional element breakdown structure - 3SE](#functional-element-breakdown-structure---3se)
   - [Functional interface - 3SE](#functional-interface---3se)
   - [Functional interface attribute - 3SE](#functional-interface-attribute---3se)
@@ -82,8 +83,10 @@ This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [Hazardous situation - 3SE](#hazardous-situation---3se)
   - [High level feature - 3SE](#high-level-feature---3se)
   - [High level functional element - 3SE](#high-level-functional-element---3se)
+  - [High level functional element attribute - 3SE](#high-level-functional-element-attribute---3se)
   - [High level goal - 3SE](#high-level-goal---3se)
   - [High level physical element - 3SE](#high-level-physical-element---3se)
+  - [High level physical element attribute - 3SE](#high-level-physical-element-attribute---3se)
   - [High level value - 3SE](#high-level-value---3se)
   - [Holism - 3SE](#holism---3se)
   - [Information - 3SE](#information---3se)
@@ -108,6 +111,7 @@ This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [Physical architecture model - 3SE](#physical-architecture-model---3se)
   - [Physical element - 3SE](#physical-element---3se)
   - [Physical element attribute - 3SE](#physical-element-attribute---3se)
+  - [Physical element attribute breakdown structure - 3SE](#physical-element-attribute-breakdown-structure---3se)
   - [Physical element breakdown structure - 3SE](#physical-element-breakdown-structure---3se)
   - [Physical interface - 3SE](#physical-interface---3se)
   - [Problem - 3SE](#problem---3se)
@@ -244,15 +248,18 @@ This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [System element - 3SE](#system-element---3se)
   - [System element attribute - 3SE](#system-element-attribute---3se)
   - [System element function - 3SE](#system-element-function---3se)
+  - [System element function attribute - 3SE](#system-element-function-attribute---3se)
   - [System element interface - 3SE](#system-element-interface---3se)
   - [System element requirement - 3SE](#system-element-requirement---3se)
   - [System element state - 3SE](#system-element-state---3se)
+  - [System element state attribute - 3SE](#system-element-state-attribute---3se)
   - [System element validation - 3SE](#system-element-validation---3se)
   - [System element validation case - 3SE](#system-element-validation-case---3se)
   - [System engineer - 3SE](#system-engineer---3se)
   - [System feature - 3SE](#system-feature---3se)
   - [System function - 3SE](#system-function---3se)
   - [System function attribute - 3SE](#system-function-attribute---3se)
+  - [System function attribute breakdown structure - 3SE](#system-function-attribute-breakdown-structure---3se)
   - [System function breakdown structure - 3SE](#system-function-breakdown-structure---3se)
   - [System function model - 3SE](#system-function-model---3se)
   - [System functional analysis - 3SE](#system-functional-analysis---3se)
@@ -264,6 +271,7 @@ This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [System risk engineer - 3SE](#system-risk-engineer---3se)
   - [System state - 3SE](#system-state---3se)
   - [System state attribute - 3SE](#system-state-attribute---3se)
+  - [System state attribute breakdown structure - 3SE](#system-state-attribute-breakdown-structure---3se)
   - [System state breakdown structure - 3SE](#system-state-breakdown-structure---3se)
   - [System validation - 3SE](#system-validation---3se)
   - [System validation case - 3SE](#system-validation-case---3se)
@@ -426,7 +434,7 @@ This glossary contains **279 3SE term(s)**, **93 other term(s)**, **8 3SE proper
 
 ## 3SE Terms
 
-*279 term(s) defined by the 3SE framework.*
+*287 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -563,7 +571,7 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 | Relation | Terms |
 |---|---|
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [holism-3se-069c316c19067fbe](https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9), [stakeholder-req-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
-| Superclass of | [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [hardware-attribute-3se-069dcf9369ad79dd](https://www.3se.info/3se-onto/terms/hardware-attribute-3se-069dcf9369ad79dd), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3), [software-attribute-3se-069dcf9369bf7d0b](https://www.3se.info/3se-onto/terms/software-attribute-3se-069dcf9369bf7d0b), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
+| Superclass of | [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [hardware-attribute-3se-069dcf9369ad79dd](https://www.3se.info/3se-onto/terms/hardware-attribute-3se-069dcf9369ad79dd), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e), [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3), [software-attribute-3se-069dcf9369bf7d0b](https://www.3se.info/3se-onto/terms/software-attribute-3se-069dcf9369bf7d0b), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
 | Narrow match | [attribute-24765-2017-069b72bee10a7f6c](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c) |
 | Allocates | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e) |
 | Can be | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
@@ -580,10 +588,10 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
-| Superclass of | [feature-breakdown-structure-3se-069c96f861447442](https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [goal-breakdown-structure-3se-069c96f8615f7b6a](https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a), [hardware-block-breakdown-structure-3se-069dc0c117f07144](https://www.3se.info/3se-onto/terms/hardware-block-breakdown-structure-3se-069dc0c117f07144), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-component-breakdown-structure-3se-069dc076d3dc7c81](https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [value-breakdown-structure-3se-069d6aadc05c7722](https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [system-function-attribute-breakdown-structure-3se-069ebabe8f837237](https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237) |
+| Superclass of | [feature-breakdown-structure-3se-069c96f861447442](https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442), [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [goal-breakdown-structure-3se-069c96f8615f7b6a](https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a), [hardware-block-breakdown-structure-3se-069dc0c117f07144](https://www.3se.info/3se-onto/terms/hardware-block-breakdown-structure-3se-069dc0c117f07144), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [physical-element-attribute-breakdown-structure-3se-069ebabe8f697368](https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-component-breakdown-structure-3se-069dc076d3dc7c81](https://www.3se.info/3se-onto/terms/software-component-breakdown-structure-3se-069dc076d3dc7c81), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [value-breakdown-structure-3se-069d6aadc05c7722](https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722) |
 
-*Created: 2026-04-04 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-04-04 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -1104,7 +1112,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-architecture-24765-2017-069b9d2c8d8d723e](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e) |
 
@@ -1142,7 +1150,7 @@ graph TD
     N3 -.->|allocates| N6
 ```
 
-*Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -1189,12 +1197,59 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e) |
+| Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [physical-element-attribute-breakdown-structure-3se-069ebabe8f697368](https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Allocates | [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
+| Can be | [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e) |
 | Allocated by | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3) |
 
-*Created: 2026-04-13 · Modified: 2026-04-18 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### Functional element attribute breakdown structure - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Breakdown structure of the functional element attribute that supports the functional architecture by following the principles below:
+(1) A high level functional element attribute is composed of at least two functional element attributes.
+(2) A high level functional element attribute allocates at least one system state attribute.
+(3) A functional element attribute allocates at least one system element state attribute.
+(4) A functional element attribute can be a high level functional element attribute.
+Note: principle (4) excludes principle (3).
+
+| Relation | Terms |
+|---|---|
+| Related | [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
+| Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
+
+**Structure**
+
+```mermaid
+graph TD
+    N1["Functional element attribute"]
+    N2["System state attribute"]
+    N3["System non-functional requirement"]
+    N4["High level functional element attribute"]
+    N5["System element state attribute"]
+    N6["System architecture constraint"]
+    N7["System function attribute"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|can be| N4
+    N4 -->|composed of| N1
+    N4 -.->|allocates| N2
+    N4 -.->|allocates| N3
+    N5 -.->|allocates| N6
+    N5 -.->|can be| N2
+    N2 -->|composed of| N5
+    N2 -.->|allocates| N7
+    N2 -.->|allocates| N3
+    N7 -.->|allocates| N3
+```
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -1223,28 +1278,30 @@ graph TD
     N3["Functional element attribute"]
     N4["High level functional element"]
     N5["System state"]
-    N6["System element function"]
-    N7["Hardware state"]
-    N8["Software state"]
-    N9["System architecture constraint"]
-    N10["System function"]
-    N11["System state attribute"]
+    N6["High level functional element attribute"]
+    N7["System element function"]
+    N8["Hardware state"]
+    N9["Software state"]
+    N10["System element state attribute"]
+    N11["System function"]
+    N12["System state attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|can be| N4
     N4 -->|composed of| N1
     N4 -.->|allocates| N5
-    N2 -.->|allocates| N6
+    N4 -.->|allocates| N6
     N2 -.->|allocates| N7
     N2 -.->|allocates| N8
     N2 -.->|allocates| N9
+    N2 -.->|allocates| N10
     N2 -.->|can be| N5
     N5 -->|composed of| N2
-    N5 -.->|allocates| N10
     N5 -.->|allocates| N11
-    N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
+    N5 -.->|allocates| N12
+    N6 -.->|allocates| N12
+    N3 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1914,10 +1971,28 @@ graph TD
 |---|---|
 | Related | [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2) |
 | Composed of | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504) |
-| Allocates | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
+| Allocates | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e) |
 | Allocated by | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
 
-*Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### High level functional element attribute - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Attribute of a high level functional element.
+
+| Relation | Terms |
+|---|---|
+| Related | [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [physical-element-attribute-breakdown-structure-3se-069ebabe8f697368](https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368) |
+| Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Composed of | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864) |
+| Allocates | [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
+| Allocated by | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206), [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4) |
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -1946,10 +2021,28 @@ graph TD
 |---|---|
 | Related | [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6) |
 | Composed of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
-| Allocates | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206) |
+| Allocates | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206), [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4) |
 | Allocated by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
-*Created: 2026-03-22 · Modified: 2026-03-22 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### High level physical element attribute - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Attribute of a high level physical element.
+
+| Relation | Terms |
+|---|---|
+| Related | [physical-element-attribute-breakdown-structure-3se-069ebabe8f697368](https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368), [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e) |
+| Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Composed of | [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3) |
+| Allocates | [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e) |
+| Allocated by | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -2327,7 +2420,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [physical-architecture-model-3se-069d3f26ae2f7408](https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Related | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [physical-element-breakdown-structure-3se-069c03464b5670d2](https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2), [physical-architecture-model-3se-069d3f26ae2f7408](https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-element-attribute-breakdown-structure-3se-069ebabe8f697368](https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 **Allocations**
@@ -2357,7 +2450,7 @@ graph TD
     N5 -.->|allocates| N3
 ```
 
-*Created: 2026-03-17 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -2404,12 +2497,57 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e) |
+| Related | [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e), [physical-element-attribute-breakdown-structure-3se-069ebabe8f697368](https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Allocates | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
+| Can be | [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4) |
 | Allocated by | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4) |
 
-*Created: 2026-04-13 · Modified: 2026-04-18 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### Physical element attribute breakdown structure - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Breakdown structure of the physical element attribute that supports the physical architecture by following the principles below:
+(1) A high level physical element attribute is composed of at least two physical element attributes.
+(2) A high level physical element attribute allocates at least one high level functional element attribute.
+(3) A physical element attribute allocates at least one functional element attribute.
+(4) A physical element attribute can be a high level physical element attribute.
+
+| Relation | Terms |
+|---|---|
+| Related | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e), [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3) |
+| Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
+
+**Structure**
+
+```mermaid
+graph TD
+    N1["Functional element attribute"]
+    N2["System state attribute"]
+    N3["System non-functional requirement"]
+    N4["High level functional element attribute"]
+    N5["High level physical element attribute"]
+    N6["Physical element attribute"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
+    N1 -.->|can be| N4
+    N4 -->|composed of| N1
+    N4 -.->|allocates| N2
+    N4 -.->|allocates| N3
+    N5 -->|composed of| N6
+    N5 -.->|allocates| N4
+    N6 -.->|allocates| N1
+    N6 -.->|allocates| N3
+    N6 -.->|can be| N5
+    N2 -.->|allocates| N3
+```
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -2435,25 +2573,30 @@ graph TD
     N1["High level physical element"]
     N2["Physical element"]
     N3["High level functional element"]
-    N4["Functional element"]
-    N5["Physical element attribute"]
-    N6["System constraint"]
-    N7["System element state"]
-    N8["Functional element attribute"]
-    N9["System state"]
+    N4["High level physical element attribute"]
+    N5["Functional element"]
+    N6["Physical element attribute"]
+    N7["System constraint"]
+    N8["System element state"]
+    N9["Functional element attribute"]
+    N10["System state"]
+    N11["High level functional element attribute"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
-    N2 -.->|allocates| N4
+    N1 -.->|allocates| N4
     N2 -.->|allocates| N5
     N2 -.->|allocates| N6
+    N2 -.->|allocates| N7
     N2 -.->|can be| N1
-    N4 -.->|allocates| N7
-    N4 -.->|allocates| N8
-    N4 -.->|can be| N3
-    N3 -->|composed of| N4
-    N3 -.->|allocates| N9
     N5 -.->|allocates| N8
+    N5 -.->|allocates| N9
+    N5 -.->|can be| N3
+    N3 -->|composed of| N5
+    N3 -.->|allocates| N10
+    N3 -.->|allocates| N11
+    N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2646,8 +2789,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4671,16 +4814,19 @@ graph TD
     N22["Flow attribute"]
     N23["Functional element attribute"]
     N24["System state attribute"]
-    N25["Functional interface attribute"]
-    N26["Software function"]
-    N27["Hardware function"]
-    N28["System architecture constraint"]
-    N29["System element interface"]
-    N30["System interface"]
-    N31["System element state"]
-    N32["Hardware state"]
-    N33["Software state"]
-    N34["System state"]
+    N25["High level functional element attribute"]
+    N26["Functional interface attribute"]
+    N27["System element state attribute"]
+    N28["Software function"]
+    N29["Hardware function"]
+    N30["System element function attribute"]
+    N31["System element interface"]
+    N32["System architecture constraint"]
+    N33["System interface"]
+    N34["System element state"]
+    N35["Hardware state"]
+    N36["Software state"]
+    N37["System state"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -4706,39 +4852,48 @@ graph TD
     N22 -.->|allocates| N15
     N23 -.->|allocates| N24
     N23 -.->|allocates| N15
-    N25 -.->|allocates| N15
+    N23 -.->|can be| N25
+    N26 -.->|allocates| N15
+    N24 -->|composed of| N27
     N24 -.->|allocates| N19
     N24 -.->|allocates| N15
-    N17 -.->|allocates| N26
-    N17 -.->|allocates| N27
     N17 -.->|allocates| N28
+    N17 -.->|allocates| N29
+    N17 -.->|allocates| N30
     N17 -.->|can be| N16
-    N29 -.->|allocates| N12
-    N29 -.->|allocates| N28
-    N29 -.->|can be| N30
-    N31 -.->|allocates| N17
+    N31 -.->|allocates| N12
     N31 -.->|allocates| N32
-    N31 -.->|allocates| N33
-    N31 -.->|allocates| N28
-    N31 -.->|can be| N34
+    N31 -.->|can be| N33
+    N34 -.->|allocates| N17
+    N34 -.->|allocates| N35
+    N34 -.->|allocates| N36
+    N34 -.->|allocates| N27
+    N34 -.->|can be| N37
     N7 -.->|exposes| N12
     N22 -->|subclass of| N20
     N23 -->|subclass of| N20
-    N25 -->|subclass of| N20
+    N26 -->|subclass of| N20
     N24 -->|subclass of| N20
-    N34 -.->|allocates| N16
-    N34 -.->|allocates| N24
-    N8 -.->|exposes| N13
-    N8 -.->|allocates| N31
-    N8 -.->|allocates| N23
-    N33 -.->|allocates| N26
+    N25 -->|subclass of| N20
+    N25 -.->|allocates| N24
+    N25 -.->|allocates| N15
     N9 -->|subclass of| N20
     N9 -.->|allocates| N23
     N9 -.->|allocates| N15
-    N13 -.->|allocates| N25
-    N32 -.->|allocates| N27
+    N37 -.->|allocates| N16
+    N37 -.->|allocates| N24
+    N27 -->|subclass of| N20
+    N27 -.->|allocates| N32
+    N36 -.->|allocates| N28
     N19 -->|subclass of| N20
     N19 -.->|allocates| N15
+    N35 -.->|allocates| N29
+    N13 -.->|allocates| N26
+    N30 -->|subclass of| N20
+    N30 -.->|allocates| N15
+    N8 -.->|exposes| N13
+    N8 -.->|allocates| N34
+    N8 -.->|allocates| N23
 ```
 
 *Created: 2026-04-11 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -4808,7 +4963,7 @@ It contributes to the stakeholder requirement analysis, the operational analysis
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -4861,11 +5016,11 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
+| Related | [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 | Subclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569) |
-| Allocated by | [system-architecture-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-architecture-validation-case-3se-069b5b3d9ee67de5), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
+| Allocated by | [system-architecture-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-architecture-validation-case-3se-069b5b3d9ee67de5), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf) |
 
-*Created: 2026-03-29 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -4967,16 +5122,14 @@ graph TD
 
 > Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:
 (1) A system attribute is composed of at least two system element attributes.
-(2) A system element attribute can be a system attribute.
+(2) A system attribute allocates a high level physical element attribute.
 (3) A system element attribute allocates a physical element attribute.
-(4) A physical element attribute allocates a functional element attribute.
-(5) A functional element attribute allocates a system state attribute.
-(6) A system state attribute allocates a system function attribute.
-Note: principle (3) excludes principle (2).
+(4) A system element attribute can be a system attribute.
+Note: principle (4) excludes principle (3).
 
 | Relation | Terms |
 |---|---|
-| Related | [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4), [system-attribute-analysis-3se-069dcf9368b37c5a](https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a), [system-attribute-model-3se-069dcf9369887f72](https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3) |
+| Related | [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4), [system-attribute-analysis-3se-069dcf9368b37c5a](https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a), [system-attribute-model-3se-069dcf9369887f72](https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3), [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 
 **Structure**
@@ -4987,23 +5140,23 @@ graph TD
     N2["System element attribute"]
     N3["Physical element attribute"]
     N4["Functional element attribute"]
-    N5["System state attribute"]
-    N6["System non-functional requirement"]
-    N7["System function attribute"]
+    N5["System non-functional requirement"]
+    N6["High level physical element attribute"]
+    N7["High level functional element attribute"]
 
     N1 -->|composed of| N2
     N2 -.->|allocates| N3
     N2 -.->|can be| N1
-    N4 -.->|allocates| N5
-    N4 -.->|allocates| N6
-    N7 -.->|allocates| N6
-    N5 -.->|allocates| N7
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N4
-    N3 -.->|allocates| N6
+    N3 -.->|allocates| N5
+    N3 -.->|can be| N6
+    N6 -->|composed of| N3
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
-*Created: 2026-04-13 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5054,9 +5207,10 @@ graph TD
     N9["System element state"]
     N10["System element attribute"]
     N11["High level functional element"]
-    N12["Functional element"]
-    N13["Physical element attribute"]
-    N14["System constraint"]
+    N12["High level physical element attribute"]
+    N13["Functional element"]
+    N14["Physical element attribute"]
+    N15["System constraint"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
@@ -5070,13 +5224,14 @@ graph TD
     N2 -.->|can be| N1
     N3 -->|composed of| N8
     N3 -.->|allocates| N11
-    N8 -.->|allocates| N12
+    N3 -.->|allocates| N12
     N8 -.->|allocates| N13
     N8 -.->|allocates| N14
+    N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N12 -.->|allocates| N9
-    N10 -.->|allocates| N13
+    N10 -.->|allocates| N14
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5095,7 +5250,7 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5160,13 +5315,31 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
-| Related | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
+| Related | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
-| Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b) |
 | Can be | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Allocated by | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 
-*Created: 2026-03-29 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### System element function attribute - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Attribute of a system element function.
+
+| Relation | Terms |
+|---|---|
+| Related | [system-function-attribute-breakdown-structure-3se-069ebabe8f837237](https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3) |
+| Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Allocates | [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
+| Can be | [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d) |
+| Allocated by | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5211,13 +5384,31 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
-| Related | [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
+| Related | [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-element-breakdown-structure-3se-069c03f8a40b7253](https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
-| Allocates | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Allocates | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf) |
 | Can be | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 | Allocated by | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 
-*Created: 2026-03-29 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### System element state attribute - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Attribute of a system element state.
+
+| Relation | Terms |
+|---|---|
+| Related | [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3) |
+| Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Allocates | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Can be | [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
+| Allocated by | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5263,7 +5454,7 @@ It contributes to the functional architecture, the physical architecture, the sy
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-19 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5311,12 +5502,43 @@ It contributes to the functional architecture, the physical architecture, the sy
 
 | Relation | Terms |
 |---|---|
-| Related | [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e) |
+| Related | [system-function-attribute-breakdown-structure-3se-069ebabe8f837237](https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Composed of | [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b) |
 | Allocates | [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
 | Allocated by | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
 
-*Created: 2026-04-13 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### System function attribute breakdown structure - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Breakdown structure of the system function attribute that supports the system functional analysis by following the principles below:
+(1) A system function attribute is composed of at least two system element function attributes.
+(2) A system element function attribute can be a system function attribute.
+
+| Relation | Terms |
+|---|---|
+| Related | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b) |
+
+**Structure**
+
+```mermaid
+graph TD
+    N1["System element function attribute"]
+    N2["System non-functional requirement"]
+    N3["System function attribute"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|can be| N3
+    N3 -->|composed of| N1
+    N3 -.->|allocates| N2
+```
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5346,7 +5568,7 @@ graph TD
     N6["System function attribute"]
     N7["Software function"]
     N8["Hardware function"]
-    N9["System architecture constraint"]
+    N9["System element function attribute"]
 
     N1 -.->|allocates| N2
     N3 -->|composed of| N4
@@ -5386,7 +5608,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-function-model-3se-069d3f26ae0e7b05](https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05) |
+| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-function-model-3se-069d3f26ae0e7b05](https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05), [system-function-attribute-breakdown-structure-3se-069ebabe8f837237](https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [functional-analysis-24765-2017-069b9d2c8d7d712f](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f) |
 
@@ -5406,7 +5628,7 @@ graph TD
     N3 -.->|allocates| N5
 ```
 
-*Created: 2026-03-17 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5497,7 +5719,6 @@ graph TD
     N8 -.->|can be| N7
     N7 -.->|exposes| N6
     N8 -.->|exposes| N4
-    N15 -.->|allocates| N5
     N14 -.->|exposes| N1
     N14 -.->|allocates| N3
 ```
@@ -5516,7 +5737,7 @@ graph TD
 |---|---|
 | Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
 | Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
-| Allocated by | [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
+| Allocated by | [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7), [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e), [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
 
 *Created: 2026-03-21 · Modified: 2026-04-13 · Creator: @rcasteran*
 
@@ -5550,7 +5771,7 @@ It contributes to the interdependence analysis, the operational analysis, the sy
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-04-01 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5580,12 +5801,55 @@ It contributes to the interdependence analysis, the operational analysis, the sy
 
 | Relation | Terms |
 |---|---|
-| Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e) |
+| Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+| Composed of | [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf) |
 | Allocates | [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
-| Allocated by | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
+| Allocated by | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 
-*Created: 2026-04-13 · Modified: 2026-04-18 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
+
+---
+
+### System state attribute breakdown structure - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Breakdown structure of the system state attribute that supports the functional architecture by following the principles below:
+(1) A system state attribute is composed of at least two system element state attributes.
+(2) A system state attribute allocates at least one system function attribute.
+(3) A system element state attribute allocates at least one system element function attribute.
+(4) A system element state attribute can be a system state attribute.
+Note: principle (4) excludes principe (3).
+
+| Relation | Terms |
+|---|---|
+| Related | [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
+| Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
+
+**Structure**
+
+```mermaid
+graph TD
+    N1["System element function attribute"]
+    N2["System non-functional requirement"]
+    N3["System function attribute"]
+    N4["System element state attribute"]
+    N5["System architecture constraint"]
+    N6["System state attribute"]
+
+    N1 -.->|allocates| N2
+    N1 -.->|can be| N3
+    N4 -.->|allocates| N5
+    N4 -.->|can be| N6
+    N3 -->|composed of| N1
+    N3 -.->|allocates| N2
+    N6 -->|composed of| N4
+    N6 -.->|allocates| N3
+    N6 -.->|allocates| N2
+```
+
+*Created: 2026-04-24 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
@@ -5619,9 +5883,10 @@ graph TD
     N8["System function attribute"]
     N9["Software function"]
     N10["Hardware function"]
-    N11["System architecture constraint"]
+    N11["System element function attribute"]
     N12["Hardware state"]
     N13["Software state"]
+    N14["System element state attribute"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
@@ -5637,7 +5902,7 @@ graph TD
     N2 -.->|allocates| N5
     N2 -.->|allocates| N12
     N2 -.->|allocates| N13
-    N2 -.->|allocates| N11
+    N2 -.->|allocates| N14
     N2 -.->|can be| N1
     N12 -.->|allocates| N10
     N4 -.->|allocates| N8
@@ -5690,7 +5955,7 @@ It contributes to the operational analysis, the system functional analysis, the 
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-24 · Creator: @rcasteran*
 
 ---
 
