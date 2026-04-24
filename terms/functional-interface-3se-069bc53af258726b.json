@@ -17,7 +17,8 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6"
+    "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
   "entryCreated": "2026-03-19",
   "entryModified": "2026-04-24",
