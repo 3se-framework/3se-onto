@@ -41,7 +41,8 @@
     "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf",
     "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
     "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
-    "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6"
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6",
+    "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
