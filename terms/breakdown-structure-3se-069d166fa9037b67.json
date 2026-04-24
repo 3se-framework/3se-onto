@@ -6,10 +6,11 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67",
   "related": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
   ],
   "entryCreated": "2026-04-04",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-24",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

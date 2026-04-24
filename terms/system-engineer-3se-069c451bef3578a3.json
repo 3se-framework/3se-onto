@@ -31,7 +31,8 @@
     "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
     "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
-    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
+    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -64,10 +65,13 @@
     "https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580",
     "https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c",
     "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
-    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72"
+    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72",
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-19",
+  "entryModified": "2026-04-24",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

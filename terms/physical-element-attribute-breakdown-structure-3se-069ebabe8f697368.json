@@ -6,5 +6,19 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4",
+    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
+  ],
+  "entryCreated": "2026-04-24",
+  "entryModified": "2026-04-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

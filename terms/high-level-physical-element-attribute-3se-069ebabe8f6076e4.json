@@ -1,0 +1,27 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "High level physical element attribute - 3SE",
+  "description": "Attribute of a high level physical element.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368",
+    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e"
+  ],
+  "entryCreated": "2026-04-24",
+  "entryModified": "2026-04-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

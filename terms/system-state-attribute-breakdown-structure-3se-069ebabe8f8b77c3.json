@@ -6,5 +6,19 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
+    "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+  ],
+  "entryCreated": "2026-04-24",
+  "entryModified": "2026-04-24",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
