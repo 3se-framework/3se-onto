@@ -14,9 +14,6 @@
     "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
-  "allocates": [
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2"
-  ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-04-26",
   "entryCreator": {
