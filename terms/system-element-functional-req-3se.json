@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element functional requirement - 3SE",
+  "description": "Functional requirement about a system element.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
+  ]
+}
