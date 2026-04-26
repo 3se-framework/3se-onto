@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
   "isComposedOf": [
-    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se"
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",

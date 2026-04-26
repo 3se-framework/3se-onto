@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element constraint - 3SE",
+  "description": "Constraint about a system element.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
+  ],
+  "entryCreated": "2026-04-26",
+  "entryModified": "2026-04-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

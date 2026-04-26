@@ -1,23 +1,22 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "System non-functional requirement - 3SE",
-  "description": "Non-functional requirement about a system.",
+  "title": "System element non-functional requirement - 3SE",
+  "description": "Non-functional requirement about a system element.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
-  "isComposedOf": [
-    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc",
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
-  "entryCreated": "2026-03-21",
+  "entryCreated": "2026-04-26",
   "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
