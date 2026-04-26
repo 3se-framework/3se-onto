@@ -8,6 +8,9 @@
     "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
