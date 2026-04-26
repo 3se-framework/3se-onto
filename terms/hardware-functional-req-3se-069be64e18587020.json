@@ -5,7 +5,8 @@
   "description": "Functional requirement about a hardware.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
+    "https://www.3se.info/3se-onto/terms/hardware-req-3se"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020",
   "related": [

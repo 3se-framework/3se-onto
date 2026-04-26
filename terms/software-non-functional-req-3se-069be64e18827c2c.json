@@ -5,7 +5,8 @@
   "description": "Non-functional requirement about a software.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d"
+    "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
+    "https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c",
   "related": [
