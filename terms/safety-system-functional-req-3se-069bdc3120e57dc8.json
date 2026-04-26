@@ -11,11 +11,9 @@
     "https://www.3se.info/3se-onto/terms/functional-safety-requirement-26262-1-2018-069bdc3120907798"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-system-functional-req-3se-069bdc3120e57dc8",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
-  ],
+  "related": [],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
