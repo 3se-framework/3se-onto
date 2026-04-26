@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware requirement - 3SE",
+  "description": "Requirement about a hardware.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/hardware-validation-3se-069ee5005a6171ce"
+  ],
+  "entryCreated": "2026-04-26",
+  "entryModified": "2026-04-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

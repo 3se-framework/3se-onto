@@ -12,11 +12,10 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-non-functional-req-3se-069bdc3120bb78da",
   "related": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
-    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

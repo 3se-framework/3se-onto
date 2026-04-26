@@ -18,11 +18,7 @@
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
     "https://www.3se.info/3se-onto/terms/safety-software-constraint-3se-069bdc3120c37bc8",
-    "https://www.3se.info/3se-onto/terms/safety-software-functional-req-3se-069bdc3120cb7dbe",
-    "https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249",
     "https://www.3se.info/3se-onto/terms/security-software-constraint-3se-069bdc31211a740f",
-    "https://www.3se.info/3se-onto/terms/security-software-functional-req-3se-069bdc3121227d90",
-    "https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd",
     "https://www.3se.info/3se-onto/terms/software-constraint-3se-069be64e18697419",
     "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd",
     "https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b",
@@ -41,7 +37,7 @@
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

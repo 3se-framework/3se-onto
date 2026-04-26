@@ -11,11 +11,9 @@
     "https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-functional-req-3se-069bdc3120b37468",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
-  ],
+  "related": [],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-03-20",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

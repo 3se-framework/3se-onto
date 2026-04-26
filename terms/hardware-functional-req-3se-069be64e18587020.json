@@ -6,14 +6,14 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
-    "https://www.3se.info/3se-onto/terms/hardware-req-3se"
+    "https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020",
   "related": [
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-03-21",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
