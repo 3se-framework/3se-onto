@@ -13,13 +13,10 @@
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
-    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2",
-    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534",
-    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
-    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4"
+    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-13",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

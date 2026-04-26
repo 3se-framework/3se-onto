@@ -1,4 +1,5 @@
 {
+  "@id": "https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476",
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System requirement model - 3SE",
@@ -6,5 +7,15 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
-  ]
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
+  ],
+  "entryCreated": "2026-04-26",
+  "entryModified": "2026-04-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

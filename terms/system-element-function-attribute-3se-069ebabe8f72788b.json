@@ -16,10 +16,11 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237",
-    "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3"
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "entryCreated": "2026-04-24",
-  "entryModified": "2026-04-24",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

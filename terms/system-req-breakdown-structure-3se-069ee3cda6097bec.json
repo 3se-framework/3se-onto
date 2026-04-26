@@ -28,7 +28,13 @@
     "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
     "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
     "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241",
-    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
+    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc",
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
+    "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed",
+    "https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476"
   ],
   "entryCreated": "2026-04-26",
   "entryModified": "2026-04-26",

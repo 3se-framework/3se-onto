@@ -11,7 +11,8 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2",
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
-    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
+    "https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476"
   ],
   "entryCreated": "2026-04-26",
   "entryModified": "2026-04-26",

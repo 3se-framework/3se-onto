@@ -12,10 +12,11 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
     "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
-    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "entryCreated": "2026-04-24",
-  "entryModified": "2026-04-24",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
