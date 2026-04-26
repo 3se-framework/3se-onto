@@ -10,7 +10,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c",
   "related": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
   ],
   "entryCreated": "2026-03-21",

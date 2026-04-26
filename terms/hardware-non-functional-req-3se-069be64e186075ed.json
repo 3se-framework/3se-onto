@@ -10,7 +10,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed",
   "related": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
   ],
   "entryCreated": "2026-03-21",

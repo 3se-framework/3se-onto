@@ -11,9 +11,7 @@
     "https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
-  ],
+  "related": [],
   "entryCreated": "2026-03-20",
   "entryModified": "2026-04-26",
   "entryCreator": {

@@ -13,7 +13,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc",
   "related": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
