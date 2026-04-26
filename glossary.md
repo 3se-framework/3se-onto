@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-04-26 17:31 UTC*
+*Generated on 2026-04-26 17:50 UTC*
 
-This glossary contains **297 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
+This glossary contains **299 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
 
 ## Contents
 
@@ -77,8 +77,10 @@ This glossary contains **297 3SE term(s)**, **93 other term(s)**, **8 3SE proper
   - [Hardware interface breakdown structure - 3SE](#hardware-interface-breakdown-structure---3se)
   - [Hardware non-functional requirement - 3SE](#hardware-non-functional-requirement---3se)
   - [Hardware product - 3SE](#hardware-product---3se)
+  - [Hardware requirement - 3SE](#hardware-requirement---3se)
   - [Hardware state - 3SE](#hardware-state---3se)
   - [Hardware state breakdown structure - 3SE](#hardware-state-breakdown-structure---3se)
+  - [Hardware validation - 3SE](#hardware-validation---3se)
   - [Hazard - 3SE](#hazard---3se)
   - [Hazardous situation - 3SE](#hazardous-situation---3se)
   - [High level feature - 3SE](#high-level-feature---3se)
@@ -444,7 +446,7 @@ This glossary contains **297 3SE term(s)**, **93 other term(s)**, **8 3SE proper
 
 ## 3SE Terms
 
-*297 term(s) defined by the 3SE framework.*
+*299 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1158,9 +1160,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N2 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N6 -.->|allocates| N9
+    N14 -.->|allocates| N15
+    N2 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1315,9 +1317,9 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
+    N11 -.->|allocates| N10
     N6 -.->|allocates| N13
     N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
 ```
 
@@ -1369,7 +1371,7 @@ graph TD
 |---|---|
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569), [solution-3se-069bc40b97cf7f18](https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18), [safety-hardware-non-functional-req-3se-069bdc3120bb78da](https://www.3se.info/3se-onto/terms/safety-hardware-non-functional-req-3se-069bdc3120bb78da), [safety-software-non-functional-req-3se-069bdc3120d47249](https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249), [safety-system-non-functional-req-3se-069bdc3120ee7a1c](https://www.3se.info/3se-onto/terms/safety-system-non-functional-req-3se-069bdc3120ee7a1c), [security-hardware-non-functional-req-3se-069bdc3121117d6c](https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c), [security-software-non-functional-req-3se-069bdc31212b77bd](https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd), [security-system-non-functional-req-3se-069bdc31214573e2](https://www.3se.info/3se-onto/terms/security-system-non-functional-req-3se-069bdc31214573e2), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed), [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-element-non-functional-req-3se-069ee425ebbb7edc](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc) |
 | Subclass of | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-| Superclass of | [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020), [safety-hardware-functional-req-3se-069bdc3120b37468](https://www.3se.info/3se-onto/terms/safety-hardware-functional-req-3se-069bdc3120b37468), [safety-software-functional-req-3se-069bdc3120cb7dbe](https://www.3se.info/3se-onto/terms/safety-software-functional-req-3se-069bdc3120cb7dbe), [security-hardware-functional-req-3se-069bdc312109712d](https://www.3se.info/3se-onto/terms/security-hardware-functional-req-3se-069bdc312109712d), [security-software-functional-req-3se-069bdc3121227d90](https://www.3se.info/3se-onto/terms/security-software-functional-req-3se-069bdc3121227d90), [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b), [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5), [system-element-functional-req-3se-069ee425ebb17241](https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241), [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9) |
+| Superclass of | [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020), [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b), [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5), [system-element-functional-req-3se-069ee425ebb17241](https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241), [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9) |
 | Related match | [functional-req-cpre-069a9faf2c977232](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232) |
 
 *Created: 2026-03-16 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -1497,7 +1499,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [safety-hardware-constraint-3se-069bdc3120aa7eff](https://www.3se.info/3se-onto/terms/safety-hardware-constraint-3se-069bdc3120aa7eff), [safety-hardware-functional-req-3se-069bdc3120b37468](https://www.3se.info/3se-onto/terms/safety-hardware-functional-req-3se-069bdc3120b37468), [safety-hardware-non-functional-req-3se-069bdc3120bb78da](https://www.3se.info/3se-onto/terms/safety-hardware-non-functional-req-3se-069bdc3120bb78da), [security-hardware-constraint-3se-069bdc3121007939](https://www.3se.info/3se-onto/terms/security-hardware-constraint-3se-069bdc3121007939), [security-hardware-functional-req-3se-069bdc312109712d](https://www.3se.info/3se-onto/terms/security-hardware-functional-req-3se-069bdc312109712d), [security-hardware-non-functional-req-3se-069bdc3121117d6c](https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c), [hardware-constraint-3se-069be64e18377cf1](https://www.3se.info/3se-onto/terms/hardware-constraint-3se-069be64e18377cf1), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020), [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235), [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516) |
+| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [safety-hardware-constraint-3se-069bdc3120aa7eff](https://www.3se.info/3se-onto/terms/safety-hardware-constraint-3se-069bdc3120aa7eff), [security-hardware-constraint-3se-069bdc3121007939](https://www.3se.info/3se-onto/terms/security-hardware-constraint-3se-069bdc3121007939), [hardware-constraint-3se-069be64e18377cf1](https://www.3se.info/3se-onto/terms/hardware-constraint-3se-069be64e18377cf1), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020), [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235), [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516), [hardware-req-3se-069ee5005a3d7e34](https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34), [hardware-validation-3se-069ee5005a6171ce](https://www.3se.info/3se-onto/terms/hardware-validation-3se-069ee5005a6171ce) |
 | Subclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Superclass of | [safety-hardware-3se-069d96aa1e8a705d](https://www.3se.info/3se-onto/terms/safety-hardware-3se-069d96aa1e8a705d), [security-hardware-3se-069d96aa1eb3758d](https://www.3se.info/3se-onto/terms/security-hardware-3se-069d96aa1eb3758d) |
 | Narrow match | [hardware-24765-2017-069a9bc4a30f7367](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367) |
@@ -1505,7 +1507,7 @@ graph TD
 | Allocates | [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c) |
 | Exposes | [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920) |
 
-*Created: 2026-03-18 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -1687,8 +1689,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
 ```
 
@@ -1787,9 +1789,10 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
-| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [hardware-req-3se-069ee5005a3d7e34](https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34) |
+| Superclass of | [safety-hardware-functional-req-3se-069bdc3120b37468](https://www.3se.info/3se-onto/terms/safety-hardware-functional-req-3se-069bdc3120b37468), [security-hardware-functional-req-3se-069bdc312109712d](https://www.3se.info/3se-onto/terms/security-hardware-functional-req-3se-069bdc312109712d) |
 
-*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -1857,9 +1860,10 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
-| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
+| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [hardware-req-3se-069ee5005a3d7e34](https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34) |
+| Superclass of | [safety-hardware-non-functional-req-3se-069bdc3120bb78da](https://www.3se.info/3se-onto/terms/safety-hardware-non-functional-req-3se-069bdc3120bb78da), [security-hardware-non-functional-req-3se-069bdc3121117d6c](https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c) |
 
-*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -1878,6 +1882,22 @@ graph TD
 | Allocates | [hardware-feature-3se-069c058ef4b77346](https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346), [hardware-attribute-3se-069dcf9369ad79dd](https://www.3se.info/3se-onto/terms/hardware-attribute-3se-069dcf9369ad79dd) |
 
 *Created: 2026-03-22 · Modified: 2026-04-13 · Creator: @rcasteran*
+
+---
+
+### Hardware requirement - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Requirement about a hardware.
+
+| Relation | Terms |
+|---|---|
+| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [hardware-validation-3se-069ee5005a6171ce](https://www.3se.info/3se-onto/terms/hardware-validation-3se-069ee5005a6171ce) |
+| Subclass of | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Superclass of | [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020), [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed) |
+
+*Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -1933,6 +1953,21 @@ graph TD
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
+
+---
+
+### Hardware validation - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Evaluation of a hardware to determine whether it satisfies the hardware requirements allocated to it at the end of a development phase.
+
+| Relation | Terms |
+|---|---|
+| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [hardware-req-3se-069ee5005a3d7e34](https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34) |
+| Subclass of | [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
+
+*Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -2360,7 +2395,7 @@ graph TD
 |---|---|
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569), [solution-3se-069bc40b97cf7f18](https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18) |
 | Subclass of | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
-| Superclass of | [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed), [safety-hardware-non-functional-req-3se-069bdc3120bb78da](https://www.3se.info/3se-onto/terms/safety-hardware-non-functional-req-3se-069bdc3120bb78da), [safety-software-non-functional-req-3se-069bdc3120d47249](https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249), [security-hardware-non-functional-req-3se-069bdc3121117d6c](https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c), [security-software-non-functional-req-3se-069bdc31212b77bd](https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd), [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [system-element-non-functional-req-3se-069ee425ebbb7edc](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
+| Superclass of | [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed), [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [system-element-non-functional-req-3se-069ee425ebbb7edc](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
 | Close match | [quality-req-cpre-069a9faf2cb177af](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af) |
 | Broad match | [non-functional-req-cpre-069a9faf2ca97723](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723) |
 
@@ -2463,11 +2498,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N2 -.->|allocates| N10
-    N5 -.->|allocates| N3
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
+    N5 -.->|allocates| N3
     N9 -.->|allocates| N10
+    N2 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2616,8 +2651,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2826,8 +2861,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3021,7 +3056,7 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de), [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5) |
-| Superclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [software-component-req-3se-069c3bf770d271d6](https://www.3se.info/3se-onto/terms/software-component-req-3se-069c3bf770d271d6), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3), [software-unit-req-3se-069c3bf7710a78a9](https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351) |
+| Superclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [hardware-req-3se-069ee5005a3d7e34](https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [software-component-req-3se-069c3bf770d271d6](https://www.3se.info/3se-onto/terms/software-component-req-3se-069c3bf770d271d6), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3), [software-unit-req-3se-069c3bf7710a78a9](https://www.3se.info/3se-onto/terms/software-unit-req-3se-069c3bf7710a78a9), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-element-req-3se-069c3bf771277d2d](https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351) |
 | Close match | [requirement-cpre-069a95b4863072f6](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6) |
 
 *Created: 2026-03-13 · Modified: 2026-04-14 · Creator: @rcasteran*
@@ -3208,15 +3243,14 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Functional requirement about a hardware which is relevant for safety engineering.
+> Hardware functional requirement which is relevant for safety engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
-| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020) |
 | Broad match | [technical-safety-requirement-26262-1-2018-069bdc31214e72c2](https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3224,15 +3258,15 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Non-functional requirement about a hardware which is relevant for safety engineering.
+> Hardware non-functional requirement which is relevant for safety engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
-| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
+| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed) |
 | Broad match | [technical-safety-requirement-26262-1-2018-069bdc31214e72c2](https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3373,15 +3407,14 @@ It includes the following steps:
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Functional requirement about a software which is relevant for safety engineering.
+> Software functional requirement which is relevant for safety engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
-| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b) |
 | Broad match | [technical-safety-requirement-26262-1-2018-069bdc31214e72c2](https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3389,15 +3422,15 @@ It includes the following steps:
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Non-functional requirement about a software which is relevant for safety engineering.
+> Software non-functional requirement which is relevant for safety engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
-| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
+| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c) |
 | Broad match | [technical-safety-requirement-26262-1-2018-069bdc31214e72c2](https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3607,14 +3640,13 @@ It includes the following steps:
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Functional requirement about a hardware which is relevant for security engineering.
+> Hardware functional requirement which is relevant for security engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
-| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [hardware-functional-req-3se-069be64e18587020](https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3622,14 +3654,14 @@ It includes the following steps:
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Non-functional requirement about a hardware which is relevant for security engineering.
+> Security non-functional requirement which is relevant for security engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1) |
-| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
+| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [hardware-non-functional-req-3se-069be64e186075ed](https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3770,14 +3802,13 @@ It includes the following steps:
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Functional requirement about a software which is relevant for security engineering.
+> Software functional requirement which is relevant for security engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
-| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -3785,14 +3816,14 @@ It includes the following steps:
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Non-functional requirement about a software which is relevant for security engineering.
+> Software non-functional requirement which is relevant for security engineering.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
-| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
+| Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c) |
 
-*Created: 2026-03-20 · Modified: 2026-03-20 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -4134,7 +4165,7 @@ Multiple situations may be active concurrently within the same context and may c
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-software-constraint-3se-069bdc3120c37bc8](https://www.3se.info/3se-onto/terms/safety-software-constraint-3se-069bdc3120c37bc8), [safety-software-functional-req-3se-069bdc3120cb7dbe](https://www.3se.info/3se-onto/terms/safety-software-functional-req-3se-069bdc3120cb7dbe), [safety-software-non-functional-req-3se-069bdc3120d47249](https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249), [security-software-constraint-3se-069bdc31211a740f](https://www.3se.info/3se-onto/terms/security-software-constraint-3se-069bdc31211a740f), [security-software-functional-req-3se-069bdc3121227d90](https://www.3se.info/3se-onto/terms/security-software-functional-req-3se-069bdc3121227d90), [security-software-non-functional-req-3se-069bdc31212b77bd](https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd), [software-constraint-3se-069be64e18697419](https://www.3se.info/3se-onto/terms/software-constraint-3se-069be64e18697419), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b), [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3), [software-validation-3se-069c3bf7711e71db](https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db), [computational-model-3se-069d3d5560b67ed6](https://www.3se.info/3se-onto/terms/computational-model-3se-069d3d5560b67ed6), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025), [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b) |
+| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-software-constraint-3se-069bdc3120c37bc8](https://www.3se.info/3se-onto/terms/safety-software-constraint-3se-069bdc3120c37bc8), [security-software-constraint-3se-069bdc31211a740f](https://www.3se.info/3se-onto/terms/security-software-constraint-3se-069bdc31211a740f), [software-constraint-3se-069be64e18697419](https://www.3se.info/3se-onto/terms/software-constraint-3se-069be64e18697419), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b), [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3), [software-validation-3se-069c3bf7711e71db](https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db), [computational-model-3se-069d3d5560b67ed6](https://www.3se.info/3se-onto/terms/computational-model-3se-069d3d5560b67ed6), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025), [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b) |
 | Subclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Superclass of | [safety-software-3se-069d96aa1ea97bd9](https://www.3se.info/3se-onto/terms/safety-software-3se-069d96aa1ea97bd9), [security-software-3se-069d96aa1ebb7e7b](https://www.3se.info/3se-onto/terms/security-software-3se-069d96aa1ebb7e7b) |
 | Close match | [computer-program-24765-2017-069a99c8f70a783f](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f) |
@@ -4142,7 +4173,7 @@ Multiple situations may be active concurrently within the same context and may c
 | Allocates | [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597) |
 | Exposes | [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c) |
 
-*Created: 2026-03-18 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -4228,8 +4259,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4425,9 +4456,10 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
-| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a) |
+| Subclass of | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3) |
+| Superclass of | [safety-software-functional-req-3se-069bdc3120cb7dbe](https://www.3se.info/3se-onto/terms/safety-software-functional-req-3se-069bdc3120cb7dbe), [security-software-functional-req-3se-069bdc3121227d90](https://www.3se.info/3se-onto/terms/security-software-functional-req-3se-069bdc3121227d90) |
 
-*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -4495,9 +4527,10 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Related | [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e) |
-| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d) |
+| Subclass of | [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [software-req-3se-069c3bf770ff7fa3](https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3) |
+| Superclass of | [safety-software-non-functional-req-3se-069bdc3120d47249](https://www.3se.info/3se-onto/terms/safety-software-non-functional-req-3se-069bdc3120d47249), [security-software-non-functional-req-3se-069bdc31212b77bd](https://www.3se.info/3se-onto/terms/security-software-non-functional-req-3se-069bdc31212b77bd) |
 
-*Created: 2026-03-21 · Modified: 2026-03-21 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-04-26 · Creator: @rcasteran*
 
 ---
 
@@ -4530,6 +4563,7 @@ graph TD
 |---|---|
 | Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [software-validation-3se-069c3bf7711e71db](https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db) |
 | Subclass of | [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb) |
+| Superclass of | [software-functional-req-3se-069be64e18797e1b](https://www.3se.info/3se-onto/terms/software-functional-req-3se-069be64e18797e1b), [software-non-functional-req-3se-069be64e18827c2c](https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c) |
 
 *Created: 2026-03-25 · Modified: 2026-03-25 · Creator: @rcasteran*
 
@@ -5192,9 +5226,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N11 -.->|allocates| N4
     N10 -.->|allocates| N14
     N13 -.->|allocates| N9
-    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5816,12 +5850,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N2 -.->|allocates| N4
     N15 -.->|exposes| N1
     N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
-    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6003,21 +6037,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
+    N40 -.->|allocates| N2
+    N27 -.->|allocates| N18
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N40 -.->|allocates| N2
     N4 -.->|allocates| N7
-    N9 -.->|exposes| N15
-    N9 -.->|allocates| N25
-    N9 -.->|allocates| N3
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
     N37 -.->|allocates| N1
-    N27 -.->|allocates| N18
-    N26 -.->|allocates| N19
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
     N31 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N9 -.->|exposes| N15
+    N9 -.->|allocates| N25
+    N9 -.->|allocates| N3
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6187,10 +6221,10 @@ graph TD
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
     N15 -.->|allocates| N12
-    N14 -.->|allocates| N9
+    N4 -.->|allocates| N8
     N13 -.->|allocates| N10
     N11 -.->|allocates| N12
-    N4 -.->|allocates| N8
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6381,7 +6415,7 @@ Note: it does not determine if the entity satisfies the stakeholders’ requirem
 | Relation | Terms |
 |---|---|
 | Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [system-architecture-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-architecture-validation-case-3se-069b5b3d9ee67de5), [system-element-validation-case-3se-069c957ec9e77311](https://www.3se.info/3se-onto/terms/system-element-validation-case-3se-069c957ec9e77311), [system-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5), [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5) |
-| Superclass of | [software-component-validation-3se-069c3bf770f17c85](https://www.3se.info/3se-onto/terms/software-component-validation-3se-069c3bf770f17c85), [software-unit-validation-3se-069c3bf77114763f](https://www.3se.info/3se-onto/terms/software-unit-validation-3se-069c3bf77114763f), [software-validation-3se-069c3bf7711e71db](https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db), [system-element-validation-3se-069c3bf771427f12](https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12), [system-validation-3se-069c3bf77159739b](https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b) |
+| Superclass of | [hardware-validation-3se-069ee5005a6171ce](https://www.3se.info/3se-onto/terms/hardware-validation-3se-069ee5005a6171ce), [software-component-validation-3se-069c3bf770f17c85](https://www.3se.info/3se-onto/terms/software-component-validation-3se-069c3bf770f17c85), [software-unit-validation-3se-069c3bf77114763f](https://www.3se.info/3se-onto/terms/software-unit-validation-3se-069c3bf77114763f), [software-validation-3se-069c3bf7711e71db](https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db), [system-element-validation-3se-069c3bf771427f12](https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12), [system-validation-3se-069c3bf77159739b](https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b) |
 | Close match | [validation-1012-2016-069ac9d90bb97a07](https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07) |
 
 *Created: 2026-03-14 · Modified: 2026-03-29 · Creator: @rcasteran*
