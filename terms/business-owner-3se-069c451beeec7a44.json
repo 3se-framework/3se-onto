@@ -15,7 +15,8 @@
     "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
     "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
-    "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608"
+    "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608",
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
@@ -34,7 +35,7 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-14",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

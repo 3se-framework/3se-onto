@@ -11,10 +11,11 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-04-13",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

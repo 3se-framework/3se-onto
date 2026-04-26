@@ -11,8 +11,6 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
-    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
-    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
     "https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03",
     "https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5",
     "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
@@ -20,21 +18,12 @@
     "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
     "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9",
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
-    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476",
-    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
-    "https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7",
-    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
-    "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
-    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
-    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
-    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2",
-    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
-    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "entryCreated": "2026-04-11",
-  "entryModified": "2026-04-19",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

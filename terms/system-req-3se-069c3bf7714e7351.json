@@ -10,13 +10,15 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b"
+    "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
+    "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-11",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

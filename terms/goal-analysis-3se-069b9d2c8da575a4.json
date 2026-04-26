@@ -6,7 +6,7 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
   "entryCreated": "2026-03-17",
-  "entryModified": "2026-04-06",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -19,6 +19,7 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
     "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a",
-    "https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10"
+    "https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10",
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ]
 }

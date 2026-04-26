@@ -12,12 +12,12 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
   "entryCreated": "2026-04-13",
-  "entryModified": "2026-04-24",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
   "related": [
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ]
 }
