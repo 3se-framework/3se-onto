@@ -201,7 +201,7 @@ def name_in_description(name: str, description: str,
         # unreliable and causes false negatives.
         apply_pos_guard = is_single_word and variant.lower() == name.lower()
 
-        pattern = r"(?<![a-zA-Z0-9])" + re.escape(variant) + r"(?![a-zA-Z0-9])"
+        pattern = r"(?<![a-zA-Z0-9\-])" + re.escape(variant) + r"(?![a-zA-Z0-9\-])"
         for m in re.finditer(pattern, description, re.IGNORECASE):
             start, end = m.start(), m.end()
 
