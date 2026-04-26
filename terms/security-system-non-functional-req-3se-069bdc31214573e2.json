@@ -2,10 +2,10 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Security system non-functional requirement - 3SE",
-  "description": "Non-functional requirement about a system which is relevant for security engineering.",
+  "description": "System non-functional requirement which is relevant for security engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d"
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-system-non-functional-req-3se-069bdc31214573e2",
   "related": [

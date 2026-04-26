@@ -2,10 +2,10 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Safety system functional requirement - 3SE",
-  "description": "Functional requirement about a system which is relevant for safety engineering.",
+  "description": "System functional requirement which is relevant for safety engineering.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
+    "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
   ],
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/functional-safety-requirement-26262-1-2018-069bdc3120907798"
