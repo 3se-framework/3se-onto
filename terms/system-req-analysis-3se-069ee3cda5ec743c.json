@@ -5,8 +5,10 @@
   "description": "Analysis of a stakeholder requirement to decide what system requirement are specifying it.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+  ],
   "related": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2",
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
