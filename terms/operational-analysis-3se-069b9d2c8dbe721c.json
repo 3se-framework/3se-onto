@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Operational analysis - 3SE",
-  "description": "Analysis of a feature to determine what activities are contributing to it and their relation.",
+  "description": "Analysis of a system feature to determine what activities are contributing to it and their relation.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
   "entryCreated": "2026-03-17",
