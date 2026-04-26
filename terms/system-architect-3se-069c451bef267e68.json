@@ -42,7 +42,17 @@
     "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
     "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
     "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6",
-    "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed"
+    "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2",
+    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
+    "https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7",
+    "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
+    "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
+    "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241",
+    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
@@ -67,7 +77,9 @@
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
     "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368",
-    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
+    "https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -88,7 +100,7 @@
     "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-24",
+  "entryModified": "2026-04-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
