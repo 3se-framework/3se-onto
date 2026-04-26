@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System configuration engineer - 3SE",
-  "description": "Role that is accountable for the variability analysis.\nIt contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system attribute analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the risk analysis, the service analysis, the task analysis and the validation analysis.",
+  "description": "Role that is accountable for the variability analysis.\nIt contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the risk analysis, the service analysis, the task analysis and the validation analysis.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
@@ -23,6 +23,7 @@
     "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9",
     "https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53",
     "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
+    "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
     "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
     "https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8",
     "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",

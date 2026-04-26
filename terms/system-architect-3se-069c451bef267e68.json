@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System architect - 3SE",
-  "description": "Role that is accountable for the functional architecture, the physical architecture, the system architecture, the system attribute analysis, the product architecture and the service architecture.\nIt contributes to the stakeholder requirement analysis, the operational analysis, the system functional analysis, the validation analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.",
+  "description": "Role that is accountable for the functional architecture, the physical architecture, the system architecture, the system requirement analysis, the system attribute analysis, the product architecture and the service architecture.\nIt contributes to the stakeholder requirement analysis, the operational analysis, the system functional analysis, the validation analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
@@ -50,6 +50,7 @@
     "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
     "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9",
     "https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53",
+    "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
     "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
     "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d",
     "https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2",
