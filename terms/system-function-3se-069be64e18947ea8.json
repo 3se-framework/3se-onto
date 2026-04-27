@@ -28,13 +28,14 @@
     "https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b",
     "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d",
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
-    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
+    "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-04-26",
+  "entryModified": "2026-04-27",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
