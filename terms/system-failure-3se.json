@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Failure - 3SE",
+  "title": "System failure - 3SE",
   "description": "Termination of the ability of a system to perform a system function as specified due to a system fault.",
   "status": "draft",
   "subClassOf": [
