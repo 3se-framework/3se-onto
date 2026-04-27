@@ -13,6 +13,14 @@
     "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/system-failure-3se",
+    "https://www.3se.info/3se-onto/terms/system-weakness-3se"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/system-failure-3se",
+    "https://www.3se.info/3se-onto/terms/system-weakness-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504",
