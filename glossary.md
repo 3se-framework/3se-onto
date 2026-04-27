@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-04-26 18:22 UTC*
+*Generated on 2026-04-27 18:18 UTC*
 
-This glossary contains **299 3SE term(s)**, **93 other term(s)**, **8 3SE property(ies)**, **6 other property(ies)**, and **24 reference(s)**.
+This glossary contains **299 3SE term(s)**, **93 other term(s)**, **10 3SE property(ies)**, **8 other property(ies)**, and **24 reference(s)**.
 
 ## Contents
 
@@ -428,19 +428,23 @@ This glossary contains **299 3SE term(s)**, **93 other term(s)**, **8 3SE proper
 - [3SE Properties](#3se-properties)
   - [allocates - 3SE](#allocates---3se)
   - [canBe - 3SE](#canbe---3se)
+  - [consumes - 3SE](#consumes---3se)
   - [exposes - 3SE](#exposes---3se)
   - [isAccountableFor - 3SE](#isaccountablefor---3se)
   - [isComposedOf - 3SE](#iscomposedof---3se)
   - [isRepresentedBy - 3SE](#isrepresentedby---3se)
   - [isResponsibleFor - 3SE](#isresponsiblefor---3se)
   - [isSupporting - 3SE](#issupporting---3se)
+  - [produces - 3SE](#produces---3se)
 - [Other Properties](#other-properties)
   - [abstraction - UML](#abstraction---uml)
   - [allocation definition - SysML](#allocation-definition---sysml)
   - [composite aggregation - UML](#composite-aggregation---uml)
   - [provided - UML](#provided---uml)
   - [required - UML](#required---uml)
+  - [used - W3C](#used---w3c)
   - [wasAssociatedWith - W3C](#wasassociatedwith---w3c)
+  - [wasGeneratedBy - W3C](#wasgeneratedby---w3c)
 
 ---
 
@@ -488,13 +492,15 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 
 | Relation | Terms |
 |---|---|
-| Related | [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b) |
+| Related | [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b) |
 | Superclass of | [safety-activity-3se-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4192b7d7c00), [security-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4192b8e7951) |
 | Narrow match | [activity-24765-2017-069ab4000ad177a9](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9) |
 | Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
+| Produces | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
+| Consumes | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Allocated by | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 
-*Created: 2026-03-13 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-04-27 · Creator: @rcasteran*
 
 ---
 
@@ -914,13 +920,13 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
+| Related | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Superclass of | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e) |
 | Close match | [operational-interaction-arcadia-2023-069bc4ea533d7044](https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044) |
 | Composed of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 | Allocated by | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-03-19 · Modified: 2026-04-01 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-04-27 · Creator: @rcasteran*
 
 ---
 
@@ -1108,9 +1114,11 @@ graph TD
 | Related | [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 | Superclass of | [enabling-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-function-3se-069c06710282799a), [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be), [hardware-component-function-3se-069dc0c118257eea](https://www.3se.info/3se-onto/terms/hardware-component-function-3se-069dc0c118257eea), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [software-unit-function-3se-069dc076d3ee71b8](https://www.3se.info/3se-onto/terms/software-unit-function-3se-069dc076d3ee71b8), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Close match | [function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
+| Produces | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
+| Consumes | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
 | Allocated by | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 
-*Created: 2026-03-13 · Modified: 2026-04-16 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-04-27 · Creator: @rcasteran*
 
 ---
 
@@ -1160,9 +1168,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
+    N6 -.->|allocates| N9
     N14 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1317,10 +1325,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
+    N6 -.->|allocates| N13
+    N7 -.->|allocates| N10
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1689,9 +1697,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2498,11 +2506,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
+    N5 -.->|allocates| N3
     N9 -.->|allocates| N10
+    N2 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N2 -.->|allocates| N10
-    N5 -.->|allocates| N3
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -4065,8 +4073,8 @@ graph TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4253,8 +4261,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5143,8 +5151,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5221,8 +5229,8 @@ graph TD
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
     N10 -.->|allocates| N14
-    N13 -.->|allocates| N9
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6031,21 +6039,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N40 -.->|allocates| N2
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N27 -.->|allocates| N18
-    N4 -.->|allocates| N7
     N37 -.->|allocates| N1
-    N26 -.->|allocates| N19
-    N31 -.->|allocates| N2
+    N4 -.->|allocates| N7
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
+    N40 -.->|allocates| N2
+    N31 -.->|allocates| N2
+    N27 -.->|allocates| N18
+    N26 -.->|allocates| N19
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6214,11 +6222,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
-    N4 -.->|allocates| N8
     N14 -.->|allocates| N9
+    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
+    N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -8137,7 +8145,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ## 3SE Properties
 
-*8 propert(ies) defined by the 3SE framework.*
+*10 propert(ies) defined by the 3SE framework.*
 
 ### allocates - 3SE
 
@@ -8169,6 +8177,22 @@ This relation expresses a potential, contingent relationship between two concept
 | Range | `skos:Concept` |
 
 *Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### consumes - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates an element to an input element that it utilizes during its execution.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+| Sub-property of | [used-w3c-prov-2013-069efa20ebee7bd9](https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9) |
+
+*Created: 2026-04-27 · Modified: 2026-04-27 · Creator: @rcasteran*
 
 ---
 
@@ -8267,9 +8291,24 @@ This relation expresses a potential, contingent relationship between two concept
 
 ---
 
+### produces - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates an element to an output element that it generates as a result of its execution.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+
+*Created: 2026-04-27 · Modified: 2026-04-27 · Creator: @rcasteran*
+
+---
+
 ## Other Properties
 
-*6 propert(ies) sourced from external standards and frameworks.*
+*8 propert(ies) sourced from external standards and frameworks.*
 
 ### abstraction - UML
 
@@ -8333,6 +8372,22 @@ An AllocationDefinition can itself be refined using nested allocations that give
 
 ---
 
+### used - W3C
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.
+
+| Relation | Value |
+|---|---|
+| Sub-property of | [prov#used](https://www.w3.org/ns/prov#used) |
+
+**References:** [The PROV Namespace](https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49)
+
+*Created: 2026-04-27 · Modified: 2026-04-27 · Creator: @rcasteran*
+
+---
+
 ### wasAssociatedWith - W3C
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -8347,5 +8402,21 @@ It further allows for a plan to be specified, which is the plan intended by the 
 **References:** [The PROV Namespace](https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49)
 
 *Created: 2026-03-26 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### wasGeneratedBy - W3C
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
+
+| Relation | Value |
+|---|---|
+| Sub-property of | [prov#wasGeneratedBy](https://www.w3.org/ns/prov#wasGeneratedBy) |
+
+**References:** [The PROV Namespace](https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49)
+
+*Created: 2026-04-27 · Modified: 2026-04-27 · Creator: @rcasteran*
 
 ---
