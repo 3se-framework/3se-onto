@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "used - W3C",
+  "description": "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.",
+  "subPropertyOf": [
+    "https://www.w3.org/ns/prov#used"
+  ],
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49"
+  ],
+  "status": "standard"
+}

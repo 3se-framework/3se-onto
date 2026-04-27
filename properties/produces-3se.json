@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "produces - 3SE",
+  "description": "Relates an element to an output element that it generates as a result of its execution.",
+  "inverseOf": [
+    "https://www.3se.info/3se-onto/properties/was-generated-by-w3c-prov-2013"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}
