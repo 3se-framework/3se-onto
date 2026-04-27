@@ -9,5 +9,12 @@
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/w3c-prov-2013-069c527ae0807e49"
   ],
-  "status": "standard"
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/was-generated-by-w3c-prov-2013-069efa20ebf77849",
+  "entryCreated": "2026-04-27",
+  "entryModified": "2026-04-27",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

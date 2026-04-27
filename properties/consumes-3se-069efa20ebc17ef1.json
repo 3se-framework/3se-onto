@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "consumes - 3SE",
+  "description": "Relates an element to an input element that it utilizes during its execution.",
+  "subPropertyOf": [
+    "https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/consumes-3se-069efa20ebc17ef1",
+  "entryCreated": "2026-04-27",
+  "entryModified": "2026-04-27",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
