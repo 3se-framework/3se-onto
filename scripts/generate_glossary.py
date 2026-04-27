@@ -702,6 +702,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("allocates", "Allocates"),
         ("canBe", "Can be"),
         ("exposes", "Exposes"),
+        ("produces", "Produces"),
+        ("consumes", "Consumes"),
     ]:
         items = term.get(field, [])
         if not items:

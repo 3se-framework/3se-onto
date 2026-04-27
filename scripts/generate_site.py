@@ -95,6 +95,12 @@ EXPOSURE_RELATION_LABELS: dict[str, str] = {
     "exposes": "Exposes",
 }
 
+# Human-readable labels for flow/data relation fields rendered on term pages.
+FLOW_RELATION_LABELS: dict[str, str] = {
+    "produces": "Produces",
+    "consumes": "Consumes",
+}
+
 
 # ---------------------------------------------------------------------------
 # Data helpers
@@ -2144,7 +2150,7 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
             f'</tr>'
         )
 
-    # Exposure relations (isExposedBy)
+    # Exposure relations (exposes)
     exposure_html = ""
     for field, label in EXPOSURE_RELATION_LABELS.items():
         val = term.get(field)
@@ -2159,24 +2165,41 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
             f'</tr>'
         )
 
+    # Flow/data relations (produces, consumes)
+    flow_html = ""
+    for field, label in FLOW_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        flow_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
     relations_html = ""
-    if hier or bfo_html or role_html or exposure_html or match:
+    if hier or bfo_html or role_html or exposure_html or flow_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                bfo_html or role_html or exposure_html or match) else ""
+                bfo_html or role_html or exposure_html or flow_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
-                role_html or exposure_html or match) else ""
+                role_html or exposure_html or flow_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
-                exposure_html or match) else ""
-        sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and match else ""
+                exposure_html or flow_html or match) else ""
+        sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and (
+                flow_html or match) else ""
+        sep5 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if flow_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{match}</table>
         </div>"""
 
     # isReferencedBy
