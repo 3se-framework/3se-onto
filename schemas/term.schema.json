@@ -196,6 +196,24 @@
       },
       "uniqueItems": true
     },
+    "produces": {
+      "description": "3se:produces — IRIs of elements that an element produces as output (production relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "consumes": {
+      "description": "3se:consumes — IRIs of elements that an element consumes as input (consumption relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",
