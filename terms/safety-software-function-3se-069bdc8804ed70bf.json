@@ -12,13 +12,13 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
   "produces": [
-    "https://www.3se.info/3se-onto/terms/software-weakness-3se-069efaf7031577c5"
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se"
   ],
   "consumes": [
-    "https://www.3se.info/3se-onto/terms/hardware-failure-3se-069efaf702f27778",
-    "https://www.3se.info/3se-onto/terms/software-failure-3se-069efaf702f27778",
-    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069efaf702f27778",
-    "https://www.3se.info/3se-onto/terms/software-weakness-3se-069efaf702f27778"
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se",
+    "https://www.3se.info/3se-onto/terms/software-failure-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
