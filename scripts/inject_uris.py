@@ -10,6 +10,7 @@
 #   exactMatch, closeMatch, broadMatch,           (array of plain URI strings)
 #   narrowMatch, relatedMatch
 #   subClassOf, isComposedOf, isRepresentedBy, allocates, canBe
+#   produces, consumes
 #   superseded_by                                 (scalar)
 #
 # Fields resolved against the REFERENCES index (references/):
@@ -65,7 +66,9 @@ TERM_ARRAY_FIELDS: list[str] = [
     "canBe",
     "isResponsibleFor",
     "isAccountableFor",
-    "isSupporting"
+    "isSupporting",
+    "produces",
+    "consumes"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
