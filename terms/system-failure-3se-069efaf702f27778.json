@@ -10,12 +10,10 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
   "related": [
-    "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],
   "entryCreated": "2026-04-27",
-  "entryModified": "2026-04-27",
+  "entryModified": "2026-04-28",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
