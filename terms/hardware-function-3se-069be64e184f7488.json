@@ -8,6 +8,16 @@
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488",
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/software-failure-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
     "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71",

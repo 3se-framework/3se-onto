@@ -21,7 +21,8 @@
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
   "consumes": [
-    "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778"
+    "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
+    "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/safety-functional-element-3se-069d95f51fa47c45",

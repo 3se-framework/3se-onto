@@ -4,13 +4,20 @@
   "title": "Software function - 3SE",
   "description": "Function of a software.",
   "status": "draft",
-  "relatedMatch": [
-    "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
-  ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd",
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/software-failure-3se",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/software-failure-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
     "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1",

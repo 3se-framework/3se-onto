@@ -2,15 +2,24 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Safety hardware function - 3SE",
-  "description": "Hardware function to control failures in order to achieve or maintain a safe state.",
+  "description": "Function of a hardware to control failures in order to achieve or maintain a safe system state.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
   ],
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488"
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/software-failure-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",

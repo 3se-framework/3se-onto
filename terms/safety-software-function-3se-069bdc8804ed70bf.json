@@ -2,15 +2,24 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Safety software function - 3SE",
-  "description": "Software function to control failures in order to achieve or maintain a safe state.",
+  "description": "Function of a software to control hardware failures or software failures in order to achieve or maintain a safe system state.",
   "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb"
   ],
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd"
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se-069efaf7031577c5"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se-069efaf702f27778",
+    "https://www.3se.info/3se-onto/terms/software-failure-3se-069efaf702f27778",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069efaf702f27778",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se-069efaf702f27778"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
