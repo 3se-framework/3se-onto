@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-28 20:41 UTC*
+*Generated on 2026-04-28 21:21 UTC*
 
 This glossary contains **307 3SE term(s)**, **93 other term(s)**, **10 3SE property(ies)**, **8 other property(ies)**, and **24 reference(s)**.
 
@@ -626,13 +626,13 @@ Note: it determines if the entity satisfies the stakeholders’ requirements and
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the goal analysis and the value analysis.
-It contributes to the feature analysis and the stakeholder requirement analysis.
+It contributes to the feature analysis, the stakeholder requirement analysis and the risk analysis.
 
 | Relation | Terms |
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -1178,9 +1178,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N2 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N6 -.->|allocates| N9
+    N14 -.->|allocates| N15
+    N2 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1335,10 +1335,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
     N3 -.->|allocates| N11
     N6 -.->|allocates| N13
-    N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1707,8 +1707,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
 ```
 
@@ -2562,11 +2562,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
+    N9 -.->|allocates| N10
     N5 -.->|allocates| N3
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
     N2 -.->|allocates| N10
-    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2925,8 +2925,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N17 -.->|allocates| N10
     N10 -->|subclass of| N1
+    N17 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -2953,7 +2953,7 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the feature analysis, the product analysis and the release analysis.
-It contributes to the value analysis, the goal analysis, the operational analysis and to the variability analysis.
+It contributes to the value analysis, the goal analysis, the operational analysis, the variability analysis and the risk analysis.
 Note: when the product is an asset, the product owner is also called asset owner
 
 | Relation | Terms |
@@ -2961,7 +2961,7 @@ Note: when the product is an asset, the product owner is also called asset owner
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -3014,13 +3014,13 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the project analysis, the iteration analysis, the epic analysis and the task analysis.
-It contributes to the release analysis.
+It contributes to the risk analysis and the release analysis.
 
 | Relation | Terms |
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -4199,7 +4199,7 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the feature analysis, the service analysis and the release analysis.
-It contributes to the value analysis, the goal analysis, the operational analysis and to the variability analysis.
+It contributes to the value analysis, the goal analysis, the operational analysis, the variability analysis and the risk analysis.
 Note: when the service is an asset, the service owner is also called asset owner
 
 | Relation | Terms |
@@ -4207,7 +4207,7 @@ Note: when the service is an asset, the service owner is also called asset owner
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -5069,13 +5069,13 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the functional architecture, the physical architecture, the system architecture, the system requirement analysis, the system attribute analysis, the product architecture and the service architecture.
-It contributes to the stakeholder requirement analysis, the operational analysis, the system functional analysis, the validation analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.
+It contributes to the stakeholder requirement analysis, the operational analysis, the system functional analysis, the validation analysis, the risk analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.
 
 | Relation | Terms |
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -5341,9 +5341,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N13 -.->|allocates| N9
-    N11 -.->|allocates| N4
     N10 -.->|allocates| N14
+    N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5355,14 +5355,14 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the variability analysis.
-It contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the risk analysis, the service analysis, the task analysis and the validation analysis.
+It contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the risk analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the service analysis, the task analysis and the validation analysis.
 
 | Relation | Terms |
 |---|---|
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -5628,13 +5628,13 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the operational analysis, the system functional analysis and the stakeholder requirement analysis.
-It contributes to the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the validation analysis, the iteration analysis and the epic analysis.
+It contributes to the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the validation analysis, the risk analysis, the iteration analysis and the epic analysis.
 
 | Relation | Terms |
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -5981,12 +5981,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N15 -.->|exposes| N1
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
     N2 -.->|allocates| N4
-    N3 -.->|allocates| N4
-    N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6168,21 +6168,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N37 -.->|allocates| N1
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N31 -.->|allocates| N2
-    N27 -.->|allocates| N18
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
     N26 -.->|allocates| N19
+    N27 -.->|allocates| N18
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N40 -.->|allocates| N2
+    N37 -.->|allocates| N1
     N4 -.->|allocates| N7
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
+    N40 -.->|allocates| N2
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
+    N31 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6351,11 +6351,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N15 -.->|allocates| N12
     N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
-    N14 -.->|allocates| N9
     N4 -.->|allocates| N8
+    N11 -.->|allocates| N12
+    N15 -.->|allocates| N12
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6398,13 +6398,13 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the validation analysis.
-It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the epic analysis and the stakeholder requirement analysis.
+It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the risk analysis, the epic analysis and the stakeholder requirement analysis.
 
 | Relation | Terms |
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
