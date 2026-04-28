@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-04-27 18:49 UTC*
+*Generated on 2026-04-28 19:53 UTC*
 
 This glossary contains **301 3SE term(s)**, **93 other term(s)**, **10 3SE property(ies)**, **8 other property(ies)**, and **24 reference(s)**.
 
@@ -1172,8 +1172,8 @@ graph TD
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N6 -.->|allocates| N9
+    N14 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1329,8 +1329,8 @@ graph TD
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
     N3 -.->|allocates| N11
-    N11 -.->|allocates| N10
     N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
     N6 -.->|allocates| N13
 ```
 
@@ -1700,9 +1700,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2509,11 +2509,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
+    N5 -.->|allocates| N3
     N2 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
     N9 -.->|allocates| N10
-    N5 -.->|allocates| N3
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2662,8 +2662,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2872,8 +2872,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N17 -.->|allocates| N10
     N10 -->|subclass of| N1
+    N17 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -3497,14 +3497,14 @@ It includes the following steps:
 
 | Relation | Terms |
 |---|---|
-| Related | [safety-functional-element-3se-069d95f51fa47c45](https://www.3se.info/3se-onto/terms/safety-functional-element-3se-069d95f51fa47c45), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
+| Related | [safety-functional-element-3se-069d95f51fa47c45](https://www.3se.info/3se-onto/terms/safety-functional-element-3se-069d95f51fa47c45), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Related match | [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
 | Allocates | [safety-activity-3se-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-activity-3se-069ab4192b7d7c00) |
-| Produces | [system-weakness-3se](https://www.3se.info/3se-onto/terms/system-weakness-3se) |
-| Consumes | [system-failure-3se](https://www.3se.info/3se-onto/terms/system-failure-3se) |
+| Produces | [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
+| Consumes | [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
 
-*Created: 2026-03-16 · Modified: 2026-04-27 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -3893,10 +3893,10 @@ It includes the following steps:
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
 | Allocates | [security-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4192b8e7951) |
-| Produces | [system-failure-3se](https://www.3se.info/3se-onto/terms/system-failure-3se) |
-| Consumes | [system-weakness-3se](https://www.3se.info/3se-onto/terms/system-weakness-3se) |
+| Produces | [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
+| Consumes | [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 
-*Created: 2026-03-16 · Modified: 2026-04-27 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -4268,8 +4268,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5236,8 +5236,8 @@ graph TD
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
     N11 -.->|allocates| N4
-    N10 -.->|allocates| N14
     N13 -.->|allocates| N9
+    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5540,10 +5540,10 @@ It contributes to the functional architecture, the physical architecture, the sy
 
 | Relation | Terms |
 |---|---|
-| Related | [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-04-27 · Modified: 2026-04-27 · Creator: @rcasteran*
+*Created: 2026-04-27 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -5572,15 +5572,15 @@ It contributes to the functional architecture, the physical architecture, the sy
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [system-state-breakdown-structure-3se-069c062b365f7e5d](https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Composed of | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
 | Allocates | [activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/activity-3se-069b48ef5cd47253), [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9), [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d) |
-| Produces | [system-failure-3se](https://www.3se.info/3se-onto/terms/system-failure-3se), [system-weakness-3se](https://www.3se.info/3se-onto/terms/system-weakness-3se) |
-| Consumes | [system-failure-3se](https://www.3se.info/3se-onto/terms/system-failure-3se), [system-weakness-3se](https://www.3se.info/3se-onto/terms/system-weakness-3se) |
+| Produces | [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
+| Consumes | [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 | Allocated by | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 
-*Created: 2026-03-21 · Modified: 2026-04-27 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
@@ -5875,12 +5875,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N16 -.->|allocates| N4
-    N2 -.->|allocates| N4
+    N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N3 -.->|allocates| N4
-    N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
+    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6062,21 +6062,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N31 -.->|allocates| N2
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N40 -.->|allocates| N2
-    N37 -.->|allocates| N1
-    N4 -.->|allocates| N7
-    N26 -.->|allocates| N19
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
-    N27 -.->|allocates| N18
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
+    N40 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N27 -.->|allocates| N18
+    N37 -.->|allocates| N1
+    N4 -.->|allocates| N7
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
+    N31 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6245,11 +6245,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
     N14 -.->|allocates| N9
     N15 -.->|allocates| N12
-    N13 -.->|allocates| N10
     N4 -.->|allocates| N8
+    N11 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -7836,6 +7836,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 *Standard*
 
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
 > Value Management
 
 | Attribute | Value |
@@ -7843,7 +7845,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2020 |
 | **URL** | [https://www.boutique.afnor.org/fr-fr/norme/nf-en-12973/management-par-la-valeur/fa164076/84790](https://www.boutique.afnor.org/fr-fr/norme/nf-en-12973/management-par-la-valeur/fa164076/84790) |
 
-*Created: 2026-04-07 · Modified: 2026-04-07 · Creator: @rcasteran*
+*Created: 2026-04-07 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
 
