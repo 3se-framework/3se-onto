@@ -7,5 +7,16 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f"
+  ],
+  "entryCreated": "2026-04-28",
+  "entryModified": "2026-04-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

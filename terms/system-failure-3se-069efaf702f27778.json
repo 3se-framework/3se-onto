@@ -10,7 +10,9 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/hardware-fault-3se-069f11b2ff8f72c6",
+    "https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f"
   ],
   "entryCreated": "2026-04-27",
   "entryModified": "2026-04-28",

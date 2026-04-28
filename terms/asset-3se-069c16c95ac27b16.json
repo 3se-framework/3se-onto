@@ -17,10 +17,12 @@
     "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
     "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
-    "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
+    "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c"
   ],
   "entryCreated": "2026-03-23",
-  "entryModified": "2026-04-27",
+  "entryModified": "2026-04-28",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

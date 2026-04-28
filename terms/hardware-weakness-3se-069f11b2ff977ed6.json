@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware weakness - 3SE",
+  "description": "Termination of the ability of a hardware to protect an asset as specified due to a vulnerability.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea",
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/vulnerability-3se-069c1a2fb8f177a4"
+  ],
+  "entryCreated": "2026-04-28",
+  "entryModified": "2026-04-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

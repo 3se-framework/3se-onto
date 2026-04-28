@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software fault - 3SE",
+  "description": "Abnormal condition of a software that can cause a system to fail.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778"
+  ],
+  "entryCreated": "2026-04-28",
+  "entryModified": "2026-04-28",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

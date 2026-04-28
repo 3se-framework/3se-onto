@@ -12,11 +12,10 @@
     "https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3",
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
     "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
-    "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
-    "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf"
+    "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2"
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-04-27",
+  "entryModified": "2026-04-28",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

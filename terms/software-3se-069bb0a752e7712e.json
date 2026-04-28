@@ -28,7 +28,12 @@
     "https://www.3se.info/3se-onto/terms/computational-model-3se-069d3d5560b67ed6",
     "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1",
     "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025",
-    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b"
+    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
+    "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
+    "https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964",
+    "https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f",
+    "https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
@@ -37,7 +42,7 @@
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-04-26",
+  "entryModified": "2026-04-28",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
