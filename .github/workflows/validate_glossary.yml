@@ -44,6 +44,11 @@ jobs:
       - name: Validate all entries
         run: python scripts/validate_glossary.py
 
+      # ── Check consistency (runs only if validation passed) ──
+
+      - name: Check inheritance consistency
+        run: python scripts/check_inheritance.py
+
       # ── Injection (runs only if validation passed) ──
 
       - name: Inject UUIDs and rename files
