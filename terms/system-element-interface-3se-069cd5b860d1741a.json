@@ -19,8 +19,11 @@
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
+  "conveys": [
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
+  ],
   "entryCreated": "2026-04-01",
-  "entryModified": "2026-04-26",
+  "entryModified": "2026-04-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
