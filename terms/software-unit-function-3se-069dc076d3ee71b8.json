@@ -7,8 +7,14 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+  ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

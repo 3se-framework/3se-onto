@@ -14,8 +14,11 @@
     "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
     "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780"
   ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+  ],
   "entryCreated": "2026-03-24",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-04-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

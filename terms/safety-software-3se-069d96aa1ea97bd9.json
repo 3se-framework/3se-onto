@@ -12,8 +12,11 @@
     "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
     "https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55"
   ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
+  ],
   "entryCreated": "2026-04-10",
-  "entryModified": "2026-04-10",
+  "entryModified": "2026-04-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -12,8 +12,11 @@
     "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
     "https://www.3se.info/3se-onto/terms/safety-hardware-product-3se-069c058ef4ec7f65"
   ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
+  ],
   "entryCreated": "2026-04-10",
-  "entryModified": "2026-04-10",
+  "entryModified": "2026-04-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
