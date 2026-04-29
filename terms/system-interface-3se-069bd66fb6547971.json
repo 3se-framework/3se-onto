@@ -9,7 +9,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
   "related": [
-    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
     "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6"
   ],
