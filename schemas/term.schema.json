@@ -214,6 +214,15 @@
       },
       "uniqueItems": true
     },
+    "conveys": {
+      "description": "3se:conveys — IRIs of flows or exchanges that circulate through an interface (conveyance relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",

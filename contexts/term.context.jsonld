@@ -32,8 +32,9 @@
     "allocates":            { "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32",             "@type": "@id" },
     "canBe":                { "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975",                "@type": "@id" },
     "exposes":              { "@id": "https://www.3se.info/3se-onto/properties/exposes-3se-069cd94b8959766f",               "@type": "@id" },
-    "produces":             { "@id": "https://www.3se.info/3se-onto/properties/produces-3se-069efa20ebe573ff",               "@type": "@id"},
-    "consumes":             { "@id": "https://www.3se.info/3se-onto/properties/consumes-3se-069efa20ebc17ef1",               "@type": "@id"},
+    "produces":             { "@id": "https://www.3se.info/3se-onto/properties/produces-3se-069efa20ebe573ff",              "@type": "@id" },
+    "consumes":             { "@id": "https://www.3se.info/3se-onto/properties/consumes-3se-069efa20ebc17ef1",              "@type": "@id" },
+    "conveys":              { "@id": "https://www.3se.info/3se-onto/properties/conveys-3se-069f245679787ae9",               "@type": "@id" },
 
     "isResponsibleFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-responsible-for-3se-069c50dd4d64710e",    "@type": "@id" },
     "isAccountableFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-accountable-for-3se-069c50dd4d47724a",    "@type": "@id" },

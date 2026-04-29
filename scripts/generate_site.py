@@ -99,6 +99,7 @@ EXPOSURE_RELATION_LABELS: dict[str, str] = {
 FLOW_RELATION_LABELS: dict[str, str] = {
     "produces": "Produces",
     "consumes": "Consumes",
+    "conveys": "Conveys",
 }
 
 
