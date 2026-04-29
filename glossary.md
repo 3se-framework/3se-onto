@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-04-28 21:21 UTC*
+*Generated on 2026-04-29 18:09 UTC*
 
-This glossary contains **307 3SE term(s)**, **93 other term(s)**, **10 3SE property(ies)**, **8 other property(ies)**, and **24 reference(s)**.
+This glossary contains **307 3SE term(s)**, **93 other term(s)**, **11 3SE property(ies)**, **9 other property(ies)**, and **24 reference(s)**.
 
 ## Contents
 
@@ -437,6 +437,7 @@ This glossary contains **307 3SE term(s)**, **93 other term(s)**, **10 3SE prope
   - [allocates - 3SE](#allocates---3se)
   - [canBe - 3SE](#canbe---3se)
   - [consumes - 3SE](#consumes---3se)
+  - [conveys - 3SE](#conveys---3se)
   - [exposes - 3SE](#exposes---3se)
   - [isAccountableFor - 3SE](#isaccountablefor---3se)
   - [isComposedOf - 3SE](#iscomposedof---3se)
@@ -448,6 +449,7 @@ This glossary contains **307 3SE term(s)**, **93 other term(s)**, **10 3SE prope
   - [abstraction - UML](#abstraction---uml)
   - [allocation definition - SysML](#allocation-definition---sysml)
   - [composite aggregation - UML](#composite-aggregation---uml)
+  - [conveyed - UML](#conveyed---uml)
   - [provided - UML](#provided---uml)
   - [required - UML](#required---uml)
   - [used - W3C](#used---w3c)
@@ -1086,13 +1088,13 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [software-component-interface-3se-069dc11872d97b8a](https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a), [hardware-block-interface-3se-069dc15cd0dc7340](https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426) |
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [software-component-interface-3se-069dc11872d97b8a](https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a), [hardware-block-interface-3se-069dc15cd0dc7340](https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426) |
 | Superclass of | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 | Close match | [functional-exchange-arcadia-2023-069bc4ea532a72d7](https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023-069bc4ea532a72d7) |
 | Allocates | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7) |
 | Allocated by | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
 
-*Created: 2026-03-19 · Modified: 2026-04-14 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -1335,10 +1337,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N3 -.->|allocates| N11
     N6 -.->|allocates| N13
     N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1356,9 +1358,10 @@ graph TD
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
 | Related match | [behavioral-port-arcadia-2023-069bc53af24b724a](https://www.3se.info/3se-onto/terms/behavioral-port-arcadia-2023-069bc53af24b724a) |
 | Allocates | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Conveys | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 | Allocated by | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 
-*Created: 2026-03-19 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -1650,8 +1653,9 @@ graph TD
 |---|---|
 | Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235) |
 | Subclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Conveys | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 
-*Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -1707,9 +1711,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -1856,8 +1860,9 @@ graph TD
 | Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [hardware-interface-breakdown-structure-3se-069dc15cd1067235](https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235) |
 | Subclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 | Composed of | [hardware-block-interface-3se-069dc15cd0dc7340](https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340) |
+| Conveys | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 
-*Created: 2026-03-20 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -2562,11 +2567,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N9 -.->|allocates| N10
-    N5 -.->|allocates| N3
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
+    N9 -.->|allocates| N10
     N2 -.->|allocates| N10
+    N5 -.->|allocates| N3
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2715,8 +2720,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
     N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2735,9 +2740,10 @@ graph TD
 | Superclass of | [hardware-block-interface-3se-069dc15cd0dc7340](https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [software-component-interface-3se-069dc11872d97b8a](https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c) |
 | Related match | [physical-port-arcadia-2023-069bd66fb642700a](https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a) |
 | Allocates | [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Conveys | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Allocated by | [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
 
-*Created: 2026-03-20 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -4413,8 +4419,9 @@ graph TD
 |---|---|
 | Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025) |
 | Subclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Conveys | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 
-*Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -4574,8 +4581,9 @@ graph TD
 | Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [software-interface-breakdown-structure-3se-069dc11873027025](https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025) |
 | Subclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 | Composed of | [software-component-interface-3se-069dc11872d97b8a](https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a) |
+| Conveys | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 
-*Created: 2026-03-20 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -5264,8 +5272,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5342,8 +5350,8 @@ graph TD
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
     N10 -.->|allocates| N14
-    N11 -.->|allocates| N4
     N13 -.->|allocates| N9
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5496,11 +5504,12 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
-| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
+| Related | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
 | Allocates | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-interface-attribute-3se-069ebbb4e70678ed](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed) |
 | Can be | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
+| Conveys | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-04-01 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -5859,11 +5868,12 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-interface-attribute-3se-069ebbb4e70f70e6](https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6) |
+| Related | [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-interface-attribute-3se-069ebbb4e70f70e6](https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6) |
 | Narrow match | [interface-24765-2017-069bd66fb62f7f5f](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f) |
 | Composed of | [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
+| Conveys | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-03-20 · Modified: 2026-04-24 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -5981,12 +5991,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
     N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
     N16 -.->|allocates| N4
+    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6168,21 +6178,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N4 -.->|allocates| N7
     N26 -.->|allocates| N19
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
     N27 -.->|allocates| N18
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N37 -.->|allocates| N1
+    N40 -.->|allocates| N2
+    N31 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N37 -.->|allocates| N1
-    N4 -.->|allocates| N7
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N40 -.->|allocates| N2
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N31 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6351,10 +6361,10 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
     N4 -.->|allocates| N8
-    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
+    N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
     N14 -.->|allocates| N9
 ```
 
@@ -8292,7 +8302,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ## 3SE Properties
 
-*10 propert(ies) defined by the 3SE framework.*
+*11 propert(ies) defined by the 3SE framework.*
 
 ### allocates - 3SE
 
@@ -8340,6 +8350,22 @@ This relation expresses a potential, contingent relationship between two concept
 | Sub-property of | [used-w3c-prov-2013-069efa20ebee7bd9](https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9) |
 
 *Created: 2026-04-27 · Modified: 2026-04-27 · Creator: @rcasteran*
+
+---
+
+### conveys - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates an interface to one or more flows or exchanges that circulate through it.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+| Sub-property of | [conveyed-uml-spec-2-5-1-069f2456795272b9](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9) |
+
+*Created: 2026-04-29 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
@@ -8455,7 +8481,7 @@ This relation expresses a potential, contingent relationship between two concept
 
 ## Other Properties
 
-*8 propert(ies) sourced from external standards and frameworks.*
+*9 propert(ies) sourced from external standards and frameworks.*
 
 ### abstraction - UML
 
@@ -8492,6 +8518,18 @@ An AllocationDefinition can itself be refined using nested allocations that give
 **References:** [OMG® Unified Modeling Language® (OMG UML®)](https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4)
 
 *Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
+
+---
+
+### conveyed - UML
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Specifies the information items that may circulate on this information flow.
+
+**References:** [OMG® Unified Modeling Language® (OMG UML®)](https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4)
+
+*Created: 2026-04-29 · Modified: 2026-04-29 · Creator: @rcasteran*
 
 ---
 
