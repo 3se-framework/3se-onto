@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "conveys - 3SE",
+  "description": "Relates an interface to one or more flows or exchanges that circulate through it.",
+  "subPropertyOf": [
+    "https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/conveys-3se-069f245679787ae9",
+  "entryCreated": "2026-04-29",
+  "entryModified": "2026-04-29",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
