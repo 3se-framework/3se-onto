@@ -9,5 +9,8 @@
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "@id": "https://www.3se.info/3se-onto/properties/evaluates-3se-069f38ad07327be8",
+  "entryCreated": "2026-04-30",
+  "entryModified": "2026-04-30"
 }
