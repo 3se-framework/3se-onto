@@ -8,7 +8,7 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ],
-  "allocates": [
+  "evaluates": [
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
   "related": [

@@ -225,6 +225,23 @@ def build_allocated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_evaluated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an evaluates target. Used to compute the inverse 'evaluated by'
+    relation: if A evaluates B, then B is evaluated by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("evaluates")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -593,7 +610,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 superclass_index: dict[str, list[dict]] | None = None,
                 terms_index: dict[str, dict] | None = None,
                 represents_index: dict[str, list[dict]] | None = None,
-                allocated_by_index: dict[str, list[dict]] | None = None) -> list[str]:
+                allocated_by_index: dict[str, list[dict]] | None = None,
+                evaluated_by_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -705,6 +723,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("produces", "Produces"),
         ("consumes", "Consumes"),
         ("conveys", "Conveys"),
+        ("evaluates", "Evaluates"),
     ]:
         items = term.get(field, [])
         if not items:
@@ -722,6 +741,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in allocating_terms
             ]
             relation_rows.append(("Allocated by", ", ".join(links)))
+
+    # Evaluated by (computed inverse of evaluates)
+    if evaluated_by_index:
+        term_id = term.get("@id", "")
+        evaluating_terms = evaluated_by_index.get(term_id, [])
+        if evaluating_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in evaluating_terms
+            ]
+            relation_rows.append(("Evaluated by", ", ".join(links)))
 
     if relation_rows:
         lines.append("| Relation | Terms |")
@@ -970,6 +1000,7 @@ def main() -> int:
     superclass_index = build_superclass_index(terms)
     represents_index = build_represents_index(terms)
     allocated_by_index = build_allocated_by_index(terms)
+    evaluated_by_index = build_evaluated_by_index(terms)
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
@@ -1029,7 +1060,8 @@ def main() -> int:
     if se3_terms:
         for term in se3_terms:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
-                                  represents_index, allocated_by_index))
+                                  represents_index, allocated_by_index,
+                                  evaluated_by_index))
             md.append("---")
             md.append("")
     else:
@@ -1045,7 +1077,8 @@ def main() -> int:
     if other_terms:
         for term in other_terms:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
-                                  represents_index, allocated_by_index))
+                                  represents_index, allocated_by_index,
+                                  evaluated_by_index))
             md.append("---")
             md.append("")
     else:

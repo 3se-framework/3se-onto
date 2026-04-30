@@ -223,6 +223,15 @@
       },
       "uniqueItems": true
     },
+    "evaluates": {
+      "description": "3se:evaluates — IRIs of elements that an evaluation case was developed to assess (evaluation relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",

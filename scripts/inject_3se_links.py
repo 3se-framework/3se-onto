@@ -322,12 +322,13 @@ def main() -> int:
                 # or a role relation (isResponsibleFor / isAccountableFor /
                 # isSupporting) or an exposure relation (isExposedBy) or a production
                 # relation (produces) or a consumption relation (consumes) or a conveyance
-                # relation (conveys) linking them — those relations supersede skos:related
+                # relation (conveys) or an evaluation relation (evaluates)
+                # linking them — those relations supersede skos:related
                 src_structural = set()
                 tgt_structural = set()
                 for field in ("isComposedOf", "isRepresentedBy", "allocates", "canBe",
                               "exposes", "isResponsibleFor", "isAccountableFor", "isSupporting",
-                              "produces", "consumes", "conveys"):
+                              "produces", "consumes", "conveys", "evaluates"):
                     for uri in (src_data.get(field) or []):
                         src_structural.add(uri)
                     for uri in (tgt_data.get(field) or []):

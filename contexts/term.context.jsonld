@@ -35,6 +35,7 @@
     "produces":             { "@id": "https://www.3se.info/3se-onto/properties/produces-3se-069efa20ebe573ff",              "@type": "@id" },
     "consumes":             { "@id": "https://www.3se.info/3se-onto/properties/consumes-3se-069efa20ebc17ef1",              "@type": "@id" },
     "conveys":              { "@id": "https://www.3se.info/3se-onto/properties/conveys-3se-069f245679787ae9",               "@type": "@id" },
+    "evaluates":            { "@id": "https://www.3se.info/3se-onto/properties/evaluates-3se-069f38ad07327be8",             "@type": "@id" },
 
     "isResponsibleFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-responsible-for-3se-069c50dd4d64710e",    "@type": "@id" },
     "isAccountableFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-accountable-for-3se-069c50dd4d47724a",    "@type": "@id" },
