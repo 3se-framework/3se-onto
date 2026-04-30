@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "evaluates - 3SE",
+  "description": "Relates an evaluation case to the entity it was developed to evaluate, to determine whether that entity satisfies the criteria it defines.",
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
