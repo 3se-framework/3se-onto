@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
   "@type": "rdf:Property",
-  "title": "abstraction - UML",
+  "title": "abstraction - UML 2.5.1",
   "description": "Relationship that relates two elements or sets of elements that represent the same concept at different levels of abstraction or from different viewpoints.",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4"

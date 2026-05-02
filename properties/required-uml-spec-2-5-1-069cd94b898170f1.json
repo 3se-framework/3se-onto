@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
   "@type": "rdf:Property",
-  "title": "required - UML",
+  "title": "required - UML 2.5.1",
   "description": "Association end that denotes the Interface that the Component requires from other Components in its environment in order to be able to offer its full set of provided functionality.",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4"

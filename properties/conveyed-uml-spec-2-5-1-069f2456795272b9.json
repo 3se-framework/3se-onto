@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
   "@type": "rdf:Property",
-  "title": "conveyed - UML",
+  "title": "conveyed - UML 2.5.1",
   "description": "Specifies the information items that may circulate on this information flow.",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4"
