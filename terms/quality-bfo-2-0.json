@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Quality - BFO 2.0",
+  "description": "A specifically dependent continuant that, in contrast to realizable entities, does not require any further process in order to manifest itself; it is exhibited simply in virtue of the existence of its bearer. (BFO 2.0, BFO:0000019)",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-O"
+  ]
+}

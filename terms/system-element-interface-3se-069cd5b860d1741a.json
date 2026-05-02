@@ -13,6 +13,9 @@
     "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a",
+  "subClassOf": [
+    "role-bfo-2-0"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",

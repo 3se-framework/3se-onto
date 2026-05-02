@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Function - BFO 2.0",
+  "description": "A disposition that exists in virtue of the bearer's physical makeup and is realizable in processes that produce a certain output or result that the bearer or associated agents use for some purpose. (BFO 2.0, BFO:0000034)",
+  "status": "standard",
+  "subClassOf": [
+    "disposition-bfo-2-0"
+  ],
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-O"
+  ]
+}

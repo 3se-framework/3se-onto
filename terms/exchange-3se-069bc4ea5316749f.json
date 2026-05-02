@@ -8,6 +8,9 @@
     "https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
+  "subClassOf": [
+    "generically-dependent-continuant-bfo-2-0"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
   ],

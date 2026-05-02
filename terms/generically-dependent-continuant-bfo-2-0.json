@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Generically dependent continuant - BFO 2.0",
+  "description": "A continuant that depends generically on one or more independent continuants as its substrate and which can migrate from one substrate to another while remaining numerically identical. (BFO 2.0, BFO:0000031)",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-O"
+  ]
+}

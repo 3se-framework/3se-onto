@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Object - BFO 2.0",
+  "description": "A material entity that manifests causal unity and is spatially extended in three dimensions, and is maximally self-connected. (BFO 2.0, BFO:0000030)",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-O"
+  ]
+}

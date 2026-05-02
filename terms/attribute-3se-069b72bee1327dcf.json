@@ -8,6 +8,9 @@
     "https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
+  "subClassOf": [
+    "quality-bfo-2-0"
+  ],
   "entryCreated": "2026-03-15",
   "entryModified": "2026-04-30",
   "entryCreator": {

@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Disposition - BFO 2.0",
+  "description": "A realizable entity that inheres in a material entity in virtue of the bearer's physical makeup, and which is such that if the bearer undergoes certain processes, those processes realize the disposition. (BFO 2.0, BFO:0000016)",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-O"
+  ]
+}
