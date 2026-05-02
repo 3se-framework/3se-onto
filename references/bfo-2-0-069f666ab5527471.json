@@ -4,5 +4,12 @@
   "title": "Basic Formal Ontology - 2.0",
   "abstract": "The upper level ontology upon which OBO Foundry ontologies are built.",
   "uri": "http://purl.obolibrary.org/obo/bfo.owl",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

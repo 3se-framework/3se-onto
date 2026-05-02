@@ -5,6 +5,13 @@
   "description": "A continuant fiat boundary that has exactly two dimensions and is the fiat surface boundary of some material entity, located in a two-dimensional spatial region. (BFO 2.0, BFO:0000145)",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/bfo-2-0"
-  ]
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

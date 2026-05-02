@@ -5,9 +5,16 @@
   "description": "A disposition that exists in virtue of the bearer's physical makeup and is realizable in processes that produce a certain output or result that the bearer or associated agents use for some purpose. (BFO 2.0, BFO:0000034)",
   "status": "standard",
   "subClassOf": [
-    "disposition-bfo-2-0"
+    "https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92"
   ],
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/bfo-2-0"
-  ]
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

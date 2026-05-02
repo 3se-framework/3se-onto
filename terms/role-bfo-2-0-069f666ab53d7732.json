@@ -5,6 +5,13 @@
   "description": "A realizable entity that exists in virtue of the bearer's being in some special physical, social, or institutional set of circumstances in which this bearer does not have to be, and which is not a quality and not a disposition. (BFO 2.0, BFO:0000023)",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/bfo-2-0"
-  ]
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

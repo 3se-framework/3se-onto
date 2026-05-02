@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
   "subClassOf": [
-    "two-dimensional-continuant-fiat-boundary-bfo-2-0"
+    "https://www.3se.info/3se-onto/terms/two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
@@ -28,7 +28,7 @@
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-04-29",
+  "entryModified": "2026-05-02",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -13,10 +13,10 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
   "subClassOf": [
-    "disposition-bfo-2-0"
+    "https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92"
   ],
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-04-30",
+  "entryModified": "2026-05-02",
   "related": [
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
     "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",

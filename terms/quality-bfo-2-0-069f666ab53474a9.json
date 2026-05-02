@@ -5,6 +5,13 @@
   "description": "A specifically dependent continuant that, in contrast to realizable entities, does not require any further process in order to manifest itself; it is exhibited simply in virtue of the existence of its bearer. (BFO 2.0, BFO:0000019)",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/bfo-2-0"
-  ]
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

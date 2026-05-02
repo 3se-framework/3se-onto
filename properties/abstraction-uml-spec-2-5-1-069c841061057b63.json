@@ -9,7 +9,7 @@
   "status": "standard",
   "@id": "https://www.3se.info/3se-onto/properties/abstraction-uml-spec-2-5-1-069c841061057b63",
   "entryCreated": "2026-03-28",
-  "entryModified": "2026-03-28",
+  "entryModified": "2026-05-02",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

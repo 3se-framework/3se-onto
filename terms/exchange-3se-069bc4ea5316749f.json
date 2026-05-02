@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
   "subClassOf": [
-    "generically-dependent-continuant-bfo-2-0"
+    "https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
@@ -18,7 +18,7 @@
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],
   "entryCreated": "2026-03-19",
-  "entryModified": "2026-04-27",
+  "entryModified": "2026-05-02",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

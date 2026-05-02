@@ -5,6 +5,13 @@
   "description": "A realizable entity that inheres in a material entity in virtue of the bearer's physical makeup, and which is such that if the bearer undergoes certain processes, those processes realize the disposition. (BFO 2.0, BFO:0000016)",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/bfo-2-0"
-  ]
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

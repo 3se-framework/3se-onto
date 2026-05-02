@@ -5,6 +5,13 @@
   "description": "A material entity that is part of an object but which is not itself separated from the remainder of the object by any bona fide physical discontinuity. (BFO 2.0, BFO:0000024)",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/bfo-2-0"
-  ]
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/fiat-object-part-bfo-2-0-069f666ab50e7980",
+  "entryCreated": "2026-05-02",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

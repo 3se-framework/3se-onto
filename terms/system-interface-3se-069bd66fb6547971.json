@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
   "subClassOf": [
-    "role-bfo-2-0"
+    "https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
@@ -22,7 +22,7 @@
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-04-29",
+  "entryModified": "2026-05-02",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
