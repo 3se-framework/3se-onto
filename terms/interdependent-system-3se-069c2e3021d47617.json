@@ -13,13 +13,15 @@
     "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
     "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477",
     "https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5",
-    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/interdependent-functional-element-3se-069fde073fce78a5",
+    "https://www.3se.info/3se-onto/terms/interdependent-state-3se-069fde073ffb7cc5"
   ],
   "exposes": [
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/interdependent-physical-element-3se"
+    "https://www.3se.info/3se-onto/terms/interdependent-physical-element-3se-069fde073ff3729e"
   ],
   "entryCreated": "2026-03-24",
   "entryModified": "2026-05-08",
