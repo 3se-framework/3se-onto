@@ -1,14 +1,14 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Security activity - 3SE",
-  "description": "An activity which is relevant for security engineering",
+  "title": "Safety system activity - 3SE",
+  "description": "A system activity which is relevant for safety engineering",
   "status": "draft",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "@id": "https://www.3se.info/3se-onto/terms/security-activity-3se-069ab4192b8e7951",
+  "@id": "https://www.3se.info/3se-onto/terms/safety-system-activity-3se-069ab4192b7d7c00",
   "produces": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
@@ -18,9 +18,9 @@
   "entryCreated": "2026-03-06",
   "entryModified": "2026-04-29",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/activity-3se"
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269"
+    "https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336"
   ]
 }
