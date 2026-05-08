@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-05-08 12:37 UTC*
+*Generated on 2026-05-08 12:56 UTC*
 
 This glossary contains **314 3SE term(s)**, **101 other term(s)**, **12 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
@@ -789,9 +789,9 @@ It contributes to the feature analysis, the stakeholder requirement analysis and
 
 | Relation | Terms |
 |---|---|
-| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
+| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c) |
 
-*Created: 2026-03-23 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-05-08 · Creator: @rcasteran*
 
 ---
 
@@ -832,7 +832,7 @@ It contributes to the feature analysis, the stakeholder requirement analysis and
 
 | Relation | Terms |
 |---|---|
-| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
+| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c) |
 | Subclass of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6) |
 | Produces | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Consumes | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
@@ -1014,14 +1014,14 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
+| Related | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c) |
 | Subclass of | [generically-dependent-continuant-bfo-2-0-069f666ab52177b6](https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6) |
 | Superclass of | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e) |
 | Close match | [operational-interaction-arcadia-2023-069bc4ea533d7044](https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044) |
 | Composed of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 | Allocated by | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-*Created: 2026-03-19 · Modified: 2026-05-02 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-05-08 · Creator: @rcasteran*
 
 ---
 
@@ -1269,9 +1269,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
+    N6 -.->|allocates| N9
     N2 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1427,10 +1427,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
     N6 -.->|allocates| N13
-    N11 -.->|allocates| N10
     N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1803,9 +1803,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2343,11 +2343,11 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of the milieu of the system of interest to identify the interdependent systems and/or interdependent actors, characterize their dependence with the system of interest and the stakeholders, evaluate the emergent attributes and features as well as the resulting opportunities and risks, and determine the appropriate response strategies.
+> Analysis of the milieu of the system of interest to identify the interdependent activities, characterize their dependence with the system activities, evaluate the emergent attributes and features of the system of interest as well as the resulting opportunities and risks for the system of interest, and determine the appropriate response strategies.
 
 | Relation | Terms |
 |---|---|
-| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 **Allocations**
@@ -2364,7 +2364,8 @@ graph TD
     N8["High level physical element"]
     N9["System state"]
     N10["System attribute"]
-    N11["Interdependent system"]
+    N11["System activity"]
+    N12["System feature"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -2376,7 +2377,8 @@ graph TD
     N7 -.->|allocates| N8
     N7 -.->|allocates| N9
     N7 -.->|allocates| N10
-    N11 -->|subclass of| N7
+    N11 -.->|allocates| N12
+    N12 -->|subclass of| N5
     N10 -->|subclass of| N1
 ```
 
@@ -2392,7 +2394,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 | Subclass of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6) |
 | Produces | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Consumes | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
@@ -2410,7 +2412,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
+| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
 | Represented by | [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03) |
 
 *Created: 2026-03-24 · Modified: 2026-05-08 · Creator: @rcasteran*
@@ -2443,7 +2445,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [interdependent-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
+| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [interdependent-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 
@@ -2623,11 +2625,11 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of a system feature to determine what system activities are contributing to it and their relation.
+> Analysis of a system feature to determine what system activities are contributing to it, their exchanges between them and with the enabling activities in the context of the system of interest.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [operating-model-3se-069d3f26ae27722b](https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
+| Related | [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [operating-model-3se-069d3f26ae27722b](https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [enabling-activity-3se-069fdd89b3bd7ac6](https://www.3se.info/3se-onto/terms/enabling-activity-3se-069fdd89b3bd7ac6), [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 **Allocations**
@@ -2636,8 +2638,15 @@ graph TD
 graph TD
     N1["System activity"]
     N2["System feature"]
+    N3["System"]
+    N4["High level physical element"]
+    N5["System state"]
+    N6["System attribute"]
 
     N1 -.->|allocates| N2
+    N3 -.->|allocates| N4
+    N3 -.->|allocates| N5
+    N3 -.->|allocates| N6
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-08 · Creator: @rcasteran*
@@ -2699,11 +2708,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N2 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N9 -.->|allocates| N10
+    N2 -.->|allocates| N10
     N5 -.->|allocates| N3
+    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2853,8 +2862,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
     N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3065,8 +3074,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4479,9 +4488,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -4996,7 +5005,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03), [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [value-analysis-3se-069d52ba2c597844](https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
+| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03), [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5), [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [value-analysis-3se-069d52ba2c597844](https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Represents | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f) |
 | Close match | [stakeholder-cpre-069bc40b97e27a5f](https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f) |
 
@@ -5211,7 +5220,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [solution-3se-069bc40b97cf7f18](https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [safety-hardware-product-3se-069c058ef4ec7f65](https://www.3se.info/3se-onto/terms/safety-hardware-product-3se-069c058ef4ec7f65), [safety-software-product-3se-069c058ef4f97b55](https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55), [security-hardware-product-3se-069c058ef506753d](https://www.3se.info/3se-onto/terms/security-hardware-product-3se-069c058ef506753d), [security-software-product-3se-069c058ef5127ddb](https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [holism-3se-069c316c19067fbe](https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b), [reductionism-3se-069c316c193771cc](https://www.3se.info/3se-onto/terms/reductionism-3se-069c316c193771cc), [teleology-3se-069c316c19527b40](https://www.3se.info/3se-onto/terms/teleology-3se-069c316c19527b40), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351), [system-validation-3se-069c3bf77159739b](https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [safety-system-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336), [security-system-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5), [hardware-fault-3se-069f11b2ff8f72c6](https://www.3se.info/3se-onto/terms/hardware-fault-3se-069f11b2ff8f72c6), [software-fault-3se-069f11b2ffaa700f](https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f) |
+| Related | [enabling-functional-element-3se-069b9d2c8d4a7d97](https://www.3se.info/3se-onto/terms/enabling-functional-element-3se-069b9d2c8d4a7d97), [enabling-physical-element-3se-069b9d2c8d5375f6](https://www.3se.info/3se-onto/terms/enabling-physical-element-3se-069b9d2c8d5375f6), [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [fault-3se-069bb0f6e7f77cb3](https://www.3se.info/3se-onto/terms/fault-3se-069bb0f6e7f77cb3), [solution-3se-069bc40b97cf7f18](https://www.3se.info/3se-onto/terms/solution-3se-069bc40b97cf7f18), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e), [system-breakdown-structure-3se-069bee1cdb507cf6](https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [safety-hardware-product-3se-069c058ef4ec7f65](https://www.3se.info/3se-onto/terms/safety-hardware-product-3se-069c058ef4ec7f65), [safety-software-product-3se-069c058ef4f97b55](https://www.3se.info/3se-onto/terms/safety-software-product-3se-069c058ef4f97b55), [security-hardware-product-3se-069c058ef506753d](https://www.3se.info/3se-onto/terms/security-hardware-product-3se-069c058ef506753d), [security-software-product-3se-069c058ef5127ddb](https://www.3se.info/3se-onto/terms/security-software-product-3se-069c058ef5127ddb), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [holism-3se-069c316c19067fbe](https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b), [reductionism-3se-069c316c193771cc](https://www.3se.info/3se-onto/terms/reductionism-3se-069c316c193771cc), [teleology-3se-069c316c19527b40](https://www.3se.info/3se-onto/terms/teleology-3se-069c316c19527b40), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351), [system-validation-3se-069c3bf77159739b](https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [safety-system-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336), [security-system-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5), [hardware-fault-3se-069f11b2ff8f72c6](https://www.3se.info/3se-onto/terms/hardware-fault-3se-069f11b2ff8f72c6), [software-fault-3se-069f11b2ffaa700f](https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c) |
 | Subclass of | [role-bfo-2-0-069f666ab53d7732](https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732) |
 | Superclass of | [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
 | Represents | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d) |
@@ -5220,7 +5229,7 @@ graph TD
 | Allocates | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 
-*Created: 2026-03-16 · Modified: 2026-05-02 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-05-08 · Creator: @rcasteran*
 
 ---
 
@@ -5232,7 +5241,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [system-function-breakdown-structure-3se-069c03f8a3ee7e9d](https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d), [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 | Subclass of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6) |
 | Superclass of | [safety-system-activity-3se-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-system-activity-3se-069ab4192b7d7c00), [security-system-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-system-activity-3se-069ab4192b8e7951) |
 | Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
@@ -5445,8 +5454,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -6169,12 +6178,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N16 -.->|allocates| N4
-    N3 -.->|allocates| N4
-    N2 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N2 -.->|allocates| N4
+    N16 -.->|allocates| N4
     N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6356,20 +6365,20 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N27 -.->|allocates| N18
-    N31 -.->|allocates| N2
-    N4 -.->|allocates| N7
-    N40 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N26 -.->|allocates| N19
+    N4 -.->|allocates| N7
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N31 -.->|allocates| N2
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
+    N40 -.->|allocates| N2
+    N27 -.->|allocates| N18
+    N26 -.->|allocates| N19
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
     N37 -.->|allocates| N1
 ```
 
@@ -6539,11 +6548,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
-    N14 -.->|allocates| N9
     N11 -.->|allocates| N12
-    N15 -.->|allocates| N12
+    N13 -.->|allocates| N10
     N4 -.->|allocates| N8
+    N15 -.->|allocates| N12
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
