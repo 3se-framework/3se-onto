@@ -16,10 +16,11 @@
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
     "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
-    "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617"
+    "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
   ],
   "entryCreated": "2026-03-24",
-  "entryModified": "2026-04-12",
+  "entryModified": "2026-05-08",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

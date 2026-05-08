@@ -6,7 +6,7 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/activity-3se"
+    "https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6"
   ],
   "produces": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
@@ -16,5 +16,19 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf"
-  ]
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
+    "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d",
+    "https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b"
+  ],
+  "entryCreated": "2026-05-08",
+  "entryModified": "2026-05-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
