@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-05-08 12:56 UTC*
+*Generated on 2026-05-08 13:13 UTC*
 
-This glossary contains **314 3SE term(s)**, **101 other term(s)**, **12 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
+This glossary contains **317 3SE term(s)**, **101 other term(s)**, **12 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
 ## Contents
 
@@ -105,6 +105,9 @@ This glossary contains **314 3SE term(s)**, **101 other term(s)**, **12 3SE prop
   - [Interdependent activity - 3SE](#interdependent-activity---3se)
   - [Interdependent actor - 3SE](#interdependent-actor---3se)
   - [Interdependent function - 3SE](#interdependent-function---3se)
+  - [Interdependent functional element - 3SE](#interdependent-functional-element---3se)
+  - [Interdependent physical element - 3SE](#interdependent-physical-element---3se)
+  - [Interdependent state - 3SE](#interdependent-state---3se)
   - [Interdependent system - 3SE](#interdependent-system---3se)
   - [Iteration - 3SE](#iteration---3se)
   - [Iteration analysis - 3SE](#iteration-analysis---3se)
@@ -477,7 +480,7 @@ This glossary contains **314 3SE term(s)**, **101 other term(s)**, **12 3SE prop
 
 ## 3SE Terms
 
-*314 term(s) defined by the 3SE framework.*
+*317 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1269,9 +1272,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N6 -.->|allocates| N9
-    N2 -.->|allocates| N15
     N14 -.->|allocates| N15
+    N2 -.->|allocates| N15
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1427,10 +1430,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N6 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
+    N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1804,8 +1807,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2427,11 +2430,62 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
+| Related | [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependent-functional-element-3se-069fde073fce78a5](https://www.3se.info/3se-onto/terms/interdependent-functional-element-3se-069fde073fce78a5) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Allocates | [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477) |
 | Produces | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
 | Consumes | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
+| Allocated by | [interdependent-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-state-3se-069fde073ffb7cc5) |
+
+*Created: 2026-05-08 · Modified: 2026-05-08 · Creator: @rcasteran*
+
+---
+
+### Interdependent functional element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of an interdependent system responsible for carrying out some of the interdependent functions devolved to the interdependent system.
+
+| Relation | Terms |
+|---|---|
+| Related | [interdependent-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
+| Allocates | [interdependent-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-state-3se-069fde073ffb7cc5) |
+| Exposes | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
+| Allocated by | [interdependent-physical-element-3se-069fde073ff3729e](https://www.3se.info/3se-onto/terms/interdependent-physical-element-3se-069fde073ff3729e) |
+
+*Created: 2026-05-08 · Modified: 2026-05-08 · Creator: @rcasteran*
+
+---
+
+### Interdependent physical element - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Part of an interdependent system responsible for defining the resources to carrying out the interdependent functional element of the interdependent system.
+
+| Relation | Terms |
+|---|---|
+| Allocates | [interdependent-functional-element-3se-069fde073fce78a5](https://www.3se.info/3se-onto/terms/interdependent-functional-element-3se-069fde073fce78a5) |
+| Exposes | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Allocated by | [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
+
+*Created: 2026-05-08 · Modified: 2026-05-08 · Creator: @rcasteran*
+
+---
+
+### Interdependent state - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> State of an interdependent system.
+
+| Relation | Terms |
+|---|---|
+| Related | [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
+| Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Allocates | [interdependent-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5) |
+| Allocated by | [interdependent-functional-element-3se-069fde073fce78a5](https://www.3se.info/3se-onto/terms/interdependent-functional-element-3se-069fde073fce78a5) |
 
 *Created: 2026-05-08 · Modified: 2026-05-08 · Creator: @rcasteran*
 
@@ -2445,8 +2499,9 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [interdependent-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
+| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependent-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477), [interdependent-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [interdependent-functional-element-3se-069fde073fce78a5](https://www.3se.info/3se-onto/terms/interdependent-functional-element-3se-069fde073fce78a5), [interdependent-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-state-3se-069fde073ffb7cc5) |
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Allocates | [interdependent-physical-element-3se-069fde073ff3729e](https://www.3se.info/3se-onto/terms/interdependent-physical-element-3se-069fde073ff3729e) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 
 *Created: 2026-03-24 · Modified: 2026-05-08 · Creator: @rcasteran*
@@ -2708,11 +2763,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N12 -.->|allocates| N9
-    N12 -.->|allocates| N10
+    N9 -.->|allocates| N10
     N2 -.->|allocates| N10
     N5 -.->|allocates| N3
-    N9 -.->|allocates| N10
+    N12 -.->|allocates| N9
+    N12 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2862,8 +2917,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3074,8 +3129,8 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N17 -.->|allocates| N10
     N10 -->|subclass of| N1
+    N17 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
@@ -4488,9 +4543,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5204,7 +5259,7 @@ graph TD
 |---|---|
 | Related | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Subclass of | [disposition-bfo-2-0-069f666ab4e77a92](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92) |
-| Superclass of | [enabling-state-3se-069e1512f37a7612](https://www.3se.info/3se-onto/terms/enabling-state-3se-069e1512f37a7612), [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
+| Superclass of | [enabling-state-3se-069e1512f37a7612](https://www.3se.info/3se-onto/terms/enabling-state-3se-069e1512f37a7612), [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [interdependent-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-state-3se-069fde073ffb7cc5), [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 | Broad match | [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
 | Allocates | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 
@@ -5454,8 +5509,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5531,9 +5586,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N10 -.->|allocates| N14
-    N13 -.->|allocates| N9
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
+    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6178,12 +6233,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N2 -.->|allocates| N4
+    N15 -.->|exposes| N1
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
-    N16 -.->|allocates| N4
-    N15 -.->|exposes| N1
-    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6365,21 +6420,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
+    N37 -.->|allocates| N1
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
+    N40 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N27 -.->|allocates| N18
     N4 -.->|allocates| N7
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
     N31 -.->|allocates| N2
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N40 -.->|allocates| N2
-    N27 -.->|allocates| N18
-    N26 -.->|allocates| N19
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N37 -.->|allocates| N1
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6548,11 +6603,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N14 -.->|allocates| N9
+    N15 -.->|allocates| N12
+    N4 -.->|allocates| N8
     N11 -.->|allocates| N12
     N13 -.->|allocates| N10
-    N4 -.->|allocates| N8
-    N15 -.->|allocates| N12
-    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
