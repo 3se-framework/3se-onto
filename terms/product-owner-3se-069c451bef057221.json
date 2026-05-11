@@ -19,7 +19,10 @@
     "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327",
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f",
+    "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
@@ -41,7 +44,7 @@
     "https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-28",
+  "entryModified": "2026-05-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

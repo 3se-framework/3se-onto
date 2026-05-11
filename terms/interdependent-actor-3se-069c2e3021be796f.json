@@ -13,10 +13,11 @@
     "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477",
-    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84"
   ],
   "entryCreated": "2026-03-24",
-  "entryModified": "2026-05-08",
+  "entryModified": "2026-05-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
