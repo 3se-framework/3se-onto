@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Feature analysis - 3SE",
-  "description": "Analysis of the goal to determine what feature is contributing to it.",
+  "description": "Analysis of the goal to determine what feature is contributing to it and if the stakeholder represents an actor or an interdependent actor.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
   "entryCreated": "2026-03-17",
