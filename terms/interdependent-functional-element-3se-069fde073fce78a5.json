@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Interdependent functional element - 3SE",
-  "description": "Part of an interdependent system responsible for carrying out some of the interdependent functions devolved to the interdependent system.",
+  "description": "Part of an interdependent system responsible for carrying out some of the interdependent system functions devolved to the interdependent system.",
   "status": "draft",
   "exposes": [
     "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
@@ -12,7 +12,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/interdependent-functional-element-3se-069fde073fce78a5",
   "related": [
-    "https://www.3se.info/3se-onto/terms/interdependent-function-3se-069fdd89b3d17bf5",
+    "https://www.3se.info/3se-onto/terms/interdependent-system-function-3se-069fdd89b3d17bf5",
     "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617"
   ],
   "entryCreated": "2026-05-08",

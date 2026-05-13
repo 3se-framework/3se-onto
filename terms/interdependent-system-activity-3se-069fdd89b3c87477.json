@@ -1,8 +1,8 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Interdependent activity - 3SE",
-  "description": "Set of cohesive interdependent functions which mutually and durably shapes a goal, and which transforms incoming exchanges into outgoing exchanges.",
+  "title": "Interdependent system activity - 3SE",
+  "description": "Set of cohesive interdependent system functions which mutually and durably shapes a goal, and which transforms incoming exchanges into outgoing exchanges.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6"
@@ -13,14 +13,14 @@
   "consumes": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-069fdd89b3c87477",
+  "@id": "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477",
   "related": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
     "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780"
   ],
   "entryCreated": "2026-05-08",
-  "entryModified": "2026-05-11",
+  "entryModified": "2026-05-08",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
