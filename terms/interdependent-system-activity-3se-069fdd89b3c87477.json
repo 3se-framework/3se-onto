@@ -15,12 +15,10 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477",
   "related": [
-    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
-    "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
-    "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780"
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
   ],
   "entryCreated": "2026-05-08",
-  "entryModified": "2026-05-08",
+  "entryModified": "2026-05-13",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
