@@ -15,7 +15,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/enabling-system-activity-3se-069fdd89b3bd7ac6",
   "related": [
-    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c"
   ],
   "entryCreated": "2026-05-08",
   "entryModified": "2026-05-13",

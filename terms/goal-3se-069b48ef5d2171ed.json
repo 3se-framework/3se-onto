@@ -36,7 +36,9 @@
     "https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6",
     "https://www.3se.info/3se-onto/terms/enabling-system-activity-3se-069fdd89b3bd7ac6",
     "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477",
-    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/enabling-activity-3se-06a049901cae7607",
+    "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
