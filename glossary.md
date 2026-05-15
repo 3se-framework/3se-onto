@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-05-13 15:38 UTC*
+*Generated on 2026-05-15 17:22 UTC*
 
 This glossary contains **319 3SE term(s)**, **101 other term(s)**, **12 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
@@ -1449,9 +1449,9 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
+    N7 -.->|allocates| N10
     N11 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N7 -.->|allocates| N10
     N6 -.->|allocates| N13
 ```
 
@@ -2800,10 +2800,10 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
     N5 -.->|allocates| N3
-    N12 -.->|allocates| N9
-    N12 -.->|allocates| N10
     N9 -.->|allocates| N10
     N2 -.->|allocates| N10
+    N12 -.->|allocates| N9
+    N12 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2953,8 +2953,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
     N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3041,7 +3041,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [product-analysis-24765-2017-069b5a912a007ad2](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2) |
 
@@ -3065,7 +3065,7 @@ graph TD
     N7 -->|subclass of| N1
 ```
 
-*Created: 2026-03-17 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -3077,7 +3077,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580) |
+| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
 
@@ -3091,7 +3091,7 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -3114,7 +3114,7 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Breakdown structure of the product that supports the product analysis by following the principles below:
+> Breakdown structure of the product that supports the product architecture by following the principles below:
 (1) A product is composed of at least two product elements.
 (2) A product allocates at least one feature.
 (3) A product is represented by a system.
@@ -3123,7 +3123,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580), [product-architecture-3se-069d3f26ae3773b9](https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 | Narrow match | [product-breakdown-structure-24765-2017-069c01ba91c37ce8](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8) |
 
@@ -3165,11 +3165,11 @@ graph TD
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
+    N10 -->|subclass of| N1
 ```
 
-*Created: 2026-03-22 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -3201,7 +3201,7 @@ Note: when the product is an asset, the product owner is also called asset owner
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-05-11 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -3316,7 +3316,7 @@ It contributes to the risk analysis and the release analysis.
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of the feature and its realizing product to determine what release is delivering it.
+> Analysis of the feature and its realizing product or service to determine what release is delivering it.
 
 | Relation | Terms |
 |---|---|
@@ -3345,7 +3345,7 @@ graph TD
     N7 -->|subclass of| N1
 ```
 
-*Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -4268,7 +4268,7 @@ It includes the following steps:
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93) |
+| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 **Allocations**
@@ -4291,7 +4291,7 @@ graph TD
     N7 -->|subclass of| N1
 ```
 
-*Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -4303,7 +4303,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05) |
+| Related | [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Related match | [architecture-42010-2022-069cff8d0ac17a44](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44), [architecture-26262-1-2018-069cff8d0aa87a16](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16) |
 
@@ -4317,7 +4317,7 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -4340,7 +4340,7 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Breakdown structure of the service that supports the service analysis by following the principles below:
+> Breakdown structure of the service that supports the service architecture by following the principles below:
 (1) A service is composed of one or more service means, a service contract and a service level agreement.
 (2) A service allocates at least one feature.
 (3) A service is represented by a system.
@@ -4349,7 +4349,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [service-analysis-3se-069c5aee69fd7eeb](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c) |
+| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [service-architecture-3se-069d3f26ae477c53](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 
 **Structure**
@@ -4392,11 +4392,11 @@ graph TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
+    N12 -->|subclass of| N1
 ```
 
-*Created: 2026-03-26 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -4458,7 +4458,7 @@ Note: when the service is an asset, the service owner is also called asset owner
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-05-11 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -4579,9 +4579,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5355,7 +5355,7 @@ It contributes to the stakeholder requirement analysis, the operational analysis
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -5622,9 +5622,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N11 -.->|allocates| N4
     N10 -.->|allocates| N14
     N13 -.->|allocates| N9
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5920,7 +5920,7 @@ It contributes to the functional architecture, the physical architecture, the sy
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-05-13 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -6269,12 +6269,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N15 -.->|exposes| N1
-    N2 -.->|allocates| N4
+    N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N3 -.->|allocates| N4
-    N16 -.->|allocates| N4
+    N15 -.->|exposes| N1
+    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6456,21 +6456,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N4 -.->|allocates| N7
-    N37 -.->|allocates| N1
     N27 -.->|allocates| N18
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
+    N26 -.->|allocates| N19
+    N37 -.->|allocates| N1
+    N40 -.->|allocates| N2
     N31 -.->|allocates| N2
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
+    N4 -.->|allocates| N7
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N26 -.->|allocates| N19
-    N40 -.->|allocates| N2
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6503,7 +6503,7 @@ It contributes to the interdependence analysis, the operational analysis, the sy
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-04-01 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
@@ -6639,11 +6639,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
     N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
-    N14 -.->|allocates| N9
     N4 -.->|allocates| N8
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6692,7 +6692,7 @@ It contributes to the operational analysis, the system functional analysis, the 
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-04-28 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-05-15 · Creator: @rcasteran*
 
 ---
 
