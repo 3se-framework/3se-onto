@@ -18,11 +18,6 @@
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
     "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327",
-    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
-    "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a",
-    "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1",
-    "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f",
     "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
@@ -49,7 +44,7 @@
     "https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-05-11",
+  "entryModified": "2026-05-15",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

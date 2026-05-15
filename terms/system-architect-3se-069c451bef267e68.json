@@ -52,7 +52,12 @@
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
     "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
     "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241",
-    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
+    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc",
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a",
+    "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
@@ -101,7 +106,7 @@
     "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-04-28",
+  "entryModified": "2026-05-15",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
