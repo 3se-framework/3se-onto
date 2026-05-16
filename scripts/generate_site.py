@@ -107,6 +107,11 @@ EVALUATION_RELATION_LABELS: dict[str, str] = {
     "evaluates": "Evaluates",
 }
 
+# Human-readable labels for state-transition relation fields rendered on term pages.
+STATE_TRANSITION_RELATION_LABELS: dict[str, str] = {
+    "fires": "Fires",
+}
+
 
 # ---------------------------------------------------------------------------
 # Data helpers
@@ -255,6 +260,23 @@ def build_evaluated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     index: dict[str, list[dict]] = {}
     for term in terms:
         val = term.get("evaluates")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_fired_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a fires target. Used to compute the inverse 'fired by' relation:
+    if A fires B, then B is fired by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("fires")
         if not val:
             continue
         uris = [val] if isinstance(val, str) else val
@@ -1991,7 +2013,8 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                      terms_index: dict[str, dict] | None = None,
                      represents_index: dict[str, list[dict]] | None = None,
                      allocated_by_index: dict[str, list[dict]] | None = None,
-                     evaluated_by_index: dict[str, list[dict]] | None = None) -> str:
+                     evaluated_by_index: dict[str, list[dict]] | None = None,
+                     fired_by_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2231,28 +2254,56 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                 f'</tr>'
             )
 
+    # State-transition relations (fires) and its inverse (fired by)
+    state_transition_html = ""
+    for field, label in STATE_TRANSITION_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        state_transition_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+    if fired_by_index:
+        term_id = term.get("@id", "")
+        firing_terms = fired_by_index.get(term_id, [])
+        if firing_terms:
+            links = [render_uri_link(t.get("@id", "")) for t in firing_terms]
+            state_transition_html += (
+                f'<tr>'
+                f'<td>Fired by</td>'
+                f'<td>{SEP.join(links)}</td>'
+                f'</tr>'
+            )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
     relations_html = ""
-    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or match:
+    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                bfo_html or role_html or exposure_html or flow_html or evaluation_html or match) else ""
+                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
-                role_html or exposure_html or flow_html or evaluation_html or match) else ""
+                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
-                exposure_html or flow_html or evaluation_html or match) else ""
+                exposure_html or flow_html or evaluation_html or state_transition_html or match) else ""
         sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and (
-                flow_html or evaluation_html or match) else ""
+                flow_html or evaluation_html or state_transition_html or match) else ""
         sep5 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if flow_html and (
-                evaluation_html or match) else ""
-        sep6 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if evaluation_html and match else ""
+                evaluation_html or state_transition_html or match) else ""
+        sep6 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if evaluation_html and (
+                state_transition_html or match) else ""
+        sep7 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if state_transition_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{match}</table>
         </div>"""
 
     # isReferencedBy
@@ -2609,6 +2660,7 @@ def main() -> int:
     represents_index = build_represents_index(terms)
     allocated_by_index = build_allocated_by_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
+    fired_by_index = build_fired_by_index(terms)
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
@@ -2665,7 +2717,7 @@ def main() -> int:
         (out_dir / "index.html").write_text(
             render_term_page(term, ref_index, superclass_index, terms_index,
                              represents_index, allocated_by_index,
-                             evaluated_by_index), encoding="utf-8"
+                             evaluated_by_index, fired_by_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",

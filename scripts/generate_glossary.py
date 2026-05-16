@@ -242,6 +242,23 @@ def build_evaluated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_fired_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a fires target. Used to compute the inverse 'fired by' relation:
+    if A fires B, then B is fired by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("fires")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -611,7 +628,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 terms_index: dict[str, dict] | None = None,
                 represents_index: dict[str, list[dict]] | None = None,
                 allocated_by_index: dict[str, list[dict]] | None = None,
-                evaluated_by_index: dict[str, list[dict]] | None = None) -> list[str]:
+                evaluated_by_index: dict[str, list[dict]] | None = None,
+                fired_by_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -724,6 +742,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("consumes", "Consumes"),
         ("conveys", "Conveys"),
         ("evaluates", "Evaluates"),
+        ("fires", "Fires"),
     ]:
         items = term.get(field, [])
         if not items:
@@ -752,6 +771,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in evaluating_terms
             ]
             relation_rows.append(("Evaluated by", ", ".join(links)))
+
+    # Fired by (computed inverse of fires)
+    if fired_by_index:
+        term_id = term.get("@id", "")
+        firing_terms = fired_by_index.get(term_id, [])
+        if firing_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in firing_terms
+            ]
+            relation_rows.append(("Fired by", ", ".join(links)))
 
     if relation_rows:
         lines.append("| Relation | Terms |")
@@ -1001,6 +1031,7 @@ def main() -> int:
     represents_index = build_represents_index(terms)
     allocated_by_index = build_allocated_by_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
+    fired_by_index = build_fired_by_index(terms)
     terms_index = build_terms_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
@@ -1061,7 +1092,7 @@ def main() -> int:
         for term in se3_terms:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
-                                  evaluated_by_index))
+                                  evaluated_by_index, fired_by_index))
             md.append("---")
             md.append("")
     else:
@@ -1078,7 +1109,7 @@ def main() -> int:
         for term in other_terms:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
-                                  evaluated_by_index))
+                                  evaluated_by_index, fired_by_index))
             md.append("---")
             md.append("")
     else:
