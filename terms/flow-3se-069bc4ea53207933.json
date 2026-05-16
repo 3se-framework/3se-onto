@@ -18,14 +18,15 @@
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
     "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a",
     "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340",
-    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426"
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
     "https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7"
   ],
   "entryCreated": "2026-03-19",
-  "entryModified": "2026-05-02",
+  "entryModified": "2026-05-16",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
