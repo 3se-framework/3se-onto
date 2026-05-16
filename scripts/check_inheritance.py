@@ -11,6 +11,7 @@
 #   consumes  — input flow or exchange used by a function or activity
 #   conveys   — flow or exchange that circulates through an interface
 #   exposes   — flow or exchange exposed by a functional element
+#   fires     — transition fired by an active state
 #
 # For each child term that declares subClassOf, the script looks up each
 # parent term and reports any relation that the parent declares but the
@@ -35,6 +36,7 @@ INHERITED_FIELDS: list[str] = [
     "consumes",
     "conveys",
     "exposes",
+    "fires",
 ]
 
 
