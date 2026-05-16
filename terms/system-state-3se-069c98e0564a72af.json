@@ -11,6 +11,9 @@
     "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
   ],
+  "fires": [
+    "https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596"
+  ],
   "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",

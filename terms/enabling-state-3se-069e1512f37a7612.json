@@ -10,6 +10,9 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/enabling-system-function-3se-069c06710282799a"
   ],
+  "fires": [
+    "https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596"
+  ],
   "@id": "https://www.3se.info/3se-onto/terms/enabling-state-3se-069e1512f37a7612",
   "related": [
     "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e"

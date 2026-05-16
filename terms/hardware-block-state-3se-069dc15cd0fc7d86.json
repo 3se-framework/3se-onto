@@ -10,6 +10,9 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be"
   ],
+  "fires": [
+    "https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596"
+  ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86",
   "related": [
     "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98"
