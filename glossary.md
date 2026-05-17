@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-05-16 18:27 UTC*
+*Generated on 2026-05-17 10:10 UTC*
 
-This glossary contains **320 3SE term(s)**, **102 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
+This glossary contains **321 3SE term(s)**, **103 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
 ## Contents
 
@@ -325,6 +325,7 @@ This glossary contains **320 3SE term(s)**, **102 other term(s)**, **13 3SE prop
   - [Value breakdown structure - 3SE](#value-breakdown-structure---3se)
   - [Value model - 3SE](#value-model---3se)
   - [Verification - 3SE](#verification---3se)
+  - [View - 3SE](#view---3se)
   - [Vulnerability - 3SE](#vulnerability---3se)
   - [Weakness - 3SE](#weakness---3se)
 - [Other Terms](#other-terms)
@@ -428,6 +429,7 @@ This glossary contains **320 3SE term(s)**, **102 other term(s)**, **13 3SE prop
   - [Validation - IEEE 1012](#validation---ieee-1012)
   - [Value - EN 12973](#value---en-12973)
   - [Verification - IEEE 1012](#verification---ieee-1012)
+  - [View - ISO/IEC/IEEE 24765](#view---isoiecieee-24765)
   - [Vulnerability - ISO/SAE 21434](#vulnerability---isosae-21434)
   - [Weakness - ISO/SAE 21434](#weakness---isosae-21434)
 - [References](#references)
@@ -485,7 +487,7 @@ This glossary contains **320 3SE term(s)**, **102 other term(s)**, **13 3SE prop
 
 ## 3SE Terms
 
-*320 term(s) defined by the 3SE framework.*
+*321 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1297,8 +1299,8 @@ graph TD
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N6 -.->|allocates| N9
     N2 -.->|allocates| N15
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1454,9 +1456,9 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
+    N11 -.->|allocates| N10
     N6 -.->|allocates| N13
     N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
 ```
 
@@ -1831,9 +1833,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2810,8 +2812,8 @@ graph TD
     N9 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N5 -.->|allocates| N3
     N2 -.->|allocates| N10
+    N5 -.->|allocates| N3
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -4587,9 +4589,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5633,9 +5635,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N10 -.->|allocates| N14
     N11 -.->|allocates| N4
     N13 -.->|allocates| N9
+    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6282,11 +6284,11 @@ graph TD
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
     N2 -.->|allocates| N4
-    N15 -.->|exposes| N1
-    N3 -.->|allocates| N4
-    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N16 -.->|allocates| N4
+    N15 -.->|exposes| N1
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6468,21 +6470,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N26 -.->|allocates| N19
+    N40 -.->|allocates| N2
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
+    N37 -.->|allocates| N1
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N31 -.->|allocates| N2
     N27 -.->|allocates| N18
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N40 -.->|allocates| N2
-    N37 -.->|allocates| N1
-    N4 -.->|allocates| N7
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
+    N4 -.->|allocates| N7
+    N31 -.->|allocates| N2
+    N26 -.->|allocates| N19
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6652,11 +6654,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
-    N14 -.->|allocates| N9
     N15 -.->|allocates| N12
-    N4 -.->|allocates| N8
     N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -7041,6 +7043,20 @@ Note: conditions are about deliverables quality criteria and satisfaction of int
 
 ---
 
+### View - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A filtered projection over a set of concepts created for a certain purpose and covering a certain scope.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [view-24765-2017-06a0993aed0d7f96](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96) |
+
+*Created: 2026-05-17 · Modified: 2026-05-17 · Creator: @rcasteran*
+
+---
+
 ### Vulnerability - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -7074,7 +7090,7 @@ Note: conditions are about deliverables quality criteria and satisfaction of int
 
 ## Other Terms
 
-*102 term(s) sourced from external standards and frameworks.*
+*103 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -8313,6 +8329,18 @@ The methods defined in this clause are generic modules that can be invoked syste
 **References:** [IEEE 1012:2016](https://www.3se.info/3se-onto/references/ieee-1012-2016-069ac9d90bcd7cb0)
 
 *Created: 2026-03-07 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### View - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Collection of subject domains, classes, relationships, responsibilities, properties, constraints, and notes assembled or created for a certain purpose and covering a certain scope.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-05-17 · Modified: 2026-05-17 · Creator: @rcasteran*
 
 ---
 
