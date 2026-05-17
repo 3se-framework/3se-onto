@@ -6,5 +6,12 @@
   "status": "standard",
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96",
+  "entryCreated": "2026-05-17",
+  "entryModified": "2026-05-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

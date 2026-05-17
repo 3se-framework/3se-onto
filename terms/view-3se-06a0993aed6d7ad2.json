@@ -5,6 +5,13 @@
   "description": "A filtered projection over a set of concepts created for a certain purpose and covering a certain scope.",
   "status": "draft",
   "broadMatch": [
-    "https://www.3se.info/3se-onto/terms/view-24765-2017"
-  ]
+    "https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2",
+  "entryCreated": "2026-05-17",
+  "entryModified": "2026-05-17",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
