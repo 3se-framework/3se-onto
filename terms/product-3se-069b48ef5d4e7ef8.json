@@ -26,7 +26,8 @@
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf"
+    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
   ],
   "isRepresentedBy": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
