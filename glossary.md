@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-05-17 10:10 UTC*
+*Generated on 2026-05-19 19:51 UTC*
 
 This glossary contains **321 3SE term(s)**, **103 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
@@ -1298,9 +1298,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N14 -.->|allocates| N15
-    N2 -.->|allocates| N15
     N6 -.->|allocates| N9
+    N2 -.->|allocates| N15
+    N14 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1458,8 +1458,8 @@ graph TD
     N5 -.->|allocates| N13
     N11 -.->|allocates| N10
     N6 -.->|allocates| N13
-    N7 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1833,8 +1833,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
 ```
 
@@ -2810,10 +2810,10 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
     N9 -.->|allocates| N10
+    N5 -.->|allocates| N3
+    N2 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N2 -.->|allocates| N10
-    N5 -.->|allocates| N3
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3250,9 +3250,11 @@ graph TD
     N1["Project"]
     N2["Release"]
     N3["Product"]
+    N4["Service"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
+    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-03-17 · Modified: 2026-03-26 · Creator: @rcasteran*
@@ -3313,12 +3315,12 @@ It contributes to the risk analysis and the release analysis.
 
 | Relation | Terms |
 |---|---|
-| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7), [assessment-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d) |
+| Related | [change-3se-069b5b3d9ec17ed7](https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7), [assessment-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [project-analysis-3se-069b9d2c8ddf7fa8](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5) |
 | Broad match | [release-24765-2017-069b48ef5d6173d8](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8) |
-| Allocates | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
+| Allocates | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d) |
 | Allocated by | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf) |
 
-*Created: 2026-03-13 · Modified: 2026-04-08 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-05-19 · Creator: @rcasteran*
 
 ---
 
@@ -3345,6 +3347,7 @@ graph TD
     N6["Product"]
     N7["System feature"]
     N8["Release"]
+    N9["Service"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -3352,6 +3355,8 @@ graph TD
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
     N8 -.->|allocates| N6
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N7
     N7 -->|subclass of| N1
 ```
 
@@ -4258,15 +4263,16 @@ It includes the following steps:
 
 | Relation | Terms |
 |---|---|
-| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [service-analysis-3se-069c5aee69fd7eeb](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [service-architecture-3se-069d3f26ae477c53](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [project-3se-069b48ef5d5877bf](https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf), [service-analysis-3se-069c5aee69fd7eeb](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [service-architecture-3se-069d3f26ae477c53](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4) |
 | Superclass of | [safety-service-3se-069da08be5747c58](https://www.3se.info/3se-onto/terms/safety-service-3se-069da08be5747c58), [security-service-3se-069da08be5957ee2](https://www.3se.info/3se-onto/terms/security-service-3se-069da08be5957ee2) |
 | Narrow match | [service-24765-2017-069c5aee69ea7f49](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49) |
 | Composed of | [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1) |
 | Represented by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
 | Can be | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
+| Allocated by | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 
-*Created: 2026-03-26 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-05-19 · Creator: @rcasteran*
 
 ---
 
@@ -4589,9 +4595,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5635,9 +5641,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N10 -.->|allocates| N14
     N11 -.->|allocates| N4
     N13 -.->|allocates| N9
-    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6283,12 +6289,12 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
     N2 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N3 -.->|allocates| N4
     N16 -.->|allocates| N4
-    N15 -.->|exposes| N1
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6470,21 +6476,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N40 -.->|allocates| N2
+    N27 -.->|allocates| N18
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N37 -.->|allocates| N1
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N27 -.->|allocates| N18
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
+    N37 -.->|allocates| N1
+    N26 -.->|allocates| N19
+    N40 -.->|allocates| N2
     N4 -.->|allocates| N7
     N31 -.->|allocates| N2
-    N26 -.->|allocates| N19
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6654,11 +6660,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N15 -.->|allocates| N12
-    N11 -.->|allocates| N12
-    N13 -.->|allocates| N10
     N4 -.->|allocates| N8
+    N15 -.->|allocates| N12
     N14 -.->|allocates| N9
+    N13 -.->|allocates| N10
+    N11 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
