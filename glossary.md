@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-05-19 19:51 UTC*
+*Generated on 2026-05-19 19:59 UTC*
 
 This glossary contains **321 3SE term(s)**, **103 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
@@ -1298,9 +1298,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N6 -.->|allocates| N9
     N2 -.->|allocates| N15
     N14 -.->|allocates| N15
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1456,10 +1456,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
+    N7 -.->|allocates| N10
+    N3 -.->|allocates| N11
     N11 -.->|allocates| N10
     N6 -.->|allocates| N13
-    N3 -.->|allocates| N11
-    N7 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1833,9 +1833,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2409,8 +2409,8 @@ graph TD
     N7 -.->|allocates| N9
     N7 -.->|allocates| N10
     N11 -.->|allocates| N12
-    N12 -->|subclass of| N5
     N10 -->|subclass of| N1
+    N12 -->|subclass of| N5
 ```
 
 *Created: 2026-03-24 · Modified: 2026-05-13 · Creator: @rcasteran*
@@ -2809,11 +2809,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N9 -.->|allocates| N10
     N5 -.->|allocates| N3
-    N2 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
+    N2 -.->|allocates| N10
+    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -2963,8 +2963,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3035,11 +3035,11 @@ graph TD
 | Narrow match | [product-24765-2017-069ad94e896d75d2](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2) |
 | Composed of | [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631) |
 | Represented by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-| Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
+| Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Can be | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05) |
 | Allocated by | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 
-*Created: 2026-03-13 · Modified: 2026-04-12 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-05-19 · Creator: @rcasteran*
 
 ---
 
@@ -3066,12 +3066,19 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Product"]
     N7["System feature"]
+    N8["System attribute"]
+    N9["Attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
+    N6 -.->|allocates| N8
+    N9 -.->|allocates| N2
+    N9 -.->|allocates| N4
+    N9 -.->|allocates| N5
+    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
 ```
 
@@ -3097,8 +3104,10 @@ graph TD
 graph TD
     N1["Product"]
     N2["System feature"]
+    N3["System attribute"]
 
     N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
 ```
 
 *Created: 2026-04-06 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3151,12 +3160,12 @@ graph TD
     N8["Product element"]
     N9["System"]
     N10["System feature"]
-    N11["Asset"]
-    N12["Service mean"]
-    N13["System element"]
-    N14["High level physical element"]
-    N15["System state"]
-    N16["System attribute"]
+    N11["System attribute"]
+    N12["Asset"]
+    N13["Service mean"]
+    N14["System element"]
+    N15["High level physical element"]
+    N16["System state"]
     N17["Service"]
 
     N1 -.->|allocates| N2
@@ -3167,16 +3176,18 @@ graph TD
     N7 -->|composed of| N8
     N7 -.->|represented by| N9
     N7 -.->|allocates| N10
-    N7 -.->|can be| N11
+    N7 -.->|allocates| N11
     N7 -.->|can be| N12
+    N7 -.->|can be| N13
     N8 -.->|can be| N7
-    N9 -->|composed of| N13
-    N9 -.->|allocates| N14
+    N9 -->|composed of| N14
     N9 -.->|allocates| N15
     N9 -.->|allocates| N16
+    N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
+    N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3346,17 +3357,25 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Product"]
     N7["System feature"]
-    N8["Release"]
-    N9["Service"]
+    N8["System attribute"]
+    N9["Release"]
+    N10["Service"]
+    N11["Attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
-    N8 -.->|allocates| N6
-    N8 -.->|allocates| N9
-    N9 -.->|allocates| N7
+    N6 -.->|allocates| N8
+    N9 -.->|allocates| N6
+    N9 -.->|allocates| N10
+    N10 -.->|allocates| N7
+    N10 -.->|allocates| N8
+    N11 -.->|allocates| N2
+    N11 -.->|allocates| N4
+    N11 -.->|allocates| N5
+    N8 -->|subclass of| N11
     N7 -->|subclass of| N1
 ```
 
@@ -4268,7 +4287,7 @@ It includes the following steps:
 | Narrow match | [service-24765-2017-069c5aee69ea7f49](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49) |
 | Composed of | [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1) |
 | Represented by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-| Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
+| Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Can be | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
 | Allocated by | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 
@@ -4298,12 +4317,19 @@ graph TD
     N5["Stakeholder constraint"]
     N6["Service"]
     N7["System feature"]
+    N8["System attribute"]
+    N9["Attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N6 -.->|allocates| N7
+    N6 -.->|allocates| N8
+    N9 -.->|allocates| N2
+    N9 -.->|allocates| N4
+    N9 -.->|allocates| N5
+    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
 ```
 
@@ -4329,8 +4355,10 @@ graph TD
 graph TD
     N1["Service"]
     N2["System feature"]
+    N3["System attribute"]
 
     N1 -.->|allocates| N2
+    N1 -.->|allocates| N3
 ```
 
 *Created: 2026-04-06 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4384,11 +4412,11 @@ graph TD
     N10["Service level agreement"]
     N11["System"]
     N12["System feature"]
-    N13["Asset"]
-    N14["System element"]
-    N15["High level physical element"]
-    N16["System state"]
-    N17["System attribute"]
+    N13["System attribute"]
+    N14["Asset"]
+    N15["System element"]
+    N16["High level physical element"]
+    N17["System state"]
     N18["Product"]
 
     N1 -.->|allocates| N2
@@ -4401,15 +4429,17 @@ graph TD
     N7 -->|composed of| N10
     N7 -.->|represented by| N11
     N7 -.->|allocates| N12
-    N7 -.->|can be| N13
+    N7 -.->|allocates| N13
+    N7 -.->|can be| N14
     N8 -.->|can be| N7
-    N11 -->|composed of| N14
-    N11 -.->|allocates| N15
+    N11 -->|composed of| N15
     N11 -.->|allocates| N16
     N11 -.->|allocates| N17
+    N11 -.->|allocates| N13
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
+    N18 -.->|allocates| N13
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4595,9 +4625,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5493,7 +5523,7 @@ graph TD
 | Related | [system-attribute-breakdown-structure-3se-069dcf9368c6750e](https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [system-attribute-analysis-3se-069dcf9368b37c5a](https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Composed of | [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4) |
-| Allocated by | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+| Allocated by | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 
 *Created: 2026-04-13 · Modified: 2026-04-18 · Creator: @rcasteran*
 
@@ -5564,8 +5594,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5641,7 +5671,9 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N6 -.->|allocates| N5
     N10 -.->|allocates| N14
+    N7 -.->|allocates| N5
     N11 -.->|allocates| N4
     N13 -.->|allocates| N9
 ```
@@ -6289,12 +6321,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N15 -.->|exposes| N1
-    N3 -.->|allocates| N4
+    N13 -.->|allocates| N12
     N2 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N15 -.->|exposes| N1
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6476,21 +6510,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N27 -.->|allocates| N18
+    N40 -.->|allocates| N2
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
+    N37 -.->|allocates| N1
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N4 -.->|allocates| N7
+    N31 -.->|allocates| N2
+    N27 -.->|allocates| N18
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N37 -.->|allocates| N1
     N26 -.->|allocates| N19
-    N40 -.->|allocates| N2
-    N4 -.->|allocates| N7
-    N31 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6660,11 +6694,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N4 -.->|allocates| N8
     N15 -.->|allocates| N12
+    N11 -.->|allocates| N12
     N14 -.->|allocates| N9
     N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
