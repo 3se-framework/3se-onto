@@ -15,7 +15,8 @@
   "entryCreated": "2026-03-13",
   "entryModified": "2026-04-08",
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
+    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/change-3se-069b5b3d9ec17ed7",
