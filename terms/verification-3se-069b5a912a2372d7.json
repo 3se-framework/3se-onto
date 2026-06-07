@@ -9,13 +9,14 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7",
   "entryCreated": "2026-03-14",
-  "entryModified": "2026-04-08",
+  "entryModified": "2026-06-07",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
   "related": [
     "https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878",
-    "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1"
+    "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1",
+    "https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd"
   ]
 }
