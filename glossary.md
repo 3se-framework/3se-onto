@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-06-07 17:04 UTC*
+*Generated on 2026-06-07 19:14 UTC*
 
 This glossary contains **321 3SE term(s)**, **103 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
 
@@ -1299,8 +1299,8 @@ graph TD
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
     N6 -.->|allocates| N9
-    N14 -.->|allocates| N15
     N2 -.->|allocates| N15
+    N14 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1456,10 +1456,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
     N11 -.->|allocates| N10
-    N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1833,8 +1833,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
 ```
 
@@ -2349,9 +2349,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7) |
 | Related match | [inspection-24765-2017-069b5a9129de776f](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f) |
 
-*Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-06-07 · Creator: @rcasteran*
 
 ---
 
@@ -2810,10 +2811,10 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
     N5 -.->|allocates| N3
-    N9 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
     N2 -.->|allocates| N10
+    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3370,11 +3371,11 @@ graph TD
     N6 -.->|allocates| N8
     N9 -.->|allocates| N6
     N9 -.->|allocates| N10
+    N10 -.->|allocates| N7
+    N10 -.->|allocates| N8
     N11 -.->|allocates| N2
     N11 -.->|allocates| N4
     N11 -.->|allocates| N5
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N8
     N8 -->|subclass of| N11
     N7 -->|subclass of| N1
 ```
@@ -5594,8 +5595,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5671,11 +5672,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N11 -.->|allocates| N4
-    N13 -.->|allocates| N9
     N6 -.->|allocates| N5
     N10 -.->|allocates| N14
+    N13 -.->|allocates| N9
     N7 -.->|allocates| N5
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6322,13 +6323,13 @@ graph TD
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
     N3 -.->|allocates| N4
+    N13 -.->|allocates| N12
+    N2 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N16 -.->|allocates| N4
+    N15 -.->|exposes| N1
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N14 -.->|allocates| N12
-    N2 -.->|allocates| N4
-    N15 -.->|exposes| N1
-    N13 -.->|allocates| N12
-    N16 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6510,21 +6511,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N26 -.->|allocates| N19
-    N9 -.->|exposes| N15
-    N9 -.->|allocates| N25
-    N9 -.->|allocates| N3
+    N4 -.->|allocates| N7
+    N27 -.->|allocates| N18
+    N31 -.->|allocates| N2
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
-    N4 -.->|allocates| N7
     N37 -.->|allocates| N1
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N40 -.->|allocates| N2
-    N27 -.->|allocates| N18
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N31 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N40 -.->|allocates| N2
+    N9 -.->|exposes| N15
+    N9 -.->|allocates| N25
+    N9 -.->|allocates| N3
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -7071,15 +7072,15 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Evaluation of the deliverables of a given development phase to determine whether they satisfy the conditions imposed at the end of that phase.
+> Evaluation of the deliverables of a given development phase through inspection to determine whether they satisfy the conditions imposed at the end of that phase.
 Note: conditions are about deliverables quality criteria and satisfaction of internal standards, practices and conventions applicable to that phase.
 
 | Relation | Terms |
 |---|---|
-| Related | [assessment-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1) |
+| Related | [assessment-gate-3se-069b48ef5cf37878](https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878), [maturity-gate-3se-069b48ef5d3d71e1](https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1), [inspection-3se-069b5a9129e67fcd](https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd) |
 | Close match | [verification-1012-2016-069ac9d90bc27d0b](https://www.3se.info/3se-onto/terms/verification-1012-2016-069ac9d90bc27d0b) |
 
-*Created: 2026-03-14 · Modified: 2026-04-08 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-06-07 · Creator: @rcasteran*
 
 ---
 
