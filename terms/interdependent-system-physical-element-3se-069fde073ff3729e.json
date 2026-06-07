@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Interdependent system physical element - 3SE",
+  "description": "Part of an interdependent system responsible for defining the resources to carrying out the interdependent system functional element.",
+  "status": "draft",
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/interdependent-system-functional-element-3se-069fde073fce78a5"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/interdependent-system-physical-element-3se-069fde073ff3729e",
+  "entryCreated": "2026-05-08",
+  "entryModified": "2026-05-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
