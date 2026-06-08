@@ -9,8 +9,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63",
   "isResponsibleFor": [
-    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
-    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
+    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
+    "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de"
@@ -56,7 +56,7 @@
     "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-05-15",
+  "entryModified": "2026-06-08",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
