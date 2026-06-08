@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Non-functional testing - ISTQB",
+  "description": "A test type to evaluate that a component or system complies with non-functional requirements.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c"
+  ]
+}
