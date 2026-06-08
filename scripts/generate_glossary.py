@@ -264,6 +264,21 @@ def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     return {t["@id"]: t for t in terms if "@id" in t}
 
 
+def build_referenced_terms_index(
+        terms: list[dict], properties: list[dict]) -> dict[str, list[dict]]:
+    """Return a mapping of reference URI -> list of term/property entries that
+    declare that URI in their isReferencedBy field."""
+    index: dict[str, list[dict]] = {}
+    for entry in terms + properties:
+        val = entry.get("isReferencedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(entry)
+    return index
+
+
 BREAKDOWN_STEM_RE = re.compile(r"-breakdown-structure-3se(?:-[0-9a-f]{16})?$")
 
 
@@ -832,7 +847,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
 # Reference rendering
 # ---------------------------------------------------------------------------
 
-def render_reference(ref: dict) -> list[str]:
+def render_reference(ref: dict,
+                     referenced_terms_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = ref.get("title", "*(untitled)*")
@@ -919,6 +935,17 @@ def render_reference(ref: dict) -> list[str]:
         for label, value in bib_rows:
             lines.append(f"| **{label}** | {value} |")
         lines.append("")
+
+    # Referenced terms
+    ref_uri = ref.get("@id", "")
+    if referenced_terms_index and ref_uri:
+        citing = referenced_terms_index.get(ref_uri, [])
+        if citing:
+            citing_sorted = sorted(citing, key=lambda e: e.get("title", ""))
+            term_links = [f"[{e.get('title', uri_to_anchor(e.get('@id', '')))}]({e.get('@id', '')})"
+                          for e in citing_sorted]
+            lines.append(f"**Referenced Terms:** {', '.join(term_links)}")
+            lines.append("")
 
     # Provenance
     provenance: list[str] = []
@@ -1033,6 +1060,7 @@ def main() -> int:
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     terms_index = build_terms_index(terms)
+    referenced_terms_index = build_referenced_terms_index(terms, properties)
 
     se3_terms, other_terms = split_terms(terms)
     se3_properties, other_properties = split_properties(properties)
@@ -1124,7 +1152,7 @@ def main() -> int:
 
     if references:
         for ref in references:
-            md.extend(render_reference(ref))
+            md.extend(render_reference(ref, referenced_terms_index))
             md.append("---")
             md.append("")
     else:

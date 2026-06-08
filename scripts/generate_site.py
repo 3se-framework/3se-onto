@@ -290,6 +290,21 @@ def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     return {t["@id"]: t for t in terms if "@id" in t}
 
 
+def build_referenced_terms_index(
+        terms: list[dict], properties: list[dict]) -> dict[str, list[dict]]:
+    """Return a mapping of reference URI -> list of term/property entries that
+    declare that URI in their isReferencedBy field."""
+    index: dict[str, list[dict]] = {}
+    for entry in terms + properties:
+        val = entry.get("isReferencedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(entry)
+    return index
+
+
 def split_properties(properties: list[dict]) -> tuple[list[dict], list[dict]]:
     """Split properties into 3SE properties and other (external) properties.
 
@@ -2373,7 +2388,9 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
 # Reference page
 # ---------------------------------------------------------------------------
 
-def render_reference_page(ref: dict) -> str:
+def render_reference_page(ref: dict,
+                          referenced_terms_index: dict[str, list[dict]] | None = None,
+                          terms_index: dict[str, dict] | None = None) -> str:
     title = ref.get("title", "*(untitled)*")
     jsonld = clean_jsonld(ref)
     bib_type = bibo_type_label(ref.get("@type"))
@@ -2437,6 +2454,21 @@ def render_reference_page(ref: dict) -> str:
           <table class="bib-table">{bib_rows}</table>
         </div>"""
 
+    # Referenced terms: all terms/properties that cite this reference
+    ref_uri = ref.get("@id", "")
+    referenced_terms_html = ""
+    if referenced_terms_index and ref_uri:
+        citing = referenced_terms_index.get(ref_uri, [])
+        if citing:
+            citing_sorted = sorted(citing, key=lambda e: e.get("title", ""))
+            term_links = [render_uri_link(e.get("@id", ""), e.get("title", stem_from_uri(e.get("@id", ""))))
+                          for e in citing_sorted]
+            referenced_terms_html = f"""
+        <div class="card" style="margin-top:1.5rem">
+          <h3 style="margin-bottom:.75rem">Referenced Terms</h3>
+          <p style="font-size:.9rem">{SEP.join(term_links)}</p>
+        </div>"""
+
     prov = []
     if c := ref.get("entryCreated"):  prov.append(f"Created {c}")
     if m := ref.get("entryModified"): prov.append(f"Modified {m}")
@@ -2462,6 +2494,7 @@ def render_reference_page(ref: dict) -> str:
 </div>
 
 {bib_html}
+{referenced_terms_html}
 
 <div class="card" style="margin-top:1.5rem">
   <h3 style="margin-bottom:.75rem">JSON-LD</h3>
@@ -2662,6 +2695,7 @@ def main() -> int:
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     terms_index = build_terms_index(terms)
+    referenced_terms_index = build_referenced_terms_index(terms, properties)
 
     se3_terms, other_terms = split_terms(terms)
     se3_properties, other_properties = split_properties(properties)
@@ -2730,7 +2764,7 @@ def main() -> int:
         out_dir = SITE_DIR / "references" / stem
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(
-            render_reference_page(ref), encoding="utf-8"
+            render_reference_page(ref, referenced_terms_index, terms_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(ref), indent=2, ensure_ascii=False) + "\n",
