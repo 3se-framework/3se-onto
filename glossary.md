@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-06-08 21:01 UTC*
+*Generated on 2026-06-08 21:10 UTC*
 
 This glossary contains **333 3SE term(s)**, **105 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
@@ -1347,8 +1347,8 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N2 -.->|allocates| N15
+    N14 -.->|allocates| N15
     N6 -.->|allocates| N9
 ```
 
@@ -1505,10 +1505,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
     N11 -.->|allocates| N10
-    N7 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1917,9 +1917,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2929,11 +2929,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
+    N2 -.->|allocates| N10
+    N9 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N9 -.->|allocates| N10
     N5 -.->|allocates| N3
-    N2 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3083,8 +3083,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
     N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3305,9 +3305,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3490,11 +3490,11 @@ graph TD
     N6 -.->|allocates| N8
     N9 -.->|allocates| N6
     N9 -.->|allocates| N10
+    N10 -.->|allocates| N7
+    N10 -.->|allocates| N8
     N11 -.->|allocates| N2
     N11 -.->|allocates| N4
     N11 -.->|allocates| N5
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N8
     N8 -->|subclass of| N11
     N7 -->|subclass of| N1
 ```
@@ -4745,8 +4745,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
 ```
 
@@ -5714,8 +5714,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5791,11 +5791,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N6 -.->|allocates| N5
-    N11 -.->|allocates| N4
-    N10 -.->|allocates| N14
     N7 -.->|allocates| N5
+    N6 -.->|allocates| N5
+    N10 -.->|allocates| N14
     N13 -.->|allocates| N9
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6505,14 +6505,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N2 -.->|allocates| N4
     N3 -.->|allocates| N4
-    N13 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N15 -.->|exposes| N1
-    N16 -.->|allocates| N4
     N14 -.->|allocates| N12
+    N16 -.->|allocates| N4
+    N13 -.->|allocates| N12
+    N15 -.->|exposes| N1
+    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6726,21 +6726,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N37 -.->|allocates| N1
-    N27 -.->|allocates| N18
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N4 -.->|allocates| N7
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N40 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N4 -.->|allocates| N7
-    N26 -.->|allocates| N19
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N27 -.->|allocates| N18
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
     N31 -.->|allocates| N2
-    N40 -.->|allocates| N2
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
+    N37 -.->|allocates| N1
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6910,9 +6910,9 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N14 -.->|allocates| N9
     N11 -.->|allocates| N12
     N15 -.->|allocates| N12
-    N14 -.->|allocates| N9
     N13 -.->|allocates| N10
     N4 -.->|allocates| N8
 ```
@@ -8668,6 +8668,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Date** | 1974 |
 | **DOI** | `10.1016/0016-3287(74)90046-9` |
 
+**Referenced Terms:** [Reductionism - A perspective on systems science and systems philosophy 1974](https://www.3se.info/3se-onto/terms/reductionism-perspective-systems-science-1974-069c316c1940757e)
+
 *Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
@@ -8686,6 +8688,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Date** | 2023 |
 | **URL** | [https://mbse-capella.org/resources/arcadia-reference/Arcadia%20Language%20-%20MetaModel.pdf](https://mbse-capella.org/resources/arcadia-reference/Arcadia%20Language%20-%20MetaModel.pdf) |
 
+**Referenced Terms:** [Behavioral component - ARCADIA](https://www.3se.info/3se-onto/terms/behavioral-component-arcadia-2023-069b9d2c8d277fda), [Behavioral port - ARCADIA](https://www.3se.info/3se-onto/terms/behavioral-port-arcadia-2023-069bc53af24b724a), [Functional exchange - ARCADIA](https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023-069bc4ea532a72d7), [Hosting physical component - ARCADIA](https://www.3se.info/3se-onto/terms/hosting-physical-component-arcadia-2023-069b9d2c8dad7934), [Operational interaction - ARCADIA](https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044), [Physical port - ARCADIA](https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a), [System actor - ARCADIA](https://www.3se.info/3se-onto/terms/system-actor-arcadia-2023-069c1a2fb8e277c9)
+
 *Created: 2026-03-17 · Modified: 2026-03-17 · Creator: @rcasteran*
 
 ---
@@ -8701,6 +8705,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | Attribute | Value |
 |---|---|
 | **URL** | [http://purl.obolibrary.org/obo/bfo.owl](http://purl.obolibrary.org/obo/bfo.owl) |
+
+**Referenced Terms:** [Disposition - BFO 2.0](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92), [Fiat object part - BFO 2.0](https://www.3se.info/3se-onto/terms/fiat-object-part-bfo-2-0-069f666ab50e7980), [Function - BFO 2.0](https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa), [Generically dependent continuant - BFO 2.0](https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6), [Object - BFO 2.0](https://www.3se.info/3se-onto/terms/object-bfo-2-0-069f666ab52b7003), [Quality - BFO 2.0](https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9), [Role - BFO 2.0](https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732), [Two-dimensional continuant fiat boundary - BFO 2.0](https://www.3se.info/3se-onto/terms/two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -8720,6 +8726,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Date** | 1943 |
 | **DOI** | `10.1086/286788` |
 
+**Referenced Terms:** [Teleological behavior - Behavior, Purpose and Teleology 1943](https://www.3se.info/3se-onto/terms/teleological-behavior-behavior-purpose-teleology-1943-069c316c19497df9)
+
 *Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
@@ -8737,6 +8745,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2020 |
 | **URL** | [https://www.boutique.afnor.org/fr-fr/norme/nf-en-12973/management-par-la-valeur/fa164076/84790](https://www.boutique.afnor.org/fr-fr/norme/nf-en-12973/management-par-la-valeur/fa164076/84790) |
 
+**Referenced Terms:** [Value - EN 12973](https://www.3se.info/3se-onto/terms/value-12973-2020-069d52ba2c3376a8)
+
 *Created: 2026-04-07 · Modified: 2026-04-28 · Creator: @rcasteran*
 
 ---
@@ -8753,6 +8763,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **Authors** | Ludwig von Bertalanffy |
 | **Date** | 1973 |
+
+**Referenced Terms:** [Holism - General System Theory: Foundations, Development, Applications Revised Edition 1973](https://www.3se.info/3se-onto/terms/holism-general-system-theory-revised-1973-069c316c1913736d)
 
 *Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
 
@@ -8772,6 +8784,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Date** | 2004 |
 | **DOI** | `10.1177/0048393103262550` |
 
+**Referenced Terms:** [Mechanism - How does it work ? 2004](https://www.3se.info/3se-onto/terms/mechanism-how-does-it-work-2004-069c316c192e7512)
+
 *Created: 2026-03-24 · Modified: 2026-03-24 · Creator: @rcasteran*
 
 ---
@@ -8789,6 +8803,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2016 |
 | **URL** | [https://standards.ieee.org/ieee/1012/5609/](https://standards.ieee.org/ieee/1012/5609/) |
 
+**Referenced Terms:** [Acceptance - IEEE 1012](https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544), [Risk - IEEE 1012](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036), [Test case - IEEE 1012](https://www.3se.info/3se-onto/terms/test-case-1012-2016-069b5b3d9ee07f30), [Validation - IEEE 1012](https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07), [Verification - IEEE 1012](https://www.3se.info/3se-onto/terms/verification-1012-2016-069ac9d90bc27d0b)
+
 *Created: 2026-03-07 · Modified: 2026-03-15 · Creator: @rcasteran*
 
 ---
@@ -8804,6 +8820,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | Attribute | Value |
 |---|---|
 | **URL** | [https://cpre.ireb.org/en/downloads-and-resources/glossary](https://cpre.ireb.org/en/downloads-and-resources/glossary) |
+
+**Referenced Terms:** [Constraint - IREB CPRE](https://www.3se.info/3se-onto/terms/constraint-cpre-069a9faf2c897700), [Functional Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232), [Non-functional Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723), [Quality Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af), [Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6), [Stakeholder - IREB CPRE](https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
@@ -8822,6 +8840,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2018 |
 | **URL** | [https://www.iso.org/standard/68383.html](https://www.iso.org/standard/68383.html) |
 
+**Referenced Terms:** [Architecture - ISO 26262-1](https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16), [Failure - ISO 26262-1](https://www.3se.info/3se-onto/terms/failure-26262-1-2018-069bb0f6e7d079d7), [Fault - ISO 26262-1](https://www.3se.info/3se-onto/terms/fault-26262-1-2018-069bb0f6e7ef785b), [Functional safety requirement - ISO 26262-1](https://www.3se.info/3se-onto/terms/functional-safety-requirement-26262-1-2018-069bdc3120907798), [Hazard - ISO 26262-1](https://www.3se.info/3se-onto/terms/hazard-26262-1-2018-069ab4192b747d7d), [Hazard analysis and risk assessment - ISO 26262-1](https://www.3se.info/3se-onto/terms/hazard-analysis-and-risk-assessment-26262-1-2018-069c1ab34b617437), [Hazardous event - ISO 26262-1](https://www.3se.info/3se-onto/terms/hazardous-event-26262-1-2018-069c1b6f069670f5), [Safety goal - ISO 26262-1](https://www.3se.info/3se-onto/terms/safety-goal-26262-1-2018-069bdc31209a70e3), [Safety mechanism - ISO 26262-1](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb), [Technical safety requirement - ISO 26262-1](https://www.3se.info/3se-onto/terms/technical-safety-requirement-26262-1-2018-069bdc31214e72c2)
+
 *Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
 
 ---
@@ -8838,6 +8858,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **Issued** | 2015 |
 | **URL** | [https://www.iso.org/standard/63711.html](https://www.iso.org/standard/63711.html) |
+
+**Referenced Terms:** [System - ISO/IEC/IEEE 15288](https://www.3se.info/3se-onto/terms/system-15288-2015-069a98bf0f617409)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
@@ -8856,6 +8878,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2023 |
 | **URL** | [https://www.iso.org/standard/81702.html](https://www.iso.org/standard/81702.html) |
 
+**Referenced Terms:** [Architecture - ISO/IEC/IEEE 15288](https://www.3se.info/3se-onto/terms/system-architecture-15288-2023-069cfe7e564b70ef), [System element - ISO/IEC/IEEE 15288](https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e), [Systems engineering - ISO/IEC/IEEE 15288](https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce)
+
 *Created: 2026-03-03 · Modified: 2026-03-15 · Creator: @rcasteran · Contributors: @rcasteran, @regis-casteran*
 
 ---
@@ -8873,6 +8897,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2023 |
 | **URL** | [https://www.iso.org/standard/79111.html](https://www.iso.org/standard/79111.html) |
 
+**Referenced Terms:** [Analytical Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/analytical-model-24641-2023-069d3f26adf376a4), [Descriptive Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/descriptive-model-24641-2023-069d3f26adfd7b2e), [Meta model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/meta-model-24641-2023-069d3d5560d87b30), [Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/model-24641-2023-069d3d5560e87cde)
+
 *Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
 
 ---
@@ -8889,6 +8915,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **Issued** | 2017 |
 | **URL** | [https://www.iso.org/standard/71952.html](https://www.iso.org/standard/71952.html) |
+
+**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
@@ -8924,6 +8952,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2022 |
 | **URL** | [https://www.iso.org/standard/74393.html](https://www.iso.org/standard/74393.html) |
 
+**Referenced Terms:** [Architecture - ISO/IEC/IEEE 42010](https://www.3se.info/3se-onto/terms/architecture-42010-2022-069cff8d0ac17a44)
+
 *Created: 2026-04-03 · Modified: 2026-04-03 · Creator: @rcasteran*
 
 ---
@@ -8941,6 +8971,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2021 |
 | **URL** | [https://www.iso.org/standard/70918.html](https://www.iso.org/standard/70918.html) |
 
+**Referenced Terms:** [Asset - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/asset-21434-2021-069c16c95aa67c53), [Attack path - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a), [Cybersecurity control - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939), [Cybersecurity goal - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/cybersecurity-goal-21434-2021-069bdc311ff97c0b), [Threat analysis and risk assessment - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/threat-analysis-and-risk-assessment-21434-2021-069c1ab34bb77d01), [Threat scenario - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/threat-scenario-21434-2021-069c1784755d744a), [Vulnerability - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/vulnerability-21434-2021-069c1a2fb8ea7298), [Weakness - ISO/SAE 21434](https://www.3se.info/3se-onto/terms/weakness-21434-2021-069c1a2fb8f87251)
+
 *Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
 
 ---
@@ -8956,6 +8988,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | Attribute | Value |
 |---|---|
 | **URL** | [https://glossary.istqb.org/en_US/search?term=&exact_matches_first=true](https://glossary.istqb.org/en_US/search?term=&exact_matches_first=true) |
+
+**Referenced Terms:** [Functional testing - ISTQB](https://www.3se.info/3se-onto/terms/functional-testing-istqb-06a270455c6e746e), [Integration testing - ISTQB](https://www.3se.info/3se-onto/terms/integration-istqb-069b5a9129f872b2), [Non-functional testing - ISTQB](https://www.3se.info/3se-onto/terms/non-functional-testing-istqb-06a2708d05be712d), [Test run - ISTQB](https://www.3se.info/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c), [Test suite - ISTQB](https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549)
 
 *Created: 2026-03-14 · Modified: 2026-03-15 · Creator: @rcasteran*
 
@@ -8973,6 +9007,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [https://www.omg.org/spec/SysML/2.0/Language/PDF](https://www.omg.org/spec/SysML/2.0/Language/PDF) |
 
+**Referenced Terms:** [allocation definition - SysML 2.0](https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919)
+
 *Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
 
 ---
@@ -8988,6 +9024,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | Attribute | Value |
 |---|---|
 | **URL** | [https://www.omg.org/spec/UML/2.5.1/PDF](https://www.omg.org/spec/UML/2.5.1/PDF) |
+
+**Referenced Terms:** [abstraction - UML 2.5.1](https://www.3se.info/3se-onto/properties/abstraction-uml-spec-2-5-1-069c841061057b63), [composite aggregation - UML 2.5.1](https://www.3se.info/3se-onto/properties/composite-aggregation-uml-spec-2-5-1-069c841061257798), [conveyed - UML 2.5.1](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9), [provided - UML 2.5.1](https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912), [required - UML 2.5.1](https://www.3se.info/3se-onto/properties/required-uml-spec-2-5-1-069cd94b898170f1)
 
 *Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
 
@@ -9007,6 +9045,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Date** | 2015 |
 | **ISBN-13** | `978-1937538835` |
 
+**Referenced Terms:** [Goal - Requirements Engineering Fundamentals 2nd Edition](https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4)
+
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
 ---
@@ -9023,6 +9063,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [https://framework.scaledagile.com/](https://framework.scaledagile.com/) |
 
+**Referenced Terms:** [Epic - SAFe 6.0](https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458), [Feature - SAFe 6.0](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b)
+
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
 ---
@@ -9038,6 +9080,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | Attribute | Value |
 |---|---|
 | **URL** | [https://www.opengroup.org/bookstore/catalog/c144.htm](https://www.opengroup.org/bookstore/catalog/c144.htm) |
+
+**Referenced Terms:** [Service contract - Service-Oriented Architecture Ontology 2.0](https://www.3se.info/3se-onto/terms/service-contract-soa-ontology-2-0-069c5aee6a187dc8)
 
 *Created: 2026-03-26 · Modified: 2026-03-26 · Creator: @rcasteran*
 
@@ -9057,6 +9101,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Date** | 2013 |
 | **ISBN-13** | `979-1091699020` |
 
+**Referenced Terms:** [Operational mode - Systems Opportunities and Requirements](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677)
+
 *Created: 2026-03-06 · Modified: 2026-03-15 · Creator: @rcasteran*
 
 ---
@@ -9073,6 +9119,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [https://www.w3.org/TR/vocab-org/](https://www.w3.org/TR/vocab-org/) |
 
+**Referenced Terms:** [Role - W3C Organization Ontology](https://www.3se.info/3se-onto/terms/role-w3c-vocab-org-2014-069c451bef1c79f0)
+
 *Created: 2026-03-25 · Modified: 2026-03-25 · Creator: @rcasteran*
 
 ---
@@ -9088,6 +9136,8 @@ The methods defined in this clause are generic modules that can be invoked syste
 | Attribute | Value |
 |---|---|
 | **URL** | [https://www.w3.org/ns/prov](https://www.w3.org/ns/prov) |
+
+**Referenced Terms:** [used - W3C](https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9), [wasAssociatedWith - W3C](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13), [wasGeneratedBy - W3C](https://www.3se.info/3se-onto/properties/was-generated-by-w3c-prov-2013-069efa20ebf77849)
 
 *Created: 2026-03-26 · Modified: 2026-03-26 · Creator: @rcasteran*
 
