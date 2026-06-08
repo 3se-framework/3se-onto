@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional validation - 3SE",
+  "description": "Evaluation of an entity to determine whether it satisfies the functional requirements allocated to it at the end of a development phase.",
+  "status": "draft",
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/functional-testing-istqb-06a270455c6e746e"
+  ],
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ]
+}

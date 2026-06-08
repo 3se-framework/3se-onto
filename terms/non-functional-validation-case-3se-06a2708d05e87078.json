@@ -4,9 +4,6 @@
   "title": "Non-functional validation case - 3SE",
   "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a non-functional requirement.",
   "status": "draft",
-  "broadMatch": [
-    "https://www.3se.info/3se-onto/terms/non-functional-testing-istqb-06a2708d05be712d"
-  ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ],
