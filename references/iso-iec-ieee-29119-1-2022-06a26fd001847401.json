@@ -5,5 +5,12 @@
   "abstract": "Software and systems engineering — Software testing — Part 1: General concepts",
   "issued": "2022",
   "uri": "https://www.iso.org/standard/81291.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-iec-ieee-29119-1-2022-06a26fd001847401",
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-06-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
