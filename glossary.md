@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-06-08 21:10 UTC*
+*Generated on 2026-06-08 21:17 UTC*
 
 This glossary contains **333 3SE term(s)**, **105 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
@@ -1347,9 +1347,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
+    N6 -.->|allocates| N9
     N2 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1506,8 +1506,8 @@ graph TD
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
     N11 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
 ```
 
@@ -1917,9 +1917,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2929,11 +2929,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
+    N5 -.->|allocates| N3
     N2 -.->|allocates| N10
-    N9 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N5 -.->|allocates| N3
+    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3083,8 +3083,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3305,9 +3305,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
+    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
-    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3490,11 +3490,11 @@ graph TD
     N6 -.->|allocates| N8
     N9 -.->|allocates| N6
     N9 -.->|allocates| N10
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N8
     N11 -.->|allocates| N2
     N11 -.->|allocates| N4
     N11 -.->|allocates| N5
+    N10 -.->|allocates| N7
+    N10 -.->|allocates| N8
     N8 -->|subclass of| N11
     N7 -->|subclass of| N1
 ```
@@ -4557,9 +4557,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4745,9 +4745,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5714,8 +5714,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5791,11 +5791,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N10 -.->|allocates| N14
+    N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
     N7 -.->|allocates| N5
     N6 -.->|allocates| N5
-    N10 -.->|allocates| N14
-    N13 -.->|allocates| N9
-    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6505,13 +6505,13 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N14 -.->|allocates| N12
-    N16 -.->|allocates| N4
-    N13 -.->|allocates| N12
     N15 -.->|exposes| N1
+    N14 -.->|allocates| N12
+    N13 -.->|allocates| N12
+    N3 -.->|allocates| N4
+    N16 -.->|allocates| N4
     N2 -.->|allocates| N4
 ```
 
@@ -6726,21 +6726,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N26 -.->|allocates| N19
-    N4 -.->|allocates| N7
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N40 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
+    N31 -.->|allocates| N2
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N27 -.->|allocates| N18
+    N37 -.->|allocates| N1
+    N26 -.->|allocates| N19
+    N40 -.->|allocates| N2
+    N4 -.->|allocates| N7
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N31 -.->|allocates| N2
-    N37 -.->|allocates| N1
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N27 -.->|allocates| N18
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6910,11 +6910,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N14 -.->|allocates| N9
-    N11 -.->|allocates| N12
-    N15 -.->|allocates| N12
     N13 -.->|allocates| N10
     N4 -.->|allocates| N8
+    N11 -.->|allocates| N12
+    N15 -.->|allocates| N12
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -9007,7 +9007,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [https://www.omg.org/spec/SysML/2.0/Language/PDF](https://www.omg.org/spec/SysML/2.0/Language/PDF) |
 
-**Referenced Terms:** [allocation definition - SysML 2.0](https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919)
+**Referenced Properties:** [allocation definition - SysML 2.0](https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919)
 
 *Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
 
@@ -9025,7 +9025,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [https://www.omg.org/spec/UML/2.5.1/PDF](https://www.omg.org/spec/UML/2.5.1/PDF) |
 
-**Referenced Terms:** [abstraction - UML 2.5.1](https://www.3se.info/3se-onto/properties/abstraction-uml-spec-2-5-1-069c841061057b63), [composite aggregation - UML 2.5.1](https://www.3se.info/3se-onto/properties/composite-aggregation-uml-spec-2-5-1-069c841061257798), [conveyed - UML 2.5.1](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9), [provided - UML 2.5.1](https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912), [required - UML 2.5.1](https://www.3se.info/3se-onto/properties/required-uml-spec-2-5-1-069cd94b898170f1)
+**Referenced Properties:** [abstraction - UML 2.5.1](https://www.3se.info/3se-onto/properties/abstraction-uml-spec-2-5-1-069c841061057b63), [composite aggregation - UML 2.5.1](https://www.3se.info/3se-onto/properties/composite-aggregation-uml-spec-2-5-1-069c841061257798), [conveyed - UML 2.5.1](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9), [provided - UML 2.5.1](https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912), [required - UML 2.5.1](https://www.3se.info/3se-onto/properties/required-uml-spec-2-5-1-069cd94b898170f1)
 
 *Created: 2026-03-28 · Modified: 2026-03-28 · Creator: @rcasteran*
 
@@ -9137,7 +9137,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [https://www.w3.org/ns/prov](https://www.w3.org/ns/prov) |
 
-**Referenced Terms:** [used - W3C](https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9), [wasAssociatedWith - W3C](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13), [wasGeneratedBy - W3C](https://www.3se.info/3se-onto/properties/was-generated-by-w3c-prov-2013-069efa20ebf77849)
+**Referenced Properties:** [used - W3C](https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9), [wasAssociatedWith - W3C](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13), [wasGeneratedBy - W3C](https://www.3se.info/3se-onto/properties/was-generated-by-w3c-prov-2013-069efa20ebf77849)
 
 *Created: 2026-03-26 · Modified: 2026-03-26 · Creator: @rcasteran*
 
