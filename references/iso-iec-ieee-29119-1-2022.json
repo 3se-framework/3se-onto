@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC/IEEE 29119-1:2022",
+  "abstract": "Software and systems engineering — Software testing — Part 1: General concepts",
+  "issued": "2022",
+  "uri": "https://www.iso.org/standard/81291.html",
+  "status": "bibo:published"
+}
