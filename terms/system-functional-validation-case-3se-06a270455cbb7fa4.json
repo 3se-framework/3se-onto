@@ -6,9 +6,19 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
-    "https://www.3se.info/3se-onto/terms/functional-validation-case-3se"
+    "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2"
   ],
   "evaluates": [
     "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-06-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
