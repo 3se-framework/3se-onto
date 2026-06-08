@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System validation engineer - 3SE",
-  "description": "Role that is accountable for the validation analysis.\nIt contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the risk analysis, the epic analysis and the stakeholder requirement analysis.",
+  "description": "Role that is accountable for the system validation analysis.\nIt contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the risk analysis, the epic analysis and the stakeholder requirement analysis.",
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
@@ -13,7 +13,7 @@
     "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ],
   "isAccountableFor": [
-    "https://www.3se.info/3se-onto/terms/validation-analysis-3se-069c957ec9f072de"
+    "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de"
   ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
