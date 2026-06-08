@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-06-08 20:55 UTC*
+*Generated on 2026-06-08 21:01 UTC*
 
 This glossary contains **333 3SE term(s)**, **105 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
@@ -1348,8 +1348,8 @@ graph TD
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N6 -.->|allocates| N9
     N2 -.->|allocates| N15
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1505,10 +1505,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N6 -.->|allocates| N13
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1917,9 +1917,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2494,8 +2494,8 @@ graph TD
     N7 -.->|allocates| N9
     N7 -.->|allocates| N10
     N11 -.->|allocates| N12
-    N12 -->|subclass of| N5
     N10 -->|subclass of| N1
+    N12 -->|subclass of| N5
 ```
 
 *Created: 2026-03-24 · Modified: 2026-05-13 · Creator: @rcasteran*
@@ -2929,11 +2929,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N9 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
-    N2 -.->|allocates| N10
+    N9 -.->|allocates| N10
     N5 -.->|allocates| N3
+    N2 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3083,8 +3083,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3198,8 +3198,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3490,13 +3490,13 @@ graph TD
     N6 -.->|allocates| N8
     N9 -.->|allocates| N6
     N9 -.->|allocates| N10
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N8
     N11 -.->|allocates| N2
     N11 -.->|allocates| N4
     N11 -.->|allocates| N5
-    N7 -->|subclass of| N1
+    N10 -.->|allocates| N7
+    N10 -.->|allocates| N8
     N8 -->|subclass of| N11
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4449,8 +4449,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4557,9 +4557,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4746,8 +4746,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5791,11 +5791,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N13 -.->|allocates| N9
-    N11 -.->|allocates| N4
-    N7 -.->|allocates| N5
-    N10 -.->|allocates| N14
     N6 -.->|allocates| N5
+    N11 -.->|allocates| N4
+    N10 -.->|allocates| N14
+    N7 -.->|allocates| N5
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5826,7 +5826,7 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-constraint-validation-3se-06a2726ff02a7fbd](https://www.3se.info/3se-onto/terms/system-constraint-validation-3se-06a2726ff02a7fbd) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-constraint-validation-3se-06a2726ff02a7fbd](https://www.3se.info/3se-onto/terms/system-constraint-validation-3se-06a2726ff02a7fbd), [system-validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de) |
 | Subclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569) |
 | Superclass of | [safety-system-constraint-3se-069bdc3120dd749a](https://www.3se.info/3se-onto/terms/safety-system-constraint-3se-069bdc3120dd749a), [security-system-constraint-3se-069bdc3121337fbd](https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd) |
 | Composed of | [system-element-constraint-3se-069ee425eb8a748f](https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f) |
@@ -6505,14 +6505,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N2 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N13 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
     N15 -.->|exposes| N1
-    N14 -.->|allocates| N12
-    N2 -.->|allocates| N4
-    N13 -.->|allocates| N12
-    N3 -.->|allocates| N4
     N16 -.->|allocates| N4
+    N14 -.->|allocates| N12
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6726,21 +6726,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
+    N37 -.->|allocates| N1
+    N27 -.->|allocates| N18
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N37 -.->|allocates| N1
-    N4 -.->|allocates| N7
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
+    N4 -.->|allocates| N7
+    N26 -.->|allocates| N19
+    N31 -.->|allocates| N2
     N40 -.->|allocates| N2
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
-    N31 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N27 -.->|allocates| N18
-    N26 -.->|allocates| N19
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6910,11 +6910,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
     N11 -.->|allocates| N12
-    N4 -.->|allocates| N8
-    N14 -.->|allocates| N9
     N15 -.->|allocates| N12
+    N14 -.->|allocates| N9
+    N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6941,11 +6941,11 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of a system requirement to decide what system validation cases are evaluating it.
+> Analysis of a system requirement or a system constraint to decide what system validation cases are evaluating it.
 
 | Relation | Terms |
 |---|---|
-| Related | [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351), [system-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5) |
+| Related | [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351), [system-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5), [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 *Created: 2026-03-29 · Modified: 2026-06-08 · Creator: @rcasteran*
