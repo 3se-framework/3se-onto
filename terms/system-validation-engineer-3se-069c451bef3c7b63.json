@@ -10,7 +10,8 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63",
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
-    "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5"
+    "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de"
