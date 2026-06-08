@@ -23,6 +23,8 @@
     "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
     "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5",
     "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2",
-    "https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4"
+    "https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4",
+    "https://www.3se.info/3se-onto/terms/non-functional-validation-case-3se-06a2708d05e87078",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-validation-case-3se-06a2708d05f376c4"
   ]
 }

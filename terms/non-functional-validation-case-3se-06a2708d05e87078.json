@@ -5,12 +5,22 @@
   "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a non-functional requirement.",
   "status": "draft",
   "broadMatch": [
-    "https://www.3se.info/3se-onto/terms/non-functional-testing-istqb"
+    "https://www.3se.info/3se-onto/terms/non-functional-testing-istqb-06a2708d05be712d"
   ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ],
   "evaluates": [
     "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/non-functional-validation-case-3se-06a2708d05e87078",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-06-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
