@@ -9,5 +9,15 @@
   ],
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/functional-validation-3se-06a27237d360762c",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a"
+  ],
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-06-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

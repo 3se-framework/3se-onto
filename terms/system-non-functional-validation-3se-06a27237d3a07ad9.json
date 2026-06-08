@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System non-functional validation - 3SE",
+  "description": "Evaluation of a system, based on some system non-functional validation cases, to determine whether it satisfies the system non-functional requirements allocated to it at the end of a development phase.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/non-functional-validation-3se-06a27237d38c7197"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-validation-3se-06a27237d3a07ad9",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-validation-case-3se-06a2708d05f376c4"
+  ],
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-06-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

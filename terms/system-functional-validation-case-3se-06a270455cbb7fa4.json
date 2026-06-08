@@ -13,7 +13,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4",
   "related": [
-    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
+    "https://www.3se.info/3se-onto/terms/system-functional-validation-3se-06a27237d3977414"
   ],
   "entryCreated": "2026-06-08",
   "entryModified": "2026-06-08",

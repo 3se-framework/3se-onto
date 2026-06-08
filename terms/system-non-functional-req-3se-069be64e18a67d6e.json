@@ -15,10 +15,11 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
-    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-validation-3se-06a27237d3a07ad9"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-04-26",
+  "entryModified": "2026-06-08",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
