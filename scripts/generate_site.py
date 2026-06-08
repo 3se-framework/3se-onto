@@ -2454,18 +2454,26 @@ def render_reference_page(ref: dict,
           <table class="bib-table">{bib_rows}</table>
         </div>"""
 
-    # Referenced terms: all terms/properties that cite this reference
+    # Referenced terms/properties: all terms/properties that cite this reference
     ref_uri = ref.get("@id", "")
     referenced_terms_html = ""
     if referenced_terms_index and ref_uri:
         citing = referenced_terms_index.get(ref_uri, [])
         if citing:
             citing_sorted = sorted(citing, key=lambda e: e.get("title", ""))
+            has_terms = any(e.get("@id", "").startswith(BASE_IRIS["terms"]) for e in citing_sorted)
+            has_props = any(e.get("@id", "").startswith(BASE_IRIS["properties"]) for e in citing_sorted)
+            if has_terms and has_props:
+                section_title = "Referenced Terms and Properties"
+            elif has_props:
+                section_title = "Referenced Properties"
+            else:
+                section_title = "Referenced Terms"
             term_links = [render_uri_link(e.get("@id", ""), e.get("title", stem_from_uri(e.get("@id", ""))))
                           for e in citing_sorted]
             referenced_terms_html = f"""
         <div class="card" style="margin-top:1.5rem">
-          <h3 style="margin-bottom:.75rem">Referenced Terms</h3>
+          <h3 style="margin-bottom:.75rem">{section_title}</h3>
           <p style="font-size:.9rem">{SEP.join(term_links)}</p>
         </div>"""
 

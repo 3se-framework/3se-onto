@@ -20,6 +20,8 @@ PROPERTIES_DIR = Path("properties")
 OUTPUT_FILE = Path("glossary.md")
 
 REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
+TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
+PROPERTY_BASE_IRI = "https://www.3se.info/3se-onto/properties/"
 
 # Human-readable labels for bibo: types
 BIBO_TYPE_LABELS: dict[str, str] = {
@@ -936,15 +938,23 @@ def render_reference(ref: dict,
             lines.append(f"| **{label}** | {value} |")
         lines.append("")
 
-    # Referenced terms
+    # Referenced terms/properties
     ref_uri = ref.get("@id", "")
     if referenced_terms_index and ref_uri:
         citing = referenced_terms_index.get(ref_uri, [])
         if citing:
             citing_sorted = sorted(citing, key=lambda e: e.get("title", ""))
+            has_terms = any(e.get("@id", "").startswith(TERM_BASE_IRI) for e in citing_sorted)
+            has_props = any(e.get("@id", "").startswith(PROPERTY_BASE_IRI) for e in citing_sorted)
+            if has_terms and has_props:
+                section_label = "Referenced Terms and Properties"
+            elif has_props:
+                section_label = "Referenced Properties"
+            else:
+                section_label = "Referenced Terms"
             term_links = [f"[{e.get('title', uri_to_anchor(e.get('@id', '')))}]({e.get('@id', '')})"
                           for e in citing_sorted]
-            lines.append(f"**Referenced Terms:** {', '.join(term_links)}")
+            lines.append(f"**{section_label}:** {', '.join(term_links)}")
             lines.append("")
 
     # Provenance
