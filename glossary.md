@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-06-08 18:44 UTC*
+*Generated on 2026-06-08 18:51 UTC*
 
 This glossary contains **327 3SE term(s)**, **105 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
@@ -1325,9 +1325,9 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N2 -.->|allocates| N15
-    N6 -.->|allocates| N9
     N14 -.->|allocates| N15
+    N6 -.->|allocates| N9
+    N2 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1483,10 +1483,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
-    N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N7 -.->|allocates| N10
+    N3 -.->|allocates| N11
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -1879,8 +1879,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
 ```
 
@@ -2876,10 +2876,10 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
     N5 -.->|allocates| N3
-    N2 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
     N9 -.->|allocates| N10
+    N2 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3029,8 +3029,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
     N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3144,8 +3144,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3436,13 +3436,13 @@ graph TD
     N6 -.->|allocates| N8
     N9 -.->|allocates| N6
     N9 -.->|allocates| N10
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N8
     N11 -.->|allocates| N2
     N11 -.->|allocates| N4
     N11 -.->|allocates| N5
-    N8 -->|subclass of| N11
+    N10 -.->|allocates| N7
+    N10 -.->|allocates| N8
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N11
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4395,8 +4395,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4691,8 +4691,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
 ```
 
@@ -5660,8 +5660,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5737,11 +5737,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N7 -.->|allocates| N5
-    N10 -.->|allocates| N14
-    N11 -.->|allocates| N4
-    N13 -.->|allocates| N9
     N6 -.->|allocates| N5
+    N7 -.->|allocates| N5
+    N11 -.->|allocates| N4
+    N10 -.->|allocates| N14
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -5792,7 +5792,7 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Relation | Terms |
 |---|---|
 | Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [inspection-3se-069b5a9129e67fcd](https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
-| Subclass of | [constraint-validation-case-3se-06a270c85e5671eb](https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb) |
+| Subclass of | [constraint-validation-case-3se-06a270c85e5671eb](https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb), [system-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5) |
 | Evaluates | [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 
 *Created: 2026-06-08 · Modified: 2026-06-08 · Creator: @rcasteran*
@@ -6421,14 +6421,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N15 -.->|exposes| N1
+    N13 -.->|allocates| N12
+    N2 -.->|allocates| N4
     N14 -.->|allocates| N12
+    N15 -.->|exposes| N1
     N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
-    N13 -.->|allocates| N12
-    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6627,21 +6627,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
+    N27 -.->|allocates| N18
     N31 -.->|allocates| N2
+    N37 -.->|allocates| N1
+    N4 -.->|allocates| N7
+    N26 -.->|allocates| N19
     N40 -.->|allocates| N2
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N4 -.->|allocates| N7
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N26 -.->|allocates| N19
-    N27 -.->|allocates| N18
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N37 -.->|allocates| N1
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -6813,8 +6813,8 @@ graph TD
     N2 -.->|can be| N1
     N13 -.->|allocates| N10
     N14 -.->|allocates| N9
-    N11 -.->|allocates| N12
     N4 -.->|allocates| N8
+    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
 ```
 
@@ -6848,7 +6848,7 @@ graph TD
 |---|---|
 | Related | [system-validation-3se-069c3bf77159739b](https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945) |
 | Subclass of | [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5) |
-| Superclass of | [system-functional-validation-case-3se-06a270455cbb7fa4](https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4), [system-non-functional-validation-case-3se-06a2708d05f376c4](https://www.3se.info/3se-onto/terms/system-non-functional-validation-case-3se-06a2708d05f376c4) |
+| Superclass of | [system-constraint-validation-case-3se-06a270c85e847647](https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647), [system-functional-validation-case-3se-06a270455cbb7fa4](https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4), [system-non-functional-validation-case-3se-06a2708d05f376c4](https://www.3se.info/3se-onto/terms/system-non-functional-validation-case-3se-06a2708d05f376c4) |
 | Evaluates | [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351) |
 
 *Created: 2026-03-29 · Modified: 2026-04-30 · Creator: @rcasteran*
