@@ -15,5 +15,16 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/interdependent-function-3se-06a29c4e40437f05",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/functional-interdependent-actor-3se-06a29c4e40187a09",
+    "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f"
+  ],
+  "entryCreated": "2026-05-08",
+  "entryModified": "2026-06-10",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
