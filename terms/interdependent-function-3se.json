@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Interdependent function - 3SE",
+  "description": "Function devolved to an interdependent actor.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+  ],
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043"
+  ]
+}
