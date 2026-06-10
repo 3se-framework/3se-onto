@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional element - 3SE",
+  "description": "Part of an actor responsible for carrying out some of the enabling functions, by interacting with other functional elements of the system.",
+  "status": "draft",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/enabling-state-3se"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
+  ]
+}
