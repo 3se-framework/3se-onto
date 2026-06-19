@@ -6,5 +6,15 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/process-req-3se-06a35018274e733d",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6"
+  ],
+  "entryCreated": "2026-06-19",
+  "entryModified": "2026-06-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
