@@ -1,0 +1,14 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Process - BFO 2.0",
+  "description": "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -8,7 +8,7 @@
     "https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9"
   ],
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6"
+    "https://www.3se.info/3se-onto/terms/process-bfo-2-0"
   ],
   "produces": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
