@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Work product - 3SE",
+  "description": "Information produced by a business, project or engineering activity.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e"
+  ],
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/work-product-24765-2017"
+  ]
+}
