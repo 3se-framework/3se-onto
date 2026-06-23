@@ -29,14 +29,21 @@ Every 3SE term is compared to one or more definitions from the referenced standa
 |---|---|
 | `skos:exactMatch` | The definitions are functionally equivalent and interchangeable in most contexts. |
 | `skos:closeMatch` | Strong conceptual overlap but not interchangeable — framing, scope, or method differs. |
-| `skos:broadMatch` | The 3SE term is broader — it subsumes the referenced definition. |
-| `skos:narrowMatch` | The 3SE term is narrower — it adds constraints the reference does not have. |
+| `skos:broadMatch` | The 3SE term is narrower — the referenced definition is broader and subsumes it. |
+| `skos:narrowMatch` | The 3SE term is broader — it generalizes beyond the constraints of the referenced definition. |
 | `skos:relatedMatch` | The concepts are associatively related but not hierarchically aligned. |
+
+## How 3SE terms relate to BFO 2.0?
+
+Beyond mapping to engineering standards, 3SE terms are progressively anchored in the [Basic Formal Ontology (BFO) 2.0](https://basic-formal-ontology.org/) via `subClassOf`, declaring which top-level BFO category a term instantiates (e.g. Disposition, Role, Object, Generically Dependent Continuant, Process), either directly or transitively through a parent 3SE term. This grounds the 3SE vocabulary in a top-level ontology with well-defined formal semantics — in particular BFO's strict divide between continuants (entities that persist through time) and occurrents (entities that unfold through time) — and surfaces inconsistencies that informal definitions alone would miss.
+
+`subClassOf` is reserved for this formal BFO subsumption. Structural relations specific to 3SE (`allocates`, `isComposedOf`, `produces`, `consumes`, ...) are typed separately in `properties/` and are not required to respect the BFO continuant/occurrent divide, since they express engineering-level mappings (e.g. responsibility assignment, traceability) rather than formal ontological claims.
 
 ## Structure
 ```
 terms/          — one JSON-LD file per term (3SE and external)
 references/     — one JSON-LD file per bibliographic reference
+properties/     — one JSON-LD file per typed relation (allocates, produces, fires, ...)
 schemas/        — JSON Schema files for validation
 scripts/        — CI/CD pipeline scripts
 .github/        — GitHub Actions workflows
@@ -46,13 +53,7 @@ Each entry is a JSON-LD file conforming to the `skos:Concept` type, identified b
 
 ## Contributing
 
-The ontology is community-driven. To propose a new term, correct a definition, or add a mapping to a standard not yet covered:
-
-1. Fork the repository
-2. Add or edit the relevant JSON file in `terms/` or `references/`
-3. Open a pull request — CI will validate your entry automatically
-
-All entries go through a `draft → reviewed → approved` editorial workflow tracked via the `status` field.
+The ontology is community-driven. To propose a new term, correct a definition, or add a mapping to a standard not yet covered, please create an issue.
 
 ---
 
