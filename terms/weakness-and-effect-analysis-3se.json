@@ -1,7 +1,7 @@
 {
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
-  "title": "Failure and effect analysis - 3SE",
+  "title": "Weakness and effect analysis - 3SE",
   "description": "Analysis of the potential weakness of a system element and its effect on the system state it allocates.\nIt includes the following steps:\n(1) For each system element, identify the potential weakness\n(2)For each potential weakness, identify the threatening situations\n(4) For each threatening situation, determine the modus operandi, the threat type, the threat group and the impacted asset.\n(5) For each threatening situation, evaluate the likelihood of its occurrence.\n(6) For each threatening situation, evaluate the targeted security risk level based on its asset severity and the likelihood of its occurrence.\n(7) For each threatening situation, decide the security risk treatment: avoid, reduce, retain or share.\n(8) For each threatening situation, evaluate the residual security risk level after treatment.\n(9) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.\n",
   "status": "draft",
   "subClassOf": [
