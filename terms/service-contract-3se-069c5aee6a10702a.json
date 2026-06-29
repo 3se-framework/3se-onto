@@ -9,11 +9,10 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a",
   "related": [
-    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
     "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05"
   ],
   "entryCreated": "2026-03-26",
-  "entryModified": "2026-03-26",
+  "entryModified": "2026-06-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

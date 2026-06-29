@@ -6,19 +6,17 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
   "entryCreated": "2026-03-14",
-  "entryModified": "2026-06-08",
+  "entryModified": "2026-06-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
   "related": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
-    "https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221",
-    "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d",
     "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7",
-    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67",
-    "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9",
     "https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb",
-    "https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647"
+    "https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647",
+    "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657",
+    "https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2"
   ]
 }

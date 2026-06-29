@@ -16,10 +16,12 @@
     "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
     "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
     "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
-    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c"
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657",
+    "https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2"
   ],
   "entryCreated": "2026-03-23",
-  "entryModified": "2026-05-08",
+  "entryModified": "2026-06-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

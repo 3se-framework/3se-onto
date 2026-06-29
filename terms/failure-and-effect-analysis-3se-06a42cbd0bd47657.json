@@ -8,6 +8,24 @@
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
   ],
   "closeMatch": [
-    "https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017"
-  ]
+    "https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+    "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
+    "https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8",
+    "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
+    "https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8",
+    "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0",
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
+    "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5"
+  ],
+  "entryCreated": "2026-06-29",
+  "entryModified": "2026-06-29",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

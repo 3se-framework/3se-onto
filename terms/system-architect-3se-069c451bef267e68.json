@@ -56,7 +56,6 @@
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
-    "https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a",
     "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1",
     "https://www.3se.info/3se-onto/terms/system-architecture-validation-3se-069c957ec9dd7473"
   ],
@@ -107,7 +106,7 @@
     "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-06-08",
+  "entryModified": "2026-06-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

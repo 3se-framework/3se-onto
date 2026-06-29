@@ -5,11 +5,9 @@
   "description": "Hierarchy that supports an analysis and is used to partition the assigned work and associated resources.",
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
-  ],
+  "related": [],
   "entryCreated": "2026-04-04",
-  "entryModified": "2026-04-24",
+  "entryModified": "2026-06-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

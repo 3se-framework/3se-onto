@@ -6,7 +6,7 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
   "entryCreated": "2026-03-17",
-  "entryModified": "2026-05-13",
+  "entryModified": "2026-06-29",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -21,7 +21,6 @@
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
-    "https://www.3se.info/3se-onto/terms/enabling-activity-3se-06a049901cae7607",
     "https://www.3se.info/3se-onto/terms/enabling-system-activity-3se-069fdd89b3bd7ac6"
   ]
 }
