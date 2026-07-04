@@ -12,9 +12,12 @@
     "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
   ],
   "entryCreated": "2026-03-19",
-  "entryModified": "2026-03-24",
+  "entryModified": "2026-07-04",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c"
+  ]
 }
