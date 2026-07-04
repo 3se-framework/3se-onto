@@ -28,9 +28,9 @@ jobs:
       - name: Generate HTML site
         run: python scripts/generate_site.py
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: _site/
 
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5
