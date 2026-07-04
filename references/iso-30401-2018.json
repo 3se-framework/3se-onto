@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO 30401:2018",
+  "abstract": "Knowledge management systems - Requirements",
+  "issued": "2018",
+  "uri": "https://www.iso.org/standard/68683.html",
+  "status": "bibo:published"
+}
