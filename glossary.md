@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-07-04 14:30 UTC*
+*Generated on 2026-07-04 18:32 UTC*
 
-This glossary contains **346 3SE term(s)**, **108 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **25 reference(s)**.
+This glossary contains **348 3SE term(s)**, **110 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
 ## Contents
 
@@ -124,6 +124,7 @@ This glossary contains **346 3SE term(s)**, **108 other term(s)**, **13 3SE prop
   - [Interdependent system state - 3SE](#interdependent-system-state---3se)
   - [Iteration - 3SE](#iteration---3se)
   - [Iteration analysis - 3SE](#iteration-analysis---3se)
+  - [Knowledge - 3SE](#knowledge---3se)
   - [Mathematical model - 3SE](#mathematical-model---3se)
   - [Maturity gate - 3SE](#maturity-gate---3se)
   - [Mechanism - 3SE](#mechanism---3se)
@@ -133,6 +134,7 @@ This glossary contains **346 3SE term(s)**, **108 other term(s)**, **13 3SE prop
   - [Non-functional requirement - 3SE](#non-functional-requirement---3se)
   - [Non-functional validation - 3SE](#non-functional-validation---3se)
   - [Non-functional validation case - 3SE](#non-functional-validation-case---3se)
+  - [Ontology - 3SE](#ontology---3se)
   - [Operating model - 3SE](#operating-model---3se)
   - [Operational analysis - 3SE](#operational-analysis---3se)
   - [Organization risk - 3SE](#organization-risk---3se)
@@ -402,12 +404,14 @@ This glossary contains **346 3SE term(s)**, **108 other term(s)**, **13 3SE prop
   - [Integration testing - ISTQB](#integration-testing---istqb)
   - [Interface - ISO/IEC/IEEE 24765](#interface---isoiecieee-24765)
   - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
+  - [Knowledge - ISO 30401](#knowledge---iso-30401)
   - [Mechanism - How does it work ? 2004](#mechanism---how-does-it-work--2004)
   - [Meta model - ISO/IEC/IEEE 24641](#meta-model---isoiecieee-24641)
   - [Model - ISO/IEC/IEEE 24641](#model---isoiecieee-24641)
   - [Non-functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
   - [Non-functional testing - ISTQB](#non-functional-testing---istqb)
   - [Object - BFO 2.0](#object---bfo-20)
+  - [Ontology - ISO/IEC/IEEE 24765](#ontology---isoiecieee-24765)
   - [Operational interaction - ARCADIA](#operational-interaction---arcadia)
   - [Operational mode - Systems Opportunities and Requirements](#operational-mode---systems-opportunities-and-requirements)
   - [Phase gate - ISO/IEC/IEEE 24765](#phase-gate---isoiecieee-24765)
@@ -473,6 +477,7 @@ This glossary contains **346 3SE term(s)**, **108 other term(s)**, **13 3SE prop
   - [IEEE 1012:2016](#ieee-10122016)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
   - [ISO 26262-1:2018](#iso-26262-12018)
+  - [ISO 30401:2018](#iso-304012018)
   - [ISO/IEC/IEEE 15288:2015](#isoiecieee-152882015)
   - [ISO/IEC/IEEE 15288:2023](#isoiecieee-152882023)
   - [ISO/IEC/IEEE 24641:2023](#isoiecieee-246412023)
@@ -517,7 +522,7 @@ This glossary contains **346 3SE term(s)**, **108 other term(s)**, **13 3SE prop
 
 ## 3SE Terms
 
-*346 term(s) defined by the 3SE framework.*
+*348 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1607,10 +1612,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N3 -.->|allocates| N11
     N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N6 -.->|allocates| N13
 ```
 
 *Created: 2026-03-22 · Modified: 2026-06-29 · Creator: @rcasteran*
@@ -2033,9 +2038,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -2534,11 +2539,12 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c) |
 | Subclass of | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Superclass of | [work-product-3se-06a35018276471ea](https://www.3se.info/3se-onto/terms/work-product-3se-06a35018276471ea) |
 | Composed of | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
 
-*Created: 2026-03-19 · Modified: 2026-03-24 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-07-04 · Creator: @rcasteran*
 
 ---
 
@@ -2825,6 +2831,24 @@ graph TD
 
 ---
 
+### Knowledge - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Set of information:
+(1) in which the relationships between the information are explained,
+(2) that is held to be true by domain experts, who define its conditions of application and subject it to their review,
+(3) whose relevance is justified using evaluation method specific to the domain.
+
+| Relation | Terms |
+|---|---|
+| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e) |
+| Broad match | [knowledge-30401-2018-06a495136c807dfd](https://www.3se.info/3se-onto/terms/knowledge-30401-2018-06a495136c807dfd) |
+
+*Created: 2026-07-04 · Modified: 2026-07-04 · Creator: @rcasteran*
+
+---
+
 ### Mathematical model - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -2968,6 +2992,20 @@ graph TD
 
 ---
 
+### Ontology - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Definition of a set of concepts within a domain of knowledge and the relationships that hold between them.
+
+| Relation | Terms |
+|---|---|
+| Close match | [ontology-24765-2017-06a494b0a1517439](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439) |
+
+*Created: 2026-07-04 · Modified: 2026-07-04 · Creator: @rcasteran*
+
+---
+
 ### Operating model - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -3070,10 +3108,10 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N12 -.->|allocates| N9
-    N12 -.->|allocates| N10
     N5 -.->|allocates| N3
     N9 -.->|allocates| N10
+    N12 -.->|allocates| N9
+    N12 -.->|allocates| N10
     N2 -.->|allocates| N10
 ```
 
@@ -3354,8 +3392,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4590,8 +4628,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4698,9 +4736,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-06-29 · Creator: @rcasteran*
@@ -4885,8 +4923,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5847,8 +5885,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5924,11 +5962,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N7 -.->|allocates| N5
     N10 -.->|allocates| N14
-    N11 -.->|allocates| N4
     N13 -.->|allocates| N9
     N6 -.->|allocates| N5
-    N7 -.->|allocates| N5
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6638,14 +6676,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
     N15 -.->|exposes| N1
-    N2 -.->|allocates| N4
-    N13 -.->|allocates| N12
+    N14 -.->|allocates| N12
     N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N14 -.->|allocates| N12
+    N2 -.->|allocates| N4
+    N13 -.->|allocates| N12
+    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6874,21 +6912,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N4 -.->|allocates| N7
-    N27 -.->|allocates| N18
-    N31 -.->|allocates| N2
-    N26 -.->|allocates| N19
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
+    N40 -.->|allocates| N2
+    N37 -.->|allocates| N1
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N37 -.->|allocates| N1
-    N40 -.->|allocates| N2
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
+    N31 -.->|allocates| N2
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N27 -.->|allocates| N18
+    N4 -.->|allocates| N7
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N26 -.->|allocates| N19
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -7058,11 +7096,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
-    N4 -.->|allocates| N8
-    N15 -.->|allocates| N12
     N14 -.->|allocates| N9
+    N15 -.->|allocates| N12
+    N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -7576,7 +7614,7 @@ It includes the following steps:
 
 ## Other Terms
 
-*108 term(s) sourced from external standards and frameworks.*
+*110 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -8170,6 +8208,18 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 
 ---
 
+### Knowledge - ISO 30401
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Human or organizational asset enabling effective decisions and action in context.
+
+**References:** [ISO 30401:2018](https://www.3se.info/3se-onto/references/iso-30401-2018-06a494b0a18c736d)
+
+*Created: 2026-07-04 · Modified: 2026-07-04 · Creator: @rcasteran*
+
+---
+
 ### Mechanism - How does it work ? 2004
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -8243,6 +8293,18 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 **References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
+
+---
+
+### Ontology - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Logical structure of the terms used to describe a domain of knowledge, including both the definitions of the applicable terms and their relationships.
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-07-04 · Modified: 2026-07-04 · Creator: @rcasteran*
 
 ---
 
@@ -8920,7 +8982,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ## References
 
-*25 reference(s).*
+*26 reference(s).*
 
 ### A perspective on systems science and systems philosophy
 
@@ -9114,6 +9176,25 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ---
 
+### ISO 30401:2018
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Knowledge management systems - Requirements
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2018 |
+| **URL** | [https://www.iso.org/standard/68683.html](https://www.iso.org/standard/68683.html) |
+
+**Referenced Terms:** [Knowledge - ISO 30401](https://www.3se.info/3se-onto/terms/knowledge-30401-2018-06a495136c807dfd)
+
+*Created: 2026-07-04 · Modified: 2026-07-04 · Creator: @rcasteran*
+
+---
+
 ### ISO/IEC/IEEE 15288:2015
 
 *Standard*
@@ -9184,7 +9265,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 | **Issued** | 2017 |
 | **URL** | [https://www.iso.org/standard/71952.html](https://www.iso.org/standard/71952.html) |
 
-**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96), [Work product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/work-product-24765-2017-06a35018275a793c)
+**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Ontology - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96), [Work product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/work-product-24765-2017-06a35018275a793c)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
