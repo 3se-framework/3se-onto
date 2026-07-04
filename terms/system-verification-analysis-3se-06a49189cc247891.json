@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System verification analysis - 3SE",
+  "description": "Analysis of a deliverable of a given system development phase to determine what maturity gate or assessment gate is evaluating it.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878",
+    "https://www.3se.info/3se-onto/terms/maturity-gate-3se-069b48ef5d3d71e1",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "entryCreated": "2026-07-04",
+  "entryModified": "2026-07-04",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
