@@ -23,6 +23,7 @@ from pathlib import Path
 TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
 PROPERTIES_DIR = Path("properties")
+DOMAINS_DIR = Path("domains")
 SITE_DIR = Path("_site")
 
 SEP = " &nbsp;&middot;&nbsp; "  # separator used between inline link lists
@@ -31,6 +32,7 @@ BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
     "properties": "https://www.3se.info/3se-onto/properties/",
+    "domains": "https://www.3se.info/3se-onto/domains/",
 }
 
 TERM_STATUS_LABELS: dict[str, tuple[str, str]] = {
@@ -702,6 +704,7 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
     </a>
     <nav>
       <a href="/3se-onto/">Index</a>
+      <a href="/3se-onto/domains/">Domains</a>
       <a href="/3se-onto/terms/">Terms</a>
       <a href="/3se-onto/references/">References</a>
       <a href="/3se-onto/properties/">Properties</a>
@@ -728,8 +731,19 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 
 def render_index(se3_terms: list[dict], other_terms: list[dict],
                  references: list[dict],
-                 se3_properties: list[dict], other_properties: list[dict]) -> str:
+                 se3_properties: list[dict], other_properties: list[dict],
+                 domains: list[dict] | None = None) -> str:
+    domains = domains or []
     all_entries: list[dict] = []
+    for d in domains:
+        all_entries.append({
+            "title": d.get("title", ""),
+            "type": "3SE Domain",
+            "status": d.get("status", ""),
+            "stem": d["_stem"],
+            "dir": "domains",
+            "desc": d.get("description", ""),
+        })
     for t in se3_terms:
         all_entries.append({
             "title": t.get("title", ""),
@@ -792,6 +806,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
                     f'{s_label}</span>'
                 )
         type_style = {
+            "3SE Domain": "color:var(--accent);font-weight:500",
             "3SE Term": "color:var(--text);font-weight:500",
             "Term": "color:var(--text2)",
             "Reference": "color:var(--green)",
@@ -824,6 +839,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
   <p style="margin-top:.75rem;color:var(--muted);font-size:.95rem;max-width:560px">
     A formal, shared vocabulary that aligns concepts across system, safety,
     and security engineering.<br><br>
+    {f'{len(domains)} 3SE domains &nbsp;·&nbsp;' if domains else ''}
     {len(se3_terms)} 3SE terms &nbsp;·&nbsp;
     {len(other_terms)} other terms &nbsp;·&nbsp;
     {f'{len(se3_properties)} 3SE properties &nbsp;·&nbsp;' if se3_properties else ''}
@@ -836,6 +852,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
   <input id="search" type="search" placeholder="Search by title or description…">
   <select id="filter-type">
     <option value="">All types</option>
+    <option value="3se domain">3SE Domains</option>
     <option value="3se term">3SE Terms</option>
     <option value="term">Other Terms</option>
     <option value="3se property">3SE Properties</option>
@@ -2645,6 +2662,103 @@ def render_property_page(prop: dict, ref_index: dict[str, dict]) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Domain page
+# ---------------------------------------------------------------------------
+
+def render_domain_page(domain: dict, terms_index: dict[str, dict]) -> str:
+    title = domain.get("title", "*(untitled)*")
+    jsonld = clean_jsonld(domain)
+    id_uri = domain.get("@id", "")
+
+    id_html = (
+        f'<p style="margin-top:.35rem;font-family:var(--mono);font-size:.72rem;'
+        f'color:var(--muted2)">{id_uri}</p>'
+    ) if id_uri else ""
+
+    _, rs_label, rs_color = resolve_status(domain)
+    status_badge_html = ""
+    if rs_label:
+        status_badge_html = (
+            f'<span class="badge" style="color:{rs_color};border-color:{rs_color};'
+            f'margin-left:.75rem">{rs_label}</span>'
+        )
+
+    description_html = ""
+    if desc := domain.get("description"):
+        desc_escaped = desc.replace("\n", "<br>")
+        description_html = f'<blockquote class="definition">{desc_escaped}</blockquote>'
+
+    notes_html = ""
+    if notes := domain.get("notes"):
+        notes_html = (
+            f'<p style="margin-top:1rem;color:var(--text2);font-size:.92rem">{notes}</p>'
+        )
+
+    # ── Members (3se-onto analysis concepts this domain is accountable for) ──
+    members = domain.get("members", [])
+    if isinstance(members, str):
+        members = [members]
+    if members:
+        links = []
+        for uri in members:
+            term = terms_index.get(uri)
+            label = term.get("title", stem_from_uri(uri)) if term else stem_from_uri(uri)
+            links.append(render_uri_link(uri, label))
+        members_html = f"""
+        <div class="card" style="margin-top:1.5rem">
+          <h3 style="margin-bottom:.75rem">Members</h3>
+          <p style="font-size:.9rem">{SEP.join(links)}</p>
+        </div>"""
+    else:
+        members_html = """
+        <div class="card" style="margin-top:1.5rem">
+          <h3 style="margin-bottom:.75rem">Members</h3>
+          <p style="font-size:.9rem;color:var(--muted)">No 3se-onto analysis concept is
+          accountable for this domain yet.</p>
+        </div>"""
+
+    # ── Provenance ──
+    prov = []
+    if c := domain.get("entryCreated"):   prov.append(f"Created {c}")
+    if m := domain.get("entryModified"):  prov.append(f"Modified {m}")
+    if cr := agent_names(domain.get("entryCreator")): prov.append(f"by {', '.join(cr)}")
+    prov_html = f'<div class="provenance">{SEP.join(prov)}</div>' if prov else ""
+
+    body = f"""
+<nav class="breadcrumb">
+  <a href="/3se-onto/">Index</a>
+  <span>/</span>
+  <a href="/3se-onto/domains/">Domains</a>
+  <span>/</span>
+  <span>{title}</span>
+</nav>
+
+<div style="margin-bottom:2rem">
+  <div style="display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap">
+    <h1>{title}</h1>{status_badge_html}
+  </div>
+  {id_html}
+  {description_html}
+  {notes_html}
+</div>
+
+{members_html}
+
+<div class="card" style="margin-top:1.5rem">
+  <h3 style="margin-bottom:.75rem">JSON-LD</h3>
+  <pre class="code-block">{json.dumps(jsonld, indent=2, ensure_ascii=False)}</pre>
+  <p style="margin-top:.75rem;font-size:.8rem;color:var(--muted)">
+    Raw JSON-LD: <a href="./index.jsonld">index.jsonld</a>
+  </p>
+</div>
+
+{prov_html}
+"""
+    return html_shell(title, body, jsonld=jsonld,
+                      description=domain.get("description", "")[:160])
+
+
+# ---------------------------------------------------------------------------
 # Directory listing pages
 # ---------------------------------------------------------------------------
 
@@ -2696,6 +2810,7 @@ def main() -> int:
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
     properties = load_directory(PROPERTIES_DIR)
+    domains = load_directory(DOMAINS_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
     represents_index = build_represents_index(terms)
@@ -2715,11 +2830,21 @@ def main() -> int:
     (SITE_DIR / "terms").mkdir()
     (SITE_DIR / "references").mkdir()
     (SITE_DIR / "properties").mkdir()
+    (SITE_DIR / "domains").mkdir()
 
     # Index
     (SITE_DIR / "index.html").write_text(
         render_index(se3_terms, other_terms, references,
-                     se3_properties, other_properties), encoding="utf-8"
+                     se3_properties, other_properties, domains), encoding="utf-8"
+    )
+
+    # Domains listing
+    (SITE_DIR / "domains" / "index.html").write_text(
+        render_listing(
+            "Domains",
+            f"{len(domains)} 3SE evaluation domains.",
+            domains, "domains", "Domains"
+        ), encoding="utf-8"
     )
 
     # Terms listing
@@ -2792,9 +2917,23 @@ def main() -> int:
             encoding="utf-8"
         )
 
+    # Individual domain pages
+    for domain in domains:
+        stem = domain["_stem"]
+        out_dir = SITE_DIR / "domains" / stem
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "index.html").write_text(
+            render_domain_page(domain, terms_index), encoding="utf-8"
+        )
+        (out_dir / "index.jsonld").write_text(
+            json.dumps(clean_jsonld(domain), indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8"
+        )
+
     print(
         f"✅ Site generated in {SITE_DIR}/ "
-        f"({len(se3_terms)} 3SE terms, {len(other_terms)} other terms, "
+        f"({len(domains)} 3SE domains, "
+        f"{len(se3_terms)} 3SE terms, {len(other_terms)} other terms, "
         f"{len(references)} references, "
         f"{len(se3_properties)} 3SE properties, {len(other_properties)} other properties)."
     )

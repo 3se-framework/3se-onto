@@ -17,11 +17,13 @@ from pathlib import Path
 TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
 PROPERTIES_DIR = Path("properties")
+DOMAINS_DIR = Path("domains")
 OUTPUT_FILE = Path("glossary.md")
 
 REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
 TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 PROPERTY_BASE_IRI = "https://www.3se.info/3se-onto/properties/"
+DOMAIN_BASE_IRI = "https://www.3se.info/3se-onto/domains/"
 
 # Human-readable labels for bibo: types
 BIBO_TYPE_LABELS: dict[str, str] = {
@@ -1056,6 +1058,82 @@ def render_property(prop: dict, ref_index: dict[str, dict]) -> list[str]:
 
 
 # ---------------------------------------------------------------------------
+# Domain rendering
+# ---------------------------------------------------------------------------
+
+def render_domain(domain: dict, terms_index: dict[str, dict]) -> list[str]:
+    lines: list[str] = []
+
+    title = domain.get("title", "*(untitled)*")
+    status = domain.get("status", "")
+    deprecated = domain.get("deprecated", False)
+
+    # Heading
+    heading = f"### {title}"
+    if deprecated:
+        heading += " *(deprecated)*"
+    lines.append(heading)
+    lines.append("")
+
+    # Status badge
+    if status and status in TERM_STATUS_BADGES:
+        lines.append(TERM_STATUS_BADGES[status])
+        lines.append("")
+
+    # Definition
+    if description := domain.get("description"):
+        lines.append(f"> {description}")
+        lines.append("")
+
+    # Scope note
+    if notes := domain.get("notes"):
+        lines.append(notes)
+        lines.append("")
+
+    # Superseded by
+    if superseded_by := domain.get("superseded_by"):
+        anchor = uri_to_anchor(superseded_by)
+        lines.append(f"**Superseded by:** [{anchor}]({superseded_by})")
+        lines.append("")
+
+    # Members (3se-onto analysis concepts this domain is accountable for)
+    members = domain.get("members", [])
+    if isinstance(members, str):
+        members = [members]
+    if members:
+        links = []
+        for uri in members:
+            term = terms_index.get(uri)
+            member_title = term.get("title", uri_to_anchor(uri)) if term else uri_to_anchor(uri)
+            links.append(f"[{member_title}]({uri})")
+        lines.append(f"**Members:** {', '.join(links)}")
+        lines.append("")
+    else:
+        lines.append(
+            "*No members yet — no 3se analysis concept defined for this domain.*"
+        )
+        lines.append("")
+
+    # Provenance
+    provenance: list[str] = []
+    if created := domain.get("entryCreated"):
+        provenance.append(f"Created: {created}")
+    if modified := domain.get("entryModified"):
+        provenance.append(f"Modified: {modified}")
+    creators = agent_names(domain.get("entryCreator"))
+    if creators:
+        provenance.append(f"Creator: {', '.join(creators)}")
+    contributors = agent_names(domain.get("entryContributor"))
+    if contributors:
+        provenance.append(f"Contributors: {', '.join(contributors)}")
+    if provenance:
+        lines.append(f"*{' · '.join(provenance)}*")
+        lines.append("")
+
+    return lines
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -1063,6 +1141,7 @@ def main() -> int:
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
     properties = load_directory(PROPERTIES_DIR)
+    domains = load_directory(DOMAINS_DIR)
     ref_index = build_reference_index(references)
     superclass_index = build_superclass_index(terms)
     represents_index = build_represents_index(terms)
@@ -1078,16 +1157,24 @@ def main() -> int:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     md: list[str] = ["# 3SE Glossary", "", f"*Generated on {now}*", "",
-                     f"This glossary contains **{len(se3_terms)} 3SE term(s)**, "
+                     f"This glossary contains **{len(domains)} 3SE domain(s)**, "
+                     f"**{len(se3_terms)} 3SE term(s)**, "
                      f"**{len(other_terms)} other term(s)**, "
                      f"**{len(se3_properties)} 3SE property(ies)**, "
                      f"**{len(other_properties)} other property(ies)**, "
                      f"and **{len(references)} reference(s)**.", "", "## Contents", "",
-                     "- [3SE Terms](#3se-terms)"]
+                     "- [Domains](#domains)"]
 
     # ── Header ──────────────────────────────────────────────────────────────
 
     # ── Table of contents ───────────────────────────────────────────────────
+    for domain in domains:
+        title = domain.get("title", "")
+        anchor = title_to_anchor(title)
+        if domain.get("deprecated"):
+            anchor += "-deprecated"
+        md.append(f"  - [{title}](#{anchor})")
+    md.append("- [3SE Terms](#3se-terms)")
     for term in se3_terms:
         title = term.get("title", "")
         anchor = title_to_anchor(title)
@@ -1118,9 +1205,24 @@ def main() -> int:
         md.append(f"  - [{title}](#{anchor})")
     md.append("")
 
-    # ── 3SE Terms ────────────────────────────────────────────────────────────
+    # ── Domains ──────────────────────────────────────────────────────────────
     md.append("---")
     md.append("")
+    md.append("## Domains")
+    md.append("")
+    md.append(f"*{len(domains)} evaluation domain(s) defined by the 3SE framework.*")
+    md.append("")
+
+    if domains:
+        for domain in domains:
+            md.extend(render_domain(domain, terms_index))
+            md.append("---")
+            md.append("")
+    else:
+        md.append("*No domains found.*")
+        md.append("")
+
+    # ── 3SE Terms ────────────────────────────────────────────────────────────
     md.append("## 3SE Terms")
     md.append("")
     md.append(f"*{len(se3_terms)} term(s) defined by the 3SE framework.*")
@@ -1203,7 +1305,8 @@ def main() -> int:
     OUTPUT_FILE.write_text("\n".join(md), encoding="utf-8")
     print(
         f"✅ Generated {OUTPUT_FILE} "
-        f"({len(se3_terms)} 3SE term(s), "
+        f"({len(domains)} 3SE domain(s), "
+        f"{len(se3_terms)} 3SE term(s), "
         f"{len(other_terms)} other term(s), "
         f"{len(references)} reference(s), "
         f"{len(se3_properties)} 3SE propert(ies), "
