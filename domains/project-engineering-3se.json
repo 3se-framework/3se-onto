@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/domain.context.jsonld",
+  "@type": "skos:Collection",
+  "title": "Project engineering - 3SE",
+  "description": "Domain covering the planning and execution breakdown of a release into the project delivering it, the iterations completing that project, the epics assigned to each iteration, and the tasks realizing them.",
+  "status": "draft",
+  "members": [
+    "https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8",
+    "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
+    "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
+    "https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e"
+  ]
+}

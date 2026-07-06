@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/domain.context.jsonld",
+  "@type": "skos:Collection",
+  "title": "Verification, validation and acceptance engineering - 3SE",
+  "description": "Domain covering the confirmation that development deliverables pass their maturity or assessment gates (verification), that system requirements and constraints are satisfied by validation cases (validation), and that stakeholder goals are satisfied by acceptance cases (acceptance).",
+  "status": "draft",
+  "members": [
+    "https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891",
+    "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de",
+    "https://www.3se.info/3se-onto/terms/acceptance-analysis-3se-069f3686ba967baf"
+  ]
+}
