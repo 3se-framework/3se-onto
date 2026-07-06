@@ -39,8 +39,26 @@ Beyond mapping to engineering standards, 3SE terms are progressively anchored in
 
 `subClassOf` is reserved for this formal BFO subsumption. Structural relations specific to 3SE (`allocates`, `isComposedOf`, `produces`, `consumes`, ...) are typed separately in `properties/` and are not required to respect the BFO continuant/occurrent divide, since they express engineering-level mappings (e.g. responsibility assignment, traceability) rather than formal ontological claims.
 
+## Domains
+
+The ontology is organised into ten engineering domains. Each domain is a `skos:Collection` that groups the 3SE analyses in scope of one area of the 3SE maturity evaluation method.
+
+| Domain | Scope |
+|---|---|
+| **Business engineering** | Decomposition and allocation of stakeholder goals into features and attributes, the value they deliver, the actors supporting them, the interdependent actors influencing them, and the opportunities and risks arising from the system's milieu. |
+| **Requirements engineering** | Specification of stakeholder requirements from features and attributes, and their refinement into system requirements. |
+| **System engineering** | Operational activities and system functions, their allocation into functional, physical and system architecture (functional elements, physical elements, system elements, their interfaces and states), and the system attributes contributing to stakeholder goals. |
+| **Risk engineering** | Identification, assessment, treatment and monitoring of risk, encompassing safety risk (hazards and hazardous situations) and security risk (assets and threatening situations), including their residual risk and cross-discipline interactions. |
+| **Asset engineering** | Identification of the products and services that realise system features, their internal structuring into product elements and service means, and the releases through which they are delivered. |
+| **Project engineering** | Planning and execution breakdown of a release into the project delivering it, the iterations completing that project, the epics assigned to each iteration, and the tasks realising them. |
+| **Verification, validation and acceptance engineering** | Confirmation that development deliverables pass their maturity or assessment gates (verification), that system requirements and constraints are satisfied by validation cases (validation), and that stakeholder goals are satisfied by acceptance cases (acceptance). |
+| **Variability and configuration engineering** | *(in progress)* |
+| **Knowledge engineering** | *(in progress)* |
+| **Processes engineering** | *(in progress)* |
+
 ## Structure
 ```
+domains/        — one JSON-LD file per engineering domain (skos:Collection)
 terms/          — one JSON-LD file per term (3SE and external)
 references/     — one JSON-LD file per bibliographic reference
 properties/     — one JSON-LD file per typed relation (allocates, produces, fires, ...)
