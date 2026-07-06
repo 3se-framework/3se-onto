@@ -12,7 +12,8 @@ from pathlib import Path
 BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
-    "properties": "https://www.3se.info/3se-onto/properties/"
+    "properties": "https://www.3se.info/3se-onto/properties/",
+    "domains": "https://www.3se.info/3se-onto/domains/"
 }
 
 

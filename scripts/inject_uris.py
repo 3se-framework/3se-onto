@@ -41,11 +41,13 @@ BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
     "properties": "https://www.3se.info/3se-onto/properties/",
+    "domains": "https://www.3se.info/3se-onto/domains/",
 }
 
 TERMS_DIR = Path("terms")
 REFERENCES_DIR = Path("references")
 PROPERTIES_DIR = Path("properties")
+DOMAINS_DIR = Path("domains")
 
 # Fields whose plain-string values (or @id inside a conceptRef object)
 # resolve against the TERMS index.
@@ -88,6 +90,12 @@ TERM_SCALAR_FIELDS: list[str] = [
 # Used by property entries only.
 PROPERTY_ARRAY_FIELDS: list[str] = [
     "subPropertyOf",
+]
+
+# Fields whose plain-string values resolve against the TERMS index.
+# Used by domain entries only.
+DOMAIN_ARRAY_FIELDS: list[str] = [
+    "members",
 ]
 
 # A value is a URI if it starts with a scheme (e.g. https://)
@@ -387,6 +395,43 @@ def process_properties(
     return updated_count
 
 
+def process_domains(
+        domains_dir: Path,
+        term_index: dict[str, str],
+) -> int:
+    """
+    Walk all domain files and resolve bare slugs in every URI field.
+
+    Fields resolved:
+    - members  → TERMS index (a domain's members are 3se-onto analysis concepts)
+
+    Returns the count of files updated.
+    """
+    updated_count = 0
+
+    for file_path in sorted(domains_dir.glob("*.json")):
+        try:
+            data = json.loads(file_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+
+        changed = False
+
+        # members → resolved against terms
+        for field in DOMAIN_ARRAY_FIELDS:
+            if process_array_field(data, field, term_index, file_path.name):
+                changed = True
+
+        if changed:
+            file_path.write_text(
+                json.dumps(data, indent=2, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            updated_count += 1
+
+    return updated_count
+
+
 def main() -> int:
     term_index = build_index(TERMS_DIR)
     ref_index = build_index(REFERENCES_DIR)
@@ -409,6 +454,12 @@ def main() -> int:
         total_updated += updated
     else:
         print("⚠️  No properties/ directory found — skipping property resolution.")
+
+    if DOMAINS_DIR.exists():
+        updated = process_domains(DOMAINS_DIR, term_index)
+        total_updated += updated
+    else:
+        print("⚠️  No domains/ directory found — skipping domain resolution.")
 
     print(f"\nDone — {total_updated} file(s) updated.")
     return 0

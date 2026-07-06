@@ -11,16 +11,19 @@ DIRS = {
     "terms": {"dir": "terms", "schema": "schemas/term.schema.json"},
     "references": {"dir": "references", "schema": "schemas/reference.schema.json"},
     "properties": {"dir": "properties", "schema": "schemas/property.schema.json"},
+    "domains": {"dir": "domains", "schema": "schemas/domain.schema.json"},
 }
 
 TERM_BASE_IRI = "https://www.3se.info/3se-onto/terms/"
 REFERENCE_BASE_IRI = "https://www.3se.info/3se-onto/references/"
 PROPERTY_BASE_IRI = "https://www.3se.info/3se-onto/properties/"
+DOMAIN_BASE_IRI = "https://www.3se.info/3se-onto/domains/"
 
 BASE_IRIS = {
     "terms": TERM_BASE_IRI,
     "references": REFERENCE_BASE_IRI,
     "properties": PROPERTY_BASE_IRI,
+    "domains": DOMAIN_BASE_IRI,
 }
 
 
@@ -368,6 +371,178 @@ def validate_breakdown_analysis_link(
     return errors
 
 
+def build_terms_slug_index(terms_index: dict[str, dict]) -> dict[str, list[str]]:
+    """
+    Return a mapping of slug (a term's @id with its trailing UUID suffix
+    stripped) -> list of full @id URIs sharing that slug.
+
+    Used to resolve domain 'members' entries that may be written as a bare
+    name (e.g. "risk-analysis-3se") instead of the full UUID-suffixed IRI,
+    the same way inject_uris.py resolves bare slugs elsewhere.
+    """
+    slug_index: dict[str, list[str]] = {}
+    for uri in terms_index:
+        if not uri.startswith(TERM_BASE_IRI):
+            continue
+        slug = UUID_SUFFIX_RE.sub("", uri[len(TERM_BASE_IRI):])
+        slug_index.setdefault(slug, []).append(uri)
+    return slug_index
+
+
+def resolve_domain_member(
+        value: str,
+        terms_index: dict[str, dict],
+        terms_slug_index: dict[str, list[str]],
+) -> tuple[dict | None, str]:
+    """
+    Resolve a domain 'members' entry — a bare name or a full IRI, with or
+    without a UUID suffix — to its term data.
+    Returns (term_data, error_message); term_data is None on failure.
+    """
+    if value in terms_index:
+        return terms_index[value], ""
+
+    slug = value[len(TERM_BASE_IRI):] if value.startswith(TERM_BASE_IRI) else value
+    slug = UUID_SUFFIX_RE.sub("", slug)
+
+    matches = terms_slug_index.get(slug, [])
+    if len(matches) == 1:
+        return terms_index[matches[0]], ""
+    if len(matches) == 0:
+        return None, "does not resolve to any known term"
+    candidates = ", ".join(f'"{u}"' for u in sorted(matches))
+    return None, f"is ambiguous — matches multiple terms: {candidates}"
+
+
+def is_analysis_or_subclass(
+        uri: str,
+        terms_index: dict[str, dict],
+        seen: set[str] | None = None,
+) -> bool:
+    """
+    Return True if the term at `uri` is analysis-3se itself, or transitively
+    subClassOf it (e.g. safety-risk-analysis-3se -> risk-analysis-3se -> analysis-3se).
+    """
+    if uri == ANALYSIS_BASE_URI:
+        return True
+    if seen is None:
+        seen = set()
+    if uri in seen:
+        return False  # guard against cycles
+    seen.add(uri)
+
+    data = terms_index.get(uri)
+    if data is None:
+        return False
+
+    parents = data.get("subClassOf", [])
+    if isinstance(parents, str):
+        parents = [parents]
+    return any(is_analysis_or_subclass(p, terms_index, seen) for p in parents)
+
+
+def validate_domain_members(
+        data: dict,
+        file_name: str,
+        terms_index: dict[str, dict],
+        terms_slug_index: dict[str, list[str]],
+) -> list[str]:
+    """
+    For domain entries (skos:Collection): verify that every member resolves
+    to a known term and that this term is analysis-3se or a transitive
+    subclass of it.
+
+    A domain with no members at all is allowed (some evaluation domains have
+    no accountable analysis yet in 3se-onto) — this only prints a warning,
+    it does not fail validation.
+    """
+    errors: list[str] = []
+    members = data.get("members", [])
+    if isinstance(members, str):
+        members = [members]
+
+    if not members:
+        print(f"  ⚠️  {file_name}: domain has no members (no accountable analysis yet)")
+        return errors
+
+    for value in members:
+        term_data, err = resolve_domain_member(value, terms_index, terms_slug_index)
+        if term_data is None:
+            errors.append(f'members: "{value}" {err}')
+            continue
+        term_uri = term_data.get("@id", value)
+        if not is_analysis_or_subclass(term_uri, terms_index):
+            errors.append(
+                f'members: "{value}" (title: "{term_data.get("title", "?")}") '
+                f"is not analysis-3se or a subclass of it"
+            )
+
+    return errors
+
+
+def collect_domain_member_uris(
+        domains_dir: Path,
+        terms_index: dict[str, dict],
+        terms_slug_index: dict[str, list[str]],
+) -> set[str]:
+    """
+    Return the set of all analysis @id URIs referenced as a 'members' entry
+    by any domain in domains_dir, resolved the same way resolve_domain_member
+    does (bare slug or full IRI, with or without a UUID suffix).
+
+    Unresolvable member values are silently skipped here — they are already
+    reported by validate_domain_members when the domains directory itself is
+    validated.
+    """
+    uris: set[str] = set()
+    if not domains_dir.exists():
+        return uris
+    for file_path in sorted(domains_dir.glob("*.json")):
+        data = load_json(file_path)
+        if data is None:
+            continue
+        members = data.get("members", [])
+        if isinstance(members, str):
+            members = [members]
+        for value in members:
+            term_data, err = resolve_domain_member(value, terms_index, terms_slug_index)
+            if term_data is not None:
+                uris.add(term_data.get("@id", value))
+    return uris
+
+
+def validate_analysis_domain_link(
+        data: dict,
+        file_name: str,
+        domain_member_uris: set[str],
+        terms_index: dict[str, dict],
+) -> list[str]:
+    """
+    For 3SE analysis terms (analysis-3se itself and any transitive subclass
+    of it): warn if the term is not claimed as a 'members' entry by any
+    domain in domains/. This is the mirror of validate_domain_members — every
+    domain member must be an analysis, and every analysis should ideally be
+    claimed by a domain.
+
+    This only prints a warning; it never fails validation.
+    """
+    term_id = data.get("@id", file_name)
+    stem = term_id.rstrip("/").rsplit("/", 1)[-1]
+    uri = data.get("@id") or (TERM_BASE_IRI + stem)
+
+    if uri == ANALYSIS_BASE_URI:
+        return []  # the abstract root concept is not itself an evaluation domain member
+
+    if not is_analysis_or_subclass(uri, terms_index):
+        return []  # not an analysis concept — out of scope for this check
+
+    if uri not in domain_member_uris:
+        title = data.get("title", stem)
+        print(f'  ⚠️  {file_name}: analysis "{title}" is not a member of any domain')
+
+    return []
+
+
 def collect_unrelated_non_se3_terms(terms_dir: Path) -> list[tuple[str, str]]:
     """
     Return (filename, title) for non-3SE terms that are not referenced by any
@@ -442,6 +617,15 @@ def main() -> int:
             stem_uri = TERM_BASE_IRI + fp.stem
             terms_index.setdefault(stem_uri, d)
 
+    # Build slug -> [URI, ...] index for terms, used to resolve domain
+    # 'members' entries written as a bare name instead of a full IRI.
+    terms_slug_index = build_terms_slug_index(terms_index)
+
+    # Collect every analysis URI already claimed by a domain, so term
+    # validation can warn about analyses that no domain has picked up yet.
+    domains_data_dir = Path(DIRS["domains"]["dir"])
+    domain_member_uris = collect_domain_member_uris(domains_data_dir, terms_index, terms_slug_index)
+
     # Build URI -> data index for properties
     properties_index: dict[str, dict] = {}
     properties_data_dir = Path(DIRS["properties"]["dir"])
@@ -506,11 +690,23 @@ def main() -> int:
                 file_errors.extend(
                     validate_breakdown_analysis_link(data, file_path.name, terms_index)
                 )
+                file_errors.extend(
+                    validate_analysis_domain_link(data, file_path.name, domain_member_uris, terms_index)
+                )
 
             # Naming validation (properties only)
             if type_name == "properties":
                 file_errors.extend(
                     validate_property_title_vs_stem(data, file_path.stem)
+                )
+
+            # Naming and members validation (domains only)
+            if type_name == "domains":
+                file_errors.extend(
+                    validate_title_vs_stem(data, file_path.stem)
+                )
+                file_errors.extend(
+                    validate_domain_members(data, file_path.name, terms_index, terms_slug_index)
                 )
 
             if file_errors:

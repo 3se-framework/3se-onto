@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://www.3se.info/3se-onto/domains/",
+
+    "skos":    "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl":     "http://www.w3.org/2002/07/owl#",
+    "foaf":    "http://xmlns.com/foaf/0.1/",
+    "xsd":     "http://www.w3.org/2001/XMLSchema#",
+
+    "title":                { "@id": "skos:prefLabel" },
+    "description":          { "@id": "skos:definition" },
+    "notes":                { "@id": "skos:scopeNote" },
+
+    "members":              { "@id": "skos:member", "@type": "@id" },
+
+    "deprecated":           { "@id": "owl:deprecated",       "@type": "xsd:boolean" },
+    "superseded_by":        { "@id": "dcterms:isReplacedBy", "@type": "@id" },
+
+    "entryCreated":         { "@id": "dcterms:created",  "@type": "xsd:date" },
+    "entryModified":        { "@id": "dcterms:modified", "@type": "xsd:date" },
+    "entryCreator":         { "@id": "dcterms:creator" },
+    "entryContributor":     { "@id": "dcterms:contributor" },
+
+    "status":               { "@id": "https://www.3se.info/3se-onto/vocab#status" }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.3se.info/3se-onto/schemas/domain.schema.json",
+  "title": "Evaluation Domain",
+  "description": "Represents a skos:Collection grouping the 3SE analyses in scope of one of the 10 engineering domains evaluated by the 3SE maturity evaluation method.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "@context",
+    "@type",
+    "title"
+  ],
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri",
+      "const": "https://www.3se.info/3se-onto/contexts/domain.context.jsonld",
+      "description": "JSON-LD context URI. Must reference the canonical context document for this schema."
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "The globally unique IRI identifying this domain as an RDF resource. Must be an absolute URI under the domains/ base IRI."
+    },
+    "@type": {
+      "type": "string",
+      "const": "skos:Collection",
+      "description": "RDF type declaration. Domains are modelled as skos:Collection — a labelled, unordered grouping of concepts, not a hierarchical skos:ConceptScheme."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "skos:prefLabel — The preferred human-readable label for this domain (e.g. 'Risk management')."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "skos:definition — A complete explanation of the scope of this evaluation domain."
+    },
+    "notes": {
+      "type": "string",
+      "description": "skos:scopeNote — A note clarifying the intended use or boundaries of this domain. Markdown is supported."
+    },
+    "members": {
+      "description": "skos:member — IRIs of the 3se-onto analysis concepts (terms/*-analysis-3se-*) that this domain is accountable for. The concrete concepts to rate for this domain's process/method/tool axes are retrieved by following each member analysis's own 'related' relation. Omitted when no accountable analysis concept exists yet in 3se-onto — CI should warn (not fail) on an empty or missing members list.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "deprecated": {
+      "type": "boolean",
+      "default": false,
+      "description": "owl:deprecated — When true, signals that this domain is obsolete and should no longer be used in new data."
+    },
+    "superseded_by": {
+      "type": "string",
+      "format": "uri",
+      "description": "dcterms:isReplacedBy — IRI of the domain that supersedes this one when deprecated is true."
+    },
+    "entryCreated": {
+      "type": "string",
+      "format": "date",
+      "description": "dcterms:created — ISO 8601 date on which this domain entry was first created."
+    },
+    "entryModified": {
+      "type": "string",
+      "format": "date",
+      "description": "dcterms:modified — ISO 8601 date on which this domain entry was last modified."
+    },
+    "entryCreator": {
+      "description": "dcterms:creator — The agent(s) who originally created this domain entry.",
+      "$ref": "#/$defs/agentOrList"
+    },
+    "entryContributor": {
+      "description": "dcterms:contributor — Agent(s) who contributed to this domain entry after its initial creation.",
+      "$ref": "#/$defs/agentOrList"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "under review",
+        "reviewed",
+        "under approval",
+        "approved",
+        "standard"
+      ],
+      "description": "3SE editorial status of this domain entry."
+    }
+  },
+  "$defs": {
+    "agent": {
+      "description": "A foaf:Agent — a person, organisation, or software agent.",
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Plain-text name of the agent."
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "@id": {
+              "type": "string",
+              "format": "uri",
+              "description": "IRI of the agent (e.g. ORCID, WebID, GitHub profile URL). Maps to foaf:Agent @id."
+            },
+            "@type": {
+              "type": "string",
+              "enum": [
+                "foaf:Person",
+                "foaf:Organization",
+                "foaf:Agent"
+              ],
+              "default": "foaf:Person"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "foaf:name — Full name or display name of the agent."
+            },
+            "mbox": {
+              "type": "string",
+              "format": "email",
+              "description": "foaf:mbox — Email address of the agent."
+            }
+          }
+        }
+      ]
+    },
+    "agentOrList": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/agent"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/agent"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
+    }
+  }
+}

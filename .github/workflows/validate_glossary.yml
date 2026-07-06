@@ -7,6 +7,7 @@ on:
       - "terms/**.json"
       - "references/**.json"
       - "properties/**.json"
+      - "domains/**.json"
 
 jobs:
   validate:
@@ -25,8 +26,8 @@ jobs:
 
       - name: Ensure required directories exist
         run: |
-          mkdir -p terms references properties
-          git add terms references properties
+          mkdir -p terms references properties domains
+          git add terms references properties domains
 
       - name: Set up Python
         uses: actions/setup-python@v6.2.0
@@ -81,7 +82,7 @@ jobs:
         id: changed
         run: |
           patterns=""
-          for dir in terms references properties; do
+          for dir in terms references properties domains; do
             if compgen -G "$dir/*.json" > /dev/null 2>&1; then
               patterns="$patterns $dir/*.json"
             fi
