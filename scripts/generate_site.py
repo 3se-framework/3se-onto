@@ -842,8 +842,8 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
     {f'{len(domains)} 3SE domains &nbsp;·&nbsp;' if domains else ''}
     {len(se3_terms)} 3SE terms &nbsp;·&nbsp;
     {len(other_terms)} other terms &nbsp;·&nbsp;
-    {f'{len(se3_properties)} 3SE properties &nbsp;·&nbsp;' if se3_properties else ''}
-    {f'{len(other_properties)} other properties &nbsp;·&nbsp;<br>' if other_properties else ''}
+    {f'{len(se3_properties)} 3SE properties &nbsp;·&nbsp;<br>' if se3_properties else ''}
+    {f'{len(other_properties)} other properties &nbsp;·&nbsp;' if other_properties else ''}
     {len(references)} references.
   </p>
 </div>
