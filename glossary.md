@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-07-06 08:29 UTC*
+*Generated on 2026-07-06 17:13 UTC*
 
 This glossary contains **7 3SE domain(s)**, **348 3SE term(s)**, **110 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
@@ -1550,8 +1550,8 @@ graph TD
     N13 -.->|allocates| N10
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
-    N6 -.->|allocates| N9
     N2 -.->|allocates| N15
+    N6 -.->|allocates| N9
     N14 -.->|allocates| N15
 ```
 
@@ -1708,9 +1708,9 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
     N3 -.->|allocates| N11
     N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
     N6 -.->|allocates| N13
 ```
 
@@ -2135,8 +2135,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -3205,10 +3205,10 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
     N2 -.->|allocates| N10
-    N9 -.->|allocates| N10
-    N5 -.->|allocates| N3
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
+    N5 -.->|allocates| N3
+    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -4832,9 +4832,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-06-29 · Creator: @rcasteran*
@@ -5018,9 +5018,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5553,12 +5553,12 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787) |
+| Related | [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [stakeholder-req-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5), [system-req-analysis-3se-069ee3cda5ec743c](https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c) |
 | Subclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569) |
 | Composed of | [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 | Allocated by | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
-*Created: 2026-03-20 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-07-06 · Creator: @rcasteran*
 
 ---
 
@@ -5617,11 +5617,11 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of a feature or an attribute to decide what stakeholder requirements are specifying it.
+> Analysis of a feature or an attribute to decide what stakeholder requirements and/or stakeholder constraints are specifying it.
 
 | Relation | Terms |
 |---|---|
-| Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [stakeholder-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476) |
+| Related | [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [stakeholder-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476), [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
 **Allocations**
@@ -5644,7 +5644,7 @@ graph TD
     N5 -.->|allocates| N4
 ```
 
-*Created: 2026-03-17 · Modified: 2026-04-13 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-07-06 · Creator: @rcasteran*
 
 ---
 
@@ -5797,7 +5797,7 @@ It contributes to the stakeholder requirement analysis, the operational analysis
 |---|---|
 | Subclass of | [role-3se-069c451bef157773](https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773) |
 
-*Created: 2026-03-25 · Modified: 2026-06-29 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-07-06 · Creator: @rcasteran*
 
 ---
 
@@ -6059,10 +6059,10 @@ graph TD
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
     N10 -.->|allocates| N14
-    N13 -.->|allocates| N9
-    N11 -.->|allocates| N4
     N7 -.->|allocates| N5
     N6 -.->|allocates| N5
+    N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6093,14 +6093,14 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 
 | Relation | Terms |
 |---|---|
-| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-constraint-validation-3se-06a2726ff02a7fbd](https://www.3se.info/3se-onto/terms/system-constraint-validation-3se-06a2726ff02a7fbd), [system-validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-constraint-validation-3se-06a2726ff02a7fbd](https://www.3se.info/3se-onto/terms/system-constraint-validation-3se-06a2726ff02a7fbd), [system-validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de), [system-req-analysis-3se-069ee3cda5ec743c](https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c) |
 | Subclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569) |
 | Superclass of | [safety-system-constraint-3se-069bdc3120dd749a](https://www.3se.info/3se-onto/terms/safety-system-constraint-3se-069bdc3120dd749a), [security-system-constraint-3se-069bdc3121337fbd](https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd) |
 | Composed of | [system-element-constraint-3se-069ee425eb8a748f](https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f) |
 | Allocated by | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Evaluated by | [system-constraint-validation-case-3se-06a270c85e847647](https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647) |
 
-*Created: 2026-03-21 · Modified: 2026-06-08 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-07-06 · Creator: @rcasteran*
 
 ---
 
@@ -6772,14 +6772,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
-    N16 -.->|allocates| N4
     N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
     N14 -.->|allocates| N12
+    N2 -.->|allocates| N4
+    N13 -.->|allocates| N12
+    N3 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N13 -.->|allocates| N12
-    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6873,14 +6873,14 @@ It contributes to the operational analysis, the system functional analysis, the 
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Analysis of a stakeholder requirement to decide what system requirement are specifying it.
+> Analysis of a stakeholder requirement or a stakeholder constraint to decide what system requirements or system constraints are specifying it.
 
 | Relation | Terms |
 |---|---|
-| Related | [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476) |
+| Related | [stakeholder-req-3se-069da425d07f73e2](https://www.3se.info/3se-onto/terms/stakeholder-req-3se-069da425d07f73e2), [system-req-3se-069c3bf7714e7351](https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476), [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03), [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
 
-*Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-07-06 · Creator: @rcasteran*
 
 ---
 
@@ -7008,21 +7008,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N37 -.->|allocates| N1
-    N40 -.->|allocates| N2
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
     N4 -.->|allocates| N7
+    N40 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N27 -.->|allocates| N18
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N9 -.->|exposes| N15
-    N9 -.->|allocates| N25
-    N9 -.->|allocates| N3
-    N27 -.->|allocates| N18
+    N37 -.->|allocates| N1
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
     N31 -.->|allocates| N2
-    N26 -.->|allocates| N19
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N9 -.->|exposes| N15
+    N9 -.->|allocates| N25
+    N9 -.->|allocates| N3
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -7192,11 +7192,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N4 -.->|allocates| N8
-    N11 -.->|allocates| N12
-    N13 -.->|allocates| N10
-    N14 -.->|allocates| N9
     N15 -.->|allocates| N12
+    N13 -.->|allocates| N10
+    N11 -.->|allocates| N12
+    N14 -.->|allocates| N9
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-04-19 · Creator: @rcasteran*
