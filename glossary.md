@@ -1,11 +1,19 @@
 # 3SE Glossary
 
-*Generated on 2026-07-04 18:32 UTC*
+*Generated on 2026-07-06 08:20 UTC*
 
-This glossary contains **348 3SE term(s)**, **110 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
+This glossary contains **7 3SE domain(s)**, **348 3SE term(s)**, **110 other term(s)**, **13 3SE property(ies)**, **9 other property(ies)**, and **26 reference(s)**.
 
 ## Contents
 
+- [Domains](#domains)
+  - [Asset engineering - 3SE](#asset-engineering---3se)
+  - [Business engineering - 3SE](#business-engineering---3se)
+  - [Project engineering - 3SE](#project-engineering---3se)
+  - [Requirements engineering - 3SE](#requirements-engineering---3se)
+  - [Risk engineering - 3SE](#risk-engineering---3se)
+  - [System engineering - 3SE](#system-engineering---3se)
+  - [Verification, validation and acceptance engineering - 3SE](#verification-validation-and-acceptance-engineering---3se)
 - [3SE Terms](#3se-terms)
   - [Abstract model - 3SE](#abstract-model---3se)
   - [Acceptance - 3SE](#acceptance---3se)
@@ -517,6 +525,94 @@ This glossary contains **348 3SE term(s)**, **110 other term(s)**, **13 3SE prop
   - [used - W3C](#used---w3c)
   - [wasAssociatedWith - W3C](#wasassociatedwith---w3c)
   - [wasGeneratedBy - W3C](#wasgeneratedby---w3c)
+
+---
+
+## Domains
+
+*7 evaluation domain(s) defined by the 3SE framework.*
+
+### Asset engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the identification of the products and services that realize system features, their internal structuring into product elements and service means, and the releases through which they are delivered.
+
+**Members:** [Product analysis - 3SE](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [Product architecture - 3SE](https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9), [Service analysis - 3SE](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [Service architecture - 3SE](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53), [Release analysis - 3SE](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
+
+---
+
+### Business engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the decomposition and allocation of stakeholder goals into features and attributes, the value they deliver to stakeholders, the actors supporting them, the interdependent actors influencing them, and the opportunities and risks arising from the system of interest's milieu.
+
+**Members:** [Goal analysis - 3SE](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [Feature analysis - 3SE](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [Interdependence analysis - 3SE](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [Value analysis - 3SE](https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
+
+---
+
+### Project engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the planning and execution breakdown of a release into the project delivering it, the iterations completing that project, the epics assigned to each iteration, and the tasks realizing them.
+
+**Members:** [Project analysis - 3SE](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [Epic analysis - 3SE](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [Iteration analysis - 3SE](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [Task analysis - 3SE](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
+
+---
+
+### Requirements engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the specification of stakeholder requirements from features and attributes, and their refinement into system requirements.
+
+**Members:** [Stakeholder requirement analysis - 3SE](https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5), [System requirement analysis - 3SE](https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
+
+---
+
+### Risk engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the identification, assessment, treatment and monitoring of risk for the system of interest, encompassing both safety risk (hazards and hazardous situations) and security risk (assets and threatening situations), including their residual risk and cross-discipline interactions.
+
+**Members:** [Risk analysis - 3SE](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [Safety risk analysis - 3SE](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [Security risk analysis - 3SE](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
+
+---
+
+### System engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the analysis of the system of interest's operational activities and functions, their allocation into functional, physical and system architecture (functional elements, physical elements, system elements, their interfaces and states), and the system attributes contributing to stakeholder goals.
+
+**Members:** [Operational analysis - 3SE](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [System functional analysis - 3SE](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [Functional architecture - 3SE](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [Physical architecture - 3SE](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [System architecture - 3SE](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [System attribute analysis - 3SE](https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
+
+---
+
+### Verification, validation and acceptance engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Domain covering the confirmation that development deliverables pass their maturity or assessment gates (verification), that system requirements and constraints are satisfied by validation cases (validation), and that stakeholder goals are satisfied by acceptance cases (acceptance).
+
+**Members:** [System verification analysis - 3SE](https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891), [System validation analysis - 3SE](https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de), [Acceptance analysis - 3SE](https://www.3se.info/3se-onto/terms/acceptance-analysis-3se-069f3686ba967baf)
+
+*Created: 2026-07-06 · Modified: 2026-07-06 · Creator: @rcasteran*
 
 ---
 
@@ -1455,8 +1551,8 @@ graph TD
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
     N6 -.->|allocates| N9
-    N14 -.->|allocates| N15
     N2 -.->|allocates| N15
+    N14 -.->|allocates| N15
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -1612,10 +1708,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
-    N11 -.->|allocates| N10
     N7 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N3 -.->|allocates| N11
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-06-29 · Creator: @rcasteran*
@@ -3108,11 +3204,11 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
-    N5 -.->|allocates| N3
-    N9 -.->|allocates| N10
     N12 -.->|allocates| N9
     N12 -.->|allocates| N10
+    N5 -.->|allocates| N3
     N2 -.->|allocates| N10
+    N9 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -3392,8 +3488,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -3499,9 +3595,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4628,8 +4724,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-05-15 · Creator: @rcasteran*
@@ -4923,8 +5019,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -5885,8 +5981,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-04-24 · Creator: @rcasteran*
@@ -5962,11 +6058,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N7 -.->|allocates| N5
     N10 -.->|allocates| N14
-    N13 -.->|allocates| N9
-    N6 -.->|allocates| N5
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
+    N7 -.->|allocates| N5
+    N6 -.->|allocates| N5
 ```
 
 *Created: 2026-03-21 · Modified: 2026-04-19 · Creator: @rcasteran*
@@ -6676,14 +6772,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N15 -.->|exposes| N1
-    N14 -.->|allocates| N12
-    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
-    N13 -.->|allocates| N12
     N3 -.->|allocates| N4
+    N15 -.->|exposes| N1
+    N2 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N16 -.->|allocates| N4
+    N13 -.->|allocates| N12
 ```
 
 *Created: 2026-04-01 · Modified: 2026-04-12 · Creator: @rcasteran*
@@ -6912,21 +7008,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N40 -.->|allocates| N2
     N37 -.->|allocates| N1
+    N31 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N31 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N27 -.->|allocates| N18
     N4 -.->|allocates| N7
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N40 -.->|allocates| N2
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
     N26 -.->|allocates| N19
+    N27 -.->|allocates| N18
 ```
 
 *Created: 2026-04-26 · Modified: 2026-04-26 · Creator: @rcasteran*
@@ -7096,10 +7192,10 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N14 -.->|allocates| N9
-    N15 -.->|allocates| N12
     N11 -.->|allocates| N12
     N13 -.->|allocates| N10
+    N14 -.->|allocates| N9
+    N15 -.->|allocates| N12
     N4 -.->|allocates| N8
 ```
 
