@@ -11,5 +11,12 @@
     "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
     "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
     "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/domains/system-engineering-3se-06a4b60996057e72",
+  "entryCreated": "2026-07-06",
+  "entryModified": "2026-07-06",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

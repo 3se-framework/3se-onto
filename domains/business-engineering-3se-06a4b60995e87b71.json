@@ -9,5 +9,12 @@
     "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
     "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780",
     "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/domains/business-engineering-3se-06a4b60995e87b71",
+  "entryCreated": "2026-07-06",
+  "entryModified": "2026-07-06",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

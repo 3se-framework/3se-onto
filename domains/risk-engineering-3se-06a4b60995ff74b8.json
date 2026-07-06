@@ -8,5 +8,12 @@
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32",
     "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e",
     "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/domains/risk-engineering-3se-06a4b60995ff74b8",
+  "entryCreated": "2026-07-06",
+  "entryModified": "2026-07-06",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
