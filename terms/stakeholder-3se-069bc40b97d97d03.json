@@ -8,6 +8,12 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
