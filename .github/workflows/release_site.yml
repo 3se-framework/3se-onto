@@ -82,13 +82,21 @@ jobs:
       - run: pip install -r requirements.txt
 
       - name: Prepare site-versions archive worktree
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git ls-remote --exit-code --heads origin site-versions >/dev/null 2>&1; then
-            git fetch origin site-versions:site-versions
+          # actions/checkout's persisted push credentials don't reliably reach
+          # git commands run from inside a worktree, so authenticate explicitly
+          # here (and for the push in the archiving step below) rather than
+          # relying on the inherited "origin" remote credentials.
+          REMOTE_URL="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+
+          if git ls-remote --exit-code --heads "$REMOTE_URL" site-versions >/dev/null 2>&1; then
+            git fetch "$REMOTE_URL" site-versions:site-versions
             git worktree add archive site-versions
           else
             git worktree add --orphan -b site-versions archive
@@ -118,6 +126,7 @@ jobs:
         env:
           VERSION_DASH: ${{ steps.version.outputs.dash }}
           VERSION_DOT: ${{ steps.version.outputs.dot }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -e
           rm -rf "archive/${VERSION_DASH}"
@@ -130,7 +139,7 @@ jobs:
             echo "${VERSION_DASH} is already archived and unchanged — nothing to commit."
           else
             git commit -m "Archive release ${VERSION_DOT}"
-            git push origin site-versions
+            git push "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" site-versions
           fi
 
       - name: Build latest site
