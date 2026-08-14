@@ -1,0 +1,27 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System function attribute - 3SE",
+  "description": "Attribute of a system function.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
+  "entryCreated": "2026-04-13",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3"
+  ]
+}

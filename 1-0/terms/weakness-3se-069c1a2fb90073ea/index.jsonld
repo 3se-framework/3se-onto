@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Weakness - 3SE",
+  "description": "Termination of the ability of an entity to protect an asset as specified due to a vulnerability.",
+  "status": "reviewed",
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/weakness-21434-2021-069c1a2fb8f87251"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/vulnerability-3se-069c1a2fb8f177a4",
+    "https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f",
+    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
+    "https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2"
+  ],
+  "entryCreated": "2026-03-23",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

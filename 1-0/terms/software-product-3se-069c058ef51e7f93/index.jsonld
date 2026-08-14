@@ -1,0 +1,31 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software product - 3SE",
+  "description": "Product that is composed of software only.",
+  "status": "reviewed",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951"
+  ],
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78",
+    "https://www.3se.info/3se-onto/terms/software-attribute-3se-069dcf9369bf7d0b"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+  ],
+  "entryCreated": "2026-03-22",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/safety-software-feature-3se-069c058ef4f372bc",
+    "https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb"
+  ]
+}

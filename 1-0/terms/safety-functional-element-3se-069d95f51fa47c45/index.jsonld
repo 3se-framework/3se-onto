@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety functional element - 3SE",
+  "description": "Functional element responsible for carrying out some of the safety system functions.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/safety-functional-element-3se-069d95f51fa47c45",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
+  ],
+  "entryCreated": "2026-04-10",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

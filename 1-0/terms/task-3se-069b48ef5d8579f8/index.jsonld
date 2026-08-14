@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Task - 3SE",
+  "description": "Required action intended to contribute to the achievement of one Epic or one iteration.",
+  "status": "reviewed",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/task-3se-069b48ef5d8579f8",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-08-14",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab",
+    "https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e"
+  ]
+}

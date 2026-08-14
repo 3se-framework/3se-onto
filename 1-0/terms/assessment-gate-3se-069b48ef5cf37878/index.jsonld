@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Assessment gate - 3SE",
+  "description": "Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to redefine it.",
+  "status": "reviewed",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-08-14",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061",
+    "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
+    "https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7",
+    "https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4",
+    "https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891"
+  ]
+}

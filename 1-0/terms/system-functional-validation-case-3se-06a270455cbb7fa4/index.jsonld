@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System functional validation case - 3SE",
+  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system functional requirement.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2"
+  ],
+  "evaluates": [
+    "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
+    "https://www.3se.info/3se-onto/terms/system-functional-validation-3se-06a27237d3977414"
+  ],
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Validation - 3SE",
+  "description": "Evaluation of an entity to determine whether it satisfies the requirements allocated to it at the end of a development phase.\nNote: it does not determine if the entity satisfies the stakeholders’ requirements nor the stakeholders’ goals",
+  "status": "reviewed",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/validation-1012-2016-069ac9d90bb97a07"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+    "https://www.3se.info/3se-onto/terms/system-architecture-validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/system-element-validation-case-3se-069c957ec9e77311",
+    "https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5",
+    "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2",
+    "https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4",
+    "https://www.3se.info/3se-onto/terms/non-functional-validation-case-3se-06a2708d05e87078",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-validation-case-3se-06a2708d05f376c4",
+    "https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb",
+    "https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647"
+  ]
+}

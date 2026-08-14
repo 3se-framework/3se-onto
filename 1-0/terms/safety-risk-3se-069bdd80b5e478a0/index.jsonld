@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety risk - 3SE",
+  "description": "Risk related to an hazard.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917",
+    "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e",
+    "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657"
+  ],
+  "entryCreated": "2026-03-21",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

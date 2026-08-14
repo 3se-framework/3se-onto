@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3SE — Ontology — Properties</title>
+  <meta name="description" content="13 3SE properties and 9 external properties.">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white:     #ffffff;
+  --bg:        #f4f7fb;
+  --bg2:       #e8f0f9;
+  --border:    #c5d5e8;
+  --border2:   #b0c4de;
+  --text:      #0d1b2a;
+  --text2:     #2e4057;
+  --muted:     #6b7f96;
+  --muted2:    #9ca3af;
+  --accent:    #1a5faa;
+  --link:      #1a5faa;
+  --link-h:    #134d8c;
+  --green:     #059669;
+  --amber:     #d97706;
+  --mono:      'JetBrains Mono', 'Courier New', monospace;
+  --sans:      'DM Sans', system-ui, sans-serif;
+  --radius:    4px;
+  --max-w:     1080px;
+  --ink:       #0d1b2a;
+  --ink-mid:   #2e4057;
+  --ink-light: #6b7f96;
+  --rule:      #c5d5e8;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-h); text-decoration: underline; }
+
+/* ── Nav — matches www.3se.info exactly ── */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem;
+  background: rgba(244, 247, 251, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.header-inner { display: contents; }
+.brand { display: flex; align-items: center; gap: 1rem; }
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none !important;
+  align-items: center;
+}
+.logo span { color: var(--accent); }
+header nav {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  transition: color 0.2s;
+}
+header nav a:hover { color: var(--accent); text-decoration: none; }
+
+.version-switcher {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: .3rem .55rem;
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--text2);
+  cursor: pointer;
+  outline: none;
+}
+.version-switcher:focus { border-color: var(--text); }
+
+/* ── Main ── */
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 5rem 2rem 5rem;
+}
+
+@media (max-width: 900px) {
+  header { padding: 1rem 1.5rem; }
+  header nav { display: none; }
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: .8rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--text); text-decoration: none; }
+.breadcrumb span { color: var(--muted2); }
+
+/* ── Typography ── */
+h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
+h2 { font-size: 1.1rem; font-weight: 600; letter-spacing: -.01em; }
+h3 { font-size: .75rem; font-weight: 600; text-transform: uppercase;
+     letter-spacing: .08em; color: var(--muted); }
+
+/* ── Badge ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: .15rem .55rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+/* ── Section divider ── */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ── Blockquote definition ── */
+.definition {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--text2);
+  border-left: 3px solid var(--text);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+/* ── Relations table ── */
+.relations-table { width: 100%; border-collapse: collapse; }
+.relations-table td {
+  padding: .5rem .75rem;
+  border-bottom: 1px solid var(--border);
+  font-size: .9rem;
+  vertical-align: top;
+}
+.relations-table td:first-child {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 130px;
+  padding-top: .6rem;
+}
+.relations-table tr:last-child td { border-bottom: none; }
+
+/* ── Bib table ── */
+.bib-table { width: 100%; border-collapse: collapse; }
+.bib-table td {
+  padding: .45rem .75rem;
+  border-bottom: 1px solid var(--border);
+  font-size: .88rem;
+  vertical-align: top;
+}
+.bib-table td:first-child {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 110px;
+  padding-top: .55rem;
+}
+.bib-table tr:last-child td { border-bottom: none; }
+
+/* ── Code block ── */
+.code-block {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: .78rem;
+  line-height: 1.7;
+  color: var(--text2);
+}
+
+/* ── Card ── */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ── Search / filter bar ── */
+.filter-bar {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.filter-bar input,
+.filter-bar select {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: .5rem .85rem;
+  font-family: var(--sans);
+  font-size: .88rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s;
+}
+.filter-bar input { flex: 1; min-width: 220px; }
+.filter-bar input:focus,
+.filter-bar select:focus { border-color: var(--text); }
+.filter-bar select { cursor: pointer; }
+
+/* ── Index table ── */
+.index-table { width: 100%; border-collapse: collapse; }
+.index-table thead tr {
+  border-bottom: 2px solid var(--text);
+}
+.index-table thead th {
+  text-align: left;
+  padding: .5rem .75rem;
+  font-family: var(--mono);
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.index-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background .1s;
+}
+.index-table tbody tr:hover { background: var(--bg); }
+.index-table tbody td {
+  padding: .65rem .75rem;
+  font-size: .9rem;
+  vertical-align: top;
+}
+.index-table tbody td.desc {
+  color: var(--muted);
+  font-size: .83rem;
+  max-width: 360px;
+}
+
+/* ── Entry listing ── */
+.entry-list { list-style: none; }
+.entry-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.entry-list li:last-child { border-bottom: none; }
+.entry-list .entry-title { font-weight: 500; font-size: .95rem; }
+.entry-list .entry-desc {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-top: .15rem;
+}
+
+/* ── Provenance ── */
+.provenance {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: .73rem;
+  color: var(--muted2);
+}
+
+/* ── Footer — matches www.3se.info ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 2rem 4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+footer a:hover { color: var(--white); text-decoration: none; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, theme:'neutral'});</script>
+  
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <a class="logo" href="https://www.3se.info/index.html">
+        <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;">
+            <!-- Outer edges -->
+            <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
+              <line x1="170" y1="30" x2="50"  y2="270"/>
+              <line x1="170" y1="30" x2="290" y2="270"/>
+              <line x1="170" y1="30" x2="170" y2="220"/>
+              <line x1="50"  y1="270" x2="290" y2="270"/>
+              <line x1="50"  y1="270" x2="170" y2="220"/>
+              <line x1="290" y1="270" x2="170" y2="220"/>
+            </g>
+            <!-- Inner depth edges (dashed) -->
+            <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
+              <line x1="170" y1="148" x2="50"  y2="270"/>
+              <line x1="170" y1="148" x2="290" y2="270"/>
+              <line x1="170" y1="148" x2="170" y2="220"/>
+            </g>
+            <!-- Nodes -->
+            <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
+            <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+            <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+            <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
+          </svg>3<span>SE</span>
+      </a>
+      <select class="version-switcher" onchange="if (this.value) window.location.href = this.value;" aria-label="Select ontology release version">
+      <option value="/3se-onto/">Latest</option>
+      <option value="/3se-onto/1-0/" selected>1.0</option>
+    </select>
+    </div>
+    <nav>
+      <a href="/3se-onto/1-0/">Index</a>
+      <a href="/3se-onto/1-0/domains/">Domains</a>
+      <a href="/3se-onto/1-0/terms/">Terms</a>
+      <a href="/3se-onto/1-0/references/">References</a>
+      <a href="/3se-onto/1-0/properties/">Properties</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div style="background:#fff7ed;border:1px solid #fde68a;border-radius:var(--radius);padding:.6rem 1rem;text-align:center;font-size:.82rem;color:#92400e;margin-bottom:2rem">You are viewing archived release <strong>1.0</strong> — this snapshot is frozen and will not change. <a href="/3se-onto/" style="color:#92400e;text-decoration:underline">Go to latest</a></div>
+
+<nav class="breadcrumb">
+  <a href="/3se-onto/1-0/">Index</a>
+  <span>/</span>
+  <span>Properties</span>
+</nav>
+
+<div style="margin-bottom:2.5rem">
+  <h1>Properties</h1>
+  <p style="margin-top:.5rem;color:var(--muted);font-size:.92rem">13 3SE properties and 9 external properties.</p>
+</div>
+
+<ul class="entry-list">
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/abstraction-uml-spec-2-5-1-069c841061057b63/">abstraction - UML 2.5.1</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Relationship that relates two elements or sets of elements that represent the same concept at different levels of abstra…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/allocates-3se-069c8410610d7a32/">allocates - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates a source element to a target element to which some or all of the responsibility to realize the intent of the sou…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919/">allocation definition - SysML 2.0</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">An AllocationDefinition is a ConnectionDefinition that specifies that some or all of the responsibility to realize the i…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/can-be-3se-069c8410611d7975/">canBe - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates a source concept to a target concept which may, under certain conditions, be an instance or a realisation of the…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/composite-aggregation-uml-spec-2-5-1-069c841061257798/">composite aggregation - UML 2.5.1</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Composite aggregation is a strong form of aggregation that requires a part object be included in at most one composite o…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/consumes-3se-069efa20ebc17ef1/">consumes - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates an element to an input element that it utilizes during its execution.</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/conveyed-uml-spec-2-5-1-069f2456795272b9/">conveyed - UML 2.5.1</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Specifies the information items that may circulate on this information flow.</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/conveys-3se-069f245679787ae9/">conveys - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates an interface to one or more flows or exchanges that circulate through it.</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/evaluates-3se-069f38ad07327be8/">evaluates - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates an evaluation case to the entity it was developed to evaluate, to determine whether that entity satisfies the cr…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/exposes-3se-069cd94b8959766f/">exposes - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates a source element to an interface through which it exchanges flows with its environment.</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/fires-3se-06a087faa821765f/">fires - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates an active state to a transition that it fires.
+A transition is fireable if and only if the immediately preceding…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/is-accountable-for-3se-069c50dd4d47724a/">isAccountableFor - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates a role to a concept for which the role owns the outcome and bears ultimate responsibility, regardless of who exe…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/is-composed-of-3se-069c8410612d7439/">isComposedOf - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Strong form of aggregation that relates a composite entity to its parts, where each part instance is included in at most…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/is-represented-by-3se-069c84106135779a/">isRepresentedBy - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relationship that relates an entity to a more abstract element that represents the same concept at a higher level of abs…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/is-responsible-for-3se-069c50dd4d64710e/">isResponsibleFor - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates a role to a concept for which the role executes the work and ensures its delivery. A role can be responsible for…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/is-supporting-3se-069c50dd4d6c7daf/">isSupporting - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates a role to a concept to which the role contributes resources, expertise, or effort without bearing primary respon…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/produces-3se-069efa20ebe573ff/">produces - 3SE</a>
+            <span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.5rem;font-size:.65rem">Reviewed</span>
+          </span>
+          <p class="entry-desc">Relates an element to an output element that it generates as a result of its execution.</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/provided-uml-spec-2-5-1-069cd94b89777912/">provided - UML 2.5.1</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Association end that denotes the Interface that the Component exposes to its environment.</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/required-uml-spec-2-5-1-069cd94b898170f1/">required - UML 2.5.1</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Association end that denotes the Interface that the Component requires from other Components in its environment in order…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/used-w3c-prov-2013-069efa20ebee7bd9/">used - W3C</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this e…</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13/">wasAssociatedWith - W3C</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a …</p>
+        </li>
+        <li>
+          <span class="entry-title">
+            <a href="/3se-onto/1-0/properties/was-generated-by-w3c-prov-2013-069efa20ebf77849/">wasGeneratedBy - W3C</a>
+            <span class="badge" style="color:#059669;border-color:#059669;margin-left:.5rem;font-size:.65rem">Standard</span>
+          </span>
+          <p class="entry-desc">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation a…</p>
+        </li></ul>
+
+</main>
+<footer>
+  <p>
+    © 2022 3SE — System, Safety &amp; Security Engineering &nbsp;·&nbsp;
+    <a href="https://www.3se.info/">www.3se.info</a> &nbsp;·&nbsp;
+    Generated 2026-08-14 13:10 UTC
+  </p>
+</footer>
+</body>
+</html>

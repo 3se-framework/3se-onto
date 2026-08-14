@@ -1,0 +1,44 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Attribute - 3SE",
+  "description": "Inherent property or characteristic of an entity that can be observed quantitatively or qualitatively and evaluated against some acceptance criteria.",
+  "status": "reviewed",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9"
+  ],
+  "entryCreated": "2026-03-15",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+    "https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1",
+    "https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d",
+    "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
+    "https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976",
+    "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
+    "https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe",
+    "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635",
+    "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
+    "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e",
+    "https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
+  ]
+}

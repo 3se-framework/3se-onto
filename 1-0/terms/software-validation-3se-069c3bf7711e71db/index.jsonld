@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software validation - 3SE",
+  "description": "Evaluation of a software to determine whether it satisfies the software requirements allocated to it at the end of a development phase.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/software-req-3se-069c3bf770ff7fa3"
+  ],
+  "entryCreated": "2026-03-25",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

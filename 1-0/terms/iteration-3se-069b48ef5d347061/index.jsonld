@@ -1,0 +1,26 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Iteration - 3SE",
+  "description": "Time frame of a project in which a set of epics and/or tasks is developed to produce a release.",
+  "status": "reviewed",
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-08-14",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
+    "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/assessment-gate-3se-069b48ef5cf37878",
+    "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
+    "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4"
+  ]
+}

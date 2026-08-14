@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional element attribute breakdown structure - 3SE",
+  "description": "Breakdown structure of the functional element attribute that supports the functional architecture by following the principles below:\n(1) A high level functional element attribute is composed of at least two functional element attributes.\n(2) A high level functional element attribute allocates at least one system state attribute.\n(3) A functional element attribute allocates at least one system element state attribute.\n(4) A functional element attribute can be a high level functional element attribute.\nNote: principle (4) excludes principle (3).",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e",
+    "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+  ],
+  "entryCreated": "2026-04-24",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

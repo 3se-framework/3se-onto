@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Residual risk - ISO/IEC/IEEE 24765",
+  "description": "Risk remaining after risk treatment.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4",
+  "entryCreated": "2026-03-23",
+  "entryModified": "2026-03-23",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Constraint validation case - 3SE",
+  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an inspection or an analysis, to validate a constraint.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
+  ],
+  "evaluates": [
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
+    "https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-06-08",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

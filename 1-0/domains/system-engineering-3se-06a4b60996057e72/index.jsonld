@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/domain.context.jsonld",
+  "@type": "skos:Collection",
+  "title": "System engineering - 3SE",
+  "description": "Domain covering the analysis of the system of interest's operational activities and functions, their allocation into functional, physical and system architecture (functional elements, physical elements, system elements, their interfaces and states), and the system attributes contributing to stakeholder goals.",
+  "status": "reviewed",
+  "members": [
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
+    "https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b",
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426",
+    "https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374",
+    "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
+    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a"
+  ],
+  "@id": "https://www.3se.info/3se-onto/domains/system-engineering-3se-06a4b60996057e72",
+  "entryCreated": "2026-07-06",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

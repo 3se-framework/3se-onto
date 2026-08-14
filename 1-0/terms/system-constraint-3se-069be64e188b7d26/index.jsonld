@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System constraint - 3SE",
+  "description": "Constraint about a system.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
+    "https://www.3se.info/3se-onto/terms/system-constraint-validation-3se-06a2726ff02a7fbd",
+    "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de",
+    "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c"
+  ],
+  "entryCreated": "2026-03-21",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

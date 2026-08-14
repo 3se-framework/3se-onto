@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/domain.context.jsonld",
+  "@type": "skos:Collection",
+  "title": "Asset engineering - 3SE",
+  "description": "Domain covering the identification of the products and services that realize system features, their internal structuring into product elements and service means, and the releases through which they are delivered.",
+  "status": "reviewed",
+  "members": [
+    "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
+    "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9",
+    "https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb",
+    "https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53",
+    "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3"
+  ],
+  "@id": "https://www.3se.info/3se-onto/domains/asset-engineering-3se-06a4b60995a47edf",
+  "entryCreated": "2026-07-06",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

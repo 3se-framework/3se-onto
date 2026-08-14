@@ -1,0 +1,22 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Attack - 3SE",
+  "description": "Set of deliberate actions to compromise one or more assets.",
+  "status": "reviewed",
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed",
+    "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
+    "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5"
+  ],
+  "entryCreated": "2026-03-18",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

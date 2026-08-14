@@ -1,0 +1,18 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/domain.context.jsonld",
+  "@type": "skos:Collection",
+  "title": "Requirements engineering - 3SE",
+  "description": "Domain covering the specification of stakeholder requirements from features and attributes, and their refinement into system requirements.",
+  "status": "reviewed",
+  "members": [
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c"
+  ],
+  "@id": "https://www.3se.info/3se-onto/domains/requirements-engineering-3se-06a4b60995f87766",
+  "entryCreated": "2026-07-06",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

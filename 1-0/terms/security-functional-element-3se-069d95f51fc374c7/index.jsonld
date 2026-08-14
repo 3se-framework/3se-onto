@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Security functional element - 3SE",
+  "description": "Functional element responsible for carrying out some of the security system functions.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-functional-element-3se-069d95f51fc374c7",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b"
+  ],
+  "entryCreated": "2026-04-10",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

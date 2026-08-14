@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Flow - 3SE",
+  "description": "Output produced by a function and consumed by another function.",
+  "status": "reviewed",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023-069bc4ea532a72d7"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435",
+    "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920",
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
+    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
+    "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a",
+    "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340",
+    "https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
+    "https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7"
+  ],
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

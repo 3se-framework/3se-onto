@@ -1,0 +1,23 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Inspection - 3SE",
+  "description": "Evaluation method of an entity using one or more of the human senses.",
+  "status": "reviewed",
+  "relatedMatch": [
+    "https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd",
+  "entryCreated": "2026-03-14",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7",
+    "https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb",
+    "https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647",
+    "https://www.3se.info/3se-onto/terms/system-verification-3se-06a49189cc197f2a"
+  ]
+}

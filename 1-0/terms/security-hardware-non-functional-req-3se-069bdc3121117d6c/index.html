@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3SE — Ontology — Security hardware non-functional requirement - 3SE</title>
+  <meta name="description" content="Security non-functional requirement which is relevant for security engineering.">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --white:     #ffffff;
+  --bg:        #f4f7fb;
+  --bg2:       #e8f0f9;
+  --border:    #c5d5e8;
+  --border2:   #b0c4de;
+  --text:      #0d1b2a;
+  --text2:     #2e4057;
+  --muted:     #6b7f96;
+  --muted2:    #9ca3af;
+  --accent:    #1a5faa;
+  --link:      #1a5faa;
+  --link-h:    #134d8c;
+  --green:     #059669;
+  --amber:     #d97706;
+  --mono:      'JetBrains Mono', 'Courier New', monospace;
+  --sans:      'DM Sans', system-ui, sans-serif;
+  --radius:    4px;
+  --max-w:     1080px;
+  --ink:       #0d1b2a;
+  --ink-mid:   #2e4057;
+  --ink-light: #6b7f96;
+  --rule:      #c5d5e8;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-h); text-decoration: underline; }
+
+/* ── Nav — matches www.3se.info exactly ── */
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 4rem;
+  background: rgba(244, 247, 251, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.header-inner { display: contents; }
+.brand { display: flex; align-items: center; gap: 1rem; }
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none !important;
+  align-items: center;
+}
+.logo span { color: var(--accent); }
+header nav {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  transition: color 0.2s;
+}
+header nav a:hover { color: var(--accent); text-decoration: none; }
+
+.version-switcher {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: .3rem .55rem;
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--text2);
+  cursor: pointer;
+  outline: none;
+}
+.version-switcher:focus { border-color: var(--text); }
+
+/* ── Main ── */
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 5rem 2rem 5rem;
+}
+
+@media (max-width: 900px) {
+  header { padding: 1rem 1.5rem; }
+  header nav { display: none; }
+}
+
+/* ── Breadcrumb ── */
+.breadcrumb {
+  font-size: .8rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.breadcrumb a { color: var(--muted); }
+.breadcrumb a:hover { color: var(--text); text-decoration: none; }
+.breadcrumb span { color: var(--muted2); }
+
+/* ── Typography ── */
+h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
+h2 { font-size: 1.1rem; font-weight: 600; letter-spacing: -.01em; }
+h3 { font-size: .75rem; font-weight: 600; text-transform: uppercase;
+     letter-spacing: .08em; color: var(--muted); }
+
+/* ── Badge ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: .15rem .55rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+/* ── Section divider ── */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+/* ── Blockquote definition ── */
+.definition {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--text2);
+  border-left: 3px solid var(--text);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+/* ── Relations table ── */
+.relations-table { width: 100%; border-collapse: collapse; }
+.relations-table td {
+  padding: .5rem .75rem;
+  border-bottom: 1px solid var(--border);
+  font-size: .9rem;
+  vertical-align: top;
+}
+.relations-table td:first-child {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 130px;
+  padding-top: .6rem;
+}
+.relations-table tr:last-child td { border-bottom: none; }
+
+/* ── Bib table ── */
+.bib-table { width: 100%; border-collapse: collapse; }
+.bib-table td {
+  padding: .45rem .75rem;
+  border-bottom: 1px solid var(--border);
+  font-size: .88rem;
+  vertical-align: top;
+}
+.bib-table td:first-child {
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--muted);
+  white-space: nowrap;
+  width: 110px;
+  padding-top: .55rem;
+}
+.bib-table tr:last-child td { border-bottom: none; }
+
+/* ── Code block ── */
+.code-block {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: .78rem;
+  line-height: 1.7;
+  color: var(--text2);
+}
+
+/* ── Card ── */
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ── Search / filter bar ── */
+.filter-bar {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.filter-bar input,
+.filter-bar select {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: .5rem .85rem;
+  font-family: var(--sans);
+  font-size: .88rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s;
+}
+.filter-bar input { flex: 1; min-width: 220px; }
+.filter-bar input:focus,
+.filter-bar select:focus { border-color: var(--text); }
+.filter-bar select { cursor: pointer; }
+
+/* ── Index table ── */
+.index-table { width: 100%; border-collapse: collapse; }
+.index-table thead tr {
+  border-bottom: 2px solid var(--text);
+}
+.index-table thead th {
+  text-align: left;
+  padding: .5rem .75rem;
+  font-family: var(--mono);
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.index-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background .1s;
+}
+.index-table tbody tr:hover { background: var(--bg); }
+.index-table tbody td {
+  padding: .65rem .75rem;
+  font-size: .9rem;
+  vertical-align: top;
+}
+.index-table tbody td.desc {
+  color: var(--muted);
+  font-size: .83rem;
+  max-width: 360px;
+}
+
+/* ── Entry listing ── */
+.entry-list { list-style: none; }
+.entry-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.entry-list li:last-child { border-bottom: none; }
+.entry-list .entry-title { font-weight: 500; font-size: .95rem; }
+.entry-list .entry-desc {
+  color: var(--muted);
+  font-size: .85rem;
+  margin-top: .15rem;
+}
+
+/* ── Provenance ── */
+.provenance {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: .73rem;
+  color: var(--muted2);
+}
+
+/* ── Footer — matches www.3se.info ── */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 2rem 4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+footer a:hover { color: var(--white); text-decoration: none; }
+</style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, theme:'neutral'});</script>
+  <script type="application/ld+json">{"@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld", "@type": "skos:Concept", "title": "Security hardware non-functional requirement - 3SE", "description": "Security non-functional requirement which is relevant for security engineering.", "status": "reviewed", "subClassOf": ["https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed"], "@id": "https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c", "related": [], "entryCreated": "2026-03-20", "entryModified": "2026-08-14", "entryCreator": {"@type": "foaf:Person", "name": "@rcasteran"}}</script>
+</head>
+<body>
+
+<script>
+(function() {
+  var ua = (navigator && navigator.userAgent) ? navigator.userAgent : '';
+  if (ua && !ua.includes('Mozilla') && !ua.includes('AppleWebKit')) {
+    window.location.replace('./index.jsonld');
+  }
+})();
+</script>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <a class="logo" href="https://www.3se.info/index.html">
+        <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;">
+            <!-- Outer edges -->
+            <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
+              <line x1="170" y1="30" x2="50"  y2="270"/>
+              <line x1="170" y1="30" x2="290" y2="270"/>
+              <line x1="170" y1="30" x2="170" y2="220"/>
+              <line x1="50"  y1="270" x2="290" y2="270"/>
+              <line x1="50"  y1="270" x2="170" y2="220"/>
+              <line x1="290" y1="270" x2="170" y2="220"/>
+            </g>
+            <!-- Inner depth edges (dashed) -->
+            <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
+              <line x1="170" y1="148" x2="50"  y2="270"/>
+              <line x1="170" y1="148" x2="290" y2="270"/>
+              <line x1="170" y1="148" x2="170" y2="220"/>
+            </g>
+            <!-- Nodes -->
+            <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
+            <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+            <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+            <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
+          </svg>3<span>SE</span>
+      </a>
+      <select class="version-switcher" onchange="if (this.value) window.location.href = this.value;" aria-label="Select ontology release version">
+      <option value="/3se-onto/">Latest</option>
+      <option value="/3se-onto/1-0/" selected>1.0</option>
+    </select>
+    </div>
+    <nav>
+      <a href="/3se-onto/1-0/">Index</a>
+      <a href="/3se-onto/1-0/domains/">Domains</a>
+      <a href="/3se-onto/1-0/terms/">Terms</a>
+      <a href="/3se-onto/1-0/references/">References</a>
+      <a href="/3se-onto/1-0/properties/">Properties</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div style="background:#fff7ed;border:1px solid #fde68a;border-radius:var(--radius);padding:.6rem 1rem;text-align:center;font-size:.82rem;color:#92400e;margin-bottom:2rem">You are viewing archived release <strong>1.0</strong> — this snapshot is frozen and will not change. <a href="/3se-onto/" style="color:#92400e;text-decoration:underline">Go to latest</a></div>
+
+<nav class="breadcrumb">
+  <a href="/3se-onto/1-0/">Index</a>
+  <span>/</span>
+  <a href="/3se-onto/1-0/terms/">Terms</a>
+  <span>/</span>
+  <span>Security hardware non-functional requirement - 3SE</span>
+</nav>
+
+<div style="margin-bottom:2rem">
+  <div style="display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap">
+    <h1>Security hardware non-functional requirement - 3SE</h1><span class="badge" style="color:#3b82f6;border-color:#3b82f6;margin-left:.75rem">Reviewed</span>
+  </div>
+  <p style="margin-top:.35rem;font-family:var(--mono);font-size:.72rem;color:var(--muted2)">https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c</p>
+  
+  
+  <blockquote class="definition">Security non-functional requirement which is relevant for security engineering.</blockquote>
+</div>
+
+
+
+
+
+
+
+
+        <div class="card" style="margin-top:1.5rem">
+          <h3 style="margin-bottom:1rem">Relations</h3>
+          <table class="relations-table"><tr><td>Subclass of</td><td><a href="/3se-onto/1-0/terms/hardware-non-functional-req-3se-069be64e186075ed/">hardware-non-functional-req-3se-069be64e186075ed</a></td></tr></table>
+        </div>
+
+
+<div class="card" style="margin-top:1.5rem">
+  <h3 style="margin-bottom:.75rem">JSON-LD</h3>
+  <pre class="code-block">{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Security hardware non-functional requirement - 3SE",
+  "description": "Security non-functional requirement which is relevant for security engineering.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-hardware-non-functional-req-3se-069bdc3121117d6c",
+  "related": [],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}</pre>
+  <p style="margin-top:.75rem;font-size:.8rem;color:var(--muted)">
+    Raw JSON-LD: <a href="./index.jsonld">index.jsonld</a>
+  </p>
+</div>
+
+<div class="provenance">Created 2026-03-20 &nbsp;&middot;&nbsp; Modified 2026-08-14 &nbsp;&middot;&nbsp; by @rcasteran</div>
+
+</main>
+<footer>
+  <p>
+    © 2022 3SE — System, Safety &amp; Security Engineering &nbsp;·&nbsp;
+    <a href="https://www.3se.info/">www.3se.info</a> &nbsp;·&nbsp;
+    Generated 2026-08-14 13:10 UTC
+  </p>
+</footer>
+</body>
+</html>

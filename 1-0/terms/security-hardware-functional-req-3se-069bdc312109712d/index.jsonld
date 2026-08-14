@@ -1,0 +1,18 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Security hardware functional requirement - 3SE",
+  "description": "Hardware functional requirement which is relevant for security engineering.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-hardware-functional-req-3se-069bdc312109712d",
+  "related": [],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

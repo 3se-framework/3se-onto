@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System feature - 3SE",
+  "description": "A Feature about a product or a service.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c"
+  ],
+  "entryCreated": "2026-04-11",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

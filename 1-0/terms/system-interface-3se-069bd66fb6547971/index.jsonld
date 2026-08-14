@@ -1,0 +1,30 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System interface - 3SE",
+  "description": "Boundary across which two systems and/or enabling systems and/or actors meet and exchange flows.",
+  "status": "reviewed",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815",
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a"
+  ],
+  "conveys": [
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
+  ],
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software component state - 3SE",
+  "description": "State of a software component.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da"
+  ],
+  "fires": [
+    "https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
+  ],
+  "entryCreated": "2026-04-12",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System attribute breakdown structure - 3SE",
+  "description": "Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:\n(1) A system attribute is composed of at least two system element attributes.\n(2) A system attribute allocates a high level physical element attribute.\n(3) A system element attribute allocates a physical element attribute.\n(4) A system element attribute can be a system attribute.\nNote: principle (4) excludes principle (3).",
+  "status": "reviewed",
+  "@id": "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
+    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
+    "https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
+  ],
+  "entryCreated": "2026-04-13",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

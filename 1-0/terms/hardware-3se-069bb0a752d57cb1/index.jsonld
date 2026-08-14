@@ -1,0 +1,48 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Hardware - 3SE",
+  "description": "Physical element that is used to process, store, or transmit software or data, and that exposes hardware interfaces.",
+  "status": "reviewed",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
+  ],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
+    "https://www.3se.info/3se-onto/terms/safety-hardware-constraint-3se-069bdc3120aa7eff",
+    "https://www.3se.info/3se-onto/terms/security-hardware-constraint-3se-069bdc3121007939",
+    "https://www.3se.info/3se-onto/terms/hardware-constraint-3se-069be64e18377cf1",
+    "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488",
+    "https://www.3se.info/3se-onto/terms/hardware-functional-req-3se-069be64e18587020",
+    "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed",
+    "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71",
+    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
+    "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235",
+    "https://www.3se.info/3se-onto/terms/hardware-req-3se-069ee5005a3d7e34",
+    "https://www.3se.info/3se-onto/terms/hardware-validation-3se-069ee5005a6171ce",
+    "https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63",
+    "https://www.3se.info/3se-onto/terms/hardware-fault-3se-069f11b2ff8f72c6",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6",
+    "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
+    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
+  ],
+  "entryCreated": "2026-03-18",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

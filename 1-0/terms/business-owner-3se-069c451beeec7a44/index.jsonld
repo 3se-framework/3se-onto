@@ -1,0 +1,44 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Business owner - 3SE",
+  "description": "Role that is accountable for the goal analysis and the value analysis.\nIt contributes to the feature analysis, the stakeholder requirement analysis and the risk analysis.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44",
+  "isResponsibleFor": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4",
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20",
+    "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0",
+    "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
+    "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608",
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
+  ],
+  "isAccountableFor": [
+    "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
+    "https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a",
+    "https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10",
+    "https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844",
+    "https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722",
+    "https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f"
+  ],
+  "isSupporting": [
+    "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
+    "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32",
+    "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442",
+    "https://www.3se.info/3se-onto/terms/feature-model-3se-069d3f26ae067509",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476"
+  ],
+  "entryCreated": "2026-03-25",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

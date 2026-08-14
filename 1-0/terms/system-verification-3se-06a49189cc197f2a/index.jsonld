@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System verification - 3SE",
+  "description": "Evaluation of the deliverables of a given system development phase through inspection to determine whether they satisfy the conditions imposed at the end of that phase.",
+  "status": "reviewed",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-verification-3se-06a49189cc197f2a",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "entryCreated": "2026-07-04",
+  "entryModified": "2026-08-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
