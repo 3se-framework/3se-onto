@@ -1,0 +1,155 @@
+name: Release ontology site
+
+# Publishes a permanent, frozen snapshot of the ontology site for a release,
+# alongside the live "latest" site — without ever changing any @id identifier.
+#
+# Entry points after this runs:
+#   https://www.3se.info/3se-onto/         — live, always reflects HEAD
+#   https://www.3se.info/3se-onto/<x>-<y>/ — frozen snapshot of release X.Y (tag X.Y), never changes again
+#
+# How it works:
+#   1. Fetch (or create) the `site-versions` branch, which permanently
+#      accumulates one folder per release, and use it to compute the full
+#      list of published versions (this release included).
+#   2. Build a self-contained versioned site from the release tag (internal
+#      links point within /3se-onto/<x>-<y>/, but every @id stays on the
+#      permanent, unversioned https://www.3se.info/3se-onto/... base — see
+#      scripts/generate_site.py), with a version-switcher dropdown listing
+#      every version known so far.
+#   3. Archive that versioned build permanently into `site-versions`, under
+#      <x>-<y>/. That branch only ever grows — nothing here deletes an
+#      existing version folder, and an already-archived snapshot's dropdown
+#      is not patched retroactively by a later release.
+#   4. Build the live "latest" site fresh from HEAD, with the same
+#      version-switcher list.
+#   5. Assemble the deploy artifact: latest (site root) + every version
+#      folder accumulated so far in `site-versions`, and deploy the whole
+#      tree to GitHub Pages in one shot, since a Pages deployment always
+#      replaces the entire published tree.
+#
+# Trigger: push a tag named X.Y (major.minor only, e.g. 1.0, 2.3) — the tag
+# pins the exact commit a release was published from, matching how OWL
+# versionIRIs are meant to work. Can also be re-run manually for a past tag.
+
+on:
+  push:
+    tags:
+      - "*.*"   # tag name is X.Y (e.g. 1.0) — no "v" prefix anywhere, including the published URL
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to (re)publish, e.g. 1.0"
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to push the frozen snapshot to site-versions
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout release tag
+        uses: actions/checkout@v6.0.0
+        with:
+          ref: ${{ inputs.tag || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Determine release version
+        id: version
+        run: |
+          TAG="${{ inputs.tag || github.ref_name }}"
+          if [[ ! "$TAG" =~ ^[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Tag '$TAG' does not match the required X.Y (major.minor) format."
+            exit 1
+          fi
+          VERSION_DOT="$TAG"
+          VERSION_DASH="${VERSION_DOT//./-}"
+          echo "dot=$VERSION_DOT" >> "$GITHUB_OUTPUT"
+          echo "dash=$VERSION_DASH" >> "$GITHUB_OUTPUT"
+          echo "Releasing $TAG -> /3se-onto/${VERSION_DASH}/"
+
+      - uses: actions/setup-python@v6.2.0
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Prepare site-versions archive worktree
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin site-versions >/dev/null 2>&1; then
+            git fetch origin site-versions:site-versions
+            git worktree add archive site-versions
+          else
+            git worktree add --orphan -b site-versions archive
+          fi
+
+      - name: Compute known-versions list (for the dropdown)
+        id: known
+        env:
+          VERSION_DOT: ${{ steps.version.outputs.dot }}
+        run: |
+          existing=$(cd archive && ls -d [0-9]*/ 2>/dev/null \
+            | sed 's#/$##; s#-#.#' || true)
+          all=$(printf '%s\n%s\n' "$existing" "$VERSION_DOT" | grep -v '^$' | sort -u)
+          list=$(echo "$all" | paste -sd, -)
+          echo "list=$list" >> "$GITHUB_OUTPUT"
+          echo "Known versions: $list"
+
+      - name: Build versioned snapshot (${{ steps.version.outputs.dot }})
+        run: |
+          python scripts/generate_site.py \
+            --output-dir _site_version \
+            --base-path "/3se-onto/${{ steps.version.outputs.dash }}" \
+            --version "${{ steps.version.outputs.dot }}" \
+            --versions "${{ steps.known.outputs.list }}"
+
+      - name: Archive snapshot permanently into site-versions branch
+        env:
+          VERSION_DASH: ${{ steps.version.outputs.dash }}
+          VERSION_DOT: ${{ steps.version.outputs.dot }}
+        run: |
+          set -e
+          rm -rf "archive/${VERSION_DASH}"
+          mkdir -p "archive/${VERSION_DASH}"
+          cp -r "_site_version/." "archive/${VERSION_DASH}/"
+
+          cd archive
+          git add "${VERSION_DASH}"
+          if git diff --cached --quiet; then
+            echo "${VERSION_DASH} is already archived and unchanged — nothing to commit."
+          else
+            git commit -m "Archive release ${VERSION_DOT}"
+            git push origin site-versions
+          fi
+
+      - name: Build latest site
+        run: |
+          python scripts/generate_site.py \
+            --output-dir _site \
+            --versions "${{ steps.known.outputs.list }}"
+
+      - name: Assemble deploy artifact (latest + every archived version)
+        run: |
+          for dir in archive/[0-9]*/; do
+            name="$(basename "$dir")"
+            rm -rf "_site/${name}"
+            cp -r "$dir" "_site/${name}"
+          done
+
+      - uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: _site/
+
+      - id: deployment
+        uses: actions/deploy-pages@v4.0.5

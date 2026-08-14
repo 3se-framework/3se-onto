@@ -140,3 +140,8 @@ dmypy.json
 
 # Claude files
 .claude/
+
+# Generated ontology site build output (scripts/generate_site.py)
+/_site/
+/_site_version/
+/archive/

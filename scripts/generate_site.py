@@ -13,6 +13,7 @@
 #   Each HTML page embeds a <script type="application/ld+json"> block and a
 #   JS snippet that redirects non-browser user-agents to index.jsonld.
 
+import argparse
 import json
 import re
 import shutil
@@ -26,8 +27,31 @@ PROPERTIES_DIR = Path("properties")
 DOMAINS_DIR = Path("domains")
 SITE_DIR = Path("_site")
 
+# Root-relative path prefix for all internal browsing links (nav, breadcrumbs,
+# cross-links between entries). Defaults to the live "latest" site root.
+# A release build overrides this to "/3se-onto/<x>-<y>" via --base-path so the
+# resulting snapshot is self-contained and never links out to the live site.
+# This is purely a browsing concern — it never affects the @id identifiers
+# below, which stay permanent across every release (see BASE_IRIS).
+SITE_ROOT = "/3se-onto"
+
+# Set via --version on a release build. When set, rendered pages show a banner
+# marking the page as an archived, frozen snapshot.
+VERSION_LABEL: str | None = None
+
+# Set via --versions. The full list of published release versions (dot form,
+# e.g. ["1.0", "1.1"]), used to populate the version-switcher dropdown on
+# every page. A snapshot's dropdown reflects the versions known at the time
+# it was built — already-archived snapshots are frozen and are not patched
+# retroactively when a later release is published.
+KNOWN_VERSIONS: list[str] = []
+
 SEP = " &nbsp;&middot;&nbsp; "  # separator used between inline link lists
 
+# Base IRIs for @id identifiers. These are permanent and version-independent —
+# they must NEVER be parameterized by release, so that a term's identity URI
+# keeps resolving forever regardless of which release introduced or last
+# touched it. Only SITE_ROOT (browsing links) varies per release build.
 BASE_IRIS: dict[str, str] = {
     "terms": "https://www.3se.info/3se-onto/terms/",
     "references": "https://www.3se.info/3se-onto/references/",
@@ -161,7 +185,7 @@ def href_for_uri(uri: str) -> str:
     for dir_name, base in BASE_IRIS.items():
         if uri.startswith(base):
             stem = uri[len(base):]
-            return f"/3se-onto/{dir_name}/{stem}/"
+            return f"{SITE_ROOT}/{dir_name}/{stem}/"
     return uri
 
 
@@ -383,6 +407,7 @@ header {
   border-bottom: 1px solid var(--rule);
 }
 .header-inner { display: contents; }
+.brand { display: flex; align-items: center; gap: 1rem; }
 .logo {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
@@ -409,6 +434,19 @@ header nav a {
   transition: color 0.2s;
 }
 header nav a:hover { color: var(--accent); text-decoration: none; }
+
+.version-switcher {
+  background: var(--white);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: .3rem .55rem;
+  font-family: var(--mono);
+  font-size: .72rem;
+  color: var(--text2);
+  cursor: pointer;
+  outline: none;
+}
+.version-switcher:focus { border-color: var(--text); }
 
 /* ── Main ── */
 main {
@@ -649,6 +687,49 @@ CONNEG_SCRIPT = """
 """
 
 
+def render_version_switcher() -> str:
+    """
+    Render a <select> dropdown letting readers jump between the live
+    "latest" site and any archived release snapshot.
+
+    Always jumps to absolute, unversioned-root paths (/3se-onto/... or
+    /3se-onto/<x>-<y>/...) regardless of which snapshot is currently being
+    browsed, so it works the same from any page. Reflects KNOWN_VERSIONS as
+    passed at build time — an already-archived snapshot's dropdown is frozen
+    with whatever versions existed when it was built (see KNOWN_VERSIONS).
+    Returns an empty string when no release has been published yet.
+    """
+    if not KNOWN_VERSIONS:
+        return ""
+
+    def sort_key(v: str) -> tuple[int, int]:
+        major, _, minor = v.partition(".")
+        try:
+            return (int(major), int(minor))
+        except ValueError:
+            return (0, 0)
+
+    current_value = "/3se-onto/"
+    options = ['<option value="/3se-onto/">Latest</option>']
+    for v in sorted(set(KNOWN_VERSIONS), key=sort_key, reverse=True):
+        value = f'/3se-onto/{v.replace(".", "-")}/'
+        options.append(f'<option value="{value}">{v}</option>')
+        if VERSION_LABEL == v:
+            current_value = value
+
+    options_html = "\n      ".join(options).replace(
+        f'value="{current_value}"', f'value="{current_value}" selected', 1
+    )
+
+    return (
+        '<select class="version-switcher" '
+        'onchange="if (this.value) window.location.href = this.value;" '
+        'aria-label="Select ontology release version">\n'
+        f'      {options_html}\n'
+        '    </select>'
+    )
+
+
 def html_shell(title: str, body: str, jsonld: dict | None = None,
                description: str = "") -> str:
     meta_desc = f'<meta name="description" content="{description}">' if description else ""
@@ -661,6 +742,16 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
         )
     conneg = CONNEG_SCRIPT if jsonld else ""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    version_banner = ""
+    if VERSION_LABEL:
+        version_banner = (
+            '<div style="background:#fff7ed;border:1px solid #fde68a;border-radius:var(--radius);'
+            'padding:.6rem 1rem;text-align:center;font-size:.82rem;color:#92400e;margin-bottom:2rem">'
+            f'You are viewing archived release <strong>{VERSION_LABEL}</strong> — '
+            'this snapshot is frozen and will not change. '
+            '<a href="/3se-onto/" style="color:#92400e;text-decoration:underline">Go to latest</a>'
+            '</div>'
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -678,40 +769,44 @@ def html_shell(title: str, body: str, jsonld: dict | None = None,
 {conneg}
 <header>
   <div class="header-inner">
-    <a class="logo" href="https://www.3se.info/index.html">
-      <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;">
-          <!-- Outer edges -->
-          <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
-            <line x1="170" y1="30" x2="50"  y2="270"/>
-            <line x1="170" y1="30" x2="290" y2="270"/>
-            <line x1="170" y1="30" x2="170" y2="220"/>
-            <line x1="50"  y1="270" x2="290" y2="270"/>
-            <line x1="50"  y1="270" x2="170" y2="220"/>
-            <line x1="290" y1="270" x2="170" y2="220"/>
-          </g>
-          <!-- Inner depth edges (dashed) -->
-          <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
-            <line x1="170" y1="148" x2="50"  y2="270"/>
-            <line x1="170" y1="148" x2="290" y2="270"/>
-            <line x1="170" y1="148" x2="170" y2="220"/>
-          </g>
-          <!-- Nodes -->
-          <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
-          <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
-          <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
-          <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
-        </svg>3<span>SE</span>
-    </a>
+    <div class="brand">
+      <a class="logo" href="https://www.3se.info/index.html">
+        <svg width="28" height="28" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;margin-right:8px;">
+            <!-- Outer edges -->
+            <g stroke="#1a5faa" stroke-width="14" stroke-linejoin="round">
+              <line x1="170" y1="30" x2="50"  y2="270"/>
+              <line x1="170" y1="30" x2="290" y2="270"/>
+              <line x1="170" y1="30" x2="170" y2="220"/>
+              <line x1="50"  y1="270" x2="290" y2="270"/>
+              <line x1="50"  y1="270" x2="170" y2="220"/>
+              <line x1="290" y1="270" x2="170" y2="220"/>
+            </g>
+            <!-- Inner depth edges (dashed) -->
+            <g stroke="#1a5faa" stroke-width="8" stroke-dasharray="18 12" opacity="0.45">
+              <line x1="170" y1="148" x2="50"  y2="270"/>
+              <line x1="170" y1="148" x2="290" y2="270"/>
+              <line x1="170" y1="148" x2="170" y2="220"/>
+            </g>
+            <!-- Nodes -->
+            <circle cx="170" cy="30"  r="14" fill="#1a5faa"/>
+            <circle cx="50"  cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+            <circle cx="290" cy="270" r="10" fill="#1a5faa" opacity="0.7"/>
+            <circle cx="170" cy="220" r="10" fill="#1a5faa" opacity="0.7"/>
+          </svg>3<span>SE</span>
+      </a>
+      {render_version_switcher()}
+    </div>
     <nav>
-      <a href="/3se-onto/">Index</a>
-      <a href="/3se-onto/domains/">Domains</a>
-      <a href="/3se-onto/terms/">Terms</a>
-      <a href="/3se-onto/references/">References</a>
-      <a href="/3se-onto/properties/">Properties</a>
+      <a href="{SITE_ROOT}/">Index</a>
+      <a href="{SITE_ROOT}/domains/">Domains</a>
+      <a href="{SITE_ROOT}/terms/">Terms</a>
+      <a href="{SITE_ROOT}/references/">References</a>
+      <a href="{SITE_ROOT}/properties/">Properties</a>
     </nav>
   </div>
 </header>
 <main>
+{version_banner}
 {body}
 </main>
 <footer>
@@ -821,7 +916,7 @@ def render_index(se3_terms: list[dict], other_terms: list[dict],
         rows += (
             f'<tr data-q="{safe_title.lower()} {safe_desc.lower()}"'
             f' data-type="{safe_type}" data-status="{safe_status}">'
-            f'<td><a href="/3se-onto/{e["dir"]}/{e["stem"]}/">{e["title"]}</a></td>'
+            f'<td><a href="{SITE_ROOT}/{e["dir"]}/{e["stem"]}/">{e["title"]}</a></td>'
             f'<td><span style="font-family:var(--mono);font-size:.75rem;{type_style}">'
             f'{e["type"]}</span></td>'
             f'<td>{status_cell}</td>'
@@ -2361,9 +2456,9 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
 
     body = f"""
 <nav class="breadcrumb">
-  <a href="/3se-onto/">Index</a>
+  <a href="{SITE_ROOT}/">Index</a>
   <span>/</span>
-  <a href="/3se-onto/terms/">Terms</a>
+  <a href="{SITE_ROOT}/terms/">Terms</a>
   <span>/</span>
   <span>{title}</span>
 </nav>
@@ -2502,9 +2597,9 @@ def render_reference_page(ref: dict,
 
     body = f"""
 <nav class="breadcrumb">
-  <a href="/3se-onto/">Index</a>
+  <a href="{SITE_ROOT}/">Index</a>
   <span>/</span>
-  <a href="/3se-onto/references/">References</a>
+  <a href="{SITE_ROOT}/references/">References</a>
   <span>/</span>
   <span>{title}</span>
 </nav>
@@ -2629,9 +2724,9 @@ def render_property_page(prop: dict, ref_index: dict[str, dict]) -> str:
 
     body = f"""
 <nav class="breadcrumb">
-  <a href="/3se-onto/">Index</a>
+  <a href="{SITE_ROOT}/">Index</a>
   <span>/</span>
-  <a href="/3se-onto/properties/">Properties</a>
+  <a href="{SITE_ROOT}/properties/">Properties</a>
   <span>/</span>
   <span>{title}</span>
 </nav>
@@ -2726,9 +2821,9 @@ def render_domain_page(domain: dict, terms_index: dict[str, dict]) -> str:
 
     body = f"""
 <nav class="breadcrumb">
-  <a href="/3se-onto/">Index</a>
+  <a href="{SITE_ROOT}/">Index</a>
   <span>/</span>
-  <a href="/3se-onto/domains/">Domains</a>
+  <a href="{SITE_ROOT}/domains/">Domains</a>
   <span>/</span>
   <span>{title}</span>
 </nav>
@@ -2779,7 +2874,7 @@ def render_listing(heading: str, subtitle: str, entries: list[dict],
         items += f"""
         <li>
           <span class="entry-title">
-            <a href="/3se-onto/{dir_name}/{stem}/">{e.get("title", stem)}</a>
+            <a href="{SITE_ROOT}/{dir_name}/{stem}/">{e.get("title", stem)}</a>
             {badge}
           </span>
           {'<p class="entry-desc">' + desc + '</p>' if desc else ''}
@@ -2787,7 +2882,7 @@ def render_listing(heading: str, subtitle: str, entries: list[dict],
 
     body = f"""
 <nav class="breadcrumb">
-  <a href="/3se-onto/">Index</a>
+  <a href="{SITE_ROOT}/">Index</a>
   <span>/</span>
   <span>{breadcrumb_label}</span>
 </nav>
@@ -2807,6 +2902,39 @@ def render_listing(heading: str, subtitle: str, entries: list[dict],
 # ---------------------------------------------------------------------------
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Generate the 3SE ontology static site.")
+    parser.add_argument(
+        "--output-dir", default="_site",
+        help="Directory to write the generated site into (default: _site).",
+    )
+    parser.add_argument(
+        "--base-path", default="/3se-onto",
+        help="Root-relative path prefix for all internal browsing links "
+             "(default: /3se-onto). A release build passes e.g. /3se-onto/1-0 "
+             "so the resulting snapshot is self-contained.",
+    )
+    parser.add_argument(
+        "--version", default=None,
+        help="Release version label (e.g. '1.0') for an archived snapshot build. "
+             "Adds an archived-release banner to every page. @id identifiers are "
+             "never affected by this — they stay on the permanent, unversioned "
+             "base IRIs regardless of this flag.",
+    )
+    parser.add_argument(
+        "--versions", default="",
+        help="Comma-separated list of all published release versions in dot form "
+             "(e.g. '1.0,1.1'), used to populate the version-switcher dropdown on "
+             "every page. Pass the same full list to both the latest build and "
+             "each versioned build so their dropdowns agree.",
+    )
+    args = parser.parse_args()
+
+    global SITE_DIR, SITE_ROOT, VERSION_LABEL, KNOWN_VERSIONS
+    SITE_DIR = Path(args.output_dir)
+    SITE_ROOT = args.base_path.rstrip("/") or "/3se-onto"
+    VERSION_LABEL = args.version
+    KNOWN_VERSIONS = [v.strip() for v in args.versions.split(",") if v.strip()]
+
     terms = load_directory(TERMS_DIR)
     references = load_directory(REFERENCES_DIR)
     properties = load_directory(PROPERTIES_DIR)

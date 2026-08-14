@@ -69,6 +69,16 @@ scripts/        — CI/CD pipeline scripts
 
 Each entry is a JSON-LD file conforming to the `skos:Concept` type, identified by a time-ordered UUIDv7-suffixed slug URI under `https://www.3se.info/3se-onto/`. Fields are validated automatically on every push.
 
+## Releases
+
+The ontology is published continuously at [www.3se.info/3se-onto/](https://www.3se.info/3se-onto/), which always reflects the current state of `main`.
+
+Each release additionally gets a permanent, frozen snapshot at `https://www.3se.info/3se-onto/<major>-<minor>/` — e.g. [www.3se.info/3se-onto/1-0/](https://www.3se.info/3se-onto/1-0/) for release `1.0`. A snapshot never changes once published: it captures the ontology exactly as it stood at that release's tag. Every page includes a version switcher for moving between the latest site and any past release.
+
+Term, reference, and property identifiers (`@id`) are permanent and version-independent — they always resolve under the unversioned `https://www.3se.info/3se-onto/terms/...` base regardless of which release introduced or last touched them. Only the browsable release snapshots are versioned; identifiers never are.
+
+A release is cut by tagging a commit `<major>.<minor>` (e.g. `1.0`) and pushing the tag, which triggers the `Release ontology site` GitHub Actions workflow.
+
 ## Contributing
 
 The ontology is community-driven. To propose a new term, correct a definition, or add a mapping to a standard not yet covered, please create an issue.
