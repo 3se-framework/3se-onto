@@ -11,7 +11,7 @@
   "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439",
   "entryCreated": "2026-03-28",
-  "entryModified": "2026-03-28",
+  "entryModified": "2026-08-14",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
