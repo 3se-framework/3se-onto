@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System architect - 3SE",
   "description": "Role that is accountable for the functional architecture, the physical architecture, the system architecture, the system requirement analysis, the system attribute analysis, the product architecture and the service architecture.\nIt contributes to the stakeholder requirement analysis, the operational analysis, the system functional analysis, the system validation analysis, the risk analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],

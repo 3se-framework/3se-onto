@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Conceptual model - 3SE",
   "description": "Abstract model that shows an interconnected set of model elements which represent the attributes and/or the features of an entity.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1"
   ],

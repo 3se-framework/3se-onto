@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Failure - 3SE",
   "description": "Termination of the ability of an entity to perform a function as specified due to a fault.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/failure-26262-1-2018-069bb0f6e7d079d7"
   ],

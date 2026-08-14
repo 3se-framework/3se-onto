@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Security service - 3SE",
   "description": "Service which adds value for the service user by helping him to achieve some security goals.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
   ],

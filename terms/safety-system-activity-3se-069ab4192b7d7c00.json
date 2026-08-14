@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Safety system activity - 3SE",
   "description": "A system activity which is relevant for safety engineering",
-  "status": "draft",
+  "status": "reviewed",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

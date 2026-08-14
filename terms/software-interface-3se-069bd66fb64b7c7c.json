@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Software interface - 3SE",
   "description": "Boundary across which a software and a hardware meet and exchange flows.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
   ],

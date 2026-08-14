@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Assessment gate - 3SE",
   "description": "Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to redefine it.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb"
   ],

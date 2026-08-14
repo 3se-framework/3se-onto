@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Software feature - 3SE",
   "description": "A feature about a software product.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
   ],

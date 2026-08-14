@@ -5,7 +5,7 @@
   "description": "Relates an evaluation case to the entity it was developed to evaluate, to determine whether that entity satisfies the criteria it defines.",
   "domain": "skos:Concept",
   "range": "skos:Concept",
-  "status": "draft",
+  "status": "reviewed",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

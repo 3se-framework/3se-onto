@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Security system feature - 3SE",
   "description": "A feature about a system which is relevant for security engineering",
-  "status": "draft",
+  "status": "reviewed",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

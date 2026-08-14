@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System state breakdown structure - 3SE",
   "description": "Breakdown structure of the system state that supports the functional architecture by following the principles below:\n(1) A system state is composed of at least two system element states.\n(2) A system state allocates at least one system function.\n(3) A system element state allocates at least one system element function.\n(4) A system element state can be a system state.\nNote: principle (4) excludes principe (3).",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"

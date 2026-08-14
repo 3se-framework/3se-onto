@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System attribute breakdown structure - 3SE",
   "description": "Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:\n(1) A system attribute is composed of at least two system element attributes.\n(2) A system attribute allocates a high level physical element attribute.\n(3) A system element attribute allocates a physical element attribute.\n(4) A system element attribute can be a system attribute.\nNote: principle (4) excludes principle (3).",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"

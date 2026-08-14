@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Functional validation - 3SE",
   "description": "Evaluation of an entity to determine whether it satisfies the functional requirements allocated to it at the end of a development phase.",
-  "status": "draft",
+  "status": "reviewed",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/functional-testing-istqb-06a270455c6e746e"
   ],

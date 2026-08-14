@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Business owner - 3SE",
   "description": "Role that is accountable for the goal analysis and the value analysis.\nIt contributes to the feature analysis, the stakeholder requirement analysis and the risk analysis.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],

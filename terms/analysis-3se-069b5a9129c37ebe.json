@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Analysis - 3SE",
   "description": "Evaluation method of an attribute or feature of an entity using a set of model and calculation.",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe",
   "entryCreated": "2026-03-14",
   "entryModified": "2026-06-29",

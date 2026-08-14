@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Security system activity - 3SE",
   "description": "A system activity which is relevant for security engineering",
-  "status": "draft",
+  "status": "reviewed",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

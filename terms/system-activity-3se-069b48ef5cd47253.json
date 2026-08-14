@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System activity - 3SE",
   "description": "Set of cohesive system functions to be performed to achieve a goal, which transforms incoming exchanges into outgoing exchanges.",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6"

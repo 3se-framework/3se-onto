@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Functional architecture - 3SE",
   "description": "Analysis of the system function to determine:\n(1) what system states of a functional element are activating it.\n(2) what functional interface of a functional element is allocating its consumed flows and its produced flows.",
-  "status": "draft",
+  "status": "reviewed",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e"
   ],

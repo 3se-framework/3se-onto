@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Validation run - 3SE",
   "description": "The execution of a sequence of validation cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the validation cases and to wrap up post executions.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c"
   ],

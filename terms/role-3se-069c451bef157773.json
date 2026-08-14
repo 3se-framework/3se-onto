@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Role - 3SE",
   "description": "Set of responsibilities that a Person or other Agent can take in an organization.",
-  "status": "draft",
+  "status": "reviewed",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/role-w3c-vocab-org-2014-069c451bef1c79f0"
   ],

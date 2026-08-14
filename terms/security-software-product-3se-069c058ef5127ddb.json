@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Security software product - 3SE",
   "description": "Implementation of a system composed of some security software.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/software-product-3se-069c058ef51e7f93"
   ],

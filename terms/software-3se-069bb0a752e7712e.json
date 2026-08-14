@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Software - 3SE",
   "description": "Physical element that is the combination of computer instructions that enables hardware to perform computational or control functions, and that exposes software interfaces.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f"
   ],

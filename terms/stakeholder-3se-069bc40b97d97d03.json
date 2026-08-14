@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Stakeholder - 3SE",
   "description": "A person or organization who influences an attribute or a feature of an entity, or who is impacted by one of them.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f"
   ],

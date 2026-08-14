@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Service level agreement - 3SE",
   "description": "Documented agreement between the service provider and the service user, setting out the conditions under which the service user can use the service's features and attributes.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60"
   ],

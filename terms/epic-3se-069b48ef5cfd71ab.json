@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Epic - 3SE",
   "description": "Significant solution development initiative for a given release done in an iteration",
-  "status": "draft",
+  "status": "reviewed",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458"
   ],

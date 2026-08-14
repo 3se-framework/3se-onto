@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System attribute analysis - 3SE",
   "description": "Analysis of the goal to determine what system attribute is contributing to it.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
   ],

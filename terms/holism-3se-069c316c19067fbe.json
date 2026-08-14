@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Holism - 3SE",
   "description": "A system possesses emergent attributes of features that cannot be explained solely by its system elements and their interactions",
-  "status": "draft",
+  "status": "reviewed",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/holism-general-system-theory-revised-1973-069c316c1913736d"
   ],

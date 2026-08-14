@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System element function attribute - 3SE",
   "description": "Attribute of a system element function.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],

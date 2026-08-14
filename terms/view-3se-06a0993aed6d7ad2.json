@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "View - 3SE",
   "description": "A filtered projection over a set of concepts created for a certain purpose and covering a certain scope.",
-  "status": "draft",
+  "status": "reviewed",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96"
   ],

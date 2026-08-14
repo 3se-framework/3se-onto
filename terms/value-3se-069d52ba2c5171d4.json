@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Value - 3SE",
   "description": "An assessment of the benefits that stakeholders will derive from achieving their objectives, taking into account the resources required to provide them with the solution needed to achieve them.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/value-12973-2020-069d52ba2c3376a8"
   ],

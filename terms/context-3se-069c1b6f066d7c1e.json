@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Context - 3SE",
   "description": "Presence of a subset of the interdependent actors and/or interdependent systems of the milieu within a geometrically closed area surrounding the system of interest, that frames its behavior in a given situation.",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
   "related": [
     "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f",

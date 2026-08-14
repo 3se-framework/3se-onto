@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Exchange - 3SE",
   "description": "Output made of one or more flows that is produced by an activity and consumed by another activity.",
-  "status": "draft",
+  "status": "reviewed",
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044"
   ],

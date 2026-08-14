@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Product - 3SE",
   "description": "Implementation of a system that is based on a release, produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.",
-  "status": "draft",
+  "status": "reviewed",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2"
   ],

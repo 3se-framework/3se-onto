@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Software state - 3SE",
   "description": "State of a software.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea"
   ],

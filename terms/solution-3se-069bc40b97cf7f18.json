@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Solution - 3SE",
   "description": "Combination of people, processes, and technologies to implement a system.",
-  "status": "draft",
+  "status": "reviewed",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b"
   ],

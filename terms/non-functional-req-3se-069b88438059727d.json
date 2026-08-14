@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Non-functional requirement - 3SE",
   "description": "Requirement that pertains to an attribute of the solution.",
-  "status": "draft",
+  "status": "reviewed",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723"
   ],

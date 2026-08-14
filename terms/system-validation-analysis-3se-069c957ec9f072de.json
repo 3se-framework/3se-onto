@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System validation analysis - 3SE",
   "description": "Analysis of a system requirement, a system constraint or a system architecture constraint to decide what system validation cases are evaluating it.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
   ],

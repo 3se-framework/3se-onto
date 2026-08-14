@@ -3,7 +3,7 @@
   "@type": "skos:Collection",
   "title": "Business engineering - 3SE",
   "description": "Domain covering the decomposition and allocation of stakeholder goals into features and attributes, the value they deliver to stakeholders, the actors supporting them, the interdependent actors influencing them, and the opportunities and risks arising from the system of interest's milieu.",
-  "status": "draft",
+  "status": "reviewed",
   "members": [
     "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
     "https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84",

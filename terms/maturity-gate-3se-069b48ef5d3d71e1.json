@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Maturity gate - 3SE",
   "description": "Verification of a candidate release for a development phase where a decision is made to continue to the next phase (with or without modifications) or to redefine it. ",
-  "status": "draft",
+  "status": "reviewed",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a"
   ],
