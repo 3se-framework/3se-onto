@@ -11,6 +11,9 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
   ],
+  "isAccountableFor": [
+    "https://www.3se.info/3se-onto/terms/variability-analysis-3se"
+  ],
   "isSupporting": [
     "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
     "https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640",
