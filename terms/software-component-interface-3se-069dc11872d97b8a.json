@@ -10,13 +10,14 @@
   "@id": "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025"
+    "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025",
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
   ],
   "conveys": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
   "entryCreated": "2026-04-12",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

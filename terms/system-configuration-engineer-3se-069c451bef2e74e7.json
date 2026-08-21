@@ -77,6 +77,23 @@
     "https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2",
     "https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e",
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
-    "https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd"
+    "https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd",
+    "https://www.3se.info/3se-onto/terms/attribute-variant-3se-06a8873e373c71af",
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0",
+    "https://www.3se.info/3se-onto/terms/functional-element-variant-3se-06a8873e37657804",
+    "https://www.3se.info/3se-onto/terms/functional-interface-attribute-variant-3se-06a8873e376f7950",
+    "https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244",
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8",
+    "https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e",
+    "https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221",
+    "https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d",
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
+    "https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6",
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7",
+    "https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff",
+    "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723"
   ]
 }

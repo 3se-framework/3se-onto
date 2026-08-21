@@ -14,7 +14,8 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3",
   "related": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/variability-analysis-3se-06a888a0c0817f9b"
   ],
   "entryCreated": "2026-08-21",
   "entryModified": "2026-08-21"

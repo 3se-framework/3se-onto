@@ -31,7 +31,9 @@
     "https://www.3se.info/3se-onto/terms/hardware-fault-3se-069f11b2ff8f72c6",
     "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6",
     "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
-    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8"
+    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516",
+    "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
@@ -40,7 +42,7 @@
     "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

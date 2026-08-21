@@ -33,7 +33,9 @@
     "https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e",
-    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3"
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3",
+    "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780",
+    "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
