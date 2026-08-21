@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "isVariantOf - Schema.org",
+  "description": "Indicates the kind of product that this is a variant of.",
+  "subPropertyOf": [
+    "https://schema.org/isVariantOf"
+  ],
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/schema-org-30-0"
+  ],
+  "status": "standard"
+}

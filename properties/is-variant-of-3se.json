@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "isVariantOf - 3SE",
+  "description": "Relates a variant concept to the base concept it is an alternative of. It is safe to infer that the variant inherits all features of the base concept, unless defined locally. This property is not transitive.",
+  "subPropertyOf": [
+    "https://www.3se.info/3se-onto/properties/is-variant-of-schema-org-30-0"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}
