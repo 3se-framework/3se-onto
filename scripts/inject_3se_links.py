@@ -177,7 +177,8 @@ def extract_qualifier_words(se3_concepts: dict[str, str]) -> tuple[set[str], set
 
 def name_in_description(name: str, description: str,
                         prefix_qualifiers: set[str] | None = None,
-                        suffix_qualifiers: set[str] | None = None) -> bool:
+                        suffix_qualifiers: set[str] | None = None,
+                        all_concept_name_variants: set[str] | None = None) -> bool:
     """
     Return True if concept name (or its plural/singular form) appears as a
     whole phrase in description, and is NOT part of a longer compound concept.
@@ -188,11 +189,18 @@ def name_in_description(name: str, description: str,
     - Suffix guard: rejects a match if the word immediately after it is a
       known suffix qualifier (e.g. 'case' after 'test', 'run' after 'test').
 
+    Guards are only applied when the guard word combined with the matched
+    phrase (prefix_word + phrase, or phrase + suffix_word) is itself a suffix
+    or prefix of a known concept name. This prevents spurious rejections when
+    the guard word is unrelated to the matched concept (e.g. a list item
+    ending in 'variants' preceding an unrelated 'X variants' entry).
+
     For single-word concept names, an additional POS guard is applied:
     the matched word must be tagged as a noun (NN*) in context, rejecting
     verb usages (e.g. 'exchange flows' where 'exchange' is a verb).
     """
     is_single_word = len(name.split()) == 1
+    cvs = all_concept_name_variants or set()
 
     for variant in name_variants(name):
         # Only apply the POS guard to the base form of the concept name.
@@ -213,7 +221,16 @@ def name_in_description(name: str, description: str,
                     if preceding_words:
                         last_word = preceding_words[-1].lower().rstrip(".,;:")
                         if last_word in prefix_qualifiers:
-                            continue  # compound concept — skip
+                            # Only reject if last_word + phrase is a suffix of a
+                            # known concept name — i.e. it genuinely extends this
+                            # phrase into a longer compound. If no such concept
+                            # exists, the guard fires spuriously (e.g. a list item
+                            # ending in 'variants' before an unrelated match).
+                            candidate = (last_word + " " + variant).lower()
+                            if cvs and not any(cv.endswith(candidate) for cv in cvs):
+                                pass  # spurious — allow
+                            else:
+                                continue  # compound concept — skip
 
             # Suffix guard: check the word immediately after the match
             if suffix_qualifiers:
@@ -223,7 +240,13 @@ def name_in_description(name: str, description: str,
                     if following_words:
                         first_word = following_words[0].lower().strip(".,;:")
                         if first_word in suffix_qualifiers:
-                            continue  # compound concept — skip
+                            # Only reject if phrase + first_word is a prefix of a
+                            # known concept name.
+                            candidate = (variant + " " + first_word).lower()
+                            if cvs and not any(cv.startswith(candidate) for cv in cvs):
+                                pass  # spurious — allow
+                            else:
+                                continue  # compound concept — skip
 
             # POS guard: for the base form of single-word names, reject verb usages
             if apply_pos_guard:
@@ -288,6 +311,14 @@ def main() -> int:
     # Build qualifier words from multi-word 3SE concept names
     prefix_qualifiers, suffix_qualifiers = extract_qualifier_words(se3_concepts)
 
+    # Build the full set of concept name variants (singular + plural, lowercased)
+    # used by the guards to verify that a firing guard word actually extends the
+    # matched phrase into a longer known compound concept.
+    all_concept_name_variants: set[str] = set()
+    for n in se3_concepts.values():
+        for nv in name_variants(n):
+            all_concept_name_variants.add(nv.lower())
+
     # ── Step 1: compute justified related links for every term ────────────────
     # justified[stem] = set of URIs that are justified for that stem
     justified: dict[str, set[str]] = {stem: set() for stem in index}
@@ -304,7 +335,8 @@ def main() -> int:
             if not description:
                 continue
 
-            if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers):
+            if name_in_description(name, description, prefix_qualifiers, suffix_qualifiers,
+                                   all_concept_name_variants):
                 tgt_uri = uri_for_stem(tgt_stem)
                 tgt_title = tgt_data.get("title", "")
 
