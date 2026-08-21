@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System attribute variant - 3SE",
+  "description": "Alternative attribute of a system.",
+  "status": "draft",
+  "isVariantOf": [
+    "system-attribute-3se"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf",
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21"
+}

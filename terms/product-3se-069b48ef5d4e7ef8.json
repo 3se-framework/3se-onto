@@ -13,14 +13,15 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "related": [
     "https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d",
     "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
     "https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
-    "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9"
+    "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9",
+    "https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631"

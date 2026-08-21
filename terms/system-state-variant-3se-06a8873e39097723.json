@@ -1,0 +1,31 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System state variant - 3SE",
+  "description": "Variant of a system state.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534",
+    "https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
+    "https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

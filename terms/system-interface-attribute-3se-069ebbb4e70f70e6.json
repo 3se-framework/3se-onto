@@ -16,10 +16,11 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
-    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815",
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-variant-3se-06a8873e38dd7a3d"
   ],
   "entryCreated": "2026-04-24",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

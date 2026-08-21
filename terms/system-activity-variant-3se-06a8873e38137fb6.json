@@ -1,0 +1,26 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System activity variant - 3SE",
+  "description": "Set of cohesive system functions or system function variants to be performed to achieve a goal, which transforms incoming exchanges into outgoing exchanges.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
+    "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
-  "@type": "skos:Concept",
-  "title": "Variant - 3SE",
-  "description": "Alternative entity resulting of an alternative feature or attribute of a main entity.",
-  "status": "draft"
-}

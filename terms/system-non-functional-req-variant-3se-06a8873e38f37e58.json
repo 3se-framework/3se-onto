@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System non-functional requirement variant - 3SE",
+  "description": "Variant of system non-functional requirement.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc",
+    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-variant-3se-06a8873e3885733f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

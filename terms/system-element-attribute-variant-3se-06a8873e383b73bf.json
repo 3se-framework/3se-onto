@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element attribute variant - 3SE",
+  "description": "Variant of a system element attribute.",
+  "status": "reviewed",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-variant-3se-06a8873e383b73bf",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "High level functional element attribute variant - 3SE",
+  "description": "Variant of a high level functional element attribute.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
+    "https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
+    "https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-variant-3se-06a8873e37847bdc",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e",
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

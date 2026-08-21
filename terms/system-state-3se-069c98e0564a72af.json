@@ -27,13 +27,14 @@
     "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
     "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
     "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657",
-    "https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2"
+    "https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2",
+    "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
   ],
   "entryCreated": "2026-03-29",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

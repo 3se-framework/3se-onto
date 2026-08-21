@@ -13,7 +13,7 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "related": [
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
     "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
@@ -38,7 +38,11 @@
     "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477",
     "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253",
     "https://www.3se.info/3se-onto/terms/enabling-activity-3se-06a049901cae7607",
-    "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043"
+    "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043",
+    "https://www.3se.info/3se-onto/terms/activity-variant-3se-06a8873e36fd7bd6",
+    "https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4",
+    "https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6",
+    "https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"

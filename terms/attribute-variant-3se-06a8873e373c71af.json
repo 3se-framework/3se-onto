@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Attribute variant - 3SE",
+  "description": "Alternative attribute of an entity.",
+  "status": "draft",
+  "isVariantOf": [
+    "attribute-3se-069b72bee1327dcf"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/attribute-variant-3se-06a8873e373c71af",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

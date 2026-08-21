@@ -1,0 +1,33 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Physical interface variant - 3SE",
+  "description": "Variant of a physical interface",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8",
+    "https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b",
+    "https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-variant-3se-06a8873e381d7cb6"
+  ],
+  "conveys": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

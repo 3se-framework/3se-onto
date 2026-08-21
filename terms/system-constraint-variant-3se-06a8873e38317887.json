@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System constraint variant - 3SE",
+  "description": "Variant of a system constraint.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-variant-3se-06a8873e38467013"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-constraint-variant-3se-06a8873e38317887",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

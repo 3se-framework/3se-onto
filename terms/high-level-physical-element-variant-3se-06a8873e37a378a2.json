@@ -1,0 +1,27 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "High level physical element variant - 3SE",
+  "description": "Combination of interacting physical elements or physical element variants.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
+    "https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206",
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-variant-3se-06a8873e378f742b",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-variant-3se-06a8873e379978a4"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2",
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

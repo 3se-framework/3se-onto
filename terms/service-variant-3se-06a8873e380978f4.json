@@ -1,0 +1,44 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Service variant - 3SE",
+  "description": "Set of service mean or service mean variant which is provided by a contract variant between the service provider and the service consumer, is based on a release, and adds value for the service user by helping him to achieve its goal under a service level agreement variant.",
+  "status": "reviewed",
+  "isVariantOf": [
+    "service-3se-069c5aee69f47c9d"
+  ],
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05",
+    "https://www.3se.info/3se-onto/terms/service-mean-variant-3se-06a8873e37ff788c",
+    "https://www.3se.info/3se-onto/terms/service-contract-variant-3se-06a8873e37ea78aa",
+    "https://www.3se.info/3se-onto/terms/service-level-agreement-variant-3se-06a8873e37f47df4"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
+    "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8",
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3"
+  ],
+  "isRepresentedBy": [
+    "https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
+    "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
+    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d",
+    "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

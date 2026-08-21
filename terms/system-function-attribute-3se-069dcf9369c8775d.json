@@ -15,13 +15,14 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
   "entryCreated": "2026-04-13",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
   "related": [
     "https://www.3se.info/3se-onto/terms/system-function-attribute-breakdown-structure-3se-069ebabe8f837237",
-    "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3"
+    "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
+    "https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7"
   ]
 }

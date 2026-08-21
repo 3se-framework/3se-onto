@@ -9,10 +9,11 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1",
   "related": [
-    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93"
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+    "https://www.3se.info/3se-onto/terms/service-level-agreement-variant-3se-06a8873e37f47df4"
   ],
   "entryCreated": "2026-03-26",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

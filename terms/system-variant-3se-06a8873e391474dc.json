@@ -1,0 +1,37 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System variant - 3SE",
+  "description": "Combination of interacting system elements or system element variants organized to achieve one or more goals.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
+    "https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2",
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
+    "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723",
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/system-interface-variant-3se"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e",
+    "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
