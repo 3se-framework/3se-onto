@@ -9,7 +9,6 @@
   "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5",
   "related": [
-    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0",
     "https://www.3se.info/3se-onto/terms/functional-element-variant-3se-06a8873e37657804",
     "https://www.3se.info/3se-onto/terms/functional-interface-attribute-variant-3se-06a8873e376f7950",
