@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element constraint variant - 3SE",
+  "description": "Variant about a system element constraint.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-constraint-variant-3se"
+  ]
+}

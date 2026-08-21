@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC 26558:2017",
+  "abstract": "Software and systems engineering — Methods and tools for variability modelling in software and systems product line",
+  "issued": "2017",
+  "uri": "https://www.iso.org/standard/43117.html",
+  "status": "bibo:published"
+}

@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element interface attribute variant - 3SE",
+  "description": "Variant of a system element interface attribute.",
+  "status": "draft",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25",
+    "physical-interface-attribute-variant-3se",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-variant-3se"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-interface-attribute-variant-3se"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Product variant - 3SE",
+  "description": "Implementation of a system variant that is based on a release, produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.",
+  "status": "draft",
+  "isVariantOf": [
+    "product-3se-069b48ef5d4e7ef8"
+  ],
+  "isComposedOf": [
+    "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
+    "https://www.3se.info/3se-onto/terms/product-element-variant-3se"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
+    "https://www.3se.info/3se-onto/terms/system-feature-variant-3se",
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se"
+  ],
+  "isRepresentedBy": [
+    "https://www.3se.info/3se-onto/terms/system-variant-3se"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/asset-variant-3se",
+    "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05",
+    "https://www.3se.info/3se-onto/terms/service-mean-variant-3se"
+  ]
+}
