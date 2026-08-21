@@ -5,5 +5,12 @@
   "abstract": "Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.",
   "issued": "2026",
   "uri": "https://schema.org/",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/schema-org-30-0-06a8842c301a741f",
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
