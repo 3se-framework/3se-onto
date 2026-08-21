@@ -72,7 +72,9 @@ TERM_ARRAY_FIELDS: list[str] = [
     "produces",
     "consumes",
     "conveys",
-    "evaluates"
+    "evaluates",
+    "fires",
+    "isVariantOf"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
