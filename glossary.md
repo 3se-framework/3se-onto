@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-08-21 16:16 UTC*
+*Generated on 2026-08-21 16:34 UTC*
 
 This glossary contains **7 3SE domain(s)**, **397 3SE term(s)**, **111 other term(s)**, **14 3SE property(ies)**, **10 other property(ies)**, and **28 reference(s)**.
 
@@ -781,6 +781,16 @@ Note: it determines if the entity satisfies the stakeholders’ goals.
 | Related | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [function-variant-3se-06a8873e375174a4](https://www.3se.info/3se-onto/terms/function-variant-3se-06a8873e375174a4), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 | Variant of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Activity variant"]
+    N2["Activity"]
+
+    N1 -.->|variant of| N2
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -860,6 +870,16 @@ Note: it determines if the entity satisfies the stakeholders’ goals.
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
 | Variant of | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Asset variant"]
+    N2["Asset"]
+
+    N1 -.->|variant of| N2
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -909,6 +929,16 @@ Note: it determines if the entity satisfies the stakeholders’ goals.
 | Relation | Terms |
 |---|---|
 | Variant of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Attribute variant"]
+    N2["Attribute"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -1546,6 +1576,16 @@ graph TD
 | Related | [system-feature-variant-3se-06a8873e38b07bb8](https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8) |
 | Variant of | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Feature variant"]
+    N2["Feature"]
+
+    N1 -.->|variant of| N2
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -1619,6 +1659,16 @@ graph TD
 | Related | [activity-variant-3se-06a8873e36fd7bd6](https://www.3se.info/3se-onto/terms/activity-variant-3se-06a8873e36fd7bd6), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b) |
 | Variant of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Function variant"]
+    N2["Function"]
+
+    N1 -.->|variant of| N2
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -1687,8 +1737,8 @@ graph TD
     N13 -.->|allocates| N14
     N13 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N6 -.->|allocates| N9
     N14 -.->|allocates| N15
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -1811,6 +1861,32 @@ graph TD
 | Variant of | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864) |
 | Allocated by | [functional-element-variant-3se-06a8873e37657804](https://www.3se.info/3se-onto/terms/functional-element-variant-3se-06a8873e37657804), [physical-element-attribute-variant-3se-06a8873e37ae7244](https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Functional element attribute variant"]
+    N2["Functional element attribute"]
+    N3["System element state attribute"]
+    N4["System architecture constraint"]
+    N5["System element state attribute variant"]
+    N6["System architecture constraint variant"]
+    N7["System non-functional requirement"]
+    N8["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N5 -.->|variant of| N3
+    N6 -.->|variant of| N4
+    N8 -.->|variant of| N7
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N5 -.->|allocates| N4
+    N5 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N1 -.->|allocates| N8
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -1864,9 +1940,9 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
 ```
 
@@ -1888,6 +1964,85 @@ graph TD
 | Exposes | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [functional-interface-variant-3se](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se) |
 | Variant of | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504) |
 | Allocated by | [physical-element-variant-3se-06a8873e37b8700e](https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Functional element variant"]
+    N2["Functional element"]
+    N3["System element state"]
+    N4["System element function"]
+    N5["Software function"]
+    N6["Software feature"]
+    N7["Hardware function"]
+    N8["Hardware feature"]
+    N9["System element function attribute"]
+    N10["System architecture constraint"]
+    N11["Hardware state"]
+    N12["Software state"]
+    N13["System element state attribute"]
+    N14["System element state variant"]
+    N15["System element function variant"]
+    N16["System element function attribute variant"]
+    N17["System architecture constraint variant"]
+    N18["System element state attribute variant"]
+    N19["Functional element attribute"]
+    N20["System non-functional requirement"]
+    N21["Functional element attribute variant"]
+    N22["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N14 -.->|variant of| N3
+    N15 -.->|variant of| N4
+    N16 -.->|variant of| N9
+    N17 -.->|variant of| N10
+    N18 -.->|variant of| N13
+    N21 -.->|variant of| N19
+    N22 -.->|variant of| N20
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N4 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N4 -.->|allocates| N10
+    N3 -.->|allocates| N11
+    N11 -.->|allocates| N7
+    N3 -.->|allocates| N12
+    N12 -.->|allocates| N5
+    N3 -.->|allocates| N10
+    N3 -.->|allocates| N13
+    N13 -.->|allocates| N10
+    N1 -.->|allocates| N14
+    N14 -.->|allocates| N4
+    N14 -.->|allocates| N15
+    N15 -.->|allocates| N5
+    N15 -.->|allocates| N7
+    N15 -.->|allocates| N9
+    N15 -.->|allocates| N16
+    N16 -.->|allocates| N10
+    N16 -.->|allocates| N17
+    N15 -.->|allocates| N10
+    N15 -.->|allocates| N17
+    N14 -.->|allocates| N11
+    N14 -.->|allocates| N12
+    N14 -.->|allocates| N10
+    N14 -.->|allocates| N17
+    N14 -.->|allocates| N18
+    N18 -.->|allocates| N10
+    N18 -.->|allocates| N17
+    N1 -.->|allocates| N19
+    N19 -.->|allocates| N13
+    N19 -.->|allocates| N20
+    N1 -.->|allocates| N21
+    N21 -.->|allocates| N13
+    N21 -.->|allocates| N18
+    N21 -.->|allocates| N20
+    N21 -.->|allocates| N22
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -1959,6 +2114,21 @@ graph TD
 | Variant of | [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6) |
 | Allocated by | [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71), [physical-interface-attribute-variant-3se-06a8873e37c17ca8](https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Functional interface attribute variant"]
+    N2["Functional interface attribute"]
+    N3["System architecture constraint"]
+    N4["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -1976,6 +2146,37 @@ graph TD
 | Conveys | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 | Variant of | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
 | Allocated by | [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Functional interface variant"]
+    N2["Functional interface"]
+    N3["Flow"]
+    N4["Exchange"]
+    N5["Flow attribute"]
+    N6["System non-functional requirement"]
+    N7["Functional interface attribute"]
+    N8["System architecture constraint"]
+    N9["Functional interface attribute variant"]
+    N10["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N9 -.->|variant of| N7
+    N10 -.->|variant of| N8
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N3 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N1 -.->|allocates| N9
+    N9 -.->|allocates| N8
+    N9 -.->|allocates| N10
+    N1 -.->|allocates| N8
+    N1 -.->|allocates| N10
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -2347,8 +2548,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -2775,6 +2976,37 @@ graph TD
 | Variant of | [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e) |
 | Allocated by | [high-level-functional-element-variant-3se-06a8873e378f742b](https://www.3se.info/3se-onto/terms/high-level-functional-element-variant-3se-06a8873e378f742b), [high-level-physical-element-attribute-variant-3se-06a8873e379978a4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-variant-3se-06a8873e379978a4) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["High level functional element attribute variant"]
+    N2["High level functional element attribute"]
+    N3["System state attribute"]
+    N4["System function attribute"]
+    N5["System non-functional requirement"]
+    N6["System state attribute variant"]
+    N7["System function attribute variant"]
+    N8["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N7 -.->|variant of| N4
+    N8 -.->|variant of| N5
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N3 -.->|allocates| N5
+    N1 -.->|allocates| N6
+    N6 -.->|allocates| N4
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N5
+    N7 -.->|allocates| N8
+    N6 -.->|allocates| N5
+    N6 -.->|allocates| N8
+    N1 -.->|allocates| N5
+    N1 -.->|allocates| N8
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -2792,6 +3024,78 @@ graph TD
 | Allocates | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-state-variant-3se-06a8873e39097723](https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723), [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e), [high-level-functional-element-attribute-variant-3se-06a8873e37847bdc](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-variant-3se-06a8873e37847bdc) |
 | Variant of | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206) |
 | Allocated by | [high-level-physical-element-variant-3se-06a8873e37a378a2](https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["High level functional element variant"]
+    N2["High level functional element"]
+    N3["System state"]
+    N4["System function"]
+    N5["System activity"]
+    N6["System feature"]
+    N7["System functional requirement"]
+    N8["System function attribute"]
+    N9["System non-functional requirement"]
+    N10["System state attribute"]
+    N11["System state variant"]
+    N12["System function variant"]
+    N13["System activity variant"]
+    N14["System feature variant"]
+    N15["System functional requirement variant"]
+    N16["System function attribute variant"]
+    N17["System non-functional requirement variant"]
+    N18["System state attribute variant"]
+    N19["High level functional element attribute"]
+    N20["High level functional element attribute variant"]
+
+    N1 -.->|variant of| N2
+    N11 -.->|variant of| N3
+    N12 -.->|variant of| N4
+    N13 -.->|variant of| N5
+    N14 -.->|variant of| N6
+    N15 -.->|variant of| N7
+    N16 -.->|variant of| N8
+    N17 -.->|variant of| N9
+    N20 -.->|variant of| N19
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N4 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N3 -.->|allocates| N10
+    N10 -.->|allocates| N8
+    N10 -.->|allocates| N9
+    N1 -.->|allocates| N11
+    N11 -.->|allocates| N4
+    N11 -.->|allocates| N12
+    N12 -.->|allocates| N13
+    N13 -.->|allocates| N6
+    N13 -.->|allocates| N14
+    N12 -.->|allocates| N7
+    N12 -.->|allocates| N15
+    N12 -.->|allocates| N8
+    N12 -.->|allocates| N16
+    N16 -.->|allocates| N9
+    N16 -.->|allocates| N17
+    N11 -.->|allocates| N10
+    N11 -.->|allocates| N18
+    N18 -.->|allocates| N8
+    N18 -.->|allocates| N16
+    N18 -.->|allocates| N9
+    N18 -.->|allocates| N17
+    N1 -.->|allocates| N19
+    N19 -.->|allocates| N10
+    N19 -.->|allocates| N9
+    N1 -.->|allocates| N20
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N18
+    N20 -.->|allocates| N9
+    N20 -.->|allocates| N17
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -2863,6 +3167,44 @@ graph TD
 | Variant of | [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4) |
 | Allocated by | [high-level-physical-element-variant-3se-06a8873e37a378a2](https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["High level physical element attribute variant"]
+    N2["High level physical element attribute"]
+    N3["High level functional element attribute"]
+    N4["System state attribute"]
+    N5["System function attribute"]
+    N6["System non-functional requirement"]
+    N7["High level functional element attribute variant"]
+    N8["System state attribute variant"]
+    N9["System function attribute variant"]
+    N10["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N7 -.->|variant of| N3
+    N9 -.->|variant of| N5
+    N10 -.->|variant of| N6
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N6
+    N3 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N7 -.->|allocates| N4
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N5
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N6
+    N9 -.->|allocates| N10
+    N8 -.->|allocates| N6
+    N8 -.->|allocates| N10
+    N7 -.->|allocates| N6
+    N7 -.->|allocates| N10
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -2879,6 +3221,93 @@ graph TD
 | Allocates | [high-level-functional-element-3se-069c03f8a41e7206](https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206), [high-level-functional-element-variant-3se-06a8873e378f742b](https://www.3se.info/3se-onto/terms/high-level-functional-element-variant-3se-06a8873e378f742b), [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4), [high-level-physical-element-attribute-variant-3se-06a8873e379978a4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-variant-3se-06a8873e379978a4) |
 | Variant of | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
 | Allocated by | [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["High level physical element variant"]
+    N2["High level physical element"]
+    N3["High level functional element"]
+    N4["System state"]
+    N5["System function"]
+    N6["System activity"]
+    N7["System feature"]
+    N8["System functional requirement"]
+    N9["System function attribute"]
+    N10["System non-functional requirement"]
+    N11["System state attribute"]
+    N12["High level functional element attribute"]
+    N13["High level functional element variant"]
+    N14["System state variant"]
+    N15["System function variant"]
+    N16["System activity variant"]
+    N17["System feature variant"]
+    N18["System functional requirement variant"]
+    N19["System function attribute variant"]
+    N20["System non-functional requirement variant"]
+    N21["System state attribute variant"]
+    N22["High level functional element attribute variant"]
+    N23["High level physical element attribute"]
+    N24["High level physical element attribute variant"]
+
+    N1 -.->|variant of| N2
+    N13 -.->|variant of| N3
+    N14 -.->|variant of| N4
+    N15 -.->|variant of| N5
+    N16 -.->|variant of| N6
+    N17 -.->|variant of| N7
+    N18 -.->|variant of| N8
+    N19 -.->|variant of| N9
+    N20 -.->|variant of| N10
+    N22 -.->|variant of| N12
+    N24 -.->|variant of| N23
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N5 -.->|allocates| N8
+    N5 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N4 -.->|allocates| N11
+    N11 -.->|allocates| N9
+    N11 -.->|allocates| N10
+    N3 -.->|allocates| N12
+    N12 -.->|allocates| N11
+    N12 -.->|allocates| N10
+    N1 -.->|allocates| N13
+    N13 -.->|allocates| N4
+    N13 -.->|allocates| N14
+    N14 -.->|allocates| N5
+    N14 -.->|allocates| N15
+    N15 -.->|allocates| N16
+    N16 -.->|allocates| N7
+    N16 -.->|allocates| N17
+    N15 -.->|allocates| N8
+    N15 -.->|allocates| N18
+    N15 -.->|allocates| N9
+    N15 -.->|allocates| N19
+    N19 -.->|allocates| N10
+    N19 -.->|allocates| N20
+    N14 -.->|allocates| N11
+    N14 -.->|allocates| N21
+    N21 -.->|allocates| N9
+    N21 -.->|allocates| N19
+    N21 -.->|allocates| N10
+    N21 -.->|allocates| N20
+    N13 -.->|allocates| N12
+    N13 -.->|allocates| N22
+    N22 -.->|allocates| N11
+    N22 -.->|allocates| N21
+    N22 -.->|allocates| N10
+    N22 -.->|allocates| N20
+    N1 -.->|allocates| N23
+    N23 -.->|allocates| N12
+    N1 -.->|allocates| N24
+    N24 -.->|allocates| N12
+    N24 -.->|allocates| N22
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -3492,10 +3921,10 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N10
     N2 -.->|allocates| N10
-    N12 -.->|allocates| N9
-    N12 -.->|allocates| N10
     N5 -.->|allocates| N3
     N9 -.->|allocates| N10
+    N12 -.->|allocates| N9
+    N12 -.->|allocates| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -3617,6 +4046,41 @@ graph TD
 | Variant of | [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3) |
 | Allocated by | [physical-element-variant-3se-06a8873e37b8700e](https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e), [system-element-attribute-variant-3se-06a8873e383b73bf](https://www.3se.info/3se-onto/terms/system-element-attribute-variant-3se-06a8873e383b73bf) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Physical element attribute variant"]
+    N2["Physical element attribute"]
+    N3["Functional element attribute"]
+    N4["System element state attribute"]
+    N5["System architecture constraint"]
+    N6["System non-functional requirement"]
+    N7["Functional element attribute variant"]
+    N8["System element state attribute variant"]
+    N9["System architecture constraint variant"]
+    N10["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N7 -.->|variant of| N3
+    N8 -.->|variant of| N4
+    N9 -.->|variant of| N5
+    N10 -.->|variant of| N6
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N3 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N7 -.->|allocates| N4
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N5
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N6
+    N7 -.->|allocates| N10
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N10
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -3665,8 +4129,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -3687,6 +4151,108 @@ graph TD
 | Exposes | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-interface-variant-3se](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se) |
 | Variant of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 | Allocated by | [system-element-variant-3se-06a8873e38a57dcd](https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Physical element variant"]
+    N2["Physical element"]
+    N3["Functional element"]
+    N4["System element state"]
+    N5["System element function"]
+    N6["Software function"]
+    N7["Software feature"]
+    N8["Hardware function"]
+    N9["Hardware feature"]
+    N10["System element function attribute"]
+    N11["System architecture constraint"]
+    N12["Hardware state"]
+    N13["Software state"]
+    N14["System element state attribute"]
+    N15["Functional element attribute"]
+    N16["System non-functional requirement"]
+    N17["Functional element variant"]
+    N18["System element state variant"]
+    N19["System element function variant"]
+    N20["System element function attribute variant"]
+    N21["System architecture constraint variant"]
+    N22["System element state attribute variant"]
+    N23["Functional element attribute variant"]
+    N24["System non-functional requirement variant"]
+    N25["Physical element attribute"]
+    N26["Physical element attribute variant"]
+    N27["System constraint"]
+    N28["System constraint variant"]
+
+    N1 -.->|variant of| N2
+    N17 -.->|variant of| N3
+    N18 -.->|variant of| N4
+    N19 -.->|variant of| N5
+    N20 -.->|variant of| N10
+    N21 -.->|variant of| N11
+    N22 -.->|variant of| N14
+    N23 -.->|variant of| N15
+    N24 -.->|variant of| N16
+    N26 -.->|variant of| N25
+    N28 -.->|variant of| N27
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N5 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N5 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N5 -.->|allocates| N11
+    N4 -.->|allocates| N12
+    N12 -.->|allocates| N8
+    N4 -.->|allocates| N13
+    N13 -.->|allocates| N6
+    N4 -.->|allocates| N11
+    N4 -.->|allocates| N14
+    N14 -.->|allocates| N11
+    N3 -.->|allocates| N15
+    N15 -.->|allocates| N14
+    N15 -.->|allocates| N16
+    N1 -.->|allocates| N17
+    N17 -.->|allocates| N4
+    N17 -.->|allocates| N18
+    N18 -.->|allocates| N5
+    N18 -.->|allocates| N19
+    N19 -.->|allocates| N6
+    N19 -.->|allocates| N8
+    N19 -.->|allocates| N10
+    N19 -.->|allocates| N20
+    N20 -.->|allocates| N11
+    N20 -.->|allocates| N21
+    N19 -.->|allocates| N11
+    N19 -.->|allocates| N21
+    N18 -.->|allocates| N12
+    N18 -.->|allocates| N13
+    N18 -.->|allocates| N11
+    N18 -.->|allocates| N21
+    N18 -.->|allocates| N22
+    N22 -.->|allocates| N11
+    N22 -.->|allocates| N21
+    N17 -.->|allocates| N15
+    N17 -.->|allocates| N23
+    N23 -.->|allocates| N14
+    N23 -.->|allocates| N22
+    N23 -.->|allocates| N16
+    N23 -.->|allocates| N24
+    N1 -.->|allocates| N25
+    N25 -.->|allocates| N15
+    N25 -.->|allocates| N16
+    N1 -.->|allocates| N26
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N23
+    N26 -.->|allocates| N16
+    N26 -.->|allocates| N24
+    N1 -.->|allocates| N27
+    N1 -.->|allocates| N28
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -3743,6 +4309,29 @@ graph TD
 | Variant of | [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25) |
 | Allocated by | [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e), [system-element-interface-attribute-variant-3se-06a8873e386f7e0c](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-variant-3se-06a8873e386f7e0c) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Physical interface attribute variant"]
+    N2["Physical interface attribute"]
+    N3["Functional interface attribute"]
+    N4["System architecture constraint"]
+    N5["Functional interface attribute variant"]
+    N6["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N5 -.->|variant of| N3
+    N6 -.->|variant of| N4
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N5 -.->|allocates| N4
+    N5 -.->|allocates| N6
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N6
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -3760,6 +4349,59 @@ graph TD
 | Conveys | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Variant of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 | Allocated by | [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Physical interface variant"]
+    N2["Physical interface"]
+    N3["Exchange"]
+    N4["Physical interface attribute"]
+    N5["Functional interface attribute"]
+    N6["System architecture constraint"]
+    N7["Physical interface attribute variant"]
+    N8["Functional interface attribute variant"]
+    N9["System architecture constraint variant"]
+    N10["Functional interface"]
+    N11["Flow"]
+    N12["Flow attribute"]
+    N13["System non-functional requirement"]
+    N14["Functional interface variant"]
+
+    N1 -.->|variant of| N2
+    N7 -.->|variant of| N4
+    N8 -.->|variant of| N5
+    N9 -.->|variant of| N6
+    N14 -.->|variant of| N10
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N7 -.->|allocates| N5
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N6
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N6
+    N7 -.->|allocates| N9
+    N1 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N11 -.->|allocates| N3
+    N11 -.->|allocates| N12
+    N12 -.->|allocates| N13
+    N10 -.->|allocates| N5
+    N10 -.->|allocates| N6
+    N1 -.->|allocates| N14
+    N14 -.->|allocates| N11
+    N14 -.->|allocates| N5
+    N14 -.->|allocates| N8
+    N14 -.->|allocates| N6
+    N14 -.->|allocates| N9
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N9
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -3852,8 +4494,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -3959,9 +4601,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -3995,6 +4637,16 @@ graph TD
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Can be | [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6) |
 | Variant of | [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Product element variant"]
+    N2["Product element"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -4031,6 +4683,26 @@ Note: when the product is an asset, the product owner is also called asset owner
 | Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-feature-variant-3se-06a8873e38b07bb8](https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-attribute-variant-3se-06a8873e38277bc3](https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3) |
 | Can be | [asset-variant-3se-06a8873e3730732e](https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [service-mean-variant-3se-06a8873e37ff788c](https://www.3se.info/3se-onto/terms/service-mean-variant-3se-06a8873e37ff788c) |
 | Variant of | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Product variant"]
+    N2["Product"]
+    N3["System feature"]
+    N4["System feature variant"]
+    N5["System attribute"]
+    N6["System attribute variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N6 -.->|variant of| N5
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N1 -.->|allocates| N6
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -5125,8 +5797,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -5269,6 +5941,16 @@ graph TD
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Variant of | [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["Service contract variant"]
+    N2["Service contract"]
+
+    N1 -.->|variant of| N2
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -5299,6 +5981,16 @@ graph TD
 |---|---|
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Variant of | [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Service level agreement variant"]
+    N2["Service level agreement"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -5331,6 +6023,16 @@ graph TD
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Can be | [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4) |
 | Variant of | [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Service mean variant"]
+    N2["Service mean"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -5368,6 +6070,26 @@ Note: when the service is an asset, the service owner is also called asset owner
 | Allocates | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-feature-variant-3se-06a8873e38b07bb8](https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-attribute-variant-3se-06a8873e38277bc3](https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3) |
 | Can be | [asset-variant-3se-06a8873e3730732e](https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e) |
 | Variant of | [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Service variant"]
+    N2["Service"]
+    N3["System feature"]
+    N4["System feature variant"]
+    N5["System attribute"]
+    N6["System attribute variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N6 -.->|variant of| N5
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N1 -.->|allocates| N6
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -5488,8 +6210,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
 ```
 
@@ -6273,6 +6995,21 @@ graph TD
 | Variant of | [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
 | Allocated by | [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System activity variant"]
+    N2["System activity"]
+    N3["System feature"]
+    N4["System feature variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -6356,6 +7093,16 @@ graph TD
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Variant of | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Allocated by | [functional-interface-attribute-variant-3se-06a8873e376f7950](https://www.3se.info/3se-onto/terms/functional-interface-attribute-variant-3se-06a8873e376f7950), [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71), [physical-interface-attribute-variant-3se-06a8873e37c17ca8](https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e), [system-element-function-attribute-variant-3se-06a8873e385079f2](https://www.3se.info/3se-onto/terms/system-element-function-attribute-variant-3se-06a8873e385079f2), [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5), [system-element-interface-attribute-variant-3se-06a8873e386f7e0c](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-variant-3se-06a8873e386f7e0c), [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790), [system-element-state-attribute-variant-3se-06a8873e389070ca](https://www.3se.info/3se-onto/terms/system-element-state-attribute-variant-3se-06a8873e389070ca), [system-element-state-variant-3se-06a8873e389b7193](https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System architecture constraint variant"]
+    N2["System architecture constraint"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -6490,8 +7237,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -6524,6 +7271,16 @@ graph TD
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Variant of | [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Allocated by | [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6), [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4), [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System attribute variant"]
+    N2["System attribute"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -6583,8 +7340,8 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N6 -.->|allocates| N5
     N11 -.->|allocates| N4
+    N6 -.->|allocates| N5
     N7 -.->|allocates| N5
     N13 -.->|allocates| N9
     N10 -.->|allocates| N14
@@ -6674,6 +7431,16 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Variant of | [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 | Allocated by | [physical-element-variant-3se-06a8873e37b8700e](https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System constraint variant"]
+    N2["System constraint"]
+
+    N1 -.->|variant of| N2
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -6731,6 +7498,48 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Variant of | [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4) |
 | Allocated by | [system-element-variant-3se-06a8873e38a57dcd](https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element attribute variant"]
+    N2["System element attribute"]
+    N3["Physical element attribute"]
+    N4["Functional element attribute"]
+    N5["System element state attribute"]
+    N6["System architecture constraint"]
+    N7["System non-functional requirement"]
+    N8["Physical element attribute variant"]
+    N9["Functional element attribute variant"]
+    N10["System element state attribute variant"]
+    N11["System architecture constraint variant"]
+    N12["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N8 -.->|variant of| N3
+    N9 -.->|variant of| N4
+    N10 -.->|variant of| N5
+    N11 -.->|variant of| N6
+    N12 -.->|variant of| N7
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N3 -.->|allocates| N7
+    N1 -.->|allocates| N8
+    N8 -.->|allocates| N4
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N5
+    N9 -.->|allocates| N10
+    N10 -.->|allocates| N6
+    N10 -.->|allocates| N11
+    N9 -.->|allocates| N7
+    N9 -.->|allocates| N12
+    N8 -.->|allocates| N7
+    N8 -.->|allocates| N12
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -6763,6 +7572,16 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Can be | [system-constraint-variant-3se-06a8873e38317887](https://www.3se.info/3se-onto/terms/system-constraint-variant-3se-06a8873e38317887) |
 | Variant of | [system-element-constraint-3se-069ee425eb8a748f](https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element constraint variant"]
+    N2["System element constraint"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -6822,6 +7641,21 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Variant of | [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b) |
 | Allocated by | [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element function attribute variant"]
+    N2["System element function attribute"]
+    N3["System architecture constraint"]
+    N4["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -6839,6 +7673,37 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Can be | [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1) |
 | Variant of | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2) |
 | Allocated by | [system-element-state-variant-3se-06a8873e389b7193](https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element function variant"]
+    N2["System element function"]
+    N3["Software function"]
+    N4["Software feature"]
+    N5["Hardware function"]
+    N6["Hardware feature"]
+    N7["System element function attribute"]
+    N8["System architecture constraint"]
+    N9["System element function attribute variant"]
+    N10["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N9 -.->|variant of| N7
+    N10 -.->|variant of| N8
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N1 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N1 -.->|allocates| N9
+    N9 -.->|allocates| N8
+    N9 -.->|allocates| N10
+    N1 -.->|allocates| N8
+    N1 -.->|allocates| N10
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -6872,6 +7737,16 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Can be | [system-functional-req-variant-3se-06a8873e38d17f2f](https://www.3se.info/3se-onto/terms/system-functional-req-variant-3se-06a8873e38d17f2f) |
 | Variant of | [system-element-functional-req-3se-069ee425ebb17241](https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element functional requirement variant"]
+    N2["System element functional requirement"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -6929,6 +7804,38 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Variant of | [system-element-interface-attribute-3se-069ebbb4e70678ed](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed) |
 | Allocated by | [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element interface attribute variant"]
+    N2["System element interface attribute"]
+    N3["Physical interface attribute"]
+    N4["Functional interface attribute"]
+    N5["System architecture constraint"]
+    N6["Physical interface attribute variant"]
+    N7["Functional interface attribute variant"]
+    N8["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N6 -.->|variant of| N3
+    N7 -.->|variant of| N4
+    N8 -.->|variant of| N5
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N3 -.->|allocates| N5
+    N1 -.->|allocates| N6
+    N6 -.->|allocates| N4
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N5
+    N7 -.->|allocates| N8
+    N6 -.->|allocates| N5
+    N6 -.->|allocates| N8
+    N1 -.->|allocates| N5
+    N1 -.->|allocates| N8
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -6945,6 +7852,80 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Allocates | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-architecture-constraint-variant-3se-06a8873e381d7cb6](https://www.3se.info/3se-onto/terms/system-architecture-constraint-variant-3se-06a8873e381d7cb6), [system-element-interface-attribute-3se-069ebbb4e70678ed](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed), [system-element-interface-attribute-variant-3se-06a8873e386f7e0c](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-variant-3se-06a8873e386f7e0c) |
 | Can be | [system-interface-variant-3se-06a8873e38e87c2b](https://www.3se.info/3se-onto/terms/system-interface-variant-3se-06a8873e38e87c2b) |
 | Variant of | [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element interface variant"]
+    N2["System element interface"]
+    N3["Physical interface"]
+    N4["Physical interface attribute"]
+    N5["Functional interface attribute"]
+    N6["System architecture constraint"]
+    N7["Functional interface"]
+    N8["Flow"]
+    N9["Exchange"]
+    N10["Flow attribute"]
+    N11["System non-functional requirement"]
+    N12["Physical interface variant"]
+    N13["Physical interface attribute variant"]
+    N14["Functional interface attribute variant"]
+    N15["System architecture constraint variant"]
+    N16["Functional interface variant"]
+    N17["System element interface attribute"]
+    N18["System element interface attribute variant"]
+
+    N1 -.->|variant of| N2
+    N12 -.->|variant of| N3
+    N13 -.->|variant of| N4
+    N14 -.->|variant of| N5
+    N15 -.->|variant of| N6
+    N16 -.->|variant of| N7
+    N18 -.->|variant of| N17
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N6
+    N3 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N8 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N7 -.->|allocates| N5
+    N7 -.->|allocates| N6
+    N3 -.->|allocates| N6
+    N1 -.->|allocates| N12
+    N12 -.->|allocates| N9
+    N12 -.->|allocates| N4
+    N12 -.->|allocates| N13
+    N13 -.->|allocates| N5
+    N13 -.->|allocates| N14
+    N14 -.->|allocates| N6
+    N14 -.->|allocates| N15
+    N13 -.->|allocates| N6
+    N13 -.->|allocates| N15
+    N12 -.->|allocates| N7
+    N12 -.->|allocates| N16
+    N16 -.->|allocates| N8
+    N16 -.->|allocates| N5
+    N16 -.->|allocates| N14
+    N16 -.->|allocates| N6
+    N16 -.->|allocates| N15
+    N12 -.->|allocates| N6
+    N12 -.->|allocates| N15
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N15
+    N1 -.->|allocates| N17
+    N17 -.->|allocates| N4
+    N17 -.->|allocates| N6
+    N1 -.->|allocates| N18
+    N18 -.->|allocates| N4
+    N18 -.->|allocates| N13
+    N18 -.->|allocates| N6
+    N18 -.->|allocates| N15
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -6978,6 +7959,16 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Can be | [system-non-functional-req-variant-3se-06a8873e38f37e58](https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58) |
 | Variant of | [system-element-non-functional-req-3se-069ee425ebbb7edc](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element non-functional requirement variant"]
+    N2["System element non-functional requirement"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7054,6 +8045,21 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Variant of | [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf) |
 | Allocated by | [functional-element-attribute-variant-3se-06a8873e375b75b0](https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0), [system-element-state-variant-3se-06a8873e389b7193](https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element state attribute variant"]
+    N2["System element state attribute"]
+    N3["System architecture constraint"]
+    N4["System architecture constraint variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -7071,6 +8077,60 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Can be | [system-state-variant-3se-06a8873e39097723](https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723) |
 | Variant of | [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 | Allocated by | [functional-element-variant-3se-06a8873e37657804](https://www.3se.info/3se-onto/terms/functional-element-variant-3se-06a8873e37657804), [system-element-variant-3se-06a8873e38a57dcd](https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element state variant"]
+    N2["System element state"]
+    N3["System element function"]
+    N4["Software function"]
+    N5["Software feature"]
+    N6["Hardware function"]
+    N7["Hardware feature"]
+    N8["System element function attribute"]
+    N9["System architecture constraint"]
+    N10["System element function variant"]
+    N11["System element function attribute variant"]
+    N12["System architecture constraint variant"]
+    N13["Hardware state"]
+    N14["Software state"]
+    N15["System element state attribute variant"]
+    N16["System element state attribute"]
+
+    N1 -.->|variant of| N2
+    N10 -.->|variant of| N3
+    N11 -.->|variant of| N8
+    N12 -.->|variant of| N9
+    N15 -.->|variant of| N16
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N3 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N3 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N3 -.->|allocates| N9
+    N1 -.->|allocates| N10
+    N10 -.->|allocates| N4
+    N10 -.->|allocates| N6
+    N10 -.->|allocates| N8
+    N10 -.->|allocates| N11
+    N11 -.->|allocates| N9
+    N11 -.->|allocates| N12
+    N10 -.->|allocates| N9
+    N10 -.->|allocates| N12
+    N1 -.->|allocates| N13
+    N13 -.->|allocates| N6
+    N1 -.->|allocates| N14
+    N14 -.->|allocates| N4
+    N1 -.->|allocates| N9
+    N1 -.->|allocates| N12
+    N1 -.->|allocates| N15
+    N15 -.->|allocates| N9
+    N15 -.->|allocates| N12
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7119,6 +8179,120 @@ It contributes to the iteration analysis, the epic analysis, the feature analysi
 | Can be | [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
 | Exposes | [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-element-interface-variant-3se](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se) |
 | Variant of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System element variant"]
+    N2["System element"]
+    N3["Physical element variant"]
+    N4["Physical element"]
+    N5["Functional element"]
+    N6["System element state"]
+    N7["System element function"]
+    N8["Software function"]
+    N9["Software feature"]
+    N10["Hardware function"]
+    N11["Hardware feature"]
+    N12["System element function attribute"]
+    N13["System architecture constraint"]
+    N14["Hardware state"]
+    N15["Software state"]
+    N16["System element state attribute"]
+    N17["Functional element attribute"]
+    N18["System non-functional requirement"]
+    N19["Functional element variant"]
+    N20["System element state variant"]
+    N21["System element function variant"]
+    N22["System element function attribute variant"]
+    N23["System architecture constraint variant"]
+    N24["System element state attribute variant"]
+    N25["Functional element attribute variant"]
+    N26["System non-functional requirement variant"]
+    N27["Physical element attribute"]
+    N28["Physical element attribute variant"]
+    N29["System constraint"]
+    N30["System constraint variant"]
+    N31["System element attribute variant"]
+    N32["System element attribute"]
+
+    N1 -.->|variant of| N2
+    N3 -.->|variant of| N4
+    N19 -.->|variant of| N5
+    N20 -.->|variant of| N6
+    N21 -.->|variant of| N7
+    N22 -.->|variant of| N12
+    N23 -.->|variant of| N13
+    N24 -.->|variant of| N16
+    N25 -.->|variant of| N17
+    N26 -.->|variant of| N18
+    N28 -.->|variant of| N27
+    N30 -.->|variant of| N29
+    N31 -.->|variant of| N32
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N7 -.->|allocates| N12
+    N12 -.->|allocates| N13
+    N7 -.->|allocates| N13
+    N6 -.->|allocates| N14
+    N14 -.->|allocates| N10
+    N6 -.->|allocates| N15
+    N15 -.->|allocates| N8
+    N6 -.->|allocates| N13
+    N6 -.->|allocates| N16
+    N16 -.->|allocates| N13
+    N5 -.->|allocates| N17
+    N17 -.->|allocates| N16
+    N17 -.->|allocates| N18
+    N3 -.->|allocates| N19
+    N19 -.->|allocates| N6
+    N19 -.->|allocates| N20
+    N20 -.->|allocates| N7
+    N20 -.->|allocates| N21
+    N21 -.->|allocates| N8
+    N21 -.->|allocates| N10
+    N21 -.->|allocates| N12
+    N21 -.->|allocates| N22
+    N22 -.->|allocates| N13
+    N22 -.->|allocates| N23
+    N21 -.->|allocates| N13
+    N21 -.->|allocates| N23
+    N20 -.->|allocates| N14
+    N20 -.->|allocates| N15
+    N20 -.->|allocates| N13
+    N20 -.->|allocates| N23
+    N20 -.->|allocates| N24
+    N24 -.->|allocates| N13
+    N24 -.->|allocates| N23
+    N19 -.->|allocates| N17
+    N19 -.->|allocates| N25
+    N25 -.->|allocates| N16
+    N25 -.->|allocates| N24
+    N25 -.->|allocates| N18
+    N25 -.->|allocates| N26
+    N3 -.->|allocates| N27
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N18
+    N3 -.->|allocates| N28
+    N28 -.->|allocates| N17
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N18
+    N28 -.->|allocates| N26
+    N3 -.->|allocates| N29
+    N3 -.->|allocates| N30
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N20
+    N1 -.->|allocates| N31
+    N31 -.->|allocates| N27
+    N31 -.->|allocates| N28
+```
 
 *Created: 2026-03-16 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7183,6 +8357,16 @@ It contributes to the functional architecture, the physical architecture, the sy
 | Related | [feature-variant-3se-06a8873e37477117](https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117) |
 | Variant of | [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
 | Allocated by | [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6), [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4), [system-activity-variant-3se-06a8873e38137fb6](https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System feature variant"]
+    N2["System feature"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7274,6 +8458,21 @@ graph TD
 | Variant of | [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d) |
 | Allocated by | [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1), [system-state-attribute-variant-3se-06a8873e38fe7bff](https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System function attribute variant"]
+    N2["System function attribute"]
+    N3["System non-functional requirement"]
+    N4["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N4 -.->|variant of| N3
+    N1 -.->|allocates| N3
+    N1 -.->|allocates| N4
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -7353,6 +8552,41 @@ graph TD
 | Variant of | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Allocated by | [system-state-variant-3se-06a8873e39097723](https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System function variant"]
+    N2["System function"]
+    N3["System activity variant"]
+    N4["System activity"]
+    N5["System feature"]
+    N6["System feature variant"]
+    N7["System functional requirement"]
+    N8["System functional requirement variant"]
+    N9["System function attribute"]
+    N10["System non-functional requirement"]
+    N11["System function attribute variant"]
+    N12["System non-functional requirement variant"]
+
+    N1 -.->|variant of| N2
+    N3 -.->|variant of| N4
+    N6 -.->|variant of| N5
+    N8 -.->|variant of| N7
+    N11 -.->|variant of| N9
+    N12 -.->|variant of| N10
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N5
+    N3 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N1 -.->|allocates| N8
+    N1 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N1 -.->|allocates| N11
+    N11 -.->|allocates| N10
+    N11 -.->|allocates| N12
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -7421,6 +8655,16 @@ graph TD
 | Composed of | [system-element-functional-req-3se-069ee425ebb17241](https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241), [system-element-functional-req-variant-3se-06a8873e3865735a](https://www.3se.info/3se-onto/terms/system-element-functional-req-variant-3se-06a8873e3865735a) |
 | Variant of | [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9) |
 | Allocated by | [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System functional requirement variant"]
+    N2["System functional requirement"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7546,6 +8790,20 @@ graph TD
 | Allocates | [system-non-functional-req-variant-3se-06a8873e38f37e58](https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58) |
 | Variant of | [system-interface-attribute-3se-069ebbb4e70f70e6](https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6) |
 
+**Variability**
+
+```mermaid
+graph TD
+    N1["System interface attribute variant"]
+    N2["System interface attribute"]
+    N3["System non-functional requirement variant"]
+    N4["System non-functional requirement"]
+
+    N1 -.->|variant of| N2
+    N3 -.->|variant of| N4
+    N1 -.->|allocates| N3
+```
+
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
 ---
@@ -7608,14 +8866,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N13 -.->|allocates| N12
-    N16 -.->|allocates| N4
+    N14 -.->|allocates| N12
     N15 -.->|exposes| N1
     N2 -.->|allocates| N4
-    N14 -.->|allocates| N12
-    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -7633,6 +8891,16 @@ graph TD
 | Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
 | Composed of | [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790) |
 | Variant of | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System interface variant"]
+    N2["System interface"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7670,6 +8938,16 @@ graph TD
 | Composed of | [system-element-non-functional-req-3se-069ee425ebbb7edc](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc), [system-element-non-functional-req-variant-3se-06a8873e3885733f](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-variant-3se-06a8873e3885733f) |
 | Variant of | [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
 | Allocated by | [functional-element-attribute-variant-3se-06a8873e375b75b0](https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0), [high-level-functional-element-attribute-variant-3se-06a8873e37847bdc](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-variant-3se-06a8873e37847bdc), [physical-element-attribute-variant-3se-06a8873e37ae7244](https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244), [system-function-attribute-variant-3se-06a8873e38bb7ad7](https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7), [system-interface-attribute-variant-3se-06a8873e38dd7a3d](https://www.3se.info/3se-onto/terms/system-interface-attribute-variant-3se-06a8873e38dd7a3d), [system-state-attribute-variant-3se-06a8873e38fe7bff](https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System non-functional requirement variant"]
+    N2["System non-functional requirement"]
+
+    N1 -.->|variant of| N2
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -7878,21 +9156,21 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
+    N40 -.->|allocates| N2
+    N31 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
     N27 -.->|allocates| N18
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
-    N37 -.->|allocates| N1
-    N31 -.->|allocates| N2
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
     N4 -.->|allocates| N7
+    N37 -.->|allocates| N1
     N26 -.->|allocates| N19
-    N40 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -8080,9 +9358,9 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N15 -.->|allocates| N12
     N14 -.->|allocates| N9
     N11 -.->|allocates| N12
-    N15 -.->|allocates| N12
     N4 -.->|allocates| N8
     N13 -.->|allocates| N10
 ```
@@ -8104,6 +9382,60 @@ graph TD
 | Allocates | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1), [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c), [system-state-attribute-variant-3se-06a8873e38fe7bff](https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff) |
 | Variant of | [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 | Allocated by | [high-level-functional-element-variant-3se-06a8873e378f742b](https://www.3se.info/3se-onto/terms/high-level-functional-element-variant-3se-06a8873e378f742b), [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System state variant"]
+    N2["System state"]
+    N3["System function"]
+    N4["System activity"]
+    N5["System feature"]
+    N6["System functional requirement"]
+    N7["System function attribute"]
+    N8["System non-functional requirement"]
+    N9["System function variant"]
+    N10["System activity variant"]
+    N11["System feature variant"]
+    N12["System functional requirement variant"]
+    N13["System function attribute variant"]
+    N14["System non-functional requirement variant"]
+    N15["System state attribute"]
+    N16["System state attribute variant"]
+
+    N1 -.->|variant of| N2
+    N9 -.->|variant of| N3
+    N10 -.->|variant of| N4
+    N11 -.->|variant of| N5
+    N12 -.->|variant of| N6
+    N13 -.->|variant of| N7
+    N14 -.->|variant of| N8
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N3 -.->|allocates| N6
+    N3 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N1 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N10 -.->|allocates| N5
+    N10 -.->|allocates| N11
+    N9 -.->|allocates| N6
+    N9 -.->|allocates| N12
+    N9 -.->|allocates| N7
+    N9 -.->|allocates| N13
+    N13 -.->|allocates| N8
+    N13 -.->|allocates| N14
+    N1 -.->|allocates| N15
+    N15 -.->|allocates| N7
+    N15 -.->|allocates| N8
+    N1 -.->|allocates| N16
+    N16 -.->|allocates| N7
+    N16 -.->|allocates| N13
+    N16 -.->|allocates| N8
+    N16 -.->|allocates| N14
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
@@ -8186,6 +9518,107 @@ It contributes to the operational analysis, the system functional analysis, the 
 | Allocates | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399), [high-level-physical-element-variant-3se-06a8873e37a378a2](https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-state-variant-3se-06a8873e39097723](https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-attribute-variant-3se-06a8873e38277bc3](https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971), [system-interface-variant-3se](https://www.3se.info/3se-onto/terms/system-interface-variant-3se) |
 | Variant of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["System variant"]
+    N2["System"]
+    N3["High level physical element"]
+    N4["High level functional element"]
+    N5["System state"]
+    N6["System function"]
+    N7["System activity"]
+    N8["System feature"]
+    N9["System functional requirement"]
+    N10["System function attribute"]
+    N11["System non-functional requirement"]
+    N12["System state attribute"]
+    N13["High level functional element attribute"]
+    N14["High level physical element attribute"]
+    N15["High level physical element variant"]
+    N16["High level functional element variant"]
+    N17["System state variant"]
+    N18["System function variant"]
+    N19["System activity variant"]
+    N20["System feature variant"]
+    N21["System functional requirement variant"]
+    N22["System function attribute variant"]
+    N23["System non-functional requirement variant"]
+    N24["System state attribute variant"]
+    N25["High level functional element attribute variant"]
+    N26["High level physical element attribute variant"]
+    N27["System attribute"]
+    N28["System attribute variant"]
+
+    N1 -.->|variant of| N2
+    N15 -.->|variant of| N3
+    N16 -.->|variant of| N4
+    N17 -.->|variant of| N5
+    N18 -.->|variant of| N6
+    N19 -.->|variant of| N7
+    N20 -.->|variant of| N8
+    N21 -.->|variant of| N9
+    N22 -.->|variant of| N10
+    N23 -.->|variant of| N11
+    N25 -.->|variant of| N13
+    N26 -.->|variant of| N14
+    N28 -.->|variant of| N27
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N6 -.->|allocates| N9
+    N6 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N5 -.->|allocates| N12
+    N12 -.->|allocates| N10
+    N12 -.->|allocates| N11
+    N4 -.->|allocates| N13
+    N13 -.->|allocates| N12
+    N13 -.->|allocates| N11
+    N3 -.->|allocates| N14
+    N14 -.->|allocates| N13
+    N1 -.->|allocates| N15
+    N15 -.->|allocates| N4
+    N15 -.->|allocates| N16
+    N16 -.->|allocates| N5
+    N16 -.->|allocates| N17
+    N17 -.->|allocates| N6
+    N17 -.->|allocates| N18
+    N18 -.->|allocates| N19
+    N19 -.->|allocates| N8
+    N19 -.->|allocates| N20
+    N18 -.->|allocates| N9
+    N18 -.->|allocates| N21
+    N18 -.->|allocates| N10
+    N18 -.->|allocates| N22
+    N22 -.->|allocates| N11
+    N22 -.->|allocates| N23
+    N17 -.->|allocates| N12
+    N17 -.->|allocates| N24
+    N24 -.->|allocates| N10
+    N24 -.->|allocates| N22
+    N24 -.->|allocates| N11
+    N24 -.->|allocates| N23
+    N16 -.->|allocates| N13
+    N16 -.->|allocates| N25
+    N25 -.->|allocates| N12
+    N25 -.->|allocates| N24
+    N25 -.->|allocates| N11
+    N25 -.->|allocates| N23
+    N15 -.->|allocates| N14
+    N15 -.->|allocates| N26
+    N26 -.->|allocates| N13
+    N26 -.->|allocates| N25
+    N1 -.->|allocates| N5
+    N1 -.->|allocates| N17
+    N1 -.->|allocates| N27
+    N1 -.->|allocates| N28
+```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
 
