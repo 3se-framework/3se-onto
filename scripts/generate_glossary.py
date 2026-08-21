@@ -655,6 +655,99 @@ def render_analysis_allocates_diagram_md(term: dict,
     return ["**Allocations**", ""] + mermaid_lines + [""]
 
 
+def render_variability_diagram_md(term: dict,
+                                  terms_index: dict[str, dict]) -> list[str]:
+    """
+    Render a Variability Mermaid diagram for variant terms as Markdown lines.
+    Returns a fenced mermaid code block, or empty list if not applicable.
+
+    Triggered when the term has an 'isVariantOf' field. The diagram follows:
+      - isVariantOf edges: variant → base concept
+      - allocates edges: variant → allocated concepts (recursively)
+      - For each allocated concept, its own isVariantOf edge (if any)
+    """
+    if not term.get("isVariantOf"):
+        return []
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    isvariantof_edges: list[tuple[str, str]] = []
+    allocates_edges: list[tuple[str, str]] = []
+    visited: set[str] = set()
+
+    def collect(term_data: dict) -> None:
+        uri = term_data.get("@id", "")
+        if not uri or uri in visited:
+            return
+        visited.add(uri)
+
+        variant_of = term_data.get("isVariantOf", [])
+        if isinstance(variant_of, str):
+            variant_of = [variant_of]
+        for base_uri in variant_of:
+            node_id(uri); label_for(uri)
+            node_id(base_uri); label_for(base_uri)
+            isvariantof_edges.append((uri, base_uri))
+
+        allocates = term_data.get("allocates", [])
+        if isinstance(allocates, str):
+            allocates = [allocates]
+        for alloc_uri in allocates:
+            node_id(uri); label_for(uri)
+            node_id(alloc_uri); label_for(alloc_uri)
+            allocates_edges.append((uri, alloc_uri))
+            alloc_term = terms_index.get(alloc_uri)
+            if alloc_term:
+                collect(alloc_term)
+
+    collect(term)
+
+    all_edges = isvariantof_edges + allocates_edges
+    if not all_edges:
+        return []
+
+    isvariantof_edges = list(dict.fromkeys(isvariantof_edges))
+    allocates_edges = list(dict.fromkeys(allocates_edges))
+
+    mermaid_lines = ["```mermaid", "graph TD"]
+    for uri, nid in node_ids.items():
+        lbl = label_for(uri).replace('"', "'")
+        mermaid_lines.append(f'    {nid}["{lbl}"]')
+    mermaid_lines.append("")
+    for subj_uri, obj_uri in isvariantof_edges:
+        s, o = node_id(subj_uri), node_id(obj_uri)
+        mermaid_lines.append(f"    {s} -.->|variant of| {o}")
+    for subj_uri, obj_uri in allocates_edges:
+        s, o = node_id(subj_uri), node_id(obj_uri)
+        mermaid_lines.append(f"    {s} -.->|allocates| {o}")
+    mermaid_lines.append("```")
+
+    return ["**Variability**", ""] + mermaid_lines + [""]
+
+
 # ---------------------------------------------------------------------------
 # Term rendering
 # ---------------------------------------------------------------------------
@@ -846,6 +939,10 @@ def render_term(term: dict, ref_index: dict[str, dict],
     # Allocations diagram (analysis terms only)
     if terms_index:
         lines.extend(render_analysis_allocates_diagram_md(term, terms_index))
+
+    # Variability diagram (variant terms only)
+    if terms_index:
+        lines.extend(render_variability_diagram_md(term, terms_index))
 
     # References
     is_referenced_by = term.get("isReferencedBy", [])
