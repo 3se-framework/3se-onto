@@ -160,6 +160,15 @@
       },
       "uniqueItems": true
     },
+    "isVariantOf": {
+      "description": "3se:isVariantOf — IRIs of base concepts of which this concept is an alternative (variability relation). Not transitive.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "allocates": {
       "description": "3se:allocates — IRIs of concepts that are allocated to elements of a breakdown structure (allocation relation).",
       "type": "array",
