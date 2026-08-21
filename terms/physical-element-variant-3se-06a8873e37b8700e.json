@@ -24,7 +24,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e",
   "related": [
-    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5",
+    "https://www.3se.info/3se-onto/terms/system-variant-breakdown-structure-3se-06a888a0c0777eae"
   ],
   "entryCreated": "2026-08-21",
   "entryModified": "2026-08-21",
