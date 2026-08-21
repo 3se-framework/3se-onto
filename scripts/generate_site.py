@@ -138,6 +138,11 @@ STATE_TRANSITION_RELATION_LABELS: dict[str, str] = {
     "fires": "Fires",
 }
 
+# Human-readable labels for variability relation fields rendered on term pages.
+VARIABILITY_RELATION_LABELS: dict[str, str] = {
+    "isVariantOf": "Variant of",
+}
+
 
 # ---------------------------------------------------------------------------
 # Data helpers
@@ -303,6 +308,23 @@ def build_fired_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     index: dict[str, list[dict]] = {}
     for term in terms:
         val = term.get("fires")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_has_variant_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isVariantOf target. Used to compute the inverse 'has variant'
+    relation: if A isVariantOf B, then B has variant A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isVariantOf")
         if not val:
             continue
         uris = [val] if isinstance(val, str) else val
@@ -2141,7 +2163,8 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                      represents_index: dict[str, list[dict]] | None = None,
                      allocated_by_index: dict[str, list[dict]] | None = None,
                      evaluated_by_index: dict[str, list[dict]] | None = None,
-                     fired_by_index: dict[str, list[dict]] | None = None) -> str:
+                     fired_by_index: dict[str, list[dict]] | None = None,
+                     has_variant_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2407,30 +2430,58 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                 f'</tr>'
             )
 
+    # Variability relations (isVariantOf) and its inverse (has variant)
+    variability_html = ""
+    for field, label in VARIABILITY_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        variability_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+    if has_variant_index:
+        term_id = term.get("@id", "")
+        variant_terms = has_variant_index.get(term_id, [])
+        if variant_terms:
+            links = [render_uri_link(t.get("@id", "")) for t in variant_terms]
+            variability_html += (
+                f'<tr>'
+                f'<td>Has variant</td>'
+                f'<td>{SEP.join(links)}</td>'
+                f'</tr>'
+            )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
     relations_html = ""
-    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or match:
+    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or match) else ""
+                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
-                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or match) else ""
+                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
-                exposure_html or flow_html or evaluation_html or state_transition_html or match) else ""
+                exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
         sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and (
-                flow_html or evaluation_html or state_transition_html or match) else ""
+                flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
         sep5 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if flow_html and (
-                evaluation_html or state_transition_html or match) else ""
+                evaluation_html or state_transition_html or variability_html or match) else ""
         sep6 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if evaluation_html and (
-                state_transition_html or match) else ""
-        sep7 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if state_transition_html and match else ""
+                state_transition_html or variability_html or match) else ""
+        sep7 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if state_transition_html and (
+                variability_html or match) else ""
+        sep8 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if variability_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{variability_html}{sep8}{match}</table>
         </div>"""
 
     # isReferencedBy
@@ -2945,6 +2996,7 @@ def main() -> int:
     allocated_by_index = build_allocated_by_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
+    has_variant_index = build_has_variant_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
 
@@ -3012,7 +3064,8 @@ def main() -> int:
         (out_dir / "index.html").write_text(
             render_term_page(term, ref_index, superclass_index, terms_index,
                              represents_index, allocated_by_index,
-                             evaluated_by_index, fired_by_index), encoding="utf-8"
+                             evaluated_by_index, fired_by_index,
+                             has_variant_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",

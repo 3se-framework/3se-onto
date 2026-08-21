@@ -263,6 +263,23 @@ def build_fired_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_has_variant_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isVariantOf target. Used to compute the inverse 'has variant'
+    relation: if A isVariantOf B, then B has variant A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isVariantOf")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -648,7 +665,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 represents_index: dict[str, list[dict]] | None = None,
                 allocated_by_index: dict[str, list[dict]] | None = None,
                 evaluated_by_index: dict[str, list[dict]] | None = None,
-                fired_by_index: dict[str, list[dict]] | None = None) -> list[str]:
+                fired_by_index: dict[str, list[dict]] | None = None,
+                has_variant_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -762,6 +780,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("conveys", "Conveys"),
         ("evaluates", "Evaluates"),
         ("fires", "Fires"),
+        ("isVariantOf", "Variant of"),
     ]:
         items = term.get(field, [])
         if not items:
@@ -801,6 +820,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in firing_terms
             ]
             relation_rows.append(("Fired by", ", ".join(links)))
+
+    # Has variant (computed inverse of isVariantOf)
+    if has_variant_index:
+        term_id = term.get("@id", "")
+        variant_terms = has_variant_index.get(term_id, [])
+        if variant_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in variant_terms
+            ]
+            relation_rows.append(("Has variant", ", ".join(links)))
 
     if relation_rows:
         lines.append("| Relation | Terms |")
@@ -1148,6 +1178,7 @@ def main() -> int:
     allocated_by_index = build_allocated_by_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
+    has_variant_index = build_has_variant_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
 
@@ -1232,7 +1263,8 @@ def main() -> int:
         for term in se3_terms:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
-                                  evaluated_by_index, fired_by_index))
+                                  evaluated_by_index, fired_by_index,
+                                  has_variant_index))
             md.append("---")
             md.append("")
     else:
@@ -1249,7 +1281,8 @@ def main() -> int:
         for term in other_terms:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
-                                  evaluated_by_index, fired_by_index))
+                                  evaluated_by_index, fired_by_index,
+                                  has_variant_index))
             md.append("---")
             md.append("")
     else:
