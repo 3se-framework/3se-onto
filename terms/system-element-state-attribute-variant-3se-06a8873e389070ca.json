@@ -16,7 +16,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-variant-3se-06a8873e389070ca",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

@@ -12,8 +12,7 @@
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
     "https://www.3se.info/3se-onto/terms/system-function-breakdown-structure-3se-069c03f8a3ee7e9d",
     "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d",
-    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
-    "https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd",

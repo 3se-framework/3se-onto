@@ -18,7 +18,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0",
   "related": [
-    "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

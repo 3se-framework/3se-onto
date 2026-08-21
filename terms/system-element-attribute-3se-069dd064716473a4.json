@@ -16,7 +16,6 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
-    "https://www.3se.info/3se-onto/terms/system-element-attribute-variant-3se-06a8873e383b73bf",
     "https://www.3se.info/3se-onto/terms/system-element-function-attribute-variant-3se-06a8873e385079f2"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",

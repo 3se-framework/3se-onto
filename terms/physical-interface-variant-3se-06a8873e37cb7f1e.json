@@ -21,7 +21,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e",
   "related": [
-    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

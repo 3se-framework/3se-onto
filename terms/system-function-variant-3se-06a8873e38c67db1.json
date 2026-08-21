@@ -5,7 +5,7 @@
   "description": "Variant of a system function.",
   "status": "draft",
   "isVariantOf": [
-    "system-function-3se-069be64e18947ea8"
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6",
@@ -20,7 +20,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

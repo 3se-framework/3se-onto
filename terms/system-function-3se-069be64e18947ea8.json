@@ -31,8 +31,7 @@
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
     "https://www.3se.info/3se-onto/terms/functional-interdependent-actor-3se-06a29c4e40187a09",
     "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657",
-    "https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6",
-    "https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1"
+    "https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"

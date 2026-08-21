@@ -13,7 +13,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

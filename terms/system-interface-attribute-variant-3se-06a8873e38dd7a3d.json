@@ -16,7 +16,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-interface-attribute-variant-3se-06a8873e38dd7a3d",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

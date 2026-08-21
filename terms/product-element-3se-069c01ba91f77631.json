@@ -10,8 +10,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
   "related": [
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
-    "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9",
-    "https://www.3se.info/3se-onto/terms/product-element-variant-3se-06a8873e37d6705b"
+    "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9"
   ],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-08-21",

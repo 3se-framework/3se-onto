@@ -12,7 +12,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-constraint-variant-3se-06a8873e38467013",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

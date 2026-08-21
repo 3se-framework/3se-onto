@@ -18,7 +18,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244",
   "related": [
-    "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

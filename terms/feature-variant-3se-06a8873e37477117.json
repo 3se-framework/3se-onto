@@ -9,7 +9,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117",
   "related": [
-    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8"
   ],
   "entryCreated": "2026-08-21",

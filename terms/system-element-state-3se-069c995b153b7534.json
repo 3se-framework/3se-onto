@@ -24,8 +24,7 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/system-state-breakdown-structure-3se-069c062b365f7e5d",
     "https://www.3se.info/3se-onto/terms/functional-element-breakdown-structure-3se-069c03f8a40b7253",
-    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
-    "https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-08-21",

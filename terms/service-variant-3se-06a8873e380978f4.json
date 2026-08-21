@@ -5,7 +5,7 @@
   "description": "Set of service mean or service mean variant which is provided by a contract variant between the service provider and the service consumer, is based on a release, and adds value for the service user by helping him to achieve its goal under a service level agreement variant.",
   "status": "reviewed",
   "isVariantOf": [
-    "service-3se-069c5aee69f47c9d"
+    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
   ],
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49"
@@ -32,7 +32,6 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
-    "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d",
     "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
   ],
   "entryCreated": "2026-08-21",

@@ -20,7 +20,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5",
   "related": [
-    "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

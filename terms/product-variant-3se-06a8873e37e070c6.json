@@ -5,7 +5,7 @@
   "description": "Implementation of a system variant that is based on a release, produced in a quantifiable manner and delivered to a stakeholder as either an end product in itself or a component of an end product.",
   "status": "draft",
   "isVariantOf": [
-    "product-3se-069b48ef5d4e7ef8"
+    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
@@ -27,7 +27,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6",
   "related": [
-    "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
     "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595",
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
   ],

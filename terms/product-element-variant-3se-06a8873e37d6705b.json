@@ -12,7 +12,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/product-element-variant-3se-06a8873e37d6705b",
   "related": [
-    "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
     "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
   ],
   "entryCreated": "2026-08-21",

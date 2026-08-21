@@ -13,8 +13,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
-    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
-    "https://www.3se.info/3se-onto/terms/system-element-constraint-variant-3se-06a8873e38467013"
+    "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
   "entryCreated": "2026-04-26",
   "entryModified": "2026-08-21",
