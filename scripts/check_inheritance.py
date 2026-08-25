@@ -55,6 +55,35 @@ def load_index(terms_dir: Path) -> dict[str, dict]:
     return index
 
 
+def build_ancestor_index(index: dict[str, dict]) -> dict[str, set[str]]:
+    """
+    Return a mapping of URI -> set of all ancestor URIs via transitive closure
+    of subClassOf. Only URIs present in the index are tracked; external URIs
+    (e.g. BFO) appear in ancestor sets but have no entry of their own.
+    """
+    direct: dict[str, list[str]] = {}
+    for uri, data in index.items():
+        parents = data.get("subClassOf") or []
+        if isinstance(parents, str):
+            parents = [parents]
+        direct[uri] = list(parents)
+
+    ancestors: dict[str, set[str]] = {uri: set() for uri in index}
+    changed = True
+    while changed:
+        changed = False
+        for uri in index:
+            for parent in direct.get(uri, []):
+                if parent not in ancestors[uri]:
+                    ancestors[uri].add(parent)
+                    changed = True
+                for grandparent in ancestors.get(parent, set()):
+                    if grandparent not in ancestors[uri]:
+                        ancestors[uri].add(grandparent)
+                        changed = True
+    return ancestors
+
+
 def stem_from_uri(uri: str) -> str:
     """Return the filename stem from a full term URI."""
     if uri.startswith(BASE_IRI):
@@ -68,6 +97,7 @@ def main() -> int:
         print("⚠️  No terms found — nothing to check.")
         return 0
 
+    ancestor_index = build_ancestor_index(index)
     gaps: list[tuple[str, str, dict[str, list]]] = []
 
     for uri, data in sorted(index.items()):
@@ -86,10 +116,20 @@ def main() -> int:
             missing: dict[str, list] = {}
 
             for field in INHERITED_FIELDS:
-                parent_val = parent.get(field)
-                child_val = data.get(field)
-                if parent_val and not child_val:
-                    missing[field] = parent_val if isinstance(parent_val, list) else [parent_val]
+                parent_val = parent.get(field) or []
+                if isinstance(parent_val, str):
+                    parent_val = [parent_val]
+                child_val = data.get(field) or []
+                if isinstance(child_val, str):
+                    child_val = [child_val]
+                child_set = set(child_val)
+                missing_vals = [
+                    v for v in parent_val
+                    if v not in child_set
+                    and not any(v in ancestor_index.get(c, set()) for c in child_val)
+                ]
+                if missing_vals:
+                    missing[field] = missing_vals
 
             if missing:
                 gaps.append((child_title, parent_title, missing))

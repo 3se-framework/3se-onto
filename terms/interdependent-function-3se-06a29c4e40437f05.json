@@ -3,15 +3,15 @@
   "@type": "skos:Concept",
   "title": "Interdependent function - 3SE",
   "description": "Function devolved to an interdependent actor.",
-  "status": "reviewed",
+  "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "produces": [
-    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
   ],
   "consumes": [
-    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043"

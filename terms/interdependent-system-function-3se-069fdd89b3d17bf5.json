@@ -3,15 +3,21 @@
   "@type": "skos:Concept",
   "title": "Interdependent system function - 3SE",
   "description": "Function devolved to an interdependent system.",
-  "status": "reviewed",
+  "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "produces": [
-    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
+    "https://www.3se.info/3se-onto/terms/safety-flow-3se",
+    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se"
   ],
   "consumes": [
-    "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
+    "https://www.3se.info/3se-onto/terms/safety-flow-3se",
+    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477"
