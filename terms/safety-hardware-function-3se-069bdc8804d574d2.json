@@ -16,7 +16,7 @@
     "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
     "https://www.3se.info/3se-onto/terms/safety-flow-3se",
     "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se",
-    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6",
+    "https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6"
   ],
   "consumes": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
