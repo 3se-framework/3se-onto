@@ -15,11 +15,15 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
   "produces": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
   "consumes": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
+    "https://www.3se.info/3se-onto/terms/safety-flow-3se",
+    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se",
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
