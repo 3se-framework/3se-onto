@@ -9,15 +9,15 @@
   ],
   "produces": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
-    "https://www.3se.info/3se-onto/terms/safety-flow-3se",
-    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se"
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
+    "https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54",
+    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30"
   ],
   "consumes": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
-    "https://www.3se.info/3se-onto/terms/safety-flow-3se",
-    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se"
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
+    "https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54",
+    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477"
@@ -28,7 +28,7 @@
     "https://www.3se.info/3se-onto/terms/interdependent-system-functional-element-3se-069fde073fce78a5"
   ],
   "entryCreated": "2026-05-08",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-25",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

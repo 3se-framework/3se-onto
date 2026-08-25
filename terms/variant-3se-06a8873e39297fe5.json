@@ -44,10 +44,12 @@
     "https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff",
     "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723",
-    "https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd"
+    "https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd",
+    "https://www.3se.info/3se-onto/terms/function-variant-3se-06a8873e375174a4",
+    "https://www.3se.info/3se-onto/terms/safety-function-variant-3se-06a8df23e05272de"
   ],
   "entryCreated": "2026-08-21",
-  "entryModified": "2026-08-21",
+  "entryModified": "2026-08-25",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
