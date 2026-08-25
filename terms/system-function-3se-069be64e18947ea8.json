@@ -15,15 +15,15 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8",
   "produces": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
   "consumes": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/parameter-flow-3se",
-    "https://www.3se.info/3se-onto/terms/safety-flow-3se",
-    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
+    "https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54",
+    "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30",
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
@@ -43,7 +43,7 @@
     "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-08-21",
+  "entryModified": "2026-08-25",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
