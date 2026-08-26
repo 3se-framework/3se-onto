@@ -16,7 +16,7 @@
     "https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa"
   ],
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-08-25",
+  "entryModified": "2026-08-26",
   "produces": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
   ],
@@ -37,6 +37,12 @@
     "https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2",
     "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30",
     "https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf",
-    "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282"
+    "https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282",
+    "https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4",
+    "https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848",
+    "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
+    "https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0",
+    "https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51",
+    "https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f"
   ]
 }

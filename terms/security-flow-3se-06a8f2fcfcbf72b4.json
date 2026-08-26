@@ -6,5 +6,15 @@
   "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+  ],
+  "entryCreated": "2026-08-26",
+  "entryModified": "2026-08-26",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

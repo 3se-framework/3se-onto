@@ -8,7 +8,7 @@
     "https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939"
   ],
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/security-function-3se"
+    "https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8",
   "produces": [
@@ -24,10 +24,11 @@
     "https://www.3se.info/3se-onto/terms/security-hardware-3se-069d96aa1eb3758d",
     "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea",
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
-    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
+    "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af",
+    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-08-14",
+  "entryModified": "2026-08-26",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
