@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-08-25 20:01 UTC*
+*Generated on 2026-08-26 18:43 UTC*
 
-This glossary contains **7 3SE domain(s)**, **405 3SE term(s)**, **111 other term(s)**, **14 3SE property(ies)**, **10 other property(ies)**, and **28 reference(s)**.
+This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other term(s)**, **14 3SE property(ies)**, **10 other property(ies)**, and **28 reference(s)**.
 
 ## Contents
 
@@ -224,6 +224,9 @@ This glossary contains **7 3SE domain(s)**, **405 3SE term(s)**, **111 other ter
   - [Safety system function - 3SE](#safety-system-function---3se)
   - [Safety system functional requirement - 3SE](#safety-system-functional-requirement---3se)
   - [Safety system non-functional requirement - 3SE](#safety-system-non-functional-requirement---3se)
+  - [Security flow - 3SE](#security-flow---3se)
+  - [Security function - 3SE](#security-function---3se)
+  - [Security function variant - 3SE](#security-function-variant---3se)
   - [Security functional element - 3SE](#security-functional-element---3se)
   - [Security goal - 3SE](#security-goal---3se)
   - [Security hardware - 3SE](#security-hardware---3se)
@@ -233,6 +236,7 @@ This glossary contains **7 3SE domain(s)**, **405 3SE term(s)**, **111 other ter
   - [Security hardware functional requirement - 3SE](#security-hardware-functional-requirement---3se)
   - [Security hardware non-functional requirement - 3SE](#security-hardware-non-functional-requirement---3se)
   - [Security hardware product - 3SE](#security-hardware-product---3se)
+  - [Security parameter flow - 3SE](#security-parameter-flow---3se)
   - [Security risk - 3SE](#security-risk---3se)
   - [Security risk analysis - 3SE](#security-risk-analysis---3se)
   - [Security service - 3SE](#security-service---3se)
@@ -680,7 +684,7 @@ This glossary contains **7 3SE domain(s)**, **405 3SE term(s)**, **111 other ter
 
 ## 3SE Terms
 
-*405 term(s) defined by the 3SE framework.*
+*409 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1623,7 +1627,7 @@ graph TD
 |---|---|
 | Related | [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [software-component-interface-3se-069dc11872d97b8a](https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a), [hardware-block-interface-3se-069dc15cd0dc7340](https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426) |
 | Subclass of | [generically-dependent-continuant-bfo-2-0-069f666ab52177b6](https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6) |
-| Superclass of | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
+| Superclass of | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 | Close match | [functional-exchange-arcadia-2023-069bc4ea532a72d7](https://www.3se.info/3se-onto/terms/functional-exchange-arcadia-2023-069bc4ea532a72d7) |
 | Allocates | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [flow-attribute-3se-069dcf9369937bc7](https://www.3se.info/3se-onto/terms/flow-attribute-3se-069dcf9369937bc7) |
 | Allocated by | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71) |
@@ -1658,16 +1662,16 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6), [transition-3se-06a087faa8137596](https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596), [activity-variant-3se-06a8873e36fd7bd6](https://www.3se.info/3se-onto/terms/activity-variant-3se-06a8873e36fd7bd6), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0), [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282) |
+| Related | [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6), [transition-3se-06a087faa8137596](https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596), [activity-variant-3se-06a8873e36fd7bd6](https://www.3se.info/3se-onto/terms/activity-variant-3se-06a8873e36fd7bd6), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0), [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848), [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f) |
 | Subclass of | [function-bfo-2-0-069f666ab51873aa](https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa) |
-| Superclass of | [enabling-function-3se-06a29c01c0237ea6](https://www.3se.info/3se-onto/terms/enabling-function-3se-06a29c01c0237ea6), [enabling-system-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-system-function-3se-069c06710282799a), [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be), [hardware-component-function-3se-069dc0c118257eea](https://www.3se.info/3se-onto/terms/hardware-component-function-3se-069dc0c118257eea), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [interdependent-function-3se-06a29c4e40437f05](https://www.3se.info/3se-onto/terms/interdependent-function-3se-06a29c4e40437f05), [interdependent-system-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-system-function-3se-069fdd89b3d17bf5), [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f), [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [software-unit-function-3se-069dc076d3ee71b8](https://www.3se.info/3se-onto/terms/software-unit-function-3se-069dc076d3ee71b8), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
+| Superclass of | [enabling-function-3se-06a29c01c0237ea6](https://www.3se.info/3se-onto/terms/enabling-function-3se-06a29c01c0237ea6), [enabling-system-function-3se-069c06710282799a](https://www.3se.info/3se-onto/terms/enabling-system-function-3se-069c06710282799a), [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be), [hardware-component-function-3se-069dc0c118257eea](https://www.3se.info/3se-onto/terms/hardware-component-function-3se-069dc0c118257eea), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [interdependent-function-3se-06a29c4e40437f05](https://www.3se.info/3se-onto/terms/interdependent-function-3se-06a29c4e40437f05), [interdependent-system-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-system-function-3se-069fdd89b3d17bf5), [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [software-unit-function-3se-069dc076d3ee71b8](https://www.3se.info/3se-onto/terms/software-unit-function-3se-069dc076d3ee71b8), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Close match | [function-24765-2017-069ab4000af473aa](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 | Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 | Allocated by | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Has variant | [function-variant-3se-06a8873e375174a4](https://www.3se.info/3se-onto/terms/function-variant-3se-06a8873e375174a4) |
 
-*Created: 2026-03-13 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -1768,8 +1772,8 @@ graph TD
     N2 -.->|allocates| N18
     N17 -.->|allocates| N18
     N6 -.->|allocates| N9
-    N14 -->|subclass of| N10
     N15 -->|subclass of| N10
+    N14 -->|subclass of| N10
     N16 -->|subclass of| N15
 ```
 
@@ -1972,10 +1976,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N11 -.->|allocates| N10
-    N3 -.->|allocates| N11
     N6 -.->|allocates| N13
     N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -3464,8 +3468,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N4 -->|subclass of| N7
     N6 -->|subclass of| N11
+    N4 -->|subclass of| N7
 ```
 
 *Created: 2026-03-24 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -3940,7 +3944,7 @@ graph TD
 |---|---|
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Subclass of | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
-| Superclass of | [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30) |
+| Superclass of | [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0) |
 | Allocated by | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
 
 *Created: 2026-08-25 · Modified: 2026-08-25 · Creator: @rcasteran*
@@ -3996,12 +4000,12 @@ graph TD
     N14 -.->|allocates| N13
     N5 -.->|allocates| N3
     N2 -.->|allocates| N13
-    N12 -.->|allocates| N13
     N15 -.->|allocates| N12
     N15 -.->|allocates| N13
+    N12 -.->|allocates| N13
     N9 -->|subclass of| N8
-    N10 -->|subclass of| N8
     N11 -->|subclass of| N10
+    N10 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4206,8 +4210,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -4577,8 +4581,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4684,9 +4688,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
+    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
-    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4940,8 +4944,8 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N3 -->|subclass of| N11
     N2 -->|subclass of| N6
+    N3 -->|subclass of| N11
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -5515,6 +5519,65 @@ It includes the following steps:
 
 ---
 
+### Security flow - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Output produced by a security function and consumed by another function.
+
+| Relation | Terms |
+|---|---|
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Subclass of | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
+
+*Created: 2026-08-26 · Modified: 2026-08-26 · Creator: @rcasteran*
+
+---
+
+### Security function - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Function which is relevant for security engineering.
+
+| Relation | Terms |
+|---|---|
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Superclass of | [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f) |
+| Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0) |
+| Allocated by | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
+| Has variant | [security-function-variant-3se-06a8f3349cd6768e](https://www.3se.info/3se-onto/terms/security-function-variant-3se-06a8f3349cd6768e) |
+
+*Created: 2026-03-16 · Modified: 2026-08-26 · Creator: @rcasteran*
+
+---
+
+### Security function variant - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Variant of a security function.
+
+| Relation | Terms |
+|---|---|
+| Related | [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5) |
+| Variant of | [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
+
+**Variability**
+
+```mermaid
+graph TD
+    N1["Security function variant"]
+    N2["Security function"]
+
+    N1 -.->|variant of| N2
+```
+
+*Created: 2026-08-26 · Modified: 2026-08-26 · Creator: @rcasteran*
+
+---
+
 ### Security functional element - 3SE
 
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
@@ -5596,19 +5659,19 @@ It includes the following steps:
 
 ### Security hardware function - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Function of a hardware to control weaknesses in order to achieve or maintain a secure system state.
 
 | Relation | Terms |
 |---|---|
-| Related | [security-hardware-3se-069d96aa1eb3758d](https://www.3se.info/3se-onto/terms/security-hardware-3se-069d96aa1eb3758d), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
-| Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Related | [security-hardware-3se-069d96aa1eb3758d](https://www.3se.info/3se-onto/terms/security-hardware-3se-069d96aa1eb3758d), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Subclass of | [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
-| Produces | [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63) |
-| Consumes | [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
+| Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5653,6 +5716,21 @@ It includes the following steps:
 | Subclass of | [hardware-product-3se-069c058ef4de7a0a](https://www.3se.info/3se-onto/terms/hardware-product-3se-069c058ef4de7a0a) |
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+
+---
+
+### Security parameter flow - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Output produced by a security function and consumed by another function, that contributes to the configuration of the latest.
+
+| Relation | Terms |
+|---|---|
+| Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Subclass of | [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43) |
+
+*Created: 2026-08-26 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5761,19 +5839,19 @@ It includes the following steps:
 
 ### Security software function - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Function of a software to control weaknesses in order to achieve or maintain a secure system state.
 
 | Relation | Terms |
 |---|---|
-| Related | [security-software-3se-069d96aa1ebb7e7b](https://www.3se.info/3se-onto/terms/security-software-3se-069d96aa1ebb7e7b), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
-| Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Related | [security-software-3se-069d96aa1ebb7e7b](https://www.3se.info/3se-onto/terms/security-software-3se-069d96aa1ebb7e7b), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Subclass of | [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
-| Produces | [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964) |
-| Consumes | [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
+| Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5871,20 +5949,20 @@ It includes the following steps:
 
 ### Security system function - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Function of a system to control weaknesses in order to achieve or maintain a secure system state.
 
 | Relation | Terms |
 |---|---|
-| Related | [security-functional-element-3se-069d95f51fc374c7](https://www.3se.info/3se-onto/terms/security-functional-element-3se-069d95f51fc374c7), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
-| Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Related | [security-functional-element-3se-069d95f51fc374c7](https://www.3se.info/3se-onto/terms/security-functional-element-3se-069d95f51fc374c7), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
+| Subclass of | [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
 | Allocates | [security-system-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-system-activity-3se-069ab4192b8e7951) |
-| Produces | [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
-| Consumes | [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
+| Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 
-*Created: 2026-03-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5972,8 +6050,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -6080,9 +6158,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -6387,9 +6465,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -7109,10 +7187,10 @@ graph TD
 | Subclass of | [disposition-bfo-2-0-069f666ab4e77a92](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92) |
 | Superclass of | [enabling-state-3se-06a29c01c05f7e5a](https://www.3se.info/3se-onto/terms/enabling-state-3se-06a29c01c05f7e5a), [enabling-system-state-3se-069e1512f37a7612](https://www.3se.info/3se-onto/terms/enabling-system-state-3se-069e1512f37a7612), [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [interdependent-state-3se-06a29c4e404d78ed](https://www.3se.info/3se-onto/terms/interdependent-state-3se-06a29c4e404d78ed), [interdependent-system-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-system-state-3se-069fde073ffb7cc5), [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 | Broad match | [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
-| Allocates | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0) |
+| Allocates | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0), [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Fires | [transition-3se-06a087faa8137596](https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596) |
 
-*Created: 2026-03-13 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -7420,8 +7498,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -7523,11 +7601,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N6 -.->|allocates| N5
-    N7 -.->|allocates| N5
-    N10 -.->|allocates| N14
     N13 -.->|allocates| N9
+    N7 -.->|allocates| N5
     N11 -.->|allocates| N4
+    N6 -.->|allocates| N5
+    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9055,14 +9133,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N3 -.->|allocates| N4
+    N16 -.->|allocates| N4
     N15 -.->|exposes| N1
+    N2 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N13 -.->|allocates| N12
     N14 -.->|allocates| N12
-    N16 -.->|allocates| N4
-    N3 -.->|allocates| N4
-    N2 -.->|allocates| N4
+    N13 -.->|allocates| N12
 ```
 
 *Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9351,24 +9429,24 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
+    N26 -.->|allocates| N19
     N31 -.->|allocates| N2
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
+    N37 -.->|allocates| N1
+    N39 -->|subclass of| N37
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
-    N37 -.->|allocates| N1
-    N43 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N4 -.->|allocates| N7
+    N27 -.->|allocates| N18
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N26 -.->|allocates| N19
-    N27 -.->|allocates| N18
-    N38 -->|subclass of| N37
-    N39 -->|subclass of| N37
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
     N40 -->|subclass of| N39
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N4 -.->|allocates| N7
+    N38 -->|subclass of| N37
+    N43 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9556,11 +9634,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N15 -.->|allocates| N12
     N14 -.->|allocates| N9
-    N4 -.->|allocates| N8
-    N11 -.->|allocates| N12
     N13 -.->|allocates| N10
+    N11 -.->|allocates| N12
+    N15 -.->|allocates| N12
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9921,24 +9999,24 @@ graph TD
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
-    N4 -.->|allocates| N23
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
     N9 -.->|allocates| N15
     N9 -.->|allocates| N19
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N16 -.->|allocates| N10
-    N8 -.->|allocates| N15
+    N4 -.->|allocates| N23
     N28 -.->|allocates| N25
     N28 -.->|allocates| N26
+    N8 -.->|allocates| N15
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
+    N16 -.->|allocates| N10
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -10418,35 +10496,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N43 -.->|allocates| N12
-    N16 -.->|allocates| N19
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N11
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N22 -.->|allocates| N32
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
-    N23 -.->|allocates| N19
-    N10 -.->|allocates| N19
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N45 -.->|allocates| N35
-    N45 -.->|allocates| N41
-    N45 -.->|allocates| N43
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
+    N43 -.->|allocates| N12
+    N22 -.->|allocates| N32
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N23 -.->|allocates| N19
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N16 -.->|allocates| N19
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N11
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N45 -.->|allocates| N35
+    N45 -.->|allocates| N41
+    N45 -.->|allocates| N43
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
+    N10 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -10461,10 +10539,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-element-attribute-variant-3se-06a8873e375b75b0](https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0), [functional-element-variant-3se-06a8873e37657804](https://www.3se.info/3se-onto/terms/functional-element-variant-3se-06a8873e37657804), [functional-interface-attribute-variant-3se-06a8873e376f7950](https://www.3se.info/3se-onto/terms/functional-interface-attribute-variant-3se-06a8873e376f7950), [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71), [high-level-functional-element-attribute-variant-3se-06a8873e37847bdc](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-variant-3se-06a8873e37847bdc), [high-level-functional-element-variant-3se-06a8873e378f742b](https://www.3se.info/3se-onto/terms/high-level-functional-element-variant-3se-06a8873e378f742b), [high-level-physical-element-attribute-variant-3se-06a8873e379978a4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-variant-3se-06a8873e379978a4), [physical-element-attribute-variant-3se-06a8873e37ae7244](https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244), [physical-element-variant-3se-06a8873e37b8700e](https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e), [physical-interface-attribute-variant-3se-06a8873e37c17ca8](https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e), [product-element-variant-3se-06a8873e37d6705b](https://www.3se.info/3se-onto/terms/product-element-variant-3se-06a8873e37d6705b), [service-contract-variant-3se-06a8873e37ea78aa](https://www.3se.info/3se-onto/terms/service-contract-variant-3se-06a8873e37ea78aa), [service-level-agreement-variant-3se-06a8873e37f47df4](https://www.3se.info/3se-onto/terms/service-level-agreement-variant-3se-06a8873e37f47df4), [service-mean-variant-3se-06a8873e37ff788c](https://www.3se.info/3se-onto/terms/service-mean-variant-3se-06a8873e37ff788c), [system-architecture-constraint-variant-3se-06a8873e381d7cb6](https://www.3se.info/3se-onto/terms/system-architecture-constraint-variant-3se-06a8873e381d7cb6), [system-constraint-variant-3se-06a8873e38317887](https://www.3se.info/3se-onto/terms/system-constraint-variant-3se-06a8873e38317887), [system-element-attribute-variant-3se-06a8873e383b73bf](https://www.3se.info/3se-onto/terms/system-element-attribute-variant-3se-06a8873e383b73bf), [system-element-constraint-variant-3se-06a8873e38467013](https://www.3se.info/3se-onto/terms/system-element-constraint-variant-3se-06a8873e38467013), [system-element-function-attribute-variant-3se-06a8873e385079f2](https://www.3se.info/3se-onto/terms/system-element-function-attribute-variant-3se-06a8873e385079f2), [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5), [system-element-functional-req-variant-3se-06a8873e3865735a](https://www.3se.info/3se-onto/terms/system-element-functional-req-variant-3se-06a8873e3865735a), [system-element-interface-attribute-variant-3se-06a8873e386f7e0c](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-variant-3se-06a8873e386f7e0c), [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790), [system-element-non-functional-req-variant-3se-06a8873e3885733f](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-variant-3se-06a8873e3885733f), [system-element-state-attribute-variant-3se-06a8873e389070ca](https://www.3se.info/3se-onto/terms/system-element-state-attribute-variant-3se-06a8873e389070ca), [system-element-state-variant-3se-06a8873e389b7193](https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193), [system-function-attribute-variant-3se-06a8873e38bb7ad7](https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7), [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1), [system-functional-req-variant-3se-06a8873e38d17f2f](https://www.3se.info/3se-onto/terms/system-functional-req-variant-3se-06a8873e38d17f2f), [system-interface-attribute-variant-3se-06a8873e38dd7a3d](https://www.3se.info/3se-onto/terms/system-interface-attribute-variant-3se-06a8873e38dd7a3d), [system-interface-variant-3se-06a8873e38e87c2b](https://www.3se.info/3se-onto/terms/system-interface-variant-3se-06a8873e38e87c2b), [system-non-functional-req-variant-3se-06a8873e38f37e58](https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58), [system-state-attribute-variant-3se-06a8873e38fe7bff](https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff), [system-state-variant-3se-06a8873e39097723](https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723), [system-element-variant-3se-06a8873e38a57dcd](https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd), [function-variant-3se-06a8873e375174a4](https://www.3se.info/3se-onto/terms/function-variant-3se-06a8873e375174a4), [safety-function-variant-3se-06a8df23e05272de](https://www.3se.info/3se-onto/terms/safety-function-variant-3se-06a8df23e05272de) |
+| Related | [functional-element-attribute-variant-3se-06a8873e375b75b0](https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0), [functional-element-variant-3se-06a8873e37657804](https://www.3se.info/3se-onto/terms/functional-element-variant-3se-06a8873e37657804), [functional-interface-attribute-variant-3se-06a8873e376f7950](https://www.3se.info/3se-onto/terms/functional-interface-attribute-variant-3se-06a8873e376f7950), [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71), [high-level-functional-element-attribute-variant-3se-06a8873e37847bdc](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-variant-3se-06a8873e37847bdc), [high-level-functional-element-variant-3se-06a8873e378f742b](https://www.3se.info/3se-onto/terms/high-level-functional-element-variant-3se-06a8873e378f742b), [high-level-physical-element-attribute-variant-3se-06a8873e379978a4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-variant-3se-06a8873e379978a4), [physical-element-attribute-variant-3se-06a8873e37ae7244](https://www.3se.info/3se-onto/terms/physical-element-attribute-variant-3se-06a8873e37ae7244), [physical-element-variant-3se-06a8873e37b8700e](https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e), [physical-interface-attribute-variant-3se-06a8873e37c17ca8](https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e), [product-element-variant-3se-06a8873e37d6705b](https://www.3se.info/3se-onto/terms/product-element-variant-3se-06a8873e37d6705b), [service-contract-variant-3se-06a8873e37ea78aa](https://www.3se.info/3se-onto/terms/service-contract-variant-3se-06a8873e37ea78aa), [service-level-agreement-variant-3se-06a8873e37f47df4](https://www.3se.info/3se-onto/terms/service-level-agreement-variant-3se-06a8873e37f47df4), [service-mean-variant-3se-06a8873e37ff788c](https://www.3se.info/3se-onto/terms/service-mean-variant-3se-06a8873e37ff788c), [system-architecture-constraint-variant-3se-06a8873e381d7cb6](https://www.3se.info/3se-onto/terms/system-architecture-constraint-variant-3se-06a8873e381d7cb6), [system-constraint-variant-3se-06a8873e38317887](https://www.3se.info/3se-onto/terms/system-constraint-variant-3se-06a8873e38317887), [system-element-attribute-variant-3se-06a8873e383b73bf](https://www.3se.info/3se-onto/terms/system-element-attribute-variant-3se-06a8873e383b73bf), [system-element-constraint-variant-3se-06a8873e38467013](https://www.3se.info/3se-onto/terms/system-element-constraint-variant-3se-06a8873e38467013), [system-element-function-attribute-variant-3se-06a8873e385079f2](https://www.3se.info/3se-onto/terms/system-element-function-attribute-variant-3se-06a8873e385079f2), [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5), [system-element-functional-req-variant-3se-06a8873e3865735a](https://www.3se.info/3se-onto/terms/system-element-functional-req-variant-3se-06a8873e3865735a), [system-element-interface-attribute-variant-3se-06a8873e386f7e0c](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-variant-3se-06a8873e386f7e0c), [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790), [system-element-non-functional-req-variant-3se-06a8873e3885733f](https://www.3se.info/3se-onto/terms/system-element-non-functional-req-variant-3se-06a8873e3885733f), [system-element-state-attribute-variant-3se-06a8873e389070ca](https://www.3se.info/3se-onto/terms/system-element-state-attribute-variant-3se-06a8873e389070ca), [system-element-state-variant-3se-06a8873e389b7193](https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193), [system-function-attribute-variant-3se-06a8873e38bb7ad7](https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7), [system-function-variant-3se-06a8873e38c67db1](https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1), [system-functional-req-variant-3se-06a8873e38d17f2f](https://www.3se.info/3se-onto/terms/system-functional-req-variant-3se-06a8873e38d17f2f), [system-interface-attribute-variant-3se-06a8873e38dd7a3d](https://www.3se.info/3se-onto/terms/system-interface-attribute-variant-3se-06a8873e38dd7a3d), [system-interface-variant-3se-06a8873e38e87c2b](https://www.3se.info/3se-onto/terms/system-interface-variant-3se-06a8873e38e87c2b), [system-non-functional-req-variant-3se-06a8873e38f37e58](https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58), [system-state-attribute-variant-3se-06a8873e38fe7bff](https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff), [system-state-variant-3se-06a8873e39097723](https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723), [system-element-variant-3se-06a8873e38a57dcd](https://www.3se.info/3se-onto/terms/system-element-variant-3se-06a8873e38a57dcd), [function-variant-3se-06a8873e375174a4](https://www.3se.info/3se-onto/terms/function-variant-3se-06a8873e375174a4), [safety-function-variant-3se-06a8df23e05272de](https://www.3se.info/3se-onto/terms/safety-function-variant-3se-06a8df23e05272de), [security-function-variant-3se-06a8f3349cd6768e](https://www.3se.info/3se-onto/terms/security-function-variant-3se-06a8f3349cd6768e) |
 | Narrow match | [variant-26558-2017-06a8873e391f7368](https://www.3se.info/3se-onto/terms/variant-26558-2017-06a8873e391f7368) |
 
-*Created: 2026-08-21 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-08-21 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
