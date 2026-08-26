@@ -20,8 +20,10 @@
   "allocates": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54",
+    "https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4",
     "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
     "https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30",
+    "https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0",
     "https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6",
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
