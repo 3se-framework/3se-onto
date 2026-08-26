@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Security system function - 3SE",
   "description": "Function of a system to control weaknesses in order to achieve or maintain a secure system state.",
-  "status": "reviewed",
+  "status": "draft",
   "relatedMatch": [
     "https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939"
   ],
@@ -15,7 +15,7 @@
     "name": "@rcasteran"
   },
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
+    "https://www.3se.info/3se-onto/terms/security-function-3se"
   ],
   "consumes": [
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
