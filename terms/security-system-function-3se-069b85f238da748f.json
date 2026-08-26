@@ -18,10 +18,18 @@
     "https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848"
   ],
   "consumes": [
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
+    "https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0",
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
   "produces": [
+    "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
+    "https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4",
+    "https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43",
+    "https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0",
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778"
   ],
   "related": [
