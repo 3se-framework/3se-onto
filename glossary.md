@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-08-26 18:43 UTC*
+*Generated on 2026-08-26 19:03 UTC*
 
 This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other term(s)**, **14 3SE property(ies)**, **10 other property(ies)**, and **28 reference(s)**.
 
@@ -1749,10 +1749,12 @@ graph TD
     N12["Flow attribute"]
     N13["Functional interface"]
     N14["Safety flow"]
-    N15["Parameter flow"]
-    N16["Safety parameter flow"]
-    N17["Functional interface attribute"]
-    N18["System architecture constraint"]
+    N15["Security flow"]
+    N16["Parameter flow"]
+    N17["Safety parameter flow"]
+    N18["Security parameter flow"]
+    N19["Functional interface attribute"]
+    N20["System architecture constraint"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -1769,12 +1771,16 @@ graph TD
     N13 -.->|allocates| N16
     N13 -.->|allocates| N17
     N13 -.->|allocates| N18
-    N2 -.->|allocates| N18
-    N17 -.->|allocates| N18
+    N13 -.->|allocates| N19
+    N13 -.->|allocates| N20
     N6 -.->|allocates| N9
-    N15 -->|subclass of| N10
+    N2 -.->|allocates| N20
+    N19 -.->|allocates| N20
     N14 -->|subclass of| N10
-    N16 -->|subclass of| N15
+    N17 -->|subclass of| N16
+    N15 -->|subclass of| N10
+    N18 -->|subclass of| N16
+    N16 -->|subclass of| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -1976,10 +1982,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -2110,12 +2116,12 @@ graph TD
 |---|---|
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [functional-architecture-3se-069b9d2c8d957426](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f) |
 | Related match | [behavioral-port-arcadia-2023-069bc53af24b724a](https://www.3se.info/3se-onto/terms/behavioral-port-arcadia-2023-069bc53af24b724a) |
-| Allocates | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Allocates | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Conveys | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 | Allocated by | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e) |
 | Has variant | [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71) |
 
-*Created: 2026-03-19 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -2585,9 +2591,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -3468,8 +3474,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N6 -->|subclass of| N11
     N4 -->|subclass of| N7
+    N6 -->|subclass of| N11
 ```
 
 *Created: 2026-03-24 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -3977,12 +3983,14 @@ graph TD
     N7["Functional interface"]
     N8["Flow"]
     N9["Safety flow"]
-    N10["Parameter flow"]
-    N11["Safety parameter flow"]
-    N12["Functional interface attribute"]
-    N13["System architecture constraint"]
-    N14["Physical interface"]
-    N15["Physical interface attribute"]
+    N10["Security flow"]
+    N11["Parameter flow"]
+    N12["Safety parameter flow"]
+    N13["Security parameter flow"]
+    N14["Functional interface attribute"]
+    N15["System architecture constraint"]
+    N16["Physical interface"]
+    N17["Physical interface attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -3995,16 +4003,20 @@ graph TD
     N7 -.->|allocates| N11
     N7 -.->|allocates| N12
     N7 -.->|allocates| N13
+    N7 -.->|allocates| N14
+    N7 -.->|allocates| N15
+    N16 -.->|allocates| N17
+    N16 -.->|allocates| N7
+    N16 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N14 -.->|allocates| N7
-    N14 -.->|allocates| N13
+    N17 -.->|allocates| N14
+    N17 -.->|allocates| N15
     N5 -.->|allocates| N3
-    N2 -.->|allocates| N13
-    N15 -.->|allocates| N12
-    N15 -.->|allocates| N13
-    N12 -.->|allocates| N13
+    N2 -.->|allocates| N15
     N9 -->|subclass of| N8
-    N11 -->|subclass of| N10
+    N11 -->|subclass of| N8
+    N13 -->|subclass of| N11
+    N12 -->|subclass of| N11
     N10 -->|subclass of| N8
 ```
 
@@ -4449,15 +4461,17 @@ graph TD
     N12["Flow attribute"]
     N13["System non-functional requirement"]
     N14["Safety flow"]
-    N15["Parameter flow"]
-    N16["Safety parameter flow"]
-    N17["Functional interface variant"]
+    N15["Security flow"]
+    N16["Parameter flow"]
+    N17["Safety parameter flow"]
+    N18["Security parameter flow"]
+    N19["Functional interface variant"]
 
     N1 -.->|variant of| N2
     N7 -.->|variant of| N4
     N8 -.->|variant of| N5
     N9 -.->|variant of| N6
-    N17 -.->|variant of| N10
+    N19 -.->|variant of| N10
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N4 -.->|allocates| N5
@@ -4478,14 +4492,16 @@ graph TD
     N10 -.->|allocates| N14
     N10 -.->|allocates| N15
     N10 -.->|allocates| N16
+    N10 -.->|allocates| N17
+    N10 -.->|allocates| N18
     N10 -.->|allocates| N5
     N10 -.->|allocates| N6
-    N1 -.->|allocates| N17
-    N17 -.->|allocates| N11
-    N17 -.->|allocates| N5
-    N17 -.->|allocates| N8
-    N17 -.->|allocates| N6
-    N17 -.->|allocates| N9
+    N1 -.->|allocates| N19
+    N19 -.->|allocates| N11
+    N19 -.->|allocates| N5
+    N19 -.->|allocates| N8
+    N19 -.->|allocates| N6
+    N19 -.->|allocates| N9
     N1 -.->|allocates| N6
     N1 -.->|allocates| N9
 ```
@@ -4581,8 +4597,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4688,9 +4704,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4944,8 +4960,8 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N2 -->|subclass of| N6
     N3 -->|subclass of| N11
+    N2 -->|subclass of| N6
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -5065,11 +5081,11 @@ graph TD
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Superclass of | [safety-hardware-function-3se-069bdc8804d574d2](https://www.3se.info/3se-onto/terms/safety-hardware-function-3se-069bdc8804d574d2), [safety-software-function-3se-069bdc8804ed70bf](https://www.3se.info/3se-onto/terms/safety-software-function-3se-069bdc8804ed70bf), [safety-system-function-3se-069b85f238b97282](https://www.3se.info/3se-onto/terms/safety-system-function-3se-069b85f238b97282) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0) |
 | Allocated by | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Has variant | [safety-function-variant-3se-06a8df23e05272de](https://www.3se.info/3se-onto/terms/safety-function-variant-3se-06a8df23e05272de) |
 
-*Created: 2026-03-16 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5189,9 +5205,9 @@ graph TD
 | Subclass of | [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0) |
 | Related match | [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
 
-*Created: 2026-03-20 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5371,9 +5387,9 @@ It includes the following steps:
 | Subclass of | [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0) |
 | Related match | [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c) |
 
-*Created: 2026-03-20 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5484,9 +5500,9 @@ It includes the following steps:
 | Related match | [safety-mechanism-26262-1-2018-069ab4000b1a78eb](https://www.3se.info/3se-onto/terms/safety-mechanism-26262-1-2018-069ab4000b1a78eb) |
 | Allocates | [safety-system-activity-3se-069ab4192b7d7c00](https://www.3se.info/3se-onto/terms/safety-system-activity-3se-069ab4192b7d7c00) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 
-*Created: 2026-03-16 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-08-26 · Creator: @rcasteran*
 
 ---
 
@@ -5529,6 +5545,7 @@ It includes the following steps:
 |---|---|
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Subclass of | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
+| Allocated by | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
 
 *Created: 2026-08-26 · Modified: 2026-08-26 · Creator: @rcasteran*
 
@@ -5545,7 +5562,7 @@ It includes the following steps:
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Superclass of | [security-hardware-function-3se-069bdc8804f67cf8](https://www.3se.info/3se-onto/terms/security-hardware-function-3se-069bdc8804f67cf8), [security-software-function-3se-069bdc8804ff7f51](https://www.3se.info/3se-onto/terms/security-software-function-3se-069bdc8804ff7f51), [security-system-function-3se-069b85f238da748f](https://www.3se.info/3se-onto/terms/security-system-function-3se-069b85f238da748f) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30) |
 | Allocated by | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Has variant | [security-function-variant-3se-06a8f3349cd6768e](https://www.3se.info/3se-onto/terms/security-function-variant-3se-06a8f3349cd6768e) |
 
@@ -5669,7 +5686,7 @@ graph TD
 | Subclass of | [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
 
 *Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
 
@@ -5729,6 +5746,7 @@ graph TD
 |---|---|
 | Related | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Subclass of | [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43) |
+| Allocated by | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b) |
 
 *Created: 2026-08-26 · Modified: 2026-08-26 · Creator: @rcasteran*
 
@@ -5849,7 +5867,7 @@ It includes the following steps:
 | Subclass of | [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [software-failure-3se-069f11b2ffa17964](https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964), [hardware-failure-3se-069f11b2ff6b7e63](https://www.3se.info/3se-onto/terms/hardware-failure-3se-069f11b2ff6b7e63), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6) |
 
 *Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
 
@@ -5960,7 +5978,7 @@ It includes the following steps:
 | Related match | [cybersecurity-control-21434-2021-069ab4000ae67939](https://www.3se.info/3se-onto/terms/cybersecurity-control-21434-2021-069ab4000ae67939) |
 | Allocates | [security-system-activity-3se-069ab4192b8e7951](https://www.3se.info/3se-onto/terms/security-system-activity-3se-069ab4192b8e7951) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778) |
-| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
+| Consumes | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [security-flow-3se-06a8f2fcfcbf72b4](https://www.3se.info/3se-onto/terms/security-flow-3se-06a8f2fcfcbf72b4), [safety-flow-3se-06a8df23e0427a54](https://www.3se.info/3se-onto/terms/safety-flow-3se-06a8df23e0427a54), [parameter-flow-3se-06a8df23e0387c43](https://www.3se.info/3se-onto/terms/parameter-flow-3se-06a8df23e0387c43), [security-parameter-flow-3se-06a8f2fcffd37dd0](https://www.3se.info/3se-onto/terms/security-parameter-flow-3se-06a8f2fcffd37dd0), [safety-parameter-flow-3se-06a8df23e0597d30](https://www.3se.info/3se-onto/terms/safety-parameter-flow-3se-06a8df23e0597d30), [system-failure-3se-069efaf702f27778](https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5) |
 
 *Created: 2026-03-16 · Modified: 2026-08-26 · Creator: @rcasteran*
 
@@ -6050,8 +6068,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -6465,9 +6483,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -7498,8 +7516,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -7601,10 +7619,10 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N13 -.->|allocates| N9
     N7 -.->|allocates| N5
-    N11 -.->|allocates| N4
     N6 -.->|allocates| N5
+    N13 -.->|allocates| N9
+    N11 -.->|allocates| N4
     N10 -.->|allocates| N14
 ```
 
@@ -8129,23 +8147,25 @@ graph TD
     N10["Flow attribute"]
     N11["System non-functional requirement"]
     N12["Safety flow"]
-    N13["Parameter flow"]
-    N14["Safety parameter flow"]
-    N15["Physical interface variant"]
-    N16["Physical interface attribute variant"]
-    N17["Functional interface attribute variant"]
-    N18["System architecture constraint variant"]
-    N19["Functional interface variant"]
-    N20["System element interface attribute"]
-    N21["System element interface attribute variant"]
+    N13["Security flow"]
+    N14["Parameter flow"]
+    N15["Safety parameter flow"]
+    N16["Security parameter flow"]
+    N17["Physical interface variant"]
+    N18["Physical interface attribute variant"]
+    N19["Functional interface attribute variant"]
+    N20["System architecture constraint variant"]
+    N21["Functional interface variant"]
+    N22["System element interface attribute"]
+    N23["System element interface attribute variant"]
 
     N1 -.->|variant of| N2
-    N15 -.->|variant of| N3
-    N16 -.->|variant of| N4
-    N17 -.->|variant of| N5
-    N18 -.->|variant of| N6
-    N19 -.->|variant of| N7
-    N21 -.->|variant of| N20
+    N17 -.->|variant of| N3
+    N18 -.->|variant of| N4
+    N19 -.->|variant of| N5
+    N20 -.->|variant of| N6
+    N21 -.->|variant of| N7
+    N23 -.->|variant of| N22
     N1 -.->|allocates| N3
     N3 -.->|allocates| N4
     N4 -.->|allocates| N5
@@ -8159,38 +8179,40 @@ graph TD
     N7 -.->|allocates| N12
     N7 -.->|allocates| N13
     N7 -.->|allocates| N14
+    N7 -.->|allocates| N15
+    N7 -.->|allocates| N16
     N7 -.->|allocates| N5
     N7 -.->|allocates| N6
     N3 -.->|allocates| N6
-    N1 -.->|allocates| N15
-    N15 -.->|allocates| N9
-    N15 -.->|allocates| N4
-    N15 -.->|allocates| N16
-    N16 -.->|allocates| N5
-    N16 -.->|allocates| N17
-    N17 -.->|allocates| N6
+    N1 -.->|allocates| N17
+    N17 -.->|allocates| N9
+    N17 -.->|allocates| N4
     N17 -.->|allocates| N18
-    N16 -.->|allocates| N6
-    N16 -.->|allocates| N18
-    N15 -.->|allocates| N7
-    N15 -.->|allocates| N19
-    N19 -.->|allocates| N8
-    N19 -.->|allocates| N5
-    N19 -.->|allocates| N17
+    N18 -.->|allocates| N5
+    N18 -.->|allocates| N19
     N19 -.->|allocates| N6
-    N19 -.->|allocates| N18
-    N15 -.->|allocates| N6
-    N15 -.->|allocates| N18
-    N1 -.->|allocates| N6
-    N1 -.->|allocates| N18
-    N1 -.->|allocates| N20
-    N20 -.->|allocates| N4
-    N20 -.->|allocates| N6
-    N1 -.->|allocates| N21
-    N21 -.->|allocates| N4
-    N21 -.->|allocates| N16
+    N19 -.->|allocates| N20
+    N18 -.->|allocates| N6
+    N18 -.->|allocates| N20
+    N17 -.->|allocates| N7
+    N17 -.->|allocates| N21
+    N21 -.->|allocates| N8
+    N21 -.->|allocates| N5
+    N21 -.->|allocates| N19
     N21 -.->|allocates| N6
-    N21 -.->|allocates| N18
+    N21 -.->|allocates| N20
+    N17 -.->|allocates| N6
+    N17 -.->|allocates| N20
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N20
+    N1 -.->|allocates| N22
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
+    N1 -.->|allocates| N23
+    N23 -.->|allocates| N4
+    N23 -.->|allocates| N18
+    N23 -.->|allocates| N6
+    N23 -.->|allocates| N20
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -9133,14 +9155,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
-    N16 -.->|allocates| N4
-    N15 -.->|exposes| N1
     N2 -.->|allocates| N4
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N14 -.->|allocates| N12
     N13 -.->|allocates| N12
+    N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9362,11 +9384,13 @@ graph TD
     N36["System state attribute"]
     N37["Flow"]
     N38["Safety flow"]
-    N39["Parameter flow"]
-    N40["Safety parameter flow"]
-    N41["System element attribute"]
-    N42["System attribute"]
-    N43["System interface attribute"]
+    N39["Security flow"]
+    N40["Parameter flow"]
+    N41["Safety parameter flow"]
+    N42["Security parameter flow"]
+    N43["System element attribute"]
+    N44["System attribute"]
+    N45["System interface attribute"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N4
@@ -9413,40 +9437,44 @@ graph TD
     N15 -.->|allocates| N38
     N15 -.->|allocates| N39
     N15 -.->|allocates| N40
+    N15 -.->|allocates| N41
+    N15 -.->|allocates| N42
     N15 -.->|allocates| N6
     N15 -.->|allocates| N7
     N14 -.->|allocates| N6
     N14 -.->|allocates| N7
-    N41 -.->|allocates| N10
-    N41 -.->|can be| N42
+    N43 -.->|allocates| N10
+    N43 -.->|can be| N44
     N20 -.->|allocates| N7
     N20 -.->|can be| N31
     N23 -.->|allocates| N14
     N23 -.->|allocates| N7
-    N23 -.->|can be| N43
+    N23 -.->|can be| N45
     N8 -.->|exposes| N13
     N30 -->|subclass of| N34
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N26 -.->|allocates| N19
-    N31 -.->|allocates| N2
-    N37 -.->|allocates| N1
-    N39 -->|subclass of| N37
+    N38 -->|subclass of| N37
     N5 -.->|allocates| N36
     N5 -.->|allocates| N2
-    N27 -.->|allocates| N18
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
-    N40 -->|subclass of| N39
+    N45 -.->|allocates| N2
+    N4 -.->|allocates| N7
+    N26 -.->|allocates| N19
+    N41 -->|subclass of| N40
+    N39 -->|subclass of| N37
+    N42 -->|subclass of| N40
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N4 -.->|allocates| N7
-    N38 -->|subclass of| N37
-    N43 -.->|allocates| N2
+    N40 -->|subclass of| N37
+    N37 -.->|allocates| N1
+    N27 -.->|allocates| N18
+    N31 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9635,10 +9663,10 @@ graph TD
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
     N14 -.->|allocates| N9
-    N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
     N4 -.->|allocates| N8
+    N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9996,27 +10024,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N2 -.->|allocates| N8
-    N2 -.->|allocates| N10
-    N2 -.->|allocates| N12
+    N8 -.->|allocates| N15
+    N16 -.->|allocates| N10
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
-    N22 -.->|allocates| N4
-    N22 -.->|allocates| N6
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
-    N4 -.->|allocates| N23
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
-    N8 -.->|allocates| N15
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
-    N16 -.->|allocates| N10
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
     N20 -.->|allocates| N10
     N20 -.->|allocates| N11
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
+    N2 -.->|allocates| N8
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N12
+    N4 -.->|allocates| N23
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -10496,35 +10524,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
-    N43 -.->|allocates| N12
-    N22 -.->|allocates| N32
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
-    N23 -.->|allocates| N19
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N16 -.->|allocates| N19
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N11
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
+    N10 -.->|allocates| N19
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N16 -.->|allocates| N19
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N11
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
+    N23 -.->|allocates| N19
     N27 -.->|allocates| N17
     N27 -.->|allocates| N12
-    N10 -.->|allocates| N19
+    N22 -.->|allocates| N32
+    N43 -.->|allocates| N12
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
