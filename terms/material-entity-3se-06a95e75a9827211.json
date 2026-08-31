@@ -8,9 +8,7 @@
     "https://www.3se.info/3se-onto/terms/material-entity-bfo-2-0-06a95dbad588717a"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/material-entity-3se-06a95e75a9827211",
-  "related": [
-    "https://www.3se.info/3se-onto/terms/site-3se-06a95e75a9b67094"
-  ],
+  "related": [],
   "entryCreated": "2026-08-31",
   "entryModified": "2026-08-31",
   "entryCreator": {
