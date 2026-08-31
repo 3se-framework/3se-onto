@@ -5,5 +5,12 @@
   "abstract": "An ontology of relations for use across OBO Foundry ontologies, built to work with the Basic Formal Ontology (BFO).",
   "uri": "http://purl.obolibrary.org/obo/ro.owl",
   "date": "2025-12",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/ro-2025-12-06a95e385ef17818",
+  "entryCreated": "2026-08-31",
+  "entryModified": "2026-08-31",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
