@@ -74,6 +74,7 @@ TERM_ARRAY_FIELDS: list[str] = [
     "conveys",
     "evaluates",
     "fires",
+    "hosts",
     "isVariantOf"
 ]
 
