@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-08-26 19:03 UTC*
+*Generated on 2026-08-31 21:13 UTC*
 
-This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other term(s)**, **14 3SE property(ies)**, **10 other property(ies)**, and **28 reference(s)**.
+This glossary contains **7 3SE domain(s)**, **411 3SE term(s)**, **113 other term(s)**, **15 3SE property(ies)**, **11 other property(ies)**, and **29 reference(s)**.
 
 ## Contents
 
@@ -146,6 +146,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [Iteration - 3SE](#iteration---3se)
   - [Iteration analysis - 3SE](#iteration-analysis---3se)
   - [Knowledge - 3SE](#knowledge---3se)
+  - [Material entity - 3SE](#material-entity---3se)
   - [Mathematical model - 3SE](#mathematical-model---3se)
   - [Maturity gate - 3SE](#maturity-gate---3se)
   - [Mechanism - 3SE](#mechanism---3se)
@@ -266,6 +267,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [Service mean variant - 3SE](#service-mean-variant---3se)
   - [Service owner - 3SE](#service-owner---3se)
   - [Service variant - 3SE](#service-variant---3se)
+  - [Site - 3SE](#site---3se)
   - [Situation - 3SE](#situation---3se)
   - [Software - 3SE](#software---3se)
   - [Software architecture - 3SE](#software-architecture---3se)
@@ -474,6 +476,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [Interface - ISO/IEC/IEEE 24765](#interface---isoiecieee-24765)
   - [Iteration - ISO/IEC/IEEE 24765](#iteration---isoiecieee-24765)
   - [Knowledge - ISO 30401](#knowledge---iso-30401)
+  - [Material entity - BFO 2.0](#material-entity---bfo-20)
   - [Mechanism - How does it work ? 2004](#mechanism---how-does-it-work--2004)
   - [Meta model - ISO/IEC/IEEE 24641](#meta-model---isoiecieee-24641)
   - [Model - ISO/IEC/IEEE 24641](#model---isoiecieee-24641)
@@ -507,6 +510,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [Service - ISO/IEC/IEEE 24765](#service---isoiecieee-24765)
   - [Service contract - Service-Oriented Architecture Ontology 2.0](#service-contract---service-oriented-architecture-ontology-20)
   - [Service level agreement - ISO/IEC/IEEE 24765](#service-level-agreement---isoiecieee-24765)
+  - [Site - BFO 2.0](#site---bfo-20)
   - [Software component - ISO/IEC/IEEE 24765](#software-component---isoiecieee-24765)
   - [Software product - ISO/IEC/IEEE 24765](#software-product---isoiecieee-24765)
   - [Software unit - ISO/IEC/IEEE 24765](#software-unit---isoiecieee-24765)
@@ -539,7 +543,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
 - [References](#references)
   - [A perspective on systems science and systems philosophy](#a-perspective-on-systems-science-and-systems-philosophy)
   - [ARCADIA language reference : meta model](#arcadia-language-reference--meta-model)
-  - [Basic Formal Ontology - 2.0](#basic-formal-ontology---20)
+  - [Basic Formal Ontology (BFO) - 2.0](#basic-formal-ontology-bfo---20)
   - [Behavior, Purpose and Teleology](#behavior-purpose-and-teleology)
   - [EN 12973:2020](#en-129732020)
   - [General System Theory: Foundations, Development, Applications Revised Edition 1973](#general-system-theory-foundations-development-applications-revised-edition-1973)
@@ -558,6 +562,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [ISTQB Glossary](#istqb-glossary)
   - [OMG Systems Modeling Language™ (SysML®) 2.0 - Part 1: Language Specification](#omg-systems-modeling-language-sysml-20---part-1-language-specification)
   - [OMG® Unified Modeling Language® (OMG UML®)](#omg-unified-modeling-language-omg-uml)
+  - [Relation Ontology (RO)](#relation-ontology-ro)
   - [Requirements Engineering Fundamentals](#requirements-engineering-fundamentals)
   - [Scaled Agile Framework [SAFe] - 6.0](#scaled-agile-framework-safe---60)
   - [Schema.org](#schemaorg)
@@ -573,6 +578,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [evaluates - 3SE](#evaluates---3se)
   - [exposes - 3SE](#exposes---3se)
   - [fires - 3SE](#fires---3se)
+  - [hosts - 3SE](#hosts---3se)
   - [isAccountableFor - 3SE](#isaccountablefor---3se)
   - [isComposedOf - 3SE](#iscomposedof---3se)
   - [isRepresentedBy - 3SE](#isrepresentedby---3se)
@@ -586,6 +592,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
   - [composite aggregation - UML 2.5.1](#composite-aggregation---uml-251)
   - [conveyed - UML 2.5.1](#conveyed---uml-251)
   - [isVariantOf - Schema.org](#isvariantof---schemaorg)
+  - [location of - RO](#location-of---ro)
   - [provided - UML 2.5.1](#provided---uml-251)
   - [required - UML 2.5.1](#required---uml-251)
   - [used - W3C](#used---w3c)
@@ -684,7 +691,7 @@ This glossary contains **7 3SE domain(s)**, **409 3SE term(s)**, **111 other ter
 
 ## 3SE Terms
 
-*409 term(s) defined by the 3SE framework.*
+*411 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1773,14 +1780,14 @@ graph TD
     N13 -.->|allocates| N18
     N13 -.->|allocates| N19
     N13 -.->|allocates| N20
-    N6 -.->|allocates| N9
-    N2 -.->|allocates| N20
     N19 -.->|allocates| N20
-    N14 -->|subclass of| N10
-    N17 -->|subclass of| N16
-    N15 -->|subclass of| N10
-    N18 -->|subclass of| N16
+    N2 -.->|allocates| N20
+    N6 -.->|allocates| N9
     N16 -->|subclass of| N10
+    N17 -->|subclass of| N16
+    N18 -->|subclass of| N16
+    N14 -->|subclass of| N10
+    N15 -->|subclass of| N10
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -1984,8 +1991,8 @@ graph TD
     N5 -.->|allocates| N13
     N7 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
+    N6 -.->|allocates| N13
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -2591,8 +2598,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
 ```
 
@@ -3721,6 +3728,21 @@ graph TD
 
 ---
 
+### Material entity - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Portion of matter hosted within a site.
+
+| Relation | Terms |
+|---|---|
+| Subclass of | [material-entity-bfo-2-0-06a95dbad588717a](https://www.3se.info/3se-onto/terms/material-entity-bfo-2-0-06a95dbad588717a) |
+| Hosted by | [site-3se-06a95e75a9b67094](https://www.3se.info/3se-onto/terms/site-3se-06a95e75a9b67094) |
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
+
+---
+
 ### Mathematical model - 3SE
 
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
@@ -4008,16 +4030,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N5 -.->|allocates| N3
     N2 -.->|allocates| N15
-    N9 -->|subclass of| N8
+    N5 -.->|allocates| N3
+    N14 -.->|allocates| N15
     N11 -->|subclass of| N8
+    N10 -->|subclass of| N8
+    N9 -->|subclass of| N8
     N13 -->|subclass of| N11
     N12 -->|subclass of| N11
-    N10 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4055,9 +4077,10 @@ graph TD
 | Can be | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399) |
 | Exposes | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 | Allocated by | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
+| Hosted by | [site-3se-06a95e75a9b67094](https://www.3se.info/3se-onto/terms/site-3se-06a95e75a9b67094) |
 | Has variant | [physical-element-variant-3se-06a8873e37b8700e](https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e) |
 
-*Created: 2026-03-17 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-08-31 · Creator: @rcasteran*
 
 ---
 
@@ -4222,8 +4245,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N6 -.->|allocates| N9
     N4 -.->|allocates| N11
+    N6 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -4359,7 +4382,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
+| Related | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [site-3se-06a95e75a9b67094](https://www.3se.info/3se-onto/terms/site-3se-06a95e75a9b67094) |
 | Subclass of | [two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991](https://www.3se.info/3se-onto/terms/two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991) |
 | Superclass of | [hardware-block-interface-3se-069dc15cd0dc7340](https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [software-component-interface-3se-069dc11872d97b8a](https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c) |
 | Related match | [physical-port-arcadia-2023-069bd66fb642700a](https://www.3se.info/3se-onto/terms/physical-port-arcadia-2023-069bd66fb642700a) |
@@ -4368,7 +4391,7 @@ graph TD
 | Allocated by | [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790) |
 | Has variant | [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e) |
 
-*Created: 2026-03-20 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-08-31 · Creator: @rcasteran*
 
 ---
 
@@ -4597,8 +4620,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -4955,11 +4978,11 @@ graph TD
     N6 -.->|allocates| N8
     N6 -.->|allocates| N9
     N6 -.->|allocates| N10
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N11 -.->|allocates| N7
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N3 -->|subclass of| N11
     N2 -->|subclass of| N6
 ```
@@ -6068,8 +6091,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -6176,9 +6199,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -6366,6 +6389,22 @@ graph TD
 
 ---
 
+### Site - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Immaterial three-dimensional space, bounded by a physical element and its physical interfaces, that hosts other physical elements or material entities.
+
+| Relation | Terms |
+|---|---|
+| Related | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
+| Subclass of | [site-bfo-2-0-06a95dbad5b07e7a](https://www.3se.info/3se-onto/terms/site-bfo-2-0-06a95dbad5b07e7a) |
+| Hosts | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [material-entity-3se-06a95e75a9827211](https://www.3se.info/3se-onto/terms/material-entity-3se-06a95e75a9827211) |
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
+
+---
+
 ### Situation - 3SE
 
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
@@ -6483,9 +6522,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -7620,10 +7659,10 @@ graph TD
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
     N7 -.->|allocates| N5
+    N10 -.->|allocates| N14
     N6 -.->|allocates| N5
     N13 -.->|allocates| N9
     N11 -.->|allocates| N4
-    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9155,14 +9194,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N2 -.->|allocates| N4
-    N3 -.->|allocates| N4
-    N14 -.->|allocates| N12
-    N13 -.->|allocates| N12
-    N15 -.->|exposes| N1
-    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N2 -.->|allocates| N4
+    N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
+    N13 -.->|allocates| N12
+    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9455,26 +9494,26 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N38 -->|subclass of| N37
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
+    N40 -->|subclass of| N37
+    N39 -->|subclass of| N37
     N28 -.->|allocates| N21
     N28 -.->|allocates| N36
+    N31 -.->|allocates| N2
+    N4 -.->|allocates| N7
+    N37 -.->|allocates| N1
+    N41 -->|subclass of| N40
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
-    N45 -.->|allocates| N2
-    N4 -.->|allocates| N7
-    N26 -.->|allocates| N19
-    N41 -->|subclass of| N40
-    N39 -->|subclass of| N37
+    N27 -.->|allocates| N18
     N42 -->|subclass of| N40
+    N38 -->|subclass of| N37
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N40 -->|subclass of| N37
-    N37 -.->|allocates| N1
-    N27 -.->|allocates| N18
-    N31 -.->|allocates| N2
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N26 -.->|allocates| N19
+    N45 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -9662,11 +9701,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N14 -.->|allocates| N9
-    N15 -.->|allocates| N12
-    N4 -.->|allocates| N8
     N11 -.->|allocates| N12
+    N4 -.->|allocates| N8
+    N15 -.->|allocates| N12
     N13 -.->|allocates| N10
+    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
@@ -10024,27 +10063,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N8 -.->|allocates| N15
-    N16 -.->|allocates| N10
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
+    N16 -.->|allocates| N10
     N28 -.->|allocates| N25
     N28 -.->|allocates| N26
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N8 -.->|allocates| N15
+    N4 -.->|allocates| N23
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N4 -.->|allocates| N23
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -10524,35 +10563,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
     N3 -.->|allocates| N45
     N3 -.->|allocates| N46
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
+    N23 -.->|allocates| N19
+    N43 -.->|allocates| N12
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N10 -.->|allocates| N19
+    N22 -.->|allocates| N32
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
+    N16 -.->|allocates| N19
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N11
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
-    N10 -.->|allocates| N19
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
     N15 -.->|allocates| N19
     N15 -.->|allocates| N10
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
-    N16 -.->|allocates| N19
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N11
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N23 -.->|allocates| N19
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
     N27 -.->|allocates| N17
     N27 -.->|allocates| N12
-    N22 -.->|allocates| N32
-    N43 -.->|allocates| N12
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -10679,7 +10718,7 @@ It includes the following steps:
 
 ## Other Terms
 
-*111 term(s) sourced from external standards and frameworks.*
+*113 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -10932,7 +10971,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [function-bfo-2-0-069f666ab51873aa](https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11018,7 +11057,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [functional-element-3se-069b9d2c8d9d7504](https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11035,7 +11074,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 | Subclass of | [disposition-bfo-2-0-069f666ab4e77a92](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92) |
 | Superclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11135,7 +11174,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11285,6 +11324,22 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 
 ---
 
+### Material entity - BFO 2.0
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> An independent continuant that has some portion of matter as proper or improper continuant part. (BFO 2.0, BFO:0000040)
+
+| Relation | Terms |
+|---|---|
+| Superclass of | [material-entity-3se-06a95e75a9827211](https://www.3se.info/3se-onto/terms/material-entity-3se-06a95e75a9827211) |
+
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
+
+---
+
 ### Mechanism - How does it work ? 2004
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -11355,7 +11410,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11443,7 +11498,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-06-19 · Modified: 2026-06-19 · Creator: @rcasteran*
 
@@ -11519,7 +11574,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11619,7 +11674,7 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 |---|---|
 | Superclass of | [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -11695,6 +11750,22 @@ Instances of this class describe the abstract role; to denote a specific instanc
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
 *Created: 2026-03-26 · Modified: 2026-03-26 · Creator: @rcasteran*
+
+---
+
+### Site - BFO 2.0
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> A three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or a three-dimensional immaterial part thereof. (BFO 2.0, BFO:0000029)
+
+| Relation | Terms |
+|---|---|
+| Superclass of | [site-3se-06a95e75a9b67094](https://www.3se.info/3se-onto/terms/site-3se-06a95e75a9b67094) |
+
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
 
 ---
 
@@ -11955,7 +12026,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | Superclass of | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a) |
 
-**References:** [Basic Formal Ontology - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
+**References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
 
 *Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
 
@@ -12059,7 +12130,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ## References
 
-*28 reference(s).*
+*29 reference(s).*
 
 ### A perspective on systems science and systems philosophy
 
@@ -12101,7 +12172,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ---
 
-### Basic Formal Ontology - 2.0
+### Basic Formal Ontology (BFO) - 2.0
 
 *Standard*
 
@@ -12113,9 +12184,9 @@ The methods defined in this clause are generic modules that can be invoked syste
 |---|---|
 | **URL** | [http://purl.obolibrary.org/obo/bfo.owl](http://purl.obolibrary.org/obo/bfo.owl) |
 
-**Referenced Terms:** [Disposition - BFO 2.0](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92), [Fiat object part - BFO 2.0](https://www.3se.info/3se-onto/terms/fiat-object-part-bfo-2-0-069f666ab50e7980), [Function - BFO 2.0](https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa), [Generically dependent continuant - BFO 2.0](https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6), [Object - BFO 2.0](https://www.3se.info/3se-onto/terms/object-bfo-2-0-069f666ab52b7003), [Process - BFO 2.0](https://www.3se.info/3se-onto/terms/process-bfo-2-0-06a3501827217997), [Quality - BFO 2.0](https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9), [Role - BFO 2.0](https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732), [Two-dimensional continuant fiat boundary - BFO 2.0](https://www.3se.info/3se-onto/terms/two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991)
+**Referenced Terms:** [Disposition - BFO 2.0](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92), [Fiat object part - BFO 2.0](https://www.3se.info/3se-onto/terms/fiat-object-part-bfo-2-0-069f666ab50e7980), [Function - BFO 2.0](https://www.3se.info/3se-onto/terms/function-bfo-2-0-069f666ab51873aa), [Generically dependent continuant - BFO 2.0](https://www.3se.info/3se-onto/terms/generically-dependent-continuant-bfo-2-0-069f666ab52177b6), [Material entity - BFO 2.0](https://www.3se.info/3se-onto/terms/material-entity-bfo-2-0-06a95dbad588717a), [Object - BFO 2.0](https://www.3se.info/3se-onto/terms/object-bfo-2-0-069f666ab52b7003), [Process - BFO 2.0](https://www.3se.info/3se-onto/terms/process-bfo-2-0-06a3501827217997), [Quality - BFO 2.0](https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9), [Role - BFO 2.0](https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732), [Site - BFO 2.0](https://www.3se.info/3se-onto/terms/site-bfo-2-0-06a95dbad5b07e7a), [Two-dimensional continuant fiat boundary - BFO 2.0](https://www.3se.info/3se-onto/terms/two-dimensional-continuant-fiat-boundary-bfo-2-0-069f666ab5477991)
 
-*Created: 2026-05-02 · Modified: 2026-05-02 · Creator: @rcasteran*
+*Created: 2026-05-02 · Modified: 2026-08-31 · Creator: @rcasteran*
 
 ---
 
@@ -12459,6 +12530,25 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ---
 
+### Relation Ontology (RO)
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> An ontology of relations for use across OBO Foundry ontologies, built to work with the Basic Formal Ontology (BFO).
+
+| Attribute | Value |
+|---|---|
+| **Date** | 2025-12 |
+| **URL** | [http://purl.obolibrary.org/obo/ro.owl](http://purl.obolibrary.org/obo/ro.owl) |
+
+**Referenced Properties:** [location of - RO](https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106)
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
+
+---
+
 ### Requirements Engineering Fundamentals
 
 *Book*
@@ -12592,7 +12682,7 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ## 3SE Properties
 
-*14 propert(ies) defined by the 3SE framework.*
+*15 propert(ies) defined by the 3SE framework.*
 
 ### allocates - 3SE
 
@@ -12703,6 +12793,22 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Range | `https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596` |
 
 *Created: 2026-05-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+
+---
+
+### hosts - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a site to the physical element or material entity that it hosts.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+| Sub-property of | [location-of-ro-2025-12-06a95e385f237106](https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106) |
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
 
 ---
 
@@ -12818,7 +12924,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 
 ## Other Properties
 
-*10 propert(ies) sourced from external standards and frameworks.*
+*11 propert(ies) sourced from external standards and frameworks.*
 
 ### abstraction - UML 2.5.1
 
@@ -12883,6 +12989,18 @@ An AllocationDefinition can itself be refined using nested allocations that give
 **References:** [Schema.org](https://www.3se.info/3se-onto/references/schema-org-30-0-06a8842c301a741f)
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
+
+---
+
+### location of - RO
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> A relation between two independent continuants, the location and the target, in which the target is entirely within the location.
+
+**References:** [Relation Ontology (RO)](https://www.3se.info/3se-onto/references/ro-2025-12-06a95e385ef17818)
+
+*Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
 
 ---
 
