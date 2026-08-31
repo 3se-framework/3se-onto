@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "hosts - 3SE",
+  "description": "Relates a site to the physical element or material entity that it hosts.",
+  "subPropertyOf": [
+    "https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106"
+  ],
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}
