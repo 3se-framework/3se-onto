@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Material entity - BFO 2.0",
+  "description": "An independent continuant that has some portion of matter as proper or improper continuant part. (BFO 2.0, BFO:0000040)",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471"
+  ]
+}
