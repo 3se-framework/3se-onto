@@ -229,6 +229,23 @@ def build_allocated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_hosted_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a hosts target. Used to compute the inverse 'hosted by'
+    relation: if A hosts B, then B is hosted by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("hosts")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_evaluated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     """
     Return a mapping of URI -> list of term entries that declare that URI
@@ -759,7 +776,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 allocated_by_index: dict[str, list[dict]] | None = None,
                 evaluated_by_index: dict[str, list[dict]] | None = None,
                 fired_by_index: dict[str, list[dict]] | None = None,
-                has_variant_index: dict[str, list[dict]] | None = None) -> list[str]:
+                has_variant_index: dict[str, list[dict]] | None = None,
+                hosted_by_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -867,6 +885,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("isRepresentedBy", "Represented by"),
         ("allocates", "Allocates"),
         ("canBe", "Can be"),
+        ("hosts", "Hosts"),
         ("exposes", "Exposes"),
         ("produces", "Produces"),
         ("consumes", "Consumes"),
@@ -891,6 +910,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in allocating_terms
             ]
             relation_rows.append(("Allocated by", ", ".join(links)))
+
+    # Hosted by (computed inverse of hosts)
+    if hosted_by_index:
+        term_id = term.get("@id", "")
+        hosting_terms = hosted_by_index.get(term_id, [])
+        if hosting_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in hosting_terms
+            ]
+            relation_rows.append(("Hosted by", ", ".join(links)))
 
     # Evaluated by (computed inverse of evaluates)
     if evaluated_by_index:
@@ -1273,6 +1303,7 @@ def main() -> int:
     superclass_index = build_superclass_index(terms)
     represents_index = build_represents_index(terms)
     allocated_by_index = build_allocated_by_index(terms)
+    hosted_by_index = build_hosted_by_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
@@ -1361,7 +1392,7 @@ def main() -> int:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
                                   evaluated_by_index, fired_by_index,
-                                  has_variant_index))
+                                  has_variant_index, hosted_by_index))
             md.append("---")
             md.append("")
     else:
@@ -1379,7 +1410,7 @@ def main() -> int:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
                                   evaluated_by_index, fired_by_index,
-                                  has_variant_index))
+                                  has_variant_index, hosted_by_index))
             md.append("---")
             md.append("")
     else:
