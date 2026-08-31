@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "Relation Ontology (RO)",
+  "abstract": "An ontology of relations for use across OBO Foundry ontologies, built to work with the Basic Formal Ontology (BFO).",
+  "uri": "http://purl.obolibrary.org/obo/ro.owl",
+  "date": "2025-12",
+  "status": "bibo:published"
+}
