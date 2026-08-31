@@ -8,5 +8,12 @@
   ],
   "domain": "skos:Concept",
   "range": "skos:Concept",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/hosts-3se-06a95e48e58874cb",
+  "entryCreated": "2026-08-31",
+  "entryModified": "2026-08-31",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
