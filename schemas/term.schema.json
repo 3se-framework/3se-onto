@@ -259,6 +259,15 @@
       },
       "uniqueItems": true
     },
+    "isBoundedBy": {
+      "description": "3se:isBoundedBy — IRIs of physical interfaces that (partially or wholly) constitute the boundary of a site (boundary relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",
