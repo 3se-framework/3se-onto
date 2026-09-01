@@ -2401,7 +2401,7 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
         term, superclass_index or {}, terms_index or {})
 
     # Breakdown structure diagram (only for breakdown structure terms)
-    diagram_html = render_breakdown_diagram(term, terms_index or {},
+    breakdown_html = render_breakdown_diagram(term, terms_index or {},
                                             represents_index or {})
 
     # Allocates diagram (only for subclasses of analysis-3se)
@@ -2749,12 +2749,12 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
   {description_html}
 </div>
 
-{diagram_html}
-{analysis_allocates_html}
-{variability_diagram_html}
 {classification_html}
 {term_allocates_html}
+{breakdown_html}
+{analysis_allocates_html}
 {architecture_html}
+{variability_diagram_html}
 {role_matrix_html}
 {notes_html}
 {relations_html}
