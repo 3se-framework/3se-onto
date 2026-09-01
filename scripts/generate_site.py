@@ -1585,32 +1585,25 @@ def render_variability_diagram(term: dict, terms_index: dict) -> str:
 def render_classification_diagram(
         term: dict,
         superclass_index: dict[str, list[dict]],
-        terms_index: dict,
-        represents_index: dict | None = None) -> str:
+        terms_index: dict) -> str:
     """
-    Render a Mermaid flowchart showing the classification of the considered term.
+    Render a Mermaid flowchart showing the full subclass/superclass hierarchy of
+    the considered term. Traverses recursively upward (via subClassOf) and
+    downward (via superclass_index). Only subclass-of edges are shown.
 
-    The diagram contains:
-    1. All terms that declare subClassOf the considered term (direct subclasses),
-       each linked to the considered term with a 'subclass of' arrow.
-    2. For each subclass found in (1), and for the considered term itself,
-       any allocates targets, each linked with an 'allocates' arrow.
-    3. For each subclass found in (1), and for the considered term itself,
-       any isRepresentedBy targets AND their computed inverse 'represents' relations,
-       each linked with a 'represented by' / 'represents' arrow.
-
-    Only rendered when at least one subclass exists.
-    Returns an empty string when there is nothing to show.
+    Rendered for any term that has at least one subClassOf parent OR at least
+    one direct subclass. Returns an empty string otherwise.
     """
     term_uri = term.get("@id", "")
     if not term_uri:
         return ""
 
-    subclasses = superclass_index.get(term_uri, [])
-    if not subclasses:
+    parents = term.get("subClassOf", [])
+    if isinstance(parents, str):
+        parents = [parents]
+    if not parents and not superclass_index.get(term_uri):
         return ""
 
-    # ── Node registry (mirrors existing diagram helpers) ──────────────────
     node_ids: dict[str, str] = {}
     node_labels: dict[str, str] = {}
     counter = [0]
@@ -1636,122 +1629,64 @@ def render_classification_diagram(
         node_labels[uri] = lbl
         return lbl
 
-    # Pre-register the considered term as the root node
+    edges: list[tuple[str, str]] = []  # (child_uri, parent_uri)
+    visited_up: set[str] = set()
+    visited_down: set[str] = set()
+
+    def collect_up(uri: str) -> None:
+        if uri in visited_up:
+            return
+        visited_up.add(uri)
+        data = terms_index.get(uri) or (term if uri == term_uri else {})
+        up_parents = data.get("subClassOf", [])
+        if isinstance(up_parents, str):
+            up_parents = [up_parents]
+        for parent_uri in up_parents:
+            node_id(uri)
+            label_for(uri)
+            node_id(parent_uri)
+            label_for(parent_uri)
+            edges.append((uri, parent_uri))
+            collect_up(parent_uri)
+
+    def collect_down(uri: str) -> None:
+        if uri in visited_down:
+            return
+        visited_down.add(uri)
+        for child_term in sorted(superclass_index.get(uri, []),
+                                 key=lambda t: t.get("title", "")):
+            child_uri = child_term.get("@id", "")
+            if not child_uri:
+                continue
+            node_id(child_uri)
+            label_for(child_uri)
+            node_id(uri)
+            label_for(uri)
+            edges.append((child_uri, uri))
+            collect_down(child_uri)
+
     node_id(term_uri)
     label_for(term_uri)
+    collect_up(term_uri)
+    collect_down(term_uri)
 
-    subclass_edges = []  # (child_uri, parent_uri)
-    allocation_edges = []  # (subject_uri, target_uri)
-    representation_edges = []  # (subject_uri, target_uri) — isRepresentedBy
-
-    # ── (1) Subclass edges ────────────────────────────────────────────────
-    for subclass_term in sorted(subclasses, key=lambda t: t.get("title", "")):
-        child_uri = subclass_term.get("@id", "")
-        if not child_uri:
-            continue
-        node_id(child_uri)
-        label_for(child_uri)
-        subclass_edges.append((child_uri, term_uri))
-
-    # ── (2) Allocates edges — from considered term and all its subclasses ─
-    for subject_uri in [term_uri] + [s.get("@id", "") for s in subclasses]:
-        if not subject_uri:
-            continue
-        subject_data = terms_index.get(subject_uri) or term
-        allocates = subject_data.get("allocates") or []
-        if isinstance(allocates, str):
-            allocates = [allocates]
-        for obj_uri in allocates:
-            node_id(subject_uri)
-            label_for(subject_uri)
-            node_id(obj_uri)
-            label_for(obj_uri)
-            allocation_edges.append((subject_uri, obj_uri))
-
-    # ── (3) Representation edges — isRepresentedBy (direct) and its inverse ─
-    # (a) Direct: subject isRepresentedBy target
-    for subject_uri in [term_uri] + [s.get("@id", "") for s in subclasses]:
-        if not subject_uri:
-            continue
-        subject_data = terms_index.get(subject_uri) or term
-        is_rep_by = subject_data.get("isRepresentedBy") or []
-        if isinstance(is_rep_by, str):
-            is_rep_by = [is_rep_by]
-        for obj_uri in is_rep_by:
-            node_id(subject_uri)
-            label_for(subject_uri)
-            node_id(obj_uri)
-            label_for(obj_uri)
-            representation_edges.append((subject_uri, obj_uri))
-    # (b) Inverse: any term that declares isRepresentedBy pointing at
-    #     the considered term or one of its subclasses is "represented by"
-    #     that node — so we add an edge (represented_term → representer)
-    if represents_index:
-        for representer_uri in [term_uri] + [s.get("@id", "") for s in subclasses]:
-            if not representer_uri:
-                continue
-            for represented_term in (represents_index.get(representer_uri) or []):
-                represented_uri = represented_term.get("@id", "")
-                if represented_uri:
-                    node_id(represented_uri)
-                    label_for(represented_uri)
-                    node_id(representer_uri)
-                    label_for(representer_uri)
-                    representation_edges.append((represented_uri, representer_uri))
-
-    if not subclass_edges and not allocation_edges and not representation_edges:
+    if not edges:
         return ""
 
-    # Deduplicate
-    subclass_edges = list(dict.fromkeys(subclass_edges))
-    allocation_edges = list(dict.fromkeys(allocation_edges))
-    representation_edges = list(dict.fromkeys(representation_edges))
-
-    # Deduplicate nodes by label (same logic as existing diagram functions)
-    label_to_primary_uri: dict[str, str] = {}
-    uri_remap: dict[str, str] = {}
-
-    for uri in list(node_ids.keys()):
-        lbl_lower = node_labels.get(uri, "").lower()
-        if lbl_lower in label_to_primary_uri:
-            uri_remap[uri] = label_to_primary_uri[lbl_lower]
-        else:
-            label_to_primary_uri[lbl_lower] = uri
-
-    if uri_remap:
-        subclass_edges = [
-            (uri_remap.get(s, s), uri_remap.get(o, o))
-            for s, o in subclass_edges
-        ]
-        allocation_edges = [
-            (uri_remap.get(s, s), uri_remap.get(o, o))
-            for s, o in allocation_edges
-        ]
-        representation_edges = [
-            (uri_remap.get(s, s), uri_remap.get(o, o))
-            for s, o in representation_edges
-        ]
-        subclass_edges = list(dict.fromkeys(subclass_edges))
-        allocation_edges = list(dict.fromkeys(allocation_edges))
-        representation_edges = list(dict.fromkeys(representation_edges))
-        for uri in uri_remap:
-            node_ids.pop(uri, None)
-            node_labels.pop(uri, None)
+    edges = list(dict.fromkeys(edges))
 
     lines = ["flowchart TD"]
     for uri, nid in node_ids.items():
-        lbl = node_labels.get(uri, nid).replace('"', "'")
-        lines.append(f'    {nid}["{lbl}"]')
+        lbl = node_labels.get(uri, nid).replace('"', "\'")
+        if uri == term_uri:
+            lines.append(f'    {nid}["{lbl}"]:::current')
+        else:
+            lines.append(f'    {nid}["{lbl}"]')
     lines.append("")
-    for child_uri, parent_uri in subclass_edges:
+    for child_uri, parent_uri in edges:
         c, p = node_id(child_uri), node_id(parent_uri)
         lines.append(f"    {c} -->|subclass of| {p}")
-    for subj_uri, obj_uri in allocation_edges:
-        s, o = node_id(subj_uri), node_id(obj_uri)
-        lines.append(f"    {s} -.->|allocates| {o}")
-    for subj_uri, obj_uri in representation_edges:
-        s, o = node_id(subj_uri), node_id(obj_uri)
-        lines.append(f"    {s} -.->|represented by| {o}")
+    lines.append("    classDef current fill:#e8f4f8,stroke:#2980b9,stroke-width:2px")
 
     mermaid_src = "\n".join(lines)
     return (
@@ -1762,6 +1697,99 @@ def render_classification_diagram(
     )
 
 
+def render_term_allocates_diagram(
+        term: dict,
+        terms_index: dict,
+        allocated_by_index: dict[str, list[dict]] | None = None) -> str:
+    """
+    Render a Mermaid flowchart showing the direct allocates and allocated-by
+    relations of the considered term.
+
+    - allocates edges:    term -.->|allocates| target
+    - allocated-by edges: allocator -.->|allocates| term  (computed inverse)
+
+    Rendered for any term that carries at least one such relation.
+    Returns an empty string otherwise.
+    """
+    term_uri = term.get("@id", "")
+    if not term_uri:
+        return ""
+
+    allocates = term.get("allocates", [])
+    if isinstance(allocates, str):
+        allocates = [allocates]
+    allocated_by_terms = (allocated_by_index or {}).get(term_uri, [])
+
+    if not allocates and not allocated_by_terms:
+        return ""
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    node_id(term_uri)
+    label_for(term_uri)
+
+    edges: list[tuple[str, str]] = []  # (allocator_uri, allocated_uri)
+
+    for obj_uri in allocates:
+        node_id(obj_uri)
+        label_for(obj_uri)
+        edges.append((term_uri, obj_uri))
+
+    for alloc_term in allocated_by_terms:
+        alloc_uri = alloc_term.get("@id", "")
+        if alloc_uri:
+            node_id(alloc_uri)
+            label_for(alloc_uri)
+            edges.append((alloc_uri, term_uri))
+
+    if not edges:
+        return ""
+
+    edges = list(dict.fromkeys(edges))
+
+    lines = ["flowchart TD"]
+    for uri, nid in node_ids.items():
+        lbl = node_labels.get(uri, nid).replace('"', "\'")
+        if uri == term_uri:
+            lines.append(f'    {nid}["{lbl}"]:::current')
+        else:
+            lines.append(f'    {nid}["{lbl}"]')
+    lines.append("")
+    for alloc_uri, obj_uri in edges:
+        a, o = node_id(alloc_uri), node_id(obj_uri)
+        lines.append(f"    {a} -.->|allocates| {o}")
+    lines.append("    classDef current fill:#e8f4f8,stroke:#2980b9,stroke-width:2px")
+
+    mermaid_src = "\n".join(lines)
+    return (
+        '<div class="card" style="margin-top:1.5rem">'
+        '<h3 style="margin-bottom:1rem">Allocations</h3>'
+        f'<div class="mermaid">{mermaid_src}</div>'
+        '</div>'
+    )
 def render_architecture_diagram(term: dict, terms_index: dict) -> str:
     """
     Render a Mermaid flowchart for terms whose title contains 'architecture'
@@ -2350,10 +2378,16 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
     analysis_allocates_html = render_analysis_allocates_diagram(
         term, terms_index or {})
 
-    # Classification diagram (subclasses + their allocates targets)
+    # Classification diagram (recursive subclass/superclass hierarchy)
     classification_html = render_classification_diagram(
-        term, superclass_index or {}, terms_index or {},
-              represents_index or {})
+        term, superclass_index or {}, terms_index or {})
+
+    # Term-level allocates diagram (direct allocates + allocated by)
+    # Suppressed for analysis subclasses — they get render_analysis_allocates_diagram instead.
+    term_allocates_html = (
+        render_term_allocates_diagram(term, terms_index or {}, allocated_by_index)
+        if not is_analysis_subclass(term) else ""
+    )
 
     # Variability diagram (for variant terms)
     variability_diagram_html = render_variability_diagram(
@@ -2693,6 +2727,7 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
 {analysis_allocates_html}
 {variability_diagram_html}
 {classification_html}
+{term_allocates_html}
 {architecture_html}
 {role_matrix_html}
 {notes_html}
