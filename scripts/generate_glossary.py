@@ -246,6 +246,23 @@ def build_hosted_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_bounds_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isBoundedBy target. Used to compute the inverse 'bounds'
+    relation: if A isBoundedBy B, then B bounds A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isBoundedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_evaluated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     """
     Return a mapping of URI -> list of term entries that declare that URI
@@ -777,7 +794,8 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 evaluated_by_index: dict[str, list[dict]] | None = None,
                 fired_by_index: dict[str, list[dict]] | None = None,
                 has_variant_index: dict[str, list[dict]] | None = None,
-                hosted_by_index: dict[str, list[dict]] | None = None) -> list[str]:
+                hosted_by_index: dict[str, list[dict]] | None = None,
+                bounds_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -886,6 +904,7 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("allocates", "Allocates"),
         ("canBe", "Can be"),
         ("hosts", "Hosts"),
+        ("isBoundedBy", "Bounded by"),
         ("exposes", "Exposes"),
         ("produces", "Produces"),
         ("consumes", "Consumes"),
@@ -921,6 +940,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in hosting_terms
             ]
             relation_rows.append(("Hosted by", ", ".join(links)))
+
+    # Bounds (computed inverse of isBoundedBy)
+    if bounds_index:
+        term_id = term.get("@id", "")
+        bounded_terms = bounds_index.get(term_id, [])
+        if bounded_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in bounded_terms
+            ]
+            relation_rows.append(("Bounds", ", ".join(links)))
 
     # Evaluated by (computed inverse of evaluates)
     if evaluated_by_index:
@@ -1304,6 +1334,7 @@ def main() -> int:
     represents_index = build_represents_index(terms)
     allocated_by_index = build_allocated_by_index(terms)
     hosted_by_index = build_hosted_by_index(terms)
+    bounds_index = build_bounds_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
@@ -1392,7 +1423,8 @@ def main() -> int:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
                                   evaluated_by_index, fired_by_index,
-                                  has_variant_index, hosted_by_index))
+                                  has_variant_index, hosted_by_index,
+                                  bounds_index))
             md.append("---")
             md.append("")
     else:
@@ -1410,7 +1442,8 @@ def main() -> int:
             md.extend(render_term(term, ref_index, superclass_index, terms_index,
                                   represents_index, allocated_by_index,
                                   evaluated_by_index, fired_by_index,
-                                  has_variant_index, hosted_by_index))
+                                  has_variant_index, hosted_by_index,
+                                  bounds_index))
             md.append("---")
             md.append("")
     else:

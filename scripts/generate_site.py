@@ -108,6 +108,7 @@ BREAKDOWN_RELATION_LABELS: dict[str, str] = {
     "allocates": "Allocates",
     "canBe": "Can be",
     "hosts": "Hosts",
+    "isBoundedBy": "Bounded by",
 }
 
 # Human-readable labels for role relation fields rendered on term pages.
@@ -292,6 +293,23 @@ def build_hosted_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     index: dict[str, list[dict]] = {}
     for term in terms:
         val = term.get("hosts")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_bounds_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isBoundedBy target. Used to compute the inverse 'bounds'
+    relation: if A isBoundedBy B, then B bounds A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isBoundedBy")
         if not val:
             continue
         uris = [val] if isinstance(val, str) else val
@@ -2280,7 +2298,8 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                      evaluated_by_index: dict[str, list[dict]] | None = None,
                      fired_by_index: dict[str, list[dict]] | None = None,
                      has_variant_index: dict[str, list[dict]] | None = None,
-                     hosted_by_index: dict[str, list[dict]] | None = None) -> str:
+                     hosted_by_index: dict[str, list[dict]] | None = None,
+                     bounds_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2461,6 +2480,19 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
             bfo_html += (
                 f'<tr>'
                 f'<td>Hosted by</td>'
+                f'<td>{SEP.join(links)}</td>'
+                f'</tr>'
+            )
+
+    # Bounds (computed inverse of isBoundedBy)
+    if bounds_index:
+        term_id = term.get("@id", "")
+        bounded_terms = bounds_index.get(term_id, [])
+        if bounded_terms:
+            links = [render_uri_link(t.get("@id", "")) for t in bounded_terms]
+            bfo_html += (
+                f'<tr>'
+                f'<td>Bounds</td>'
                 f'<td>{SEP.join(links)}</td>'
                 f'</tr>'
             )
@@ -3129,6 +3161,7 @@ def main() -> int:
     represents_index = build_represents_index(terms)
     allocated_by_index = build_allocated_by_index(terms)
     hosted_by_index = build_hosted_by_index(terms)
+    bounds_index = build_bounds_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
@@ -3200,7 +3233,8 @@ def main() -> int:
             render_term_page(term, ref_index, superclass_index, terms_index,
                              represents_index, allocated_by_index,
                              evaluated_by_index, fired_by_index,
-                             has_variant_index, hosted_by_index), encoding="utf-8"
+                             has_variant_index, hosted_by_index,
+                             bounds_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",
