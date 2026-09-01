@@ -517,6 +517,9 @@ def render_breakdown_diagram_md(term: dict, terms_index: dict[str, dict],
 
 
 ANALYSIS_BASE_URI = "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+ROLE_BASE_URI = "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
+BREAKDOWN_BASE_URI = "https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67"
+CONCEPTUAL_MODEL_BASE_URI = "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
 
 
 def is_analysis_subclass(term: dict) -> bool:
@@ -687,6 +690,470 @@ def render_analysis_allocates_diagram_md(term: dict,
     mermaid_lines.append("```")
 
     return ["**Allocations**", ""] + mermaid_lines + [""]
+
+
+def render_classification_diagram_md(
+        term: dict,
+        superclass_index: dict[str, list[dict]],
+        terms_index: dict[str, dict]) -> list[str]:
+    """
+    Render a Classification Mermaid diagram as Markdown lines.
+    Mirrors render_classification_diagram in generate_site.py.
+
+    Traverses recursively upward (via subClassOf) and downward (via
+    superclass_index). Only subclass-of edges are shown.
+
+    Rendered for any term that has at least one subClassOf parent OR at least
+    one direct subclass. Returns an empty list otherwise.
+    """
+    term_uri = term.get("@id", "")
+    if not term_uri:
+        return []
+
+    parents = term.get("subClassOf", [])
+    if isinstance(parents, str):
+        parents = [parents]
+    if not parents and not superclass_index.get(term_uri):
+        return []
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    edges: list[tuple[str, str]] = []
+    visited_up: set[str] = set()
+    visited_down: set[str] = set()
+
+    def collect_up(uri: str) -> None:
+        if uri in visited_up:
+            return
+        visited_up.add(uri)
+        data = terms_index.get(uri) or (term if uri == term_uri else {})
+        up_parents = data.get("subClassOf", [])
+        if isinstance(up_parents, str):
+            up_parents = [up_parents]
+        for parent_uri in up_parents:
+            node_id(uri); label_for(uri)
+            node_id(parent_uri); label_for(parent_uri)
+            edges.append((uri, parent_uri))
+            collect_up(parent_uri)
+
+    def collect_down(uri: str) -> None:
+        if uri in visited_down:
+            return
+        visited_down.add(uri)
+        for child_term in sorted(superclass_index.get(uri, []),
+                                 key=lambda t: t.get("title", "")):
+            child_uri = child_term.get("@id", "")
+            if not child_uri:
+                continue
+            node_id(child_uri); label_for(child_uri)
+            node_id(uri); label_for(uri)
+            edges.append((child_uri, uri))
+            collect_down(child_uri)
+
+    node_id(term_uri)
+    label_for(term_uri)
+    collect_up(term_uri)
+    collect_down(term_uri)
+
+    if not edges:
+        return []
+
+    edges = list(dict.fromkeys(edges))
+
+    mermaid_lines = ["```mermaid", "graph TD"]
+    for uri, nid in node_ids.items():
+        lbl = label_for(uri).replace('"', "'")
+        mermaid_lines.append(f'    {nid}["{lbl}"]')
+    mermaid_lines.append("")
+    for child_uri, parent_uri in edges:
+        c, p = node_id(child_uri), node_id(parent_uri)
+        mermaid_lines.append(f"    {c} -->|subclass of| {p}")
+    mermaid_lines.append("```")
+
+    return ["**Classification**", ""] + mermaid_lines + [""]
+
+
+def render_term_allocates_diagram_md(
+        term: dict,
+        terms_index: dict[str, dict],
+        allocated_by_index: dict[str, list[dict]] | None = None) -> list[str]:
+    """
+    Render an Allocations Mermaid diagram for the current term as Markdown lines.
+    Mirrors render_term_allocates_diagram in generate_site.py.
+
+    Traverses recursively:
+    - Downward: term -.->|allocates| target, then each target's own allocates.
+    - Upward:   allocator -.->|allocates| term (via allocated_by_index), then
+                each allocator's own allocators.
+
+    Suppressed for analysis subclasses (they use the analysis allocates diagram).
+    Returns an empty list otherwise.
+    """
+    if is_analysis_subclass(term):
+        return []
+
+    term_uri = term.get("@id", "")
+    if not term_uri:
+        return []
+
+    allocates_direct = term.get("allocates", [])
+    if isinstance(allocates_direct, str):
+        allocates_direct = [allocates_direct]
+    allocated_by_direct = (allocated_by_index or {}).get(term_uri, [])
+
+    if not allocates_direct and not allocated_by_direct:
+        return []
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            title = entry.get("title", "")
+            lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    edges: list[tuple[str, str]] = []
+    visited_down: set[str] = set()
+    visited_up: set[str] = set()
+
+    def collect_down(uri: str) -> None:
+        if uri in visited_down:
+            return
+        visited_down.add(uri)
+        data = terms_index.get(uri) or (term if uri == term_uri else {})
+        targets = data.get("allocates", [])
+        if isinstance(targets, str):
+            targets = [targets]
+        for obj_uri in targets:
+            node_id(uri); label_for(uri)
+            node_id(obj_uri); label_for(obj_uri)
+            edges.append((uri, obj_uri))
+            collect_down(obj_uri)
+
+    def collect_up(uri: str) -> None:
+        if uri in visited_up:
+            return
+        visited_up.add(uri)
+        for alloc_term in (allocated_by_index or {}).get(uri, []):
+            alloc_uri = alloc_term.get("@id", "")
+            if not alloc_uri:
+                continue
+            node_id(alloc_uri); label_for(alloc_uri)
+            node_id(uri); label_for(uri)
+            edges.append((alloc_uri, uri))
+            collect_up(alloc_uri)
+
+    node_id(term_uri)
+    label_for(term_uri)
+    collect_down(term_uri)
+    collect_up(term_uri)
+
+    if not edges:
+        return []
+
+    edges = list(dict.fromkeys(edges))
+
+    mermaid_lines = ["```mermaid", "graph TD"]
+    for uri, nid in node_ids.items():
+        lbl = label_for(uri).replace('"', "'")
+        mermaid_lines.append(f'    {nid}["{lbl}"]')
+    mermaid_lines.append("")
+    for alloc_uri, obj_uri in edges:
+        a, o = node_id(alloc_uri), node_id(obj_uri)
+        mermaid_lines.append(f"    {a} -.->|allocates| {o}")
+    mermaid_lines.append("```")
+
+    return ["**Allocations**", ""] + mermaid_lines + [""]
+
+
+def render_architecture_diagram_md(
+        term: dict,
+        terms_index: dict[str, dict]) -> list[str]:
+    """
+    Render an Architecture Mermaid diagram for architecture terms as Markdown lines.
+    Mirrors render_architecture_diagram in generate_site.py.
+
+    Triggered when the term title contains 'architecture' (case-insensitive).
+    Collects exposes / allocates / isComposedOf relations from each related term.
+    Returns an empty list otherwise.
+    """
+    if "architecture" not in term.get("title", "").lower():
+        return []
+
+    term_uri = term.get("@id", "")
+    if not term_uri:
+        return []
+
+    related_uris = term.get("related", [])
+    if isinstance(related_uris, str):
+        related_uris = [related_uris]
+    if not related_uris:
+        return []
+
+    node_ids: dict[str, str] = {}
+    node_labels: dict[str, str] = {}
+    counter = [0]
+
+    def node_id(uri: str) -> str:
+        if uri not in node_ids:
+            counter[0] += 1
+            node_ids[uri] = f"N{counter[0]}"
+        return node_ids[uri]
+
+    def label_for(uri: str) -> str:
+        if uri in node_labels:
+            return node_labels[uri]
+        entry = terms_index.get(uri)
+        if entry:
+            t = entry.get("title", "")
+            lbl = t.split(" - ", 1)[0].strip() if " - " in t else t
+        else:
+            stem = uri.rstrip("/").rsplit("/", 1)[-1]
+            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = re.sub(r"-3se$", "", stem)
+            lbl = stem.replace("-", " ").title()
+        node_labels[uri] = lbl
+        return lbl
+
+    exposes_edges = []
+    allocates_edges = []
+    composed_edges = []
+
+    for rel_uri in related_uris:
+        rel_term = terms_index.get(rel_uri)
+        if rel_term is None:
+            continue
+
+        exposes = rel_term.get("exposes") or []
+        if isinstance(exposes, str):
+            exposes = [exposes]
+        for interface_uri in exposes:
+            node_id(rel_uri); label_for(rel_uri)
+            node_id(interface_uri); label_for(interface_uri)
+            exposes_edges.append((rel_uri, interface_uri))
+            iface_term = terms_index.get(interface_uri)
+            if iface_term:
+                iface_allocates = iface_term.get("allocates") or []
+                if isinstance(iface_allocates, str):
+                    iface_allocates = [iface_allocates]
+                for alloc_uri in iface_allocates:
+                    node_id(interface_uri); label_for(interface_uri)
+                    node_id(alloc_uri); label_for(alloc_uri)
+                    allocates_edges.append((interface_uri, alloc_uri))
+
+        allocates = rel_term.get("allocates") or []
+        if isinstance(allocates, str):
+            allocates = [allocates]
+        for alloc_uri in allocates:
+            node_id(rel_uri); label_for(rel_uri)
+            node_id(alloc_uri); label_for(alloc_uri)
+            allocates_edges.append((rel_uri, alloc_uri))
+
+        composed = rel_term.get("isComposedOf") or []
+        if isinstance(composed, str):
+            composed = [composed]
+        for comp_uri in composed:
+            node_id(rel_uri); label_for(rel_uri)
+            node_id(comp_uri); label_for(comp_uri)
+            composed_edges.append((rel_uri, comp_uri))
+
+    if not exposes_edges and not allocates_edges and not composed_edges:
+        return []
+
+    exposes_edges = list(dict.fromkeys(exposes_edges))
+    allocates_edges = list(dict.fromkeys(allocates_edges))
+    composed_edges = list(dict.fromkeys(composed_edges))
+
+    label_to_primary_uri: dict[str, str] = {}
+    uri_remap: dict[str, str] = {}
+    for uri in list(node_ids.keys()):
+        lbl_lower = node_labels.get(uri, "").lower()
+        if lbl_lower in label_to_primary_uri:
+            uri_remap[uri] = label_to_primary_uri[lbl_lower]
+        else:
+            label_to_primary_uri[lbl_lower] = uri
+    if uri_remap:
+        exposes_edges = [(uri_remap.get(s, s), uri_remap.get(o, o)) for s, o in exposes_edges]
+        allocates_edges = [(uri_remap.get(s, s), uri_remap.get(o, o)) for s, o in allocates_edges]
+        composed_edges = [(uri_remap.get(s, s), uri_remap.get(o, o)) for s, o in composed_edges]
+        exposes_edges = list(dict.fromkeys(exposes_edges))
+        allocates_edges = list(dict.fromkeys(allocates_edges))
+        composed_edges = list(dict.fromkeys(composed_edges))
+        for uri in uri_remap:
+            node_ids.pop(uri, None)
+            node_labels.pop(uri, None)
+
+    mermaid_lines = ["```mermaid", "graph TD"]
+    for uri, nid in node_ids.items():
+        lbl = label_for(uri).replace('"', "'")
+        mermaid_lines.append(f'    {nid}["{lbl}"]')
+    mermaid_lines.append("")
+    for src_uri, comp_uri in composed_edges:
+        s, c = node_id(src_uri), node_id(comp_uri)
+        mermaid_lines.append(f"    {s} -->|composed of| {c}")
+    for src_uri, iface_uri in exposes_edges:
+        s, i = node_id(src_uri), node_id(iface_uri)
+        mermaid_lines.append(f"    {s} -.->|exposes| {i}")
+    for src_uri, alloc_uri in allocates_edges:
+        s, a = node_id(src_uri), node_id(alloc_uri)
+        mermaid_lines.append(f"    {s} -.->|allocates| {a}")
+    mermaid_lines.append("```")
+
+    return ["**Architecture**", ""] + mermaid_lines + [""]
+
+
+def render_role_analysis_matrix_md(
+        term: dict,
+        superclass_index: dict[str, list[dict]]) -> list[str]:
+    """
+    Render a responsibility matrix as Markdown lines.
+    Mirrors render_role_analysis_matrix in generate_site.py.
+
+    Triggered for Role - 3SE, Analysis - 3SE, Breakdown structure - 3SE,
+    and Conceptual model - 3SE pages.
+    """
+    term_id = term.get("@id", "")
+    title = term.get("title", "")
+
+    is_role_page = title.startswith("Role - 3SE")
+    is_analysis_page = title.startswith("Analysis - 3SE")
+    is_breakdown_page = title.startswith("Breakdown structure - 3SE")
+    is_model_page = title.startswith("Conceptual model - 3SE")
+
+    if not (is_role_page or is_analysis_page or is_breakdown_page or is_model_page):
+        return []
+
+    if is_role_page:
+        child_roles = superclass_index.get(term_id, [])
+    else:
+        child_roles = superclass_index.get(ROLE_BASE_URI, [])
+    if not child_roles:
+        return []
+    child_roles = sorted(child_roles, key=lambda t: t.get("title", ""))
+
+    if is_analysis_page:
+        child_analyses = superclass_index.get(term_id, [])
+    else:
+        child_analyses = superclass_index.get(ANALYSIS_BASE_URI, [])
+    child_analyses = sorted(child_analyses or [], key=lambda t: t.get("title", ""))
+
+    if is_breakdown_page:
+        child_breakdowns = superclass_index.get(term_id, [])
+    else:
+        child_breakdowns = superclass_index.get(BREAKDOWN_BASE_URI, [])
+    child_breakdowns = sorted(child_breakdowns or [], key=lambda t: t.get("title", ""))
+
+    if is_model_page:
+        child_models = superclass_index.get(term_id, [])
+    else:
+        child_models = superclass_index.get(CONCEPTUAL_MODEL_BASE_URI, [])
+    child_models = sorted(child_models or [], key=lambda t: t.get("title", ""))
+
+    if is_role_page and not child_analyses and not child_breakdowns and not child_models:
+        return []
+    if is_analysis_page and not child_analyses:
+        return []
+    if is_breakdown_page and not child_breakdowns:
+        return []
+    if is_model_page and not child_models:
+        return []
+
+    def short_label(t: str) -> str:
+        return t.split(" - ")[0].strip()
+
+    def cell_val(role: dict, col_uri: str) -> str:
+        if col_uri in role.get("isResponsibleFor", []):
+            return "R"
+        if col_uri in role.get("isAccountableFor", []):
+            return "A"
+        if col_uri in role.get("isSupporting", []):
+            return "S"
+        return "-"
+
+    def build_role_matrix(col_entries: list[dict]) -> list[str]:
+        col_uris = [c.get("@id", "") for c in col_entries]
+        col_names = [short_label(c.get("title", "")) for c in col_entries]
+        header = "| Role | " + " | ".join(col_names) + " |"
+        sep = "|---|" + "|".join(["---"] * len(col_names)) + "|"
+        rows = [header, sep]
+        for role in child_roles:
+            role_uri = role.get("@id", "")
+            role_name = short_label(role.get("title", ""))
+            cells = " | ".join(cell_val(role, cu) for cu in col_uris)
+            rows.append(f"| [{role_name}]({role_uri}) | {cells} |")
+        return rows
+
+    def build_row_matrix(row_entries: list[dict], row_label: str) -> list[str]:
+        role_uris = [r.get("@id", "") for r in child_roles]
+        role_names = [short_label(r.get("title", "")) for r in child_roles]
+        header = f"| {row_label} | " + " | ".join(role_names) + " |"
+        sep = "|---|" + "|".join(["---"] * len(role_names)) + "|"
+        rows = [header, sep]
+        for entry in row_entries:
+            entry_uri = entry.get("@id", "")
+            entry_name = short_label(entry.get("title", ""))
+            cells = " | ".join(
+                cell_val(role, entry_uri) for role in child_roles
+            )
+            rows.append(f"| [{entry_name}]({entry_uri}) | {cells} |")
+        return rows
+
+    if is_role_page:
+        matrix_title = "**Role x Analysis / Breakdown structure / Model responsibility matrix**"
+        all_cols = child_analyses + child_breakdowns + child_models
+        table_lines = build_role_matrix(all_cols)
+    elif is_analysis_page:
+        matrix_title = "**Analysis x Role responsibility matrix**"
+        table_lines = build_row_matrix(child_analyses, "Analysis")
+    elif is_breakdown_page:
+        matrix_title = "**Breakdown structure x Role responsibility matrix**"
+        table_lines = build_row_matrix(child_breakdowns, "Breakdown structure")
+    else:
+        matrix_title = "**Model x Role responsibility matrix**"
+        table_lines = build_row_matrix(child_models, "Model")
+
+    legend = "*R: responsible · A: accountable · S: supporting · -: none*"
+    return [matrix_title, ""] + table_lines + ["", legend, ""]
 
 
 def render_variability_diagram_md(term: dict,
@@ -992,6 +1459,14 @@ def render_term(term: dict, ref_index: dict[str, dict],
             lines.append(f"| {label} | {value} |")
         lines.append("")
 
+    # Classification diagram (recursive subclass/superclass hierarchy)
+    if terms_index and superclass_index:
+        lines.extend(render_classification_diagram_md(term, superclass_index, terms_index))
+
+    # Term-level allocations diagram (recursive allocates + allocated by)
+    if terms_index:
+        lines.extend(render_term_allocates_diagram_md(term, terms_index, allocated_by_index))
+
     # Breakdown structure diagram
     if terms_index:
         lines.extend(render_breakdown_diagram_md(term, terms_index, represents_index))
@@ -1000,9 +1475,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
     if terms_index:
         lines.extend(render_analysis_allocates_diagram_md(term, terms_index))
 
+    # Architecture diagram (architecture terms only)
+    if terms_index:
+        lines.extend(render_architecture_diagram_md(term, terms_index))
+
     # Variability diagram (variant terms only)
     if terms_index:
         lines.extend(render_variability_diagram_md(term, terms_index))
+
+    # Role × Analysis / Breakdown structure / Model responsibility matrix
+    if superclass_index:
+        lines.extend(render_role_analysis_matrix_md(term, superclass_index))
 
     # References
     is_referenced_by = term.get("isReferencedBy", [])
