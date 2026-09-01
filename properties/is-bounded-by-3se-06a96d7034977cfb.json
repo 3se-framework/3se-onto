@@ -5,5 +5,12 @@
   "description": "Relates a site to the physical interface(s) that (partially or wholly) constitute its boundary.",
   "domain": "skos:Concept",
   "range": "skos:Concept",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/is-bounded-by-3se-06a96d7034977cfb",
+  "entryCreated": "2026-09-01",
+  "entryModified": "2026-09-01",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
