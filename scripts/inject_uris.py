@@ -75,7 +75,8 @@ TERM_ARRAY_FIELDS: list[str] = [
     "evaluates",
     "fires",
     "hosts",
-    "isVariantOf"
+    "isVariantOf",
+    "isBoundedBy"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.

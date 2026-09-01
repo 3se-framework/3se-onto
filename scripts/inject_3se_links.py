@@ -356,12 +356,14 @@ def main() -> int:
                 # relation (produces) or a consumption relation (consumes) or a conveyance
                 # relation (conveys) or an evaluation relation (evaluates)
                 # or a fire relation (fires) or a variability relation (isVariantOf)
-                # or a hosting relation (hosts) linking them — those relations supersede skos:related
+                # or a hosting relation (hosts) or a boundary relation (isBoundedBy)
+                # linking them — those relations supersede skos:related
                 src_structural = set()
                 tgt_structural = set()
                 for field in ("isComposedOf", "isRepresentedBy", "allocates", "canBe",
                               "exposes", "isResponsibleFor", "isAccountableFor", "isSupporting",
-                              "produces", "consumes", "conveys", "evaluates", "fires", "hosts", "isVariantOf"):
+                              "produces", "consumes", "conveys", "evaluates", "fires", "hosts", "isVariantOf",
+                              "isBoundedBy"):
                     for uri in (src_data.get(field) or []):
                         src_structural.add(uri)
                     for uri in (tgt_data.get(field) or []):
