@@ -1702,25 +1702,27 @@ def render_term_allocates_diagram(
         terms_index: dict,
         allocated_by_index: dict[str, list[dict]] | None = None) -> str:
     """
-    Render a Mermaid flowchart showing the direct allocates and allocated-by
-    relations of the considered term.
+    Render a Mermaid flowchart showing the full allocates chain of the considered
+    term, traversing recursively:
 
-    - allocates edges:    term -.->|allocates| target
-    - allocated-by edges: allocator -.->|allocates| term  (computed inverse)
+    - Downward: term -.->|allocates| target, then target's own allocates, etc.
+    - Upward:   allocator -.->|allocates| term (via allocated_by_index), then
+                each allocator's own allocators, etc.
 
-    Rendered for any term that carries at least one such relation.
-    Returns an empty string otherwise.
+    Rendered for any term that carries at least one direct allocates or allocated-by
+    relation. Suppressed for analysis subclasses (they use the analysis allocates
+    diagram instead). Returns an empty string otherwise.
     """
     term_uri = term.get("@id", "")
     if not term_uri:
         return ""
 
-    allocates = term.get("allocates", [])
-    if isinstance(allocates, str):
-        allocates = [allocates]
-    allocated_by_terms = (allocated_by_index or {}).get(term_uri, [])
+    allocates_direct = term.get("allocates", [])
+    if isinstance(allocates_direct, str):
+        allocates_direct = [allocates_direct]
+    allocated_by_direct = (allocated_by_index or {}).get(term_uri, [])
 
-    if not allocates and not allocated_by_terms:
+    if not allocates_direct and not allocated_by_direct:
         return ""
 
     node_ids: dict[str, str] = {}
@@ -1741,29 +1743,53 @@ def render_term_allocates_diagram(
             title = entry.get("title", "")
             lbl = title.split(" - ", 1)[0].strip() if " - " in title else title
         else:
+            import re as _re
             stem = uri.rstrip("/").rsplit("/", 1)[-1]
-            stem = re.sub(r"-[0-9a-f]{16}$", "", stem)
-            stem = re.sub(r"-3se$", "", stem)
+            stem = _re.sub(r"-[0-9a-f]{16}$", "", stem)
+            stem = _re.sub(r"-3se$", "", stem)
             lbl = stem.replace("-", " ").title()
         node_labels[uri] = lbl
         return lbl
 
-    node_id(term_uri)
-    label_for(term_uri)
-
     edges: list[tuple[str, str]] = []  # (allocator_uri, allocated_uri)
+    visited_down: set[str] = set()
+    visited_up: set[str] = set()
 
-    for obj_uri in allocates:
-        node_id(obj_uri)
-        label_for(obj_uri)
-        edges.append((term_uri, obj_uri))
+    def collect_down(uri: str) -> None:
+        if uri in visited_down:
+            return
+        visited_down.add(uri)
+        data = terms_index.get(uri) or (term if uri == term_uri else {})
+        targets = data.get("allocates", [])
+        if isinstance(targets, str):
+            targets = [targets]
+        for obj_uri in targets:
+            node_id(uri)
+            label_for(uri)
+            node_id(obj_uri)
+            label_for(obj_uri)
+            edges.append((uri, obj_uri))
+            collect_down(obj_uri)
 
-    for alloc_term in allocated_by_terms:
-        alloc_uri = alloc_term.get("@id", "")
-        if alloc_uri:
+    def collect_up(uri: str) -> None:
+        if uri in visited_up:
+            return
+        visited_up.add(uri)
+        for alloc_term in (allocated_by_index or {}).get(uri, []):
+            alloc_uri = alloc_term.get("@id", "")
+            if not alloc_uri:
+                continue
             node_id(alloc_uri)
             label_for(alloc_uri)
-            edges.append((alloc_uri, term_uri))
+            node_id(uri)
+            label_for(uri)
+            edges.append((alloc_uri, uri))
+            collect_up(alloc_uri)
+
+    node_id(term_uri)
+    label_for(term_uri)
+    collect_down(term_uri)
+    collect_up(term_uri)
 
     if not edges:
         return ""
@@ -1772,7 +1798,7 @@ def render_term_allocates_diagram(
 
     lines = ["flowchart TD"]
     for uri, nid in node_ids.items():
-        lbl = node_labels.get(uri, nid).replace('"', "\'")
+        lbl = node_labels.get(uri, nid).replace('"', "'")
         if uri == term_uri:
             lines.append(f'    {nid}["{lbl}"]:::current')
         else:
@@ -2370,6 +2396,10 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
         desc_escaped = desc.replace("\n", "<br>")
         description_html = f'<blockquote class="definition">{desc_escaped}</blockquote>'
 
+    # Classification diagram (recursive subclass/superclass hierarchy)
+    classification_html = render_classification_diagram(
+        term, superclass_index or {}, terms_index or {})
+
     # Breakdown structure diagram (only for breakdown structure terms)
     diagram_html = render_breakdown_diagram(term, terms_index or {},
                                             represents_index or {})
@@ -2378,10 +2408,6 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
     analysis_allocates_html = render_analysis_allocates_diagram(
         term, terms_index or {})
 
-    # Classification diagram (recursive subclass/superclass hierarchy)
-    classification_html = render_classification_diagram(
-        term, superclass_index or {}, terms_index or {})
-
     # Term-level allocates diagram (direct allocates + allocated by)
     # Suppressed for analysis subclasses — they get render_analysis_allocates_diagram instead.
     term_allocates_html = (
@@ -2389,12 +2415,12 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
         if not is_analysis_subclass(term) else ""
     )
 
-    # Variability diagram (for variant terms)
-    variability_diagram_html = render_variability_diagram(
-        term, terms_index or {})
-
     # Architecture diagram (for terms containing 'Architecture')
     architecture_html = render_architecture_diagram(
+        term, terms_index or {})
+
+    # Variability diagram (for variant terms)
+    variability_diagram_html = render_variability_diagram(
         term, terms_index or {})
 
     # Role × Analysis matrix (only for the Role - 3SE page)
