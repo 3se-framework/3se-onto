@@ -39,6 +39,34 @@ Beyond mapping to engineering standards, 3SE terms are progressively anchored in
 
 `subClassOf` is reserved for this formal BFO subsumption. Structural relations specific to 3SE (`allocates`, `isComposedOf`, `produces`, `consumes`, ...) are typed separately in `properties/` and are not required to respect the BFO continuant/occurrent divide, since they express engineering-level mappings (e.g. responsibility assignment, traceability) rather than formal ontological claims.
 
+| 3SE term | BFO 2.0 class |
+|---|---|
+| Activity | Process |
+| Attribute | Quality |
+| Exchange | Generically dependent continuant |
+| Feature | Disposition |
+| Flow | Generically dependent continuant |
+| Function | Function |
+| Functional element | Fiat object part |
+| Material entity | Material entity |
+| Physical element | Object |
+| Physical interface | Two-dimensional continuant fiat boundary |
+| Site | Site |
+| Stakeholder | Role |
+| State | Disposition |
+| System | Role |
+| System element | Role |
+| System element interface | Role |
+| System interface | Role |
+
+## How 3SE properties relate to RO?
+
+3SE properties defined in `properties/` are progressively aligned with the [OBO Relation Ontology (RO)](https://oborel.github.io/) via `subPropertyOf`. This positions 3SE relations within a shared formal property hierarchy — enabling interoperability with other OBO Foundry ontologies and making the semantics of each relation explicit.
+
+| 3SE property | RO property |
+|---|---|
+| hosts | location of |
+
 ## Domains
 
 The ontology is organised into ten engineering domains. Each domain is a `skos:Collection` that groups the 3SE analyses in scope of one area of the 3SE maturity evaluation method.
