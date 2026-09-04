@@ -17,6 +17,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6.0.0
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v6.2.0
         with:
@@ -25,8 +27,40 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Prepare site-versions archive worktree
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          REMOTE_URL="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$REMOTE_URL" site-versions >/dev/null 2>&1; then
+            git fetch "$REMOTE_URL" site-versions:site-versions
+            git worktree add archive site-versions
+          else
+            mkdir -p archive
+          fi
+
+      - name: Compute known-versions list (for the dropdown)
+        id: known
+        run: |
+          list=$(cd archive && ls -d [0-9]*/ 2>/dev/null \
+            | sed 's#/$##; s#-#.#' | sort -u | paste -sd, - || true)
+          echo "list=$list" >> "$GITHUB_OUTPUT"
+          echo "Known versions: $list"
+
       - name: Generate HTML site
-        run: python scripts/generate_site.py
+        run: |
+          python scripts/generate_site.py \
+            --versions "${{ steps.known.outputs.list }}"
+
+      - name: Assemble deploy artifact (latest + every archived version)
+        run: |
+          for dir in archive/[0-9]*/; do
+            [ -d "$dir" ] || continue
+            name="$(basename "$dir")"
+            rm -rf "_site/${name}"
+            cp -r "$dir" "_site/${name}"
+          done
 
       - uses: actions/upload-pages-artifact@v3.0.1
         with:
