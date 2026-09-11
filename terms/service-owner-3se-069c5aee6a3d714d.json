@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Service owner - 3SE",
   "description": "Role that is accountable for the feature analysis, the service analysis and the release analysis.\nIt contributes to the value analysis, the goal analysis, the operational analysis, the variability analysis and the risk analysis.\nNote: when the service is an asset, the service owner is also called asset owner",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],

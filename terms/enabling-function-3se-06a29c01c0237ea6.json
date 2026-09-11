@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Enabling function - 3SE",
   "description": "Function devolved to an actor.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
