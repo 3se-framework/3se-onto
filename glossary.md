@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-09-01 17:31 UTC*
+*Generated on 2026-09-11 14:48 UTC*
 
-This glossary contains **7 3SE domain(s)**, **411 3SE term(s)**, **113 other term(s)**, **16 3SE property(ies)**, **11 other property(ies)**, and **29 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **411 3SE term(s)**, **113 other term(s)**, **16 3SE property(ies)**, **11 other property(ies)**, and **29 reference(s)**.
 
 ## Contents
 
@@ -13,6 +13,7 @@ This glossary contains **7 3SE domain(s)**, **411 3SE term(s)**, **113 other ter
   - [Requirements engineering - 3SE](#requirements-engineering---3se)
   - [Risk engineering - 3SE](#risk-engineering---3se)
   - [System engineering - 3SE](#system-engineering---3se)
+  - [Variability and configuration engineering - 3SE](#variability-and-configuration-engineering---3se)
   - [Verification, validation and acceptance engineering - 3SE](#verification-validation-and-acceptance-engineering---3se)
 - [3SE Terms](#3se-terms)
   - [Abstract model - 3SE](#abstract-model---3se)
@@ -604,53 +605,53 @@ This glossary contains **7 3SE domain(s)**, **411 3SE term(s)**, **113 other ter
 
 ## Domains
 
-*7 evaluation domain(s) defined by the 3SE framework.*
+*8 evaluation domain(s) defined by the 3SE framework.*
 
 ### Asset engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Domain covering the identification of the products and services that realize system features, their internal structuring into product elements and service means, and the releases through which they are delivered.
 
 **Members:** [Product analysis - 3SE](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [Product architecture - 3SE](https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9), [Service analysis - 3SE](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [Service architecture - 3SE](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53), [Release analysis - 3SE](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3)
 
-*Created: 2026-07-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Business engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Domain covering the decomposition and allocation of stakeholder goals into features and attributes, the value they deliver to stakeholders, the actors supporting them, the interdependent actors influencing them, and the opportunities and risks arising from the system of interest's milieu.
 
 **Members:** [Goal analysis - 3SE](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [Feature analysis - 3SE](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [Interdependence analysis - 3SE](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [Value analysis - 3SE](https://www.3se.info/3se-onto/terms/value-analysis-3se-069d52ba2c597844)
 
-*Created: 2026-07-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Project engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Domain covering the planning and execution breakdown of a release into the project delivering it, the iterations completing that project, the epics assigned to each iteration, and the tasks realizing them.
 
 **Members:** [Project analysis - 3SE](https://www.3se.info/3se-onto/terms/project-analysis-3se-069b9d2c8ddf7fa8), [Epic analysis - 3SE](https://www.3se.info/3se-onto/terms/epic-analysis-3se-069b9d2c8d6c7640), [Iteration analysis - 3SE](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4), [Task analysis - 3SE](https://www.3se.info/3se-onto/terms/task-analysis-3se-069b9d2c8df9750e)
 
-*Created: 2026-07-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Requirements engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Domain covering the specification of stakeholder requirements from features and attributes, and their refinement into system requirements.
 
 **Members:** [Stakeholder requirement analysis - 3SE](https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5), [System requirement analysis - 3SE](https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c)
 
-*Created: 2026-07-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -668,25 +669,37 @@ This glossary contains **7 3SE domain(s)**, **411 3SE term(s)**, **113 other ter
 
 ### System engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Domain covering the analysis of the system of interest's operational activities and functions, their allocation into functional, physical and system architecture (functional elements, physical elements, system elements, their interfaces and states), and the system attributes contributing to stakeholder goals.
 
 **Members:** [Operational analysis - 3SE](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [System functional analysis - 3SE](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [Functional architecture - 3SE](https://www.3se.info/3se-onto/terms/functional-architecture-3se-069b9d2c8d957426), [Physical architecture - 3SE](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [System architecture - 3SE](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [System attribute analysis - 3SE](https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a)
 
-*Created: 2026-07-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-06 · Modified: 2026-09-11 · Creator: @rcasteran*
+
+---
+
+### Variability and configuration engineering - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Identification and management of variability in system features, functions, and architecture elements, encompassing variation points, variants, and constraints on their combinations, and the definition of configurations that bind a specific selection of base entities and variants into a realised product or service.
+
+**Members:** [Variability analysis - 3SE](https://www.3se.info/3se-onto/terms/variability-analysis-3se-06a888a0c0817f9b)
+
+*Created: 2026-09-11 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Verification, validation and acceptance engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Domain covering the confirmation that development deliverables pass their maturity or assessment gates (verification), that system requirements and constraints are satisfied by validation cases (validation), and that stakeholder goals are satisfied by acceptance cases (acceptance).
 
 **Members:** [System verification analysis - 3SE](https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891), [System validation analysis - 3SE](https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de), [Acceptance analysis - 3SE](https://www.3se.info/3se-onto/terms/acceptance-analysis-3se-069f3686ba967baf)
 
-*Created: 2026-07-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -696,7 +709,7 @@ This glossary contains **7 3SE domain(s)**, **411 3SE term(s)**, **113 other ter
 
 ### Abstract model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A simplified description of an entity to assist calculations and predictions.
 
@@ -750,13 +763,13 @@ graph TD
     N19 -->|subclass of| N1
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Acceptance - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of the attributes and features of an entity conducted to enable a stakeholder to determine whether the right entity is built and to accept it.
 Note: it determines if the entity satisfies the stakeholders’ goals.
@@ -766,7 +779,7 @@ Note: it determines if the entity satisfies the stakeholders’ goals.
 | Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [acceptance-case-3se-069f3686baba7c7e](https://www.3se.info/3se-onto/terms/acceptance-case-3se-069f3686baba7c7e) |
 | Close match | [acceptance-1012-2016-069ac9d90baa7544](https://www.3se.info/3se-onto/terms/acceptance-1012-2016-069ac9d90baa7544) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -810,7 +823,7 @@ graph TD
 
 ### Acceptance case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a acceptance objective and according to an evaluation method, to accept an attribute or a feature of an entity.
 
@@ -819,13 +832,13 @@ graph TD
 | Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [acceptance-analysis-3se-069f3686ba967baf](https://www.3se.info/3se-onto/terms/acceptance-analysis-3se-069f3686ba967baf), [acceptance-run-3se-069f3686bac377a9](https://www.3se.info/3se-onto/terms/acceptance-run-3se-069f3686bac377a9) |
 | Evaluates | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
-*Created: 2026-04-30 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-30 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Acceptance run - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > The execution of a sequence of acceptance cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the acceptance cases and to wrap up post executions.
 
@@ -833,7 +846,7 @@ graph TD
 |---|---|
 | Related | [acceptance-case-3se-069f3686baba7c7e](https://www.3se.info/3se-onto/terms/acceptance-case-3se-069f3686baba7c7e) |
 
-*Created: 2026-04-30 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-30 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -908,7 +921,7 @@ graph TD
 
 ### Actor - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Human being who carries out some enabling activities within the context of the system of interest by interacting with it.
 
@@ -936,7 +949,7 @@ graph TD
     N4 -.->|allocates| N5
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -1064,7 +1077,7 @@ graph TD
 
 ### Assessment gate - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Verification of a candidate release during an independent technical assessment where a decision is made to continue to the next iteration (with or without modifications) or to redefine it.
 
@@ -1073,13 +1086,13 @@ graph TD
 | Related | [iteration-3se-069b48ef5d347061](https://www.3se.info/3se-onto/terms/iteration-3se-069b48ef5d347061), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [system-verification-analysis-3se-06a49189cc247891](https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891) |
 | Close match | [decision-gate-24765-2017-069b48ef5ce978eb](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb) |
 
-*Created: 2026-03-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Asset - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of the system of interest, or a the system of interest itself, that is worth protecting.
 
@@ -1089,7 +1102,7 @@ graph TD
 | Narrow match | [asset-21434-2021-069c16c95aa67c53](https://www.3se.info/3se-onto/terms/asset-21434-2021-069c16c95aa67c53), [asset-24765-2017-069c5aee69ca7d63](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63) |
 | Has variant | [asset-variant-3se-06a8873e3730732e](https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e) |
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -1120,7 +1133,7 @@ graph TD
 
 ### Attack - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Set of deliberate actions to compromise one or more assets.
 
@@ -1129,7 +1142,7 @@ graph TD
 | Related | [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5) |
 | Broad match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
 
-*Created: 2026-03-18 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -1353,7 +1366,7 @@ graph TD
 
 ### Business owner - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Role that is accountable for the goal analysis and the value analysis.
 It contributes to the feature analysis, the stakeholder requirement analysis and the risk analysis.
@@ -1372,13 +1385,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Change - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Modification to any deliverable of a release.
 
@@ -1387,13 +1400,13 @@ graph TD
 | Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595) |
 | Close match | [change-24765-2017-069b5b3d9ea27656](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Computational model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Abstract model that uses software to simulate an entity.
 
@@ -1414,7 +1427,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -1498,7 +1511,7 @@ graph TD
 
 ### Concrete model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Specific instantiation of abstract model.
 
@@ -1517,7 +1530,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -1576,7 +1589,7 @@ graph TD
 
 ### Constraint validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of an entity to determine whether it satisfies the constraints allocated to it at the end of a development phase.
 
@@ -1598,13 +1611,13 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Constraint validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an inspection or an analysis, to validate a constraint.
 
@@ -1627,13 +1640,13 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Context - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Presence of a subset of the interdependent actors and/or interdependent systems of the milieu within a geometrically closed area surrounding the system of interest, that frames its behavior in a given situation.
 
@@ -1641,13 +1654,13 @@ graph TD
 |---|---|
 | Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Data - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functional flow made of symbols.
 
@@ -1667,13 +1680,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-19 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Demonstration - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation method of an attribute or feature of an entity under a set of validation case in its context of use.
 
@@ -1682,7 +1695,7 @@ graph TD
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e) |
 | Related match | [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -1734,7 +1747,7 @@ graph TD
 
 ### Enabling function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function devolved to an actor.
 
@@ -1777,13 +1790,13 @@ graph TD
     N5 -.->|allocates| N4
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of an actor.
 
@@ -1823,13 +1836,13 @@ graph TD
     N5 -.->|allocates| N4
 ```
 
-*Created: 2026-04-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling system - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System that carries out its own enabling system activities within the context of the system of interest and that supports it during its life cycle stages to achieve the goals it is designed for.
 
@@ -1871,13 +1884,13 @@ graph TD
     N5 -.->|allocates| N6
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling system activity - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Set of cohesive enabling system functions to be performed to achieve a goal, which transforms incoming exchanges into outgoing exchanges.
 
@@ -1919,13 +1932,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling system function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function devolved to an enabling system.
 
@@ -1970,13 +1983,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling system functional element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Part of an enabling system responsible for carrying out some of the enabling system functions devolved to the enabling system, by interacting with functional elements of the system and/or actors.
 
@@ -2005,13 +2018,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling system physical element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Part of an enabling system responsible for defining the resources to carrying out the enabling system functional element, by interacting with physical elements of the system and/or actors.
 
@@ -2040,13 +2053,13 @@ graph TD
     N6 -.->|allocates| N1
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Enabling system state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of an enabling system.
 
@@ -2088,13 +2101,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-04-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Engineering risk - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk related to a technical uncertainty (feasability, scope...) about a release.
 
@@ -2113,13 +2126,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Environment - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > The set of pre-existing conditions — physical, regulatory, technological, social, temporal — that constitute the background reality within which any system operates, independently of any particular system of interest, and that shapes the milieu by constraining and enabling what is possible within it.
 
@@ -2127,13 +2140,13 @@ graph TD
 |---|---|
 | Related | [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Epic - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Significant solution development initiative for a given release done in an iteration
 
@@ -2171,13 +2184,13 @@ graph TD
     N9 -.->|allocates| N1
 ```
 
-*Created: 2026-03-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Epic analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the iteration to determine what Epics are assigned to it.
 
@@ -2211,7 +2224,7 @@ graph TD
     N4 -.->|allocates| N3
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -2305,7 +2318,7 @@ graph TD
 
 ### Failure and effect analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the potential failure of a system function and its effect on the system state it is allocated to.
 It includes the following steps:
@@ -2337,13 +2350,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-06-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Fault - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Abnormal condition of a physical element that can cause a system to fail.
 
@@ -2365,7 +2378,7 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-03-18 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -2438,7 +2451,7 @@ graph TD
 
 ### Feature analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the goal to determine what feature is contributing to it and if the stakeholder represents an actor or an interdependent actor.
 
@@ -2484,13 +2497,13 @@ graph TD
     N11 -.->|allocates| N12
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Feature breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the feature that supports the feature analysis by following the principles below:
 (1) A high level feature is composed of at least two features.
@@ -2536,13 +2549,13 @@ graph TD
     N6 -->|composed of| N1
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Feature model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the feature analysis based on the feature breakdown structure.
 
@@ -2565,7 +2578,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -2678,7 +2691,7 @@ graph TD
 
 ### Flow attribute - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of a flow.
 
@@ -2727,13 +2740,13 @@ graph TD
     N8 -.->|allocates| N9
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > A transformation of incoming flows to outgoing flows, by means of some mechanisms, and subject to certain controls.
 
@@ -2794,7 +2807,7 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-03-13 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -2825,7 +2838,7 @@ graph TD
 
 ### Functional actor - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Part of an actor responsible for carrying out some of the enabling functions, by interacting with other functional elements of the system.
 
@@ -2852,13 +2865,13 @@ graph TD
     N5 -.->|allocates| N1
 ```
 
-*Created: 2026-06-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Functional architecture - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Analysis of the system element function to determine:
 (1) what system element states of a functional element are activating it.
@@ -2927,17 +2940,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N20 -.->|allocates| N16
-    N21 -.->|allocates| N14
-    N19 -.->|allocates| N17
-    N3 -.->|allocates| N21
-    N18 -.->|allocates| N14
     N13 -.->|allocates| N14
-    N12 -->|subclass of| N10
+    N20 -.->|allocates| N16
+    N3 -.->|allocates| N21
+    N19 -.->|allocates| N17
+    N18 -.->|allocates| N14
+    N21 -.->|allocates| N14
     N11 -->|subclass of| N10
-    N8 -->|subclass of| N4
     N10 -->|subclass of| N4
     N9 -->|subclass of| N4
+    N12 -->|subclass of| N10
+    N8 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -2990,7 +3003,7 @@ graph TD
     N11 -.->|allocates| N21
 ```
 
-*Created: 2026-03-17 · Modified: 2026-09-01 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -3181,7 +3194,7 @@ graph TD
 
 ### Functional element attribute breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the functional element attribute that supports the functional architecture by following the principles below:
 (1) A high level functional element attribute is composed of at least two functional element attributes.
@@ -3231,7 +3244,7 @@ graph TD
     N7 -.->|allocates| N3
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -3371,10 +3384,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
     N11 -.->|allocates| N10
+    N6 -.->|allocates| N13
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -3555,7 +3568,7 @@ graph TD
 
 ### Functional interdependent actor - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Part of an interdependent actor responsible for carrying out some of the interdependent functions which mutually and durably shape the system functions over time.
 
@@ -3581,7 +3594,7 @@ graph TD
     N5 -.->|allocates| N1
 ```
 
-*Created: 2026-06-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -3901,7 +3914,7 @@ graph TD
 
 ### Functional validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of an entity to determine whether it satisfies the functional requirements allocated to it at the end of a development phase.
 
@@ -3924,13 +3937,13 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Functional validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a functional requirement.
 
@@ -3953,7 +3966,7 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -4004,7 +4017,7 @@ graph TD
 
 ### Goal analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the goals to determine if they can be further decomposed into goals or allocated to a feature or allocated to an attribute.
 
@@ -4045,13 +4058,13 @@ graph TD
     N7 -.->|allocates| N5
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Goal breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the goal that supports the goal analysis by following the principles below:
 (1) A high level goal is composed of at least two goals.
@@ -4097,13 +4110,13 @@ graph TD
     N8 -->|composed of| N2
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Goal model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the goal analysis based on the goal breakdown structure.
 
@@ -4126,7 +4139,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -4246,7 +4259,7 @@ graph TD
 
 ### Hardware attribute - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of a hardware product.
 
@@ -4277,13 +4290,13 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware block - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functionally distinct part of a hardware, composed of at least one hardware component, and which exposes hardware block interfaces.
 
@@ -4306,13 +4319,13 @@ graph TD
     N2 -.->|allocates| N3
 ```
 
-*Created: 2026-03-05 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware block breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the hardware block that supports the hardware architecture by following the principles below:
 (1) A hardware block is composed of at least two hardware components.
@@ -4347,13 +4360,13 @@ graph TD
     N2 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware block function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a hardware block.
 
@@ -4392,13 +4405,13 @@ graph TD
     N3 -.->|allocates| N2
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware block interface - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Boundary across which two hardware blocks meet and exchange flows.
 
@@ -4420,13 +4433,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware block state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of a hardware block.
 
@@ -4462,13 +4475,13 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the hardware that supports the hardware architecture by following the principles below:
 (1) A hardware is composed of at least two hardware blocks.
@@ -4512,17 +4525,17 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware component - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Atomic level part of a hardware block that is subjected to electrical characterization testing.
 
@@ -4541,13 +4554,13 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-03-05 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware component function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a hardware component.
 
@@ -4583,13 +4596,13 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Constraint about a hardware.
 
@@ -4615,13 +4628,13 @@ graph TD
     N5 -->|subclass of| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware failure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of a hardware to perform a hardware function as specified due to a hardware fault.
 
@@ -4644,13 +4657,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware fault - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Abnormal condition of a hardware that can cause a system to fail.
 
@@ -4669,13 +4682,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a hardware product.
 
@@ -4745,13 +4758,13 @@ graph TD
     N15 -.->|allocates| N1
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware function - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Function of a hardware.
 
@@ -4821,13 +4834,13 @@ graph TD
     N12 -.->|allocates| N14
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functional requirement about a hardware.
 
@@ -4856,13 +4869,13 @@ graph TD
     N6 -->|subclass of| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware interface - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Boundary across which two hardwares meet and exchange flows.
 
@@ -4885,13 +4898,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware interface breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the hardware interface that supports the hardware architecture by following the principles below:
 (1) A hardware interface is composed of at least one hardware block interface.
@@ -4934,13 +4947,13 @@ graph TD
     N2 -.->|exposes| N7
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Non-functional requirement about a hardware.
 
@@ -4969,13 +4982,13 @@ graph TD
     N6 -->|subclass of| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware product - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Product that is composed of hardware only.
 
@@ -5013,13 +5026,13 @@ graph TD
     N1 -.->|allocates| N3
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Requirement about a hardware.
 
@@ -5051,13 +5064,13 @@ graph TD
     N8 -->|subclass of| N6
 ```
 
-*Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of a hardware.
 
@@ -5117,13 +5130,13 @@ graph TD
     N10 -.->|allocates| N12
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware state breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the hardware state that supports the hardware architecture by following the principles below:
 (1) A hardware state is composed of at least two hardware block states.
@@ -5164,13 +5177,13 @@ graph TD
     N6 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a hardware to determine whether it satisfies the hardware requirements allocated to it at the end of a development phase.
 
@@ -5189,13 +5202,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hardware weakness - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of a hardware to protect an asset as specified due to a vulnerability.
 
@@ -5218,13 +5231,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hazard - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Potential source of physical injury or damage to the health of persons caused by a failure of the system of interest.
 
@@ -5233,13 +5246,13 @@ graph TD
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657) |
 | Close match | [hazard-26262-1-2018-069ab4192b747d7d](https://www.3se.info/3se-onto/terms/hazard-26262-1-2018-069ab4192b747d7d) |
 
-*Created: 2026-03-18 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Hazardous situation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Situation in which the system of interest generates a hazard.
 
@@ -5259,13 +5272,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### High level feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Combination of interacting features.
 
@@ -5274,7 +5287,7 @@ graph TD
 | Related | [feature-breakdown-structure-3se-069c96f861447442](https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442) |
 | Composed of | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -5650,7 +5663,7 @@ graph TD
 
 ### High level goal - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Combination of interacting goals.
 
@@ -5659,13 +5672,13 @@ graph TD
 | Related | [goal-breakdown-structure-3se-069c96f8615f7b6a](https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a) |
 | Composed of | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### High level physical element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Combination of interacting physical elements.
 
@@ -5718,7 +5731,7 @@ graph TD
     N15 -.->|allocates| N1
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6059,7 +6072,7 @@ graph TD
 
 ### High level value - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Combination of values.
 
@@ -6068,7 +6081,7 @@ graph TD
 | Related | [value-breakdown-structure-3se-069d6aadc05c7722](https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722) |
 | Composed of | [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4) |
 
-*Created: 2026-04-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6089,7 +6102,7 @@ graph TD
 
 ### Information - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functional exchange made of structured data.
 
@@ -6114,13 +6127,13 @@ graph TD
     N4 -->|subclass of| N1
 ```
 
-*Created: 2026-03-19 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Inspection - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation method of an entity using one or more of the human senses.
 
@@ -6129,13 +6142,13 @@ graph TD
 | Related | [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7), [constraint-validation-case-3se-06a270c85e5671eb](https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb), [system-constraint-validation-case-3se-06a270c85e847647](https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647), [system-verification-3se-06a49189cc197f2a](https://www.3se.info/3se-onto/terms/system-verification-3se-06a49189cc197f2a) |
 | Related match | [inspection-24765-2017-069b5a9129de776f](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Integration testing - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of the interactions between parts of an entity which aims at ensuring that the entity is built right.
 
@@ -6154,7 +6167,7 @@ graph TD
     N2 -->|subclass of| N1
 ```
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6207,8 +6220,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N4 -->|subclass of| N7
     N6 -->|subclass of| N11
+    N4 -->|subclass of| N7
 ```
 
 *Created: 2026-03-24 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -6263,7 +6276,7 @@ graph TD
 
 ### Interdependent actor - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Human being whose interdependent activities within the milieu of the system of interest mutually and durably shape the system activities over time.
 
@@ -6289,13 +6302,13 @@ graph TD
     N4 -.->|allocates| N5
 ```
 
-*Created: 2026-03-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function devolved to an interdependent actor.
 
@@ -6338,13 +6351,13 @@ graph TD
     N5 -.->|allocates| N4
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of an interdependent actor.
 
@@ -6384,13 +6397,13 @@ graph TD
     N5 -.->|allocates| N4
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent system - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System whose own interdependent system activities within the milieu of the system of interest mutually and durably shape the system activities of the system of interest over time.
 
@@ -6431,13 +6444,13 @@ graph TD
     N5 -.->|allocates| N6
 ```
 
-*Created: 2026-03-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent system activity - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Set of cohesive interdependent system functions which mutually and durably shapes a goal, and which transforms incoming exchanges into outgoing exchanges.
 
@@ -6479,13 +6492,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent system function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function devolved to an interdependent system.
 
@@ -6530,13 +6543,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent system functional element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Part of an interdependent system responsible for carrying out some of the interdependent system functions devolved to the interdependent system.
 
@@ -6565,13 +6578,13 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent system physical element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Part of an interdependent system responsible for defining the resources to carrying out the interdependent system functional element.
 
@@ -6599,13 +6612,13 @@ graph TD
     N6 -.->|allocates| N1
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Interdependent system state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of an interdependent system.
 
@@ -6647,7 +6660,7 @@ graph TD
     N6 -.->|allocates| N5
 ```
 
-*Created: 2026-05-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6698,7 +6711,7 @@ graph TD
 
 ### Iteration analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the project to determine what iterations are completing it.
 
@@ -6730,7 +6743,7 @@ graph TD
     N3 -.->|allocates| N2
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6779,7 +6792,7 @@ graph TD
 
 ### Mathematical model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Abstract model that describes an entity using mathematical language.
 
@@ -6800,13 +6813,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Maturity gate - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Verification of a candidate release for a development phase where a decision is made to continue to the next phase (with or without modifications) or to redefine it. 
 
@@ -6815,7 +6828,7 @@ graph TD
 | Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [verification-3se-069b5a912a2372d7](https://www.3se.info/3se-onto/terms/verification-3se-069b5a912a2372d7), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [system-verification-analysis-3se-06a49189cc247891](https://www.3se.info/3se-onto/terms/system-verification-analysis-3se-06a49189cc247891) |
 | Narrow match | [phase-gate-24765-2017-069b48ef5d46720a](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a) |
 
-*Created: 2026-03-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6836,7 +6849,7 @@ graph TD
 
 ### Meta model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Model that specifies the rules that govern a model.
 
@@ -6855,13 +6868,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Milieu - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > The broader operational environment surrounding the system of interest, populated by interdependent systems and/or interdependent actors that are neither subordinate to nor in a defined relationship with the system of interest, but whose existence and behavior are consequential to it.
 
@@ -6869,7 +6882,7 @@ graph TD
 |---|---|
 | Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -6990,7 +7003,7 @@ graph TD
 
 ### Non-functional validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of an entity to determine whether it satisfies the non-functional requirements allocated to it at the end of a development phase.
 
@@ -7013,13 +7026,13 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Non-functional validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a non-functional requirement.
 
@@ -7042,7 +7055,7 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -7063,7 +7076,7 @@ graph TD
 
 ### Operating model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the operational analysis.
 
@@ -7086,7 +7099,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -7134,7 +7147,7 @@ graph TD
 
 ### Organization risk - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk related to an uncertainty about the organization governance and mission (funding, legal...).
 
@@ -7152,7 +7165,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -7210,7 +7223,7 @@ graph TD
 
 ### Physical architecture - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the functional element to determine:
 (1) what physical element is realizing it.
@@ -7275,10 +7288,10 @@ graph TD
     N14 -.->|allocates| N15
     N5 -.->|allocates| N3
     N10 -->|subclass of| N8
+    N11 -->|subclass of| N8
+    N9 -->|subclass of| N8
     N13 -->|subclass of| N11
     N12 -->|subclass of| N11
-    N9 -->|subclass of| N8
-    N11 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -7323,13 +7336,13 @@ graph TD
     N13 -.->|allocates| N17
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Physical architecture model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the physical architecture based on the physical element breakdown structure.
 
@@ -7352,7 +7365,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -7515,7 +7528,7 @@ graph TD
 
 ### Physical element attribute breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the physical element attribute that supports the physical architecture by following the principles below:
 (1) A high level physical element attribute is composed of at least two physical element attributes.
@@ -7564,7 +7577,7 @@ graph TD
     N5 -.->|allocates| N3
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -8016,7 +8029,7 @@ graph TD
 
 ### Physical interface attribute - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of a functional interface.
 
@@ -8056,7 +8069,7 @@ graph TD
     N6 -.->|allocates| N9
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -8268,7 +8281,7 @@ graph TD
 
 ### Problem - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Incident or undesirable situation concerning the content of a release and/or the way it has been built and/or delivered, which demands a resolution.
 
@@ -8277,7 +8290,7 @@ graph TD
 | Related | [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Narrow match | [problem-24765-2017-069b5b3d9ec87ba9](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -8374,7 +8387,7 @@ graph TD
 
 ### Product analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the features to determine what product is realizing it.
 
@@ -8417,17 +8430,17 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Product architecture - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the product to determine what product elements are realizing it.
 
@@ -8473,13 +8486,13 @@ graph TD
     N1 -.->|allocates| N3
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Product architecture model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the product architecture based on the product breakdown structure.
 
@@ -8502,13 +8515,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Product breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the product that supports the product architecture by following the principles below:
 (1) A product is composed of at least two product elements.
@@ -8572,12 +8585,12 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
+    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
-    N10 -->|subclass of| N1
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -8625,7 +8638,7 @@ graph TD
 
 ### Product owner - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Role that is accountable for the feature analysis, the product analysis and the release analysis.
 It contributes to the value analysis, the goal analysis, the operational analysis, the variability analysis and the risk analysis.
@@ -8646,7 +8659,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -8751,7 +8764,7 @@ graph TD
 
 ### Project analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the release to determine what project is delivering it.
 
@@ -8784,13 +8797,13 @@ graph TD
     N2 -.->|allocates| N4
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Project owner - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Role that is accountable for the project analysis, the iteration analysis, the epic analysis and the task analysis.
 It contributes to the risk analysis and the release analysis.
@@ -8809,13 +8822,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Project risk - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk related to a project uncertainty (customer satisfaction, project quality, project cost, project schedule, project resources, project expertise...) about a maturity gate or an assessment gate.
 
@@ -8835,7 +8848,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -8949,8 +8962,8 @@ graph TD
     N11 -.->|allocates| N7
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N3 -->|subclass of| N11
     N2 -->|subclass of| N6
+    N3 -->|subclass of| N11
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -9086,7 +9099,7 @@ graph TD
 
 ### Residual risk - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk remaining after risk treatment.
 
@@ -9106,7 +9119,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -9151,7 +9164,7 @@ graph TD
 
 ### Risk analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of an entity to determine what risk it can encounter, how to treat it, and what is the residual risk after treatment.
 
@@ -9180,13 +9193,13 @@ graph TD
     N6 -->|subclass of| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Role - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Set of responsibilities that a Person or other Agent can take in an organization.
 
@@ -9240,7 +9253,7 @@ graph TD
 
 *R: responsible · A: accountable · S: supporting · -: none*
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -9361,7 +9374,7 @@ graph TD
 
 ### Safety functional element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functional element responsible for carrying out some of the safety system functions.
 
@@ -9383,13 +9396,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-04-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety goal - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Goal which is relevant for safety engineering.
 
@@ -9424,13 +9437,13 @@ graph TD
     N4 -.->|allocates| N3
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Hardware that performs some safety hardware functions.
 
@@ -9454,13 +9467,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Constraint about a hardware which is relevant for safety engineering.
 
@@ -9483,13 +9496,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a hardware product which is relevant for safety engineering
 
@@ -9512,13 +9525,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a hardware to control hardware failures or software failures in order to achieve or maintain a safe system state.
 
@@ -9540,13 +9553,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Hardware functional requirement which is relevant for safety engineering.
 
@@ -9572,13 +9585,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Hardware non-functional requirement which is relevant for safety engineering.
 
@@ -9604,13 +9617,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety hardware product - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Implementation of a system composed of some safety hardware.
 
@@ -9631,7 +9644,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -9686,7 +9699,7 @@ graph TD
 
 ### Safety risk - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk related to an hazard.
 
@@ -9705,13 +9718,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety risk analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk analysis which is relevant for safety engineering.
 It includes the following steps:
@@ -9744,13 +9757,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety service - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Service which adds value for the service user by helping him to achieve some safety goals.
 
@@ -9769,13 +9782,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-11 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-11 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Software that performs some safety software functions.
 
@@ -9799,13 +9812,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Constraint about a software which is relevant for safety engineering.
 
@@ -9828,13 +9841,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a software product which is relevant for safety engineering
 
@@ -9857,13 +9870,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a software to control hardware failures or software failures in order to achieve or maintain a safe system state.
 
@@ -9885,13 +9898,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Software functional requirement which is relevant for safety engineering.
 
@@ -9917,13 +9930,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Software non-functional requirement which is relevant for safety engineering.
 
@@ -9949,13 +9962,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety software product - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Implementation of a system composed of some safety software.
 
@@ -9976,13 +9989,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety system activity - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A system activity which is relevant for safety engineering
 
@@ -10022,13 +10035,13 @@ graph TD
     N4 -.->|allocates| N1
 ```
 
-*Created: 2026-03-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety system constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System constraint which is relevant for safety engineering.
 
@@ -10050,13 +10063,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety system feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a system which is relevant for safety engineering
 
@@ -10095,7 +10108,7 @@ graph TD
     N4 -.->|allocates| N3
 ```
 
-*Created: 2026-03-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -10144,7 +10157,7 @@ graph TD
 
 ### Safety system functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System functional requirement which is relevant for safety engineering.
 
@@ -10170,13 +10183,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Safety system non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System non-functional requirement which is relevant for safety engineering.
 
@@ -10201,7 +10214,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -10322,7 +10335,7 @@ graph TD
 
 ### Security functional element - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functional element responsible for carrying out some of the security system functions.
 
@@ -10344,13 +10357,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-04-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security goal - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Goal which is relevant for security engineering.
 
@@ -10385,13 +10398,13 @@ graph TD
     N4 -.->|allocates| N3
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security hardware - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Hardware that performs some security hardware functions.
 
@@ -10415,13 +10428,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security hardware constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Constraint about a hardware which is relevant for security engineering.
 
@@ -10444,13 +10457,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security hardware feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a hardware product which is relevant for security engineering
 
@@ -10473,13 +10486,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security hardware function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a hardware to control weaknesses in order to achieve or maintain a secure system state.
 
@@ -10501,13 +10514,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security hardware functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Hardware functional requirement which is relevant for security engineering.
 
@@ -10532,7 +10545,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -10570,7 +10583,7 @@ graph TD
 
 ### Security hardware product - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Implementation of a system composed of some security hardware.
 
@@ -10591,7 +10604,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -10646,7 +10659,7 @@ graph TD
 
 ### Security risk - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk related to an attack.
 
@@ -10665,13 +10678,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security risk analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Risk analysis which is relevant for security engineering.
 It includes the following steps:
@@ -10704,13 +10717,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security service - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Service which adds value for the service user by helping him to achieve some security goals.
 
@@ -10729,13 +10742,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-11 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-11 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Software that performs some security software functions.
 
@@ -10759,13 +10772,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-10 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-10 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Constraint about a software which is relevant for security engineering.
 
@@ -10788,13 +10801,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a software product which is relevant for security engineering
 
@@ -10817,13 +10830,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a software to control weaknesses in order to achieve or maintain a secure system state.
 
@@ -10845,13 +10858,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Software functional requirement which is relevant for security engineering.
 
@@ -10876,13 +10889,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Software non-functional requirement which is relevant for security engineering.
 
@@ -10907,13 +10920,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security software product - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Implementation of a system composed of some security software.
 
@@ -10934,13 +10947,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security system activity - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A system activity which is relevant for security engineering
 
@@ -10980,13 +10993,13 @@ graph TD
     N4 -.->|allocates| N1
 ```
 
-*Created: 2026-03-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security system constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System constraint which is relevant for security engineering.
 
@@ -11008,13 +11021,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security system feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a system which is relevant for security engineering
 
@@ -11053,13 +11066,13 @@ graph TD
     N4 -.->|allocates| N3
 ```
 
-*Created: 2026-03-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security system function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a system to control weaknesses in order to achieve or maintain a secure system state.
 
@@ -11096,13 +11109,13 @@ graph TD
     N3 -.->|allocates| N4
 ```
 
-*Created: 2026-03-16 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security system functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System functional requirement which is relevant for security engineering.
 
@@ -11127,13 +11140,13 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Security system non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > System non-functional requirement which is relevant for security engineering.
 
@@ -11158,7 +11171,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -11222,7 +11235,7 @@ graph TD
 
 ### Service analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the features to determine what service is realizing it.
 
@@ -11264,17 +11277,17 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
-*Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Service architecture - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the service to determine what service means are realizing it.
 
@@ -11324,13 +11337,13 @@ graph TD
     N1 -.->|allocates| N3
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Service architecture model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the service architecture based on the service breakdown structure.
 
@@ -11353,7 +11366,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -11424,9 +11437,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -11559,7 +11572,7 @@ graph TD
 
 ### Service owner - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Role that is accountable for the feature analysis, the service analysis and the release analysis.
 It contributes to the value analysis, the goal analysis, the operational analysis, the variability analysis and the risk analysis.
@@ -11580,7 +11593,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -11668,7 +11681,7 @@ graph TD
 
 ### Situation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A transient state that arises within a context in response to one or more events, capturing a set of exchanges from actors and/or enabling systems that the system of interest must interpret and respond to.
 Multiple situations may be active concurrently within the same context and may combine into a compound situation.
@@ -11690,7 +11703,7 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -11810,7 +11823,7 @@ graph TD
 
 ### Software attribute - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of a software product.
 
@@ -11841,13 +11854,13 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the software that supports the software architecture by following the principles below:
 (1) A software is composed of at least two software components.
@@ -11890,18 +11903,18 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software component - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functionally distinct part of a software, composed of at least one software unit, and which exposes at least one software component interface.
 
@@ -11925,13 +11938,13 @@ graph TD
     N2 -.->|allocates| N3
 ```
 
-*Created: 2026-03-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software component breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the software component that supports the software architecture by following the principles below:
 (1) A software component is composed of at least one software unit.
@@ -11966,13 +11979,13 @@ graph TD
     N2 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software component function - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Function of a software component.
 
@@ -12011,7 +12024,7 @@ graph TD
     N3 -.->|allocates| N2
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -12045,7 +12058,7 @@ graph TD
 
 ### Software component requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Requirement about a software component.
 
@@ -12064,13 +12077,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software component state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of a software component.
 
@@ -12106,13 +12119,13 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software component validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a software component to determine whether it satisfies the software component requirements allocated to it at the end of a development phase.
 
@@ -12131,13 +12144,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Constraint about a software.
 
@@ -12163,13 +12176,13 @@ graph TD
     N5 -->|subclass of| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software failure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of a software to perform a software function as specified due to a software fault.
 
@@ -12192,13 +12205,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software fault - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Abnormal condition of a software that can cause a system to fail.
 
@@ -12217,13 +12230,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A feature about a software product.
 
@@ -12293,13 +12306,13 @@ graph TD
     N15 -.->|allocates| N1
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a software.
 
@@ -12369,13 +12382,13 @@ graph TD
     N12 -.->|allocates| N14
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-25 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Functional requirement about a software.
 
@@ -12404,13 +12417,13 @@ graph TD
     N6 -->|subclass of| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software interface - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Boundary across which a software and a hardware meet and exchange flows.
 
@@ -12433,13 +12446,13 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software interface breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the software interface that supports the software architecture by following the principles below:
 (1) A software interface is composed of at least one software component interface.
@@ -12482,13 +12495,13 @@ graph TD
     N4 -.->|exposes| N2
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Non-functional requirement about a software.
 
@@ -12517,13 +12530,13 @@ graph TD
     N6 -->|subclass of| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software product - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Product that is composed of software only.
 
@@ -12562,13 +12575,13 @@ graph TD
     N1 -.->|allocates| N3
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Requirement about a software.
 
@@ -12600,13 +12613,13 @@ graph TD
     N8 -->|subclass of| N6
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software state - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > State of a software.
 
@@ -12666,13 +12679,13 @@ graph TD
     N10 -.->|allocates| N12
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software state breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the software state that supports the software architecture by following the principles below:
 (1) A software state is composed of at least two software component states.
@@ -12713,13 +12726,13 @@ graph TD
     N6 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software unit - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Atomic level part of a software component that is subjected to software unit validation.
 
@@ -12739,13 +12752,13 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-03-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software unit function - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Function of a software unit.
 
@@ -12781,13 +12794,13 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software unit requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Requirement about a software unit.
 
@@ -12806,13 +12819,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software unit validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a software unit to determine whether it satisfies the software unit requirements allocated to it at the end of a development phase.
 
@@ -12831,13 +12844,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a software to determine whether it satisfies the software requirements allocated to it at the end of a development phase.
 
@@ -12856,13 +12869,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Software weakness - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of a software to protect an asset as specified due to a vulnerability.
 
@@ -12885,13 +12898,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Solution - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Combination of people, processes, and technologies to implement a system.
 
@@ -12900,7 +12913,7 @@ graph TD
 | Related | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569), [epic-3se-069b48ef5cfd71ab](https://www.3se.info/3se-onto/terms/epic-3se-069b48ef5cfd71ab), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [non-functional-req-3se-069b88438059727d](https://www.3se.info/3se-onto/terms/non-functional-req-3se-069b88438059727d), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4) |
 | Narrow match | [solution-24765-2017-069bc40b97a0730b](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b) |
 
-*Created: 2026-03-19 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-19 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -12971,7 +12984,7 @@ graph TD
 
 ### Stakeholder constraint - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Stakeholder's constraint.
 
@@ -13006,13 +13019,13 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Stakeholder functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Stakeholder's functional requirement.
 
@@ -13048,13 +13061,13 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Stakeholder non-functional requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Stakeholder's non-functional requirement.
 
@@ -13092,13 +13105,13 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Stakeholder requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Stakeholder's requirement.
 
@@ -13123,13 +13136,13 @@ graph TD
     N4 -->|subclass of| N1
 ```
 
-*Created: 2026-04-11 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-11 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Stakeholder requirement analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of a feature or an attribute to decide what stakeholder requirements and/or stakeholder constraints are specifying it.
 
@@ -13168,13 +13181,13 @@ graph TD
     N5 -.->|allocates| N4
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Stakeholder requirement breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the stakeholder requirement that supports the stakeholder requirement analysis by following the principles below:
 (1) A stakeholder functional requirement is composed of at least one system functional requirement.
@@ -13241,13 +13254,13 @@ graph TD
     N9 -->|subclass of| N11
 ```
 
-*Created: 2026-04-11 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-11 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Stakeholder requirement model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the stakeholder requirement analysis based on the stakeholder requirement breakdown structure.
 
@@ -13270,7 +13283,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -13912,7 +13925,7 @@ graph TD
 
 ### System architecture validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of the interactions between the system elements, based on some system architecture validation cases, to determine whether it satisfies the system architecture contraints at the end of a development phase.
 
@@ -13957,13 +13970,13 @@ graph TD
     N1 -.->|allocates| N8
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System architecture validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system architecture constraint.
 
@@ -13983,13 +13996,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System attribute - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of a system.
 
@@ -14046,13 +14059,13 @@ graph TD
     N12 -.->|allocates| N1
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System attribute analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the goal to determine what system attribute is contributing to it.
 
@@ -14085,13 +14098,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System attribute breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:
 (1) A system attribute is composed of at least two system element attributes.
@@ -14135,17 +14148,17 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System attribute model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the system attribute analysis based on the system attribute breakdown structure.
 
@@ -14168,7 +14181,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -14214,7 +14227,7 @@ graph TD
 
 ### System breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system that supports the system architecture by following the principles below:
 (1) A system is composed of at least two system elements.
@@ -14276,14 +14289,14 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
     N7 -.->|allocates| N5
     N10 -.->|allocates| N14
     N6 -.->|allocates| N5
-    N13 -.->|allocates| N9
-    N11 -.->|allocates| N4
 ```
 
-*Created: 2026-03-21 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -14366,7 +14379,7 @@ graph TD
 
 ### System constraint validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a system, based on some system constraint validation cases, to determine whether it satisfies the system constraints allocated to it at the end of a development phase.
 
@@ -14390,13 +14403,13 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System constraint validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an inspection or an analysis, to validate a system constraint.
 
@@ -14421,7 +14434,7 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -14754,7 +14767,7 @@ graph TD
 
 ### System element function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a system element.
 
@@ -14825,13 +14838,13 @@ graph TD
     N13 -.->|allocates| N15
 ```
 
-*Created: 2026-03-29 · Modified: 2026-09-01 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System element function attribute - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Attribute of a system element function.
 
@@ -14892,7 +14905,7 @@ graph TD
     N11 -.->|allocates| N12
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -15536,7 +15549,7 @@ graph TD
 
 ### System element requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Requirement about a system element.
 
@@ -15562,7 +15575,7 @@ graph TD
     N4 -->|subclass of| N1
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -15917,7 +15930,7 @@ graph TD
 
 ### System element validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a system element, based on some system element validation cases, to determine whether it satisfies the system element requirements allocated to it at the end of a development phase.
 
@@ -15936,13 +15949,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System element validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system element requirement.
 
@@ -15962,7 +15975,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -16223,7 +16236,7 @@ graph TD
 
 ### System failure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of a system to perform a system function as specified due to a software fault and/or a hardware fault.
 
@@ -16246,13 +16259,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-27 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-27 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A Feature about a product or a service.
 
@@ -16342,7 +16355,7 @@ graph TD
     N21 -.->|allocates| N23
 ```
 
-*Created: 2026-04-11 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-11 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -16399,7 +16412,7 @@ graph TD
 
 ### System function - 3SE
 
-![draft](https://img.shields.io/badge/status-draft-lightgrey)
+![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Function of a system.
 
@@ -16470,7 +16483,7 @@ graph TD
     N12 -.->|allocates| N15
 ```
 
-*Created: 2026-03-21 · Modified: 2026-09-01 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -16569,7 +16582,7 @@ graph TD
 
 ### System function attribute breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system function attribute that supports the system functional analysis by following the principles below:
 (1) A system function attribute is composed of at least two system element function attributes.
@@ -16605,7 +16618,7 @@ graph TD
     N3 -.->|allocates| N4
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -16676,7 +16689,7 @@ graph TD
 
 ### System function breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system function that supports the system functional analysis by following the principles below:
 (1) A system function is composed of at least two system element functions.
@@ -16726,13 +16739,13 @@ graph TD
     N9 -.->|allocates| N10
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System function model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the system functional analysis based on the system function breakdown structure.
 
@@ -16755,7 +16768,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-06 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -16850,7 +16863,7 @@ graph TD
 
 ### System functional analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of a system activity to determine what system functions are contributing to it and their relation.
 
@@ -16886,7 +16899,7 @@ graph TD
     N3 -.->|allocates| N5
 ```
 
-*Created: 2026-03-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -17014,7 +17027,7 @@ graph TD
 
 ### System functional validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a system, based on some system functional validation cases, to determine whether it satisfies the system functional requirements allocated to it at the end of a development phase.
 
@@ -17038,13 +17051,13 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System functional validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system functional requirement.
 
@@ -17069,7 +17082,7 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -17144,7 +17157,7 @@ graph TD
 
 ### System interface attribute breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system interface attribute that supports the system architecture by following the principles below:
 (1) A system interface attribute is composed of at least one system element interface attribute.
@@ -17187,7 +17200,7 @@ graph TD
     N2 -.->|allocates| N3
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -17234,7 +17247,7 @@ graph TD
 
 ### System interface breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system interface that supports the system architecture by following the principles below:
 (1) A system interface is composed of at least one system element interface.
@@ -17300,17 +17313,17 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
+    N14 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N14 -.->|allocates| N12
-    N16 -.->|allocates| N4
-    N3 -.->|allocates| N4
     N2 -.->|allocates| N4
     N13 -.->|allocates| N12
-    N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
 ```
 
-*Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -17582,7 +17595,7 @@ graph TD
 
 ### System non-functional validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a system, based on some system non-functional validation cases, to determine whether it satisfies the system non-functional requirements allocated to it at the end of a development phase.
 
@@ -17606,13 +17619,13 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System non-functional validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system non-functional requirement.
 
@@ -17637,13 +17650,13 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-06-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System quality engineer - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Role that is accountable for the system verification analysis.
 It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the risk analysis, the epic analysis, the stakeholder requirement analysis, the project analysis and the release analysis.
@@ -17662,13 +17675,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System requirement - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Requirement about a system.
 
@@ -17702,13 +17715,13 @@ graph TD
     N8 -->|subclass of| N6
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System requirement analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of a stakeholder requirement or a stakeholder constraint to decide what system requirements or system constraints are specifying it.
 
@@ -17727,13 +17740,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System requirement breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system requirement that supports the system requirement analysis by following the principles below:
 (1) A system functional requirement is composed of at least one system element functional requirement.
@@ -17875,35 +17888,35 @@ graph TD
     N2 -->|subclass of| N34
     N32 -->|subclass of| N35
     N33 -->|subclass of| N35
-    N37 -.->|allocates| N1
-    N42 -->|subclass of| N40
-    N27 -.->|allocates| N18
-    N41 -->|subclass of| N40
-    N45 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N38 -->|subclass of| N37
-    N5 -.->|allocates| N36
-    N5 -.->|allocates| N2
-    N31 -.->|allocates| N2
-    N4 -.->|allocates| N7
-    N40 -->|subclass of| N37
-    N26 -.->|allocates| N19
-    N39 -->|subclass of| N37
-    N28 -.->|allocates| N21
-    N28 -.->|allocates| N36
     N9 -.->|exposes| N15
     N9 -.->|allocates| N25
     N9 -.->|allocates| N3
+    N41 -->|subclass of| N40
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N27 -.->|allocates| N18
+    N26 -.->|allocates| N19
+    N40 -->|subclass of| N37
+    N45 -.->|allocates| N2
+    N39 -->|subclass of| N37
+    N4 -.->|allocates| N7
+    N42 -->|subclass of| N40
+    N28 -.->|allocates| N21
+    N28 -.->|allocates| N36
+    N31 -.->|allocates| N2
+    N38 -->|subclass of| N37
+    N5 -.->|allocates| N36
+    N5 -.->|allocates| N2
+    N37 -.->|allocates| N1
 ```
 
-*Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System requirement model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the system requirement analysis based on the system requirement breakdown structure.
 
@@ -17926,13 +17939,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System risk engineer - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Role that is accountable for the risk analysis.
 It contributes to the interdependence analysis, the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the stakeholder requirement analysis and the system validation analysis.
@@ -17951,7 +17964,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -18113,7 +18126,7 @@ graph TD
 
 ### System state attribute breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system state attribute that supports the functional architecture by following the principles below:
 (1) A system state attribute is composed of at least two system element state attributes.
@@ -18159,7 +18172,7 @@ graph TD
     N5 -.->|allocates| N6
 ```
 
-*Created: 2026-04-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -18216,7 +18229,7 @@ graph TD
 
 ### System state breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the system state that supports the functional architecture by following the principles below:
 (1) A system state is composed of at least two system element states.
@@ -18279,13 +18292,13 @@ graph TD
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
     N13 -.->|allocates| N10
+    N15 -.->|allocates| N12
     N4 -.->|allocates| N8
     N14 -.->|allocates| N9
-    N15 -.->|allocates| N12
     N11 -.->|allocates| N12
 ```
 
-*Created: 2026-03-22 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -18416,7 +18429,7 @@ graph TD
 
 ### System validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of a system, based on some system validation cases, to determine whether it satisfies the system requirements allocated to it at the end of a development phase.
 
@@ -18444,13 +18457,13 @@ graph TD
     N6 -->|subclass of| N1
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System validation analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of a system requirement, a system constraint or a system architecture constraint to decide what system validation cases are evaluating it.
 
@@ -18469,13 +18482,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system requirement.
 
@@ -18502,13 +18515,13 @@ graph TD
     N5 -->|subclass of| N1
 ```
 
-*Created: 2026-03-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System validation engineer - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Role that is accountable for the system validation analysis.
 It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system attribute analysis, the risk analysis, the epic analysis and the stakeholder requirement analysis.
@@ -18527,7 +18540,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -18858,27 +18871,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
-    N4 -.->|allocates| N23
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
+    N8 -.->|allocates| N15
     N16 -.->|allocates| N10
-    N17 -.->|allocates| N22
-    N17 -.->|allocates| N23
-    N17 -.->|allocates| N25
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N4 -.->|allocates| N23
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
     N5 -.->|allocates| N23
     N5 -.->|allocates| N24
-    N8 -.->|allocates| N15
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
+    N17 -.->|allocates| N22
+    N17 -.->|allocates| N23
+    N17 -.->|allocates| N25
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -18887,7 +18900,7 @@ graph TD
 
 ### System verification - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of the deliverables of a given system development phase through inspection to determine whether they satisfy the conditions imposed at the end of that phase.
 
@@ -18906,13 +18919,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-07-04 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-04 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System verification analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of a deliverable of a given system development phase to determine what maturity gate or assessment gate is evaluating it.
 
@@ -18945,13 +18958,13 @@ graph TD
     N1 -.->|allocates| N4
 ```
 
-*Created: 2026-07-04 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-07-04 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### System weakness - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of a system to protect an asset as specified due to a vulnerability.
 
@@ -18974,13 +18987,13 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-27 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-27 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Systems engineering - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Transdisciplinary and integrative approach to enable the successful realization, use and retirement of systems using systems principles.
 
@@ -18989,13 +19002,13 @@ graph TD
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Broad match | [systems-engineering-15288-2023-069a75d7674878ce](https://www.3se.info/3se-onto/terms/systems-engineering-15288-2023-069a75d7674878ce) |
 
-*Created: 2026-03-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Systems principles - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Systems principles represent the foundations of systems engineering and are the following:
 (1) Holism, covered by the interdependence analysis.
@@ -19007,13 +19020,13 @@ graph TD
 |---|---|
 | Related | [systems-engineering-3se-069b85f239037c11](https://www.3se.info/3se-onto/terms/systems-engineering-3se-069b85f239037c11), [system-functional-analysis-3se-069b9d2c8d85724b](https://www.3se.info/3se-onto/terms/system-functional-analysis-3se-069b9d2c8d85724b), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [holism-3se-069c316c19067fbe](https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [mechanism-3se-069c316c1925769b](https://www.3se.info/3se-onto/terms/mechanism-3se-069c316c1925769b), [physical-architecture-3se-069b9d2c8dc67374](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374), [reductionism-3se-069c316c193771cc](https://www.3se.info/3se-onto/terms/reductionism-3se-069c316c193771cc), [teleology-3se-069c316c19527b40](https://www.3se.info/3se-onto/terms/teleology-3se-069c316c19527b40) |
 
-*Created: 2026-03-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Task - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Required action intended to contribute to the achievement of one Epic or one iteration.
 
@@ -19051,7 +19064,7 @@ graph TD
     N1 -.->|allocates| N3
 ```
 
-*Created: 2026-03-13 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -19100,7 +19113,7 @@ graph TD
 
 ### Teleology - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Teleology is the property of a system to be oriented toward a goal.
 
@@ -19109,13 +19122,13 @@ graph TD
 | Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [systems-principles-3se-069b85f2390b7e20](https://www.3se.info/3se-onto/terms/systems-principles-3se-069b85f2390b7e20) |
 | Broad match | [teleological-behavior-behavior-purpose-teleology-1943-069c316c19497df9](https://www.3se.info/3se-onto/terms/teleological-behavior-behavior-purpose-teleology-1943-069c316c19497df9) |
 
-*Created: 2026-03-24 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Test - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation method of an attribute or feature of an entity under a set of validation case in a testing environment.
 
@@ -19124,13 +19137,13 @@ graph TD
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a) |
 | Close match | [test-24765-2017-069b5a912a097284](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Threatening situation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Situation in which the system of interest is exposed to one or more attacks.
 
@@ -19150,13 +19163,13 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Transition - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evolution from an initial state to a final state or the same one, whose evaluation depends on some flows produced by the active functions in the initial state.
 
@@ -19167,13 +19180,13 @@ graph TD
 | Evaluates | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
 | Fired by | [enabling-state-3se-06a29c01c05f7e5a](https://www.3se.info/3se-onto/terms/enabling-state-3se-06a29c01c05f7e5a), [enabling-system-state-3se-069e1512f37a7612](https://www.3se.info/3se-onto/terms/enabling-system-state-3se-069e1512f37a7612), [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [interdependent-state-3se-06a29c4e404d78ed](https://www.3se.info/3se-onto/terms/interdependent-state-3se-06a29c4e404d78ed), [interdependent-system-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-system-state-3se-069fde073ffb7cc5), [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 
-*Created: 2026-05-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Validation - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of an entity to determine whether it satisfies the requirements allocated to it at the end of a development phase.
 Note: it does not determine if the entity satisfies the stakeholders’ requirements nor the stakeholders’ goals
@@ -19221,13 +19234,13 @@ graph TD
     N8 -->|subclass of| N13
 ```
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Validation case - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a requirement.
 
@@ -19267,13 +19280,13 @@ graph TD
     N7 -->|subclass of| N10
 ```
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Validation run - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > The execution of a sequence of validation cases for a given execution order, including any associated actions that may require to set up the initial preconditions of the validation cases and to wrap up post executions.
 
@@ -19283,7 +19296,7 @@ graph TD
 | Close match | [test-run-istqb-069b5b3d9ef27c4c](https://www.3se.info/3se-onto/terms/test-run-istqb-069b5b3d9ef27c4c) |
 | Related match | [test-suite-istqb-069b5b3d9efa7549](https://www.3se.info/3se-onto/terms/test-suite-istqb-069b5b3d9efa7549) |
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -19320,7 +19333,7 @@ graph TD
 
 ### Value analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the goals to determine what value they will provide to the stakeholder seeking to achieve them.
 
@@ -19352,13 +19365,13 @@ graph TD
     N3 -.->|allocates| N4
 ```
 
-*Created: 2026-04-07 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-07 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Value breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Breakdown structure of the value that supports the value analysis by following the principles below:
 (1) A high level value is composed of at least two values.
@@ -19396,13 +19409,13 @@ graph TD
     N2 -.->|can be| N4
 ```
 
-*Created: 2026-04-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Value model - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Conceptual model which represents the value analysis based on the value breakdown structure.
 
@@ -19425,7 +19438,7 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-04-08 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-08 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -19564,35 +19577,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N22 -.->|allocates| N32
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N23 -.->|allocates| N19
     N27 -.->|allocates| N17
     N27 -.->|allocates| N12
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N43 -.->|allocates| N12
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
-    N10 -.->|allocates| N19
     N17 -.->|allocates| N10
     N17 -.->|allocates| N12
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N34 -.->|allocates| N22
-    N34 -.->|allocates| N23
-    N34 -.->|allocates| N19
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N23 -.->|allocates| N19
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
+    N10 -.->|allocates| N19
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N34 -.->|allocates| N22
+    N34 -.->|allocates| N23
+    N34 -.->|allocates| N19
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N43 -.->|allocates| N12
+    N22 -.->|allocates| N32
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -19616,7 +19629,7 @@ graph TD
 
 ### Verification - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Evaluation of the deliverables of a given development phase through inspection to determine whether they satisfy the conditions imposed at the end of that phase.
 Note: conditions are about deliverables quality criteria and satisfaction of internal standards, practices and conventions applicable to that phase.
@@ -19637,13 +19650,13 @@ graph TD
     N2 -->|subclass of| N1
 ```
 
-*Created: 2026-03-14 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### View - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > A filtered projection over a set of concepts created for a certain purpose and covering a certain scope.
 
@@ -19651,13 +19664,13 @@ graph TD
 |---|---|
 | Broad match | [view-24765-2017-06a0993aed0d7f96](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96) |
 
-*Created: 2026-05-17 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-17 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Vulnerability - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Abnormal condition of a physical element that can cause an asset to be compromised.
 
@@ -19666,13 +19679,13 @@ graph TD
 | Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [physical-element-3se-069b9d2c8dce7f9b](https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [system-weakness-3se-069efaf7031577c5](https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5), [hardware-weakness-3se-069f11b2ff977ed6](https://www.3se.info/3se-onto/terms/hardware-weakness-3se-069f11b2ff977ed6), [software-weakness-3se-069f11b2ffb2798c](https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c) |
 | Close match | [vulnerability-21434-2021-069c1a2fb8ea7298](https://www.3se.info/3se-onto/terms/vulnerability-21434-2021-069c1a2fb8ea7298) |
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Weakness - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Termination of the ability of an entity to protect an asset as specified due to a vulnerability.
 
@@ -19696,13 +19709,13 @@ graph TD
     N4 -->|subclass of| N1
 ```
 
-*Created: 2026-03-23 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### Weakness and effect analysis - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Analysis of the potential weakness of a system element and its effect on the system state it allocates.
 It includes the following steps:
@@ -19733,7 +19746,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-06-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-06-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -22053,7 +22066,7 @@ graph TD
 
 ### allocates - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates a source element to a target element to which some or all of the responsibility to realize the intent of the source is assigned.
 Such a relation defines a mapping across the various structures and hierarchies of a system, and may serve as a precursor to more rigorous specifications and implementations.
@@ -22064,13 +22077,13 @@ Such a relation defines a mapping across the various structures and hierarchies 
 | Range | `skos:Concept` |
 | Sub-property of | [allocation-definition-sysml-spec-2-0-part-1-069c841061157919](https://www.3se.info/3se-onto/properties/allocation-definition-sysml-spec-2-0-part-1-069c841061157919) |
 
-*Created: 2026-03-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### canBe - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates a source concept to a target concept which may, under certain conditions, be an instance or a realisation of the source concept.
 This relation expresses a potential, contingent relationship between two concepts.
@@ -22080,13 +22093,13 @@ This relation expresses a potential, contingent relationship between two concept
 | Domain | `skos:Concept` |
 | Range | `skos:Concept` |
 
-*Created: 2026-03-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### consumes - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates an element to an input element that it utilizes during its execution.
 
@@ -22096,13 +22109,13 @@ This relation expresses a potential, contingent relationship between two concept
 | Range | `skos:Concept` |
 | Sub-property of | [used-w3c-prov-2013-069efa20ebee7bd9](https://www.3se.info/3se-onto/properties/used-w3c-prov-2013-069efa20ebee7bd9) |
 
-*Created: 2026-04-27 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-27 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### conveys - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates an interface to one or more flows or exchanges that circulate through it.
 
@@ -22112,13 +22125,13 @@ This relation expresses a potential, contingent relationship between two concept
 | Range | `skos:Concept` |
 | Sub-property of | [conveyed-uml-spec-2-5-1-069f2456795272b9](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9) |
 
-*Created: 2026-04-29 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-29 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### evaluates - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates an evaluation case to the entity it was developed to evaluate, to determine whether that entity satisfies the criteria it defines.
 
@@ -22127,13 +22140,13 @@ This relation expresses a potential, contingent relationship between two concept
 | Domain | `skos:Concept` |
 | Range | `skos:Concept` |
 
-*Created: 2026-04-30 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-30 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### exposes - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates a source element to an interface through which it exchanges flows with its environment.
 
@@ -22143,13 +22156,13 @@ This relation expresses a potential, contingent relationship between two concept
 | Range | `skos:Concept` |
 | Sub-property of | [provided-uml-spec-2-5-1-069cd94b89777912](https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912), [required-uml-spec-2-5-1-069cd94b898170f1](https://www.3se.info/3se-onto/properties/required-uml-spec-2-5-1-069cd94b898170f1) |
 
-*Created: 2026-04-01 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### fires - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates an active state to a transition that it fires.
 A transition is fireable if and only if the immediately preceding state is active and the associated condition — evaluated on the flows produced by the active functions of that state — is true.
@@ -22159,7 +22172,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Domain | `https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea` |
 | Range | `https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596` |
 
-*Created: 2026-05-16 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-05-16 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -22181,7 +22194,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 
 ### isAccountableFor - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates a role to a concept for which the role owns the outcome and bears ultimate responsibility, regardless of who executes the work. Only one role should be accountable for a given concept.
 
@@ -22191,7 +22204,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Range | `skos:Concept` |
 | Sub-property of | [was-associated-with-w3c-prov-2013-069c527ae0af7f13](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13) |
 
-*Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -22212,7 +22225,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 
 ### isComposedOf - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Strong form of aggregation that relates a composite entity to its parts, where each part instance is included in at most one composite instance at a time.
  If the composite instance is decommissioned, all of its parts instances are decommissioned.
@@ -22222,13 +22235,13 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Domain | `skos:Concept` |
 | Range | `skos:Concept` |
 
-*Created: 2026-03-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### isRepresentedBy - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relationship that relates an entity to a more abstract element that represents the same concept at a higher level of abstraction.
 
@@ -22237,13 +22250,13 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Domain | `skos:Concept` |
 | Range | `skos:Concept` |
 
-*Created: 2026-03-28 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-28 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### isResponsibleFor - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates a role to a concept for which the role executes the work and ensures its delivery. A role can be responsible for a concept without being accountable for it.
 
@@ -22253,13 +22266,13 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Range | `skos:Concept` |
 | Sub-property of | [was-associated-with-w3c-prov-2013-069c527ae0af7f13](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13) |
 
-*Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
 ### isSupporting - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates a role to a concept to which the role contributes resources, expertise, or effort without bearing primary responsibility or accountability for it.
 
@@ -22269,7 +22282,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Range | `skos:Concept` |
 | Sub-property of | [was-associated-with-w3c-prov-2013-069c527ae0af7f13](https://www.3se.info/3se-onto/properties/was-associated-with-w3c-prov-2013-069c527ae0af7f13) |
 
-*Created: 2026-03-26 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
@@ -22291,7 +22304,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 
 ### produces - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![approved](https://img.shields.io/badge/status-approved-green)
 
 > Relates an element to an output element that it generates as a result of its execution.
 
@@ -22300,7 +22313,7 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Domain | `skos:Concept` |
 | Range | `skos:Concept` |
 
-*Created: 2026-04-27 · Modified: 2026-08-14 · Creator: @rcasteran*
+*Created: 2026-04-27 · Modified: 2026-09-11 · Creator: @rcasteran*
 
 ---
 
