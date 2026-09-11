@@ -1,4 +1,4 @@
-# 3SE Ontology
+﻿# 3SE Ontology
 
 > A formal, shared vocabulary that aligns concepts across system, safety, and security engineering — one language for all disciplines.
 
@@ -106,6 +106,19 @@ Each release additionally gets a permanent, frozen snapshot at `https://www.3se.
 Term, reference, and property identifiers (`@id`) are permanent and version-independent — they always resolve under the unversioned `https://www.3se.info/3se-onto/terms/...` base regardless of which release introduced or last touched them. Only the browsable release snapshots are versioned; identifiers never are.
 
 A release is cut by tagging a commit `<major>.<minor>` (e.g. `1.0`) and pushing the tag, which triggers the `Release ontology site` GitHub Actions workflow.
+
+## Status management
+
+Every entry in `terms/`, `domains/`, and `properties/` carries a `status` field that tracks its editorial maturity. 
+The script `scripts/manage_statuses.py` automates status promotions after each release, comparing each file against the latest `X.Y` tag:
+
+| Current `status` | Current `entryModified` vs Release `entryModified` | Release `status` | Action                                       |
+|------------------|----------------------------------------------------|------------------|----------------------------------------------|
+| `reviewed`       | unchanged                                          | any              | → `approved`                                 |
+| `draft`          | any                                                | any              | → `reviewed`                                 |
+| any              | any                                                | `draft`          | → `reviewed`                                 |
+| `reviewed`       | changed                                            | any              | no change *(review done for next release)*   |
+| `approved`       | any                                                | any              | no change *(approval done for next release)* |
 
 ## Contributing
 
