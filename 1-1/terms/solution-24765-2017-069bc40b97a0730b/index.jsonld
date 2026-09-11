@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Solution - ISO/IEC/IEEE 24765",
+  "description": "Combination of people, processes, and technologies to implement a desired capability.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b",
+  "entryCreated": "2026-03-19",
+  "entryModified": "2026-03-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

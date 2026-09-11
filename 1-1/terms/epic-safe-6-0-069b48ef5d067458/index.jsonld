@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Epic - SAFe 6.0",
+  "description": "An Epic is a significant solution development initiative",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/epic-safe-6-0-069b48ef5d067458",
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-03-18"
+}

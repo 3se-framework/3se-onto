@@ -1,0 +1,18 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Material entity - 3SE",
+  "description": "Portion of matter hosted within a site.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/material-entity-bfo-2-0-06a95dbad588717a"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/material-entity-3se-06a95e75a9827211",
+  "related": [],
+  "entryCreated": "2026-08-31",
+  "entryModified": "2026-08-31",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

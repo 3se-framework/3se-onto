@@ -1,0 +1,21 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System variability model - 3SE",
+  "description": "Conceptual model which represents the variability analysis based on the system variant breakdown structure.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-variability-model-3se-06a888a0c0497ff5",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-variant-breakdown-structure-3se-06a888a0c0777eae",
+    "https://www.3se.info/3se-onto/terms/variability-analysis-3se-06a888a0c0817f9b"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
