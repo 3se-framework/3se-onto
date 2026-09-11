@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Security software non-functional requirement - 3SE",
   "description": "Software non-functional requirement which is relevant for security engineering.",
-  "status": "reviewed",
+  "status": "approved",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c"
   ],
