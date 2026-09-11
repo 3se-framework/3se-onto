@@ -25,13 +25,13 @@ The 3SE Ontology addresses this directly by:
 
 Every 3SE term is compared to one or more definitions from the referenced standards. The nature of each relationship is encoded using SKOS mapping properties:
 
-| Relation | Meaning |
-|---|---|
-| `skos:exactMatch` | The definitions are functionally equivalent and interchangeable in most contexts. |
-| `skos:closeMatch` | Strong conceptual overlap but not interchangeable — framing, scope, or method differs. |
-| `skos:broadMatch` | The 3SE term is narrower — the referenced definition is broader and subsumes it. |
-| `skos:narrowMatch` | The 3SE term is broader — it generalizes beyond the constraints of the referenced definition. |
-| `skos:relatedMatch` | The concepts are associatively related but not hierarchically aligned. |
+| Relation            | Meaning                                                                                       |
+|---------------------|-----------------------------------------------------------------------------------------------|
+| `skos:exactMatch`   | The definitions are functionally equivalent and interchangeable in most contexts.             |
+| `skos:closeMatch`   | Strong conceptual overlap but not interchangeable — framing, scope, or method differs.        |
+| `skos:broadMatch`   | The 3SE term is narrower — the referenced definition is broader and subsumes it.              |
+| `skos:narrowMatch`  | The 3SE term is broader — it generalizes beyond the constraints of the referenced definition. |
+| `skos:relatedMatch` | The concepts are associatively related but not hierarchically aligned.                        |
 
 ## How 3SE terms relate to BFO 2.0?
 
@@ -39,25 +39,25 @@ Beyond mapping to engineering standards, 3SE terms are progressively anchored in
 
 `subClassOf` is reserved for this formal BFO subsumption. Structural relations specific to 3SE (`allocates`, `isComposedOf`, `produces`, `consumes`, ...) are typed separately in `properties/` and are not required to respect the BFO continuant/occurrent divide, since they express engineering-level mappings (e.g. responsibility assignment, traceability) rather than formal ontological claims.
 
-| 3SE term | BFO 2.0 class |
-|---|---|
-| Activity | Process |
-| Attribute | Quality |
-| Exchange | Generically dependent continuant |
-| Feature | Disposition |
-| Flow | Generically dependent continuant |
-| Function | Function |
-| Functional element | Fiat object part |
-| Material entity | Material entity |
-| Physical element | Object |
-| Physical interface | Two-dimensional continuant fiat boundary |
-| Site | Site |
-| Stakeholder | Role |
-| State | Disposition |
-| System | Role |
-| System element | Role |
-| System element interface | Role |
-| System interface | Role |
+| 3SE term                 | BFO 2.0 class                            |
+|--------------------------|------------------------------------------|
+| Activity                 | Process                                  |
+| Attribute                | Quality                                  |
+| Exchange                 | Generically dependent continuant         |
+| Feature                  | Disposition                              |
+| Flow                     | Generically dependent continuant         |
+| Function                 | Function                                 |
+| Functional element       | Fiat object part                         |
+| Material entity          | Material entity                          |
+| Physical element         | Object                                   |
+| Physical interface       | Two-dimensional continuant fiat boundary |
+| Site                     | Site                                     |
+| Stakeholder              | Role                                     |
+| State                    | Disposition                              |
+| System                   | Role                                     |
+| System element           | Role                                     |
+| System element interface | Role                                     |
+| System interface         | Role                                     |
 
 ## How 3SE properties relate to RO?
 
@@ -71,18 +71,18 @@ Beyond mapping to engineering standards, 3SE terms are progressively anchored in
 
 The ontology is organised into ten engineering domains. Each domain is a `skos:Collection` that groups the 3SE analyses in scope of one area of the 3SE maturity evaluation method.
 
-| Domain | Scope |
-|---|---|
-| **Business engineering** | Decomposition and allocation of stakeholder goals into features and attributes, the value they deliver, the actors supporting them, the interdependent actors influencing them, and the opportunities and risks arising from the system's milieu. |
-| **Requirements engineering** | Specification of stakeholder requirements from features and attributes, and their refinement into system requirements. |
-| **System engineering** | Operational activities and system functions, their allocation into functional, physical and system architecture (functional elements, physical elements, system elements, their interfaces and states), and the system attributes contributing to stakeholder goals. |
-| **Risk engineering** | Identification, assessment, treatment and monitoring of risk, encompassing safety risk (hazards and hazardous situations) and security risk (assets and threatening situations), including their residual risk and cross-discipline interactions. |
-| **Asset engineering** | Identification of the products and services that realise system features, their internal structuring into product elements and service means, and the releases through which they are delivered. |
-| **Project engineering** | Planning and execution breakdown of a release into the project delivering it, the iterations completing that project, the epics assigned to each iteration, and the tasks realising them. |
-| **Verification, validation and acceptance engineering** | Confirmation that development deliverables pass their maturity or assessment gates (verification), that system requirements and constraints are satisfied by validation cases (validation), and that stakeholder goals are satisfied by acceptance cases (acceptance). |
-| **Variability and configuration engineering** | *(in progress)* |
-| **Knowledge engineering** | *(in progress)* |
-| **Processes engineering** | *(in progress)* |
+| Domain                                                  | Scope                                                                                                                                                                                                                                                                                                                        |
+|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Business engineering**                                | Decomposition and allocation of stakeholder goals into features and attributes, the value they deliver, the actors supporting them, the interdependent actors influencing them, and the opportunities and risks arising from the system's milieu.                                                                            |
+| **Requirements engineering**                            | Specification of stakeholder requirements from features and attributes, and their refinement into system requirements.                                                                                                                                                                                                       |
+| **System engineering**                                  | Operational activities and system functions, their allocation into functional, physical and system architecture (functional elements, physical elements, system elements, their interfaces and states), and the system attributes contributing to stakeholder goals.                                                         |
+| **Risk engineering**                                    | Identification, assessment, treatment and monitoring of risk, encompassing safety risk (hazards and hazardous situations) and security risk (assets and threatening situations), including their residual risk and cross-discipline interactions.                                                                            |
+| **Asset engineering**                                   | Identification of the products and services that realise system features, their internal structuring into product elements and service means, and the releases through which they are delivered.                                                                                                                             |
+| **Project engineering**                                 | Planning and execution breakdown of a release into the project delivering it, the iterations completing that project, the epics assigned to each iteration, and the tasks realising them.                                                                                                                                    |
+| **Verification, validation and acceptance engineering** | Confirmation that development deliverables pass their maturity or assessment gates (verification), that system requirements and constraints are satisfied by validation cases (validation), and that stakeholder goals are satisfied by acceptance cases (acceptance).                                                       |
+| **Variability and configuration engineering**           | Identification and management of variability in system features, functions, and architecture elements, encompassing variation points, variants, and constraints on their combinations, and the definition of configurations that bind a specific selection of base entities and variants into a realised product or service. |
+| **Knowledge engineering**                               | *(in progress)*                                                                                                                                                                                                                                                                                                              |
+| **Processes engineering**                               | *(in progress)*                                                                                                                                                                                                                                                                                                              |
 
 ## Structure
 ```
