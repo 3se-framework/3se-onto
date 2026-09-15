@@ -16,10 +16,11 @@
     "https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed",
     "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5",
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
-    "https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8"
+    "https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8",
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
   ],
   "entryCreated": "2026-03-23",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-15",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
