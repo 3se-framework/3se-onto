@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software architecture constraint - 3SE",
+  "description": "Constraint about a software interface, a software component interface, a software component interface attribute, a software component function, a software component function attribute, a software component state or a software component state attribute, that specifies or restricts the software architecture.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+  ]
+}
