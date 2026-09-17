@@ -165,6 +165,24 @@ def split_terms(terms: list[dict]) -> tuple[list[dict], list[dict]]:
     return se3_terms, other_terms
 
 
+def build_skos_match_inverse_index(terms: list[dict]) -> dict[str, dict[str, list[dict]]]:
+    """
+    Return a mapping of URI -> {match_property -> list of terms declaring it}.
+    Used to render inverse SKOS navigation on external/standard term pages:
+    if 3SE term A declares A --broadMatch--> B, B's page shows "Broad match of: A".
+    """
+    index: dict[str, dict[str, list[dict]]] = {}
+    for term in terms:
+        for prop in ("exactMatch", "closeMatch", "broadMatch", "narrowMatch", "relatedMatch"):
+            val = term.get(prop)
+            if not val:
+                continue
+            uris = [val] if isinstance(val, str) else val
+            for uri in uris:
+                index.setdefault(uri, {}).setdefault(prop, []).append(term)
+    return index
+
+
 def split_properties(properties: list[dict]) -> tuple[list[dict], list[dict]]:
     """Split properties into 3SE properties and other (external) properties.
     A 3SE property has a title ending with '- 3SE', mirroring split_terms().
@@ -255,6 +273,23 @@ def build_bounds_index(terms: list[dict]) -> dict[str, list[dict]]:
     index: dict[str, list[dict]] = {}
     for term in terms:
         val = term.get("isBoundedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_component_of_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isComposedOf target. Used to compute the inverse 'component of'
+    relation: if A isComposedOf B, then B is a component of A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isComposedOf")
         if not val:
             continue
         uris = [val] if isinstance(val, str) else val
@@ -1262,7 +1297,9 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 fired_by_index: dict[str, list[dict]] | None = None,
                 has_variant_index: dict[str, list[dict]] | None = None,
                 hosted_by_index: dict[str, list[dict]] | None = None,
-                bounds_index: dict[str, list[dict]] | None = None) -> list[str]:
+                bounds_index: dict[str, list[dict]] | None = None,
+                component_of_index: dict[str, list[dict]] | None = None,
+                skos_match_inverse_index: dict[str, dict[str, list[dict]]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -1364,6 +1401,25 @@ def render_term(term: dict, ref_index: dict[str, dict],
         links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in items]
         relation_rows.append((label, ", ".join(links)))
 
+    # Inverse SKOS matches (navigation from standard term back to 3SE term)
+    if skos_match_inverse_index:
+        term_id = term.get("@id", "")
+        inv = skos_match_inverse_index.get(term_id, {})
+        for prop, label in [
+            ("exactMatch", "Exact match of"),
+            ("closeMatch", "Close match of"),
+            ("broadMatch", "Broad match of"),
+            ("narrowMatch", "Narrow match of"),
+            ("relatedMatch", "Related match of"),
+        ]:
+            src_terms = inv.get(prop, [])
+            if src_terms:
+                links = [
+                    f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                    for t in src_terms
+                ]
+                relation_rows.append((label, ", ".join(links)))
+
     # Breakdown structure constituent relations
     for field, label in [
         ("isComposedOf", "Composed of"),
@@ -1418,6 +1474,17 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in bounded_terms
             ]
             relation_rows.append(("Bounds", ", ".join(links)))
+
+    # Component of (computed inverse of isComposedOf)
+    if component_of_index:
+        term_id = term.get("@id", "")
+        composing_terms = component_of_index.get(term_id, [])
+        if composing_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in composing_terms
+            ]
+            relation_rows.append(("Component of", ", ".join(links)))
 
     # Evaluated by (computed inverse of evaluates)
     if evaluated_by_index:
@@ -1818,11 +1885,13 @@ def main() -> int:
     allocated_by_index = build_allocated_by_index(terms)
     hosted_by_index = build_hosted_by_index(terms)
     bounds_index = build_bounds_index(terms)
+    component_of_index = build_component_of_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
+    skos_match_inverse_index = build_skos_match_inverse_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
     se3_properties, other_properties = split_properties(properties)
@@ -1907,7 +1976,9 @@ def main() -> int:
                                   represents_index, allocated_by_index,
                                   evaluated_by_index, fired_by_index,
                                   has_variant_index, hosted_by_index,
-                                  bounds_index))
+                                  bounds_index,
+                                  component_of_index,
+                                  skos_match_inverse_index))
             md.append("---")
             md.append("")
     else:
@@ -1926,7 +1997,9 @@ def main() -> int:
                                   represents_index, allocated_by_index,
                                   evaluated_by_index, fired_by_index,
                                   has_variant_index, hosted_by_index,
-                                  bounds_index))
+                                  bounds_index,
+                                  component_of_index,
+                                  skos_match_inverse_index))
             md.append("---")
             md.append("")
     else:

@@ -318,6 +318,23 @@ def build_bounds_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_component_of_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isComposedOf target. Used to compute the inverse 'component of'
+    relation: if A isComposedOf B, then B is a component of A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isComposedOf")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_evaluated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     """
     Return a mapping of URI -> list of term entries that declare that URI
@@ -386,6 +403,24 @@ def build_referenced_terms_index(
         uris = [val] if isinstance(val, str) else val
         for uri in uris:
             index.setdefault(uri, []).append(entry)
+    return index
+
+
+def build_skos_match_inverse_index(terms: list[dict]) -> dict[str, dict[str, list[dict]]]:
+    """
+    Return a mapping of URI -> {match_property -> list of terms declaring it}.
+    Used to render inverse SKOS navigation on external/standard term pages:
+    if 3SE term A declares A --broadMatch--> B, B's page shows "Broad match of: A".
+    """
+    index: dict[str, dict[str, list[dict]]] = {}
+    for term in terms:
+        for prop in ("exactMatch", "closeMatch", "broadMatch", "narrowMatch", "relatedMatch"):
+            val = term.get(prop)
+            if not val:
+                continue
+            uris = [val] if isinstance(val, str) else val
+            for uri in uris:
+                index.setdefault(uri, {}).setdefault(prop, []).append(term)
     return index
 
 
@@ -2353,7 +2388,9 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                      fired_by_index: dict[str, list[dict]] | None = None,
                      has_variant_index: dict[str, list[dict]] | None = None,
                      hosted_by_index: dict[str, list[dict]] | None = None,
-                     bounds_index: dict[str, list[dict]] | None = None) -> str:
+                     bounds_index: dict[str, list[dict]] | None = None,
+                     component_of_index: dict[str, list[dict]] | None = None,
+                     skos_match_inverse_index: dict[str, dict[str, list[dict]]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2557,6 +2594,19 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                 f'</tr>'
             )
 
+    # Component of (computed inverse of isComposedOf)
+    if component_of_index:
+        term_id = term.get("@id", "")
+        composing_terms = component_of_index.get(term_id, [])
+        if composing_terms:
+            links = [render_uri_link(t.get("@id", "")) for t in composing_terms]
+            bfo_html += (
+                f'<tr>'
+                f'<td>Component of</td>'
+                f'<td>{SEP.join(links)}</td>'
+                f'</tr>'
+            )
+
     # Role relations (isResponsibleFor / isAccountableFor / isSupporting)
 
     role_html = ""
@@ -2686,6 +2736,23 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
         ("relatedMatch", "Related match"),
     ])
+    if skos_match_inverse_index:
+        term_id = term.get("@id", "")
+        inv = skos_match_inverse_index.get(term_id, {})
+        for prop, label in [
+            ("exactMatch", "Exact match of"), ("closeMatch", "Close match of"),
+            ("broadMatch", "Broad match of"), ("narrowMatch", "Narrow match of"),
+            ("relatedMatch", "Related match of"),
+        ]:
+            src_terms = inv.get(prop, [])
+            if src_terms:
+                links = [render_uri_link(t.get("@id", "")) for t in src_terms]
+                match += (
+                    f'<tr>'
+                    f'<td>{label}</td>'
+                    f'<td>{SEP.join(links)}</td>'
+                    f'</tr>'
+                )
     relations_html = ""
     if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
@@ -3223,11 +3290,13 @@ def main() -> int:
     allocated_by_index = build_allocated_by_index(terms)
     hosted_by_index = build_hosted_by_index(terms)
     bounds_index = build_bounds_index(terms)
+    component_of_index = build_component_of_index(terms)
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
+    skos_match_inverse_index = build_skos_match_inverse_index(terms)
 
     se3_terms, other_terms = split_terms(terms)
     se3_properties, other_properties = split_properties(properties)
@@ -3295,7 +3364,9 @@ def main() -> int:
                              represents_index, allocated_by_index,
                              evaluated_by_index, fired_by_index,
                              has_variant_index, hosted_by_index,
-                             bounds_index), encoding="utf-8"
+                             bounds_index,
+                             component_of_index,
+                             skos_match_inverse_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",
