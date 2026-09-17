@@ -16,13 +16,15 @@
   "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597",
   "related": [
     "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
-    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
+    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a",
+    "https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e",
+    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
   ],
   "entryCreated": "2026-03-29",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

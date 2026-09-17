@@ -16,10 +16,11 @@
     "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
     "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
-    "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de"
+    "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de",
+    "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

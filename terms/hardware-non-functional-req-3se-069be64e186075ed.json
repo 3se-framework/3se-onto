@@ -10,10 +10,11 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed",
   "related": [
-    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

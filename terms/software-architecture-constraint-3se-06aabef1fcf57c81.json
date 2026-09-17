@@ -13,7 +13,8 @@
     "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da",
     "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a",
     "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625",
-    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
+    "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c",
+    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce"
   ],
   "entryCreated": "2026-09-17",
   "entryModified": "2026-09-17",

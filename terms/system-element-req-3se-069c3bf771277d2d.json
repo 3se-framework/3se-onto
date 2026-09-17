@@ -13,10 +13,12 @@
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-element-validation-3se-069c3bf771427f12",
-    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
+    "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb",
+    "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f",
+    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

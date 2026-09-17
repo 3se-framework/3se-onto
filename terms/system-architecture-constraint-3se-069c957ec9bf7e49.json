@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
   "isComposedOf": [
-    "https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se"
+    "https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac",
@@ -17,7 +17,7 @@
     "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de"
   ],
   "entryCreated": "2026-03-29",
-  "entryModified": "2026-08-21",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
