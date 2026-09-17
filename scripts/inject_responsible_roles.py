@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # Propagates isResponsibleFor targets on role terms derived from the role's
 # isAccountableFor targets.
 #
@@ -114,6 +114,12 @@ def main() -> int:
     # Combined set of URIs that are BS, CM, or analysis
     bca_uris: set[str] = breakdown_uris | conceptual_model_uris | analysis_uris
 
+    role_uris: set[str] = {
+        BASE_IRI + stem
+        for stem, (_, data) in index.items()
+        if is_subclass_of(data, ROLE_BASE_URI)
+    }
+
     # Build a URI-keyed lookup for all terms
     uri_to_data: dict[str, dict] = {
         BASE_IRI + stem: data
@@ -132,6 +138,11 @@ def main() -> int:
         seen: set[str] = set()
         result: list[str] = []
         for uri in ensure_list(bca_data.get("related")):
+            if uri in role_uris:
+                bca_stem = stem_for_uri(bca_uri) or bca_uri
+                role_stem = stem_for_uri(uri) or uri
+                print(f"  ERROR: {bca_stem} has role {role_stem} in its related field — roles cannot be content terms.")
+                raise SystemExit(1)
             if uri not in bca_uris and uri not in seen:
                 seen.add(uri)
                 result.append(uri)
