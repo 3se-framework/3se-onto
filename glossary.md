@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-09-17 17:09 UTC*
+*Generated on 2026-09-17 17:33 UTC*
 
 This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other term(s)**, **16 3SE property(ies)**, **11 other property(ies)**, and **29 reference(s)**.
 
@@ -2979,17 +2979,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N3 -.->|allocates| N21
-    N19 -.->|allocates| N17
-    N18 -.->|allocates| N14
     N21 -.->|allocates| N14
     N13 -.->|allocates| N14
+    N19 -.->|allocates| N17
     N20 -.->|allocates| N16
-    N11 -->|subclass of| N10
+    N3 -.->|allocates| N21
+    N18 -.->|allocates| N14
+    N8 -->|subclass of| N4
     N9 -->|subclass of| N4
     N12 -->|subclass of| N10
     N10 -->|subclass of| N4
-    N8 -->|subclass of| N4
+    N11 -->|subclass of| N10
 ```
 
 **Architecture**
@@ -3426,10 +3426,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N6 -.->|allocates| N13
-    N7 -.->|allocates| N10
     N3 -.->|allocates| N11
     N11 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N6 -.->|allocates| N13
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -4615,8 +4615,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
 ```
 
@@ -7391,16 +7391,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
+    N5 -.->|allocates| N3
     N2 -.->|allocates| N15
+    N14 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N14 -.->|allocates| N15
-    N5 -.->|allocates| N3
-    N10 -->|subclass of| N8
-    N11 -->|subclass of| N8
-    N12 -->|subclass of| N11
     N13 -->|subclass of| N11
     N9 -->|subclass of| N8
+    N11 -->|subclass of| N8
+    N10 -->|subclass of| N8
+    N12 -->|subclass of| N11
 ```
 
 **Architecture**
@@ -7836,8 +7836,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -9121,13 +9121,13 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
     N5 -.->|allocates| N2
     N5 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
     N2 -->|subclass of| N8
@@ -9279,7 +9279,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
+| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50) |
 | Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
 | Exact match | [residual-risk-24765-2017-069c1469f43474c4](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4) |
 
@@ -9293,7 +9293,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-17 · Creator: @rcasteran*
 
 ---
 
@@ -9909,13 +9909,13 @@ It includes the following steps:
 (5) For each hazardous situation, evaluate the likelihood of its occurrence.
 (6) For each hazardous situation, evaluate the targeted safety risk level based on its hazard severity and the likelihood of its occurrence.
 (7) For each hazardous situation, decide the safety risk treatment: avoid, reduce, retain or share.
-(8) For each hazardous situation, evaluate the residual safety risk level after treatment.
+(8) For each hazardous situation, evaluate the safety residual risk level after treatment.
 (9) For each hazardous situation, determine if the safety risk treatment leads to a threatening situation in the same context.
 
 
 | Relation | Terms |
 |---|---|
-| Related | [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
+| Related | [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770) |
 | Subclass of | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 | Close match | [hazard-analysis-and-risk-assessment-26262-1-2018-069c1ab34b617437](https://www.3se.info/3se-onto/terms/hazard-analysis-and-risk-assessment-26262-1-2018-069c1ab34b617437) |
 
@@ -9931,7 +9931,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-23 · Modified: 2026-09-15 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-17 · Creator: @rcasteran*
 
 ---
 
@@ -10869,13 +10869,13 @@ It includes the following steps:
 (5) For each threatening situation, evaluate the likelihood of its occurrence.
 (6) For each threatening situation, evaluate the targeted security risk level based on its asset severity and the likelihood of its occurrence.
 (7) For each threatening situation, decide the security risk treatment: avoid, reduce, retain or share.
-(8) For each threatening situation, evaluate the residual security risk level after treatment.
+(8) For each threatening situation, evaluate the security residual risk level after treatment.
 (9) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.
 
 
 | Relation | Terms |
 |---|---|
-| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253) |
+| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770) |
 | Subclass of | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 | Close match | [threat-analysis-and-risk-assessment-21434-2021-069c1ab34bb77d01](https://www.3se.info/3se-onto/terms/threat-analysis-and-risk-assessment-21434-2021-069c1ab34bb77d01) |
 
@@ -10891,7 +10891,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-23 · Modified: 2026-09-15 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-17 · Creator: @rcasteran*
 
 ---
 
@@ -11611,9 +11611,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -14395,8 +14395,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -14549,11 +14549,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N6 -.->|allocates| N5
-    N11 -.->|allocates| N4
-    N10 -.->|allocates| N14
     N13 -.->|allocates| N9
+    N6 -.->|allocates| N5
+    N10 -.->|allocates| N14
     N7 -.->|allocates| N5
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16044,21 +16044,21 @@ graph TD
     N17 -.->|exposes| N37
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
-    N18 -.->|allocates| N25
-    N27 -.->|allocates| N23
+    N35 -.->|allocates| N2
+    N30 -->|subclass of| N33
+    N21 -.->|exposes| N36
+    N9 -.->|allocates| N4
     N37 -.->|allocates| N23
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
-    N35 -.->|allocates| N2
-    N9 -.->|allocates| N4
-    N28 -.->|allocates| N30
-    N21 -.->|exposes| N36
-    N2 -->|subclass of| N33
     N16 -.->|allocates| N11
-    N30 -->|subclass of| N33
+    N27 -.->|allocates| N23
+    N28 -.->|allocates| N30
+    N2 -->|subclass of| N33
+    N18 -.->|allocates| N25
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -17849,14 +17849,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N13 -.->|allocates| N12
+    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N3 -.->|allocates| N4
+    N13 -.->|allocates| N12
     N2 -.->|allocates| N4
-    N16 -.->|allocates| N4
-    N15 -.->|exposes| N1
     N14 -.->|allocates| N12
+    N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -18429,25 +18429,25 @@ graph TD
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N42 -->|subclass of| N41
-    N27 -.->|allocates| N20
-    N40 -->|subclass of| N38
     N32 -.->|allocates| N2
-    N43 -->|subclass of| N41
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N44 -.->|allocates| N2
-    N29 -.->|allocates| N22
-    N29 -.->|allocates| N37
-    N38 -.->|allocates| N1
-    N39 -->|subclass of| N38
-    N41 -->|subclass of| N38
-    N28 -.->|allocates| N19
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
+    N39 -->|subclass of| N38
+    N38 -.->|allocates| N1
+    N27 -.->|allocates| N20
+    N40 -->|subclass of| N38
+    N28 -.->|allocates| N19
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N43 -->|subclass of| N41
+    N44 -.->|allocates| N2
+    N41 -->|subclass of| N38
+    N29 -.->|allocates| N22
+    N29 -.->|allocates| N37
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
+    N42 -->|subclass of| N41
 ```
 
 *Created: 2026-04-26 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -18831,10 +18831,10 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N15 -.->|allocates| N12
-    N14 -.->|allocates| N9
     N4 -.->|allocates| N8
     N13 -.->|allocates| N10
+    N15 -.->|allocates| N12
+    N14 -.->|allocates| N9
     N11 -.->|allocates| N12
 ```
 
@@ -19411,27 +19411,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
-    N2 -.->|allocates| N8
-    N2 -.->|allocates| N10
-    N2 -.->|allocates| N12
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
+    N8 -.->|allocates| N15
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
-    N22 -.->|allocates| N4
-    N22 -.->|allocates| N6
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
+    N16 -.->|allocates| N10
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
+    N4 -.->|allocates| N23
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
     N20 -.->|allocates| N10
     N20 -.->|allocates| N11
-    N4 -.->|allocates| N23
-    N8 -.->|allocates| N15
-    N16 -.->|allocates| N10
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
+    N2 -.->|allocates| N8
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N12
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -20132,35 +20132,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
+    N43 -.->|allocates| N12
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N10 -.->|allocates| N19
+    N22 -.->|allocates| N32
+    N23 -.->|allocates| N19
     N33 -.->|allocates| N23
     N33 -.->|allocates| N19
     N11 -.->|allocates| N19
     N11 -.->|allocates| N20
-    N10 -.->|allocates| N19
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N23 -.->|allocates| N19
-    N43 -.->|allocates| N12
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
     N27 -.->|allocates| N17
     N27 -.->|allocates| N12
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N45 -.->|allocates| N35
-    N45 -.->|allocates| N41
-    N45 -.->|allocates| N43
-    N34 -.->|allocates| N22
-    N34 -.->|allocates| N23
-    N34 -.->|allocates| N19
-    N22 -.->|allocates| N32
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
+    N34 -.->|allocates| N22
+    N34 -.->|allocates| N23
+    N34 -.->|allocates| N19
+    N45 -.->|allocates| N35
+    N45 -.->|allocates| N41
+    N45 -.->|allocates| N43
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
