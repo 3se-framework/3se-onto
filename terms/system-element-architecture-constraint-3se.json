@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System element architecture constraint - 3SE",
+  "description": "Constraint about a software interface, a software interface attribute, a hardware interface, a hardware interface attribute, a software function, a software function attribute, a hardware function, a hardware function attribute, a software state, a software state attribute, a hardware state or a hardware state attribute, that specifies or restricts the system element architecture.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
+  ]
+}
