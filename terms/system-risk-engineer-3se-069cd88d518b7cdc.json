@@ -64,7 +64,5 @@
     "@type": "foaf:Person",
     "name": "@rcasteran"
   },
-  "related": [
-    "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f"
-  ]
+  "related": []
 }
