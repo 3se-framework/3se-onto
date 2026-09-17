@@ -33,7 +33,8 @@
     "https://www.3se.info/3se-onto/terms/system-element-req-3se-069c3bf771277d2d",
     "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f",
     "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf",
-    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/system-element-req-model-3se-06aac13a4035725f"
   ],
   "entryCreated": "2026-09-17",
   "entryModified": "2026-09-17",

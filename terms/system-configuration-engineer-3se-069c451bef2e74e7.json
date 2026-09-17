@@ -8,7 +8,9 @@
     "https://www.3se.info/3se-onto/terms/role-3se-069c451bef157773"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7",
-  "related": [],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f"
+  ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/variability-analysis-3se-06a888a0c0817f9b",
     "https://www.3se.info/3se-onto/terms/system-variant-breakdown-structure-3se-06a888a0c0777eae",
@@ -65,7 +67,7 @@
     "https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-08-21",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
