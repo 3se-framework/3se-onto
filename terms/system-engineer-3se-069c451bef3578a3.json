@@ -50,6 +50,7 @@
     "https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53",
     "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
     "https://www.3se.info/3se-onto/terms/system-req-analysis-3se-069ee3cda5ec743c",
+    "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f",
     "https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de",
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32",
     "https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4",
@@ -73,15 +74,14 @@
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
     "https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476",
     "https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d",
-    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93"
+    "https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93",
+    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce",
+    "https://www.3se.info/3se-onto/terms/system-element-req-model-3se-06aac13a4035725f"
   ],
   "entryCreated": "2026-03-25",
   "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  },
-  "related": [
-    "https://www.3se.info/3se-onto/terms/system-element-req-analysis-3se-06aac05ed9e9792f"
-  ]
+  }
 }
