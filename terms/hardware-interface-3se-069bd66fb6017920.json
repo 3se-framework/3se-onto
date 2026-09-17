@@ -10,7 +10,8 @@
   "@id": "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920",
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
-    "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235"
+    "https://www.3se.info/3se-onto/terms/hardware-interface-breakdown-structure-3se-069dc15cd1067235",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340"
@@ -19,7 +20,7 @@
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

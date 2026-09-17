@@ -15,10 +15,11 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86",
   "related": [
-    "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98"
+    "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b"
   ],
   "entryCreated": "2026-04-12",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -17,7 +17,7 @@
     "https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7"
   ],
   "entryCreated": "2026-03-21",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -26,6 +26,7 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1",
     "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5",
-    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a"
+    "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a",
+    "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81"
   ]
 }

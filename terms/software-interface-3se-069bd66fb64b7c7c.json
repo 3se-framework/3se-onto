@@ -11,7 +11,8 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933",
     "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
-    "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025"
+    "https://www.3se.info/3se-onto/terms/software-interface-breakdown-structure-3se-069dc11873027025",
+    "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a"
@@ -20,7 +21,7 @@
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-17",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
