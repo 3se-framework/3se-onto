@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-09-18 17:15 UTC*
+*Generated on 2026-09-18 18:08 UTC*
 
-This glossary contains **8 3SE domain(s)**, **418 3SE term(s)**, **114 other term(s)**, **23 3SE property(ies)**, **12 other property(ies)**, and **29 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **422 3SE term(s)**, **114 other term(s)**, **23 3SE property(ies)**, **12 other property(ies)**, and **29 reference(s)**.
 
 ## Contents
 
@@ -223,7 +223,9 @@ This glossary contains **8 3SE domain(s)**, **418 3SE term(s)**, **114 other ter
   - [Safety software non-functional requirement - 3SE](#safety-software-non-functional-requirement---3se)
   - [Safety software product - 3SE](#safety-software-product---3se)
   - [Safety system activity - 3SE](#safety-system-activity---3se)
+  - [Safety system architecture constraint - 3SE](#safety-system-architecture-constraint---3se)
   - [Safety system constraint - 3SE](#safety-system-constraint---3se)
+  - [Safety System element architecture constraint - 3SE](#safety-system-element-architecture-constraint---3se)
   - [Safety system feature - 3SE](#safety-system-feature---3se)
   - [Safety system function - 3SE](#safety-system-function---3se)
   - [Safety system functional requirement - 3SE](#safety-system-functional-requirement---3se)
@@ -252,7 +254,9 @@ This glossary contains **8 3SE domain(s)**, **418 3SE term(s)**, **114 other ter
   - [Security software non-functional requirement - 3SE](#security-software-non-functional-requirement---3se)
   - [Security software product - 3SE](#security-software-product---3se)
   - [Security system activity - 3SE](#security-system-activity---3se)
+  - [Security system architecture constraint - 3SE](#security-system-architecture-constraint---3se)
   - [Security system constraint - 3SE](#security-system-constraint---3se)
+  - [Security system element architecture constraint - 3SE](#security-system-element-architecture-constraint---3se)
   - [Security system feature - 3SE](#security-system-feature---3se)
   - [Security system function - 3SE](#security-system-function---3se)
   - [Security system functional requirement - 3SE](#security-system-functional-requirement---3se)
@@ -721,7 +725,7 @@ This glossary contains **8 3SE domain(s)**, **418 3SE term(s)**, **114 other ter
 
 ## 3SE Terms
 
-*418 term(s) defined by the 3SE framework.*
+*422 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1606,11 +1610,15 @@ graph TD
     N10["Security software constraint"]
     N11["Stakeholder constraint"]
     N12["System architecture constraint"]
-    N13["System constraint"]
-    N14["Safety system constraint"]
-    N15["Security system constraint"]
-    N16["System element architecture constraint"]
-    N17["System element constraint"]
+    N13["Safety system architecture constraint"]
+    N14["Security system architecture constraint"]
+    N15["System constraint"]
+    N16["Safety system constraint"]
+    N17["Security system constraint"]
+    N18["System element architecture constraint"]
+    N19["Safety System element architecture constraint"]
+    N20["Security system element architecture constraint"]
+    N21["System element constraint"]
 
     N1 -->|subclass of| N2
     N3 -->|subclass of| N1
@@ -1623,11 +1631,15 @@ graph TD
     N10 -->|subclass of| N8
     N11 -->|subclass of| N1
     N12 -->|subclass of| N1
-    N13 -->|subclass of| N1
-    N14 -->|subclass of| N13
-    N15 -->|subclass of| N13
-    N16 -->|subclass of| N1
-    N17 -->|subclass of| N1
+    N13 -->|subclass of| N12
+    N14 -->|subclass of| N12
+    N15 -->|subclass of| N1
+    N16 -->|subclass of| N15
+    N17 -->|subclass of| N15
+    N18 -->|subclass of| N1
+    N19 -->|subclass of| N18
+    N20 -->|subclass of| N18
+    N21 -->|subclass of| N1
 ```
 
 *Created: 2026-03-16 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -2417,7 +2429,7 @@ graph TD
 
 ### Failure and effect analysis - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Analysis of the potential failure of a system function and its effect on the system state it is allocated to.
 It includes the following steps:
@@ -2427,13 +2439,14 @@ It includes the following steps:
 (5) For each hazardous situation, evaluate the likelihood of its occurrence.
 (6) For each hazardous situation, evaluate the targeted safety risk level based on its hazard severity and the likelihood of its occurrence.
 (7) For each hazardous situation, decide the safety risk treatment: avoid, reduce, retain or share.
-(8) For each hazardous situation, evaluate the residual safety risk level after treatment.
-(9) For each hazardous situation, determine if the safety risk treatment leads to a threatening situation in the same context.
+(8) For each hazardous situation, if the safety risk must be reduced, then identify the safety system functional requirements and/or the safety system non-functional requirements and/or the safety system constraints and/or the safety system architecture constraints.
+(9) For each hazardous situation, evaluate the safety residual risk level after treatment.
+(10) For each hazardous situation, determine if the safety risk treatment leads to a threatening situation in the same context.
 
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [safety-system-architecture-constraint-3se-06aad7c082f67b61](https://www.3se.info/3se-onto/terms/safety-system-architecture-constraint-3se-06aad7c082f67b61), [safety-system-constraint-3se-069bdc3120dd749a](https://www.3se.info/3se-onto/terms/safety-system-constraint-3se-069bdc3120dd749a), [safety-system-functional-req-3se-069bdc3120e57dc8](https://www.3se.info/3se-onto/terms/safety-system-functional-req-3se-069bdc3120e57dc8), [safety-system-non-functional-req-3se-069bdc3120ee7a1c](https://www.3se.info/3se-onto/terms/safety-system-non-functional-req-3se-069bdc3120ee7a1c) |
 | Subclass of | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 | Close match | [failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88) |
 
@@ -2449,7 +2462,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-06-29 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-06-29 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -3040,16 +3053,16 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N19 -.->|allocates| N17
-    N3 -.->|allocates| N21
-    N13 -.->|allocates| N14
     N21 -.->|allocates| N14
-    N20 -.->|allocates| N16
+    N13 -.->|allocates| N14
+    N3 -.->|allocates| N21
+    N19 -.->|allocates| N17
     N18 -.->|allocates| N14
+    N20 -.->|allocates| N16
+    N11 -->|subclass of| N10
     N10 -->|subclass of| N4
     N12 -->|subclass of| N10
     N9 -->|subclass of| N4
-    N11 -->|subclass of| N10
     N8 -->|subclass of| N4
 ```
 
@@ -3487,10 +3500,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N13
-    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
+    N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -4012,7 +4025,7 @@ graph TD
     N13 -->|subclass of| N11
 ```
 
-*Created: 2026-03-16 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -4676,8 +4689,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
 ```
 
@@ -6390,8 +6403,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N6 -->|subclass of| N11
     N4 -->|subclass of| N7
+    N6 -->|subclass of| N11
 ```
 
 *Created: 2026-03-24 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -7472,14 +7485,14 @@ graph TD
     N16 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
+    N5 -.->|allocates| N3
     N14 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N5 -.->|allocates| N3
-    N9 -->|subclass of| N8
-    N13 -->|subclass of| N11
-    N10 -->|subclass of| N8
-    N12 -->|subclass of| N11
     N11 -->|subclass of| N8
+    N10 -->|subclass of| N8
+    N13 -->|subclass of| N11
+    N12 -->|subclass of| N11
+    N9 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -7915,8 +7928,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -8622,8 +8635,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -8777,9 +8790,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9200,17 +9213,17 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N7 -.->|allocates| N2
     N7 -.->|allocates| N3
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N3
-    N2 -->|subclass of| N8
     N3 -->|subclass of| N13
+    N2 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -9248,43 +9261,47 @@ graph TD
     N10["Security software constraint"]
     N11["Stakeholder constraint"]
     N12["System architecture constraint"]
-    N13["System constraint"]
-    N14["Safety system constraint"]
-    N15["Security system constraint"]
-    N16["System element architecture constraint"]
-    N17["System element constraint"]
-    N18["Functional Requirement"]
-    N19["Hardware functional requirement"]
-    N20["Safety hardware functional requirement"]
-    N21["Security hardware functional requirement"]
-    N22["Software functional requirement"]
-    N23["Safety software functional requirement"]
-    N24["Security software functional requirement"]
-    N25["Stakeholder functional requirement"]
-    N26["System element functional requirement"]
-    N27["System functional requirement"]
-    N28["Safety system functional requirement"]
-    N29["Security system functional requirement"]
-    N30["Hardware requirement"]
-    N31["Hardware non-functional requirement"]
-    N32["Safety hardware non-functional requirement"]
-    N33["Security hardware non-functional requirement"]
-    N34["Non-functional requirement"]
-    N35["Software non-functional requirement"]
-    N36["Safety software non-functional requirement"]
-    N37["Security software non-functional requirement"]
-    N38["Stakeholder non-functional requirement"]
-    N39["System element non-functional requirement"]
-    N40["System non-functional requirement"]
-    N41["Safety system non-functional requirement"]
-    N42["Security system non-functional requirement"]
-    N43["Process Requirement"]
-    N44["Software component requirement"]
-    N45["Software requirement"]
-    N46["Software unit requirement"]
-    N47["Stakeholder requirement"]
-    N48["System element requirement"]
-    N49["System requirement"]
+    N13["Safety system architecture constraint"]
+    N14["Security system architecture constraint"]
+    N15["System constraint"]
+    N16["Safety system constraint"]
+    N17["Security system constraint"]
+    N18["System element architecture constraint"]
+    N19["Safety System element architecture constraint"]
+    N20["Security system element architecture constraint"]
+    N21["System element constraint"]
+    N22["Functional Requirement"]
+    N23["Hardware functional requirement"]
+    N24["Safety hardware functional requirement"]
+    N25["Security hardware functional requirement"]
+    N26["Software functional requirement"]
+    N27["Safety software functional requirement"]
+    N28["Security software functional requirement"]
+    N29["Stakeholder functional requirement"]
+    N30["System element functional requirement"]
+    N31["System functional requirement"]
+    N32["Safety system functional requirement"]
+    N33["Security system functional requirement"]
+    N34["Hardware requirement"]
+    N35["Hardware non-functional requirement"]
+    N36["Safety hardware non-functional requirement"]
+    N37["Security hardware non-functional requirement"]
+    N38["Non-functional requirement"]
+    N39["Software non-functional requirement"]
+    N40["Safety software non-functional requirement"]
+    N41["Security software non-functional requirement"]
+    N42["Stakeholder non-functional requirement"]
+    N43["System element non-functional requirement"]
+    N44["System non-functional requirement"]
+    N45["Safety system non-functional requirement"]
+    N46["Security system non-functional requirement"]
+    N47["Process Requirement"]
+    N48["Software component requirement"]
+    N49["Software requirement"]
+    N50["Software unit requirement"]
+    N51["Stakeholder requirement"]
+    N52["System element requirement"]
+    N53["System requirement"]
 
     N2 -->|subclass of| N1
     N3 -->|subclass of| N2
@@ -9297,53 +9314,57 @@ graph TD
     N10 -->|subclass of| N8
     N11 -->|subclass of| N2
     N12 -->|subclass of| N2
-    N13 -->|subclass of| N2
-    N14 -->|subclass of| N13
-    N15 -->|subclass of| N13
-    N16 -->|subclass of| N2
-    N17 -->|subclass of| N2
-    N18 -->|subclass of| N1
+    N13 -->|subclass of| N12
+    N14 -->|subclass of| N12
+    N15 -->|subclass of| N2
+    N16 -->|subclass of| N15
+    N17 -->|subclass of| N15
+    N18 -->|subclass of| N2
     N19 -->|subclass of| N18
-    N20 -->|subclass of| N19
-    N21 -->|subclass of| N19
-    N22 -->|subclass of| N18
+    N20 -->|subclass of| N18
+    N21 -->|subclass of| N2
+    N22 -->|subclass of| N1
     N23 -->|subclass of| N22
-    N24 -->|subclass of| N22
-    N25 -->|subclass of| N18
-    N26 -->|subclass of| N18
-    N27 -->|subclass of| N18
-    N28 -->|subclass of| N27
-    N29 -->|subclass of| N27
-    N30 -->|subclass of| N1
-    N19 -->|subclass of| N30
-    N31 -->|subclass of| N30
+    N24 -->|subclass of| N23
+    N25 -->|subclass of| N23
+    N26 -->|subclass of| N22
+    N27 -->|subclass of| N26
+    N28 -->|subclass of| N26
+    N29 -->|subclass of| N22
+    N30 -->|subclass of| N22
+    N31 -->|subclass of| N22
     N32 -->|subclass of| N31
     N33 -->|subclass of| N31
     N34 -->|subclass of| N1
-    N31 -->|subclass of| N34
+    N23 -->|subclass of| N34
     N35 -->|subclass of| N34
     N36 -->|subclass of| N35
     N37 -->|subclass of| N35
-    N38 -->|subclass of| N34
-    N39 -->|subclass of| N34
-    N40 -->|subclass of| N34
-    N41 -->|subclass of| N40
-    N42 -->|subclass of| N40
-    N43 -->|subclass of| N1
-    N44 -->|subclass of| N1
-    N45 -->|subclass of| N1
-    N22 -->|subclass of| N45
-    N35 -->|subclass of| N45
-    N46 -->|subclass of| N1
+    N38 -->|subclass of| N1
+    N35 -->|subclass of| N38
+    N39 -->|subclass of| N38
+    N40 -->|subclass of| N39
+    N41 -->|subclass of| N39
+    N42 -->|subclass of| N38
+    N43 -->|subclass of| N38
+    N44 -->|subclass of| N38
+    N45 -->|subclass of| N44
+    N46 -->|subclass of| N44
     N47 -->|subclass of| N1
-    N25 -->|subclass of| N47
-    N38 -->|subclass of| N47
     N48 -->|subclass of| N1
-    N26 -->|subclass of| N48
-    N39 -->|subclass of| N48
     N49 -->|subclass of| N1
-    N27 -->|subclass of| N49
-    N40 -->|subclass of| N49
+    N26 -->|subclass of| N49
+    N39 -->|subclass of| N49
+    N50 -->|subclass of| N1
+    N51 -->|subclass of| N1
+    N29 -->|subclass of| N51
+    N42 -->|subclass of| N51
+    N52 -->|subclass of| N1
+    N30 -->|subclass of| N52
+    N43 -->|subclass of| N52
+    N53 -->|subclass of| N1
+    N31 -->|subclass of| N53
+    N44 -->|subclass of| N53
 ```
 
 *Created: 2026-03-13 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -9358,7 +9379,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50) |
+| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
 | Subclass of | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
 | Exact match | [residual-risk-24765-2017-069c1469f43474c4](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4) |
 
@@ -9372,7 +9393,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-23 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -9989,13 +10010,14 @@ It includes the following steps:
 (5) For each hazardous situation, evaluate the likelihood of its occurrence.
 (6) For each hazardous situation, evaluate the targeted safety risk level based on its hazard severity and the likelihood of its occurrence.
 (7) For each hazardous situation, decide the safety risk treatment: avoid, reduce, retain or share.
-(8) For each hazardous situation, evaluate the safety residual risk level after treatment.
-(9) For each hazardous situation, determine if the safety risk treatment leads to a threatening situation in the same context.
+(8) For each hazardous situation, if the safety risk must be reduced, then identify the safety system functional requirements and/or the safety system non-functional requirements and/or the safety system constraints.
+(9) For each hazardous situation, evaluate the safety residual risk level after treatment.
+(10) For each hazardous situation, determine if the safety risk treatment leads to a threatening situation in the same context.
 
 
 | Relation | Terms |
 |---|---|
-| Related | [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770) |
+| Related | [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [safety-system-constraint-3se-069bdc3120dd749a](https://www.3se.info/3se-onto/terms/safety-system-constraint-3se-069bdc3120dd749a), [safety-system-functional-req-3se-069bdc3120e57dc8](https://www.3se.info/3se-onto/terms/safety-system-functional-req-3se-069bdc3120e57dc8), [safety-system-non-functional-req-3se-069bdc3120ee7a1c](https://www.3se.info/3se-onto/terms/safety-system-non-functional-req-3se-069bdc3120ee7a1c) |
 | Subclass of | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 | Close match | [hazard-analysis-and-risk-assessment-26262-1-2018-069c1ab34b617437](https://www.3se.info/3se-onto/terms/hazard-analysis-and-risk-assessment-26262-1-2018-069c1ab34b617437) |
 
@@ -10011,7 +10033,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-23 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -10293,6 +10315,36 @@ graph TD
 
 ---
 
+### Safety system architecture constraint - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> System architecture constraint which is relevant for safety engineering.
+
+| Relation | Terms |
+|---|---|
+| Related | [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657) |
+| Subclass of | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Composed of | [safety-system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/safety-system-element-architecture-constraint-3se-06aac05ed9c4742e) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Safety system architecture constraint"]
+    N2["System architecture constraint"]
+    N3["Constraint"]
+    N4["Requirement"]
+
+    N1 -->|subclass of| N2
+    N2 -->|subclass of| N3
+    N3 -->|subclass of| N4
+```
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
 ### Safety system constraint - 3SE
 
 ![approved](https://img.shields.io/badge/status-approved-green)
@@ -10301,6 +10353,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e) |
 | Subclass of | [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 
 **Classification**
@@ -10317,7 +10370,37 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
+### Safety System element architecture constraint - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> System element architecture constraint which is relevant for safety engineering.
+
+| Relation | Terms |
+|---|---|
+| Subclass of | [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e) |
+| Can be | [safety-system-architecture-constraint-3se-06aad7c082f67b61](https://www.3se.info/3se-onto/terms/safety-system-architecture-constraint-3se-06aad7c082f67b61) |
+| Component of | [safety-system-architecture-constraint-3se-06aad7c082f67b61](https://www.3se.info/3se-onto/terms/safety-system-architecture-constraint-3se-06aad7c082f67b61) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Safety System element architecture constraint"]
+    N2["System element architecture constraint"]
+    N3["Constraint"]
+    N4["Requirement"]
+
+    N1 -->|subclass of| N2
+    N2 -->|subclass of| N3
+    N3 -->|subclass of| N4
+```
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -10417,6 +10500,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e) |
 | Subclass of | [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9) |
 | Broad match | [functional-safety-requirement-26262-1-2018-069bdc3120907798](https://www.3se.info/3se-onto/terms/functional-safety-requirement-26262-1-2018-069bdc3120907798) |
 
@@ -10437,7 +10521,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -10449,6 +10533,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e) |
 | Subclass of | [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
 
 **Classification**
@@ -10468,7 +10553,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -10950,13 +11035,14 @@ It includes the following steps:
 (5) For each threatening situation, evaluate the likelihood of its occurrence.
 (6) For each threatening situation, evaluate the targeted security risk level based on its asset severity and the likelihood of its occurrence.
 (7) For each threatening situation, decide the security risk treatment: avoid, reduce, retain or share.
-(8) For each threatening situation, evaluate the security residual risk level after treatment.
-(9) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.
+(8) For each threatening situation, if the security risk must be reduced, then identify the security system functional requirements and/or the security system non-functional requirements and/or the security system constraints.
+(9) For each threatening situation, evaluate the security residual risk level after treatment.
+(10) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.
 
 
 | Relation | Terms |
 |---|---|
-| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6) |
+| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [security-system-constraint-3se-069bdc3121337fbd](https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd), [security-system-functional-req-3se-069bdc31213c7b04](https://www.3se.info/3se-onto/terms/security-system-functional-req-3se-069bdc31213c7b04), [security-system-non-functional-req-3se-069bdc31214573e2](https://www.3se.info/3se-onto/terms/security-system-non-functional-req-3se-069bdc31214573e2) |
 | Subclass of | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 | Close match | [threat-analysis-and-risk-assessment-21434-2021-069c1ab34bb77d01](https://www.3se.info/3se-onto/terms/threat-analysis-and-risk-assessment-21434-2021-069c1ab34bb77d01) |
 
@@ -11252,6 +11338,36 @@ graph TD
 
 ---
 
+### Security system architecture constraint - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> System architecture constraint which is relevant for security engineering.
+
+| Relation | Terms |
+|---|---|
+| Related | [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
+| Subclass of | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Composed of | [security-system-element-architecture-constraint-3se-06aad7c0832a7d15](https://www.3se.info/3se-onto/terms/security-system-element-architecture-constraint-3se-06aad7c0832a7d15) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Security system architecture constraint"]
+    N2["System architecture constraint"]
+    N3["Constraint"]
+    N4["Requirement"]
+
+    N1 -->|subclass of| N2
+    N2 -->|subclass of| N3
+    N3 -->|subclass of| N4
+```
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
 ### Security system constraint - 3SE
 
 ![approved](https://img.shields.io/badge/status-approved-green)
@@ -11260,6 +11376,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
 | Subclass of | [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26) |
 
 **Classification**
@@ -11276,7 +11393,37 @@ graph TD
     N3 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
+### Security system element architecture constraint - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> System element architecture constraint which is relevant for security engineering.
+
+| Relation | Terms |
+|---|---|
+| Subclass of | [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e) |
+| Can be | [security-system-architecture-constraint-3se-06aad7c08322727b](https://www.3se.info/3se-onto/terms/security-system-architecture-constraint-3se-06aad7c08322727b) |
+| Component of | [security-system-architecture-constraint-3se-06aad7c08322727b](https://www.3se.info/3se-onto/terms/security-system-architecture-constraint-3se-06aad7c08322727b) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Security system element architecture constraint"]
+    N2["System element architecture constraint"]
+    N3["Constraint"]
+    N4["Requirement"]
+
+    N1 -->|subclass of| N2
+    N2 -->|subclass of| N3
+    N3 -->|subclass of| N4
+```
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -11376,6 +11523,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
 | Subclass of | [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9) |
 
 **Classification**
@@ -11395,7 +11543,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -11407,6 +11555,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
 | Subclass of | [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e) |
 
 **Classification**
@@ -11426,7 +11575,7 @@ graph TD
     N5 -->|subclass of| N4
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -11532,8 +11681,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -11692,9 +11841,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -13749,7 +13898,7 @@ graph TD
     N1 -.->|allocates| N14
 ```
 
-*Created: 2026-03-16 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -14006,6 +14155,7 @@ graph TD
 |---|---|
 | Related | [system-architecture-3se-069cfe7e566773ac](https://www.3se.info/3se-onto/terms/system-architecture-3se-069cfe7e566773ac), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [system-validation-analysis-3se-069c957ec9f072de](https://www.3se.info/3se-onto/terms/system-validation-analysis-3se-069c957ec9f072de) |
 | Subclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569) |
+| Superclass of | [safety-system-architecture-constraint-3se-06aad7c082f67b61](https://www.3se.info/3se-onto/terms/safety-system-architecture-constraint-3se-06aad7c082f67b61), [security-system-architecture-constraint-3se-06aad7c08322727b](https://www.3se.info/3se-onto/terms/security-system-architecture-constraint-3se-06aad7c08322727b) |
 | Composed of | [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e) |
 | Allocated by | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [functional-interface-attribute-3se-069dcf9369a571e6](https://www.3se.info/3se-onto/terms/functional-interface-attribute-3se-069dcf9369a571e6), [functional-interface-attribute-variant-3se-06a8873e376f7950](https://www.3se.info/3se-onto/terms/functional-interface-attribute-variant-3se-06a8873e376f7950), [functional-interface-variant-3se-06a8873e37797c71](https://www.3se.info/3se-onto/terms/functional-interface-variant-3se-06a8873e37797c71), [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [physical-interface-attribute-3se-069ebbb4e6e37c25](https://www.3se.info/3se-onto/terms/physical-interface-attribute-3se-069ebbb4e6e37c25), [physical-interface-attribute-variant-3se-06a8873e37c17ca8](https://www.3se.info/3se-onto/terms/physical-interface-attribute-variant-3se-06a8873e37c17ca8), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e), [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b), [system-element-function-attribute-variant-3se-06a8873e385079f2](https://www.3se.info/3se-onto/terms/system-element-function-attribute-variant-3se-06a8873e385079f2), [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a), [system-element-interface-attribute-3se-069ebbb4e70678ed](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed), [system-element-interface-attribute-variant-3se-06a8873e386f7e0c](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-variant-3se-06a8873e386f7e0c), [system-element-interface-variant-3se-06a8873e387a7790](https://www.3se.info/3se-onto/terms/system-element-interface-variant-3se-06a8873e387a7790), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf), [system-element-state-attribute-variant-3se-06a8873e389070ca](https://www.3se.info/3se-onto/terms/system-element-state-attribute-variant-3se-06a8873e389070ca), [system-element-state-variant-3se-06a8873e389b7193](https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193) |
 | Evaluated by | [system-architecture-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-architecture-validation-case-3se-069b5b3d9ee67de5) |
@@ -14018,9 +14168,13 @@ graph TD
     N1["System architecture constraint"]
     N2["Constraint"]
     N3["Requirement"]
+    N4["Safety system architecture constraint"]
+    N5["Security system architecture constraint"]
 
     N1 -->|subclass of| N2
     N2 -->|subclass of| N3
+    N4 -->|subclass of| N1
+    N5 -->|subclass of| N1
 ```
 
 **Allocations**
@@ -14480,8 +14634,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -14634,11 +14788,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N11 -.->|allocates| N4
-    N10 -.->|allocates| N14
     N6 -.->|allocates| N5
-    N7 -.->|allocates| N5
     N13 -.->|allocates| N9
+    N10 -.->|allocates| N14
+    N11 -.->|allocates| N4
+    N7 -.->|allocates| N5
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -14918,6 +15072,7 @@ graph TD
 |---|---|
 | Related | [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488), [hardware-interface-3se-069bd66fb6017920](https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd), [software-interface-3se-069bd66fb64b7c7c](https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
 | Subclass of | [constraint-3se-069b8843802f7569](https://www.3se.info/3se-onto/terms/constraint-3se-069b8843802f7569) |
+| Superclass of | [safety-system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/safety-system-element-architecture-constraint-3se-06aac05ed9c4742e), [security-system-element-architecture-constraint-3se-06aad7c0832a7d15](https://www.3se.info/3se-onto/terms/security-system-element-architecture-constraint-3se-06aad7c0832a7d15) |
 | Can be | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Component of | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 
@@ -14928,9 +15083,13 @@ graph TD
     N1["System element architecture constraint"]
     N2["Constraint"]
     N3["Requirement"]
+    N4["Safety System element architecture constraint"]
+    N5["Security system element architecture constraint"]
 
     N1 -->|subclass of| N2
     N2 -->|subclass of| N3
+    N4 -->|subclass of| N1
+    N5 -->|subclass of| N1
 ```
 
 **Architecture**
@@ -16130,20 +16289,20 @@ graph TD
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
     N18 -.->|allocates| N25
+    N35 -.->|allocates| N2
     N28 -.->|allocates| N30
-    N9 -.->|allocates| N4
-    N16 -.->|allocates| N11
-    N21 -.->|exposes| N36
+    N2 -->|subclass of| N33
+    N27 -.->|allocates| N23
     N37 -.->|allocates| N23
+    N9 -.->|allocates| N4
+    N30 -->|subclass of| N33
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
-    N2 -->|subclass of| N33
-    N35 -.->|allocates| N2
-    N30 -->|subclass of| N33
-    N27 -.->|allocates| N23
+    N21 -.->|exposes| N36
+    N16 -.->|allocates| N11
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -17934,14 +18093,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N2 -.->|allocates| N4
+    N13 -.->|allocates| N12
     N3 -.->|allocates| N4
     N15 -.->|exposes| N1
-    N13 -.->|allocates| N12
-    N16 -.->|allocates| N4
-    N14 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
+    N16 -.->|allocates| N4
+    N14 -.->|allocates| N12
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -18515,24 +18674,24 @@ graph TD
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
     N27 -.->|allocates| N20
-    N44 -.->|allocates| N2
-    N41 -->|subclass of| N38
-    N43 -->|subclass of| N41
     N32 -.->|allocates| N2
-    N29 -.->|allocates| N22
-    N29 -.->|allocates| N37
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
+    N42 -->|subclass of| N41
+    N41 -->|subclass of| N38
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N40 -->|subclass of| N38
-    N42 -->|subclass of| N41
-    N28 -.->|allocates| N19
-    N39 -->|subclass of| N38
-    N38 -.->|allocates| N1
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
+    N43 -->|subclass of| N41
+    N29 -.->|allocates| N22
+    N29 -.->|allocates| N37
+    N28 -.->|allocates| N19
+    N38 -.->|allocates| N1
+    N40 -->|subclass of| N38
+    N39 -->|subclass of| N38
+    N44 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -18916,11 +19075,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N11 -.->|allocates| N12
     N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
     N14 -.->|allocates| N9
     N15 -.->|allocates| N12
-    N11 -.->|allocates| N12
-    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19496,27 +19655,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N16 -.->|allocates| N10
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N22 -.->|allocates| N4
-    N22 -.->|allocates| N6
-    N17 -.->|allocates| N22
-    N17 -.->|allocates| N23
-    N17 -.->|allocates| N25
     N28 -.->|allocates| N25
     N28 -.->|allocates| N26
     N4 -.->|allocates| N23
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
     N5 -.->|allocates| N23
     N5 -.->|allocates| N24
-    N16 -.->|allocates| N10
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
     N8 -.->|allocates| N15
+    N17 -.->|allocates| N22
+    N17 -.->|allocates| N23
+    N17 -.->|allocates| N25
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -20219,35 +20378,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
+    N10 -.->|allocates| N19
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
-    N43 -.->|allocates| N12
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
     N23 -.->|allocates| N19
-    N10 -.->|allocates| N19
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
+    N43 -.->|allocates| N12
     N27 -.->|allocates| N17
     N27 -.->|allocates| N12
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
     N33 -.->|allocates| N23
     N33 -.->|allocates| N19
     N22 -.->|allocates| N32
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -20367,13 +20526,14 @@ It includes the following steps:
 (5) For each threatening situation, evaluate the likelihood of its occurrence.
 (6) For each threatening situation, evaluate the targeted security risk level based on its asset severity and the likelihood of its occurrence.
 (7) For each threatening situation, decide the security risk treatment: avoid, reduce, retain or share.
-(8) For each threatening situation, evaluate the residual security risk level after treatment.
-(9) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.
+(8) For each threatening situation, if the security risk must be reduced, then identify the security system functional requirements and/or the security system non-functional requirements and/or the security system constraints and/or the security system architecture constraints.
+(9) For each threatening situation, evaluate the security residual risk level after treatment.
+(10) For each threatening situation, determine if the security risk treatment leads to a hazardous situation in the same context.
 
 
 | Relation | Terms |
 |---|---|
-| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6) |
+| Related | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [security-system-architecture-constraint-3se-06aad7c08322727b](https://www.3se.info/3se-onto/terms/security-system-architecture-constraint-3se-06aad7c08322727b), [security-system-constraint-3se-069bdc3121337fbd](https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd), [security-system-functional-req-3se-069bdc31213c7b04](https://www.3se.info/3se-onto/terms/security-system-functional-req-3se-069bdc31213c7b04), [security-system-non-functional-req-3se-069bdc31214573e2](https://www.3se.info/3se-onto/terms/security-system-non-functional-req-3se-069bdc31214573e2) |
 | Subclass of | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32) |
 
 **Classification**
