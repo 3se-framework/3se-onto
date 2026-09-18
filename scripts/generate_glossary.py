@@ -349,6 +349,120 @@ def build_has_variant_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+
+
+def build_shaped_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a shapes target. Inverse: if A shapes B, then B is shaped by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("shapes")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_activated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an activates target. Inverse: if A activates B, then B is activated by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("activates")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_framed_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a frames target. Inverse: if A frames B, then B is framed by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("frames")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_triggered_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a triggers target. Inverse: if A triggers B, then B is triggered by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("triggers")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_elicited_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an elicits target. Inverse: if A elicits B, then B is elicited by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("elicits")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_involved_in_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an involves target. Inverse: if A involves B, then B is involved in A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("involves")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_characterized_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a characterizes target. Inverse: if A characterizes B, then B is characterized by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("characterizes")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -1299,7 +1413,14 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 hosted_by_index: dict[str, list[dict]] | None = None,
                 bounds_index: dict[str, list[dict]] | None = None,
                 component_of_index: dict[str, list[dict]] | None = None,
-                skos_match_inverse_index: dict[str, dict[str, list[dict]]] | None = None) -> list[str]:
+                skos_match_inverse_index: dict[str, dict[str, list[dict]]] | None = None,
+                shaped_by_index: dict[str, list[dict]] | None = None,
+                activated_by_index: dict[str, list[dict]] | None = None,
+                framed_by_index: dict[str, list[dict]] | None = None,
+                triggered_by_index: dict[str, list[dict]] | None = None,
+                elicited_by_index: dict[str, list[dict]] | None = None,
+                involved_in_index: dict[str, list[dict]] | None = None,
+                characterized_by_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -1435,6 +1556,13 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("evaluates", "Evaluates"),
         ("fires", "Fires"),
         ("isVariantOf", "Variant of"),
+        ("shapes", "Shapes"),
+        ("activates", "Activates"),
+        ("frames", "Frames"),
+        ("triggers", "Triggers"),
+        ("elicits", "Elicits"),
+        ("involves", "Involves"),
+        ("characterizes", "Characterizes"),
     ]:
         items = term.get(field, [])
         if not items:
@@ -1518,6 +1646,83 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in variant_terms
             ]
             relation_rows.append(("Has variant", ", ".join(links)))
+
+    # Shaped by (computed inverse of shapes)
+    if shaped_by_index:
+        term_id = term.get("@id", "")
+        shaping_terms = shaped_by_index.get(term_id, [])
+        if shaping_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in shaping_terms
+            ]
+            relation_rows.append(("Shaped by", ", ".join(links)))
+
+    # Activated by (computed inverse of activates)
+    if activated_by_index:
+        term_id = term.get("@id", "")
+        activating_terms = activated_by_index.get(term_id, [])
+        if activating_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in activating_terms
+            ]
+            relation_rows.append(("Activated by", ", ".join(links)))
+
+    # Framed by (computed inverse of frames)
+    if framed_by_index:
+        term_id = term.get("@id", "")
+        framing_terms = framed_by_index.get(term_id, [])
+        if framing_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in framing_terms
+            ]
+            relation_rows.append(("Framed by", ", ".join(links)))
+
+    # Triggered by (computed inverse of triggers)
+    if triggered_by_index:
+        term_id = term.get("@id", "")
+        triggering_terms = triggered_by_index.get(term_id, [])
+        if triggering_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in triggering_terms
+            ]
+            relation_rows.append(("Triggered by", ", ".join(links)))
+
+    # Elicited by (computed inverse of elicits)
+    if elicited_by_index:
+        term_id = term.get("@id", "")
+        eliciting_terms = elicited_by_index.get(term_id, [])
+        if eliciting_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in eliciting_terms
+            ]
+            relation_rows.append(("Elicited by", ", ".join(links)))
+
+    # Involved in (computed inverse of involves)
+    if involved_in_index:
+        term_id = term.get("@id", "")
+        involving_terms = involved_in_index.get(term_id, [])
+        if involving_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in involving_terms
+            ]
+            relation_rows.append(("Involved in", ", ".join(links)))
+
+    # Characterized by (computed inverse of characterizes)
+    if characterized_by_index:
+        term_id = term.get("@id", "")
+        characterizing_terms = characterized_by_index.get(term_id, [])
+        if characterizing_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in characterizing_terms
+            ]
+            relation_rows.append(("Characterized by", ", ".join(links)))
 
     if relation_rows:
         lines.append("| Relation | Terms |")
@@ -1889,6 +2094,13 @@ def main() -> int:
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
+    shaped_by_index = build_shaped_by_index(terms)
+    activated_by_index = build_activated_by_index(terms)
+    framed_by_index = build_framed_by_index(terms)
+    triggered_by_index = build_triggered_by_index(terms)
+    elicited_by_index = build_elicited_by_index(terms)
+    involved_in_index = build_involved_in_index(terms)
+    characterized_by_index = build_characterized_by_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
     skos_match_inverse_index = build_skos_match_inverse_index(terms)
@@ -1978,7 +2190,14 @@ def main() -> int:
                                   has_variant_index, hosted_by_index,
                                   bounds_index,
                                   component_of_index,
-                                  skos_match_inverse_index))
+                                  skos_match_inverse_index,
+                                  shaped_by_index,
+                                  activated_by_index,
+                                  framed_by_index,
+                                  triggered_by_index,
+                                  elicited_by_index,
+                                  involved_in_index,
+                                  characterized_by_index))
             md.append("---")
             md.append("")
     else:
@@ -1999,7 +2218,14 @@ def main() -> int:
                                   has_variant_index, hosted_by_index,
                                   bounds_index,
                                   component_of_index,
-                                  skos_match_inverse_index))
+                                  skos_match_inverse_index,
+                                  shaped_by_index,
+                                  activated_by_index,
+                                  framed_by_index,
+                                  triggered_by_index,
+                                  elicited_by_index,
+                                  involved_in_index,
+                                  characterized_by_index))
             md.append("---")
             md.append("")
     else:

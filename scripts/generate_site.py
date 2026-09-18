@@ -145,6 +145,17 @@ VARIABILITY_RELATION_LABELS: dict[str, str] = {
     "isVariantOf": "Variant of",
 }
 
+# Human-readable labels for context/causal relation fields rendered on term pages.
+CONTEXT_CAUSAL_RELATION_LABELS: dict[str, str] = {
+    "shapes": "Shapes",
+    "activates": "Activates",
+    "frames": "Frames",
+    "triggers": "Triggers",
+    "elicits": "Elicits",
+    "involves": "Involves",
+    "characterizes": "Characterizes",
+}
+
 
 # ---------------------------------------------------------------------------
 # Data helpers
@@ -378,6 +389,120 @@ def build_has_variant_index(terms: list[dict]) -> dict[str, list[dict]]:
     index: dict[str, list[dict]] = {}
     for term in terms:
         val = term.get("isVariantOf")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+
+
+def build_shaped_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a shapes target. Inverse: if A shapes B, then B is shaped by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("shapes")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_activated_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an activates target. Inverse: if A activates B, then B is activated by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("activates")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_framed_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a frames target. Inverse: if A frames B, then B is framed by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("frames")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_triggered_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a triggers target. Inverse: if A triggers B, then B is triggered by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("triggers")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_elicited_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an elicits target. Inverse: if A elicits B, then B is elicited by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("elicits")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_involved_in_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an involves target. Inverse: if A involves B, then B is involved in A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("involves")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_characterized_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as a characterizes target. Inverse: if A characterizes B, then B is characterized by A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("characterizes")
         if not val:
             continue
         uris = [val] if isinstance(val, str) else val
@@ -2390,7 +2515,14 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                      hosted_by_index: dict[str, list[dict]] | None = None,
                      bounds_index: dict[str, list[dict]] | None = None,
                      component_of_index: dict[str, list[dict]] | None = None,
-                     skos_match_inverse_index: dict[str, dict[str, list[dict]]] | None = None) -> str:
+                     skos_match_inverse_index: dict[str, dict[str, list[dict]]] | None = None,
+                     shaped_by_index: dict[str, list[dict]] | None = None,
+                     activated_by_index: dict[str, list[dict]] | None = None,
+                     framed_by_index: dict[str, list[dict]] | None = None,
+                     triggered_by_index: dict[str, list[dict]] | None = None,
+                     elicited_by_index: dict[str, list[dict]] | None = None,
+                     involved_in_index: dict[str, list[dict]] | None = None,
+                     characterized_by_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2731,6 +2863,41 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                 f'</tr>'
             )
 
+    # Context/causal relations and their inverses
+    context_causal_html = ""
+    for field, label in CONTEXT_CAUSAL_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        context_causal_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+    for _idx, _label in [
+        (shaped_by_index, "Shaped by"),
+        (activated_by_index, "Activated by"),
+        (framed_by_index, "Framed by"),
+        (triggered_by_index, "Triggered by"),
+        (elicited_by_index, "Elicited by"),
+        (involved_in_index, "Involved in"),
+        (characterized_by_index, "Characterized by"),
+    ]:
+        if _idx:
+            term_id = term.get("@id", "")
+            _src_terms = _idx.get(term_id, [])
+            if _src_terms:
+                links = [render_uri_link(t.get("@id", "")) for t in _src_terms]
+                context_causal_html += (
+                    f'<tr>'
+                    f'<td>{_label}</td>'
+                    f'<td>{SEP.join(links)}</td>'
+                    f'</tr>'
+                )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
@@ -2754,26 +2921,28 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                     f'</tr>'
                 )
     relations_html = ""
-    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match:
+    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
+                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
-                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
+                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
-                exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
+                exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
         sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and (
-                flow_html or evaluation_html or state_transition_html or variability_html or match) else ""
+                flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
         sep5 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if flow_html and (
-                evaluation_html or state_transition_html or variability_html or match) else ""
+                evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
         sep6 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if evaluation_html and (
-                state_transition_html or variability_html or match) else ""
+                state_transition_html or variability_html or context_causal_html or match) else ""
         sep7 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if state_transition_html and (
-                variability_html or match) else ""
-        sep8 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if variability_html and match else ""
+                variability_html or context_causal_html or match) else ""
+        sep8 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if variability_html and (
+                context_causal_html or match) else ""
+        sep9 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if context_causal_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{variability_html}{sep8}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{variability_html}{sep8}{context_causal_html}{sep9}{match}</table>
         </div>"""
 
     # isReferencedBy
@@ -3294,6 +3463,13 @@ def main() -> int:
     evaluated_by_index = build_evaluated_by_index(terms)
     fired_by_index = build_fired_by_index(terms)
     has_variant_index = build_has_variant_index(terms)
+    shaped_by_index = build_shaped_by_index(terms)
+    activated_by_index = build_activated_by_index(terms)
+    framed_by_index = build_framed_by_index(terms)
+    triggered_by_index = build_triggered_by_index(terms)
+    elicited_by_index = build_elicited_by_index(terms)
+    involved_in_index = build_involved_in_index(terms)
+    characterized_by_index = build_characterized_by_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
     skos_match_inverse_index = build_skos_match_inverse_index(terms)
@@ -3366,7 +3542,14 @@ def main() -> int:
                              has_variant_index, hosted_by_index,
                              bounds_index,
                              component_of_index,
-                             skos_match_inverse_index), encoding="utf-8"
+                             skos_match_inverse_index,
+                             shaped_by_index,
+                             activated_by_index,
+                             framed_by_index,
+                             triggered_by_index,
+                             elicited_by_index,
+                             involved_in_index,
+                             characterized_by_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",
