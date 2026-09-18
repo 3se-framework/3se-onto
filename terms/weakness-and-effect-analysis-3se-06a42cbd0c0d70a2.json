@@ -19,12 +19,11 @@
     "https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5",
     "https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea",
     "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",
-    "https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a",
     "https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770",
     "https://www.3se.info/3se-onto/terms/security-system-architecture-constraint-3se-06aad7c08322727b",
     "https://www.3se.info/3se-onto/terms/security-system-constraint-3se-069bdc3121337fbd",
     "https://www.3se.info/3se-onto/terms/security-system-functional-req-3se-069bdc31213c7b04",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/security-system-non-functional-req-3se-069bdc31214573e2"
   ],
   "entryCreated": "2026-06-29",
   "entryModified": "2026-09-18",
