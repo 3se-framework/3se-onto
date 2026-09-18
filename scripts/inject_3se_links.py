@@ -357,13 +357,17 @@ def main() -> int:
                 # relation (conveys) or an evaluation relation (evaluates)
                 # or a fire relation (fires) or a variability relation (isVariantOf)
                 # or a hosting relation (hosts) or a boundary relation (isBoundedBy)
-                # linking them — those relations supersede skos:related
+                # or an activation relation (activates) or a characterization relation (characterizes)
+                # or a causal elicitation relation (elicits) or a framing relation (frames)
+                # or an involvement relation (involves) or a shaping relation (shapes)
+                # or a trigger relation (triggers) linking them — those relations supersede skos:related
                 src_structural = set()
                 tgt_structural = set()
                 for field in ("isComposedOf", "isRepresentedBy", "allocates", "canBe",
                               "exposes", "isResponsibleFor", "isAccountableFor", "isSupporting",
                               "produces", "consumes", "conveys", "evaluates", "fires", "hosts", "isVariantOf",
-                              "isBoundedBy"):
+                              "isBoundedBy", "activates", "characterizes", "elicits", "frames", "involves",
+                              "shapes", "triggers"):
                     for uri in (src_data.get(field) or []):
                         src_structural.add(uri)
                     for uri in (tgt_data.get(field) or []):

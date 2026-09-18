@@ -6,11 +6,13 @@
 # full URI in any of its relation or reference fields.
 #
 # Fields resolved against the TERMS index (terms/):
-#   broader, narrower, related, semanticRelation  (array of conceptRef)
-#   exactMatch, closeMatch, broadMatch,           (array of plain URI strings)
-#   narrowMatch, relatedMatch
+#   broader, narrower, related, semanticRelation
+#   exactMatch, closeMatch, broadMatch,
+#   narrowMatch, relatedMatch,
 #   subClassOf, isComposedOf, isRepresentedBy, allocates, canBe
-#   produces, consumes, conveys, evaluates
+#   produces, consumes, conveys, evaluates, fires, hosts,
+#   isVariantOf, isBoundedBy, "activates", "characterizes",
+#   elicits, frames, involves, shapes, triggers   (array)
 #   superseded_by                                 (scalar)
 #
 # Fields resolved against the REFERENCES index (references/):
@@ -76,7 +78,14 @@ TERM_ARRAY_FIELDS: list[str] = [
     "fires",
     "hosts",
     "isVariantOf",
-    "isBoundedBy"
+    "isBoundedBy",
+    "activates",
+    "characterizes",
+    "elicits",
+    "frames",
+    "involves",
+    "shapes",
+    "triggers"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
