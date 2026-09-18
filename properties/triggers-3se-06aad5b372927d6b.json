@@ -5,5 +5,12 @@
   "description": "Relates an event to the situation it triggers by occurring in a context.",
   "domain": "skos:Concept",
   "range": "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/triggers-3se-06aad5b372927d6b",
+  "entryCreated": "2026-09-18",
+  "entryModified": "2026-09-18",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

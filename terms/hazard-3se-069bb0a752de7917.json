@@ -5,7 +5,7 @@
   "description": "Source of physical injury or damage to the health of persons caused by a failure of the system of interest.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/event-3se"
+    "https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1"
   ],
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/hazard-26262-1-2018-069ab4192b747d7d"
@@ -20,7 +20,7 @@
     "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657"
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-18",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

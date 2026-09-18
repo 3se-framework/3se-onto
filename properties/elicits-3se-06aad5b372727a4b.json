@@ -5,5 +5,12 @@
   "description": "Relates an event to the exchange it causally brings about at a system boundary. Grounded in BFO as a causal relation between a Process (event) and a Generically Dependent Continuant (exchange).",
   "domain": "skos:Concept",
   "range": "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/elicits-3se-06aad5b372727a4b",
+  "entryCreated": "2026-09-18",
+  "entryModified": "2026-09-18",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

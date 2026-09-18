@@ -6,5 +6,12 @@
   "isReferencedBy": [
     "https://www.3se.info/3se-onto/references/ro-2025-12-06a95e385ef17818"
   ],
-  "status": "standard"
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/causally-upstream-of-ro-2025-12-06aad5b372647ff0",
+  "entryCreated": "2026-09-18",
+  "entryModified": "2026-09-18",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

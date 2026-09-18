@@ -5,5 +5,12 @@
   "description": "Relates a state to the situation it characterizes by specifying the active functions of the entity in that situation.",
   "domain": "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
   "range": "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/characterizes-3se-06aad5b3726c701d",
+  "entryCreated": "2026-09-18",
+  "entryModified": "2026-09-18",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
