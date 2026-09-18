@@ -11,9 +11,12 @@
     "https://www.3se.info/3se-onto/terms/functional-safety-requirement-26262-1-2018-069bdc3120907798"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/safety-system-functional-req-3se-069bdc3120e57dc8",
-  "related": [],
+  "related": [
+    "https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657",
+    "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e"
+  ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-09-18",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
