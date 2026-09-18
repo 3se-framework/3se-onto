@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-09-17 17:33 UTC*
+*Generated on 2026-09-18 16:52 UTC*
 
-This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other term(s)**, **16 3SE property(ies)**, **11 other property(ies)**, and **29 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **418 3SE term(s)**, **114 other term(s)**, **23 3SE property(ies)**, **12 other property(ies)**, and **29 reference(s)**.
 
 ## Contents
 
@@ -56,6 +56,7 @@ This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other ter
   - [Environment - 3SE](#environment---3se)
   - [Epic - 3SE](#epic---3se)
   - [Epic analysis - 3SE](#epic-analysis---3se)
+  - [Event - 3SE](#event---3se)
   - [Exchange - 3SE](#exchange---3se)
   - [Failure - 3SE](#failure---3se)
   - [Failure and effect analysis - 3SE](#failure-and-effect-analysis---3se)
@@ -457,6 +458,7 @@ This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other ter
   - [Disposition - BFO 2.0](#disposition---bfo-20)
   - [Enabling system - ISO/IEC/IEEE 15288](#enabling-system---isoiecieee-15288)
   - [Epic - SAFe 6.0](#epic---safe-60)
+  - [Event - ISO/IEC/IEEE 24765](#event---isoiecieee-24765)
   - [Failure - ISO 26262-1](#failure---iso-26262-1)
   - [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](#failure-mode-and-effect-analysis-fmea---isoiecieee-24765)
   - [Fault - ISO 26262-1](#fault---iso-26262-1)
@@ -578,14 +580,19 @@ This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other ter
   - [The Organization Ontology](#the-organization-ontology)
   - [The PROV Namespace](#the-prov-namespace)
 - [3SE Properties](#3se-properties)
+  - [activates - 3SE](#activates---3se)
   - [allocates - 3SE](#allocates---3se)
   - [canBe - 3SE](#canbe---3se)
+  - [characterizes - 3SE](#characterizes---3se)
   - [consumes - 3SE](#consumes---3se)
   - [conveys - 3SE](#conveys---3se)
+  - [elicits - 3SE](#elicits---3se)
   - [evaluates - 3SE](#evaluates---3se)
   - [exposes - 3SE](#exposes---3se)
   - [fires - 3SE](#fires---3se)
+  - [frames - 3SE](#frames---3se)
   - [hosts - 3SE](#hosts---3se)
+  - [involves - 3SE](#involves---3se)
   - [isAccountableFor - 3SE](#isaccountablefor---3se)
   - [isBoundedBy - 3SE](#isboundedby---3se)
   - [isComposedOf - 3SE](#iscomposedof---3se)
@@ -594,9 +601,12 @@ This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other ter
   - [isSupporting - 3SE](#issupporting---3se)
   - [isVariantOf - 3SE](#isvariantof---3se)
   - [produces - 3SE](#produces---3se)
+  - [shapes - 3SE](#shapes---3se)
+  - [triggers - 3SE](#triggers---3se)
 - [Other Properties](#other-properties)
   - [abstraction - UML 2.5.1](#abstraction---uml-251)
   - [allocation definition - SysML 2.0](#allocation-definition---sysml-20)
+  - [causally upstream of - RO](#causally-upstream-of---ro)
   - [composite aggregation - UML 2.5.1](#composite-aggregation---uml-251)
   - [conveyed - UML 2.5.1](#conveyed---uml-251)
   - [isVariantOf - Schema.org](#isvariantof---schemaorg)
@@ -711,7 +721,7 @@ This glossary contains **8 3SE domain(s)**, **417 3SE term(s)**, **113 other ter
 
 ## 3SE Terms
 
-*417 term(s) defined by the 3SE framework.*
+*418 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1144,16 +1154,29 @@ graph TD
 
 ### Attack - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Set of deliberate actions to compromise one or more assets.
 
 | Relation | Terms |
 |---|---|
 | Related | [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5) |
-| Broad match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
+| Subclass of | [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
+| Close match | [attack-path-21434-2021-069ab4192b34725a](https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a) |
 
-*Created: 2026-03-18 · Modified: 2026-09-11 · Creator: @rcasteran*
+**Classification**
+
+```mermaid
+graph TD
+    N1["Attack"]
+    N2["Event"]
+    N3["Process"]
+
+    N1 -->|subclass of| N2
+    N2 -->|subclass of| N3
+```
+
+*Created: 2026-03-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -1669,15 +1692,17 @@ graph TD
 
 ### Context - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Presence of a subset of the interdependent actors and/or interdependent systems of the milieu within a geometrically closed area surrounding the system of interest, that frames its behavior in a given situation.
 
 | Relation | Terms |
 |---|---|
-| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2) |
+| Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2), [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
+| Frames | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
+| Activated by | [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34) |
 
-*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -2156,15 +2181,16 @@ graph TD
 
 ### Environment - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > The set of pre-existing conditions — physical, regulatory, technological, social, temporal — that constitute the background reality within which any system operates, independently of any particular system of interest, and that shapes the milieu by constraining and enabling what is possible within it.
 
 | Relation | Terms |
 |---|---|
-| Related | [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976) |
+| Shapes | [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34) |
 
-*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -2266,6 +2292,39 @@ graph TD
 
 ---
 
+### Event - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> An occurrence or change in a context that may trigger a situation.
+
+| Relation | Terms |
+|---|---|
+| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+| Subclass of | [process-bfo-2-0-06a3501827217997](https://www.3se.info/3se-onto/terms/process-bfo-2-0-06a3501827217997) |
+| Superclass of | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6), [hazard-3se-069bb0a752de7917](https://www.3se.info/3se-onto/terms/hazard-3se-069bb0a752de7917) |
+| Broad match | [event-24765-2017-06aad5b3723277ba](https://www.3se.info/3se-onto/terms/event-24765-2017-06aad5b3723277ba) |
+| Triggers | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
+| Elicits | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Event"]
+    N2["Process"]
+    N3["Attack"]
+    N4["Hazard"]
+
+    N1 -->|subclass of| N2
+    N3 -->|subclass of| N1
+    N4 -->|subclass of| N1
+```
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
 ### Exchange - 3SE
 
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
@@ -2280,6 +2339,7 @@ graph TD
 | Close match | [operational-interaction-arcadia-2023-069bc4ea533d7044](https://www.3se.info/3se-onto/terms/operational-interaction-arcadia-2023-069bc4ea533d7044) |
 | Composed of | [system-element-3se-069b85f238fb79eb](https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb) |
 | Allocated by | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933), [physical-interface-variant-3se-06a8873e37cb7f1e](https://www.3se.info/3se-onto/terms/physical-interface-variant-3se-06a8873e37cb7f1e) |
+| Elicited by | [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
 
 **Classification**
 
@@ -2979,17 +3039,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N21 -.->|allocates| N14
-    N13 -.->|allocates| N14
     N19 -.->|allocates| N17
-    N20 -.->|allocates| N16
-    N3 -.->|allocates| N21
     N18 -.->|allocates| N14
-    N8 -->|subclass of| N4
-    N9 -->|subclass of| N4
-    N12 -->|subclass of| N10
+    N13 -.->|allocates| N14
+    N3 -.->|allocates| N21
+    N20 -.->|allocates| N16
+    N21 -.->|allocates| N14
     N10 -->|subclass of| N4
+    N12 -->|subclass of| N10
+    N8 -->|subclass of| N4
     N11 -->|subclass of| N10
+    N9 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -3426,10 +3486,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
-    N11 -.->|allocates| N10
     N7 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N11 -.->|allocates| N10
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -5330,16 +5390,29 @@ graph TD
 
 ### Hazard - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Potential source of physical injury or damage to the health of persons caused by a failure of the system of interest.
+> Source of physical injury or damage to the health of persons caused by a failure of the system of interest.
 
 | Relation | Terms |
 |---|---|
 | Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657) |
+| Subclass of | [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
 | Close match | [hazard-26262-1-2018-069ab4192b747d7d](https://www.3se.info/3se-onto/terms/hazard-26262-1-2018-069ab4192b747d7d) |
 
-*Created: 2026-03-18 · Modified: 2026-09-11 · Creator: @rcasteran*
+**Classification**
+
+```mermaid
+graph TD
+    N1["Hazard"]
+    N2["Event"]
+    N3["Process"]
+
+    N1 -->|subclass of| N2
+    N2 -->|subclass of| N3
+```
+
+*Created: 2026-03-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -6981,15 +7054,17 @@ graph TD
 
 ### Milieu - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > The broader operational environment surrounding the system of interest, populated by interdependent systems and/or interdependent actors that are neither subordinate to nor in a defined relationship with the system of interest, but whose existence and behavior are consequential to it.
 
 | Relation | Terms |
 |---|---|
-| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
+| Related | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
+| Activates | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e) |
+| Shaped by | [environment-3se-069c1b6f0688798a](https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a) |
 
-*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -7391,16 +7466,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N5 -.->|allocates| N3
-    N2 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N13 -->|subclass of| N11
-    N9 -->|subclass of| N8
+    N2 -.->|allocates| N15
+    N5 -.->|allocates| N3
+    N14 -.->|allocates| N15
     N11 -->|subclass of| N8
-    N10 -->|subclass of| N8
+    N13 -->|subclass of| N11
     N12 -->|subclass of| N11
+    N9 -->|subclass of| N8
+    N10 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -9121,15 +9196,15 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
     N2 -->|subclass of| N8
     N3 -->|subclass of| N13
 ```
@@ -9308,9 +9383,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) |
+| Related | [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
 | Superclass of | [engineering-risk-3se-069bda7c99867fd5](https://www.3se.info/3se-onto/terms/engineering-risk-3se-069bda7c99867fd5), [organization-risk-3se-069bda7c99af78ee](https://www.3se.info/3se-onto/terms/organization-risk-3se-069bda7c99af78ee), [project-risk-3se-069bda7c99c176e4](https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4), [residual-risk-3se-069c1469f45f7770](https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770), [safety-risk-3se-069bdd80b5e478a0](https://www.3se.info/3se-onto/terms/safety-risk-3se-069bdd80b5e478a0), [security-risk-3se-069bdd80b61570ed](https://www.3se.info/3se-onto/terms/security-risk-3se-069bdd80b61570ed) |
 | Close match | [risk-1012-2016-069b5b3d9ed57036](https://www.3se.info/3se-onto/terms/risk-1012-2016-069b5b3d9ed57036) |
+| Involved in | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 
 **Classification**
 
@@ -9332,7 +9408,7 @@ graph TD
     N7 -->|subclass of| N1
 ```
 
-*Created: 2026-03-14 · Modified: 2026-08-21 · Creator: @rcasteran*
+*Created: 2026-03-14 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -11611,9 +11687,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -11874,15 +11950,19 @@ graph TD
 
 ### Situation - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > A transient state that arises within a context in response to one or more events, capturing a set of exchanges from actors and/or enabling systems that the system of interest must interpret and respond to.
 Multiple situations may be active concurrently within the same context and may combine into a compound situation.
 
 | Relation | Terms |
 |---|---|
-| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9) |
+| Related | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed), [problem-3se-069b5b3d9ece7ec8](https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9) |
 | Superclass of | [hazardous-situation-3se-069c1b6f069e7ff8](https://www.3se.info/3se-onto/terms/hazardous-situation-3se-069c1b6f069e7ff8), [threatening-situation-3se-069c1784758674a5](https://www.3se.info/3se-onto/terms/threatening-situation-3se-069c1784758674a5) |
+| Involves | [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf) |
+| Framed by | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e) |
+| Triggered by | [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
+| Characterized by | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 
 **Classification**
 
@@ -11896,7 +11976,7 @@ graph TD
     N3 -->|subclass of| N1
 ```
 
-*Created: 2026-03-23 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-23 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -12139,9 +12219,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -13531,18 +13611,18 @@ graph TD
 
 ### State - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > A situation in which the behavior of an entity is characterized by its active functions.
 
 | Relation | Terms |
 |---|---|
-| Related | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Subclass of | [disposition-bfo-2-0-069f666ab4e77a92](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92) |
 | Superclass of | [enabling-state-3se-06a29c01c05f7e5a](https://www.3se.info/3se-onto/terms/enabling-state-3se-06a29c01c05f7e5a), [enabling-system-state-3se-069e1512f37a7612](https://www.3se.info/3se-onto/terms/enabling-system-state-3se-069e1512f37a7612), [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c), [interdependent-state-3se-06a29c4e404d78ed](https://www.3se.info/3se-onto/terms/interdependent-state-3se-06a29c4e404d78ed), [interdependent-system-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-system-state-3se-069fde073ffb7cc5), [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af) |
 | Broad match | [operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677](https://www.3se.info/3se-onto/terms/operational-mode-sys-opportunities-and-req-2012-069ab5fbcfa67677) |
 | Allocates | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-function-3se-06a8df23e04a79c0](https://www.3se.info/3se-onto/terms/safety-function-3se-06a8df23e04a79c0), [security-function-3se-06a8f2fcfdeb7848](https://www.3se.info/3se-onto/terms/security-function-3se-06a8f2fcfdeb7848) |
 | Fires | [transition-3se-06a087faa8137596](https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596) |
+| Characterizes | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 
 **Classification**
 
@@ -13588,7 +13668,7 @@ graph TD
     N1 -.->|allocates| N4
 ```
 
-*Created: 2026-03-13 · Modified: 2026-08-26 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -14395,8 +14475,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -14549,11 +14629,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N13 -.->|allocates| N9
     N6 -.->|allocates| N5
     N10 -.->|allocates| N14
-    N7 -.->|allocates| N5
     N11 -.->|allocates| N4
+    N7 -.->|allocates| N5
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16044,21 +16124,21 @@ graph TD
     N17 -.->|exposes| N37
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
-    N35 -.->|allocates| N2
-    N30 -->|subclass of| N33
     N21 -.->|exposes| N36
-    N9 -.->|allocates| N4
+    N2 -->|subclass of| N33
+    N16 -.->|allocates| N11
+    N27 -.->|allocates| N23
     N37 -.->|allocates| N23
+    N30 -->|subclass of| N33
+    N18 -.->|allocates| N25
+    N9 -.->|allocates| N4
+    N35 -.->|allocates| N2
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
-    N16 -.->|allocates| N11
-    N27 -.->|allocates| N23
     N28 -.->|allocates| N30
-    N2 -->|subclass of| N33
-    N18 -.->|allocates| N25
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -17849,13 +17929,13 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N13 -.->|allocates| N12
     N2 -.->|allocates| N4
-    N14 -.->|allocates| N12
+    N13 -.->|allocates| N12
     N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
+    N14 -.->|allocates| N12
     N3 -.->|allocates| N4
 ```
 
@@ -18429,25 +18509,25 @@ graph TD
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
-    N32 -.->|allocates| N2
+    N27 -.->|allocates| N20
+    N41 -->|subclass of| N38
+    N43 -->|subclass of| N41
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
+    N32 -.->|allocates| N2
     N39 -->|subclass of| N38
-    N38 -.->|allocates| N1
-    N27 -.->|allocates| N20
-    N40 -->|subclass of| N38
-    N28 -.->|allocates| N19
+    N42 -->|subclass of| N41
+    N44 -.->|allocates| N2
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N43 -->|subclass of| N41
-    N44 -.->|allocates| N2
-    N41 -->|subclass of| N38
     N29 -.->|allocates| N22
     N29 -.->|allocates| N37
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N42 -->|subclass of| N41
+    N40 -->|subclass of| N38
+    N38 -.->|allocates| N1
+    N28 -.->|allocates| N19
 ```
 
 *Created: 2026-04-26 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -18833,9 +18913,9 @@ graph TD
     N2 -.->|can be| N1
     N4 -.->|allocates| N8
     N13 -.->|allocates| N10
-    N15 -.->|allocates| N12
-    N14 -.->|allocates| N9
     N11 -.->|allocates| N12
+    N14 -.->|allocates| N9
+    N15 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19411,27 +19491,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
     N8 -.->|allocates| N15
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
+    N16 -.->|allocates| N10
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
-    N16 -.->|allocates| N10
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
-    N4 -.->|allocates| N23
+    N2 -.->|allocates| N8
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N12
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
     N5 -.->|allocates| N23
     N5 -.->|allocates| N24
     N27 -.->|allocates| N25
     N27 -.->|allocates| N26
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
-    N2 -.->|allocates| N8
-    N2 -.->|allocates| N10
-    N2 -.->|allocates| N12
+    N4 -.->|allocates| N23
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -20132,35 +20212,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N43 -.->|allocates| N12
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
     N26 -.->|allocates| N15
     N26 -.->|allocates| N17
-    N10 -.->|allocates| N19
-    N22 -.->|allocates| N32
-    N23 -.->|allocates| N19
+    N43 -.->|allocates| N12
     N33 -.->|allocates| N23
     N33 -.->|allocates| N19
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
     N27 -.->|allocates| N17
     N27 -.->|allocates| N12
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N23 -.->|allocates| N19
     N17 -.->|allocates| N10
     N17 -.->|allocates| N12
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
-    N34 -.->|allocates| N22
-    N34 -.->|allocates| N23
-    N34 -.->|allocates| N19
+    N22 -.->|allocates| N32
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N10 -.->|allocates| N19
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
+    N34 -.->|allocates| N22
+    N34 -.->|allocates| N23
+    N34 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-08-21 · Creator: @rcasteran*
@@ -20337,7 +20417,7 @@ graph TD
 
 ## Other Terms
 
-*113 term(s) sourced from external standards and frameworks.*
+*114 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -20475,7 +20555,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Broad match of | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6) |
+| Close match of | [attack-3se-069bb0a752ae71a6](https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6) |
 
 **References:** [ISO/SAE 21434:2021](https://www.3se.info/3se-onto/references/iso-sae-21434-2021-069ab4000b4e771d)
 
@@ -20781,6 +20861,22 @@ graph TD
 **References:** [Scaled Agile Framework [SAFe] - 6.0](https://www.3se.info/3se-onto/references/scaled-agile-framework-6-0-069a9f3e9b5572c0)
 
 *Created: 2026-03-13 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Event - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Occurrence of a particular set of circumstances.
+
+| Relation | Terms |
+|---|---|
+| Broad match of | [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -21540,7 +21636,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Superclass of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6) |
+| Superclass of | [activity-3se-069fdd89b39575e6](https://www.3se.info/3se-onto/terms/activity-3se-069fdd89b39575e6), [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
 
 **Classification**
 
@@ -21555,6 +21651,9 @@ graph TD
     N7["System activity"]
     N8["Safety system activity"]
     N9["Security system activity"]
+    N10["Event"]
+    N11["Attack"]
+    N12["Hazard"]
 
     N2 -->|subclass of| N1
     N3 -->|subclass of| N2
@@ -21564,6 +21663,9 @@ graph TD
     N7 -->|subclass of| N2
     N8 -->|subclass of| N7
     N9 -->|subclass of| N7
+    N10 -->|subclass of| N1
+    N11 -->|subclass of| N10
+    N12 -->|subclass of| N10
 ```
 
 **References:** [Basic Formal Ontology (BFO) - 2.0](https://www.3se.info/3se-onto/references/bfo-2-0-069f666ab5527471)
@@ -22776,7 +22878,7 @@ graph TD
 | **Issued** | 2017 |
 | **URL** | [https://www.iso.org/standard/71952.html](https://www.iso.org/standard/71952.html) |
 
-**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Ontology - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96), [Work product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/work-product-24765-2017-06a35018275a793c)
+**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Event - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/event-24765-2017-06aad5b3723277ba), [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Ontology - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96), [Work product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/work-product-24765-2017-06a35018275a793c)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
@@ -22887,7 +22989,7 @@ graph TD
 | **Date** | 2025-12 |
 | **URL** | [http://purl.obolibrary.org/obo/ro.owl](http://purl.obolibrary.org/obo/ro.owl) |
 
-**Referenced Properties:** [location of - RO](https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106)
+**Referenced Properties:** [causally upstream of - RO](https://www.3se.info/3se-onto/properties/causally-upstream-of-ro-2025-12-06aad5b372647ff0), [location of - RO](https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106)
 
 *Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
 
@@ -23026,7 +23128,22 @@ graph TD
 
 ## 3SE Properties
 
-*16 propert(ies) defined by the 3SE framework.*
+*23 propert(ies) defined by the 3SE framework.*
+
+### activates - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a milieu to the context it activates by providing the set of actors and systems from which the context emerges.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34` |
+| Range | `https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e` |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
 
 ### allocates - 3SE
 
@@ -23061,6 +23178,21 @@ This relation expresses a potential, contingent relationship between two concept
 
 ---
 
+### characterizes - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a state to the situation it characterizes by specifying the active functions of the entity in that situation.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea` |
+| Range | `https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9` |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
 ### consumes - 3SE
 
 ![approved](https://img.shields.io/badge/status-approved-green)
@@ -23090,6 +23222,22 @@ This relation expresses a potential, contingent relationship between two concept
 | Sub-property of | [conveyed-uml-spec-2-5-1-069f2456795272b9](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9) |
 
 *Created: 2026-04-29 · Modified: 2026-09-11 · Creator: @rcasteran*
+
+---
+
+### elicits - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates an event to the exchange it causally brings about at a system boundary. Grounded in BFO as a causal relation between a Process (event) and a Generically Dependent Continuant (exchange).
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1` |
+| Range | `https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f` |
+| Sub-property of | [causally-upstream-of-ro-2025-12-06aad5b372647ff0](https://www.3se.info/3se-onto/properties/causally-upstream-of-ro-2025-12-06aad5b372647ff0) |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -23140,6 +23288,21 @@ A transition is fireable if and only if the immediately preceding state is activ
 
 ---
 
+### frames - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a context to the situation it frames by setting the conditions under which the situation arises.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e` |
+| Range | `https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9` |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
 ### hosts - 3SE
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
@@ -23153,6 +23316,21 @@ A transition is fireable if and only if the immediately preceding state is activ
 | Sub-property of | [location-of-ro-2025-12-06a95e385f237106](https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106) |
 
 *Created: 2026-08-31 · Modified: 2026-08-31 · Creator: @rcasteran*
+
+---
+
+### involves - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates a situation to the risk that arises under it.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9` |
+| Range | `https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf` |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
@@ -23281,9 +23459,40 @@ A transition is fireable if and only if the immediately preceding state is activ
 
 ---
 
+### shapes - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates an environment to the milieu it constrains and enables by defining what is possible within it.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/environment-3se-069c1b6f0688798a` |
+| Range | `https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34` |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
+### triggers - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Relates an event to the situation it triggers by occurring in a context.
+
+| Relation | Value |
+|---|---|
+| Domain | `https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1` |
+| Range | `https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9` |
+| Sub-property of | [causally-upstream-of-ro-2025-12-06aad5b372647ff0](https://www.3se.info/3se-onto/properties/causally-upstream-of-ro-2025-12-06aad5b372647ff0) |
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
+
+---
+
 ## Other Properties
 
-*11 propert(ies) sourced from external standards and frameworks.*
+*12 propert(ies) sourced from external standards and frameworks.*
 
 ### abstraction - UML 2.5.1
 
@@ -23308,6 +23517,18 @@ An AllocationDefinition can itself be refined using nested allocations that give
 **References:** [OMG Systems Modeling Language™ (SysML®) 2.0 - Part 1: Language Specification](https://www.3se.info/3se-onto/references/sysml-spec-2-0-part-1-069c841060f375be)
 
 *Created: 2026-03-28 · Modified: 2026-05-02 · Creator: @rcasteran*
+
+---
+
+### causally upstream of - RO
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.
+
+**References:** [Relation Ontology (RO)](https://www.3se.info/3se-onto/references/ro-2025-12-06a95e385ef17818)
+
+*Created: 2026-09-18 · Modified: 2026-09-18 · Creator: @rcasteran*
 
 ---
 
