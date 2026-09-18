@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Safety System element architecture constraint - 3SE",
+  "description": "System element architecture constraint which is relevant for safety engineering.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e"
+  ],
+  "canBe": [
+    "https://www.3se.info/3se-onto/terms/safety-system-architecture-constraint-3se"
+  ]
+}
