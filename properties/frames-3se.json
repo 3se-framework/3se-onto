@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "frames - 3SE",
+  "description": "Relates a context to the situation it frames by setting the conditions under which the situation arises.",
+  "domain": "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
+  "range": "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
+  "status": "draft"
+}

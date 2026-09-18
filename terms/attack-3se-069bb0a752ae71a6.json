@@ -1,10 +1,13 @@
-{
+﻿{
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Attack - 3SE",
   "description": "Set of deliberate actions to compromise one or more assets.",
-  "status": "approved",
-  "broadMatch": [
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/event-3se"
+  ],
+  "closeMatch": [
     "https://www.3se.info/3se-onto/terms/attack-path-21434-2021-069ab4192b34725a"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/attack-3se-069bb0a752ae71a6",

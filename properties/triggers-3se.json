@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "triggers - 3SE",
+  "description": "Relates an event to the situation it triggers by occurring in a context.",
+  "domain": "skos:Concept",
+  "range": "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
+  "status": "draft"
+}
