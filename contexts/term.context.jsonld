@@ -39,7 +39,15 @@
     "evaluates":            { "@id": "https://www.3se.info/3se-onto/properties/evaluates-3se-069f38ad07327be8",             "@type": "@id" },
     "fires":                { "@id": "https://www.3se.info/3se-onto/properties/fires-3se-06a087faa821765f",                 "@type": "@id" },
     "hosts":                { "@id": "https://www.3se.info/3se-onto/properties/hosts-3se-06a95e48e58874cb",                 "@type": "@id" },
+
     "isBoundedBy":          { "@id": "https://www.3se.info/3se-onto/properties/is-bounded-by-3se-06a96d7034977cfb",         "@type": "@id" },
+    "activates":            { "@id": "https://www.3se.info/3se-onto/properties/activates-3se-06aad5b3725e781c",             "@type": "@id" },
+    "characterizes":        { "@id": "https://www.3se.info/3se-onto/properties/characterizes-3se-06aad5b3726c701d",         "@type": "@id" },
+    "elicits":              { "@id": "https://www.3se.info/3se-onto/properties/elicits-3se-06aad5b372727a4b",               "@type": "@id" },
+    "frames":               { "@id": "https://www.3se.info/3se-onto/properties/frames-3se-06aad5b3727f78ce",                "@type": "@id" },
+    "involves":             { "@id": "https://www.3se.info/3se-onto/properties/involves-3se-06aad5b372857f08",              "@type": "@id" },
+    "shapes":               { "@id": "https://www.3se.info/3se-onto/properties/shapes-3se-06aad5b3728c780c",                "@type": "@id" },
+    "triggers":             { "@id": "https://www.3se.info/3se-onto/properties/triggers-3se-06aad5b372927d6b",              "@type": "@id" },
 
     "isResponsibleFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-responsible-for-3se-069c50dd4d64710e",    "@type": "@id" },
     "isAccountableFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-accountable-for-3se-069c50dd4d47724a",    "@type": "@id" },

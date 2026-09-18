@@ -268,6 +268,69 @@
       },
       "uniqueItems": true
     },
+    "activates": {
+      "description": "3se:activates — IRIs of contexts that a milieu activates by providing the set of actors and systems from which the context emerges (activation relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "characterizes": {
+      "description": "3se:characterizes — IRIs of situations that a state characterizes by specifying the active functions of the entity in that situation (characterization relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "elicits": {
+      "description": "3se:elicits — IRIs of exchanges that an event causally brings about at a system boundary (causal elicitation relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "frames": {
+      "description": "3se:frames — IRIs of situations that a context frames by setting the conditions under which they arise (framing relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "involves": {
+      "description": "3se:involves — IRIs of risks that arise under a situation (involvement relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "shapes": {
+      "description": "3se:shapes — IRIs of milieus that an environment shapes by constraining and enabling what is possible within them (shaping relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
+    "triggers": {
+      "description": "3se:triggers — IRIs of situations that an event triggers by occurring in a context (trigger relation).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",
