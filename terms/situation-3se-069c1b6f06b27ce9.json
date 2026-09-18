@@ -9,16 +9,13 @@
     "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
   ],
   "related": [
-    "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
     "https://www.3se.info/3se-onto/terms/problem-3se-069b5b3d9ece7ec8",
-    "https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f",
     "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f",
-    "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9",
-    "https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1"
+    "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9"
   ],
   "entryCreated": "2026-03-23",
   "entryModified": "2026-09-18",
