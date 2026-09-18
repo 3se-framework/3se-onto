@@ -11,10 +11,15 @@
     "https://www.3se.info/3se-onto/terms/process-bfo-2-0-06a3501827217997"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1",
+  "triggers": [
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
+  ],
+  "elicits": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",
-    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf",
-    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
   ],
   "entryCreated": "2026-09-18",
   "entryModified": "2026-09-18",
