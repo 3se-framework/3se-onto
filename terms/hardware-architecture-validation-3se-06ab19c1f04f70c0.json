@@ -7,5 +7,17 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/integration-3se-069b5a9129ef793b",
     "https://www.3se.info/3se-onto/terms/hardware-validation-3se-069ee5005a6171ce"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-architecture-validation-3se-06ab19c1f04f70c0",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b",
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-validation-case-3se-06ab19c1f0897528",
+    "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
+  ],
+  "entryCreated": "2026-09-21",
+  "entryModified": "2026-09-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

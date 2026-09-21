@@ -7,5 +7,17 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/integration-3se-069b5a9129ef793b",
     "https://www.3se.info/3se-onto/terms/software-validation-3se-069c3bf7711e71db"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-architecture-validation-3se-06ab19c1f097799b",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81",
+    "https://www.3se.info/3se-onto/terms/software-architecture-validation-case-3se-06ab19c1f0a277bf",
+    "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5"
+  ],
+  "entryCreated": "2026-09-21",
+  "entryModified": "2026-09-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

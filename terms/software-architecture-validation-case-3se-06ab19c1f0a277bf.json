@@ -9,5 +9,16 @@
   ],
   "evaluates": [
     "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-architecture-validation-case-3se-06ab19c1f0a277bf",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-architecture-validation-3se-06ab19c1f097799b",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-09-21",
+  "entryModified": "2026-09-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

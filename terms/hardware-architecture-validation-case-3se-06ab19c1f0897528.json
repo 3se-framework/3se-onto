@@ -9,5 +9,16 @@
   ],
   "evaluates": [
     "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/hardware-architecture-validation-case-3se-06ab19c1f0897528",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-validation-3se-06ab19c1f04f70c0",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-09-21",
+  "entryModified": "2026-09-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
