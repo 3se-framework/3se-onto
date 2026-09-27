@@ -5,7 +5,7 @@
   "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a hardware architecture constraint.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
+    "https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb"
   ],
   "evaluates": [
     "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b"
