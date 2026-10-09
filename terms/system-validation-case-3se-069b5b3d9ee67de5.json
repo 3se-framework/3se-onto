@@ -3,13 +3,15 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "System validation case - 3SE",
-  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system requirement.",
-  "status": "approved",
+  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a system requirement, a system constraint or a system architecture constraint.",
+  "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/validation-case-3se-069b5b3d9ee67de5"
   ],
   "evaluates": [
-    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351"
+    "https://www.3se.info/3se-onto/terms/system-req-3se-069c3bf7714e7351",
+    "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26",
+    "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/system-validation-3se-069c3bf77159739b",
