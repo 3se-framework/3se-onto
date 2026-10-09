@@ -1,0 +1,15 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Stakeholder functional validation case - 3SE",
+  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a stakeholder functional requirement.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/stakeholder-validation-case-3se",
+    "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-validation-case-3se-06ab8e37569b7c91"
+  ],
+  "evaluates": [
+    "https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5"
+  ]
+}
