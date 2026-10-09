@@ -5,11 +5,22 @@
   "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a stakeholder functional requirement.",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/stakeholder-validation-case-3se",
+    "https://www.3se.info/3se-onto/terms/stakeholder-validation-case-3se-06ab8e37569b7c91",
     "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-validation-case-3se-06ab8e37569b7c91"
   ],
   "evaluates": [
     "https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/stakeholder-functional-validation-case-3se-06ac90d4d3b47a17",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/stakeholder-functional-validation-3se-06abfeeeb9d9753d",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-10-09",
+  "entryModified": "2026-10-09",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

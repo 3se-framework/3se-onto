@@ -12,11 +12,10 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/functional-validation-case-3se-06a270455cae75d2",
   "related": [
-    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
-    "https://www.3se.info/3se-onto/terms/stakeholder-functional-validation-3se-06abfeeeb9d9753d"
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
   ],
   "entryCreated": "2026-06-08",
-  "entryModified": "2026-10-02",
+  "entryModified": "2026-10-09",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
