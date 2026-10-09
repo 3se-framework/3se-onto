@@ -14,10 +14,11 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
     "https://www.3se.info/3se-onto/terms/stakeholder-validation-3se-06ab8e3756a37932",
-    "https://www.3se.info/3se-onto/terms/stakeholder-validation-analysis-3se-06ab8e3756aa7996"
+    "https://www.3se.info/3se-onto/terms/stakeholder-validation-analysis-3se-06ab8e3756aa7996",
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-validation-3se-06ac91123b6d79dc"
   ],
   "entryCreated": "2026-09-27",
-  "entryModified": "2026-09-27",
+  "entryModified": "2026-10-09",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -7,7 +7,7 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/non-functional-validation-3se-06a27237d38c7197",
     "https://www.3se.info/3se-onto/terms/stakeholder-validation-3se-06ab8e3756a37932",
-    "https://www.3se.info/3se-onto/terms/stakeholder-req-validation-3se"
+    "https://www.3se.info/3se-onto/terms/stakeholder-req-validation-3se-06ac91123b6d79dc"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-validation-3se-06abfeeeb9ea7517",
   "related": [

@@ -12,7 +12,8 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-req-validation-case-3se-06ac90d4d3e17951",
   "related": [
-    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945",
+    "https://www.3se.info/3se-onto/terms/system-req-validation-3se-06ac91123ba37b2b"
   ],
   "entryCreated": "2026-10-09",
   "entryModified": "2026-10-09",
