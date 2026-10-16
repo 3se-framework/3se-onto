@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "location of - RO",
+  "description": "A relation between two independent continuants, the location and the target, in which the target is entirely within the location.",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/ro-2025-12-06a95e385ef17818"
+  ],
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/location-of-ro-2025-12-06a95e385f237106",
+  "entryCreated": "2026-08-31",
+  "entryModified": "2026-08-31",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Software architecture validation case - 3SE",
+  "description": "A set of preconditions, inputs, steps, expected results and post-conditions, developed based on a validation objective and according to an evaluation method, to validate a software architecture constraint.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/constraint-validation-case-3se-06a270c85e5671eb"
+  ],
+  "evaluates": [
+    "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/software-architecture-validation-case-3se-06ab19c1f0a277bf",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/software-architecture-validation-3se-06ab19c1f097799b",
+    "https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945"
+  ],
+  "entryCreated": "2026-09-21",
+  "entryModified": "2026-09-27",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

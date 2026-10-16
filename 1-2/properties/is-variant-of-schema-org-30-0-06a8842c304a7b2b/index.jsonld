@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "isVariantOf - Schema.org",
+  "description": "Indicates the kind of product that this is a variant of.",
+  "subPropertyOf": [
+    "https://schema.org/isVariantOf"
+  ],
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/schema-org-30-0-06a8842c301a741f"
+  ],
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/is-variant-of-schema-org-30-0-06a8842c304a7b2b",
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

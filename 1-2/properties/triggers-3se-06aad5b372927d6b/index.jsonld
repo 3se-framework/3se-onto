@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "triggers - 3SE",
+  "description": "Relates an event to the situation it triggers by occurring in a context.",
+  "domain": "https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1",
+  "range": "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/triggers-3se-06aad5b372927d6b",
+  "entryCreated": "2026-09-18",
+  "entryModified": "2026-09-18",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "subPropertyOf": [
+    "https://www.3se.info/3se-onto/properties/causally-upstream-of-ro-2025-12-06aad5b372647ff0"
+  ]
+}

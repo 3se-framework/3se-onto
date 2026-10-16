@@ -1,0 +1,16 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC 26558:2017",
+  "abstract": "Software and systems engineering — Methods and tools for variability modelling in software and systems product line",
+  "issued": "2017",
+  "uri": "https://www.iso.org/standard/43117.html",
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-iec-26558-2017-06a8873e39387043",
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-08-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

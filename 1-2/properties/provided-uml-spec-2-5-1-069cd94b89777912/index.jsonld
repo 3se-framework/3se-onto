@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "provided - UML 2.5.1",
+  "description": "Association end that denotes the Interface that the Component exposes to its environment.",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/uml-spec-2-5-1-069c841060fd70b4"
+  ],
+  "status": "standard",
+  "@id": "https://www.3se.info/3se-onto/properties/provided-uml-spec-2-5-1-069cd94b89777912",
+  "entryCreated": "2026-04-01",
+  "entryModified": "2026-05-02",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
