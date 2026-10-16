@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System element function variant - 3SE",
   "description": "Variant of system element function.",
-  "status": "draft",
+  "status": "reviewed",
   "isVariantOf": [
     "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
   ],

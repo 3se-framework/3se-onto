@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Site - 3SE",
   "description": "Immaterial three-dimensional space, bounded by at least one physical interface, that hosts other physical elements or material entities.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/site-bfo-2-0-06a95dbad5b07e7a"
   ],

@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Asset variant - 3SE",
   "description": "Attribute of a system variant, or a the system variant itself, that is worth protecting.",
-  "status": "draft",
+  "status": "reviewed",
   "isVariantOf": [
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
   ],

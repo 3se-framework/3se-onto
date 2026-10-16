@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System state attribute variant - 3SE",
   "description": "Variant of a system state attribute.",
-  "status": "draft",
+  "status": "reviewed",
   "allocates": [
     "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d",
     "https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7",

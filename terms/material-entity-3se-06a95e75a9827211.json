@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Material entity - 3SE",
   "description": "Portion of matter hosted within a site.",
-  "status": "draft",
+  "status": "reviewed",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/material-entity-bfo-2-0-06a95dbad588717a"
   ],

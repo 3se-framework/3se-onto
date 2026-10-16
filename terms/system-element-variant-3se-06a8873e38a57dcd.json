@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System element variant - 3SE",
   "description": "Discrete part of a system variant that can be implemented to fulfil specified requirements variant.",
-  "status": "reviewed",
+  "status": "approved",
   "isVariantOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],

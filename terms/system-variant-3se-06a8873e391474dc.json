@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System variant - 3SE",
   "description": "Combination of interacting system elements or system element variants organized to achieve one or more goals.",
-  "status": "draft",
+  "status": "reviewed",
   "isVariantOf": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],

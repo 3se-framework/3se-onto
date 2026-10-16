@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Attribute variant - 3SE",
   "description": "Alternative attribute of an entity.",
-  "status": "draft",
+  "status": "reviewed",
   "isVariantOf": [
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
