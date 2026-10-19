@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-10-16 17:08 UTC*
+*Generated on 2026-10-19 17:30 UTC*
 
-This glossary contains **8 3SE domain(s)**, **441 3SE term(s)**, **114 other term(s)**, **23 3SE property(ies)**, **12 other property(ies)**, and **29 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other term(s)**, **23 3SE property(ies)**, **12 other property(ies)**, and **31 reference(s)**.
 
 ## Contents
 
@@ -438,8 +438,10 @@ This glossary contains **8 3SE domain(s)**, **441 3SE term(s)**, **114 other ter
   - [Systems principles - 3SE](#systems-principles---3se)
   - [Task - 3SE](#task---3se)
   - [Task analysis - 3SE](#task-analysis---3se)
+  - [Taxonomy - 3SE](#taxonomy---3se)
   - [Teleology - 3SE](#teleology---3se)
   - [Test - 3SE](#test---3se)
+  - [Thesaurus - 3SE](#thesaurus---3se)
   - [Threatening situation - 3SE](#threatening-situation---3se)
   - [Transition - 3SE](#transition---3se)
   - [Validation - 3SE](#validation---3se)
@@ -554,12 +556,14 @@ This glossary contains **8 3SE domain(s)**, **441 3SE term(s)**, **114 other ter
   - [System element - ISO/IEC/IEEE 15288](#system-element---isoiecieee-15288)
   - [Systems engineering - ISO/IEC/IEEE 15288](#systems-engineering---isoiecieee-15288)
   - [Task - ISO/IEC/IEEE 24765](#task---isoiecieee-24765)
+  - [Taxonomy - ISO 25964](#taxonomy---iso-25964)
   - [Technical safety requirement - ISO 26262-1](#technical-safety-requirement---iso-26262-1)
   - [Teleological behavior - Behavior, Purpose and Teleology 1943](#teleological-behavior---behavior-purpose-and-teleology-1943)
   - [Test - ISO/IEC/IEEE 24765](#test---isoiecieee-24765)
   - [Test case - IEEE 1012](#test-case---ieee-1012)
   - [Test run - ISTQB](#test-run---istqb)
   - [Test suite - ISTQB](#test-suite---istqb)
+  - [Thesaurus - ISO 25964](#thesaurus---iso-25964)
   - [Threat analysis and risk assessment - ISO/SAE 21434](#threat-analysis-and-risk-assessment---isosae-21434)
   - [Threat scenario - ISO/SAE 21434](#threat-scenario---isosae-21434)
   - [Transition - ISO/IEC/IEEE 24765](#transition---isoiecieee-24765)
@@ -582,6 +586,8 @@ This glossary contains **8 3SE domain(s)**, **441 3SE term(s)**, **114 other ter
   - [How Does It Work? The Search for Explanatory Mechanisms](#how-does-it-work-the-search-for-explanatory-mechanisms)
   - [IEEE 1012:2016](#ieee-10122016)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
+  - [ISO 25964-1:2011](#iso-25964-12011)
+  - [ISO 25964-2:2013](#iso-25964-22013)
   - [ISO 26262-1:2018](#iso-26262-12018)
   - [ISO 30401:2018](#iso-304012018)
   - [ISO/IEC 26558:2017](#isoiec-265582017)
@@ -744,7 +750,7 @@ This glossary contains **8 3SE domain(s)**, **441 3SE term(s)**, **114 other ter
 
 ## 3SE Terms
 
-*441 term(s) defined by the 3SE framework.*
+*443 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -3091,15 +3097,15 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N20 -.->|allocates| N16
+    N19 -.->|allocates| N17
     N3 -.->|allocates| N21
     N18 -.->|allocates| N14
-    N19 -.->|allocates| N17
-    N13 -.->|allocates| N14
     N21 -.->|allocates| N14
+    N13 -.->|allocates| N14
+    N20 -.->|allocates| N16
     N9 -->|subclass of| N4
-    N11 -->|subclass of| N10
     N10 -->|subclass of| N4
+    N11 -->|subclass of| N10
     N12 -->|subclass of| N10
     N8 -->|subclass of| N4
 ```
@@ -3538,10 +3544,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
+    N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
+    N7 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -4807,9 +4813,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -7077,10 +7083,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
+| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4) |
 | Broad match | [knowledge-30401-2018-06a495136c807dfd](https://www.3se.info/3se-onto/terms/knowledge-30401-2018-06a495136c807dfd) |
 
-*Created: 2026-07-04 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-07-04 · Modified: 2026-10-19 · Creator: @rcasteran*
 
 ---
 
@@ -7613,16 +7619,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
+    N17 -.->|allocates| N14
+    N17 -.->|allocates| N15
     N5 -.->|allocates| N3
     N2 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N17 -.->|allocates| N14
-    N17 -.->|allocates| N15
-    N9 -->|subclass of| N8
     N10 -->|subclass of| N8
-    N11 -->|subclass of| N8
-    N12 -->|subclass of| N11
     N13 -->|subclass of| N11
+    N12 -->|subclass of| N11
+    N9 -->|subclass of| N8
+    N11 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -9343,15 +9349,15 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N3
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N3
     N3 -->|subclass of| N13
     N2 -->|subclass of| N8
 ```
@@ -12057,9 +12063,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12662,8 +12668,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -15435,11 +15441,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
-    N13 -.->|allocates| N9
-    N10 -.->|allocates| N14
-    N6 -.->|allocates| N5
     N7 -.->|allocates| N5
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
+    N6 -.->|allocates| N5
+    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16935,16 +16941,16 @@ graph TD
     N17 -.->|exposes| N37
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
-    N37 -.->|allocates| N23
-    N30 -->|subclass of| N33
-    N9 -.->|allocates| N4
-    N18 -.->|allocates| N25
+    N2 -->|subclass of| N33
     N16 -.->|allocates| N11
     N35 -.->|allocates| N2
-    N2 -->|subclass of| N33
-    N27 -.->|allocates| N23
+    N18 -.->|allocates| N25
     N21 -.->|exposes| N36
+    N37 -.->|allocates| N23
     N28 -.->|allocates| N30
+    N30 -->|subclass of| N33
+    N27 -.->|allocates| N23
+    N9 -.->|allocates| N4
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
@@ -18750,14 +18756,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N14 -.->|allocates| N12
-    N15 -.->|exposes| N1
-    N13 -.->|allocates| N12
-    N16 -.->|allocates| N4
     N3 -.->|allocates| N4
     N2 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N13 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N16 -.->|allocates| N4
+    N15 -.->|exposes| N1
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19341,24 +19347,24 @@ graph TD
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
     N40 -->|subclass of| N38
-    N28 -.->|allocates| N19
+    N27 -.->|allocates| N20
+    N44 -.->|allocates| N2
     N38 -.->|allocates| N1
-    N42 -->|subclass of| N41
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
     N41 -->|subclass of| N38
+    N32 -.->|allocates| N2
+    N42 -->|subclass of| N41
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
     N43 -->|subclass of| N41
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
+    N28 -.->|allocates| N19
+    N39 -->|subclass of| N38
     N29 -.->|allocates| N22
     N29 -.->|allocates| N37
-    N27 -.->|allocates| N20
-    N39 -->|subclass of| N38
-    N44 -.->|allocates| N2
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
-    N32 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -19805,11 +19811,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N13 -.->|allocates| N10
+    N15 -.->|allocates| N12
     N4 -.->|allocates| N8
     N11 -.->|allocates| N12
     N14 -.->|allocates| N9
-    N13 -.->|allocates| N10
-    N15 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20383,27 +20389,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
+    N4 -.->|allocates| N23
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
+    N16 -.->|allocates| N10
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N4 -.->|allocates| N23
-    N8 -.->|allocates| N15
-    N16 -.->|allocates| N10
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
-    N22 -.->|allocates| N4
-    N22 -.->|allocates| N6
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
     N9 -.->|allocates| N15
     N9 -.->|allocates| N19
     N28 -.->|allocates| N25
     N28 -.->|allocates| N26
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N8 -.->|allocates| N15
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20637,6 +20643,20 @@ graph TD
 
 ---
 
+### Taxonomy - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Scheme of categories that classifies the entities denoted by a concept according to one criterion, such that the categories do not overlap and together cover all those entities.
+
+| Relation | Terms |
+|---|---|
+| Broad match | [taxonomy-25964-2-2013-06ad6497ed9972a7](https://www.3se.info/3se-onto/terms/taxonomy-25964-2-2013-06ad6497ed9972a7) |
+
+*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
+
+---
+
 ### Teleology - 3SE
 
 ![approved](https://img.shields.io/badge/status-approved-green)
@@ -20664,6 +20684,21 @@ graph TD
 | Close match | [test-24765-2017-069b5a912a097284](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284) |
 
 *Created: 2026-03-14 · Modified: 2026-09-11 · Creator: @rcasteran*
+
+---
+
+### Thesaurus - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Controlled vocabulary of a domain of knowledge in which terms stand for concepts, terms of close but different meaning may label one concept, and concepts are related by broader, narrower and associative relations that express their meaning, not the classification of the entities they denote.
+
+| Relation | Terms |
+|---|---|
+| Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c) |
+| Broad match | [thesaurus-25964-1-2011-06ad6497edeb7452](https://www.3se.info/3se-onto/terms/thesaurus-25964-1-2011-06ad6497edeb7452) |
+
+*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
 
 ---
 
@@ -21155,35 +21190,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N22 -.->|allocates| N32
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
+    N22 -.->|allocates| N32
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
     N17 -.->|allocates| N10
     N17 -.->|allocates| N12
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N45 -.->|allocates| N35
-    N45 -.->|allocates| N41
-    N45 -.->|allocates| N43
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
-    N23 -.->|allocates| N19
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N43 -.->|allocates| N12
     N33 -.->|allocates| N23
     N33 -.->|allocates| N19
+    N45 -.->|allocates| N35
+    N45 -.->|allocates| N41
+    N45 -.->|allocates| N43
+    N43 -.->|allocates| N12
     N10 -.->|allocates| N19
+    N23 -.->|allocates| N19
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -21361,7 +21396,7 @@ graph TD
 
 ## Other Terms
 
-*114 term(s) sourced from external standards and frameworks.*
+*116 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -23205,6 +23240,22 @@ graph TD
 
 ---
 
+### Taxonomy - ISO 25964
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Scheme of categories and subcategories that can be used to sort and otherwise organize items of knowledge or information.
+
+| Relation | Terms |
+|---|---|
+| Broad match of | [taxonomy-3se-06ad652e5efb7d14](https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14) |
+
+**References:** [ISO 25964-2:2013](https://www.3se.info/3se-onto/references/iso-25964-2-2013-06ad6497ee017c61)
+
+*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
+
+---
+
 ### Technical safety requirement - ISO 26262-1
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -23298,6 +23349,22 @@ graph TD
 **References:** [ISTQB Glossary](https://www.3se.info/3se-onto/references/istqb-glossary-069b5a912a2c757c)
 
 *Created: 2026-03-14 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Thesaurus - ISO 25964
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Controlled and structured vocabulary in which concepts are represented by terms, organized so that relationships between concepts are made explicit, and preferred terms are accompanied by lead-in entries for synonyms or quasi-synonyms.
+
+| Relation | Terms |
+|---|---|
+| Broad match of | [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4) |
+
+**References:** [ISO 25964-1:2011](https://www.3se.info/3se-onto/references/iso-25964-1-2011-06ad6497edf87217)
+
+*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
 
 ---
 
@@ -23520,7 +23587,7 @@ graph TD
 
 ## References
 
-*29 reference(s).*
+*31 reference(s).*
 
 ### A perspective on systems science and systems philosophy
 
@@ -23692,6 +23759,44 @@ graph TD
 **Referenced Terms:** [Constraint - IREB CPRE](https://www.3se.info/3se-onto/terms/constraint-cpre-069a9faf2c897700), [Functional Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232), [Non-functional Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723), [Quality Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af), [Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6), [Stakeholder - IREB CPRE](https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### ISO 25964-1:2011
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Information and documentation — Thesauri and interoperability with other vocabularies — Part 1: Thesauri for information retrieval
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2011 |
+| **URL** | [https://www.iso.org/standard/53657.html](https://www.iso.org/standard/53657.html) |
+
+**Referenced Terms:** [Thesaurus - ISO 25964](https://www.3se.info/3se-onto/terms/thesaurus-25964-1-2011-06ad6497edeb7452)
+
+*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
+
+---
+
+### ISO 25964-2:2013
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Information and documentation — Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2013 |
+| **URL** | [https://www.iso.org/standard/53658.html](https://www.iso.org/standard/53658.html) |
+
+**Referenced Terms:** [Taxonomy - ISO 25964](https://www.3se.info/3se-onto/terms/taxonomy-25964-2-2013-06ad6497ed9972a7)
+
+*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
 
 ---
 
