@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Thesaurus - 3SE",
+  "description": "Controlled vocabulary of a domain of knowledge in which terms stand for concepts, terms of close but different meaning may label one concept, and concepts are related by broader, narrower and associative relations that express their meaning, not the classification of the entities they denote.",
+  "status": "draft",
+  "broadMatch": [
+    "https://www.3se.info/3se-onto/terms/thesaurus-25964-1-2011-06ad6497edeb7452"
+  ]
+}
