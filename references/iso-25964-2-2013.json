@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO 25964-2:2013",
+  "abstract": "Information and documentation — Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies",
+  "issued": "2013",
+  "uri": "https://www.iso.org/standard/53658.html",
+  "status": "bibo:published"
+}

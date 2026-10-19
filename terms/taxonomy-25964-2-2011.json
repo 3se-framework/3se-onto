@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Taxonomy - 3SE",
+  "description": "Scheme of categories and subcategories that can be used to sort and otherwise organize items of knowledge or information.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-25964-2-2011"
+  ]
+}
