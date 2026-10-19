@@ -5,5 +5,12 @@
   "abstract": "Information and documentation — Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies",
   "issued": "2013",
   "uri": "https://www.iso.org/standard/53658.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-25964-2-2013-06ad6497ee017c61",
+  "entryCreated": "2026-10-19",
+  "entryModified": "2026-10-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

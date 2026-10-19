@@ -5,6 +5,13 @@
   "description": "Scheme of categories and subcategories that can be used to sort and otherwise organize items of knowledge or information.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/iso-25964-2-2013"
-  ]
+    "https://www.3se.info/3se-onto/references/iso-25964-2-2013-06ad6497ee017c61"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/taxonomy-25964-2-2013-06ad6497ed9972a7",
+  "entryCreated": "2026-10-19",
+  "entryModified": "2026-10-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

@@ -5,6 +5,13 @@
   "description": "Controlled and structured vocabulary in which concepts are represented by terms, organized so that relationships between concepts are made explicit, and preferred terms are accompanied by lead-in entries for synonyms or quasi-synonyms.",
   "status": "standard",
   "isReferencedBy": [
-    "https://www.3se.info/3se-onto/references/iso-25964-1-2011"
-  ]
+    "https://www.3se.info/3se-onto/references/iso-25964-1-2011-06ad6497edf87217"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/thesaurus-25964-1-2011-06ad6497edeb7452",
+  "entryCreated": "2026-10-19",
+  "entryModified": "2026-10-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
