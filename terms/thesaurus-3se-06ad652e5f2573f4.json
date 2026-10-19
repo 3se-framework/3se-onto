@@ -6,5 +6,15 @@
   "status": "draft",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/thesaurus-25964-1-2011-06ad6497edeb7452"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c"
+  ],
+  "entryCreated": "2026-10-19",
+  "entryModified": "2026-10-19",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
