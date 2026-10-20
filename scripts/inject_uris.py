@@ -85,8 +85,7 @@ TERM_ARRAY_FIELDS: list[str] = [
     "frames",
     "involves",
     "shapes",
-    "triggers",
-    "denotes"
+    "triggers"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.
@@ -98,6 +97,7 @@ REFERENCE_ARRAY_FIELDS: list[str] = [
 # Scalar fields that resolve against the TERMS index.
 TERM_SCALAR_FIELDS: list[str] = [
     "superseded_by",
+    "denotes"
 ]
 
 # Fields whose plain-string values resolve against the PROPERTIES index.
