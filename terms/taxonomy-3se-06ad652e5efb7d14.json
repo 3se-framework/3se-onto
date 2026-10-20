@@ -9,9 +9,12 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14",
   "entryCreated": "2026-10-19",
-  "entryModified": "2026-10-19",
+  "entryModified": "2026-10-20",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  }
+  },
+  "related": [
+    "https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66"
+  ]
 }

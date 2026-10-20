@@ -1,0 +1,25 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Concept - 3SE",
+  "description": "Unit of knowledge created by a unique combination of characteristics, belonging to the 3SE ontology (intensional) and denoting exactly one entity represented in a conceptual model (extensional).",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/concept-1087-2019-06ad7b97372770de"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635",
+    "https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c",
+    "https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071",
+    "https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14",
+    "https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4",
+    "https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2"
+  ],
+  "entryCreated": "2026-10-20",
+  "entryModified": "2026-10-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

@@ -15,7 +15,8 @@
     "name": "@rcasteran"
   },
   "related": [
-    "https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c"
+    "https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c",
+    "https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66"
   ],
   "denotes": "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
 }

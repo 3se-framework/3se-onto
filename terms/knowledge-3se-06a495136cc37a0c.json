@@ -11,10 +11,11 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e",
     "https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071",
-    "https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4"
+    "https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4",
+    "https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66"
   ],
   "entryCreated": "2026-07-04",
-  "entryModified": "2026-10-19",
+  "entryModified": "2026-10-20",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
