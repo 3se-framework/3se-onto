@@ -5,5 +5,12 @@
   "abstract": "Terminology work and terminology science — Vocabulary",
   "issued": "2018",
   "uri": "https://www.iso.org/standard/62330.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-1087-2019-06ad7b97376674cc",
+  "entryCreated": "2026-10-20",
+  "entryModified": "2026-10-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
