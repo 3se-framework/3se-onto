@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-10-19 17:30 UTC*
+*Generated on 2026-10-20 19:11 UTC*
 
-This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other term(s)**, **23 3SE property(ies)**, **12 other property(ies)**, and **31 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **444 3SE term(s)**, **117 other term(s)**, **24 3SE property(ies)**, **12 other property(ies)**, and **32 reference(s)**.
 
 ## Contents
 
@@ -35,6 +35,7 @@ This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other ter
   - [Business owner - 3SE](#business-owner---3se)
   - [Change - 3SE](#change---3se)
   - [Computational model - 3SE](#computational-model---3se)
+  - [Concept - 3SE](#concept---3se)
   - [Conceptual model - 3SE](#conceptual-model---3se)
   - [Concrete model - 3SE](#concrete-model---3se)
   - [Constraint - 3SE](#constraint---3se)
@@ -474,6 +475,7 @@ This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other ter
   - [Behavioral port - ARCADIA](#behavioral-port---arcadia)
   - [Change - ISO/IEC/IEEE 24765](#change---isoiecieee-24765)
   - [Computer program - ISO/IEC/IEEE 24765](#computer-program---isoiecieee-24765)
+  - [Concept - ISO 1087](#concept---iso-1087)
   - [Constraint - IREB CPRE](#constraint---ireb-cpre)
   - [Cybersecurity control - ISO/SAE 21434](#cybersecurity-control---isosae-21434)
   - [Cybersecurity goal - ISO/SAE 21434](#cybersecurity-goal---isosae-21434)
@@ -586,6 +588,7 @@ This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other ter
   - [How Does It Work? The Search for Explanatory Mechanisms](#how-does-it-work-the-search-for-explanatory-mechanisms)
   - [IEEE 1012:2016](#ieee-10122016)
   - [IREB CPRE Glossary](#ireb-cpre-glossary)
+  - [ISO 1087:2019](#iso-10872019)
   - [ISO 25964-1:2011](#iso-25964-12011)
   - [ISO 25964-2:2013](#iso-25964-22013)
   - [ISO 26262-1:2018](#iso-26262-12018)
@@ -615,6 +618,7 @@ This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other ter
   - [characterizes - 3SE](#characterizes---3se)
   - [consumes - 3SE](#consumes---3se)
   - [conveys - 3SE](#conveys---3se)
+  - [denotes - 3SE](#denotes---3se)
   - [elicits - 3SE](#elicits---3se)
   - [evaluates - 3SE](#evaluates---3se)
   - [exposes - 3SE](#exposes---3se)
@@ -750,7 +754,7 @@ This glossary contains **8 3SE domain(s)**, **443 3SE term(s)**, **116 other ter
 
 ## 3SE Terms
 
-*443 term(s) defined by the 3SE framework.*
+*444 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1501,6 +1505,21 @@ graph TD
 
 ---
 
+### Concept - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Unit of knowledge created by a unique combination of characteristics, belonging to the 3SE ontology (intensional) and denoting exactly one entity represented in a conceptual model (extensional).
+
+| Relation | Terms |
+|---|---|
+| Related | [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [taxonomy-3se-06ad652e5efb7d14](https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [view-3se-06a0993aed6d7ad2](https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2) |
+| Close match | [concept-1087-2019-06ad7b97372770de](https://www.3se.info/3se-onto/terms/concept-1087-2019-06ad7b97372770de) |
+
+*Created: 2026-10-20 · Modified: 2026-10-20 · Creator: @rcasteran*
+
+---
+
 ### Conceptual model - 3SE
 
 ![approved](https://img.shields.io/badge/status-approved-green)
@@ -1509,7 +1528,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9) |
+| Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
 | Subclass of | [abstract-model-3se-069d3d55609a75e1](https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1) |
 | Superclass of | [feature-model-3se-069d3f26ae067509](https://www.3se.info/3se-onto/terms/feature-model-3se-069d3f26ae067509), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [goal-model-3se-069d3f26ae1e7e10](https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10), [operating-model-3se-069d3f26ae27722b](https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b), [physical-architecture-model-3se-069d3f26ae2f7408](https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [stakeholder-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476), [system-architecture-model-3se-069d3f26ae587442](https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442), [system-attribute-model-3se-069dcf9369887f72](https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72), [system-element-req-model-3se-06aac13a4035725f](https://www.3se.info/3se-onto/terms/system-element-req-model-3se-06aac13a4035725f), [system-function-model-3se-069d3f26ae0e7b05](https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05), [system-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476), [system-variability-model-3se-06a888a0c0497ff5](https://www.3se.info/3se-onto/terms/system-variability-model-3se-06a888a0c0497ff5), [value-model-3se-069d6aadc065744f](https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f) |
 | Close match | [descriptive-model-24641-2023-069d3f26adfd7b2e](https://www.3se.info/3se-onto/terms/descriptive-model-24641-2023-069d3f26adfd7b2e) |
@@ -1578,7 +1597,7 @@ graph TD
 
 *R: responsible · A: accountable · S: supporting · -: none*
 
-*Created: 2026-04-06 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -3098,15 +3117,15 @@ graph TD
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
     N19 -.->|allocates| N17
-    N3 -.->|allocates| N21
-    N18 -.->|allocates| N14
-    N21 -.->|allocates| N14
-    N13 -.->|allocates| N14
     N20 -.->|allocates| N16
+    N18 -.->|allocates| N14
+    N3 -.->|allocates| N21
+    N13 -.->|allocates| N14
+    N21 -.->|allocates| N14
     N9 -->|subclass of| N4
     N10 -->|subclass of| N4
-    N11 -->|subclass of| N10
     N12 -->|subclass of| N10
+    N11 -->|subclass of| N10
     N8 -->|subclass of| N4
 ```
 
@@ -3545,9 +3564,9 @@ graph TD
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
     N11 -.->|allocates| N10
-    N3 -.->|allocates| N11
-    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
+    N6 -.->|allocates| N13
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -4813,8 +4832,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
 ```
 
@@ -6531,8 +6550,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N4 -->|subclass of| N7
     N6 -->|subclass of| N11
+    N4 -->|subclass of| N7
 ```
 
 *Created: 2026-03-24 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -7083,10 +7102,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4) |
+| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
 | Broad match | [knowledge-30401-2018-06a495136c807dfd](https://www.3se.info/3se-onto/terms/knowledge-30401-2018-06a495136c807dfd) |
 
-*Created: 2026-07-04 · Modified: 2026-10-19 · Creator: @rcasteran*
+*Created: 2026-07-04 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -7398,16 +7417,16 @@ graph TD
 
 ### Ontology - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Definition of a set of concepts within a domain of knowledge and the relationships that hold between them.
 
 | Relation | Terms |
 |---|---|
-| Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c) |
+| Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
 | Close match | [ontology-24765-2017-06a494b0a1517439](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439) |
 
-*Created: 2026-07-04 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-07-04 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -7624,11 +7643,11 @@ graph TD
     N5 -.->|allocates| N3
     N2 -.->|allocates| N15
     N14 -.->|allocates| N15
-    N10 -->|subclass of| N8
     N13 -->|subclass of| N11
     N12 -->|subclass of| N11
-    N9 -->|subclass of| N8
+    N10 -->|subclass of| N8
     N11 -->|subclass of| N8
+    N9 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -8064,8 +8083,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -8771,8 +8790,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9349,17 +9368,17 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N3
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N7 -.->|allocates| N2
     N7 -.->|allocates| N3
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N3 -->|subclass of| N13
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N2 -->|subclass of| N8
+    N3 -->|subclass of| N13
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -11903,8 +11922,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -12063,9 +12082,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
-    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
+    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12667,8 +12686,8 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
     N3 -.->|allocates| N8
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
 ```
 
@@ -15287,8 +15306,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -15441,11 +15460,11 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N6 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N10 -.->|allocates| N14
     N11 -.->|allocates| N4
     N13 -.->|allocates| N9
-    N6 -.->|allocates| N5
-    N10 -.->|allocates| N14
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16942,20 +16961,20 @@ graph TD
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
     N2 -->|subclass of| N33
-    N16 -.->|allocates| N11
-    N35 -.->|allocates| N2
     N18 -.->|allocates| N25
-    N21 -.->|exposes| N36
     N37 -.->|allocates| N23
-    N28 -.->|allocates| N30
-    N30 -->|subclass of| N33
     N27 -.->|allocates| N23
-    N9 -.->|allocates| N4
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
+    N35 -.->|allocates| N2
+    N21 -.->|exposes| N36
+    N30 -->|subclass of| N33
+    N28 -.->|allocates| N30
+    N9 -.->|allocates| N4
+    N16 -.->|allocates| N11
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -18757,13 +18776,13 @@ graph TD
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
     N3 -.->|allocates| N4
-    N2 -.->|allocates| N4
-    N14 -.->|allocates| N12
     N13 -.->|allocates| N12
+    N14 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
     N16 -.->|allocates| N4
     N15 -.->|exposes| N1
+    N2 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19347,24 +19366,24 @@ graph TD
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
     N40 -->|subclass of| N38
-    N27 -.->|allocates| N20
-    N44 -.->|allocates| N2
-    N38 -.->|allocates| N1
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
     N41 -->|subclass of| N38
-    N32 -.->|allocates| N2
-    N42 -->|subclass of| N41
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N43 -->|subclass of| N41
-    N9 -.->|exposes| N15
-    N9 -.->|allocates| N26
-    N9 -.->|allocates| N3
+    N27 -.->|allocates| N20
     N28 -.->|allocates| N19
+    N43 -->|subclass of| N41
+    N42 -->|subclass of| N41
     N39 -->|subclass of| N38
     N29 -.->|allocates| N22
     N29 -.->|allocates| N37
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
+    N44 -.->|allocates| N2
+    N38 -.->|allocates| N1
+    N9 -.->|exposes| N15
+    N9 -.->|allocates| N26
+    N9 -.->|allocates| N3
+    N32 -.->|allocates| N2
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -19811,11 +19830,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
-    N15 -.->|allocates| N12
-    N4 -.->|allocates| N8
-    N11 -.->|allocates| N12
     N14 -.->|allocates| N9
+    N4 -.->|allocates| N8
+    N15 -.->|allocates| N12
+    N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20389,27 +20408,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N4 -.->|allocates| N23
     N20 -.->|allocates| N10
     N20 -.->|allocates| N11
-    N16 -.->|allocates| N10
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N17 -.->|allocates| N22
-    N17 -.->|allocates| N23
-    N17 -.->|allocates| N25
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
     N5 -.->|allocates| N23
     N5 -.->|allocates| N24
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
     N28 -.->|allocates| N25
     N28 -.->|allocates| N26
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
     N8 -.->|allocates| N15
+    N4 -.->|allocates| N23
+    N16 -.->|allocates| N10
+    N17 -.->|allocates| N22
+    N17 -.->|allocates| N23
+    N17 -.->|allocates| N25
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20651,9 +20670,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
 | Broad match | [taxonomy-25964-2-2013-06ad6497ed9972a7](https://www.3se.info/3se-onto/terms/taxonomy-25964-2-2013-06ad6497ed9972a7) |
 
-*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
+*Created: 2026-10-19 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -20695,10 +20715,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c) |
+| Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
 | Broad match | [thesaurus-25964-1-2011-06ad6497edeb7452](https://www.3se.info/3se-onto/terms/thesaurus-25964-1-2011-06ad6497edeb7452) |
 
-*Created: 2026-10-19 · Modified: 2026-10-19 · Creator: @rcasteran*
+*Created: 2026-10-19 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -21190,35 +21210,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N16 -.->|allocates| N19
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N11
-    N22 -.->|allocates| N32
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N16 -.->|allocates| N19
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N11
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
+    N22 -.->|allocates| N32
+    N23 -.->|allocates| N19
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
+    N10 -.->|allocates| N19
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
+    N43 -.->|allocates| N12
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N43 -.->|allocates| N12
-    N10 -.->|allocates| N19
-    N23 -.->|allocates| N19
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -21275,9 +21295,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
 | Broad match | [view-24765-2017-06a0993aed0d7f96](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96) |
 
-*Created: 2026-05-17 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-05-17 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -21396,7 +21417,7 @@ graph TD
 
 ## Other Terms
 
-*116 term(s) sourced from external standards and frameworks.*
+*117 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -21619,6 +21640,22 @@ graph TD
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
 *Created: 2026-03-05 · Modified: 2026-03-18 · Creator: @rcasteran*
+
+---
+
+### Concept - ISO 1087
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Unit of knowledge created by a unique combination of characteristics.
+
+| Relation | Terms |
+|---|---|
+| Close match of | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
+
+**References:** [ISO 1087:2019](https://www.3se.info/3se-onto/references/iso-1087-2019-06ad7b97376674cc)
+
+*Created: 2026-10-20 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -23587,7 +23624,7 @@ graph TD
 
 ## References
 
-*31 reference(s).*
+*32 reference(s).*
 
 ### A perspective on systems science and systems philosophy
 
@@ -23759,6 +23796,25 @@ graph TD
 **Referenced Terms:** [Constraint - IREB CPRE](https://www.3se.info/3se-onto/terms/constraint-cpre-069a9faf2c897700), [Functional Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232), [Non-functional Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/non-functional-req-cpre-069a9faf2ca97723), [Quality Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/quality-req-cpre-069a9faf2cb177af), [Requirement - IREB CPRE](https://www.3se.info/3se-onto/terms/requirement-cpre-069a95b4863072f6), [Stakeholder - IREB CPRE](https://www.3se.info/3se-onto/terms/stakeholder-cpre-069bc40b97e27a5f)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
+
+---
+
+### ISO 1087:2019
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Terminology work and terminology science — Vocabulary
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2018 |
+| **URL** | [https://www.iso.org/standard/62330.html](https://www.iso.org/standard/62330.html) |
+
+**Referenced Terms:** [Concept - ISO 1087](https://www.3se.info/3se-onto/terms/concept-1087-2019-06ad7b97372770de)
+
+*Created: 2026-10-20 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
@@ -24177,7 +24233,7 @@ graph TD
 
 ## 3SE Properties
 
-*23 propert(ies) defined by the 3SE framework.*
+*24 propert(ies) defined by the 3SE framework.*
 
 ### activates - 3SE
 
@@ -24271,6 +24327,21 @@ This relation expresses a potential, contingent relationship between two concept
 | Sub-property of | [conveyed-uml-spec-2-5-1-069f2456795272b9](https://www.3se.info/3se-onto/properties/conveyed-uml-spec-2-5-1-069f2456795272b9) |
 
 *Created: 2026-04-29 · Modified: 2026-09-11 · Creator: @rcasteran*
+
+---
+
+### denotes - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Semantic relation from an intensional concept to its extensional counterpart.
+
+| Relation | Value |
+|---|---|
+| Domain | `skos:Concept` |
+| Range | `skos:Concept` |
+
+*Created: 2026-10-20 · Modified: 2026-10-20 · Creator: @rcasteran*
 
 ---
 
