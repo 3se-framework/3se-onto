@@ -48,6 +48,7 @@
     "involves":             { "@id": "https://www.3se.info/3se-onto/properties/involves-3se-06aad5b372857f08",              "@type": "@id" },
     "shapes":               { "@id": "https://www.3se.info/3se-onto/properties/shapes-3se-06aad5b3728c780c",                "@type": "@id" },
     "triggers":             { "@id": "https://www.3se.info/3se-onto/properties/triggers-3se-06aad5b372927d6b",              "@type": "@id" },
+    "denotes":              { "@id": "https://www.3se.info/3se-onto/properties/denotes-3se-06ad7acb7e067d7d",               "@type": "@id" },
 
     "isResponsibleFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-responsible-for-3se-069c50dd4d64710e",    "@type": "@id" },
     "isAccountableFor":     { "@id": "https://www.3se.info/3se-onto/properties/is-accountable-for-3se-069c50dd4d47724a",    "@type": "@id" },

@@ -331,6 +331,11 @@
       },
       "uniqueItems": true
     },
+    "denotes": {
+      "description": "3se:denotes — IRI of the extensional concept that constitutes the extension of this intensional object. Bijective: each intensional concept denotes exactly one extensional counterpart, and each extensional counterpart is denoted by exactly one intensional concept.",
+      "type": "string",
+      "format": "uri"
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",

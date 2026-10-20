@@ -13,7 +13,7 @@
 #   produces, consumes, conveys, evaluates, fires, hosts,
 #   isVariantOf, isBoundedBy, "activates", "characterizes",
 #   elicits, frames, involves, shapes, triggers   (array)
-#   superseded_by                                 (scalar)
+#   superseded_by, denotes                        (scalar)
 #
 # Fields resolved against the REFERENCES index (references/):
 #   isReferencedBy                                (array) — terms AND properties
@@ -85,7 +85,8 @@ TERM_ARRAY_FIELDS: list[str] = [
     "frames",
     "involves",
     "shapes",
-    "triggers"
+    "triggers",
+    "denotes"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.

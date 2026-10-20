@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO 1087:2019",
+  "abstract": "Terminology work and terminology science — Vocabulary",
+  "issued": "2018",
+  "uri": "https://www.iso.org/standard/62330.html",
+  "status": "bibo:published"
+}
