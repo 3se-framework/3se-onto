@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "denotes - 3SE",
+  "description": "Semantic relation from an intensional concept to its extensional counterpart.",
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}
