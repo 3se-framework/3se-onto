@@ -5,5 +5,12 @@
   "description": "Semantic relation from an extensional element to a concrete element such that the concrete element satisfies all the constraints of the extensional element.",
   "domain": "skos:Concept",
   "range": "skos:Concept",
-  "status": "draft"
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/properties/is-instantiated-by-3se-06ad90113d057360",
+  "entryCreated": "2026-10-21",
+  "entryModified": "2026-10-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
