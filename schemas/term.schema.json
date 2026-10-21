@@ -332,7 +332,7 @@
       "uniqueItems": true
     },
     "denotes": {
-      "description": "3se:denotes — IRI of the extensional concept that constitutes the extension of this intensional object. Bijective: each intensional concept denotes exactly one extensional counterpart, and each extensional counterpart is denoted by exactly one intensional concept.",
+      "description": "3se:denotes — IRI of the extensional element that constitutes the extension of this intensional element. Bijective: each intensional element denotes exactly one extensional counterpart, and each extensional counterpart is denoted by exactly one intensional element.",
       "type": "string",
       "format": "uri"
     },
@@ -425,7 +425,7 @@
   },
   "$defs": {
     "conceptRef": {
-      "description": "A reference to another skos:Concept, expressed as either a bare IRI string or an object with an @id and an optional denormalised label.",
+      "description": "A reference to another skos:Concept, expressed as either a bare IRI string or an element with an @id and an optional denormalised label.",
       "oneOf": [
         {
           "type": "string",

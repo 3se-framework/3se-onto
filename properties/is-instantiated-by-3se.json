@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/property.context.jsonld",
+  "@type": "rdf:Property",
+  "title": "is instantiated by - 3SE",
+  "description": "Semantic relation from an extensional element to a concrete element such that the concrete element satisfies all the constraints of the extensional element.",
+  "domain": "skos:Concept",
+  "range": "skos:Concept",
+  "status": "draft"
+}
