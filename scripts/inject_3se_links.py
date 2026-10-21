@@ -361,6 +361,7 @@ def main() -> int:
                 # or a causal elicitation relation (elicits) or a framing relation (frames)
                 # or an involvement relation (involves) or a shaping relation (shapes)
                 # or a trigger relation (triggers) or a denotation relation (denotes)
+                # or an instantiation relation (isInstantiatedBy)
                 # linking them — those relations supersede skos:related
                 src_structural = set()
                 tgt_structural = set()
@@ -368,7 +369,7 @@ def main() -> int:
                               "exposes", "isResponsibleFor", "isAccountableFor", "isSupporting",
                               "produces", "consumes", "conveys", "evaluates", "fires", "hosts", "isVariantOf",
                               "isBoundedBy", "activates", "characterizes", "elicits", "frames", "involves",
-                              "shapes", "triggers", "denotes"):
+                              "shapes", "triggers", "denotes", "isInstantiatedBy"):
                     for uri in (src_data.get(field) or []):
                         src_structural.add(uri)
                     for uri in (tgt_data.get(field) or []):

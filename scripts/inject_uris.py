@@ -12,7 +12,8 @@
 #   subClassOf, isComposedOf, isRepresentedBy, allocates, canBe
 #   produces, consumes, conveys, evaluates, fires, hosts,
 #   isVariantOf, isBoundedBy, "activates", "characterizes",
-#   elicits, frames, involves, shapes, triggers   (array)
+#   elicits, frames, involves, shapes, triggers,
+#   isInstantiatedBy                              (array)
 #   superseded_by, denotes                        (scalar)
 #
 # Fields resolved against the REFERENCES index (references/):
@@ -85,7 +86,8 @@ TERM_ARRAY_FIELDS: list[str] = [
     "frames",
     "involves",
     "shapes",
-    "triggers"
+    "triggers",
+    "isInstantiatedBy"
 ]
 
 # Fields whose plain-string values resolve against the REFERENCES index.

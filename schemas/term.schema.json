@@ -336,6 +336,15 @@
       "type": "string",
       "format": "uri"
     },
+    "isInstantiatedBy": {
+      "description": "3se:isInstantiatedBy — IRIs of concrete elements that instantiate this extensional element. Each concrete element satisfies all the constraints of this extensional element.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "uniqueItems": true
+    },
     "isAccountableFor": {
       "description": "3se:isAccountableFor — IRIs of concepts for which the element is accountable (association relation).",
       "type": "array",
