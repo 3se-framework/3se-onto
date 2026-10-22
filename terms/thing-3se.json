@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Thing - 3SE",
+  "description": "Individual (a particular, unrepeatable instance) or a universal (an instantiated type or class) which instantiates an entity.",
+  "status": "draft",
+  "narrowMatch": [
+    "https://www.3se.info/3se-onto/terms/individual-owl-2"
+  ]
+}

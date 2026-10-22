@@ -16,6 +16,7 @@
     "https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4",
     "https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2"
   ],
+  "denotes": "https://www.3se.info/3se-onto/terms/entity-3se",
   "entryCreated": "2026-10-20",
   "entryModified": "2026-10-20",
   "entryCreator": {
