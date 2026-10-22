@@ -9,7 +9,8 @@
   ],
   "isResponsibleFor": [
     "https://www.3se.info/3se-onto/terms/residual-risk-3se-069c1469f45f7770",
-    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf",
+    "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32"
@@ -59,7 +60,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc",
   "entryCreated": "2026-04-01",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-10-22",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

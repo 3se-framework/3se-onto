@@ -4,5 +4,12 @@
   "title": "OWL 2 Web Ontology Language Structural Specification and Functional-Style Syntax",
   "abstract": "The OWL 2 Web Ontology Language, informally OWL 2, is an ontology language for the Semantic Web with formally defined meaning.",
   "uri": "https://www.w3.org/TR/owl2-syntax/",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/w3c-owl-2-syntax-06ad9ee61fe87953",
+  "entryCreated": "2026-10-22",
+  "entryModified": "2026-10-22",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

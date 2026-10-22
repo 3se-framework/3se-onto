@@ -5,6 +5,13 @@
   "description": "Individual (a particular, unrepeatable instance) or a universal (an instantiated type or class) which instantiates an entity.",
   "status": "draft",
   "narrowMatch": [
-    "https://www.3se.info/3se-onto/terms/individual-owl-2"
-  ]
+    "https://www.3se.info/3se-onto/terms/individual-owl-2-06ad9ee61fce7656"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/thing-3se-06ad9ee61fdb7a73",
+  "entryCreated": "2026-10-22",
+  "entryModified": "2026-10-22",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

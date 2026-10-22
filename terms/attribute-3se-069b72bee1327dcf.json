@@ -12,7 +12,7 @@
     "https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9"
   ],
   "entryCreated": "2026-03-15",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-10-22",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -35,7 +35,8 @@
     "https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e",
     "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3",
     "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780",
-    "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1"
+    "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1",
+    "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",

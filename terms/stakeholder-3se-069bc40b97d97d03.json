@@ -31,10 +31,11 @@
     "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
     "https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6",
     "https://www.3se.info/3se-onto/terms/acceptance-analysis-3se-069f3686ba967baf",
-    "https://www.3se.info/3se-onto/terms/requirement-validation-3se-069b5a912a1a7945"
+    "https://www.3se.info/3se-onto/terms/requirement-validation-3se-069b5a912a1a7945",
+    "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7"
   ],
   "entryCreated": "2026-03-19",
-  "entryModified": "2026-09-27",
+  "entryModified": "2026-10-22",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
