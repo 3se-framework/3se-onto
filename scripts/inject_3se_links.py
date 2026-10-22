@@ -370,10 +370,14 @@ def main() -> int:
                               "produces", "consumes", "conveys", "evaluates", "fires", "hosts", "isVariantOf",
                               "isBoundedBy", "activates", "characterizes", "elicits", "frames", "involves",
                               "shapes", "triggers", "denotes", "isInstantiatedBy"):
-                    for uri in (src_data.get(field) or []):
-                        src_structural.add(uri)
-                    for uri in (tgt_data.get(field) or []):
-                        tgt_structural.add(uri)
+                    for data_, target_set in ((src_data, src_structural), (tgt_data, tgt_structural)):
+                        val = data_.get(field)
+                        if not val:
+                            continue
+                        if isinstance(val, str):
+                            target_set.add(val)
+                        else:
+                            target_set.update(val)
                 if tgt_uri in src_structural or src_uri in tgt_structural:
                     continue
 
