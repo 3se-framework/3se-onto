@@ -156,6 +156,13 @@ CONTEXT_CAUSAL_RELATION_LABELS: dict[str, str] = {
     "characterizes": "Characterizes",
 }
 
+# Human-readable labels for denotation/instantiation relation fields rendered on term pages.
+# denotes is a scalar string (bijective); isInstantiatedBy is an array (many-to-many).
+DENOTATION_RELATION_LABELS: dict[str, str] = {
+    "denotes": "Denotes",
+    "isInstantiatedBy": "Instantiated by",
+}
+
 
 # ---------------------------------------------------------------------------
 # Data helpers
@@ -503,6 +510,87 @@ def build_characterized_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     index: dict[str, list[dict]] = {}
     for term in terms:
         val = term.get("characterizes")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_denoted_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as their denotes target. Inverse: if A denotes B, then B is denoted by A.
+    Note: denotes is a scalar string (bijective), not an array.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("denotes")
+        if not val:
+            continue
+        uri = val if isinstance(val, str) else None
+        if uri:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_instantiates_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isInstantiatedBy target. Inverse: if A isInstantiatedBy B, then B instantiates A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isInstantiatedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_responsible_role_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of role term entries that declare that URI
+    as an isResponsibleFor target. Inverse: if role A isResponsibleFor B, then B has A as responsible role.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isResponsibleFor")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_accountable_role_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of role term entries that declare that URI
+    as an isAccountableFor target. Inverse: if role A isAccountableFor B, then B has A as accountable role.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isAccountableFor")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_supporting_role_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of role term entries that declare that URI
+    as an isSupporting target. Inverse: if role A isSupporting B, then B has A as supporting role.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isSupporting")
         if not val:
             continue
         uris = [val] if isinstance(val, str) else val
@@ -2522,7 +2610,12 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                      triggered_by_index: dict[str, list[dict]] | None = None,
                      elicited_by_index: dict[str, list[dict]] | None = None,
                      involved_in_index: dict[str, list[dict]] | None = None,
-                     characterized_by_index: dict[str, list[dict]] | None = None) -> str:
+                     characterized_by_index: dict[str, list[dict]] | None = None,
+                     denoted_by_index: dict[str, list[dict]] | None = None,
+                     instantiates_index: dict[str, list[dict]] | None = None,
+                     responsible_role_index: dict[str, list[dict]] | None = None,
+                     accountable_role_index: dict[str, list[dict]] | None = None,
+                     supporting_role_index: dict[str, list[dict]] | None = None) -> str:
     title = term.get("title", "*(untitled)*")
     status = term.get("status", "")
     deprecated = term.get("deprecated", False)
@@ -2739,7 +2832,7 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                 f'</tr>'
             )
 
-    # Role relations (isResponsibleFor / isAccountableFor / isSupporting)
+    # Role relations (isResponsibleFor / isAccountableFor / isSupporting) and their inverses
 
     role_html = ""
     for field, label in ROLE_RELATION_LABELS.items():
@@ -2754,6 +2847,22 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
             f'<td>{SEP.join(links)}</td>'
             f'</tr>'
         )
+    for _idx, _label in [
+        (responsible_role_index, "Responsible role"),
+        (accountable_role_index, "Accountable role"),
+        (supporting_role_index, "Supporting role"),
+    ]:
+        if _idx:
+            term_id = term.get("@id", "")
+            _src_terms = _idx.get(term_id, [])
+            if _src_terms:
+                links = [render_uri_link(t.get("@id", "")) for t in _src_terms]
+                role_html += (
+                    f'<tr>'
+                    f'<td>{_label}</td>'
+                    f'<td>{SEP.join(links)}</td>'
+                    f'</tr>'
+                )
 
     # Exposure relations (exposes)
     exposure_html = ""
@@ -2898,6 +3007,36 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                     f'</tr>'
                 )
 
+    # Denotation/instantiation relations (denotes, isInstantiatedBy) and their inverses
+    denotation_html = ""
+    for field, label in DENOTATION_RELATION_LABELS.items():
+        val = term.get(field)
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        links = [render_uri_link(uri) for uri in uris]
+        denotation_html += (
+            f'<tr>'
+            f'<td>{label}</td>'
+            f'<td>{SEP.join(links)}</td>'
+            f'</tr>'
+        )
+    for _idx, _label in [
+        (denoted_by_index, "Denoted by"),
+        (instantiates_index, "Instantiates"),
+    ]:
+        if _idx:
+            term_id = term.get("@id", "")
+            _src_terms = _idx.get(term_id, [])
+            if _src_terms:
+                links = [render_uri_link(t.get("@id", "")) for t in _src_terms]
+                denotation_html += (
+                    f'<tr>'
+                    f'<td>{_label}</td>'
+                    f'<td>{SEP.join(links)}</td>'
+                    f'</tr>'
+                )
+
     match = rel_rows([
         ("exactMatch", "Exact match"), ("closeMatch", "Close match"),
         ("broadMatch", "Broad match"), ("narrowMatch", "Narrow match"),
@@ -2921,28 +3060,30 @@ def render_term_page(term: dict, ref_index: dict, superclass_index: dict | None 
                     f'</tr>'
                 )
     relations_html = ""
-    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match:
+    if hier or bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or denotation_html or match:
         sep1 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if hier and (
-                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
+                bfo_html or role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or denotation_html or match) else ""
         sep2 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if bfo_html and (
-                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
+                role_html or exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or denotation_html or match) else ""
         sep3 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if role_html and (
-                exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
+                exposure_html or flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or denotation_html or match) else ""
         sep4 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if exposure_html and (
-                flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
+                flow_html or evaluation_html or state_transition_html or variability_html or context_causal_html or denotation_html or match) else ""
         sep5 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if flow_html and (
-                evaluation_html or state_transition_html or variability_html or context_causal_html or match) else ""
+                evaluation_html or state_transition_html or variability_html or context_causal_html or denotation_html or match) else ""
         sep6 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if evaluation_html and (
-                state_transition_html or variability_html or context_causal_html or match) else ""
+                state_transition_html or variability_html or context_causal_html or denotation_html or match) else ""
         sep7 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if state_transition_html and (
-                variability_html or context_causal_html or match) else ""
+                variability_html or context_causal_html or denotation_html or match) else ""
         sep8 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if variability_html and (
-                context_causal_html or match) else ""
-        sep9 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if context_causal_html and match else ""
+                context_causal_html or denotation_html or match) else ""
+        sep9 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if context_causal_html and (
+                denotation_html or match) else ""
+        sep10 = '<tr><td colspan="2" style="padding:.25rem 0"></td></tr>' if denotation_html and match else ""
         relations_html = f"""
         <div class="card" style="margin-top:1.5rem">
           <h3 style="margin-bottom:1rem">Relations</h3>
-          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{variability_html}{sep8}{context_causal_html}{sep9}{match}</table>
+          <table class="relations-table">{hier}{sep1}{bfo_html}{sep2}{role_html}{sep3}{exposure_html}{sep4}{flow_html}{sep5}{evaluation_html}{sep6}{state_transition_html}{sep7}{variability_html}{sep8}{context_causal_html}{sep9}{denotation_html}{sep10}{match}</table>
         </div>"""
 
     # isReferencedBy
@@ -3470,6 +3611,11 @@ def main() -> int:
     elicited_by_index = build_elicited_by_index(terms)
     involved_in_index = build_involved_in_index(terms)
     characterized_by_index = build_characterized_by_index(terms)
+    denoted_by_index = build_denoted_by_index(terms)
+    instantiates_index = build_instantiates_index(terms)
+    responsible_role_index = build_responsible_role_index(terms)
+    accountable_role_index = build_accountable_role_index(terms)
+    supporting_role_index = build_supporting_role_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
     skos_match_inverse_index = build_skos_match_inverse_index(terms)
@@ -3549,7 +3695,12 @@ def main() -> int:
                              triggered_by_index,
                              elicited_by_index,
                              involved_in_index,
-                             characterized_by_index), encoding="utf-8"
+                             characterized_by_index,
+                             denoted_by_index,
+                             instantiates_index,
+                             responsible_role_index,
+                             accountable_role_index,
+                             supporting_role_index), encoding="utf-8"
         )
         (out_dir / "index.jsonld").write_text(
             json.dumps(clean_jsonld(term), indent=2, ensure_ascii=False) + "\n",

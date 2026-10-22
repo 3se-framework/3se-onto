@@ -463,6 +463,87 @@ def build_characterized_by_index(terms: list[dict]) -> dict[str, list[dict]]:
     return index
 
 
+def build_denoted_by_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as their denotes target. Inverse: if A denotes B, then B is denoted by A.
+    Note: denotes is a scalar string (bijective), not an array.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("denotes")
+        if not val:
+            continue
+        uri = val if isinstance(val, str) else None
+        if uri:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_instantiates_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of term entries that declare that URI
+    as an isInstantiatedBy target. Inverse: if A isInstantiatedBy B, then B instantiates A.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isInstantiatedBy")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_responsible_role_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of role term entries that declare that URI
+    as an isResponsibleFor target. Inverse: if role A isResponsibleFor B, then B has A as responsible role.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isResponsibleFor")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_accountable_role_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of role term entries that declare that URI
+    as an isAccountableFor target. Inverse: if role A isAccountableFor B, then B has A as accountable role.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isAccountableFor")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
+def build_supporting_role_index(terms: list[dict]) -> dict[str, list[dict]]:
+    """
+    Return a mapping of URI -> list of role term entries that declare that URI
+    as an isSupporting target. Inverse: if role A isSupporting B, then B has A as supporting role.
+    """
+    index: dict[str, list[dict]] = {}
+    for term in terms:
+        val = term.get("isSupporting")
+        if not val:
+            continue
+        uris = [val] if isinstance(val, str) else val
+        for uri in uris:
+            index.setdefault(uri, []).append(term)
+    return index
+
+
 def build_terms_index(terms: list[dict]) -> dict[str, dict]:
     """Return a mapping of @id URI -> term data for all terms."""
     return {t["@id"]: t for t in terms if "@id" in t}
@@ -1420,7 +1501,12 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 triggered_by_index: dict[str, list[dict]] | None = None,
                 elicited_by_index: dict[str, list[dict]] | None = None,
                 involved_in_index: dict[str, list[dict]] | None = None,
-                characterized_by_index: dict[str, list[dict]] | None = None) -> list[str]:
+                characterized_by_index: dict[str, list[dict]] | None = None,
+                denoted_by_index: dict[str, list[dict]] | None = None,
+                instantiates_index: dict[str, list[dict]] | None = None,
+                responsible_role_index: dict[str, list[dict]] | None = None,
+                accountable_role_index: dict[str, list[dict]] | None = None,
+                supporting_role_index: dict[str, list[dict]] | None = None) -> list[str]:
     lines: list[str] = []
 
     title = term.get("title", "*(untitled)*")
@@ -1563,10 +1649,14 @@ def render_term(term: dict, ref_index: dict[str, dict],
         ("elicits", "Elicits"),
         ("involves", "Involves"),
         ("characterizes", "Characterizes"),
+        ("denotes", "Denotes"),
+        ("isInstantiatedBy", "Instantiated by"),
     ]:
         items = term.get(field, [])
         if not items:
             continue
+        if isinstance(items, str):
+            items = [items]
         links = [f"[{uri_to_anchor(uri)}]({uri})" for uri in items]
         relation_rows.append((label, ", ".join(links)))
 
@@ -1723,6 +1813,61 @@ def render_term(term: dict, ref_index: dict[str, dict],
                 for t in characterizing_terms
             ]
             relation_rows.append(("Characterized by", ", ".join(links)))
+
+    # Denoted by (computed inverse of denotes)
+    if denoted_by_index:
+        term_id = term.get("@id", "")
+        denoting_terms = denoted_by_index.get(term_id, [])
+        if denoting_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in denoting_terms
+            ]
+            relation_rows.append(("Denoted by", ", ".join(links)))
+
+    # Instantiates (computed inverse of isInstantiatedBy)
+    if instantiates_index:
+        term_id = term.get("@id", "")
+        instantiated_terms = instantiates_index.get(term_id, [])
+        if instantiated_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in instantiated_terms
+            ]
+            relation_rows.append(("Instantiates", ", ".join(links)))
+
+    # Responsible role (computed inverse of isResponsibleFor)
+    if responsible_role_index:
+        term_id = term.get("@id", "")
+        responsible_terms = responsible_role_index.get(term_id, [])
+        if responsible_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in responsible_terms
+            ]
+            relation_rows.append(("Responsible role", ", ".join(links)))
+
+    # Accountable role (computed inverse of isAccountableFor)
+    if accountable_role_index:
+        term_id = term.get("@id", "")
+        accountable_terms = accountable_role_index.get(term_id, [])
+        if accountable_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in accountable_terms
+            ]
+            relation_rows.append(("Accountable role", ", ".join(links)))
+
+    # Supporting role (computed inverse of isSupporting)
+    if supporting_role_index:
+        term_id = term.get("@id", "")
+        supporting_terms = supporting_role_index.get(term_id, [])
+        if supporting_terms:
+            links = [
+                f"[{uri_to_anchor(t.get('@id', ''))}]({t.get('@id', '')})"
+                for t in supporting_terms
+            ]
+            relation_rows.append(("Supporting role", ", ".join(links)))
 
     if relation_rows:
         lines.append("| Relation | Terms |")
@@ -2101,6 +2246,11 @@ def main() -> int:
     elicited_by_index = build_elicited_by_index(terms)
     involved_in_index = build_involved_in_index(terms)
     characterized_by_index = build_characterized_by_index(terms)
+    denoted_by_index = build_denoted_by_index(terms)
+    instantiates_index = build_instantiates_index(terms)
+    responsible_role_index = build_responsible_role_index(terms)
+    accountable_role_index = build_accountable_role_index(terms)
+    supporting_role_index = build_supporting_role_index(terms)
     terms_index = build_terms_index(terms)
     referenced_terms_index = build_referenced_terms_index(terms, properties)
     skos_match_inverse_index = build_skos_match_inverse_index(terms)
@@ -2197,7 +2347,12 @@ def main() -> int:
                                   triggered_by_index,
                                   elicited_by_index,
                                   involved_in_index,
-                                  characterized_by_index))
+                                  characterized_by_index,
+                                  denoted_by_index,
+                                  instantiates_index,
+                                  responsible_role_index,
+                                  accountable_role_index,
+                                  supporting_role_index))
             md.append("---")
             md.append("")
     else:
@@ -2225,7 +2380,12 @@ def main() -> int:
                                   triggered_by_index,
                                   elicited_by_index,
                                   involved_in_index,
-                                  characterized_by_index))
+                                  characterized_by_index,
+                                  denoted_by_index,
+                                  instantiates_index,
+                                  responsible_role_index,
+                                  accountable_role_index,
+                                  supporting_role_index))
             md.append("---")
             md.append("")
     else:
