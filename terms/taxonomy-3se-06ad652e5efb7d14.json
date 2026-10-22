@@ -2,7 +2,7 @@
   "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
   "@type": "skos:Concept",
   "title": "Taxonomy - 3SE",
-  "description": "Scheme of categories that classifies the entities denoted by a concept according to one criterion, such that the categories do not overlap and together cover all those entities.",
+  "description": "Scheme of categories that classifies the entity denoted by a concept according to one criterion, such that the categories do not overlap.",
   "status": "draft",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/taxonomy-25964-2-2013-06ad6497ed9972a7"
