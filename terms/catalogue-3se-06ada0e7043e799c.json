@@ -1,0 +1,18 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Catalogue - 3SE",
+  "description": "A structured collection of things which instantiate an entity, that is organized into categories and identified for the purpose of selection, reference or traceability.",
+  "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/catalogue-3se-06ada0e7043e799c",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7",
+    "https://www.3se.info/3se-onto/terms/thing-3se-06ad9ee61fdb7a73"
+  ],
+  "entryCreated": "2026-10-22",
+  "entryModified": "2026-10-22",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
