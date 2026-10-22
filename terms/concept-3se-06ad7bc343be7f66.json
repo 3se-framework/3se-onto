@@ -14,8 +14,7 @@
     "https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071",
     "https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14",
     "https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4",
-    "https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2",
-    "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7"
+    "https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2"
   ],
   "denotes": "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7",
   "entryCreated": "2026-10-20",
