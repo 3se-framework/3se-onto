@@ -3,13 +3,13 @@
   "@type": "skos:Concept",
   "title": "Interdependent actor - 3SE",
   "description": "Human being whose interdependent activities within the milieu of the system of interest mutually and durably shape the system activities over time.",
-  "status": "approved",
+  "status": "draft",
   "@id": "https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f",
   "isRepresentedBy": [
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/functional-interdependent-actor-3se-06a29c4e40187a09"
+    "https://www.3se.info/3se-onto/terms/physical-interdependent-actor-3se"
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e",

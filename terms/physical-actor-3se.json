@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Physical actor - 3SE",
+  "description": "Part of an actor responsible for defining the resources to carrying out the functional actor, by interacting with other physical elements of the system.",
+  "status": "draft",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/functional-actor-3se-06a29c01c06975a6"
+  ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a"
+  ]
+}
