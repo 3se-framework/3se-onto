@@ -22,6 +22,10 @@
     "https://www.3se.info/3se-onto/terms/interdependent-state-3se-06a29c4e404d78ed",
     "https://www.3se.info/3se-onto/terms/functional-interdependent-actor-3se-06a29c4e40187a09"
   ],
+  "exposes": [
+    "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
+    "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a"
+  ],
   "entryCreated": "2026-03-24",
   "entryModified": "2026-10-24",
   "entryCreator": {
