@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-10-22 12:52 UTC*
+*Generated on 2026-10-24 17:30 UTC*
 
-This glossary contains **8 3SE domain(s)**, **446 3SE term(s)**, **119 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **33 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **447 3SE term(s)**, **119 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **33 reference(s)**.
 
 ## Contents
 
@@ -33,6 +33,7 @@ This glossary contains **8 3SE domain(s)**, **446 3SE term(s)**, **119 other ter
   - [Attribute variant - 3SE](#attribute-variant---3se)
   - [Breakdown structure - 3SE](#breakdown-structure---3se)
   - [Business owner - 3SE](#business-owner---3se)
+  - [Catalogue - 3SE](#catalogue---3se)
   - [Change - 3SE](#change---3se)
   - [Computational model - 3SE](#computational-model---3se)
   - [Concept - 3SE](#concept---3se)
@@ -760,7 +761,7 @@ This glossary contains **8 3SE domain(s)**, **446 3SE term(s)**, **119 other ter
 
 ## 3SE Terms
 
-*446 term(s) defined by the 3SE framework.*
+*447 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1471,6 +1472,20 @@ graph TD
 ```
 
 *Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
+
+---
+
+### Catalogue - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> A structured collection of things which instantiate an entity, that is organized into categories and identified for the purpose of selection, reference or traceability.
+
+| Relation | Terms |
+|---|---|
+| Related | [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7), [thing-3se-06ad9ee61fdb7a73](https://www.3se.info/3se-onto/terms/thing-3se-06ad9ee61fdb7a73) |
+
+*Created: 2026-10-22 · Modified: 2026-10-22 · Creator: @rcasteran*
 
 ---
 
@@ -2281,7 +2296,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [abstract-model-3se-069d3d55609a75e1](https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [acceptance-case-3se-069f3686baba7c7e](https://www.3se.info/3se-onto/terms/acceptance-case-3se-069f3686baba7c7e), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [attribute-variant-3se-06a8873e373c71af](https://www.3se.info/3se-onto/terms/attribute-variant-3se-06a8873e373c71af), [computational-model-3se-069d3d5560b67ed6](https://www.3se.info/3se-onto/terms/computational-model-3se-069d3d5560b67ed6), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [constraint-validation-3se-06a2726feffc7e13](https://www.3se.info/3se-onto/terms/constraint-validation-3se-06a2726feffc7e13), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [feature-variant-3se-06a8873e37477117](https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117), [functional-validation-3se-06a27237d360762c](https://www.3se.info/3se-onto/terms/functional-validation-3se-06a27237d360762c), [inspection-3se-069b5a9129e67fcd](https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd), [integration-3se-069b5a9129ef793b](https://www.3se.info/3se-onto/terms/integration-3se-069b5a9129ef793b), [mathematical-model-3se-069d3d5560d07a73](https://www.3se.info/3se-onto/terms/mathematical-model-3se-069d3d5560d07a73), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9), [non-functional-validation-3se-06a27237d38c7197](https://www.3se.info/3se-onto/terms/non-functional-validation-3se-06a27237d38c7197), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [requirement-validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/requirement-validation-3se-069b5a912a1a7945), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea), [taxonomy-3se-06ad652e5efb7d14](https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84) |
+| Related | [abstract-model-3se-069d3d55609a75e1](https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1), [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [acceptance-case-3se-069f3686baba7c7e](https://www.3se.info/3se-onto/terms/acceptance-case-3se-069f3686baba7c7e), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [attribute-variant-3se-06a8873e373c71af](https://www.3se.info/3se-onto/terms/attribute-variant-3se-06a8873e373c71af), [computational-model-3se-069d3d5560b67ed6](https://www.3se.info/3se-onto/terms/computational-model-3se-069d3d5560b67ed6), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [constraint-validation-3se-06a2726feffc7e13](https://www.3se.info/3se-onto/terms/constraint-validation-3se-06a2726feffc7e13), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [failure-3se-069bb0f6e7e675e8](https://www.3se.info/3se-onto/terms/failure-3se-069bb0f6e7e675e8), [feature-variant-3se-06a8873e37477117](https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117), [functional-validation-3se-06a27237d360762c](https://www.3se.info/3se-onto/terms/functional-validation-3se-06a27237d360762c), [inspection-3se-069b5a9129e67fcd](https://www.3se.info/3se-onto/terms/inspection-3se-069b5a9129e67fcd), [integration-3se-069b5a9129ef793b](https://www.3se.info/3se-onto/terms/integration-3se-069b5a9129ef793b), [mathematical-model-3se-069d3d5560d07a73](https://www.3se.info/3se-onto/terms/mathematical-model-3se-069d3d5560d07a73), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9), [non-functional-validation-3se-06a27237d38c7197](https://www.3se.info/3se-onto/terms/non-functional-validation-3se-06a27237d38c7197), [requirement-3se-069b48ef5d727ceb](https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb), [requirement-validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/requirement-validation-3se-069b5a912a1a7945), [risk-analysis-3se-069bda7c99d17d32](https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea), [taxonomy-3se-06ad652e5efb7d14](https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14), [test-3se-069b5a912a117976](https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [validation-3se-069b5a912a1a7945](https://www.3se.info/3se-onto/terms/validation-3se-069b5a912a1a7945), [variant-3se-06a8873e39297fe5](https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5), [weakness-3se-069c1a2fb90073ea](https://www.3se.info/3se-onto/terms/weakness-3se-069c1a2fb90073ea), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [catalogue-3se-06ada0e7043e799c](https://www.3se.info/3se-onto/terms/catalogue-3se-06ada0e7043e799c) |
 | Subclass of | [entity-bfo-2-0-06ad9ee61fc17fa6](https://www.3se.info/3se-onto/terms/entity-bfo-2-0-06ad9ee61fc17fa6) |
 | Instantiated by | [thing-3se-06ad9ee61fdb7a73](https://www.3se.info/3se-onto/terms/thing-3se-06ad9ee61fdb7a73) |
 | Denoted by | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
@@ -3178,17 +3193,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N21 -.->|allocates| N14
     N13 -.->|allocates| N14
-    N19 -.->|allocates| N17
     N18 -.->|allocates| N14
+    N21 -.->|allocates| N14
     N3 -.->|allocates| N21
     N20 -.->|allocates| N16
-    N8 -->|subclass of| N4
-    N9 -->|subclass of| N4
-    N10 -->|subclass of| N4
-    N11 -->|subclass of| N10
+    N19 -.->|allocates| N17
     N12 -->|subclass of| N10
+    N10 -->|subclass of| N4
+    N9 -->|subclass of| N4
+    N8 -->|subclass of| N4
+    N11 -->|subclass of| N10
 ```
 
 **Architecture**
@@ -3634,8 +3649,8 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
+    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
     N3 -.->|allocates| N11
 ```
@@ -6650,8 +6665,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N6 -->|subclass of| N11
     N4 -->|subclass of| N7
+    N6 -->|subclass of| N11
 ```
 
 *Created: 2026-03-24 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -6840,7 +6855,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependent-system-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-system-function-3se-069fdd89b3d17bf5), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [interdependent-system-functional-element-3se-069fde073fce78a5](https://www.3se.info/3se-onto/terms/interdependent-system-functional-element-3se-069fde073fce78a5), [interdependent-system-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-system-state-3se-069fde073ffb7cc5), [interdependent-system-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477) |
+| Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34), [interdependent-system-function-3se-069fdd89b3d17bf5](https://www.3se.info/3se-onto/terms/interdependent-system-function-3se-069fdd89b3d17bf5), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [interdependent-system-functional-element-3se-069fde073fce78a5](https://www.3se.info/3se-onto/terms/interdependent-system-functional-element-3se-069fde073fce78a5), [interdependent-system-state-3se-069fde073ffb7cc5](https://www.3se.info/3se-onto/terms/interdependent-system-state-3se-069fde073ffb7cc5), [interdependent-system-activity-3se-069fdd89b3c87477](https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477), [system-element-interface-3se-069cd5b860d1741a](https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a) |
 | Subclass of | [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Allocates | [interdependent-system-physical-element-3se-069fde073ff3729e](https://www.3se.info/3se-onto/terms/interdependent-system-physical-element-3se-069fde073ff3729e) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
@@ -6875,7 +6890,7 @@ graph TD
     N5 -.->|allocates| N6
 ```
 
-*Created: 2026-03-24 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-24 · Modified: 2026-10-24 · Creator: @rcasteran*
 
 ---
 
@@ -7751,15 +7766,15 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N5 -.->|allocates| N3
-    N2 -.->|allocates| N15
     N14 -.->|allocates| N15
+    N2 -.->|allocates| N15
+    N5 -.->|allocates| N3
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N12 -->|subclass of| N11
     N9 -->|subclass of| N8
-    N13 -->|subclass of| N11
     N11 -->|subclass of| N8
+    N13 -->|subclass of| N11
+    N12 -->|subclass of| N11
     N10 -->|subclass of| N8
 ```
 
@@ -8920,8 +8935,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9511,6 +9526,8 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
     N13 -.->|allocates| N9
@@ -9518,10 +9535,8 @@ graph TD
     N13 -.->|allocates| N12
     N7 -.->|allocates| N2
     N7 -.->|allocates| N3
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
-    N2 -->|subclass of| N8
     N3 -->|subclass of| N13
+    N2 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12072,8 +12087,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -12238,9 +12253,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12847,8 +12862,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N4 -.->|allocates| N7
-    N5 -.->|allocates| N6
     N3 -.->|allocates| N8
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -15662,9 +15677,9 @@ graph TD
     N8 -.->|can be| N3
     N7 -.->|allocates| N5
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
     N10 -.->|allocates| N14
     N6 -.->|allocates| N5
-    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16566,13 +16581,13 @@ graph TD
 
 ### System element interface - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Boundary across which two system elements and/or enabling systems and/or actors meet and exchange flows.
+> Boundary across which two system elements and/or enabling systems and/or interdependent systems and/or actors meet and exchange flows.
 
 | Relation | Terms |
 |---|---|
-| Related | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
+| Related | [functional-interface-3se-069bc53af258726b](https://www.3se.info/3se-onto/terms/functional-interface-3se-069bc53af258726b), [system-interface-breakdown-structure-3se-069cd5b860b47815](https://www.3se.info/3se-onto/terms/system-interface-breakdown-structure-3se-069cd5b860b47815), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617) |
 | Subclass of | [role-bfo-2-0-069f666ab53d7732](https://www.3se.info/3se-onto/terms/role-bfo-2-0-069f666ab53d7732) |
 | Allocates | [physical-interface-3se-069bd66fb639714a](https://www.3se.info/3se-onto/terms/physical-interface-3se-069bd66fb639714a), [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-interface-attribute-3se-069ebbb4e70678ed](https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed) |
 | Can be | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
@@ -16636,7 +16651,7 @@ graph TD
     N16 -.->|allocates| N5
 ```
 
-*Created: 2026-04-01 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-10-24 · Creator: @rcasteran*
 
 ---
 
@@ -17177,21 +17192,21 @@ graph TD
     N17 -.->|exposes| N37
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
-    N18 -.->|allocates| N25
     N35 -.->|allocates| N2
-    N30 -->|subclass of| N33
     N27 -.->|allocates| N23
-    N37 -.->|allocates| N23
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
-    N16 -.->|allocates| N11
-    N2 -->|subclass of| N33
-    N28 -.->|allocates| N30
-    N9 -.->|allocates| N4
+    N30 -->|subclass of| N33
     N21 -.->|exposes| N36
+    N9 -.->|allocates| N4
+    N37 -.->|allocates| N23
+    N2 -->|subclass of| N33
+    N16 -.->|allocates| N11
+    N28 -.->|allocates| N30
+    N18 -.->|allocates| N25
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -18786,9 +18801,9 @@ graph TD
 
 ### System interface - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Boundary across which two systems and/or enabling systems and/or actors meet and exchange flows.
+> Boundary across which two systems and/or enabling systems and/or interdependent systems and/or actors meet and exchange flows.
 
 | Relation | Terms |
 |---|---|
@@ -18810,7 +18825,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-10-24 · Creator: @rcasteran*
 
 ---
 
@@ -19017,14 +19032,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
     N14 -.->|allocates| N12
-    N15 -.->|exposes| N1
     N16 -.->|allocates| N4
-    N13 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N13 -.->|allocates| N12
     N2 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N15 -.->|exposes| N1
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19613,25 +19628,25 @@ graph TD
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
-    N39 -->|subclass of| N38
     N29 -.->|allocates| N22
     N29 -.->|allocates| N37
+    N43 -->|subclass of| N41
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
-    N27 -.->|allocates| N20
-    N32 -.->|allocates| N2
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
     N5 -.->|allocates| N37
     N5 -.->|allocates| N2
-    N28 -.->|allocates| N19
-    N40 -->|subclass of| N38
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
     N44 -.->|allocates| N2
     N41 -->|subclass of| N38
-    N42 -->|subclass of| N41
-    N43 -->|subclass of| N41
     N38 -.->|allocates| N1
+    N32 -.->|allocates| N2
+    N40 -->|subclass of| N38
+    N39 -->|subclass of| N38
+    N28 -.->|allocates| N19
+    N42 -->|subclass of| N41
+    N27 -.->|allocates| N20
 ```
 
 *Created: 2026-04-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20087,11 +20102,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
-    N4 -.->|allocates| N8
+    N14 -.->|allocates| N9
     N11 -.->|allocates| N12
     N15 -.->|allocates| N12
-    N14 -.->|allocates| N9
+    N4 -.->|allocates| N8
+    N13 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20674,27 +20689,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N2 -.->|allocates| N8
-    N2 -.->|allocates| N10
-    N2 -.->|allocates| N12
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
-    N16 -.->|allocates| N10
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
     N8 -.->|allocates| N15
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
-    N4 -.->|allocates| N23
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
+    N16 -.->|allocates| N10
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N4 -.->|allocates| N23
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
+    N2 -.->|allocates| N8
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N12
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20937,7 +20952,7 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Scheme of categories that classifies the entities denoted by a concept according to one criterion, such that the categories do not overlap and together cover all those entities.
+> Scheme of categories that classifies the entity denoted by a concept according to one criterion, such that the categories do not overlap.
 
 | Relation | Terms |
 |---|---|
@@ -21001,6 +21016,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
+| Related | [catalogue-3se-06ada0e7043e799c](https://www.3se.info/3se-onto/terms/catalogue-3se-06ada0e7043e799c) |
 | Narrow match | [individual-owl-2-06ad9ee61fce7656](https://www.3se.info/3se-onto/terms/individual-owl-2-06ad9ee61fce7656) |
 | Instantiates | [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7) |
 
@@ -21505,35 +21521,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
-    N10 -.->|allocates| N19
     N3 -.->|allocates| N45
     N3 -.->|allocates| N46
+    N23 -.->|allocates| N19
     N26 -.->|allocates| N15
     N26 -.->|allocates| N17
-    N23 -.->|allocates| N19
-    N43 -.->|allocates| N12
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
     N11 -.->|allocates| N19
     N11 -.->|allocates| N20
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
     N33 -.->|allocates| N23
     N33 -.->|allocates| N19
+    N22 -.->|allocates| N32
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N43 -.->|allocates| N12
+    N10 -.->|allocates| N19
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N22 -.->|allocates| N32
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
