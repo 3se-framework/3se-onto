@@ -43,6 +43,7 @@ Beyond mapping to engineering standards, 3SE terms are progressively anchored in
 |--------------------------|------------------------------------------|
 | Activity                 | Process                                  |
 | Attribute                | Quality                                  |
+| Event                    | Process                                  |
 | Exchange                 | Generically dependent continuant         |
 | Feature                  | Disposition                              |
 | Flow                     | Generically dependent continuant         |
@@ -65,7 +66,9 @@ Beyond mapping to engineering standards, 3SE terms are progressively anchored in
 
 | 3SE property | RO property |
 |---|---|
+| elicits | causally upstream of |
 | hosts | location of |
+| triggers | causally upstream of |
 
 ## Domains
 
@@ -89,7 +92,7 @@ The ontology is organised into ten engineering domains. Each domain is a `skos:C
 domains/        — one JSON-LD file per engineering domain (skos:Collection)
 terms/          — one JSON-LD file per term (3SE and external)
 references/     — one JSON-LD file per bibliographic reference
-properties/     — one JSON-LD file per typed relation (allocates, produces, fires, ...)
+properties/     — one JSON-LD file per typed relation (allocates, produces, fires, shapes, activates, frames, triggers, elicits, involves, characterizes, ...)
 schemas/        — JSON Schema files for validation
 scripts/        — CI/CD pipeline scripts
 .github/        — GitHub Actions workflows
