@@ -13,7 +13,7 @@
   },
   "@id": "https://www.3se.info/3se-onto/terms/project-3se-069b48ef5d5877bf",
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-11-01",
   "allocates": [
     "https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595"
   ],
@@ -25,6 +25,7 @@
     "https://www.3se.info/3se-onto/terms/project-risk-3se-069bda7c99c176e4",
     "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d",
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
-    "https://www.3se.info/3se-onto/terms/work-product-3se-06a35018276471ea"
+    "https://www.3se.info/3se-onto/terms/work-product-3se-06a35018276471ea",
+    "https://www.3se.info/3se-onto/terms/project-opportunity-3se-06ae7841102c7494"
   ]
 }

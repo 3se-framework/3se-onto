@@ -17,13 +17,14 @@
     "https://www.3se.info/3se-onto/terms/value-breakdown-structure-3se-069d6aadc05c7722",
     "https://www.3se.info/3se-onto/terms/safety-service-3se-069da08be5747c58",
     "https://www.3se.info/3se-onto/terms/security-service-3se-069da08be5957ee2",
-    "https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4"
+    "https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4",
+    "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608"
   ],
   "entryCreated": "2026-04-07",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-11-01",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

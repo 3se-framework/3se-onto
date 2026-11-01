@@ -9,7 +9,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf",
   "entryCreated": "2026-03-14",
-  "entryModified": "2026-09-18",
+  "entryModified": "2026-11-01",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -17,6 +17,7 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/risk-analysis-3se-069bda7c99d17d32",
     "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780",
-    "https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1"
+    "https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1",
+    "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d"
   ]
 }

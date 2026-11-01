@@ -33,7 +33,8 @@
     "https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34",
     "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477",
     "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043",
-    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf"
+    "https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf",
+    "https://www.3se.info/3se-onto/terms/opportunity-3se-06ae784110037f2e"
   ],
   "isAccountableFor": [
     "https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c",
@@ -84,7 +85,7 @@
     "https://www.3se.info/3se-onto/terms/system-element-req-model-3se-06aac13a4035725f"
   ],
   "entryCreated": "2026-03-25",
-  "entryModified": "2026-10-29",
+  "entryModified": "2026-11-01",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

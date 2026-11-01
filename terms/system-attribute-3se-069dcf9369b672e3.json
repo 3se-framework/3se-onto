@@ -13,10 +13,11 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
-    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a"
+    "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
+    "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d"
   ],
   "entryCreated": "2026-04-13",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-11-01",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -8,5 +8,12 @@
     "name": "Project Management Institute"
   },
   "date": "2024",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/pmi-lexicon-4-0-2024-06ae7841104e72d8",
+  "entryCreated": "2026-11-01",
+  "entryModified": "2026-11-01",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

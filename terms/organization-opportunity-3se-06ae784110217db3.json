@@ -5,6 +5,13 @@
   "description": "Opportunity related to a favorable evolution of the organization governance and mission (funding, legal...).",
   "status": "draft",
   "subClassOf": [
-    "https://www.3se.info/3se-onto/terms/opportunity-3se"
-  ]
+    "https://www.3se.info/3se-onto/terms/opportunity-3se-06ae784110037f2e"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/organization-opportunity-3se-06ae784110217db3",
+  "entryCreated": "2026-11-01",
+  "entryModified": "2026-11-01",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
