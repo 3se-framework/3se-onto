@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-11-01 18:30 UTC*
+*Generated on 2026-11-01 18:52 UTC*
 
 This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **34 reference(s)**.
 
@@ -1128,7 +1128,7 @@ graph TD
 | [Interdependence analysis](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780) | - | S | - | S | S | - | A | - | S | S |
 | [Iteration analysis](https://www.3se.info/3se-onto/terms/iteration-analysis-3se-069b9d2c8db57db4) | - | - | A | - | S | S | S | - | - | - |
 | [Operational analysis](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c) | - | S | - | S | S | S | A | S | S | S |
-| [Opportunity analysis](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d) | - | - | - | - | - | - | - | - | - | - |
+| [Opportunity analysis](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d) | S | S | S | S | S | S | S | S | A | S |
 | [Physical architecture](https://www.3se.info/3se-onto/terms/physical-architecture-3se-069b9d2c8dc67374) | - | - | - | - | A | S | S | S | S | S |
 | [Product analysis](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d) | - | A | - | - | S | S | - | - | - | - |
 | [Product architecture](https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9) | - | S | - | - | A | S | S | S | S | S |
@@ -1469,10 +1469,10 @@ graph TD
 
 ### Business owner - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the goal analysis and the value analysis.
-It contributes to the feature analysis, the stakeholder requirement analysis and the risk analysis.
+It contributes to the feature analysis, the stakeholder requirement analysis, the risk analysis and the opportunity analysis.
 
 | Relation | Terms |
 |---|---|
@@ -1488,7 +1488,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -1824,7 +1824,7 @@ graph TD
 | Related | [actor-3se-069c1a2fb8cb746f](https://www.3se.info/3se-onto/terms/actor-3se-069c1a2fb8cb746f), [demonstration-3se-069b5a9129d57eb1](https://www.3se.info/3se-onto/terms/demonstration-3se-069b5a9129d57eb1), [safety-risk-analysis-3se-069c1ab34ba5783e](https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e), [security-risk-analysis-3se-069c1ab34bae7b50](https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [enabling-system-3se-069b9d2c8d64720e](https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e), [interdependent-actor-3se-069c2e3021be796f](https://www.3se.info/3se-onto/terms/interdependent-actor-3se-069c2e3021be796f), [interdependent-system-3se-069c2e3021d47617](https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617), [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [failure-and-effect-analysis-3se-06a42cbd0bd47657](https://www.3se.info/3se-onto/terms/failure-and-effect-analysis-3se-06a42cbd0bd47657), [weakness-and-effect-analysis-3se-06a42cbd0c0d70a2](https://www.3se.info/3se-onto/terms/weakness-and-effect-analysis-3se-06a42cbd0c0d70a2), [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1), [favorable-event-3se-06ae78410ff870c3](https://www.3se.info/3se-onto/terms/favorable-event-3se-06ae78410ff870c3), [opportunity-analysis-3se-06ae7841100d7f9d](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d) |
 | Frames | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Activated by | [milieu-3se-069c1b6f06a77b34](https://www.3se.info/3se-onto/terms/milieu-3se-069c1b6f06a77b34) |
-| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 *Created: 2026-03-23 · Modified: 2026-11-01 · Creator: @rcasteran*
 
@@ -2683,6 +2683,7 @@ graph TD
 | Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [opportunity-3se-06ae784110037f2e](https://www.3se.info/3se-onto/terms/opportunity-3se-06ae784110037f2e), [opportunity-analysis-3se-06ae7841100d7f9d](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d) |
 | Subclass of | [event-3se-06aad5b3725471a1](https://www.3se.info/3se-onto/terms/event-3se-06aad5b3725471a1) |
 | Triggers | [promising-situation-3se-06ae78411036741e](https://www.3se.info/3se-onto/terms/promising-situation-3se-06ae78411036741e) |
+| Responsible role | [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -3273,17 +3274,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N19 -.->|allocates| N17
-    N21 -.->|allocates| N14
-    N3 -.->|allocates| N21
     N20 -.->|allocates| N16
     N13 -.->|allocates| N14
+    N21 -.->|allocates| N14
     N18 -.->|allocates| N14
+    N19 -.->|allocates| N17
+    N3 -.->|allocates| N21
     N12 -->|subclass of| N10
-    N8 -->|subclass of| N4
-    N11 -->|subclass of| N10
     N10 -->|subclass of| N4
     N9 -->|subclass of| N4
+    N11 -->|subclass of| N10
+    N8 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -3729,10 +3730,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
     N6 -.->|allocates| N13
     N11 -.->|allocates| N10
-    N7 -.->|allocates| N10
+    N3 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -5014,8 +5015,8 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N3 -.->|allocates| N8
-    N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -6748,8 +6749,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N6 -->|subclass of| N11
     N4 -->|subclass of| N7
+    N6 -->|subclass of| N11
 ```
 
 *Created: 2026-03-24 · Modified: 2026-11-01 · Creator: @rcasteran*
@@ -7736,7 +7737,7 @@ graph TD
 | Related | [favorable-event-3se-06ae78410ff870c3](https://www.3se.info/3se-onto/terms/favorable-event-3se-06ae78410ff870c3), [interdependence-analysis-3se-069c316c191c7780](https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780), [opportunity-analysis-3se-06ae7841100d7f9d](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Superclass of | [engineering-opportunity-3se-06ae78410faf714d](https://www.3se.info/3se-onto/terms/engineering-opportunity-3se-06ae78410faf714d), [organization-opportunity-3se-06ae784110217db3](https://www.3se.info/3se-onto/terms/organization-opportunity-3se-06ae784110217db3), [project-opportunity-3se-06ae7841102c7494](https://www.3se.info/3se-onto/terms/project-opportunity-3se-06ae7841102c7494), [residual-opportunity-3se-06ae7841104077b7](https://www.3se.info/3se-onto/terms/residual-opportunity-3se-06ae7841104077b7) |
 | Involved in | [promising-situation-3se-06ae78411036741e](https://www.3se.info/3se-onto/terms/promising-situation-3se-06ae78411036741e) |
-| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -7780,6 +7781,8 @@ It includes the following steps:
 |---|---|
 | Related | [context-3se-069c1b6f066d7c1e](https://www.3se.info/3se-onto/terms/context-3se-069c1b6f066d7c1e), [favorable-event-3se-06ae78410ff870c3](https://www.3se.info/3se-onto/terms/favorable-event-3se-06ae78410ff870c3), [opportunity-3se-06ae784110037f2e](https://www.3se.info/3se-onto/terms/opportunity-3se-06ae784110037f2e), [promising-situation-3se-06ae78411036741e](https://www.3se.info/3se-onto/terms/promising-situation-3se-06ae78411036741e), [residual-opportunity-3se-06ae7841104077b7](https://www.3se.info/3se-onto/terms/residual-opportunity-3se-06ae7841104077b7), [risk-3se-069b5b3d9eda7fcf](https://www.3se.info/3se-onto/terms/risk-3se-069b5b3d9eda7fcf), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3), [system-constraint-3se-069be64e188b7d26](https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf), [system-functional-req-3se-069be64e189d7ee9](https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9), [system-non-functional-req-3se-069be64e18a67d6e](https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4) |
 | Subclass of | [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+| Accountable role | [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
+| Supporting role | [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44), [product-owner-3se-069c451bef057221](https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221), [project-owner-3se-069c451bef0d7f06](https://www.3se.info/3se-onto/terms/project-owner-3se-069c451bef0d7f06), [service-owner-3se-069c5aee6a3d714d](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d), [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-configuration-engineer-3se-069c451bef2e74e7](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-quality-engineer-3se-06a49189cbed7a22](https://www.3se.info/3se-onto/terms/system-quality-engineer-3se-06a49189cbed7a22), [system-validation-engineer-3se-069c451bef3c7b63](https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63) |
 
 **Classification**
 
@@ -8010,13 +8013,13 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N5 -.->|allocates| N3
     N14 -.->|allocates| N15
     N2 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N10 -->|subclass of| N8
+    N5 -.->|allocates| N3
     N13 -->|subclass of| N11
+    N10 -->|subclass of| N8
     N9 -->|subclass of| N8
     N12 -->|subclass of| N11
     N11 -->|subclass of| N8
@@ -9214,8 +9217,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9375,9 +9378,9 @@ graph TD
     N9 -.->|allocates| N16
     N9 -.->|allocates| N11
     N17 -.->|represented by| N9
-    N10 -->|subclass of| N1
     N17 -.->|allocates| N10
     N17 -.->|allocates| N11
+    N10 -->|subclass of| N1
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9434,7 +9437,7 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the feature analysis, the product analysis and the release analysis.
-It contributes to the value analysis, the goal analysis, the operational analysis, the interdependence analysis, the variability analysis and the risk analysis.
+It contributes to the value analysis, the goal analysis, the operational analysis, the interdependence analysis, the variability analysis, the risk analysis and the opportunity analysis.
 Note: when the product is an asset, the product owner is also called asset owner
 
 | Relation | Terms |
@@ -9452,7 +9455,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-10-29 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -9656,10 +9659,10 @@ graph TD
 
 ### Project owner - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the project analysis, the iteration analysis, the epic analysis and the task analysis.
-It contributes to the risk analysis and the release analysis.
+It contributes to the risk analysis, the opportunity analysis and the release analysis.
 
 | Relation | Terms |
 |---|---|
@@ -9675,7 +9678,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -9717,6 +9720,7 @@ graph TD
 | Subclass of | [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9) |
 | Involves | [opportunity-3se-06ae784110037f2e](https://www.3se.info/3se-onto/terms/opportunity-3se-06ae784110037f2e) |
 | Triggered by | [favorable-event-3se-06ae78410ff870c3](https://www.3se.info/3se-onto/terms/favorable-event-3se-06ae78410ff870c3) |
+| Responsible role | [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -9858,17 +9862,17 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N2 -->|subclass of| N8
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N3 -->|subclass of| N13
+    N2 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -10112,6 +10116,7 @@ graph TD
 |---|---|
 | Related | [opportunity-analysis-3se-06ae7841100d7f9d](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d) |
 | Subclass of | [opportunity-3se-06ae784110037f2e](https://www.3se.info/3se-onto/terms/opportunity-3se-06ae784110037f2e) |
+| Responsible role | [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -10275,16 +10280,16 @@ graph TD
 
 | Role | Acceptance analysis | Epic analysis | Feature analysis | Functional architecture | Goal analysis | Hardware architecture | Interdependence analysis | Iteration analysis | Operational analysis | Opportunity analysis | Physical architecture | Product analysis | Product architecture | Project analysis | Release analysis | Risk analysis | Service analysis | Service architecture | Software architecture | Stakeholder requirement analysis | Stakeholder validation analysis | System architecture | System attribute analysis | System element requirement analysis | System functional analysis | System requirement analysis | System validation analysis | System verification analysis | Task analysis | Value analysis | Variability analysis | Feature breakdown structure | Functional element attribute breakdown structure | Functional element breakdown structure | Goal breakdown structure | Hardware block breakdown structure | Hardware breakdown structure | Hardware interface breakdown structure | Hardware state breakdown structure | Physical element attribute breakdown structure | Physical element breakdown structure | Product breakdown structure | Service breakdown structure | Software breakdown structure | Software component breakdown structure | Software interface breakdown structure | Software state breakdown structure | Stakeholder requirement breakdown structure | System attribute breakdown structure | System breakdown structure | System element requirement breakdown structure | System function attribute breakdown structure | System function breakdown structure | System interface attribute breakdown structure | System interface breakdown structure | System requirement breakdown structure | System state attribute breakdown structure | System state breakdown structure | System variant breakdown structure | Value breakdown structure | Feature model | Functional architecture model | Goal model | Operating model | Physical architecture model | Product architecture model | Service architecture model | Stakeholder requirement model | System architecture model | System attribute model | System element requirement model | System function model | System requirement model | System variability model | Value model |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Business owner](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44) | - | - | S | - | A | - | - | - | - | - | - | - | - | - | - | S | - | - | - | S | - | - | - | - | - | - | - | - | - | A | - | S | - | - | A | - | - | - | - | - | - | - | - | - | - | - | - | S | - | - | - | - | - | - | - | - | - | - | - | A | S | - | A | - | - | - | - | S | - | - | - | - | - | - | A |
-| [Product owner](https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221) | - | - | A | - | S | - | S | - | S | - | - | A | S | - | A | S | - | - | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | - | S | - | - | - | - | - | - | S | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | S | S | - | S | - | - | - | - | - | - | - | S | S |
-| [Project owner](https://www.3se.info/3se-onto/terms/project-owner-3se-069c451bef0d7f06) | - | A | - | - | - | - | - | A | - | - | - | - | - | A | S | S | - | - | - | - | - | - | - | - | - | - | - | - | A | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-| [Service owner](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d) | - | - | A | - | S | - | S | - | S | - | - | - | - | - | A | S | A | S | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | - | S | - | - | - | - | - | - | - | S | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | S | S | - | - | S | - | - | - | - | - | - | S | S |
-| [System architect](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) | - | S | - | A | - | - | S | S | S | - | A | S | A | - | - | S | S | A | - | S | - | A | A | A | S | A | S | - | - | - | - | - | A | A | - | - | - | - | - | A | A | A | A | - | - | - | - | S | A | A | A | S | S | A | A | A | A | A | - | - | - | A | - | S | A | A | A | S | A | A | A | S | A | - | - |
-| [System configuration engineer](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7) | - | S | S | S | - | - | - | S | S | - | S | S | S | S | S | S | S | S | - | S | - | S | S | S | S | S | S | - | S | - | A | S | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | A | - | S | S | - | S | S | S | S | S | S | S | S | S | S | A | - |
-| [System engineer](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) | - | S | - | S | - | - | A | S | A | - | S | - | S | - | - | S | - | S | - | A | - | S | S | S | A | S | S | - | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | A | S | S | S | A | A | S | S | S | S | S | - | - | - | S | - | A | S | S | S | A | S | S | S | A | S | - | - |
-| [System quality engineer](https://www.3se.info/3se-onto/terms/system-quality-engineer-3se-06a49189cbed7a22) | - | S | - | S | - | - | - | - | S | - | S | - | S | S | S | S | - | S | - | S | - | S | S | S | S | S | - | A | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | - | - | S | - | S | S | S | S | S | S | S | S | S | S | - | - |
-| [System risk engineer](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) | - | - | - | S | - | - | S | - | S | - | S | - | S | - | - | A | - | S | - | S | - | S | S | S | S | S | S | - | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | - | - | S | - | S | S | S | S | S | S | S | S | S | S | - | - |
-| [System validation engineer](https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63) | - | S | - | S | - | - | S | - | S | - | S | - | S | - | - | S | - | S | - | S | A | S | S | S | S | S | A | - | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | - | - | S | - | S | S | S | S | S | S | S | S | S | S | - | - |
+| [Business owner](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44) | - | - | S | - | A | - | - | - | - | S | - | - | - | - | - | S | - | - | - | S | - | - | - | - | - | - | - | - | - | A | - | S | - | - | A | - | - | - | - | - | - | - | - | - | - | - | - | S | - | - | - | - | - | - | - | - | - | - | - | A | S | - | A | - | - | - | - | S | - | - | - | - | - | - | A |
+| [Product owner](https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221) | - | - | A | - | S | - | S | - | S | S | - | A | S | - | A | S | - | - | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | - | S | - | - | - | - | - | - | S | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | S | S | - | S | - | - | - | - | - | - | - | S | S |
+| [Project owner](https://www.3se.info/3se-onto/terms/project-owner-3se-069c451bef0d7f06) | - | A | - | - | - | - | - | A | - | S | - | - | - | A | S | S | - | - | - | - | - | - | - | - | - | - | - | - | A | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| [Service owner](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d) | - | - | A | - | S | - | S | - | S | S | - | - | - | - | A | S | A | S | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | - | S | - | - | - | - | - | - | - | S | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | S | S | A | - | S | S | - | - | S | - | - | - | - | - | - | S | S |
+| [System architect](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) | - | S | - | A | - | - | S | S | S | S | A | S | A | - | - | S | S | A | - | S | - | A | A | A | S | A | S | - | - | - | - | - | A | A | - | - | - | - | - | A | A | A | A | - | - | - | - | S | A | A | A | S | S | A | A | A | A | A | - | - | - | A | - | S | A | A | A | S | A | A | A | S | A | - | - |
+| [System configuration engineer](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7) | - | S | S | S | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | S | - | S | S | S | S | S | S | - | S | - | A | S | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | A | - | S | S | - | S | S | S | S | S | S | S | S | S | S | A | - |
+| [System engineer](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) | - | S | - | S | - | - | A | S | A | S | S | - | S | - | - | S | - | S | - | A | - | S | S | S | A | S | S | - | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | A | S | S | S | A | A | S | S | S | S | S | - | - | - | S | - | A | S | S | S | A | S | S | S | A | S | - | - |
+| [System quality engineer](https://www.3se.info/3se-onto/terms/system-quality-engineer-3se-06a49189cbed7a22) | - | S | - | S | - | - | - | - | S | S | S | - | S | S | S | S | - | S | - | S | - | S | S | S | S | S | - | A | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | - | - | S | - | S | S | S | S | S | S | S | S | S | S | - | - |
+| [System risk engineer](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) | - | - | - | S | - | - | S | - | S | A | S | - | S | - | - | A | - | S | - | S | - | S | S | S | S | S | S | - | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | - | - | S | - | S | S | S | S | S | S | S | S | S | S | - | - |
+| [System validation engineer](https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63) | - | S | - | S | - | - | S | - | S | S | S | - | S | - | - | S | - | S | - | S | A | S | S | S | S | S | A | - | - | - | - | - | S | S | - | - | - | - | - | S | S | S | S | - | - | - | - | S | S | S | S | S | S | S | S | S | S | S | - | - | - | S | - | S | S | S | S | S | S | S | S | S | S | - | - |
 
 *R: responsible · A: accountable · S: supporting · -: none*
 
@@ -12444,8 +12449,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -12757,7 +12762,7 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the feature analysis, the service analysis and the release analysis.
-It contributes to the value analysis, the goal analysis, the operational analysis, the interdependence analysis, the variability analysis and the risk analysis.
+It contributes to the value analysis, the goal analysis, the operational analysis, the interdependence analysis, the variability analysis, the risk analysis and the opportunity analysis.
 Note: when the service is an asset, the service owner is also called asset owner
 
 | Relation | Terms |
@@ -12775,7 +12780,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-10-29 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -13220,9 +13225,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -15066,7 +15071,7 @@ graph TD
 | Allocates | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399), [system-state-3se-069c98e0564a72af](https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Exposes | [system-interface-3se-069bd66fb6547971](https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971) |
 | Has variant | [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
-| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-configuration-engineer-3se-069c451bef2e74e7](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-quality-engineer-3se-06a49189cbed7a22](https://www.3se.info/3se-onto/terms/system-quality-engineer-3se-06a49189cbed7a22) |
+| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-configuration-engineer-3se-069c451bef2e74e7](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-quality-engineer-3se-06a49189cbed7a22](https://www.3se.info/3se-onto/terms/system-quality-engineer-3se-06a49189cbed7a22), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -15142,7 +15147,7 @@ graph TD
 | Consumes | [exchange-3se-069bc4ea5316749f](https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f) |
 | Allocated by | [system-function-3se-069be64e18947ea8](https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8) |
 | Has variant | [system-activity-variant-3se-06a8873e38137fb6](https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6) |
-| Responsible role | [system-configuration-engineer-3se-069c451bef2e74e7](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [system-configuration-engineer-3se-069c451bef2e74e7](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -15261,7 +15266,7 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the functional architecture, the physical architecture, the system architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the product architecture and the service architecture.
-It contributes to the stakeholder requirement analysis, the operational analysis, the interdependence analysis, the system functional analysis, the system validation analysis, the risk analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.
+It contributes to the stakeholder requirement analysis, the operational analysis, the interdependence analysis, the system functional analysis, the system validation analysis, the risk analysis, the opportunity analysis, the iteration analysis, the epic analysis, the product analysis, and the service analysis.
 
 | Relation | Terms |
 |---|---|
@@ -15277,7 +15282,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-10-29 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -15733,7 +15738,7 @@ graph TD
 | Composed of | [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4) |
 | Allocated by | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
 | Has variant | [system-attribute-variant-3se-06a8873e38277bc3](https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3) |
-| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) |
+| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -15875,8 +15880,8 @@ graph TD
     N3 -.->|can be| N6
     N6 -->|composed of| N3
     N6 -.->|allocates| N7
-    N4 -.->|allocates| N5
     N7 -.->|allocates| N5
+    N4 -.->|allocates| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16036,9 +16041,9 @@ graph TD
     N8 -.->|can be| N3
     N13 -.->|allocates| N9
     N7 -.->|allocates| N5
-    N11 -.->|allocates| N4
     N10 -.->|allocates| N14
     N6 -.->|allocates| N5
+    N11 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16047,10 +16052,10 @@ graph TD
 
 ### System configuration engineer - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the variability analysis.
-It contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the risk analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the service analysis, the task analysis and the system validation analysis.
+It contributes to the iteration analysis, the epic analysis, the feature analysis, the system functional analysis, the operational analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the risk analysis, the opportunity analysis, the product analysis, the project analysis, the release analysis, the stakeholder requirement analysis, the service analysis, the task analysis and the system validation analysis.
 
 | Relation | Terms |
 |---|---|
@@ -16066,7 +16071,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -16086,7 +16091,7 @@ graph TD
 | Component of | [stakeholder-constraint-3se-069bdc8805087d03](https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03) |
 | Evaluated by | [system-constraint-validation-case-3se-06a270c85e847647](https://www.3se.info/3se-onto/terms/system-constraint-validation-case-3se-06a270c85e847647), [system-validation-case-3se-069b5b3d9ee67de5](https://www.3se.info/3se-onto/terms/system-validation-case-3se-069b5b3d9ee67de5) |
 | Has variant | [system-constraint-variant-3se-06a8873e38317887](https://www.3se.info/3se-onto/terms/system-constraint-variant-3se-06a8873e38317887) |
-| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-validation-engineer-3se-069c451bef3c7b63](https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63) |
+| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc), [system-validation-engineer-3se-069c451bef3c7b63](https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63) |
 
 **Classification**
 
@@ -17551,21 +17556,21 @@ graph TD
     N17 -.->|exposes| N37
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
-    N18 -.->|allocates| N25
+    N37 -.->|allocates| N23
+    N9 -.->|allocates| N4
+    N21 -.->|exposes| N36
     N16 -.->|allocates| N11
+    N2 -->|subclass of| N33
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
     N30 -->|subclass of| N33
-    N37 -.->|allocates| N23
-    N9 -.->|allocates| N4
-    N28 -.->|allocates| N30
-    N2 -->|subclass of| N33
-    N35 -.->|allocates| N2
-    N21 -.->|exposes| N36
+    N18 -.->|allocates| N25
     N27 -.->|allocates| N23
+    N28 -.->|allocates| N30
+    N35 -.->|allocates| N2
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -18246,7 +18251,7 @@ graph TD
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Role that is accountable for the operational analysis, the interdependence analysis, the system functional analysis and the stakeholder requirement analysis.
-It contributes to the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the system validation analysis, the risk analysis, the iteration analysis and the epic analysis.
+It contributes to the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the system validation analysis, the risk analysis, the opportunity analysis, the iteration analysis and the epic analysis.
 
 | Relation | Terms |
 |---|---|
@@ -18308,7 +18313,7 @@ graph TD
 | Superclass of | [safety-system-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336), [security-system-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269) |
 | Allocated by | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [system-activity-variant-3se-06a8873e38137fb6](https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6) |
 | Has variant | [system-feature-variant-3se-06a8873e38b07bb8](https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8) |
-| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -18979,7 +18984,7 @@ graph TD
 | Component of | [stakeholder-functional-req-3se-069bdc88051177e5](https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5) |
 | Evaluated by | [system-functional-validation-case-3se-06a270455cbb7fa4](https://www.3se.info/3se-onto/terms/system-functional-validation-case-3se-06a270455cbb7fa4) |
 | Has variant | [system-functional-req-variant-3se-06a8873e38d17f2f](https://www.3se.info/3se-onto/terms/system-functional-req-variant-3se-06a8873e38d17f2f) |
-| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -19391,14 +19396,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N3 -.->|allocates| N4
-    N15 -.->|exposes| N1
-    N14 -.->|allocates| N12
-    N16 -.->|allocates| N4
+    N2 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N16 -.->|allocates| N4
     N13 -.->|allocates| N12
+    N15 -.->|exposes| N1
+    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19447,7 +19452,7 @@ graph TD
 | Component of | [stakeholder-non-functional-req-3se-069bdc88051a751e](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e) |
 | Evaluated by | [system-non-functional-validation-case-3se-06a2708d05f376c4](https://www.3se.info/3se-onto/terms/system-non-functional-validation-case-3se-06a2708d05f376c4) |
 | Has variant | [system-non-functional-req-variant-3se-06a8873e38f37e58](https://www.3se.info/3se-onto/terms/system-non-functional-req-variant-3se-06a8873e38f37e58) |
-| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -19749,7 +19754,7 @@ graph TD
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Role that is accountable for the system verification analysis.
-It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the risk analysis, the epic analysis, the stakeholder requirement analysis, the project analysis and the release analysis.
+It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the risk analysis, the opportunity analysis, the epic analysis, the stakeholder requirement analysis, the project analysis and the release analysis.
 
 | Relation | Terms |
 |---|---|
@@ -19765,7 +19770,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-01 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -19987,25 +19992,25 @@ graph TD
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
+    N44 -.->|allocates| N2
+    N32 -.->|allocates| N2
+    N28 -.->|allocates| N19
     N29 -.->|allocates| N22
     N29 -.->|allocates| N37
-    N32 -.->|allocates| N2
-    N43 -->|subclass of| N41
-    N39 -->|subclass of| N38
-    N42 -->|subclass of| N41
-    N41 -->|subclass of| N38
-    N27 -.->|allocates| N20
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
-    N44 -.->|allocates| N2
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N28 -.->|allocates| N19
-    N40 -->|subclass of| N38
+    N41 -->|subclass of| N38
+    N43 -->|subclass of| N41
     N38 -.->|allocates| N1
+    N40 -->|subclass of| N38
+    N42 -->|subclass of| N41
+    N39 -->|subclass of| N38
+    N27 -.->|allocates| N20
 ```
 
 *Created: 2026-04-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20110,7 +20115,7 @@ graph TD
 
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
-> Role that is accountable for the risk analysis.
+> Role that is accountable for the risk analysis and the opportunity analysis.
 It contributes to the interdependence analysis, the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the stakeholder requirement analysis and the system validation analysis.
 
 | Relation | Terms |
@@ -20127,7 +20132,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-01 · Modified: 2026-10-22 · Creator: @rcasteran*
+*Created: 2026-04-01 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -20461,11 +20466,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N13 -.->|allocates| N10
     N14 -.->|allocates| N9
-    N4 -.->|allocates| N8
-    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
+    N11 -.->|allocates| N12
+    N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20696,7 +20701,7 @@ graph TD
 ![reviewed](https://img.shields.io/badge/status-reviewed-blue)
 
 > Role that is accountable for the stakeholder validation analysis and the system validation analysis.
-It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the risk analysis, the epic analysis and the stakeholder requirement analysis.
+It contributes to the operational analysis, the system functional analysis, the functional architecture, the physical architecture, the system architecture, the product architecture, the service architecture, the system requirement analysis, the system element requirement analysis, the system attribute analysis, the risk analysis, the opportunity analysis, the epic analysis and the stakeholder requirement analysis.
 
 | Relation | Terms |
 |---|---|
@@ -20712,7 +20717,7 @@ graph TD
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-03-25 · Modified: 2026-10-29 · Creator: @rcasteran*
+*Created: 2026-03-25 · Modified: 2026-11-01 · Creator: @rcasteran*
 
 ---
 
@@ -21048,27 +21053,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N2 -.->|allocates| N8
-    N2 -.->|allocates| N10
-    N2 -.->|allocates| N12
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
-    N8 -.->|allocates| N15
     N22 -.->|allocates| N4
     N22 -.->|allocates| N6
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
     N5 -.->|allocates| N23
     N5 -.->|allocates| N24
-    N4 -.->|allocates| N23
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
+    N8 -.->|allocates| N15
     N17 -.->|allocates| N22
     N17 -.->|allocates| N23
     N17 -.->|allocates| N25
     N16 -.->|allocates| N10
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N2 -.->|allocates| N8
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N12
+    N4 -.->|allocates| N23
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -21606,7 +21611,7 @@ graph TD
 | Can be | [high-level-value-3se-069d6aadc03d7608](https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608) |
 | Allocated by | [goal-3se-069b48ef5d2171ed](https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed) |
 | Component of | [high-level-value-3se-069d6aadc03d7608](https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608) |
-| Responsible role | [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44) |
+| Responsible role | [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Allocations**
 
@@ -21880,35 +21885,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N43 -.->|allocates| N12
     N3 -.->|allocates| N45
     N3 -.->|allocates| N46
-    N11 -.->|allocates| N19
-    N11 -.->|allocates| N20
-    N43 -.->|allocates| N12
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
-    N34 -.->|allocates| N22
-    N34 -.->|allocates| N23
-    N34 -.->|allocates| N19
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
+    N23 -.->|allocates| N19
+    N22 -.->|allocates| N32
+    N11 -.->|allocates| N19
+    N11 -.->|allocates| N20
     N10 -.->|allocates| N19
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
+    N34 -.->|allocates| N22
+    N34 -.->|allocates| N23
+    N34 -.->|allocates| N19
     N46 -.->|allocates| N43
     N46 -.->|allocates| N12
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
     N17 -.->|allocates| N10
     N17 -.->|allocates| N12
-    N23 -.->|allocates| N19
-    N22 -.->|allocates| N32
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
