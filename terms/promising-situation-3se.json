@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Promising situation - 3SE",
+  "description": "Situation in which the system of interest is exposed to one or more favorable events.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9"
+  ],
+  "involves": [
+    "https://www.3se.info/3se-onto/terms/opportunity-3se"
+  ]
+}

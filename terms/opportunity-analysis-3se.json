@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Opportunity analysis - 3SE",
+  "description": "Analysis of the context of the system of interest to determine what opportunities it can encounter, how to exploit them, and what is the residual opportunity after treatment.\nIt includes the following steps:\n(1) Identify the favorable events.\n(2) For each favorable event, determine the value it brings and evaluate its benefit level.\n(3) Identify the promising situations.\n(4) For each promising situation, identify the impacted system activities and related system attributes and system features.\n(5) For each promising situation, evaluate the likelihood of its occurrence.\n(6) For each promising situation, evaluate the targeted opportunity level based on its favorable event benefit and the likelihood of its occurrence.\n(7) For each promising situation, decide the opportunity treatment: ignore, explore, monitor, exploit.\n(8) For each promising situation, if the opportunity must be exploited, then identify the system functional requirements and/or the system non-functional requirements and/or the system constraints that exploit it.\n(9) For each promising situation, evaluate the residual opportunity level after treatment.\n(10) For each promising situation, determine if the opportunity treatment leads to a risk in the same context.\n",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe"
+  ]
+}

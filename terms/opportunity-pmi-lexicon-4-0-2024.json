@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Opportunity - PMI Lexicon",
+  "description": "A risk that would have a positive effect on one or more portfolio, program, or project objectives.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/pmi-lexicon-4-0-2024"
+  ]
+}

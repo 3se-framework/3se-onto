@@ -1,0 +1,10 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Organization opportunity - 3SE",
+  "description": "Opportunity related to a favorable evolution of the organization governance and mission (funding, legal...).",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/opportunity-3se"
+  ]
+}

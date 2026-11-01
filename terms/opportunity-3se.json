@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Opportunity - 3SE",
+  "description": "The combination of the likelihood of occurrence and the benefit of consequences of a favorable event under a given situation:\n(1) Likelihood of occurrence: Rare, Unlikely, Possible, Likely, Almost certain.\n(2) Benefit of consequences: Insignificant, Minor, Moderate, Major, Promoter.\n(3) Combination: Negligible, Interesting, Attractive, Exceptional.",
+  "status": "draft"
+}
