@@ -70,8 +70,8 @@ Tag a commit `X.Y` (no `v` prefix) to publish a frozen snapshot under `/3se-onto
 After any change here, check consistency with these repositories and flag any inconsistency before closing the task:
 
 * `3se-mcp`
-* `3se-maturity-evaluation`
 * `3se-skill`
+* `3se-method-explained`
 * `3se-position-paper`
 * `3se-talk`
 
