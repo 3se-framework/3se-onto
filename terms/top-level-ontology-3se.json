@@ -10,7 +10,5 @@
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/top-level-ontology-21838-1-2021"
   ],
-  "denotes": [
-    "https://www.3se.info/3se-onto/terms/meta-meta-model-3se"
-  ]
+  "denotes": "https://www.3se.info/3se-onto/terms/meta-metamodel-3se"
 }

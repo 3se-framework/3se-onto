@@ -7,7 +7,5 @@
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071"
   ],
-  "denotes": [
-    "https://www.3se.info/3se-onto/terms/meta-model-3se-069d3d5560e07840"
-  ]
+  "denotes": "https://www.3se.info/3se-onto/terms/metamodel-3se-069d3d5560e07840"
 }
