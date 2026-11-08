@@ -12,7 +12,7 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/security-system-element-architecture-constraint-3se-06aad7c0832a7d15",
   "entryCreated": "2026-09-18",
-  "entryModified": "2026-09-18",
+  "entryModified": "2026-11-08",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
