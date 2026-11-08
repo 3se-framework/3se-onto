@@ -5,5 +5,12 @@
   "abstract": "Information technology - Top-level ontologies (TLO) - Part 1: Requirements",
   "issued": "2021",
   "uri": "https://www.iso.org/standard/71954.html",
-  "status": "bibo:published"
+  "status": "bibo:published",
+  "@id": "https://www.3se.info/3se-onto/references/iso-iec-21838-1-2021-06af0c173719703c",
+  "entryCreated": "2026-11-08",
+  "entryModified": "2026-11-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

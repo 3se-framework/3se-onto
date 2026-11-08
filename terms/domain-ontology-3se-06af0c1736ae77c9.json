@@ -10,5 +10,16 @@
   "closeMatch": [
     "https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439"
   ],
-  "denotes": "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635"
+  "denotes": "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635",
+  "@id": "https://www.3se.info/3se-onto/terms/domain-ontology-3se-06af0c1736ae77c9",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66",
+    "https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c"
+  ],
+  "entryCreated": "2026-07-04",
+  "entryModified": "2026-11-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
