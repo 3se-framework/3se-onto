@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-11-03 22:01 UTC*
+*Generated on 2026-11-08 18:40 UTC*
 
-This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **34 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **461 3SE term(s)**, **121 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
 
 ## Contents
 
@@ -45,6 +45,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
   - [Context - 3SE](#context---3se)
   - [Data - 3SE](#data---3se)
   - [Demonstration - 3SE](#demonstration---3se)
+  - [Domain ontology - 3SE](#domain-ontology---3se)
   - [Enabling activity - 3SE](#enabling-activity---3se)
   - [Enabling function - 3SE](#enabling-function---3se)
   - [Enabling state - 3SE](#enabling-state---3se)
@@ -160,7 +161,9 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
   - [Mathematical model - 3SE](#mathematical-model---3se)
   - [Maturity gate - 3SE](#maturity-gate---3se)
   - [Mechanism - 3SE](#mechanism---3se)
-  - [Meta model - 3SE](#meta-model---3se)
+  - [Meta-metamodel - 3SE](#meta-metamodel---3se)
+  - [Metamodel - 3SE](#metamodel---3se)
+  - [Mid-level ontology - 3SE](#mid-level-ontology---3se)
   - [Milieu - 3SE](#milieu---3se)
   - [Model - 3SE](#model---3se)
   - [Non-functional requirement - 3SE](#non-functional-requirement---3se)
@@ -457,6 +460,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
   - [Thesaurus - 3SE](#thesaurus---3se)
   - [Thing - 3SE](#thing---3se)
   - [Threatening situation - 3SE](#threatening-situation---3se)
+  - [Top-level ontology - 3SE](#top-level-ontology---3se)
   - [Transition - 3SE](#transition---3se)
   - [Validation - 3SE](#validation---3se)
   - [Validation case - 3SE](#validation-case---3se)
@@ -529,7 +533,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
   - [Knowledge - ISO 30401](#knowledge---iso-30401)
   - [Material entity - BFO 2.0](#material-entity---bfo-20)
   - [Mechanism - How does it work ? 2004](#mechanism---how-does-it-work--2004)
-  - [Meta model - ISO/IEC/IEEE 24641](#meta-model---isoiecieee-24641)
+  - [Metamodel - ISO/IEC/IEEE 24641](#metamodel---isoiecieee-24641)
   - [Model - ISO/IEC/IEEE 24641](#model---isoiecieee-24641)
   - [Non-functional Requirement - IREB CPRE](#non-functional-requirement---ireb-cpre)
   - [Non-functional testing - ISTQB](#non-functional-testing---istqb)
@@ -584,6 +588,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
   - [Thesaurus - ISO 25964](#thesaurus---iso-25964)
   - [Threat analysis and risk assessment - ISO/SAE 21434](#threat-analysis-and-risk-assessment---isosae-21434)
   - [Threat scenario - ISO/SAE 21434](#threat-scenario---isosae-21434)
+  - [Top-level ontology - ISO/IEC 21838-1](#top-level-ontology---isoiec-21838-1)
   - [Transition - ISO/IEC/IEEE 24765](#transition---isoiecieee-24765)
   - [Two-dimensional continuant fiat boundary - BFO 2.0](#two-dimensional-continuant-fiat-boundary---bfo-20)
   - [Validation - IEEE 1012](#validation---ieee-1012)
@@ -609,6 +614,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
   - [ISO 25964-2:2013](#iso-25964-22013)
   - [ISO 26262-1:2018](#iso-26262-12018)
   - [ISO 30401:2018](#iso-304012018)
+  - [ISO/IEC 21838-1:2021](#isoiec-21838-12021)
   - [ISO/IEC 26558:2017](#isoiec-265582017)
   - [ISO/IEC/IEEE 15288:2015](#isoiecieee-152882015)
   - [ISO/IEC/IEEE 15288:2023](#isoiecieee-152882023)
@@ -773,7 +779,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
 
 ## 3SE Terms
 
-*457 term(s) defined by the 3SE framework.*
+*461 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -783,7 +789,7 @@ This glossary contains **8 3SE domain(s)**, **457 3SE term(s)**, **120 other ter
 
 | Relation | Terms |
 |---|---|
-| Related | [concrete-model-3se-069d3d5560c77d97](https://www.3se.info/3se-onto/terms/concrete-model-3se-069d3d5560c77d97), [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7) |
+| Related | [concrete-model-3se-069d3d5560c77d97](https://www.3se.info/3se-onto/terms/concrete-model-3se-069d3d5560c77d97), [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7), [metamodel-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/metamodel-3se-069d3d5560e07840) |
 | Subclass of | [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9) |
 | Superclass of | [computational-model-3se-069d3d5560b67ed6](https://www.3se.info/3se-onto/terms/computational-model-3se-069d3d5560b67ed6), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [mathematical-model-3se-069d3d5560d07a73](https://www.3se.info/3se-onto/terms/mathematical-model-3se-069d3d5560d07a73) |
 
@@ -833,7 +839,7 @@ graph TD
     N20 -->|subclass of| N1
 ```
 
-*Created: 2026-04-06 · Modified: 2026-10-22 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -1556,11 +1562,11 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [taxonomy-3se-06ad652e5efb7d14](https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [view-3se-06a0993aed6d7ad2](https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2) |
+| Related | [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [taxonomy-3se-06ad652e5efb7d14](https://www.3se.info/3se-onto/terms/taxonomy-3se-06ad652e5efb7d14), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [view-3se-06a0993aed6d7ad2](https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2), [domain-ontology-3se-06af0c1736ae77c9](https://www.3se.info/3se-onto/terms/domain-ontology-3se-06af0c1736ae77c9), [mid-level-ontology-3se-06af0c1736f57ca0](https://www.3se.info/3se-onto/terms/mid-level-ontology-3se-06af0c1736f57ca0), [top-level-ontology-3se-06af0c17370c7695](https://www.3se.info/3se-onto/terms/top-level-ontology-3se-06af0c17370c7695) |
 | Close match | [concept-1087-2019-06ad7b97372770de](https://www.3se.info/3se-onto/terms/concept-1087-2019-06ad7b97372770de) |
 | Denotes | [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7) |
 
-*Created: 2026-10-20 · Modified: 2026-10-22 · Creator: @rcasteran*
+*Created: 2026-10-20 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -1577,7 +1583,7 @@ graph TD
 | Superclass of | [feature-model-3se-069d3f26ae067509](https://www.3se.info/3se-onto/terms/feature-model-3se-069d3f26ae067509), [functional-architecture-model-3se-069d3f26ae167abc](https://www.3se.info/3se-onto/terms/functional-architecture-model-3se-069d3f26ae167abc), [goal-model-3se-069d3f26ae1e7e10](https://www.3se.info/3se-onto/terms/goal-model-3se-069d3f26ae1e7e10), [operating-model-3se-069d3f26ae27722b](https://www.3se.info/3se-onto/terms/operating-model-3se-069d3f26ae27722b), [physical-architecture-model-3se-069d3f26ae2f7408](https://www.3se.info/3se-onto/terms/physical-architecture-model-3se-069d3f26ae2f7408), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [stakeholder-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/stakeholder-req-model-3se-069dce2d73c47476), [system-architecture-model-3se-069d3f26ae587442](https://www.3se.info/3se-onto/terms/system-architecture-model-3se-069d3f26ae587442), [system-attribute-model-3se-069dcf9369887f72](https://www.3se.info/3se-onto/terms/system-attribute-model-3se-069dcf9369887f72), [system-element-req-model-3se-06aac13a4035725f](https://www.3se.info/3se-onto/terms/system-element-req-model-3se-06aac13a4035725f), [system-function-model-3se-069d3f26ae0e7b05](https://www.3se.info/3se-onto/terms/system-function-model-3se-069d3f26ae0e7b05), [system-req-model-3se-069dce2d73c47476](https://www.3se.info/3se-onto/terms/system-req-model-3se-069dce2d73c47476), [system-variability-model-3se-06a888a0c0497ff5](https://www.3se.info/3se-onto/terms/system-variability-model-3se-06a888a0c0497ff5), [value-model-3se-069d6aadc065744f](https://www.3se.info/3se-onto/terms/value-model-3se-069d6aadc065744f) |
 | Close match | [descriptive-model-24641-2023-069d3f26adfd7b2e](https://www.3se.info/3se-onto/terms/descriptive-model-24641-2023-069d3f26adfd7b2e) |
 | Instantiated by | [concrete-model-3se-069d3d5560c77d97](https://www.3se.info/3se-onto/terms/concrete-model-3se-069d3d5560c77d97) |
-| Denoted by | [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
+| Denoted by | [domain-ontology-3se-06af0c1736ae77c9](https://www.3se.info/3se-onto/terms/domain-ontology-3se-06af0c1736ae77c9) |
 
 **Classification**
 
@@ -1869,6 +1875,33 @@ graph TD
 | Related match | [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349) |
 
 *Created: 2026-03-14 · Modified: 2026-10-22 · Creator: @rcasteran*
+
+---
+
+### Domain ontology - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Definition of a set of concepts within a domain of knowledge and the relationships that hold between them.
+
+| Relation | Terms |
+|---|---|
+| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66), [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c) |
+| Subclass of | [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
+| Close match | [ontology-24765-2017-06a494b0a1517439](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439) |
+| Denotes | [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Domain ontology"]
+    N2["Ontology"]
+
+    N1 -->|subclass of| N2
+```
+
+*Created: 2026-07-04 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -3274,17 +3307,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N20 -.->|allocates| N16
-    N19 -.->|allocates| N17
-    N18 -.->|allocates| N14
-    N13 -.->|allocates| N14
     N3 -.->|allocates| N21
+    N20 -.->|allocates| N16
     N21 -.->|allocates| N14
+    N13 -.->|allocates| N14
+    N18 -.->|allocates| N14
+    N19 -.->|allocates| N17
     N11 -->|subclass of| N10
-    N9 -->|subclass of| N4
-    N12 -->|subclass of| N10
-    N8 -->|subclass of| N4
     N10 -->|subclass of| N4
+    N12 -->|subclass of| N10
+    N9 -->|subclass of| N4
+    N8 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -3730,10 +3763,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N11 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -5014,9 +5047,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -6749,8 +6782,8 @@ graph TD
     N11 -.->|allocates| N12
     N11 -.->|allocates| N9
     N11 -.->|allocates| N10
-    N6 -->|subclass of| N11
     N4 -->|subclass of| N7
+    N6 -->|subclass of| N11
 ```
 
 *Created: 2026-03-24 · Modified: 2026-11-01 · Creator: @rcasteran*
@@ -7316,10 +7349,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
+| Related | [information-3se-069bc4ea53337e0e](https://www.3se.info/3se-onto/terms/information-3se-069bc4ea53337e0e), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071), [thesaurus-3se-06ad652e5f2573f4](https://www.3se.info/3se-onto/terms/thesaurus-3se-06ad652e5f2573f4), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66), [domain-ontology-3se-06af0c1736ae77c9](https://www.3se.info/3se-onto/terms/domain-ontology-3se-06af0c1736ae77c9), [mid-level-ontology-3se-06af0c1736f57ca0](https://www.3se.info/3se-onto/terms/mid-level-ontology-3se-06af0c1736f57ca0), [top-level-ontology-3se-06af0c17370c7695](https://www.3se.info/3se-onto/terms/top-level-ontology-3se-06af0c17370c7695) |
 | Broad match | [knowledge-30401-2018-06a495136c807dfd](https://www.3se.info/3se-onto/terms/knowledge-30401-2018-06a495136c807dfd) |
 
-*Created: 2026-07-04 · Modified: 2026-10-20 · Creator: @rcasteran*
+*Created: 2026-07-04 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -7407,28 +7440,82 @@ graph TD
 
 ---
 
-### Meta model - 3SE
+### Meta-metamodel - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Model that specifies the rules that govern a model.
+> Model that specifies the rules that govern a metamodel.
 
 | Relation | Terms |
 |---|---|
+| Related | [metamodel-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/metamodel-3se-069d3d5560e07840) |
 | Subclass of | [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9) |
-| Narrow match | [meta-model-24641-2023-069d3d5560d87b30](https://www.3se.info/3se-onto/terms/meta-model-24641-2023-069d3d5560d87b30) |
+| Denoted by | [top-level-ontology-3se-06af0c17370c7695](https://www.3se.info/3se-onto/terms/top-level-ontology-3se-06af0c17370c7695) |
 
 **Classification**
 
 ```mermaid
 graph TD
-    N1["Meta model"]
+    N1["Meta-metamodel"]
     N2["Model"]
 
     N1 -->|subclass of| N2
 ```
 
-*Created: 2026-04-06 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-11-08 · Modified: 2026-11-08 · Creator: @rcasteran*
+
+---
+
+### Metamodel - 3SE
+
+![approved](https://img.shields.io/badge/status-approved-green)
+
+> Model that specifies the rules that govern an abstract model.
+
+| Relation | Terms |
+|---|---|
+| Related | [abstract-model-3se-069d3d55609a75e1](https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1), [meta-metamodel-3se-06af0c1736e97d4a](https://www.3se.info/3se-onto/terms/meta-metamodel-3se-06af0c1736e97d4a) |
+| Subclass of | [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9) |
+| Related match | [metamodel-24641-2023-069d3d5560d87b30](https://www.3se.info/3se-onto/terms/metamodel-24641-2023-069d3d5560d87b30) |
+| Denoted by | [mid-level-ontology-3se-06af0c1736f57ca0](https://www.3se.info/3se-onto/terms/mid-level-ontology-3se-06af0c1736f57ca0) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Metamodel"]
+    N2["Model"]
+
+    N1 -->|subclass of| N2
+```
+
+*Created: 2026-04-06 · Modified: 2026-11-08 · Creator: @rcasteran*
+
+---
+
+### Mid-level ontology - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Definition of a set of concepts that are shared across several domains of knowledge and that specialize the concepts of at least one top-level ontology, and the relationships that hold between them.
+
+| Relation | Terms |
+|---|---|
+| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66), [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [top-level-ontology-3se-06af0c17370c7695](https://www.3se.info/3se-onto/terms/top-level-ontology-3se-06af0c17370c7695) |
+| Subclass of | [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
+| Denotes | [metamodel-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/metamodel-3se-069d3d5560e07840) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Mid-level ontology"]
+    N2["Ontology"]
+
+    N1 -->|subclass of| N2
+```
+
+*Created: 2026-11-08 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -7458,7 +7545,7 @@ graph TD
 | Relation | Terms |
 |---|---|
 | Related | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [situation-3se-069c1b6f06b27ce9](https://www.3se.info/3se-onto/terms/situation-3se-069c1b6f06b27ce9), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7) |
-| Superclass of | [abstract-model-3se-069d3d55609a75e1](https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1), [concrete-model-3se-069d3d5560c77d97](https://www.3se.info/3se-onto/terms/concrete-model-3se-069d3d5560c77d97), [meta-model-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/meta-model-3se-069d3d5560e07840) |
+| Superclass of | [abstract-model-3se-069d3d55609a75e1](https://www.3se.info/3se-onto/terms/abstract-model-3se-069d3d55609a75e1), [concrete-model-3se-069d3d5560c77d97](https://www.3se.info/3se-onto/terms/concrete-model-3se-069d3d5560c77d97), [meta-metamodel-3se-06af0c1736e97d4a](https://www.3se.info/3se-onto/terms/meta-metamodel-3se-06af0c1736e97d4a), [metamodel-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/metamodel-3se-069d3d5560e07840) |
 | Close match | [model-24641-2023-069d3d5560e87cde](https://www.3se.info/3se-onto/terms/model-24641-2023-069d3d5560e87cde) |
 
 **Classification**
@@ -7486,7 +7573,8 @@ graph TD
     N19["Value model"]
     N20["Mathematical model"]
     N21["Concrete model"]
-    N22["Meta model"]
+    N22["Meta-metamodel"]
+    N23["Metamodel"]
 
     N2 -->|subclass of| N1
     N3 -->|subclass of| N2
@@ -7509,6 +7597,7 @@ graph TD
     N20 -->|subclass of| N2
     N21 -->|subclass of| N1
     N22 -->|subclass of| N1
+    N23 -->|subclass of| N1
 ```
 
 *Created: 2026-04-06 · Modified: 2026-10-22 · Creator: @rcasteran*
@@ -7636,15 +7725,29 @@ graph TD
 
 ![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> Definition of a set of concepts within a domain of knowledge and the relationships that hold between them.
+> Definition of a set of concepts within at least one domain of knowledge and the relationships that hold between them.
 
 | Relation | Terms |
 |---|---|
 | Related | [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66) |
+| Superclass of | [domain-ontology-3se-06af0c1736ae77c9](https://www.3se.info/3se-onto/terms/domain-ontology-3se-06af0c1736ae77c9), [mid-level-ontology-3se-06af0c1736f57ca0](https://www.3se.info/3se-onto/terms/mid-level-ontology-3se-06af0c1736f57ca0), [top-level-ontology-3se-06af0c17370c7695](https://www.3se.info/3se-onto/terms/top-level-ontology-3se-06af0c17370c7695) |
 | Close match | [ontology-24765-2017-06a494b0a1517439](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439) |
-| Denotes | [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635) |
 
-*Created: 2026-07-04 · Modified: 2026-10-20 · Creator: @rcasteran*
+**Classification**
+
+```mermaid
+graph TD
+    N1["Ontology"]
+    N2["Domain ontology"]
+    N3["Mid-level ontology"]
+    N4["Top-level ontology"]
+
+    N2 -->|subclass of| N1
+    N3 -->|subclass of| N1
+    N4 -->|subclass of| N1
+```
+
+*Created: 2026-07-04 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -8013,16 +8116,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N17 -.->|allocates| N14
-    N17 -.->|allocates| N15
     N14 -.->|allocates| N15
     N5 -.->|allocates| N3
+    N17 -.->|allocates| N14
+    N17 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N13 -->|subclass of| N11
-    N10 -->|subclass of| N8
     N9 -->|subclass of| N8
-    N11 -->|subclass of| N8
+    N10 -->|subclass of| N8
+    N13 -->|subclass of| N11
     N12 -->|subclass of| N11
+    N11 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -8467,8 +8570,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -9217,8 +9320,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9862,6 +9965,8 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
@@ -9869,10 +9974,8 @@ graph TD
     N7 -.->|allocates| N3
     N5 -.->|allocates| N2
     N5 -.->|allocates| N3
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N3
-    N3 -->|subclass of| N13
     N2 -->|subclass of| N8
+    N3 -->|subclass of| N13
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12449,8 +12552,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -12615,9 +12718,9 @@ graph TD
     N11 -.->|allocates| N17
     N11 -.->|allocates| N13
     N18 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N18 -.->|allocates| N12
     N18 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -13225,9 +13328,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
     N4 -.->|allocates| N7
-    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16041,8 +16144,8 @@ graph TD
     N8 -.->|can be| N3
     N13 -.->|allocates| N9
     N10 -.->|allocates| N14
-    N11 -.->|allocates| N4
     N7 -.->|allocates| N5
+    N11 -.->|allocates| N4
     N6 -.->|allocates| N5
 ```
 
@@ -17556,21 +17659,21 @@ graph TD
     N17 -.->|exposes| N37
     N29 -->|subclass of| N32
     N31 -->|subclass of| N32
-    N30 -->|subclass of| N33
-    N21 -.->|exposes| N36
-    N27 -.->|allocates| N23
-    N37 -.->|allocates| N23
-    N18 -.->|allocates| N25
+    N16 -.->|allocates| N11
     N2 -->|subclass of| N33
-    N9 -.->|allocates| N4
-    N28 -.->|allocates| N30
+    N18 -.->|allocates| N25
+    N21 -.->|exposes| N36
+    N30 -->|subclass of| N33
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
-    N16 -.->|allocates| N11
+    N27 -.->|allocates| N23
+    N37 -.->|allocates| N23
+    N9 -.->|allocates| N4
     N35 -.->|allocates| N2
+    N28 -.->|allocates| N30
 ```
 
 *Created: 2026-09-17 · Modified: 2026-09-17 · Creator: @rcasteran*
@@ -19396,13 +19499,13 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N15 -.->|exposes| N1
-    N2 -.->|allocates| N4
-    N16 -.->|allocates| N4
-    N3 -.->|allocates| N4
+    N14 -.->|allocates| N12
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N14 -.->|allocates| N12
+    N2 -.->|allocates| N4
+    N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N13 -.->|allocates| N12
 ```
 
@@ -19993,24 +20096,24 @@ graph TD
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
     N28 -.->|allocates| N19
-    N27 -.->|allocates| N20
-    N44 -.->|allocates| N2
+    N32 -.->|allocates| N2
     N42 -->|subclass of| N41
+    N41 -->|subclass of| N38
     N5 -.->|allocates| N37
     N5 -.->|allocates| N2
-    N38 -.->|allocates| N1
-    N40 -->|subclass of| N38
     N43 -->|subclass of| N41
-    N39 -->|subclass of| N38
-    N41 -->|subclass of| N38
+    N29 -.->|allocates| N22
+    N29 -.->|allocates| N37
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
+    N40 -->|subclass of| N38
+    N38 -.->|allocates| N1
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
-    N29 -.->|allocates| N22
-    N29 -.->|allocates| N37
-    N32 -.->|allocates| N2
+    N39 -->|subclass of| N38
+    N44 -.->|allocates| N2
+    N27 -.->|allocates| N20
 ```
 
 *Created: 2026-04-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20466,11 +20569,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N15 -.->|allocates| N12
-    N4 -.->|allocates| N8
-    N14 -.->|allocates| N9
-    N13 -.->|allocates| N10
     N11 -.->|allocates| N12
+    N14 -.->|allocates| N9
+    N4 -.->|allocates| N8
+    N13 -.->|allocates| N10
+    N15 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -21053,27 +21156,27 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N17 -.->|allocates| N22
-    N17 -.->|allocates| N23
-    N17 -.->|allocates| N25
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N20 -.->|allocates| N10
-    N20 -.->|allocates| N11
     N5 -.->|allocates| N23
     N5 -.->|allocates| N24
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
-    N16 -.->|allocates| N10
-    N4 -.->|allocates| N23
+    N20 -.->|allocates| N10
+    N20 -.->|allocates| N11
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
+    N28 -.->|allocates| N25
+    N28 -.->|allocates| N26
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N28 -.->|allocates| N25
-    N28 -.->|allocates| N26
+    N17 -.->|allocates| N22
+    N17 -.->|allocates| N23
+    N17 -.->|allocates| N25
+    N4 -.->|allocates| N23
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
     N8 -.->|allocates| N15
-    N22 -.->|allocates| N4
-    N22 -.->|allocates| N6
+    N16 -.->|allocates| N10
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -21413,6 +21516,33 @@ graph TD
 ```
 
 *Created: 2026-03-23 · Modified: 2026-10-16 · Creator: @rcasteran*
+
+---
+
+### Top-level ontology - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Definition of a set of concepts that are shared across a maximally broad range of domains of knowledge and the relationships that hold between them.
+
+| Relation | Terms |
+|---|---|
+| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66), [knowledge-3se-06a495136cc37a0c](https://www.3se.info/3se-onto/terms/knowledge-3se-06a495136cc37a0c), [mid-level-ontology-3se-06af0c1736f57ca0](https://www.3se.info/3se-onto/terms/mid-level-ontology-3se-06af0c1736f57ca0) |
+| Subclass of | [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
+| Close match | [top-level-ontology-21838-1-2021-06af0c1737027278](https://www.3se.info/3se-onto/terms/top-level-ontology-21838-1-2021-06af0c1737027278) |
+| Denotes | [meta-metamodel-3se-06af0c1736e97d4a](https://www.3se.info/3se-onto/terms/meta-metamodel-3se-06af0c1736e97d4a) |
+
+**Classification**
+
+```mermaid
+graph TD
+    N1["Top-level ontology"]
+    N2["Ontology"]
+
+    N1 -->|subclass of| N2
+```
+
+*Created: 2026-11-08 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -21885,35 +22015,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
+    N17 -.->|allocates| N10
+    N17 -.->|allocates| N12
+    N43 -.->|allocates| N12
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N10 -.->|allocates| N19
+    N23 -.->|allocates| N19
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
     N16 -.->|allocates| N19
     N16 -.->|allocates| N20
     N16 -.->|allocates| N11
+    N22 -.->|allocates| N32
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N26 -.->|allocates| N15
+    N26 -.->|allocates| N17
     N11 -.->|allocates| N19
     N11 -.->|allocates| N20
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
-    N34 -.->|allocates| N22
-    N34 -.->|allocates| N23
-    N34 -.->|allocates| N19
-    N22 -.->|allocates| N32
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
     N45 -.->|allocates| N35
     N45 -.->|allocates| N41
     N45 -.->|allocates| N43
-    N23 -.->|allocates| N19
-    N17 -.->|allocates| N10
-    N17 -.->|allocates| N12
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N26 -.->|allocates| N15
-    N26 -.->|allocates| N17
-    N10 -.->|allocates| N19
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
-    N43 -.->|allocates| N12
+    N34 -.->|allocates| N22
+    N34 -.->|allocates| N23
+    N34 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -22092,7 +22222,7 @@ graph TD
 
 ## Other Terms
 
-*120 term(s) sourced from external standards and frameworks.*
+*121 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -23162,7 +23292,7 @@ graph TD
 
 ---
 
-### Meta model - ISO/IEC/IEEE 24641
+### Metamodel - ISO/IEC/IEEE 24641
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
 
@@ -23170,11 +23300,11 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Narrow match of | [meta-model-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/meta-model-3se-069d3d5560e07840) |
+| Related match of | [metamodel-3se-069d3d5560e07840](https://www.3se.info/3se-onto/terms/metamodel-3se-069d3d5560e07840) |
 
 **References:** [ISO/IEC/IEEE 24641:2023](https://www.3se.info/3se-onto/references/iso-iec-ieee-24641-2023-069d3d5560fb7a15)
 
-*Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
+*Created: 2026-04-06 · Modified: 2026-11-08 · Creator: @rcasteran*
 
 ---
 
@@ -23273,7 +23403,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Close match of | [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
+| Close match of | [domain-ontology-3se-06af0c1736ae77c9](https://www.3se.info/3se-onto/terms/domain-ontology-3se-06af0c1736ae77c9), [ontology-3se-06a494b0a17f7071](https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071) |
 
 **References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
 
@@ -24179,6 +24309,22 @@ The methods defined in this clause are generic modules that can be invoked syste
 
 ---
 
+### Top-level ontology - ISO/IEC 21838-1
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Ontology that is created to represent the categories that are shared across a maximally broad range of domains.
+
+| Relation | Terms |
+|---|---|
+| Close match of | [top-level-ontology-3se-06af0c17370c7695](https://www.3se.info/3se-onto/terms/top-level-ontology-3se-06af0c17370c7695) |
+
+**References:** [ISO/IEC 21838-1:2021](https://www.3se.info/3se-onto/references/iso-iec-21838-1-2021-06af0c173719703c)
+
+*Created: 2026-11-08 · Modified: 2026-11-08 · Creator: @rcasteran*
+
+---
+
 ### Transition - ISO/IEC/IEEE 24765
 
 ![standard](https://img.shields.io/badge/status-standard-brightgreen)
@@ -24359,7 +24505,7 @@ graph TD
 
 ## References
 
-*34 reference(s).*
+*35 reference(s).*
 
 ### A perspective on systems science and systems philosophy
 
@@ -24629,6 +24775,25 @@ graph TD
 
 ---
 
+### ISO/IEC 21838-1:2021
+
+*Standard*
+
+![published](https://img.shields.io/badge/status-published-brightgreen)
+
+> Information technology - Top-level ontologies (TLO) - Part 1: Requirements
+
+| Attribute | Value |
+|---|---|
+| **Issued** | 2021 |
+| **URL** | [https://www.iso.org/standard/71954.html](https://www.iso.org/standard/71954.html) |
+
+**Referenced Terms:** [Top-level ontology - ISO/IEC 21838-1](https://www.3se.info/3se-onto/terms/top-level-ontology-21838-1-2021-06af0c1737027278)
+
+*Created: 2026-11-08 · Modified: 2026-11-08 · Creator: @rcasteran*
+
+---
+
 ### ISO/IEC 26558:2017
 
 *Standard*
@@ -24699,7 +24864,7 @@ graph TD
 | **Issued** | 2023 |
 | **URL** | [https://www.iso.org/standard/79111.html](https://www.iso.org/standard/79111.html) |
 
-**Referenced Terms:** [Analytical Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/analytical-model-24641-2023-069d3f26adf376a4), [Descriptive Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/descriptive-model-24641-2023-069d3f26adfd7b2e), [Meta model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/meta-model-24641-2023-069d3d5560d87b30), [Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/model-24641-2023-069d3d5560e87cde)
+**Referenced Terms:** [Analytical Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/analytical-model-24641-2023-069d3f26adf376a4), [Descriptive Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/descriptive-model-24641-2023-069d3f26adfd7b2e), [Metamodel - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/metamodel-24641-2023-069d3d5560d87b30), [Model - ISO/IEC/IEEE 24641](https://www.3se.info/3se-onto/terms/model-24641-2023-069d3d5560e87cde)
 
 *Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
 
