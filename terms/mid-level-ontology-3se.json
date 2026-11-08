@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Mid-level ontology - 3SE",
+  "description": "Definition of a set of concepts that are shared across several domains of knowledge and that specialize the concepts of at least one top-level ontology, and the relationships that hold between them.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/ontology-3se-06a494b0a17f7071"
+  ],
+  "denotes": [
+    "https://www.3se.info/3se-onto/terms/meta-model-3se-069d3d5560e07840"
+  ]
+}

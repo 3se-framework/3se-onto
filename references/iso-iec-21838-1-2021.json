@@ -1,0 +1,9 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/reference.context.jsonld",
+  "@type": "bibo:Standard",
+  "title": "ISO/IEC 21838-1:2021",
+  "abstract": "Information technology - Top-level ontologies (TLO) - Part 1: Requirements",
+  "issued": "2021",
+  "uri": "https://www.iso.org/standard/71954.html",
+  "status": "bibo:published"
+}
