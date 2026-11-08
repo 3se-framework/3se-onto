@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Concept - ISO 1087",
+  "description": "Unit of knowledge created by a unique combination of characteristics.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-1087-2019-06ad7b97376674cc"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/concept-1087-2019-06ad7b97372770de",
+  "entryCreated": "2026-10-20",
+  "entryModified": "2026-10-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

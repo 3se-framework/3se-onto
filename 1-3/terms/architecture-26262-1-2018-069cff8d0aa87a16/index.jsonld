@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Architecture - ISO 26262-1",
+  "description": "Representation of the structure of the item or element that allows identification of building blocks, their boundaries and interfaces, and includes the allocation of requirements to these building blocks",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-26262-1-2018-069ab4000b417db7"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/architecture-26262-1-2018-069cff8d0aa87a16",
+  "entryCreated": "2026-04-03",
+  "entryModified": "2026-04-03",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}
