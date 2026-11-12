@@ -14,6 +14,18 @@
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/emergent-system-feature-3se"
-  ]
+    "https://www.3se.info/3se-onto/terms/emergent-system-feature-3se-06af62da8e88712d"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/emergent-system-activity-3se-06af62da8e5a75a7",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/interdependent-activity-3se-06a049901cd07043",
+    "https://www.3se.info/3se-onto/terms/interdependent-system-activity-3se-069fdd89b3c87477",
+    "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+  ],
+  "entryCreated": "2026-11-12",
+  "entryModified": "2026-11-12",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

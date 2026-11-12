@@ -12,7 +12,7 @@
     "https://www.3se.info/3se-onto/terms/quality-bfo-2-0-069f666ab53474a9"
   ],
   "entryCreated": "2026-03-15",
-  "entryModified": "2026-11-08",
+  "entryModified": "2026-11-12",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
@@ -24,7 +24,6 @@
     "https://www.3se.info/3se-onto/terms/requirement-3se-069b48ef5d727ceb",
     "https://www.3se.info/3se-onto/terms/test-3se-069b5a912a117976",
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
-    "https://www.3se.info/3se-onto/terms/holism-3se-069c316c19067fbe",
     "https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635",
     "https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9",
     "https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5",
@@ -34,7 +33,6 @@
     "https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03",
     "https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e",
     "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3",
-    "https://www.3se.info/3se-onto/terms/interdependence-analysis-3se-069c316c191c7780",
     "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1",
     "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7",
     "https://www.3se.info/3se-onto/terms/stakeholder-validation-3se-06ab8e3756a37932"

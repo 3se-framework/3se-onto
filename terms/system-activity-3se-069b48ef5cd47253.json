@@ -28,10 +28,12 @@
     "https://www.3se.info/3se-onto/terms/variability-analysis-3se-06a888a0c0817f9b",
     "https://www.3se.info/3se-onto/terms/safety-risk-analysis-3se-069c1ab34ba5783e",
     "https://www.3se.info/3se-onto/terms/security-risk-analysis-3se-069c1ab34bae7b50",
-    "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d"
+    "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d",
+    "https://www.3se.info/3se-onto/terms/emergent-system-attribute-3se-06af62da8e7c7115",
+    "https://www.3se.info/3se-onto/terms/emergent-system-feature-3se-06af62da8e88712d"
   ],
   "entryCreated": "2026-05-08",
-  "entryModified": "2026-11-01",
+  "entryModified": "2026-11-12",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
