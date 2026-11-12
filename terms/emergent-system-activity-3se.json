@@ -1,0 +1,19 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Emergent system activity - 3SE",
+  "description": "Set of cohesive system functions arising from the interplay of system activities with interdependent activities or interdependent system activities, performed by none of them on its own, which transforms incoming exchanges into outgoing exchanges.",
+  "status": "draft",
+  "subClassOf": [
+    "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
+  ],
+  "produces": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
+  ],
+  "consumes": [
+    "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/emergent-system-feature-3se"
+  ]
+}
