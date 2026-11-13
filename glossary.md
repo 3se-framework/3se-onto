@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-11-12 21:29 UTC*
+*Generated on 2026-11-13 10:22 UTC*
 
 This glossary contains **8 3SE domain(s)**, **464 3SE term(s)**, **121 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
 
@@ -2557,35 +2557,47 @@ graph TD
     N4["Product"]
     N5["System feature"]
     N6["System attribute"]
-    N7["Product variant"]
-    N8["System feature variant"]
-    N9["System attribute variant"]
-    N10["Service"]
-    N11["Service variant"]
-    N12["Project"]
-    N13["Task"]
+    N7["High level physical element attribute"]
+    N8["High level functional element attribute"]
+    N9["System state attribute"]
+    N10["System function attribute"]
+    N11["System non-functional requirement"]
+    N12["Product variant"]
+    N13["System feature variant"]
+    N14["System attribute variant"]
+    N15["Service"]
+    N16["Service variant"]
+    N17["Project"]
+    N18["Task"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
     N4 -.->|allocates| N5
     N4 -.->|allocates| N6
-    N3 -.->|allocates| N7
-    N7 -.->|allocates| N5
+    N6 -.->|allocates| N7
     N7 -.->|allocates| N8
-    N7 -.->|allocates| N6
-    N7 -.->|allocates| N9
-    N3 -.->|allocates| N10
-    N10 -.->|allocates| N5
-    N10 -.->|allocates| N6
-    N3 -.->|allocates| N11
-    N11 -.->|allocates| N5
-    N11 -.->|allocates| N8
-    N11 -.->|allocates| N6
-    N11 -.->|allocates| N9
-    N2 -.->|allocates| N12
-    N12 -.->|allocates| N3
-    N13 -.->|allocates| N1
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N9 -.->|allocates| N11
+    N8 -.->|allocates| N11
+    N3 -.->|allocates| N12
+    N12 -.->|allocates| N5
+    N12 -.->|allocates| N13
+    N12 -.->|allocates| N6
+    N12 -.->|allocates| N14
+    N3 -.->|allocates| N15
+    N15 -.->|allocates| N5
+    N15 -.->|allocates| N6
+    N3 -.->|allocates| N16
+    N16 -.->|allocates| N5
+    N16 -.->|allocates| N13
+    N16 -.->|allocates| N6
+    N16 -.->|allocates| N14
+    N2 -.->|allocates| N17
+    N17 -.->|allocates| N3
+    N18 -.->|allocates| N1
 ```
 
 *Created: 2026-03-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -3430,16 +3442,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N3 -.->|allocates| N21
     N19 -.->|allocates| N17
+    N3 -.->|allocates| N21
     N21 -.->|allocates| N14
+    N21 -.->|allocates| N18
+    N18 -.->|allocates| N14
     N20 -.->|allocates| N16
     N13 -.->|allocates| N14
-    N18 -.->|allocates| N14
-    N10 -->|subclass of| N4
-    N9 -->|subclass of| N4
-    N8 -->|subclass of| N4
     N12 -->|subclass of| N10
+    N9 -->|subclass of| N4
+    N10 -->|subclass of| N4
+    N8 -->|subclass of| N4
     N11 -->|subclass of| N10
 ```
 
@@ -3601,6 +3614,7 @@ graph TD
     N2 -.->|allocates| N9
     N2 -.->|allocates| N12
     N12 -.->|allocates| N9
+    N12 -.->|allocates| N8
     N1 -.->|allocates| N13
     N13 -.->|allocates| N12
     N13 -.->|allocates| N14
@@ -3650,38 +3664,41 @@ graph TD
     N1["Functional element attribute"]
     N2["System element state attribute"]
     N3["System architecture constraint"]
-    N4["System non-functional requirement"]
-    N5["Functional element"]
-    N6["Physical element"]
-    N7["System element"]
-    N8["Physical element variant"]
-    N9["System element variant"]
-    N10["Functional element variant"]
-    N11["Physical element attribute"]
-    N12["System element attribute"]
-    N13["System element attribute variant"]
-    N14["Physical element attribute variant"]
+    N4["System element function attribute"]
+    N5["System non-functional requirement"]
+    N6["Functional element"]
+    N7["Physical element"]
+    N8["System element"]
+    N9["Physical element variant"]
+    N10["System element variant"]
+    N11["Functional element variant"]
+    N12["Physical element attribute"]
+    N13["System element attribute"]
+    N14["System element attribute variant"]
+    N15["Physical element attribute variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
-    N1 -.->|allocates| N4
-    N5 -.->|allocates| N1
-    N6 -.->|allocates| N5
+    N2 -.->|allocates| N4
+    N4 -.->|allocates| N3
+    N1 -.->|allocates| N5
+    N6 -.->|allocates| N1
     N7 -.->|allocates| N6
-    N8 -.->|allocates| N5
-    N9 -.->|allocates| N8
-    N10 -.->|allocates| N1
-    N8 -.->|allocates| N10
+    N8 -.->|allocates| N7
+    N9 -.->|allocates| N6
+    N10 -.->|allocates| N9
     N11 -.->|allocates| N1
-    N6 -.->|allocates| N11
-    N8 -.->|allocates| N11
-    N12 -.->|allocates| N11
+    N9 -.->|allocates| N11
+    N12 -.->|allocates| N1
     N7 -.->|allocates| N12
-    N13 -.->|allocates| N11
-    N9 -.->|allocates| N13
-    N14 -.->|allocates| N1
-    N8 -.->|allocates| N14
-    N13 -.->|allocates| N14
+    N9 -.->|allocates| N12
+    N13 -.->|allocates| N12
+    N8 -.->|allocates| N13
+    N14 -.->|allocates| N12
+    N10 -.->|allocates| N14
+    N15 -.->|allocates| N1
+    N9 -.->|allocates| N15
+    N14 -.->|allocates| N15
 ```
 
 *Created: 2026-04-13 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -3726,7 +3743,8 @@ graph TD
     N4["High level functional element attribute"]
     N5["System state attribute"]
     N6["System architecture constraint"]
-    N7["System function attribute"]
+    N7["System element function attribute"]
+    N8["System function attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
@@ -3735,11 +3753,13 @@ graph TD
     N4 -.->|allocates| N5
     N4 -.->|allocates| N3
     N2 -.->|allocates| N6
+    N2 -.->|allocates| N7
     N2 -.->|can be| N5
     N5 -->|composed of| N2
-    N5 -.->|allocates| N7
+    N5 -.->|allocates| N8
     N5 -.->|allocates| N3
-    N7 -.->|allocates| N3
+    N7 -.->|allocates| N6
+    N8 -.->|allocates| N3
 ```
 
 *Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -3769,30 +3789,33 @@ graph TD
     N1["Functional element attribute variant"]
     N2["System element state attribute"]
     N3["System architecture constraint"]
-    N4["System element state attribute variant"]
-    N5["System architecture constraint variant"]
-    N6["System non-functional requirement"]
-    N7["System non-functional requirement variant"]
-    N8["Functional element variant"]
-    N9["Physical element variant"]
-    N10["System element variant"]
-    N11["Physical element attribute variant"]
-    N12["System element attribute variant"]
+    N4["System element function attribute"]
+    N5["System element state attribute variant"]
+    N6["System architecture constraint variant"]
+    N7["System non-functional requirement"]
+    N8["System non-functional requirement variant"]
+    N9["Functional element variant"]
+    N10["Physical element variant"]
+    N11["System element variant"]
+    N12["Physical element attribute variant"]
+    N13["System element attribute variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
-    N1 -.->|allocates| N4
+    N2 -.->|allocates| N4
     N4 -.->|allocates| N3
-    N4 -.->|allocates| N5
-    N1 -.->|allocates| N6
+    N1 -.->|allocates| N5
+    N5 -.->|allocates| N3
+    N5 -.->|allocates| N6
     N1 -.->|allocates| N7
-    N8 -.->|allocates| N1
-    N9 -.->|allocates| N8
+    N1 -.->|allocates| N8
+    N9 -.->|allocates| N1
     N10 -.->|allocates| N9
-    N11 -.->|allocates| N1
-    N9 -.->|allocates| N11
-    N12 -.->|allocates| N11
+    N11 -.->|allocates| N10
+    N12 -.->|allocates| N1
     N10 -.->|allocates| N12
+    N13 -.->|allocates| N12
+    N11 -.->|allocates| N13
 ```
 
 **Variability**
@@ -3803,22 +3826,25 @@ graph TD
     N2["Functional element attribute"]
     N3["System element state attribute"]
     N4["System architecture constraint"]
-    N5["System element state attribute variant"]
-    N6["System architecture constraint variant"]
-    N7["System non-functional requirement"]
-    N8["System non-functional requirement variant"]
+    N5["System element function attribute"]
+    N6["System element state attribute variant"]
+    N7["System architecture constraint variant"]
+    N8["System non-functional requirement"]
+    N9["System non-functional requirement variant"]
 
     N1 -.->|variant of| N2
-    N5 -.->|variant of| N3
-    N6 -.->|variant of| N4
-    N8 -.->|variant of| N7
+    N6 -.->|variant of| N3
+    N7 -.->|variant of| N4
+    N9 -.->|variant of| N8
     N1 -.->|allocates| N3
     N3 -.->|allocates| N4
-    N1 -.->|allocates| N5
+    N3 -.->|allocates| N5
     N5 -.->|allocates| N4
-    N5 -.->|allocates| N6
-    N1 -.->|allocates| N7
+    N1 -.->|allocates| N6
+    N6 -.->|allocates| N4
+    N6 -.->|allocates| N7
     N1 -.->|allocates| N8
+    N1 -.->|allocates| N9
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -3886,10 +3912,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
     N6 -.->|allocates| N13
+    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -3957,6 +3983,7 @@ graph TD
     N2 -.->|allocates| N9
     N2 -.->|allocates| N12
     N12 -.->|allocates| N9
+    N12 -.->|allocates| N8
     N1 -.->|allocates| N13
     N13 -.->|allocates| N3
     N13 -.->|allocates| N14
@@ -4038,6 +4065,7 @@ graph TD
     N3 -.->|allocates| N10
     N3 -.->|allocates| N13
     N13 -.->|allocates| N10
+    N13 -.->|allocates| N9
     N1 -.->|allocates| N14
     N14 -.->|allocates| N4
     N14 -.->|allocates| N15
@@ -5170,9 +5198,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -6066,7 +6094,17 @@ graph TD
     N10["High level physical element variant"]
     N11["High level functional element variant"]
     N12["High level physical element attribute"]
-    N13["High level physical element attribute variant"]
+    N13["System attribute"]
+    N14["Product"]
+    N15["Release"]
+    N16["Iteration"]
+    N17["Epic"]
+    N18["Task"]
+    N19["Project"]
+    N20["Product variant"]
+    N21["Service"]
+    N22["Service variant"]
+    N23["High level physical element attribute variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
@@ -6085,8 +6123,25 @@ graph TD
     N12 -.->|allocates| N1
     N6 -.->|allocates| N12
     N10 -.->|allocates| N12
-    N13 -.->|allocates| N1
-    N10 -.->|allocates| N13
+    N13 -.->|allocates| N12
+    N14 -.->|allocates| N13
+    N15 -.->|allocates| N14
+    N16 -.->|allocates| N15
+    N17 -.->|allocates| N16
+    N18 -.->|allocates| N17
+    N18 -.->|allocates| N16
+    N19 -.->|allocates| N15
+    N16 -.->|allocates| N19
+    N20 -.->|allocates| N13
+    N15 -.->|allocates| N20
+    N21 -.->|allocates| N13
+    N15 -.->|allocates| N21
+    N22 -.->|allocates| N13
+    N15 -.->|allocates| N22
+    N8 -.->|allocates| N13
+    N9 -.->|allocates| N13
+    N23 -.->|allocates| N1
+    N10 -.->|allocates| N23
 ```
 
 *Created: 2026-04-24 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -6422,7 +6477,7 @@ graph TD
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Composed of | [physical-element-attribute-3se-069e3c5af9167fb3](https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3) |
 | Allocates | [high-level-functional-element-attribute-3se-069ebabe8f57748e](https://www.3se.info/3se-onto/terms/high-level-functional-element-attribute-3se-069ebabe8f57748e) |
-| Allocated by | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399), [high-level-physical-element-variant-3se-06a8873e37a378a2](https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2) |
+| Allocated by | [high-level-physical-element-3se-069c03464ae07399](https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399), [high-level-physical-element-variant-3se-06a8873e37a378a2](https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2), [system-attribute-3se-069dcf9369b672e3](https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3) |
 | Has variant | [high-level-physical-element-attribute-variant-3se-06a8873e379978a4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-variant-3se-06a8873e379978a4) |
 | Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) |
 
@@ -6452,6 +6507,16 @@ graph TD
     N8["System"]
     N9["System variant"]
     N10["High level physical element variant"]
+    N11["System attribute"]
+    N12["Product"]
+    N13["Release"]
+    N14["Iteration"]
+    N15["Epic"]
+    N16["Task"]
+    N17["Project"]
+    N18["Product variant"]
+    N19["Service"]
+    N20["Service variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
@@ -6465,6 +6530,23 @@ graph TD
     N9 -.->|allocates| N6
     N10 -.->|allocates| N1
     N9 -.->|allocates| N10
+    N11 -.->|allocates| N1
+    N12 -.->|allocates| N11
+    N13 -.->|allocates| N12
+    N14 -.->|allocates| N13
+    N15 -.->|allocates| N14
+    N16 -.->|allocates| N15
+    N16 -.->|allocates| N14
+    N17 -.->|allocates| N13
+    N14 -.->|allocates| N17
+    N18 -.->|allocates| N11
+    N13 -.->|allocates| N18
+    N19 -.->|allocates| N11
+    N13 -.->|allocates| N19
+    N20 -.->|allocates| N11
+    N13 -.->|allocates| N20
+    N8 -.->|allocates| N11
+    N9 -.->|allocates| N11
 ```
 
 *Created: 2026-04-24 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -7376,37 +7458,49 @@ graph TD
     N3["Product"]
     N4["System feature"]
     N5["System attribute"]
-    N6["Product variant"]
-    N7["System feature variant"]
-    N8["System attribute variant"]
-    N9["Service"]
-    N10["Service variant"]
-    N11["Project"]
-    N12["Epic"]
-    N13["Task"]
+    N6["High level physical element attribute"]
+    N7["High level functional element attribute"]
+    N8["System state attribute"]
+    N9["System function attribute"]
+    N10["System non-functional requirement"]
+    N11["Product variant"]
+    N12["System feature variant"]
+    N13["System attribute variant"]
+    N14["Service"]
+    N15["Service variant"]
+    N16["Project"]
+    N17["Epic"]
+    N18["Task"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
     N3 -.->|allocates| N5
-    N2 -.->|allocates| N6
-    N6 -.->|allocates| N4
+    N5 -.->|allocates| N6
     N6 -.->|allocates| N7
-    N6 -.->|allocates| N5
-    N6 -.->|allocates| N8
-    N2 -.->|allocates| N9
-    N9 -.->|allocates| N4
-    N9 -.->|allocates| N5
-    N2 -.->|allocates| N10
-    N10 -.->|allocates| N4
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N5
-    N10 -.->|allocates| N8
-    N1 -.->|allocates| N11
-    N11 -.->|allocates| N2
-    N12 -.->|allocates| N1
-    N13 -.->|allocates| N12
-    N13 -.->|allocates| N1
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N8 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N2 -.->|allocates| N11
+    N11 -.->|allocates| N4
+    N11 -.->|allocates| N12
+    N11 -.->|allocates| N5
+    N11 -.->|allocates| N13
+    N2 -.->|allocates| N14
+    N14 -.->|allocates| N4
+    N14 -.->|allocates| N5
+    N2 -.->|allocates| N15
+    N15 -.->|allocates| N4
+    N15 -.->|allocates| N12
+    N15 -.->|allocates| N5
+    N15 -.->|allocates| N13
+    N1 -.->|allocates| N16
+    N16 -.->|allocates| N2
+    N17 -.->|allocates| N1
+    N18 -.->|allocates| N17
+    N18 -.->|allocates| N1
 ```
 
 *Created: 2026-03-13 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -8022,11 +8116,14 @@ graph TD
     N4["System attribute"]
     N5["System activity"]
     N6["System feature"]
+    N7["High level physical element attribute"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N2 -.->|allocates| N7
 ```
 
 *Created: 2026-11-01 · Modified: 2026-11-01 · Creator: @rcasteran*
@@ -8231,16 +8328,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N5 -.->|allocates| N3
     N14 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N11 -->|subclass of| N8
-    N12 -->|subclass of| N11
-    N10 -->|subclass of| N8
+    N5 -.->|allocates| N3
     N9 -->|subclass of| N8
     N13 -->|subclass of| N11
+    N12 -->|subclass of| N11
+    N10 -->|subclass of| N8
+    N11 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -8403,6 +8500,7 @@ graph TD
     N3 -.->|allocates| N10
     N3 -.->|allocates| N13
     N13 -.->|allocates| N10
+    N13 -.->|allocates| N9
     N2 -.->|allocates| N14
     N14 -.->|allocates| N13
     N14 -.->|allocates| N15
@@ -8454,27 +8552,30 @@ graph TD
     N2["Functional element attribute"]
     N3["System element state attribute"]
     N4["System architecture constraint"]
-    N5["System non-functional requirement"]
-    N6["Physical element"]
-    N7["System element"]
-    N8["Physical element variant"]
-    N9["System element variant"]
-    N10["System element attribute"]
-    N11["System element attribute variant"]
+    N5["System element function attribute"]
+    N6["System non-functional requirement"]
+    N7["Physical element"]
+    N8["System element"]
+    N9["Physical element variant"]
+    N10["System element variant"]
+    N11["System element attribute"]
+    N12["System element attribute variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
-    N2 -.->|allocates| N5
-    N1 -.->|allocates| N5
-    N6 -.->|allocates| N1
-    N7 -.->|allocates| N6
-    N8 -.->|allocates| N1
-    N9 -.->|allocates| N8
-    N10 -.->|allocates| N1
-    N7 -.->|allocates| N10
+    N3 -.->|allocates| N5
+    N5 -.->|allocates| N4
+    N2 -.->|allocates| N6
+    N1 -.->|allocates| N6
+    N7 -.->|allocates| N1
+    N8 -.->|allocates| N7
+    N9 -.->|allocates| N1
+    N10 -.->|allocates| N9
     N11 -.->|allocates| N1
-    N9 -.->|allocates| N11
+    N8 -.->|allocates| N11
+    N12 -.->|allocates| N1
+    N10 -.->|allocates| N12
 ```
 
 *Created: 2026-04-13 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -8562,32 +8663,35 @@ graph TD
     N2["Functional element attribute"]
     N3["System element state attribute"]
     N4["System architecture constraint"]
-    N5["System non-functional requirement"]
-    N6["Functional element attribute variant"]
-    N7["System element state attribute variant"]
-    N8["System architecture constraint variant"]
-    N9["System non-functional requirement variant"]
-    N10["Physical element variant"]
-    N11["System element variant"]
-    N12["System element attribute variant"]
+    N5["System element function attribute"]
+    N6["System non-functional requirement"]
+    N7["Functional element attribute variant"]
+    N8["System element state attribute variant"]
+    N9["System architecture constraint variant"]
+    N10["System non-functional requirement variant"]
+    N11["Physical element variant"]
+    N12["System element variant"]
+    N13["System element attribute variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
-    N2 -.->|allocates| N5
-    N1 -.->|allocates| N6
-    N6 -.->|allocates| N3
-    N6 -.->|allocates| N7
-    N7 -.->|allocates| N4
+    N3 -.->|allocates| N5
+    N5 -.->|allocates| N4
+    N2 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N7 -.->|allocates| N3
     N7 -.->|allocates| N8
-    N6 -.->|allocates| N5
-    N6 -.->|allocates| N9
-    N1 -.->|allocates| N5
-    N1 -.->|allocates| N9
-    N10 -.->|allocates| N1
-    N11 -.->|allocates| N10
-    N12 -.->|allocates| N1
-    N11 -.->|allocates| N12
+    N8 -.->|allocates| N4
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N6
+    N7 -.->|allocates| N10
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N10
+    N11 -.->|allocates| N1
+    N12 -.->|allocates| N11
+    N13 -.->|allocates| N1
+    N12 -.->|allocates| N13
 ```
 
 **Variability**
@@ -8599,30 +8703,33 @@ graph TD
     N3["Functional element attribute"]
     N4["System element state attribute"]
     N5["System architecture constraint"]
-    N6["System non-functional requirement"]
-    N7["Functional element attribute variant"]
-    N8["System element state attribute variant"]
-    N9["System architecture constraint variant"]
-    N10["System non-functional requirement variant"]
+    N6["System element function attribute"]
+    N7["System non-functional requirement"]
+    N8["Functional element attribute variant"]
+    N9["System element state attribute variant"]
+    N10["System architecture constraint variant"]
+    N11["System non-functional requirement variant"]
 
     N1 -.->|variant of| N2
-    N7 -.->|variant of| N3
-    N8 -.->|variant of| N4
-    N9 -.->|variant of| N5
-    N10 -.->|variant of| N6
+    N8 -.->|variant of| N3
+    N9 -.->|variant of| N4
+    N10 -.->|variant of| N5
+    N11 -.->|variant of| N7
     N1 -.->|allocates| N3
     N3 -.->|allocates| N4
     N4 -.->|allocates| N5
-    N3 -.->|allocates| N6
-    N1 -.->|allocates| N7
-    N7 -.->|allocates| N4
-    N7 -.->|allocates| N8
-    N8 -.->|allocates| N5
+    N4 -.->|allocates| N6
+    N6 -.->|allocates| N5
+    N3 -.->|allocates| N7
+    N1 -.->|allocates| N8
+    N8 -.->|allocates| N4
     N8 -.->|allocates| N9
-    N7 -.->|allocates| N6
-    N7 -.->|allocates| N10
-    N1 -.->|allocates| N6
-    N1 -.->|allocates| N10
+    N9 -.->|allocates| N5
+    N9 -.->|allocates| N10
+    N8 -.->|allocates| N7
+    N8 -.->|allocates| N11
+    N1 -.->|allocates| N7
+    N1 -.->|allocates| N11
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -8760,6 +8867,7 @@ graph TD
     N3 -.->|allocates| N10
     N3 -.->|allocates| N13
     N13 -.->|allocates| N10
+    N13 -.->|allocates| N9
     N2 -.->|allocates| N14
     N14 -.->|allocates| N13
     N14 -.->|allocates| N15
@@ -8863,6 +8971,7 @@ graph TD
     N4 -.->|allocates| N11
     N4 -.->|allocates| N14
     N14 -.->|allocates| N11
+    N14 -.->|allocates| N10
     N3 -.->|allocates| N15
     N15 -.->|allocates| N14
     N15 -.->|allocates| N16
@@ -9367,21 +9476,33 @@ graph TD
     N1["Product"]
     N2["System feature"]
     N3["System attribute"]
-    N4["Release"]
-    N5["Iteration"]
-    N6["Epic"]
-    N7["Task"]
-    N8["Project"]
+    N4["High level physical element attribute"]
+    N5["High level functional element attribute"]
+    N6["System state attribute"]
+    N7["System function attribute"]
+    N8["System non-functional requirement"]
+    N9["Release"]
+    N10["Iteration"]
+    N11["Epic"]
+    N12["Task"]
+    N13["Project"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
-    N4 -.->|allocates| N1
-    N5 -.->|allocates| N4
-    N6 -.->|allocates| N5
-    N7 -.->|allocates| N6
-    N7 -.->|allocates| N5
-    N8 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N6 -.->|allocates| N8
     N5 -.->|allocates| N8
+    N9 -.->|allocates| N1
+    N10 -.->|allocates| N9
+    N11 -.->|allocates| N10
+    N12 -.->|allocates| N11
+    N12 -.->|allocates| N10
+    N13 -.->|allocates| N9
+    N10 -.->|allocates| N13
 ```
 
 *Created: 2026-03-13 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -9435,8 +9556,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9701,24 +9822,36 @@ graph TD
     N2["System feature"]
     N3["System feature variant"]
     N4["System attribute"]
-    N5["System attribute variant"]
-    N6["Release"]
-    N7["Iteration"]
-    N8["Epic"]
-    N9["Task"]
-    N10["Project"]
+    N5["High level physical element attribute"]
+    N6["High level functional element attribute"]
+    N7["System state attribute"]
+    N8["System function attribute"]
+    N9["System non-functional requirement"]
+    N10["System attribute variant"]
+    N11["Release"]
+    N12["Iteration"]
+    N13["Epic"]
+    N14["Task"]
+    N15["Project"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
-    N1 -.->|allocates| N5
-    N6 -.->|allocates| N1
-    N7 -.->|allocates| N6
-    N8 -.->|allocates| N7
-    N9 -.->|allocates| N8
-    N9 -.->|allocates| N7
-    N10 -.->|allocates| N6
-    N7 -.->|allocates| N10
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N9
+    N6 -.->|allocates| N9
+    N1 -.->|allocates| N10
+    N11 -.->|allocates| N1
+    N12 -.->|allocates| N11
+    N13 -.->|allocates| N12
+    N14 -.->|allocates| N13
+    N14 -.->|allocates| N12
+    N15 -.->|allocates| N11
+    N12 -.->|allocates| N15
 ```
 
 **Variability**
@@ -9730,15 +9863,27 @@ graph TD
     N3["System feature"]
     N4["System feature variant"]
     N5["System attribute"]
-    N6["System attribute variant"]
+    N6["High level physical element attribute"]
+    N7["High level functional element attribute"]
+    N8["System state attribute"]
+    N9["System function attribute"]
+    N10["System non-functional requirement"]
+    N11["System attribute variant"]
 
     N1 -.->|variant of| N2
     N4 -.->|variant of| N3
-    N6 -.->|variant of| N5
+    N11 -.->|variant of| N5
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
-    N1 -.->|allocates| N6
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N8 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N1 -.->|allocates| N11
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -9768,36 +9913,48 @@ graph TD
     N3["Product"]
     N4["System feature"]
     N5["System attribute"]
-    N6["Product variant"]
-    N7["System feature variant"]
-    N8["System attribute variant"]
-    N9["Service"]
-    N10["Service variant"]
-    N11["Iteration"]
-    N12["Epic"]
-    N13["Task"]
+    N6["High level physical element attribute"]
+    N7["High level functional element attribute"]
+    N8["System state attribute"]
+    N9["System function attribute"]
+    N10["System non-functional requirement"]
+    N11["Product variant"]
+    N12["System feature variant"]
+    N13["System attribute variant"]
+    N14["Service"]
+    N15["Service variant"]
+    N16["Iteration"]
+    N17["Epic"]
+    N18["Task"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
     N3 -.->|allocates| N5
-    N2 -.->|allocates| N6
-    N6 -.->|allocates| N4
+    N5 -.->|allocates| N6
     N6 -.->|allocates| N7
-    N6 -.->|allocates| N5
-    N6 -.->|allocates| N8
-    N2 -.->|allocates| N9
-    N9 -.->|allocates| N4
-    N9 -.->|allocates| N5
-    N2 -.->|allocates| N10
-    N10 -.->|allocates| N4
-    N10 -.->|allocates| N7
-    N10 -.->|allocates| N5
-    N10 -.->|allocates| N8
-    N11 -.->|allocates| N1
-    N12 -.->|allocates| N11
-    N13 -.->|allocates| N12
-    N13 -.->|allocates| N11
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N8 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N2 -.->|allocates| N11
+    N11 -.->|allocates| N4
+    N11 -.->|allocates| N12
+    N11 -.->|allocates| N5
+    N11 -.->|allocates| N13
+    N2 -.->|allocates| N14
+    N14 -.->|allocates| N4
+    N14 -.->|allocates| N5
+    N2 -.->|allocates| N15
+    N15 -.->|allocates| N4
+    N15 -.->|allocates| N12
+    N15 -.->|allocates| N5
+    N15 -.->|allocates| N13
+    N16 -.->|allocates| N1
+    N17 -.->|allocates| N16
+    N18 -.->|allocates| N17
+    N18 -.->|allocates| N16
 ```
 
 *Created: 2026-03-13 · Modified: 2026-11-01 · Creator: @rcasteran*
@@ -9991,38 +10148,50 @@ graph TD
     N2["Product"]
     N3["System feature"]
     N4["System attribute"]
-    N5["Product variant"]
-    N6["System feature variant"]
-    N7["System attribute variant"]
-    N8["Service"]
-    N9["Service variant"]
-    N10["Iteration"]
-    N11["Epic"]
-    N12["Task"]
-    N13["Project"]
+    N5["High level physical element attribute"]
+    N6["High level functional element attribute"]
+    N7["System state attribute"]
+    N8["System function attribute"]
+    N9["System non-functional requirement"]
+    N10["Product variant"]
+    N11["System feature variant"]
+    N12["System attribute variant"]
+    N13["Service"]
+    N14["Service variant"]
+    N15["Iteration"]
+    N16["Epic"]
+    N17["Task"]
+    N18["Project"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N2 -.->|allocates| N4
-    N1 -.->|allocates| N5
-    N5 -.->|allocates| N3
+    N4 -.->|allocates| N5
     N5 -.->|allocates| N6
-    N5 -.->|allocates| N4
-    N5 -.->|allocates| N7
-    N1 -.->|allocates| N8
-    N8 -.->|allocates| N3
-    N8 -.->|allocates| N4
-    N1 -.->|allocates| N9
-    N9 -.->|allocates| N3
-    N9 -.->|allocates| N6
-    N9 -.->|allocates| N4
-    N9 -.->|allocates| N7
-    N10 -.->|allocates| N1
-    N11 -.->|allocates| N10
-    N12 -.->|allocates| N11
-    N12 -.->|allocates| N10
-    N13 -.->|allocates| N1
-    N10 -.->|allocates| N13
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N9
+    N6 -.->|allocates| N9
+    N1 -.->|allocates| N10
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N11
+    N10 -.->|allocates| N4
+    N10 -.->|allocates| N12
+    N1 -.->|allocates| N13
+    N13 -.->|allocates| N3
+    N13 -.->|allocates| N4
+    N1 -.->|allocates| N14
+    N14 -.->|allocates| N3
+    N14 -.->|allocates| N11
+    N14 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N15 -.->|allocates| N1
+    N16 -.->|allocates| N15
+    N17 -.->|allocates| N16
+    N17 -.->|allocates| N15
+    N18 -.->|allocates| N1
+    N15 -.->|allocates| N18
 ```
 
 *Created: 2026-03-13 · Modified: 2026-11-01 · Creator: @rcasteran*
@@ -10080,17 +10249,17 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N3
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
     N5 -.->|allocates| N2
     N5 -.->|allocates| N3
-    N2 -->|subclass of| N8
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N3
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
     N3 -->|subclass of| N13
+    N2 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12599,21 +12768,33 @@ graph TD
     N1["Service"]
     N2["System feature"]
     N3["System attribute"]
-    N4["Release"]
-    N5["Iteration"]
-    N6["Epic"]
-    N7["Task"]
-    N8["Project"]
+    N4["High level physical element attribute"]
+    N5["High level functional element attribute"]
+    N6["System state attribute"]
+    N7["System function attribute"]
+    N8["System non-functional requirement"]
+    N9["Release"]
+    N10["Iteration"]
+    N11["Epic"]
+    N12["Task"]
+    N13["Project"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
-    N4 -.->|allocates| N1
-    N5 -.->|allocates| N4
-    N6 -.->|allocates| N5
-    N7 -.->|allocates| N6
-    N7 -.->|allocates| N5
-    N8 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N6 -.->|allocates| N8
     N5 -.->|allocates| N8
+    N9 -.->|allocates| N1
+    N10 -.->|allocates| N9
+    N11 -.->|allocates| N10
+    N12 -.->|allocates| N11
+    N12 -.->|allocates| N10
+    N13 -.->|allocates| N9
+    N10 -.->|allocates| N13
 ```
 
 *Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12666,8 +12847,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -13026,24 +13207,36 @@ graph TD
     N2["System feature"]
     N3["System feature variant"]
     N4["System attribute"]
-    N5["System attribute variant"]
-    N6["Release"]
-    N7["Iteration"]
-    N8["Epic"]
-    N9["Task"]
-    N10["Project"]
+    N5["High level physical element attribute"]
+    N6["High level functional element attribute"]
+    N7["System state attribute"]
+    N8["System function attribute"]
+    N9["System non-functional requirement"]
+    N10["System attribute variant"]
+    N11["Release"]
+    N12["Iteration"]
+    N13["Epic"]
+    N14["Task"]
+    N15["Project"]
 
     N1 -.->|allocates| N2
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
-    N1 -.->|allocates| N5
-    N6 -.->|allocates| N1
-    N7 -.->|allocates| N6
-    N8 -.->|allocates| N7
-    N9 -.->|allocates| N8
-    N9 -.->|allocates| N7
-    N10 -.->|allocates| N6
-    N7 -.->|allocates| N10
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N7 -.->|allocates| N9
+    N6 -.->|allocates| N9
+    N1 -.->|allocates| N10
+    N11 -.->|allocates| N1
+    N12 -.->|allocates| N11
+    N13 -.->|allocates| N12
+    N14 -.->|allocates| N13
+    N14 -.->|allocates| N12
+    N15 -.->|allocates| N11
+    N12 -.->|allocates| N15
 ```
 
 **Variability**
@@ -13055,15 +13248,27 @@ graph TD
     N3["System feature"]
     N4["System feature variant"]
     N5["System attribute"]
-    N6["System attribute variant"]
+    N6["High level physical element attribute"]
+    N7["High level functional element attribute"]
+    N8["System state attribute"]
+    N9["System function attribute"]
+    N10["System non-functional requirement"]
+    N11["System attribute variant"]
 
     N1 -.->|variant of| N2
     N4 -.->|variant of| N3
-    N6 -.->|variant of| N5
+    N11 -.->|variant of| N5
     N1 -.->|allocates| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
-    N1 -.->|allocates| N6
+    N5 -.->|allocates| N6
+    N6 -.->|allocates| N7
+    N7 -.->|allocates| N8
+    N8 -.->|allocates| N9
+    N9 -.->|allocates| N10
+    N8 -.->|allocates| N10
+    N7 -.->|allocates| N10
+    N1 -.->|allocates| N11
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -13442,9 +13647,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
     N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -15342,6 +15547,7 @@ graph TD
     N13 -.->|allocates| N12
     N1 -.->|allocates| N4
     N1 -.->|allocates| N14
+    N14 -.->|allocates| N13
 ```
 
 *Created: 2026-03-16 · Modified: 2026-11-12 · Creator: @rcasteran*
@@ -15658,14 +15864,14 @@ graph TD
     N22["System element state variant"]
     N23["System element function attribute"]
     N24["System element function variant"]
-    N25["System element function attribute variant"]
-    N26["System element state attribute"]
-    N27["Functional element attribute"]
-    N28["Physical element attribute"]
-    N29["System element attribute"]
-    N30["System element attribute variant"]
-    N31["Physical element attribute variant"]
-    N32["Functional element attribute variant"]
+    N25["System element state attribute"]
+    N26["Functional element attribute"]
+    N27["Physical element attribute"]
+    N28["System element attribute"]
+    N29["System element attribute variant"]
+    N30["Physical element attribute variant"]
+    N31["Functional element attribute variant"]
+    N32["System element function attribute variant"]
     N33["System element state attribute variant"]
 
     N2 -.->|allocates| N1
@@ -15715,34 +15921,35 @@ graph TD
     N14 -.->|allocates| N23
     N24 -.->|allocates| N23
     N22 -.->|allocates| N24
-    N25 -.->|allocates| N1
-    N24 -.->|allocates| N25
+    N25 -.->|allocates| N23
+    N26 -.->|allocates| N25
+    N16 -.->|allocates| N26
+    N21 -.->|allocates| N26
+    N27 -.->|allocates| N26
+    N17 -.->|allocates| N27
+    N19 -.->|allocates| N27
+    N28 -.->|allocates| N27
+    N18 -.->|allocates| N28
+    N29 -.->|allocates| N27
+    N20 -.->|allocates| N29
+    N30 -.->|allocates| N26
+    N19 -.->|allocates| N30
+    N29 -.->|allocates| N30
+    N31 -.->|allocates| N25
+    N21 -.->|allocates| N31
+    N30 -.->|allocates| N31
+    N15 -.->|allocates| N25
+    N32 -.->|allocates| N1
+    N24 -.->|allocates| N32
     N24 -.->|allocates| N1
     N4 -.->|allocates| N1
     N10 -.->|allocates| N1
     N11 -.->|allocates| N1
     N5 -.->|allocates| N1
     N15 -.->|allocates| N1
-    N26 -.->|allocates| N1
-    N27 -.->|allocates| N26
-    N16 -.->|allocates| N27
-    N21 -.->|allocates| N27
-    N28 -.->|allocates| N27
-    N17 -.->|allocates| N28
-    N19 -.->|allocates| N28
-    N29 -.->|allocates| N28
-    N18 -.->|allocates| N29
-    N30 -.->|allocates| N28
-    N20 -.->|allocates| N30
-    N31 -.->|allocates| N27
-    N19 -.->|allocates| N31
-    N30 -.->|allocates| N31
-    N32 -.->|allocates| N26
-    N21 -.->|allocates| N32
-    N31 -.->|allocates| N32
-    N15 -.->|allocates| N26
+    N25 -.->|allocates| N1
     N33 -.->|allocates| N1
-    N32 -.->|allocates| N33
+    N31 -.->|allocates| N33
     N22 -.->|allocates| N33
     N22 -.->|allocates| N1
 ```
@@ -15946,7 +16153,7 @@ graph TD
 
 ### System attribute - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Attribute of a system.
 
@@ -15956,6 +16163,7 @@ graph TD
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Superclass of | [emergent-system-attribute-3se-06af62da8e7c7115](https://www.3se.info/3se-onto/terms/emergent-system-attribute-3se-06af62da8e7c7115) |
 | Composed of | [system-element-attribute-3se-069dd064716473a4](https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4) |
+| Allocates | [high-level-physical-element-attribute-3se-069ebabe8f6076e4](https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4) |
 | Allocated by | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [system-variant-3se-06a8873e391474dc](https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc) |
 | Has variant | [system-attribute-variant-3se-06a8873e38277bc3](https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3) |
 | Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
@@ -15979,37 +16187,49 @@ graph TD
 ```mermaid
 graph TD
     N1["System attribute"]
-    N2["Product"]
-    N3["Release"]
-    N4["Iteration"]
-    N5["Epic"]
-    N6["Task"]
-    N7["Project"]
-    N8["Product variant"]
-    N9["Service"]
-    N10["Service variant"]
-    N11["System"]
-    N12["System variant"]
+    N2["High level physical element attribute"]
+    N3["High level functional element attribute"]
+    N4["System state attribute"]
+    N5["System function attribute"]
+    N6["System non-functional requirement"]
+    N7["Product"]
+    N8["Release"]
+    N9["Iteration"]
+    N10["Epic"]
+    N11["Task"]
+    N12["Project"]
+    N13["Product variant"]
+    N14["Service"]
+    N15["Service variant"]
+    N16["System"]
+    N17["System variant"]
 
-    N2 -.->|allocates| N1
-    N3 -.->|allocates| N2
-    N4 -.->|allocates| N3
-    N5 -.->|allocates| N4
-    N6 -.->|allocates| N5
-    N6 -.->|allocates| N4
-    N7 -.->|allocates| N3
-    N4 -.->|allocates| N7
-    N8 -.->|allocates| N1
-    N3 -.->|allocates| N8
-    N9 -.->|allocates| N1
-    N3 -.->|allocates| N9
-    N10 -.->|allocates| N1
-    N3 -.->|allocates| N10
-    N11 -.->|allocates| N1
-    N12 -.->|allocates| N1
+    N1 -.->|allocates| N2
+    N2 -.->|allocates| N3
+    N3 -.->|allocates| N4
+    N4 -.->|allocates| N5
+    N5 -.->|allocates| N6
+    N4 -.->|allocates| N6
+    N3 -.->|allocates| N6
+    N7 -.->|allocates| N1
+    N8 -.->|allocates| N7
+    N9 -.->|allocates| N8
+    N10 -.->|allocates| N9
+    N11 -.->|allocates| N10
+    N11 -.->|allocates| N9
+    N12 -.->|allocates| N8
+    N9 -.->|allocates| N12
+    N13 -.->|allocates| N1
+    N8 -.->|allocates| N13
+    N14 -.->|allocates| N1
+    N8 -.->|allocates| N14
+    N15 -.->|allocates| N1
+    N8 -.->|allocates| N15
+    N16 -.->|allocates| N1
+    N17 -.->|allocates| N1
 ```
 
-*Created: 2026-04-13 · Modified: 2026-11-01 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-11-13 · Creator: @rcasteran*
 
 ---
 
@@ -16040,14 +16260,17 @@ graph TD
 
 ```mermaid
 graph TD
-    N1["Goal"]
-    N2["Value"]
-    N3["System attribute"]
-    N4["Attribute"]
+    N1["System attribute"]
+    N2["High level physical element attribute"]
+    N3["Goal"]
+    N4["Value"]
+    N5["Attribute"]
 
     N1 -.->|allocates| N2
-    N4 -.->|allocates| N1
-    N3 -->|subclass of| N4
+    N3 -.->|allocates| N4
+    N5 -.->|allocates| N3
+    N1 -->|subclass of| N5
+    N2 -->|subclass of| N5
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16088,22 +16311,23 @@ graph TD
 graph TD
     N1["System attribute"]
     N2["System element attribute"]
-    N3["Physical element attribute"]
-    N4["Functional element attribute"]
-    N5["System non-functional requirement"]
-    N6["High level physical element attribute"]
+    N3["High level physical element attribute"]
+    N4["Physical element attribute"]
+    N5["Functional element attribute"]
+    N6["System non-functional requirement"]
     N7["High level functional element attribute"]
 
     N1 -->|composed of| N2
-    N2 -.->|allocates| N3
+    N1 -.->|allocates| N3
+    N2 -.->|allocates| N4
     N2 -.->|can be| N1
-    N3 -.->|allocates| N4
-    N3 -.->|allocates| N5
-    N3 -.->|can be| N6
-    N6 -->|composed of| N3
-    N6 -.->|allocates| N7
-    N7 -.->|allocates| N5
     N4 -.->|allocates| N5
+    N4 -.->|allocates| N6
+    N4 -.->|can be| N3
+    N3 -->|composed of| N4
+    N3 -.->|allocates| N7
+    N7 -.->|allocates| N6
+    N5 -.->|allocates| N6
 ```
 
 *Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16261,11 +16485,12 @@ graph TD
     N8 -.->|allocates| N14
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
+    N10 -.->|allocates| N14
     N7 -.->|allocates| N5
     N6 -.->|allocates| N5
-    N10 -.->|allocates| N14
-    N13 -.->|allocates| N9
+    N5 -.->|allocates| N12
     N11 -.->|allocates| N4
+    N13 -.->|allocates| N9
 ```
 
 *Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16522,6 +16747,7 @@ graph TD
     N4 -.->|allocates| N11
     N4 -.->|allocates| N14
     N14 -.->|allocates| N11
+    N14 -.->|allocates| N10
     N3 -.->|allocates| N15
     N15 -.->|allocates| N14
     N15 -.->|allocates| N16
@@ -16642,16 +16868,19 @@ graph TD
     N3["Functional element attribute"]
     N4["System element state attribute"]
     N5["System architecture constraint"]
-    N6["System non-functional requirement"]
-    N7["System element"]
+    N6["System element function attribute"]
+    N7["System non-functional requirement"]
+    N8["System element"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
     N4 -.->|allocates| N5
-    N3 -.->|allocates| N6
-    N2 -.->|allocates| N6
-    N7 -.->|allocates| N1
+    N4 -.->|allocates| N6
+    N6 -.->|allocates| N5
+    N3 -.->|allocates| N7
+    N2 -.->|allocates| N7
+    N8 -.->|allocates| N1
 ```
 
 *Created: 2026-04-13 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -16681,32 +16910,35 @@ graph TD
     N3["Functional element attribute"]
     N4["System element state attribute"]
     N5["System architecture constraint"]
-    N6["System non-functional requirement"]
-    N7["Physical element attribute variant"]
-    N8["Functional element attribute variant"]
-    N9["System element state attribute variant"]
-    N10["System architecture constraint variant"]
-    N11["System non-functional requirement variant"]
-    N12["System element variant"]
+    N6["System element function attribute"]
+    N7["System non-functional requirement"]
+    N8["Physical element attribute variant"]
+    N9["Functional element attribute variant"]
+    N10["System element state attribute variant"]
+    N11["System architecture constraint variant"]
+    N12["System non-functional requirement variant"]
+    N13["System element variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
     N3 -.->|allocates| N4
     N4 -.->|allocates| N5
-    N3 -.->|allocates| N6
-    N2 -.->|allocates| N6
-    N1 -.->|allocates| N7
-    N7 -.->|allocates| N3
-    N7 -.->|allocates| N8
-    N8 -.->|allocates| N4
+    N4 -.->|allocates| N6
+    N6 -.->|allocates| N5
+    N3 -.->|allocates| N7
+    N2 -.->|allocates| N7
+    N1 -.->|allocates| N8
+    N8 -.->|allocates| N3
     N8 -.->|allocates| N9
-    N9 -.->|allocates| N5
+    N9 -.->|allocates| N4
     N9 -.->|allocates| N10
-    N8 -.->|allocates| N6
-    N8 -.->|allocates| N11
-    N7 -.->|allocates| N6
-    N7 -.->|allocates| N11
-    N12 -.->|allocates| N1
+    N10 -.->|allocates| N5
+    N10 -.->|allocates| N11
+    N9 -.->|allocates| N7
+    N9 -.->|allocates| N12
+    N8 -.->|allocates| N7
+    N8 -.->|allocates| N12
+    N13 -.->|allocates| N1
 ```
 
 **Variability**
@@ -16719,36 +16951,39 @@ graph TD
     N4["Functional element attribute"]
     N5["System element state attribute"]
     N6["System architecture constraint"]
-    N7["System non-functional requirement"]
-    N8["Physical element attribute variant"]
-    N9["Functional element attribute variant"]
-    N10["System element state attribute variant"]
-    N11["System architecture constraint variant"]
-    N12["System non-functional requirement variant"]
+    N7["System element function attribute"]
+    N8["System non-functional requirement"]
+    N9["Physical element attribute variant"]
+    N10["Functional element attribute variant"]
+    N11["System element state attribute variant"]
+    N12["System architecture constraint variant"]
+    N13["System non-functional requirement variant"]
 
     N1 -.->|variant of| N2
-    N8 -.->|variant of| N3
-    N9 -.->|variant of| N4
-    N10 -.->|variant of| N5
-    N11 -.->|variant of| N6
-    N12 -.->|variant of| N7
+    N9 -.->|variant of| N3
+    N10 -.->|variant of| N4
+    N11 -.->|variant of| N5
+    N12 -.->|variant of| N6
+    N13 -.->|variant of| N8
     N1 -.->|allocates| N3
     N3 -.->|allocates| N4
     N4 -.->|allocates| N5
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
-    N3 -.->|allocates| N7
-    N1 -.->|allocates| N8
-    N8 -.->|allocates| N4
-    N8 -.->|allocates| N9
-    N9 -.->|allocates| N5
+    N5 -.->|allocates| N7
+    N7 -.->|allocates| N6
+    N4 -.->|allocates| N8
+    N3 -.->|allocates| N8
+    N1 -.->|allocates| N9
+    N9 -.->|allocates| N4
     N9 -.->|allocates| N10
-    N10 -.->|allocates| N6
+    N10 -.->|allocates| N5
     N10 -.->|allocates| N11
-    N9 -.->|allocates| N7
-    N9 -.->|allocates| N12
-    N8 -.->|allocates| N7
-    N8 -.->|allocates| N12
+    N11 -.->|allocates| N6
+    N11 -.->|allocates| N12
+    N10 -.->|allocates| N8
+    N10 -.->|allocates| N13
+    N9 -.->|allocates| N8
+    N9 -.->|allocates| N13
 ```
 
 *Created: 2026-08-21 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -16904,7 +17139,7 @@ graph TD
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
 | Allocates | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
 | Can be | [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d) |
-| Allocated by | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5) |
+| Allocated by | [system-element-function-3se-069c995b151972b2](https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2), [system-element-function-variant-3se-06a8873e385a7ed5](https://www.3se.info/3se-onto/terms/system-element-function-variant-3se-06a8873e385a7ed5), [system-element-state-attribute-3se-069ebabe8f7a7daf](https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf) |
 | Component of | [system-function-attribute-3se-069dcf9369c8775d](https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d), [system-function-attribute-variant-3se-06a8873e38bb7ad7](https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7) |
 | Has variant | [system-element-function-attribute-variant-3se-06a8873e385079f2](https://www.3se.info/3se-onto/terms/system-element-function-attribute-variant-3se-06a8873e385079f2) |
 | Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
@@ -16937,6 +17172,13 @@ graph TD
     N10["Functional element variant"]
     N11["System element state variant"]
     N12["System element function variant"]
+    N13["System element state attribute"]
+    N14["Functional element attribute"]
+    N15["Physical element attribute"]
+    N16["System element attribute"]
+    N17["System element attribute variant"]
+    N18["Physical element attribute variant"]
+    N19["Functional element attribute variant"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N1
@@ -16955,6 +17197,24 @@ graph TD
     N9 -.->|allocates| N11
     N12 -.->|allocates| N1
     N11 -.->|allocates| N12
+    N13 -.->|allocates| N1
+    N14 -.->|allocates| N13
+    N5 -.->|allocates| N14
+    N10 -.->|allocates| N14
+    N15 -.->|allocates| N14
+    N6 -.->|allocates| N15
+    N8 -.->|allocates| N15
+    N16 -.->|allocates| N15
+    N7 -.->|allocates| N16
+    N17 -.->|allocates| N15
+    N9 -.->|allocates| N17
+    N18 -.->|allocates| N14
+    N8 -.->|allocates| N18
+    N17 -.->|allocates| N18
+    N19 -.->|allocates| N13
+    N10 -.->|allocates| N19
+    N18 -.->|allocates| N19
+    N4 -.->|allocates| N13
 ```
 
 *Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -17773,6 +18033,7 @@ graph TD
     N31 -.->|can be| N2
     N32 -.->|can be| N33
     N34 -.->|allocates| N23
+    N34 -.->|allocates| N27
     N34 -.->|can be| N35
     N36 -->|composed of| N37
     N17 -.->|exposes| N37
@@ -17780,19 +18041,19 @@ graph TD
     N31 -->|subclass of| N32
     N37 -.->|allocates| N23
     N2 -->|subclass of| N33
-    N21 -.->|exposes| N36
+    N18 -.->|allocates| N25
     N28 -.->|allocates| N30
     N30 -->|subclass of| N33
+    N16 -.->|allocates| N11
+    N27 -.->|allocates| N23
+    N35 -.->|allocates| N2
     N9 -.->|allocates| N4
     N19 -.->|allocates| N26
     N19 -.->|allocates| N8
     N19 -.->|allocates| N15
     N19 -.->|allocates| N23
     N19 -.->|allocates| N34
-    N35 -.->|allocates| N2
-    N27 -.->|allocates| N23
-    N18 -.->|allocates| N25
-    N16 -.->|allocates| N11
+    N21 -.->|exposes| N36
 ```
 
 *Created: 2026-09-17 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -17897,6 +18158,7 @@ graph TD
     N1 -.->|allocates| N8
     N1 -.->|allocates| N11
     N11 -.->|allocates| N8
+    N11 -.->|allocates| N7
     N12 -.->|allocates| N1
     N13 -.->|allocates| N12
     N14 -.->|allocates| N13
@@ -17914,7 +18176,7 @@ graph TD
 
 ### System element state attribute - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Attribute of a system element state.
 
@@ -17922,7 +18184,7 @@ graph TD
 |---|---|
 | Related | [functional-element-attribute-breakdown-structure-3se-069ebabe8f347361](https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361), [system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3](https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce), [system-req-breakdown-structure-3se-069ee3cda6097bec](https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec) |
 | Subclass of | [attribute-3se-069b72bee1327dcf](https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf) |
-| Allocates | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49) |
+| Allocates | [system-architecture-constraint-3se-069c957ec9bf7e49](https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49), [system-element-function-attribute-3se-069ebabe8f72788b](https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b) |
 | Can be | [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
 | Allocated by | [functional-element-attribute-3se-069dcf93699c7864](https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864), [functional-element-attribute-variant-3se-06a8873e375b75b0](https://www.3se.info/3se-onto/terms/functional-element-attribute-variant-3se-06a8873e375b75b0), [system-element-state-3se-069c995b153b7534](https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534) |
 | Component of | [system-state-attribute-3se-069dcf9369d1703c](https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c) |
@@ -17947,50 +18209,53 @@ graph TD
 graph TD
     N1["System element state attribute"]
     N2["System architecture constraint"]
-    N3["Functional element attribute"]
-    N4["Functional element"]
-    N5["Physical element"]
-    N6["System element"]
-    N7["Physical element variant"]
-    N8["System element variant"]
-    N9["Functional element variant"]
-    N10["Physical element attribute"]
-    N11["System element attribute"]
-    N12["System element attribute variant"]
-    N13["Physical element attribute variant"]
-    N14["Functional element attribute variant"]
-    N15["System element state"]
+    N3["System element function attribute"]
+    N4["Functional element attribute"]
+    N5["Functional element"]
+    N6["Physical element"]
+    N7["System element"]
+    N8["Physical element variant"]
+    N9["System element variant"]
+    N10["Functional element variant"]
+    N11["Physical element attribute"]
+    N12["System element attribute"]
+    N13["System element attribute variant"]
+    N14["Physical element attribute variant"]
+    N15["Functional element attribute variant"]
+    N16["System element state"]
 
     N1 -.->|allocates| N2
-    N3 -.->|allocates| N1
-    N4 -.->|allocates| N3
+    N1 -.->|allocates| N3
+    N3 -.->|allocates| N2
+    N4 -.->|allocates| N1
     N5 -.->|allocates| N4
     N6 -.->|allocates| N5
-    N7 -.->|allocates| N4
-    N8 -.->|allocates| N7
-    N9 -.->|allocates| N3
-    N7 -.->|allocates| N9
-    N10 -.->|allocates| N3
-    N5 -.->|allocates| N10
-    N7 -.->|allocates| N10
-    N11 -.->|allocates| N10
+    N7 -.->|allocates| N6
+    N8 -.->|allocates| N5
+    N9 -.->|allocates| N8
+    N10 -.->|allocates| N4
+    N8 -.->|allocates| N10
+    N11 -.->|allocates| N4
     N6 -.->|allocates| N11
-    N12 -.->|allocates| N10
-    N8 -.->|allocates| N12
-    N13 -.->|allocates| N3
-    N7 -.->|allocates| N13
-    N12 -.->|allocates| N13
-    N14 -.->|allocates| N1
-    N9 -.->|allocates| N14
+    N8 -.->|allocates| N11
+    N12 -.->|allocates| N11
+    N7 -.->|allocates| N12
+    N13 -.->|allocates| N11
+    N9 -.->|allocates| N13
+    N14 -.->|allocates| N4
+    N8 -.->|allocates| N14
     N13 -.->|allocates| N14
     N15 -.->|allocates| N1
-    N4 -.->|allocates| N15
-    N9 -.->|allocates| N15
-    N6 -.->|allocates| N15
-    N8 -.->|allocates| N15
+    N10 -.->|allocates| N15
+    N14 -.->|allocates| N15
+    N16 -.->|allocates| N1
+    N5 -.->|allocates| N16
+    N10 -.->|allocates| N16
+    N7 -.->|allocates| N16
+    N9 -.->|allocates| N16
 ```
 
-*Created: 2026-04-24 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-13 · Creator: @rcasteran*
 
 ---
 
@@ -18304,6 +18569,7 @@ graph TD
     N4 -.->|allocates| N11
     N4 -.->|allocates| N14
     N14 -.->|allocates| N11
+    N14 -.->|allocates| N10
     N3 -.->|allocates| N15
     N15 -.->|allocates| N14
     N15 -.->|allocates| N16
@@ -18418,6 +18684,7 @@ graph TD
     N6 -.->|allocates| N13
     N6 -.->|allocates| N16
     N16 -.->|allocates| N13
+    N16 -.->|allocates| N12
     N5 -.->|allocates| N17
     N17 -.->|allocates| N16
     N17 -.->|allocates| N18
@@ -18813,9 +19080,19 @@ graph TD
     N14["System state attribute"]
     N15["High level functional element attribute"]
     N16["High level physical element attribute"]
-    N17["High level physical element attribute variant"]
-    N18["High level functional element attribute variant"]
-    N19["System state attribute variant"]
+    N17["System attribute"]
+    N18["Product"]
+    N19["Release"]
+    N20["Iteration"]
+    N21["Epic"]
+    N22["Task"]
+    N23["Project"]
+    N24["Product variant"]
+    N25["Service"]
+    N26["Service variant"]
+    N27["High level physical element attribute variant"]
+    N28["High level functional element attribute variant"]
+    N29["System state attribute variant"]
 
     N1 -.->|allocates| N2
     N3 -.->|allocates| N1
@@ -18843,16 +19120,33 @@ graph TD
     N16 -.->|allocates| N15
     N6 -.->|allocates| N16
     N10 -.->|allocates| N16
-    N17 -.->|allocates| N15
-    N10 -.->|allocates| N17
-    N18 -.->|allocates| N14
-    N11 -.->|allocates| N18
-    N17 -.->|allocates| N18
+    N17 -.->|allocates| N16
+    N18 -.->|allocates| N17
+    N19 -.->|allocates| N18
+    N20 -.->|allocates| N19
+    N21 -.->|allocates| N20
+    N22 -.->|allocates| N21
+    N22 -.->|allocates| N20
+    N23 -.->|allocates| N19
+    N20 -.->|allocates| N23
+    N24 -.->|allocates| N17
+    N19 -.->|allocates| N24
+    N25 -.->|allocates| N17
+    N19 -.->|allocates| N25
+    N26 -.->|allocates| N17
+    N19 -.->|allocates| N26
+    N8 -.->|allocates| N17
+    N9 -.->|allocates| N17
+    N27 -.->|allocates| N15
+    N10 -.->|allocates| N27
+    N28 -.->|allocates| N14
+    N11 -.->|allocates| N28
+    N27 -.->|allocates| N28
     N4 -.->|allocates| N14
     N12 -.->|allocates| N14
-    N19 -.->|allocates| N1
-    N18 -.->|allocates| N19
-    N12 -.->|allocates| N19
+    N29 -.->|allocates| N1
+    N28 -.->|allocates| N29
+    N12 -.->|allocates| N29
 ```
 
 *Created: 2026-04-13 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -19620,14 +19914,14 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
+    N2 -.->|allocates| N4
+    N3 -.->|allocates| N4
+    N14 -.->|allocates| N12
+    N13 -.->|allocates| N12
     N15 -.->|exposes| N1
+    N16 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N13 -.->|allocates| N12
-    N14 -.->|allocates| N12
-    N3 -.->|allocates| N4
-    N2 -.->|allocates| N4
-    N16 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -19731,17 +20025,27 @@ graph TD
     N28["High level physical element variant"]
     N29["High level functional element variant"]
     N30["High level physical element attribute"]
-    N31["High level physical element attribute variant"]
-    N32["High level functional element attribute variant"]
-    N33["System function attribute"]
-    N34["System function"]
-    N35["System state"]
-    N36["System state variant"]
-    N37["System function variant"]
-    N38["System state attribute"]
-    N39["System state attribute variant"]
-    N40["System function attribute variant"]
-    N41["System interface attribute"]
+    N31["System attribute"]
+    N32["Product"]
+    N33["Release"]
+    N34["Iteration"]
+    N35["Epic"]
+    N36["Task"]
+    N37["Project"]
+    N38["Product variant"]
+    N39["Service"]
+    N40["Service variant"]
+    N41["High level physical element attribute variant"]
+    N42["High level functional element attribute variant"]
+    N43["System function attribute"]
+    N44["System function"]
+    N45["System state"]
+    N46["System state variant"]
+    N47["System function variant"]
+    N48["System state attribute"]
+    N49["System state attribute variant"]
+    N50["System function attribute variant"]
+    N51["System interface attribute"]
 
     N2 -.->|allocates| N1
     N3 -.->|allocates| N2
@@ -19787,39 +20091,56 @@ graph TD
     N30 -.->|allocates| N22
     N24 -.->|allocates| N30
     N28 -.->|allocates| N30
-    N31 -.->|allocates| N22
-    N28 -.->|allocates| N31
-    N32 -.->|allocates| N1
-    N29 -.->|allocates| N32
-    N31 -.->|allocates| N32
-    N17 -.->|allocates| N1
-    N20 -.->|allocates| N1
-    N33 -.->|allocates| N1
+    N31 -.->|allocates| N30
+    N32 -.->|allocates| N31
+    N33 -.->|allocates| N32
     N34 -.->|allocates| N33
     N35 -.->|allocates| N34
-    N23 -.->|allocates| N35
-    N29 -.->|allocates| N35
-    N26 -.->|allocates| N35
-    N27 -.->|allocates| N35
+    N36 -.->|allocates| N35
     N36 -.->|allocates| N34
-    N29 -.->|allocates| N36
-    N27 -.->|allocates| N36
     N37 -.->|allocates| N33
-    N36 -.->|allocates| N37
-    N38 -.->|allocates| N33
-    N22 -.->|allocates| N38
-    N32 -.->|allocates| N38
-    N35 -.->|allocates| N38
-    N36 -.->|allocates| N38
-    N39 -.->|allocates| N33
-    N32 -.->|allocates| N39
-    N36 -.->|allocates| N39
-    N40 -.->|allocates| N1
-    N37 -.->|allocates| N40
-    N39 -.->|allocates| N40
-    N41 -.->|allocates| N1
-    N38 -.->|allocates| N1
-    N39 -.->|allocates| N1
+    N34 -.->|allocates| N37
+    N38 -.->|allocates| N31
+    N33 -.->|allocates| N38
+    N39 -.->|allocates| N31
+    N33 -.->|allocates| N39
+    N40 -.->|allocates| N31
+    N33 -.->|allocates| N40
+    N26 -.->|allocates| N31
+    N27 -.->|allocates| N31
+    N41 -.->|allocates| N22
+    N28 -.->|allocates| N41
+    N42 -.->|allocates| N1
+    N29 -.->|allocates| N42
+    N41 -.->|allocates| N42
+    N17 -.->|allocates| N1
+    N20 -.->|allocates| N1
+    N43 -.->|allocates| N1
+    N44 -.->|allocates| N43
+    N45 -.->|allocates| N44
+    N23 -.->|allocates| N45
+    N29 -.->|allocates| N45
+    N26 -.->|allocates| N45
+    N27 -.->|allocates| N45
+    N46 -.->|allocates| N44
+    N29 -.->|allocates| N46
+    N27 -.->|allocates| N46
+    N47 -.->|allocates| N43
+    N46 -.->|allocates| N47
+    N48 -.->|allocates| N43
+    N22 -.->|allocates| N48
+    N42 -.->|allocates| N48
+    N45 -.->|allocates| N48
+    N46 -.->|allocates| N48
+    N49 -.->|allocates| N43
+    N42 -.->|allocates| N49
+    N46 -.->|allocates| N49
+    N50 -.->|allocates| N1
+    N47 -.->|allocates| N50
+    N49 -.->|allocates| N50
+    N51 -.->|allocates| N1
+    N48 -.->|allocates| N1
+    N49 -.->|allocates| N1
 ```
 
 *Created: 2026-03-21 · Modified: 2026-11-01 · Creator: @rcasteran*
@@ -20210,31 +20531,32 @@ graph TD
     N24 -.->|can be| N44
     N16 -.->|can be| N7
     N4 -.->|allocates| N7
+    N4 -.->|allocates| N21
     N4 -.->|can be| N37
     N8 -.->|exposes| N13
     N31 -->|subclass of| N35
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
-    N41 -->|subclass of| N38
-    N38 -.->|allocates| N1
-    N40 -->|subclass of| N38
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N39 -->|subclass of| N38
-    N10 -.->|allocates| N3
-    N10 -.->|allocates| N2
     N27 -.->|allocates| N20
     N43 -->|subclass of| N41
-    N32 -.->|allocates| N2
-    N28 -.->|allocates| N19
-    N29 -.->|allocates| N22
-    N29 -.->|allocates| N37
-    N42 -->|subclass of| N41
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
     N44 -.->|allocates| N2
+    N40 -->|subclass of| N38
+    N41 -->|subclass of| N38
+    N39 -->|subclass of| N38
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
+    N29 -.->|allocates| N22
+    N29 -.->|allocates| N37
+    N42 -->|subclass of| N41
+    N28 -.->|allocates| N19
+    N32 -.->|allocates| N2
+    N38 -.->|allocates| N1
+    N10 -.->|allocates| N3
+    N10 -.->|allocates| N2
 ```
 
 *Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -20478,10 +20800,20 @@ graph TD
     N10["High level physical element variant"]
     N11["High level functional element variant"]
     N12["High level physical element attribute"]
-    N13["High level physical element attribute variant"]
-    N14["High level functional element attribute variant"]
-    N15["System state"]
-    N16["System state variant"]
+    N13["System attribute"]
+    N14["Product"]
+    N15["Release"]
+    N16["Iteration"]
+    N17["Epic"]
+    N18["Task"]
+    N19["Project"]
+    N20["Product variant"]
+    N21["Service"]
+    N22["Service variant"]
+    N23["High level physical element attribute variant"]
+    N24["High level functional element attribute variant"]
+    N25["System state"]
+    N26["System state variant"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
@@ -20499,19 +20831,36 @@ graph TD
     N12 -.->|allocates| N4
     N6 -.->|allocates| N12
     N10 -.->|allocates| N12
-    N13 -.->|allocates| N4
-    N10 -.->|allocates| N13
-    N14 -.->|allocates| N1
-    N11 -.->|allocates| N14
-    N13 -.->|allocates| N14
-    N15 -.->|allocates| N1
-    N5 -.->|allocates| N15
-    N11 -.->|allocates| N15
-    N8 -.->|allocates| N15
-    N9 -.->|allocates| N15
-    N16 -.->|allocates| N1
-    N11 -.->|allocates| N16
-    N9 -.->|allocates| N16
+    N13 -.->|allocates| N12
+    N14 -.->|allocates| N13
+    N15 -.->|allocates| N14
+    N16 -.->|allocates| N15
+    N17 -.->|allocates| N16
+    N18 -.->|allocates| N17
+    N18 -.->|allocates| N16
+    N19 -.->|allocates| N15
+    N16 -.->|allocates| N19
+    N20 -.->|allocates| N13
+    N15 -.->|allocates| N20
+    N21 -.->|allocates| N13
+    N15 -.->|allocates| N21
+    N22 -.->|allocates| N13
+    N15 -.->|allocates| N22
+    N8 -.->|allocates| N13
+    N9 -.->|allocates| N13
+    N23 -.->|allocates| N4
+    N10 -.->|allocates| N23
+    N24 -.->|allocates| N1
+    N11 -.->|allocates| N24
+    N23 -.->|allocates| N24
+    N25 -.->|allocates| N1
+    N5 -.->|allocates| N25
+    N11 -.->|allocates| N25
+    N8 -.->|allocates| N25
+    N9 -.->|allocates| N25
+    N26 -.->|allocates| N1
+    N11 -.->|allocates| N26
+    N9 -.->|allocates| N26
 ```
 
 *Created: 2026-04-13 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -20560,6 +20909,7 @@ graph TD
     N1 -.->|allocates| N2
     N1 -.->|can be| N3
     N4 -.->|allocates| N2
+    N4 -.->|allocates| N1
     N4 -.->|can be| N5
     N3 -->|composed of| N1
     N3 -.->|allocates| N6
@@ -20690,10 +21040,11 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
-    N11 -.->|allocates| N12
     N13 -.->|allocates| N10
-    N14 -.->|allocates| N9
     N15 -.->|allocates| N12
+    N15 -.->|allocates| N11
+    N11 -.->|allocates| N12
+    N14 -.->|allocates| N9
     N4 -.->|allocates| N8
 ```
 
@@ -21076,6 +21427,7 @@ graph TD
     N1 -.->|allocates| N4
     N1 -.->|allocates| N16
     N1 -.->|allocates| N26
+    N26 -.->|allocates| N13
     N1 -.->|allocates| N27
 ```
 
@@ -21177,6 +21529,7 @@ graph TD
     N1 -.->|allocates| N5
     N1 -.->|allocates| N17
     N1 -.->|allocates| N27
+    N27 -.->|allocates| N14
     N1 -.->|allocates| N28
 ```
 
@@ -21277,27 +21630,28 @@ graph TD
     N21 -.->|allocates| N26
     N27 -.->|represented by| N21
     N28 -.->|represented by| N21
-    N17 -.->|allocates| N22
-    N17 -.->|allocates| N23
-    N17 -.->|allocates| N25
+    N27 -.->|allocates| N25
+    N27 -.->|allocates| N26
+    N5 -.->|allocates| N23
+    N5 -.->|allocates| N24
+    N25 -.->|allocates| N6
     N28 -.->|allocates| N25
     N28 -.->|allocates| N26
-    N16 -.->|allocates| N10
+    N4 -.->|allocates| N23
     N20 -.->|allocates| N10
     N20 -.->|allocates| N11
-    N22 -.->|allocates| N4
-    N22 -.->|allocates| N6
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N19
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N5 -.->|allocates| N23
-    N5 -.->|allocates| N24
     N8 -.->|allocates| N15
-    N27 -.->|allocates| N25
-    N27 -.->|allocates| N26
-    N4 -.->|allocates| N23
+    N22 -.->|allocates| N4
+    N22 -.->|allocates| N6
+    N16 -.->|allocates| N10
+    N17 -.->|allocates| N22
+    N17 -.->|allocates| N23
+    N17 -.->|allocates| N25
+    N9 -.->|allocates| N15
+    N9 -.->|allocates| N19
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -21456,12 +21810,17 @@ graph TD
     N5["Product"]
     N6["System feature"]
     N7["System attribute"]
-    N8["Product variant"]
-    N9["System feature variant"]
-    N10["System attribute variant"]
-    N11["Service"]
-    N12["Service variant"]
-    N13["Project"]
+    N8["High level physical element attribute"]
+    N9["High level functional element attribute"]
+    N10["System state attribute"]
+    N11["System function attribute"]
+    N12["System non-functional requirement"]
+    N13["Product variant"]
+    N14["System feature variant"]
+    N15["System attribute variant"]
+    N16["Service"]
+    N17["Service variant"]
+    N18["Project"]
 
     N1 -.->|allocates| N2
     N2 -.->|allocates| N3
@@ -21469,21 +21828,28 @@ graph TD
     N4 -.->|allocates| N5
     N5 -.->|allocates| N6
     N5 -.->|allocates| N7
-    N4 -.->|allocates| N8
-    N8 -.->|allocates| N6
+    N7 -.->|allocates| N8
     N8 -.->|allocates| N9
-    N8 -.->|allocates| N7
-    N8 -.->|allocates| N10
-    N4 -.->|allocates| N11
-    N11 -.->|allocates| N6
-    N11 -.->|allocates| N7
-    N4 -.->|allocates| N12
-    N12 -.->|allocates| N6
-    N12 -.->|allocates| N9
-    N12 -.->|allocates| N7
-    N12 -.->|allocates| N10
-    N3 -.->|allocates| N13
-    N13 -.->|allocates| N4
+    N9 -.->|allocates| N10
+    N10 -.->|allocates| N11
+    N11 -.->|allocates| N12
+    N10 -.->|allocates| N12
+    N9 -.->|allocates| N12
+    N4 -.->|allocates| N13
+    N13 -.->|allocates| N6
+    N13 -.->|allocates| N14
+    N13 -.->|allocates| N7
+    N13 -.->|allocates| N15
+    N4 -.->|allocates| N16
+    N16 -.->|allocates| N6
+    N16 -.->|allocates| N7
+    N4 -.->|allocates| N17
+    N17 -.->|allocates| N6
+    N17 -.->|allocates| N14
+    N17 -.->|allocates| N7
+    N17 -.->|allocates| N15
+    N3 -.->|allocates| N18
+    N18 -.->|allocates| N4
     N1 -.->|allocates| N3
 ```
 
@@ -22136,35 +22502,35 @@ graph TD
     N7 -.->|allocates| N40
     N7 -.->|allocates| N46
     N7 -.->|allocates| N44
-    N22 -.->|allocates| N32
     N17 -.->|allocates| N10
     N17 -.->|allocates| N12
-    N45 -.->|allocates| N35
-    N45 -.->|allocates| N41
-    N45 -.->|allocates| N43
-    N27 -.->|allocates| N17
-    N27 -.->|allocates| N12
-    N10 -.->|allocates| N19
-    N33 -.->|allocates| N23
-    N33 -.->|allocates| N19
-    N15 -.->|allocates| N19
-    N15 -.->|allocates| N10
-    N43 -.->|allocates| N12
-    N46 -.->|allocates| N43
-    N46 -.->|allocates| N12
-    N3 -.->|allocates| N45
-    N3 -.->|allocates| N46
-    N23 -.->|allocates| N19
-    N16 -.->|allocates| N19
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N11
     N11 -.->|allocates| N19
     N11 -.->|allocates| N20
     N26 -.->|allocates| N15
     N26 -.->|allocates| N17
+    N10 -.->|allocates| N19
+    N3 -.->|allocates| N45
+    N3 -.->|allocates| N46
+    N45 -.->|allocates| N35
+    N45 -.->|allocates| N41
+    N45 -.->|allocates| N43
+    N43 -.->|allocates| N12
+    N23 -.->|allocates| N19
+    N46 -.->|allocates| N43
+    N46 -.->|allocates| N12
+    N33 -.->|allocates| N23
+    N33 -.->|allocates| N19
+    N16 -.->|allocates| N19
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N11
     N34 -.->|allocates| N22
     N34 -.->|allocates| N23
     N34 -.->|allocates| N19
+    N15 -.->|allocates| N19
+    N15 -.->|allocates| N10
+    N22 -.->|allocates| N32
+    N27 -.->|allocates| N17
+    N27 -.->|allocates| N12
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
