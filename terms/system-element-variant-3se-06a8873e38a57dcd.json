@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System element variant - 3SE",
   "description": "Discrete part of a system variant that can be implemented to fulfil specified requirements variant.",
-  "status": "approved",
+  "status": "draft",
   "isVariantOf": [
     "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
   ],
@@ -14,9 +14,9 @@
     "name": "@rcasteran"
   },
   "allocates": [
+    "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
     "https://www.3se.info/3se-onto/terms/physical-element-variant-3se-06a8873e37b8700e",
-    "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534",
-    "https://www.3se.info/3se-onto/terms/system-element-state-variant-3se-06a8873e389b7193",
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
     "https://www.3se.info/3se-onto/terms/system-element-attribute-variant-3se-06a8873e383b73bf"
   ],
   "canBe": [
