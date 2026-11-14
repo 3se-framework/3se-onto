@@ -1,8 +1,8 @@
 # 3SE Glossary
 
-*Generated on 2026-11-13 18:47 UTC*
+*Generated on 2026-11-14 21:41 UTC*
 
-This glossary contains **8 3SE domain(s)**, **464 3SE term(s)**, **121 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
+This glossary contains **8 3SE domain(s)**, **465 3SE term(s)**, **122 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
 
 ## Contents
 
@@ -45,6 +45,7 @@ This glossary contains **8 3SE domain(s)**, **464 3SE term(s)**, **121 other ter
   - [Context - 3SE](#context---3se)
   - [Data - 3SE](#data---3se)
   - [Demonstration - 3SE](#demonstration---3se)
+  - [Diagram - 3SE](#diagram---3se)
   - [Domain ontology - 3SE](#domain-ontology---3se)
   - [Emergent system activity - 3SE](#emergent-system-activity---3se)
   - [Emergent system attribute - 3SE](#emergent-system-attribute---3se)
@@ -502,6 +503,7 @@ This glossary contains **8 3SE domain(s)**, **464 3SE term(s)**, **121 other ter
   - [Decision gate - ISO/IEC/IEEE 24765](#decision-gate---isoiecieee-24765)
   - [Demonstration - ISO/IEC/IEEE 24765](#demonstration---isoiecieee-24765)
   - [Descriptive Model - ISO/IEC/IEEE 24641](#descriptive-model---isoiecieee-24641)
+  - [Diagram - ISO/IEC/IEEE 24765](#diagram---isoiecieee-24765)
   - [Disposition - BFO 2.0](#disposition---bfo-20)
   - [Enabling system - ISO/IEC/IEEE 15288](#enabling-system---isoiecieee-15288)
   - [Entity - BFO 2.0](#entity---bfo-20)
@@ -782,7 +784,7 @@ This glossary contains **8 3SE domain(s)**, **464 3SE term(s)**, **121 other ter
 
 ## 3SE Terms
 
-*464 term(s) defined by the 3SE framework.*
+*465 term(s) defined by the 3SE framework.*
 
 ### Abstract model - 3SE
 
@@ -1882,6 +1884,21 @@ graph TD
 | Related match | [demonstration-24765-2017-069b5a9129cd7349](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349) |
 
 *Created: 2026-03-14 · Modified: 2026-10-22 · Creator: @rcasteran*
+
+---
+
+### Diagram - 3SE
+
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
+
+> Logically coherent visual representation of a view, using selected graphical icons and conventions from an associated design language, to be used for visualizing the elements of the view, their relations and their properties.
+
+| Relation | Terms |
+|---|---|
+| Related | [view-3se-06a0993aed6d7ad2](https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2) |
+| Close match | [diagram-24765-2017-06af8d4a7eed7693](https://www.3se.info/3se-onto/terms/diagram-24765-2017-06af8d4a7eed7693) |
+
+*Created: 2026-11-14 · Modified: 2026-11-14 · Creator: @rcasteran*
 
 ---
 
@@ -3441,17 +3458,17 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N18 -.->|allocates| N14
     N20 -.->|allocates| N16
+    N13 -.->|allocates| N14
     N21 -.->|allocates| N14
     N21 -.->|allocates| N18
-    N13 -.->|allocates| N14
-    N19 -.->|allocates| N17
+    N18 -.->|allocates| N14
     N3 -.->|allocates| N21
-    N12 -->|subclass of| N10
-    N11 -->|subclass of| N10
+    N19 -.->|allocates| N17
     N10 -->|subclass of| N4
     N8 -->|subclass of| N4
+    N11 -->|subclass of| N10
+    N12 -->|subclass of| N10
     N9 -->|subclass of| N4
 ```
 
@@ -3760,8 +3777,8 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N8
     N5 -.->|allocates| N3
-    N7 -.->|allocates| N6
     N8 -.->|allocates| N3
+    N7 -.->|allocates| N6
 ```
 
 *Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -3915,9 +3932,9 @@ graph TD
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
     N3 -.->|allocates| N11
+    N6 -.->|allocates| N13
     N7 -.->|allocates| N10
     N11 -.->|allocates| N10
-    N6 -.->|allocates| N13
 ```
 
 *Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -5200,9 +5217,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
-    N4 -.->|allocates| N7
     N5 -.->|allocates| N6
+    N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -8319,14 +8336,14 @@ graph TD
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
     N2 -.->|allocates| N15
-    N14 -.->|allocates| N15
-    N5 -.->|allocates| N3
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N11 -->|subclass of| N8
+    N14 -.->|allocates| N15
+    N5 -.->|allocates| N3
     N12 -->|subclass of| N11
     N13 -->|subclass of| N11
     N9 -->|subclass of| N8
+    N11 -->|subclass of| N8
     N10 -->|subclass of| N8
 ```
 
@@ -10241,15 +10258,15 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N3
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N7 -.->|allocates| N2
     N7 -.->|allocates| N3
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N3 -->|subclass of| N13
     N2 -->|subclass of| N8
 ```
@@ -13637,9 +13654,9 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
+    N3 -.->|allocates| N8
     N4 -.->|allocates| N7
     N5 -.->|allocates| N6
-    N3 -.->|allocates| N8
 ```
 
 *Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -16451,9 +16468,9 @@ graph TD
     N7 -.->|allocates| N12
     N7 -.->|allocates| N13
     N7 -.->|can be| N3
-    N4 -.->|allocates| N10
     N6 -.->|allocates| N4
     N8 -.->|allocates| N12
+    N4 -.->|allocates| N10
     N5 -.->|allocates| N4
 ```
 
@@ -17998,16 +18015,16 @@ graph TD
     N17 -.->|exposes| N36
     N28 -->|subclass of| N31
     N30 -->|subclass of| N31
-    N26 -.->|allocates| N22
-    N18 -.->|allocates| N24
-    N20 -.->|exposes| N35
-    N29 -->|subclass of| N32
-    N16 -.->|allocates| N11
-    N34 -.->|allocates| N2
-    N36 -.->|allocates| N22
     N27 -.->|allocates| N29
-    N9 -.->|allocates| N4
+    N36 -.->|allocates| N22
+    N34 -.->|allocates| N2
     N2 -->|subclass of| N32
+    N26 -.->|allocates| N22
+    N9 -.->|allocates| N4
+    N29 -->|subclass of| N32
+    N20 -.->|exposes| N35
+    N18 -.->|allocates| N24
+    N16 -.->|allocates| N11
 ```
 
 *Created: 2026-09-17 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -19855,13 +19872,13 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N13 -.->|allocates| N11
     N3 -.->|allocates| N4
-    N14 -.->|exposes| N1
-    N12 -.->|allocates| N11
+    N2 -.->|allocates| N4
+    N13 -.->|allocates| N11
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
-    N2 -.->|allocates| N4
+    N14 -.->|exposes| N1
+    N12 -.->|allocates| N11
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20476,24 +20493,24 @@ graph TD
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
+    N32 -.->|allocates| N2
+    N28 -.->|allocates| N19
+    N41 -->|subclass of| N38
+    N39 -->|subclass of| N38
+    N5 -.->|allocates| N37
+    N5 -.->|allocates| N2
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
+    N42 -->|subclass of| N41
     N29 -.->|allocates| N22
     N29 -.->|allocates| N37
-    N43 -->|subclass of| N41
-    N28 -.->|allocates| N19
-    N32 -.->|allocates| N2
-    N38 -.->|allocates| N1
-    N42 -->|subclass of| N41
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
-    N41 -->|subclass of| N38
-    N5 -.->|allocates| N37
-    N5 -.->|allocates| N2
-    N27 -.->|allocates| N20
+    N38 -.->|allocates| N1
+    N43 -->|subclass of| N41
     N44 -.->|allocates| N2
-    N39 -->|subclass of| N38
+    N27 -.->|allocates| N20
     N40 -->|subclass of| N38
 ```
 
@@ -20973,11 +20990,11 @@ graph TD
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
     N11 -.->|allocates| N12
+    N14 -.->|allocates| N9
     N13 -.->|allocates| N10
     N4 -.->|allocates| N8
     N15 -.->|allocates| N12
     N15 -.->|allocates| N11
-    N14 -.->|allocates| N9
 ```
 
 *Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -21550,21 +21567,21 @@ graph TD
     N19 -.->|allocates| N22
     N23 -.->|represented by| N19
     N24 -.->|represented by| N19
+    N24 -.->|allocates| N21
+    N24 -.->|allocates| N22
+    N20 -.->|allocates| N4
+    N20 -.->|allocates| N6
+    N23 -.->|allocates| N21
+    N23 -.->|allocates| N22
+    N15 -.->|allocates| N10
     N21 -.->|allocates| N6
+    N18 -.->|allocates| N10
+    N18 -.->|allocates| N11
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N21
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N21
-    N18 -.->|allocates| N10
-    N18 -.->|allocates| N11
-    N15 -.->|allocates| N10
-    N24 -.->|allocates| N21
-    N24 -.->|allocates| N22
-    N23 -.->|allocates| N21
-    N23 -.->|allocates| N22
-    N20 -.->|allocates| N4
-    N20 -.->|allocates| N6
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -22409,33 +22426,33 @@ graph TD
     N43 -.->|allocates| N38
     N43 -.->|allocates| N45
     N43 -.->|allocates| N42
-    N25 -.->|allocates| N15
-    N25 -.->|allocates| N10
-    N41 -.->|allocates| N10
-    N20 -.->|allocates| N30
-    N31 -.->|allocates| N21
-    N31 -.->|allocates| N17
-    N9 -.->|allocates| N17
-    N9 -.->|allocates| N18
     N13 -.->|allocates| N17
     N13 -.->|allocates| N8
-    N24 -.->|allocates| N13
-    N24 -.->|allocates| N15
-    N45 -.->|allocates| N41
-    N45 -.->|allocates| N10
-    N32 -.->|allocates| N20
-    N32 -.->|allocates| N21
-    N32 -.->|allocates| N17
+    N41 -.->|allocates| N10
     N44 -.->|allocates| N33
     N44 -.->|allocates| N39
     N44 -.->|allocates| N41
-    N8 -.->|allocates| N17
-    N21 -.->|allocates| N17
-    N15 -.->|allocates| N8
-    N15 -.->|allocates| N10
     N14 -.->|allocates| N17
     N14 -.->|allocates| N18
     N14 -.->|allocates| N9
+    N21 -.->|allocates| N17
+    N25 -.->|allocates| N15
+    N25 -.->|allocates| N10
+    N45 -.->|allocates| N41
+    N45 -.->|allocates| N10
+    N8 -.->|allocates| N17
+    N9 -.->|allocates| N17
+    N9 -.->|allocates| N18
+    N15 -.->|allocates| N8
+    N15 -.->|allocates| N10
+    N32 -.->|allocates| N20
+    N32 -.->|allocates| N21
+    N32 -.->|allocates| N17
+    N31 -.->|allocates| N21
+    N31 -.->|allocates| N17
+    N24 -.->|allocates| N13
+    N24 -.->|allocates| N15
+    N20 -.->|allocates| N30
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -22492,10 +22509,10 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe) |
+| Related | [concept-3se-06ad7bc343be7f66](https://www.3se.info/3se-onto/terms/concept-3se-06ad7bc343be7f66), [analysis-3se-069b5a9129c37ebe](https://www.3se.info/3se-onto/terms/analysis-3se-069b5a9129c37ebe), [diagram-3se-06af8d4a7f22708c](https://www.3se.info/3se-onto/terms/diagram-3se-06af8d4a7f22708c) |
 | Broad match | [view-24765-2017-06a0993aed0d7f96](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96) |
 
-*Created: 2026-05-17 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-05-17 · Modified: 2026-11-14 · Creator: @rcasteran*
 
 ---
 
@@ -22614,7 +22631,7 @@ graph TD
 
 ## Other Terms
 
-*121 term(s) sourced from external standards and frameworks.*
+*122 term(s) sourced from external standards and frameworks.*
 
 ### Acceptance - IEEE 1012
 
@@ -22950,6 +22967,22 @@ Note: often associated with a review meeting. Entry and exit criteria are establ
 **References:** [ISO/IEC/IEEE 24641:2023](https://www.3se.info/3se-onto/references/iso-iec-ieee-24641-2023-069d3d5560fb7a15)
 
 *Created: 2026-04-06 · Modified: 2026-04-06 · Creator: @rcasteran*
+
+---
+
+### Diagram - ISO/IEC/IEEE 24765
+
+![standard](https://img.shields.io/badge/status-standard-brightgreen)
+
+> Logically coherent fragment of a design view, using selected graphical icons and conventions for visual representation from an associated design language, to be used for representing selected design elements of interest for a system under design from a single viewpoint (diagram type).
+
+| Relation | Terms |
+|---|---|
+| Close match of | [diagram-3se-06af8d4a7f22708c](https://www.3se.info/3se-onto/terms/diagram-3se-06af8d4a7f22708c) |
+
+**References:** [ISO/IEC/IEEE 24765:2017](https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2)
+
+*Created: 2026-11-14 · Modified: 2026-11-14 · Creator: @rcasteran*
 
 ---
 
@@ -25281,7 +25314,7 @@ graph TD
 | **Issued** | 2017 |
 | **URL** | [https://www.iso.org/standard/71952.html](https://www.iso.org/standard/71952.html) |
 
-**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Event - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/event-24765-2017-06aad5b3723277ba), [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Ontology - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96), [Work product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/work-product-24765-2017-06a35018275a793c)
+**Referenced Terms:** [Activity - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/activity-24765-2017-069ab4000ad177a9), [Asset - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/asset-24765-2017-069c5aee69ca7d63), [Attribute - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/attribute-24765-2017-069b72bee10a7f6c), [Change - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/change-24765-2017-069b5b3d9ea27656), [Computer program - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/computer-program-24765-2017-069a99c8f70a783f), [Decision gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/decision-gate-24765-2017-069b48ef5ce978eb), [Demonstration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/demonstration-24765-2017-069b5a9129cd7349), [Diagram - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/diagram-24765-2017-06af8d4a7eed7693), [Event - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/event-24765-2017-06aad5b3723277ba), [Failure mode and effect analysis (FMEA) - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/failure-mode-and-effect-analysis-24765-2017-06a42cbd0c017d88), [Function - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/function-24765-2017-069ab4000af473aa), [Functional analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-analysis-24765-2017-069b9d2c8d7d712f), [Functional architecture - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/functional-architecture-24765-2017-069b9d2c8d8d723e), [Hardware - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/hardware-24765-2017-069a9bc4a30f7367), [Inspection - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/inspection-24765-2017-069b5a9129de776f), [Interface - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f), [Iteration - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/iteration-24765-2017-069b48ef5d2a723b), [Ontology - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/ontology-24765-2017-06a494b0a1517439), [Phase gate - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/phase-gate-24765-2017-069b48ef5d46720a), [Problem - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/problem-24765-2017-069b5b3d9ec87ba9), [Product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-24765-2017-069ad94e896d75d2), [Product analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-analysis-24765-2017-069b5a912a007ad2), [Product breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8), [Project - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-24765-2017-069ad94e897e7a8f), [Project risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb), [Release - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/release-24765-2017-069b48ef5d6173d8), [Residual risk - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/residual-risk-24765-2017-069c1469f43474c4), [Risk analysis - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/risk-analysis-24765-2017-069bda7c99c97bad), [Service - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-24765-2017-069c5aee69ea7f49), [Service level agreement - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/service-level-agreement-24765-2017-069c5aee6a217e60), [Software component - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-component-24765-2017-069a99c8f72b7271), [Software product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-product-24765-2017-069c062b36567951), [Software unit - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/software-unit-24765-2017-069a99c8f73472f6), [Solution - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/solution-24765-2017-069bc40b97a0730b), [System breakdown structure - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/system-breakdown-structure-24765-2017-069bee1cdb487189), [Task - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/task-24765-2017-069b48ef5d7f72ee), [Test - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/test-24765-2017-069b5a912a097284), [Transition - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/transition-24765-2017-06a087faa7ea72f0), [View - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/view-24765-2017-06a0993aed0d7f96), [Work product - ISO/IEC/IEEE 24765](https://www.3se.info/3se-onto/terms/work-product-24765-2017-06a35018275a793c)
 
 *Created: 2026-03-05 · Modified: 2026-03-15 · Creator: @rcasteran*
 
