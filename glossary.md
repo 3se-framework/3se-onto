@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-11-15 21:18 UTC*
+*Generated on 2026-11-15 22:37 UTC*
 
 This glossary contains **8 3SE domain(s)**, **465 3SE term(s)**, **122 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
 
@@ -3458,18 +3458,18 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N3 -.->|allocates| N21
-    N18 -.->|allocates| N14
-    N19 -.->|allocates| N17
-    N13 -.->|allocates| N14
     N21 -.->|allocates| N14
     N21 -.->|allocates| N18
+    N18 -.->|allocates| N14
+    N3 -.->|allocates| N21
+    N13 -.->|allocates| N14
     N20 -.->|allocates| N16
-    N9 -->|subclass of| N4
-    N8 -->|subclass of| N4
-    N10 -->|subclass of| N4
-    N12 -->|subclass of| N10
+    N19 -.->|allocates| N17
     N11 -->|subclass of| N10
+    N8 -->|subclass of| N4
+    N12 -->|subclass of| N10
+    N10 -->|subclass of| N4
+    N9 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -3726,10 +3726,10 @@ graph TD
 
 ### Functional element attribute breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the functional element attribute that supports the functional architecture by following the principles below:
-(1) A high level functional element attribute is composed of at least two functional element attributes.
+(1) A high level functional element attribute is composed of at least one functional element attribute.
 (2) A high level functional element attribute allocates at least one system state attribute.
 (3) A functional element attribute allocates at least one system element state attribute.
 (4) A functional element attribute can be a high level functional element attribute.
@@ -3781,7 +3781,7 @@ graph TD
     N8 -.->|allocates| N3
 ```
 
-*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -3872,10 +3872,10 @@ graph TD
 
 ### Functional element breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the functional element that supports the functional architecture by following the principles below:
-(1) A high level functional element is composed of at least two functional elements.
+(1) A high level functional element is composed of at least one functional element.
 (2) A high level functional element allocates at least one system state.
 (3) A functional element allocates at least one system element state.
 (4) A functional element can be a high level functional element.
@@ -3931,13 +3931,13 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N7 -.->|allocates| N10
-    N6 -.->|allocates| N13
     N11 -.->|allocates| N10
+    N6 -.->|allocates| N13
     N3 -.->|allocates| N11
+    N7 -.->|allocates| N10
 ```
 
-*Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -5016,10 +5016,10 @@ graph TD
 
 ### Hardware block breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the hardware block that supports the hardware architecture by following the principles below:
-(1) A hardware block is composed of at least two hardware components.
+(1) A hardware block is composed of at least one hardware component.
 (2) A hardware component allocates a hardware component function.
 
 | Relation | Terms |
@@ -5051,7 +5051,7 @@ graph TD
     N2 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -5175,10 +5175,10 @@ graph TD
 
 ### Hardware breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the hardware that supports the hardware architecture by following the principles below:
-(1) A hardware is composed of at least two hardware blocks.
+(1) A hardware is composed of at least one hardware block.
 (2) A hardware allocates a hardware function.
 (3) A hardware block allocates a hardware block function.
 
@@ -5218,12 +5218,12 @@ graph TD
     N6 -->|composed of| N7
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
     N4 -.->|allocates| N7
+    N3 -.->|allocates| N8
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -5832,10 +5832,10 @@ graph TD
 
 ### Hardware state breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the hardware state that supports the hardware architecture by following the principles below:
-(1) A hardware state is composed of at least two hardware block states.
+(1) A hardware state is composed of at least one hardware block state.
 (2) A hardware state allocates at least one hardware function.
 (3) A hardware block state allocates at least one hardware block function.
 
@@ -5873,7 +5873,7 @@ graph TD
     N6 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -8337,15 +8337,15 @@ graph TD
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
     N5 -.->|allocates| N3
-    N2 -.->|allocates| N15
     N14 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
-    N10 -->|subclass of| N8
-    N9 -->|subclass of| N8
-    N13 -->|subclass of| N11
+    N2 -.->|allocates| N15
     N11 -->|subclass of| N8
+    N10 -->|subclass of| N8
     N12 -->|subclass of| N11
+    N13 -->|subclass of| N11
+    N9 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -8596,13 +8596,14 @@ graph TD
 
 ### Physical element attribute breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the physical element attribute that supports the physical architecture by following the principles below:
-(1) A high level physical element attribute is composed of at least two physical element attributes.
+(1) A high level physical element attribute is composed of at least one physical element attribute.
 (2) A high level physical element attribute allocates at least one high level functional element attribute.
 (3) A physical element attribute allocates at least one functional element attribute.
 (4) A physical element attribute can be a high level physical element attribute.
+Note: principle (4) excludes principle (3).
 
 | Relation | Terms |
 |---|---|
@@ -8647,7 +8648,7 @@ graph TD
     N5 -.->|allocates| N3
 ```
 
-*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -8750,13 +8751,14 @@ graph TD
 
 ### Physical element breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the physical element that supports the physical architecture by following the principles below:
-(1) A high level physical element is composed of at least two physical elements.
+(1) A high level physical element is composed of at least one physical element.
 (2) A high level physical element allocates at least one high level functional element.
 (3) A physical element allocates at least one functional element.
 (4) A physical element can be a high level physical element.
+Note: principle (4) excludes principle (3).
 
 | Relation | Terms |
 |---|---|
@@ -8808,7 +8810,7 @@ graph TD
     N4 -.->|allocates| N11
 ```
 
-*Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -9568,8 +9570,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9663,10 +9665,10 @@ graph TD
 
 ### Product breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the product that supports the product architecture by following the principles below:
-(1) A product is composed of at least two product elements.
+(1) A product is composed of at least one product element.
 (2) A product allocates at least one feature.
 (3) A product is represented by a system.
 (4) A product can be an asset
@@ -9732,7 +9734,7 @@ graph TD
     N16 -.->|allocates| N11
 ```
 
-*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -10259,17 +10261,17 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
-    N3 -->|subclass of| N13
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N2 -->|subclass of| N8
+    N3 -->|subclass of| N13
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12857,8 +12859,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N8 -->|subclass of| N9
     N7 -->|subclass of| N1
+    N8 -->|subclass of| N9
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -13021,9 +13023,9 @@ graph TD
     N11 -.->|allocates| N16
     N11 -.->|allocates| N13
     N17 -.->|represented by| N11
+    N12 -->|subclass of| N1
     N17 -.->|allocates| N12
     N17 -.->|allocates| N13
-    N12 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -13612,10 +13614,10 @@ graph TD
 
 ### Software breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the software that supports the software architecture by following the principles below:
-(1) A software is composed of at least two software components.
+(1) A software is composed of at least one software component.
 (2) A software allocates a software function.
 (3) A software component allocates a software component function.
 
@@ -13656,11 +13658,11 @@ graph TD
     N8 -->|composed of| N6
     N8 -.->|allocates| N9
     N4 -.->|allocates| N7
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
+    N3 -.->|allocates| N8
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -14441,10 +14443,10 @@ graph TD
 
 ### Software state breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the software state that supports the software architecture by following the principles below:
-(1) A software state is composed of at least two software component states.
+(1) A software state is composed of at least one software component state.
 (2) A software state allocates at least one software function.
 (3) A software component state allocates at least one software component function.
 
@@ -14482,7 +14484,7 @@ graph TD
     N6 -.->|allocates| N4
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -16267,10 +16269,10 @@ graph TD
 
 ### System attribute breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system attribute that supports the system attribute analysis by following the principles below:
-(1) A system attribute is composed of at least two system element attributes.
+(1) A system attribute is composed of at least one system element attribute.
 (2) A system attribute allocates a high level physical element attribute.
 (3) A system element attribute allocates a physical element attribute.
 (4) A system element attribute can be a system attribute.
@@ -16318,7 +16320,7 @@ graph TD
     N5 -.->|allocates| N6
 ```
 
-*Created: 2026-04-13 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -16409,10 +16411,10 @@ graph TD
 
 ### System breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system that supports the system architecture by following the principles below:
-(1) A system is composed of at least two system elements.
+(1) A system is composed of at least one system element.
 (2) A system allocates a high level physical element.
 (3) A system element allocates a physical element.
 (4) A system element can be a system.
@@ -16469,13 +16471,13 @@ graph TD
     N7 -.->|allocates| N12
     N7 -.->|allocates| N13
     N7 -.->|can be| N3
-    N5 -.->|allocates| N4
-    N4 -.->|allocates| N10
     N8 -.->|allocates| N12
+    N4 -.->|allocates| N10
     N6 -.->|allocates| N4
+    N5 -.->|allocates| N4
 ```
 
-*Created: 2026-03-21 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -18016,16 +18018,16 @@ graph TD
     N17 -.->|exposes| N36
     N28 -->|subclass of| N31
     N30 -->|subclass of| N31
-    N29 -->|subclass of| N32
-    N9 -.->|allocates| N4
-    N16 -.->|allocates| N11
+    N27 -.->|allocates| N29
     N34 -.->|allocates| N2
     N26 -.->|allocates| N22
-    N36 -.->|allocates| N22
-    N20 -.->|exposes| N35
     N2 -->|subclass of| N32
-    N27 -.->|allocates| N29
+    N9 -.->|allocates| N4
+    N29 -->|subclass of| N32
+    N20 -.->|exposes| N35
     N18 -.->|allocates| N24
+    N36 -.->|allocates| N22
+    N16 -.->|allocates| N11
 ```
 
 *Created: 2026-09-17 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -19124,10 +19126,10 @@ graph TD
 
 ### System function attribute breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system function attribute that supports the system functional analysis by following the principles below:
-(1) A system function attribute is composed of at least two system element function attributes.
+(1) A system function attribute is composed of at least one system element function attribute.
 (2) A system element function attribute can be a system function attribute.
 
 | Relation | Terms |
@@ -19162,7 +19164,7 @@ graph TD
     N3 -.->|allocates| N4
 ```
 
-*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -19233,12 +19235,13 @@ graph TD
 
 ### System function breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system function that supports the system functional analysis by following the principles below:
-(1) A system function is composed of at least two system element functions.
+(1) A system function is composed of at least one system element function.
 (2) A system function allocates a system activity.
 (3) A system element function can be a system function.
+Note: principle (3) excludes principle (2).
 
 | Relation | Terms |
 |---|---|
@@ -19285,7 +19288,7 @@ graph TD
     N9 -.->|allocates| N10
 ```
 
-*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -19873,13 +19876,13 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N12 -.->|allocates| N11
-    N3 -.->|allocates| N4
+    N2 -.->|allocates| N4
     N6 -.->|allocates| N2
     N6 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N14 -.->|exposes| N1
     N13 -.->|allocates| N11
-    N2 -.->|allocates| N4
+    N12 -.->|allocates| N11
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20496,23 +20499,23 @@ graph TD
     N34 -->|subclass of| N36
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
+    N42 -->|subclass of| N41
+    N44 -.->|allocates| N2
     N5 -.->|allocates| N37
     N5 -.->|allocates| N2
-    N32 -.->|allocates| N2
+    N39 -->|subclass of| N38
+    N43 -->|subclass of| N41
+    N29 -.->|allocates| N22
+    N29 -.->|allocates| N37
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
-    N40 -->|subclass of| N38
-    N29 -.->|allocates| N22
-    N29 -.->|allocates| N37
     N28 -.->|allocates| N19
-    N38 -.->|allocates| N1
-    N44 -.->|allocates| N2
-    N39 -->|subclass of| N38
+    N32 -.->|allocates| N2
     N41 -->|subclass of| N38
+    N38 -.->|allocates| N1
     N27 -.->|allocates| N20
-    N43 -->|subclass of| N41
-    N42 -->|subclass of| N41
+    N40 -->|subclass of| N38
 ```
 
 *Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -20820,10 +20823,10 @@ graph TD
 
 ### System state attribute breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system state attribute that supports the functional architecture by following the principles below:
-(1) A system state attribute is composed of at least two system element state attributes.
+(1) A system state attribute is composed of at least one system element state attribute.
 (2) A system state attribute allocates at least one system function attribute.
 (3) A system element state attribute allocates at least one system element function attribute.
 (4) A system element state attribute can be a system state attribute.
@@ -20869,7 +20872,7 @@ graph TD
     N5 -.->|allocates| N6
 ```
 
-*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -20926,10 +20929,10 @@ graph TD
 
 ### System state breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system state that supports the functional architecture by following the principles below:
-(1) A system state is composed of at least two system element states.
+(1) A system state is composed of at least one system element state.
 (2) A system state allocates at least one system function.
 (3) A system element state allocates at least one system element function.
 (4) A system element state can be a system state.
@@ -20991,14 +20994,14 @@ graph TD
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
     N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
     N15 -.->|allocates| N11
+    N11 -.->|allocates| N12
     N14 -.->|allocates| N9
     N4 -.->|allocates| N8
 ```
 
-*Created: 2026-03-22 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -21484,10 +21487,10 @@ graph TD
 
 ### System variant breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the system variant that supports the variability analysis by following the principles below:
-(1) A system variant is composed of at least two system elements or system element variants.
+(1) A system variant is composed of at least one system element or system element variant.
 (2) A system variant allocates a high level physical element variant.
 (3) A system element variant allocates a physical element variant.
 (4) A system element variant can be a system variant.
@@ -21569,23 +21572,23 @@ graph TD
     N23 -.->|represented by| N19
     N24 -.->|represented by| N19
     N21 -.->|allocates| N6
-    N15 -.->|allocates| N10
+    N23 -.->|allocates| N21
+    N23 -.->|allocates| N22
+    N18 -.->|allocates| N10
+    N18 -.->|allocates| N11
+    N16 -.->|allocates| N20
+    N16 -.->|allocates| N21
     N20 -.->|allocates| N4
     N20 -.->|allocates| N6
     N24 -.->|allocates| N21
     N24 -.->|allocates| N22
-    N16 -.->|allocates| N20
-    N16 -.->|allocates| N21
-    N23 -.->|allocates| N21
-    N23 -.->|allocates| N22
+    N15 -.->|allocates| N10
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N18 -.->|allocates| N10
-    N18 -.->|allocates| N11
 ```
 
-*Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-08-21 · Modified: 2026-11-15 · Creator: @rcasteran*
 
 ---
 
@@ -22427,31 +22430,31 @@ graph TD
     N43 -.->|allocates| N38
     N43 -.->|allocates| N45
     N43 -.->|allocates| N42
-    N9 -.->|allocates| N17
-    N9 -.->|allocates| N18
     N25 -.->|allocates| N15
     N25 -.->|allocates| N10
-    N41 -.->|allocates| N10
+    N44 -.->|allocates| N33
+    N44 -.->|allocates| N39
+    N44 -.->|allocates| N41
+    N8 -.->|allocates| N17
     N15 -.->|allocates| N8
     N15 -.->|allocates| N10
+    N14 -.->|allocates| N17
+    N14 -.->|allocates| N18
+    N14 -.->|allocates| N9
+    N21 -.->|allocates| N17
+    N31 -.->|allocates| N21
+    N31 -.->|allocates| N17
     N32 -.->|allocates| N20
     N32 -.->|allocates| N21
     N32 -.->|allocates| N17
     N24 -.->|allocates| N13
     N24 -.->|allocates| N15
-    N31 -.->|allocates| N21
-    N31 -.->|allocates| N17
+    N41 -.->|allocates| N10
+    N20 -.->|allocates| N30
     N13 -.->|allocates| N17
     N13 -.->|allocates| N8
-    N20 -.->|allocates| N30
-    N14 -.->|allocates| N17
-    N14 -.->|allocates| N18
-    N14 -.->|allocates| N9
-    N21 -.->|allocates| N17
-    N44 -.->|allocates| N33
-    N44 -.->|allocates| N39
-    N44 -.->|allocates| N41
-    N8 -.->|allocates| N17
+    N9 -.->|allocates| N17
+    N9 -.->|allocates| N18
     N45 -.->|allocates| N41
     N45 -.->|allocates| N10
 ```
