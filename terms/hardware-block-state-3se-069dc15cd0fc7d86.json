@@ -16,11 +16,12 @@
   "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86",
   "related": [
     "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98",
-    "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b"
+    "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b",
+    "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71"
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86#hardware-block-function-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86#hardware-block-function-allocation-06b01e0f9fe979b8",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86"
@@ -41,7 +42,7 @@
     }
   ],
   "entryCreated": "2026-04-12",
-  "entryModified": "2026-09-17",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

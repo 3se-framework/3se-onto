@@ -24,7 +24,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-block-interface-exposure",
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-block-interface-exposure-06b01e0f9fe774c3",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
@@ -44,7 +44,7 @@
       "sh:message": "A hardware block exposes at least one hardware block interface."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-component-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-component-composition-06b01e0f9fe77662",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
@@ -64,7 +64,7 @@
       "sh:message": "A hardware block is composed of at least one hardware component."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-block-state-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-block-state-allocation-06b01e0f9fe77765",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
@@ -85,7 +85,7 @@
     }
   ],
   "entryCreated": "2026-03-05",
-  "entryModified": "2026-09-21",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

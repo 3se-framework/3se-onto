@@ -86,7 +86,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d#system-element-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d#system-element-composition-06b01e0fa03c71dd",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
@@ -106,7 +106,7 @@
       "sh:message": "A system is composed of at least one system element."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d#high-level-physical-element-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d#high-level-physical-element-allocation-06b01e0fa03c739c",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
@@ -126,7 +126,7 @@
       "sh:message": "A system allocates at least one high level physical element."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d#system-interface-exposure",
+      "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d#system-interface-exposure-06b01e0fa03c74b2",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"

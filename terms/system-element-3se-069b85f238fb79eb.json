@@ -44,7 +44,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#physical-element-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#physical-element-allocation-06b01e0fa047787b",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
@@ -77,7 +77,7 @@
       "sh:message": "A leaf system element allocates at least one physical element."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#system-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#system-can-be-06b01e0fa0477a19",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
@@ -99,7 +99,7 @@
       "sh:message": "A system may be an instance of a system element."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#system-element-interface-exposure",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#system-element-interface-exposure-06b01e0fa0477b2d",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"

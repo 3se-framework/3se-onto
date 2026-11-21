@@ -20,7 +20,7 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4#physical-element-attribute-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4#physical-element-attribute-allocation-06b01e0fa04a7b2f",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4"
@@ -53,7 +53,7 @@
       "sh:message": "A leaf system element attribute allocates at least one physical element attribute."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4#system-attribute-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4#system-attribute-can-be-06b01e0fa04a7cb1",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
@@ -76,7 +76,7 @@
     }
   ],
   "entryCreated": "2026-04-13",
-  "entryModified": "2026-11-08",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -12,8 +12,8 @@
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
     "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
     "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5",
-    "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da",
-    "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd"
+    "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625",
+    "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
   ],
   "entryCreated": "2026-04-12",
   "entryModified": "2026-11-21",

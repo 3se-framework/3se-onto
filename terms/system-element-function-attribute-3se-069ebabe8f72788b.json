@@ -21,7 +21,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b#system-function-attribute-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b#system-function-attribute-can-be-06b01e0fa04f7c72",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d"
@@ -44,7 +44,7 @@
     }
   ],
   "entryCreated": "2026-04-24",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

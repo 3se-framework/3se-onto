@@ -18,14 +18,15 @@
     "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
     "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a",
     "https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e",
-    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce"
+    "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce",
+    "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1"
   ],
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597#software-component-state-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597#software-component-state-composition-06b01e0fa02f7b6e",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
@@ -45,7 +46,7 @@
       "sh:message": "A software state is composed of at least one software component state."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597#software-function-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597#software-function-allocation-06b01e0fa02f7d01",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
@@ -66,7 +67,7 @@
     }
   ],
   "entryCreated": "2026-03-29",
-  "entryModified": "2026-09-17",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -33,7 +33,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#service-mean-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#service-mean-composition-06b01e0fa01d7489",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
@@ -53,7 +53,7 @@
       "sh:message": "A service is composed of at least one service mean."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#system-representation",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#system-representation-06b01e0fa01d7689",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
@@ -73,7 +73,7 @@
       "sh:message": "A service is represented by at least one system."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#asset-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#asset-can-be-06b01e0fa01d77b9",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
@@ -95,7 +95,7 @@
       "sh:message": "An asset may be an instance of a service."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#service-contract-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#service-contract-composition-06b01e0fa01d78ad",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
@@ -115,7 +115,7 @@
       "sh:message": "A service is composed of at least one service contract."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#service-level-agreement-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#service-level-agreement-composition-06b01e0fa01d7995",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
@@ -135,7 +135,7 @@
       "sh:message": "A service is composed of at least one service level agreement."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#system-feature-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#system-feature-allocation-06b01e0fa01d7a80",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
@@ -156,7 +156,7 @@
     }
   ],
   "entryCreated": "2026-03-26",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
