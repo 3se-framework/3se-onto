@@ -8,18 +8,60 @@
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399",
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206",
+    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
+  ],
   "related": [
     "https://www.3se.info/3se-onto/terms/physical-element-breakdown-structure-3se-069c03464b5670d2",
     "https://www.3se.info/3se-onto/terms/system-breakdown-structure-3se-069bee1cdb507cf6"
+  ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399#physical-element-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A high level physical element is composed of at least one physical element."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399#high-level-functional-element-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A high level physical element allocates at least one high level functional element."
+    }
   ],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-09-11",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  },
-  "allocates": [
-    "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206",
-    "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
-  ]
+  }
 }

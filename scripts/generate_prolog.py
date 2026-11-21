@@ -21,13 +21,14 @@
 # as are URIs that do not resolve to a term in terms/ (reported on stderr).
 #
 # SHACL shapes declared in a term's `hasShape` field become
-#   shape_count(Owner, Shape, Target, Exempt, Path, Class, Min, Max).
+#   shape_count(Owner, Shape, Target, Exempt, Path, Class, Except, Min, Max).
 # where Owner is the declaring term, Shape the fragment of the shape's @id (its
 # position in hasShape when it has none), Target the sh:targetClass, Exempt the
 # classes of an sh:or alternative that exempts an instance, Path is
 # direct(Relation) or inverse(Relation), Class the sh:class of the
-# sh:qualifiedValueShape and Min/Max the qualified counts (Max = none when
-# unbounded). Only that subset is supported; anything else is an error.
+# sh:qualifiedValueShape, Except the classes its sh:not excludes (a leaf goal is
+# a goal that is not a high level goal) and Min/Max the qualified counts (Max =
+# none when unbounded). Only that subset is supported; anything else is an error.
 #
 # The rules and axioms that reason over these facts live next to the output in
 # axioms/core/ and axioms/domain/; axioms/load.pl loads everything.
@@ -141,7 +142,7 @@ def shape_path(path, property_names: dict[str, str]) -> str:
 
 def translate_counted_shape(owner: str, label: str, shape: dict, index: dict[str, dict],
                             property_names: dict[str, str]) -> str:
-    """Translate a node shape with a qualified count into a shape_count/8 fact."""
+    """Translate a node shape with a qualified count into a shape_count/9 fact."""
     target = term_slug(iri(shape.get("sh:targetClass"), "sh:targetClass"), index, "sh:targetClass")
 
     exempt: list[str] = []
@@ -167,13 +168,20 @@ def translate_counted_shape(owner: str, label: str, shape: dict, index: dict[str
     if not isinstance(value_shape, dict):
         raise ShapeError("only qualified counts are supported (sh:qualifiedValueShape)")
     value_class = term_slug(iri(value_shape.get("sh:class"), "sh:class"), index, "sh:class")
+    excluded: list[str] = []
+    if "sh:not" in value_shape:
+        negated = value_shape["sh:not"]
+        if not isinstance(negated, dict) or set(negated) != {"sh:class"}:
+            raise ShapeError("sh:not in a sh:qualifiedValueShape must be a single sh:class")
+        excluded.append(term_slug(iri(negated["sh:class"], "sh:class"), index, "sh:class"))
     minimum = property_shape.get("sh:qualifiedMinCount", 0)
     maximum = property_shape.get("sh:qualifiedMaxCount", "none")
 
     exempt_list = "[" + ", ".join(atom(e) for e in exempt) + "]"
+    except_list = "[" + ", ".join(atom(e) for e in excluded) + "]"
     return (
         f"shape_count({atom(owner)}, {label}, {atom(target)}, {exempt_list}, "
-        f"{path}, {atom(value_class)}, {minimum}, {maximum})."
+        f"{path}, {atom(value_class)}, {except_list}, {minimum}, {maximum})."
     )
 
 
@@ -190,7 +198,7 @@ def shape_label(stem: str, position: int, shape: dict) -> str:
 
 def translate_shape(stem: str, owner: str, position: int, shape: dict, index: dict[str, dict],
                     property_names: dict[str, str]) -> str:
-    """Translate one node shape into a shape_count/8 fact."""
+    """Translate one node shape into a shape_count/9 fact."""
     if shape.get("@type") != "sh:NodeShape":
         raise ShapeError("hasShape entries must be sh:NodeShape")
     label = shape_label(stem, position, shape)
@@ -267,7 +275,7 @@ def main() -> int:
     lines.append("")
 
     lines.append("% ── Shapes (hasShape) " + "─" * 47)
-    lines.append(":- dynamic shape_count/8.")
+    lines.append(":- dynamic shape_count/9.")
     lines.extend(sorted(shape_facts))
     lines.append("")
 

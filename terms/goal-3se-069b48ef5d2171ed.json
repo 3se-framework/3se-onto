@@ -7,13 +7,7 @@
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/goal-req-eng-fundamentals-2nd-ed-069a9faf2ca170d4"
   ],
-  "entryCreator": {
-    "@type": "foaf:Person",
-    "name": "@rcasteran"
-  },
   "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
-  "entryCreated": "2026-03-13",
-  "entryModified": "2026-11-21",
   "related": [
     "https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e",
     "https://www.3se.info/3se-onto/terms/enabling-system-3se-069b9d2c8d64720e",
@@ -50,5 +44,76 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
-  ]
+  ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#value-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
+      },
+      "sh:or": {
+        "@list": [
+          {
+            "@type": "sh:NodeShape",
+            "sh:class": {
+              "@id": "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608"
+            }
+          },
+          {
+            "@type": "sh:NodeShape",
+            "sh:property": {
+              "@type": "sh:PropertyShape",
+              "sh:path": {
+                "sh:inversePath": {
+                  "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+                }
+              },
+              "sh:qualifiedValueShape": {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+                },
+                "sh:not": {
+                  "sh:class": {
+                    "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
+                  }
+                }
+              },
+              "sh:qualifiedMinCount": 1,
+              "sh:qualifiedMaxCount": 1
+            }
+          }
+        ]
+      },
+      "sh:message": "A leaf value is allocated to exactly one leaf goal."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#high-level-goal-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A high level goal may be an instance of a goal."
+    }
+  ],
+  "entryCreated": "2026-03-13",
+  "entryModified": "2026-11-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

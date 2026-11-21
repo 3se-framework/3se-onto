@@ -6,11 +6,11 @@
 %   holds(Relation, Source, Target)    e.g. holds(allocates, F, G)
 % and are silent until such facts are asserted.
 %
-% shape_count(Owner, Shape, Target, Exempt, Path, Class, Min, Max): every
-% instance of Target, unless it is an instance of one of the Exempt classes,
-% has between Min and Max (none: unbounded) distinct values along Path that
-% are instances of Class. Example, from feature-3se: a leaf goal is
-% allocated to exactly one feature.
+% shape_count(Owner, Shape, Target, Exempt, Path, Class, Except, Min, Max):
+% every instance of Target, unless it is an instance of one of the Exempt
+% classes, has between Min and Max (none: unbounded) distinct values along
+% Path that are instances of Class and of none of the Except classes. Example,
+% from feature-3se: a leaf goal is allocated to exactly one feature.
 %
 % The shapes of a term describe its relations with other concepts, each one
 % targeting the target concept of the relation and looking back at its source
@@ -30,10 +30,12 @@ path_value(direct(Rel), I, V) :- holds(Rel, I, V).
 path_value(inverse(Rel), I, V) :- holds(Rel, V, I).
 
 violation(shape_count(Owner, Shape, I, Count, Min-Max)) :-
-    shape_count(Owner, Shape, Target, Exempt, Path, Class, Min, Max),
+    shape_count(Owner, Shape, Target, Exempt, Path, Class, Except, Min, Max),
     instance_of_class(I, Target),
     \+ ( member(E, Exempt), instance_of_class(I, E) ),
-    findall(V, ( path_value(Path, I, V), instance_of_class(V, Class) ), Vs0),
+    findall(V, ( path_value(Path, I, V),
+                 instance_of_class(V, Class),
+                 \+ ( member(X, Except), instance_of_class(V, X) ) ), Vs0),
     sort(Vs0, Vs),
     length(Vs, Count),
     (   Count < Min

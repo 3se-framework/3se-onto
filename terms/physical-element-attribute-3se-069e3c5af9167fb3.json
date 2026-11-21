@@ -15,14 +15,71 @@
     "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
   ],
   "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
+    "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368"
+  ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3#functional-element-attribute-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
+      },
+      "sh:or": {
+        "@list": [
+          {
+            "@type": "sh:NodeShape",
+            "sh:class": {
+              "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
+            }
+          },
+          {
+            "@type": "sh:NodeShape",
+            "sh:property": {
+              "@type": "sh:PropertyShape",
+              "sh:path": {
+                "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+              },
+              "sh:qualifiedValueShape": {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864"
+                }
+              },
+              "sh:qualifiedMinCount": 1
+            }
+          }
+        ]
+      },
+      "sh:message": "A leaf physical element attribute allocates at least one functional element attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3#high-level-physical-element-attribute-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/physical-element-attribute-3se-069e3c5af9167fb3"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A high level physical element attribute may be an instance of a physical element attribute."
+    }
+  ],
   "entryCreated": "2026-04-13",
   "entryModified": "2026-10-16",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
-  },
-  "related": [
-    "https://www.3se.info/3se-onto/terms/system-attribute-breakdown-structure-3se-069dcf9368c6750e",
-    "https://www.3se.info/3se-onto/terms/physical-element-attribute-breakdown-structure-3se-069ebabe8f697368"
-  ]
+  }
 }

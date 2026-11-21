@@ -11,6 +11,28 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327#feature-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+          }
+        },
+        "sh:qualifiedMinCount": 2
+      },
+      "sh:message": "A high level feature is composed of at least two features."
+    }
+  ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-09-11",
   "entryCreator": {
