@@ -145,3 +145,6 @@ dmypy.json
 /_site/
 /_site_version/
 /archive/
+
+# Generated Prolog facts (scripts/generate_prolog.py)
+/axioms/facts.pl
