@@ -13,11 +13,8 @@
     "https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1"
   ],
   "allocates": [
-    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
-    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
-  ],
-  "isRepresentedBy": [
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505",
+    "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16"
@@ -51,26 +48,6 @@
         "sh:qualifiedMinCount": 1
       },
       "sh:message": "A service is composed of at least one service mean."
-    },
-    {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#system-representation-06b01e0fa01d7689",
-      "@type": "sh:NodeShape",
-      "sh:targetClass": {
-        "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
-      },
-      "sh:property": {
-        "@type": "sh:PropertyShape",
-        "sh:path": {
-          "@id": "https://www.3se.info/3se-onto/properties/is-represented-by-3se-069c84106135779a"
-        },
-        "sh:qualifiedValueShape": {
-          "sh:class": {
-            "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
-          }
-        },
-        "sh:qualifiedMinCount": 1
-      },
-      "sh:message": "A service is represented by at least one system."
     },
     {
       "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#asset-can-be-06b01e0fa01d77b9",
@@ -135,7 +112,7 @@
       "sh:message": "A service is composed of at least one service level agreement."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#system-feature-allocation-06b01e0fa01d7a80",
+      "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d#feature-allocation",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
@@ -147,12 +124,12 @@
         },
         "sh:qualifiedValueShape": {
           "sh:class": {
-            "@id": "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf"
+            "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
           }
         },
         "sh:qualifiedMinCount": 1
       },
-      "sh:message": "A service allocates at least one system feature."
+      "sh:message": "A service allocates at least one feature."
     }
   ],
   "entryCreated": "2026-03-26",
