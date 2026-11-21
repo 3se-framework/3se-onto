@@ -74,6 +74,7 @@ TERM_ARRAY_FIELDS: list[str] = [
     "isSupporting",
     "produces",
     "consumes",
+    "exposes",
     "conveys",
     "evaluates",
     "fires",
