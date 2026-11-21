@@ -74,7 +74,6 @@
     "name": "@rcasteran"
   },
   "isResponsibleFor": [
-    "https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117",
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc",
     "https://www.3se.info/3se-onto/terms/high-level-physical-element-variant-3se-06a8873e37a378a2",
@@ -95,6 +94,7 @@
     "https://www.3se.info/3se-onto/terms/system-function-attribute-variant-3se-06a8873e38bb7ad7",
     "https://www.3se.info/3se-onto/terms/system-function-variant-3se-06a8873e38c67db1",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff",
-    "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723"
+    "https://www.3se.info/3se-onto/terms/system-state-variant-3se-06a8873e39097723",
+    "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8"
   ]
 }

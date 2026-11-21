@@ -17,7 +17,8 @@
   "@id": "https://www.3se.info/3se-onto/terms/system-product-3se-06b01eaa48737a7f",
   "related": [
     "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e",
-    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+    "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1",
+    "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2"
   ],
   "hasShape": [
     {

@@ -13,5 +13,15 @@
   ],
   "isRepresentedBy": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/system-product-3se-06b01eaa48737a7f"
+  ],
+  "entryCreated": "2026-11-21",
+  "entryModified": "2026-11-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }
