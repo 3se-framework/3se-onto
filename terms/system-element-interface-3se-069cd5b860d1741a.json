@@ -26,7 +26,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a#physical-interface-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a#physical-interface-allocation-06b01e0fa053747c",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a"
@@ -46,7 +46,7 @@
       "sh:message": "A system element interface allocates at least one physical interface."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a#system-interface-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-3se-069cd5b860d1741a#system-interface-can-be-06b01e0fa0537624",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"

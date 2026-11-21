@@ -24,7 +24,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c#software-component-interface-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c#software-component-interface-composition-06b01e0fa02d7aa9",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
@@ -45,7 +45,7 @@
     }
   ],
   "entryCreated": "2026-03-20",
-  "entryModified": "2026-09-17",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

@@ -12,7 +12,6 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be",
   "related": [
-    "https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71",
     "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5",
     "https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98",
     "https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b"
@@ -24,7 +23,7 @@
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
   ],
   "entryCreated": "2026-04-12",
-  "entryModified": "2026-11-08",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

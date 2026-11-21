@@ -23,7 +23,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-element-function-attribute-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-element-function-attribute-allocation-06b01e0fa05b702a",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
@@ -56,7 +56,7 @@
       "sh:message": "A leaf system element state attribute allocates at least one system element function attribute."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-state-attribute-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-state-attribute-can-be-06b01e0fa05b71ff",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"

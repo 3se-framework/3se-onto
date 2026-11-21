@@ -16,11 +16,12 @@
   "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625",
   "related": [
     "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a",
-    "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81"
+    "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81",
+    "https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1"
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625#software-component-function-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625#software-component-function-allocation-06b01e0fa02a7f98",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
@@ -41,7 +42,7 @@
     }
   ],
   "entryCreated": "2026-04-12",
-  "entryModified": "2026-09-17",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

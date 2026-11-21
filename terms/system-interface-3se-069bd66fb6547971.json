@@ -24,7 +24,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971#system-element-interface-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971#system-element-interface-composition-06b01e0fa06678c1",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"

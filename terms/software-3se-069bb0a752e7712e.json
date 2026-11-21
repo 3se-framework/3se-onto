@@ -43,7 +43,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-component-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-component-composition-06b01e0fa0247bf4",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
@@ -63,7 +63,7 @@
       "sh:message": "A software is composed of at least one software component."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-interface-exposure",
+      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-interface-exposure-06b01e0fa0247dc0",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
@@ -83,7 +83,7 @@
       "sh:message": "A software exposes at least one software interface."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-state-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-state-allocation-06b01e0fa0247ee9",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
@@ -104,7 +104,7 @@
     }
   ],
   "entryCreated": "2026-03-18",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
