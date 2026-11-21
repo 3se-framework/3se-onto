@@ -8,6 +8,8 @@ on:
       - "references/**.json"
       - "properties/**.json"
       - "domains/**.json"
+      - "axioms/**"
+      - "scripts/generate_prolog.py"
 
 jobs:
   validate:
@@ -58,6 +60,9 @@ jobs:
       - name: Inject missing IDs
         run: python scripts/inject_ids.py
 
+      - name: Inject shape ids
+        run: python scripts/inject_shape_ids.py
+
       - name: Inject relational URIs
         run: python scripts/inject_uris.py
 
@@ -95,3 +100,17 @@ jobs:
         with:
           commit_message: "main: inject missing ids, dates and contributors [skip ci]"
           file_pattern: ${{ steps.changed.outputs.file_pattern }}
+
+      # ── Prolog axioms (after the commit, so the injected fields are kept even if this fails) ──
+
+      - name: Install SWI-Prolog
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y swi-prolog-nox
+
+      - name: Generate Prolog facts
+        run: python scripts/generate_prolog.py
+
+      - name: Check axioms
+        # check/0 prints every violation and warning and fails on any violation
+        run: swipl -q -g check -t halt axioms/load.pl

@@ -89,6 +89,7 @@ The ontology is organised into ten engineering domains. Each domain is a `skos:C
 
 ## Structure
 ```
+axioms/         — SWI-Prolog axioms: generated facts, generic rules and 3SE integrity checks
 domains/        — one JSON-LD file per engineering domain (skos:Collection)
 terms/          — one JSON-LD file per term (3SE and external)
 references/     — one JSON-LD file per bibliographic reference

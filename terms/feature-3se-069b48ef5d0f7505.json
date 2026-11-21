@@ -59,5 +59,153 @@
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327"
+  ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505#goal-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+      },
+      "sh:or": {
+        "@list": [
+          {
+            "@type": "sh:NodeShape",
+            "sh:class": {
+              "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
+            }
+          },
+          {
+            "@type": "sh:NodeShape",
+            "sh:property": {
+              "@type": "sh:PropertyShape",
+              "sh:path": {
+                "sh:inversePath": {
+                  "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+                }
+              },
+              "sh:qualifiedValueShape": {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+                }
+              },
+              "sh:qualifiedMinCount": 1,
+              "sh:qualifiedMaxCount": 1
+            }
+          }
+        ]
+      },
+      "sh:message": "A leaf goal is allocated to exactly one feature."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505#stakeholder-functional-req-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/stakeholder-functional-req-3se-069bdc88051177e5"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A stakeholder functional requirement is allocated to a feature."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505#stakeholder-non-functional-req-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/stakeholder-non-functional-req-3se-069bdc88051a751e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A stakeholder non-functional requirement is allocated to a feature."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505#stakeholder-constraint-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/stakeholder-constraint-3se-069bdc8805087d03"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A stakeholder constraint is allocated to a feature."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505#high-level-feature-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A high level feature may be an instance of a feature."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505#feature-evaluation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/evaluates-3se-069f38ad07327be8"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/acceptance-case-3se-069f3686baba7c7e"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A feature is evaluated by at least one acceptance case."
+    }
   ]
 }
