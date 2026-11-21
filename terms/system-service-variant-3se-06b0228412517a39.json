@@ -25,5 +25,15 @@
   "canBe": [
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
     "https://www.3se.info/3se-onto/terms/asset-variant-3se-06a8873e3730732e"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-service-variant-3se-06b0228412517a39",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/variant-3se-06a8873e39297fe5"
+  ],
+  "entryCreated": "2026-08-21",
+  "entryModified": "2026-11-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

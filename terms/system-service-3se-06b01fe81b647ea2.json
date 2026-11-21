@@ -20,7 +20,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2#system-representation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2#system-representation-06b0228414537e7b",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2"
@@ -40,7 +40,7 @@
       "sh:message": "A system service is represented by at least one system."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2#system-feature-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2#system-feature-allocation-06b02284145470ec",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2"

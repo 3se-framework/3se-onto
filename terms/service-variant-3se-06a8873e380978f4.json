@@ -26,10 +26,11 @@
   ],
   "related": [
     "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed",
-    "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
+    "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4",
+    "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8"
   ],
   "entryCreated": "2026-08-21",
-  "entryModified": "2026-11-08",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
