@@ -9,10 +9,11 @@
   ],
   "@id": "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8",
   "related": [
-    "https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117"
+    "https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117",
+    "https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6"
   ],
   "entryCreated": "2026-08-21",
-  "entryModified": "2026-11-08",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
