@@ -4,6 +4,7 @@
   "title": "System service - 3SE",
   "description": "Service, one mean of which is a system product.",
   "status": "draft",
+  "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
   ],
@@ -14,9 +15,50 @@
   "isRepresentedBy": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2",
   "related": [
     "https://www.3se.info/3se-onto/terms/system-product-3se-06b01eaa48737a7f"
+  ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2#system-representation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-represented-by-3se-069c84106135779a"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system service is represented by at least one system."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2#system-feature-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-service-3se-06b01fe81b647ea2"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system service allocates at least one system feature."
+    }
   ],
   "entryCreated": "2026-11-21",
   "entryModified": "2026-11-21",
