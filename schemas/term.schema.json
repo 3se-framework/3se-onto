@@ -313,6 +313,27 @@
       },
       "uniqueItems": true
     },
+    "hasShape": {
+      "description": "3se:hasShape — SHACL node shapes (sh:NodeShape) stating axioms that models built with this concept must satisfy. Each shape targets the instances of a class with sh:targetClass; see axioms/domain/shapes.pl for the supported subset.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["@type", "sh:targetClass"],
+        "properties": {
+          "@id": {
+            "type": "string",
+            "format": "uri",
+            "description": "IRI of the shape: the IRI of the declaring term, a #, and a slug. scripts/inject_shape_ids.py appends the UUIDv7 suffix (16 hex characters) to a bare slug."
+          },
+          "@type": { "const": "sh:NodeShape" },
+          "sh:targetClass": {
+            "type": "object",
+            "required": ["@id"],
+            "properties": { "@id": { "type": "string", "format": "uri" } }
+          }
+        }
+      }
+    },
     "shapes": {
       "description": "3se:shapes — IRIs of milieus that an environment shapes by constraining and enabling what is possible within them (shaping relation).",
       "type": "array",

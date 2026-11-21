@@ -6,6 +6,12 @@ Data-only repo: the 3SE ontology as JSON-LD entries (SKOS), plus Python scripts 
 
 ```
 .github/workflows/  — CI: validate (+ inject), generate glossary, deploy site, release site
+axioms/             — SWI-Prolog axioms (entry point: load.pl, then ?- check.)
+  facts.pl            generated from terms/, not committed
+  report.pl           violation/1, warning/1 (multifile) and check/0
+  core/               domain-neutral rules, one file per set: closures, inheritance, roles
+  domain/             3SE axioms as violation/1 and warning/1 checks, one file per set:
+                      status, mappings, flows, variants, analyses, inheritance, shapes, risk
 contexts/           — JSON-LD context per entry type (term, property, reference, domain)
 domains/            — one file per engineering domain (skos:Collection)
 properties/         — one file per typed relation (allocates, produces, isResponsibleFor, ...)
@@ -28,6 +34,7 @@ README.md           — concepts, domains, releases, status lifecycle
 - Relation fields (`related`, `subClassOf`, `isAccountableFor`, ...) hold full `@id` URIs. Bare slugs are resolved by `inject_uris.py`, but write full URIs.
 - `subClassOf` is reserved for formal BFO subsumption; engineering relations use the typed properties in `properties/`.
 - `status` is one of draft / under review / reviewed / under approval / approved / standard. `manage_statuses.py` promotes it after each release; don't promote by hand.
+- `hasShape` holds SHACL node shapes (axioms on models built with the term), e.g. in `feature-3se`. Each shape has an `@id` of the form `<term IRI>#<slug>-<16 hex of UUIDv7>`: write the bare `#<slug>` and `inject_shape_ids.py` appends the suffix (idempotent; runs in CI). Like term ids, shape ids are permanent once suffixed. `generate_prolog.py` supports only qualified counts on a direct or inverse path with an optional `sh:or` class exemption, and fails on anything else; `axioms/domain/shapes.pl` applies them to model facts.
 - JSON style: 2-space indent, UTF-8 (no `\u` escapes), trailing newline.
 
 ## CI-managed fields — do not hand-maintain
@@ -55,11 +62,14 @@ python scripts/check_inheritance.py
 python scripts/inject_analysis_roles.py && python scripts/inject_responsible_roles.py
 python scripts/generate_glossary.py          # glossary.md (CI: workflow_dispatch "Generate glossary")
 python scripts/generate_site.py              # _site/ (published via GitHub Pages)
+python scripts/inject_shape_ids.py           # UUIDv7 suffix on bare shape @ids
+python scripts/generate_prolog.py            # axioms/facts.pl (CI regenerates it; not committed)
+swipl -q -g check -t halt axioms/load.pl   # lists violations and warnings; exit 1 on a violation (CI step)
 ```
 
 On Windows set `PYTHONIOENCODING=utf-8` for `validate_glossary.py`, or it crashes on its ✓/─ characters.
 
-CI order is validate → check_inheritance → inject_uuids → inject_ids → inject_uris → inject_3se_links → inject_analysis_roles → inject_responsible_roles → inject_dates → inject_contributors. There are no tests beyond validation.
+CI order is validate → check_inheritance → inject_uuids → inject_ids → inject_shape_ids → inject_uris → inject_3se_links → inject_analysis_roles → inject_responsible_roles → inject_dates → inject_contributors → commit → generate_prolog → swipl check (fails on a violation). There are no tests beyond validation.
 
 ## Releases
 
