@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Top-level ontology - ISO/IEC 21838-1",
+  "description": "Ontology that is created to represent the categories that are shared across a maximally broad range of domains.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-iec-21838-1-2021-06af0c173719703c"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/top-level-ontology-21838-1-2021-06af0c1737027278",
+  "entryCreated": "2026-11-08",
+  "entryModified": "2026-11-08",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

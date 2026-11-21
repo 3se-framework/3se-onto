@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Project risk - ISO/IEC/IEEE 24765",
+  "description": "Risk related to the management of a project.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/iso-iec-ieee-24765-2017-069a99c8f73d72c2"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/project-risk-24765-2017-069bda7c99b971fb",
+  "entryCreated": "2026-03-20",
+  "entryModified": "2026-03-20",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

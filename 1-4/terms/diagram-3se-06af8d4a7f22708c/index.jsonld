@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Diagram - 3SE",
+  "description": "Logically coherent visual representation of a view, using selected graphical icons and conventions from an associated design language, to be used for visualizing the elements of the view, their relations and their properties.",
+  "status": "draft",
+  "closeMatch": [
+    "https://www.3se.info/3se-onto/terms/diagram-24765-2017-06af8d4a7eed7693"
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/diagram-3se-06af8d4a7f22708c",
+  "related": [
+    "https://www.3se.info/3se-onto/terms/view-3se-06a0993aed6d7ad2"
+  ],
+  "entryCreated": "2026-11-14",
+  "entryModified": "2026-11-14",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
+}

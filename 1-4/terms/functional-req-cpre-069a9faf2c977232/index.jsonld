@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "Functional Requirement - IREB CPRE",
+  "description": "A requirement concerning a result or behavior that shall be provided by a function of a system.",
+  "status": "standard",
+  "isReferencedBy": [
+    "https://www.3se.info/3se-onto/references/ireb-cpre-glossary-069a95b4863c7c67"
+  ],
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  },
+  "@id": "https://www.3se.info/3se-onto/terms/functional-req-cpre-069a9faf2c977232",
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-03-18"
+}
