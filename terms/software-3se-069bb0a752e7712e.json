@@ -33,7 +33,8 @@
     "https://www.3se.info/3se-onto/terms/software-failure-3se-069f11b2ffa17964",
     "https://www.3se.info/3se-onto/terms/software-fault-3se-069f11b2ffaa700f",
     "https://www.3se.info/3se-onto/terms/software-weakness-3se-069f11b2ffb2798c",
-    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b"
+    "https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b",
+    "https://www.3se.info/3se-onto/terms/system-product-3se-06b01eaa48737a7f"
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"

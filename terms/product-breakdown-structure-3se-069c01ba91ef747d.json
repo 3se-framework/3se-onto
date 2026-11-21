@@ -14,11 +14,10 @@
   "related": [
     "https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8",
     "https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631",
-    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
     "https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16",
     "https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580",
     "https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9",
-    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf"
+    "https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505"
   ],
   "entryCreated": "2026-03-22",
   "entryModified": "2026-11-21",
