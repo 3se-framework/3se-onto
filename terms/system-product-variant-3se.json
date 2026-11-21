@@ -1,0 +1,20 @@
+{
+  "@context": "https://www.3se.info/3se-onto/contexts/term.context.jsonld",
+  "@type": "skos:Concept",
+  "title": "System product variant - 3SE",
+  "description": "Variant of a system product.",
+  "status": "approved",
+  "isVariantOf": [
+    "https://www.3se.info/3se-onto/terms/system-product-3se-06b01eaa48737a7f"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf",
+    "https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8",
+    "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3",
+    "https://www.3se.info/3se-onto/terms/system-attribute-variant-3se-06a8873e38277bc3"
+  ],
+  "isRepresentedBy": [
+    "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d",
+    "https://www.3se.info/3se-onto/terms/system-variant-3se-06a8873e391474dc"
+  ]
+}
