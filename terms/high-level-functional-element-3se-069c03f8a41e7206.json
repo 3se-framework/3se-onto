@@ -18,7 +18,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206#functional-element-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206#functional-element-composition-06b01cd64146747f",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
@@ -38,7 +38,7 @@
       "sh:message": "A high level functional element is composed of at least one functional element."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206#system-state-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206#system-state-allocation-06b01cd641467586",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"
@@ -59,7 +59,7 @@
     }
   ],
   "entryCreated": "2026-03-22",
-  "entryModified": "2026-10-16",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

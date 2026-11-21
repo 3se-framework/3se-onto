@@ -13,7 +13,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608#value-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608#value-composition-06b01cd6414b7e1b",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608"
@@ -34,7 +34,7 @@
     }
   ],
   "entryCreated": "2026-04-08",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"

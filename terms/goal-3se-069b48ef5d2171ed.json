@@ -47,7 +47,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#value-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#value-allocation-06b01cd641407446",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
@@ -88,7 +88,7 @@
       "sh:message": "A leaf value is allocated to exactly one leaf goal."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#high-level-goal-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#high-level-goal-can-be-06b01cd641407573",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"

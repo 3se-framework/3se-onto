@@ -32,7 +32,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504#system-element-state-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504#system-element-state-allocation-06b01cd6413b7bc2",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504"
@@ -65,7 +65,7 @@
       "sh:message": "A leaf functional element allocates at least one system element state."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504#high-level-functional-element-can-be",
+      "@id": "https://www.3se.info/3se-onto/terms/functional-element-3se-069b9d2c8d9d7504#high-level-functional-element-can-be-06b01cd6413b7d93",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-functional-element-3se-069c03f8a41e7206"

@@ -18,7 +18,7 @@
   ],
   "hasShape": [
     {
-      "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399#physical-element-composition",
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399#physical-element-composition-06b01cd641497b61",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
@@ -38,7 +38,7 @@
       "sh:message": "A high level physical element is composed of at least one physical element."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399#high-level-functional-element-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399#high-level-functional-element-allocation-06b01cd641497c60",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-3se-069c03464ae07399"
@@ -59,7 +59,7 @@
     }
   ],
   "entryCreated": "2026-03-22",
-  "entryModified": "2026-09-11",
+  "entryModified": "2026-11-21",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
