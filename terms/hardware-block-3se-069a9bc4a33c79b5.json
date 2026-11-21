@@ -4,13 +4,7 @@
   "title": "Hardware block - 3SE",
   "description": "Functionally distinct part of a hardware, composed of at least one hardware component, and which exposes hardware block interfaces.",
   "status": "approved",
-  "entryCreator": {
-    "@type": "foaf:Person",
-    "name": "@rcasteran"
-  },
   "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5",
-  "entryCreated": "2026-03-05",
-  "entryModified": "2026-09-21",
   "related": [
     "https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516",
     "https://www.3se.info/3se-onto/terms/hardware-block-breakdown-structure-3se-069dc0c117f07144",
@@ -27,5 +21,73 @@
   ],
   "exposes": [
     "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340"
-  ]
+  ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-block-interface-exposure",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/exposes-3se-069cd94b8959766f"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-block-interface-3se-069dc15cd0dc7340"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware block exposes at least one hardware block interface."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-component-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-component-3se-069a9bc4a34678c2"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware block is composed of at least one hardware component."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5#hardware-block-state-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware block allocates at least one hardware block state."
+    }
+  ],
+  "entryCreated": "2026-03-05",
+  "entryModified": "2026-09-21",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

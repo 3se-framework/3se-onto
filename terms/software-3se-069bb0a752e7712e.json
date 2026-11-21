@@ -41,6 +41,68 @@
   "exposes": [
     "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-component-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software is composed of at least one software component."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-interface-exposure",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/exposes-3se-069cd94b8959766f"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software exposes at least one software interface."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e#software-state-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software allocates at least one software state."
+    }
+  ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-10-16",
   "entryCreator": {

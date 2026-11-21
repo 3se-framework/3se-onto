@@ -19,6 +19,28 @@
     "https://www.3se.info/3se-onto/terms/system-non-functional-validation-3se-06a27237d3a07ad9",
     "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e#system-element-non-functional-req-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system non-functional requirement is composed of at least one system element non-functional requirement."
+    }
+  ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-11-01",
   "entryCreator": {

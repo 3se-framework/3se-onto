@@ -19,6 +19,28 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9#system-element-functional-req-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system functional requirement is composed of at least one system element functional requirement."
+    }
+  ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-11-01",
   "entryCreator": {

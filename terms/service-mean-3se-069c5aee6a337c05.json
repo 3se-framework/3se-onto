@@ -14,6 +14,30 @@
     "https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53",
     "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05#service-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A service may be an instance of a service mean."
+    }
+  ],
   "entryCreated": "2026-03-26",
   "entryModified": "2026-10-22",
   "entryCreator": {

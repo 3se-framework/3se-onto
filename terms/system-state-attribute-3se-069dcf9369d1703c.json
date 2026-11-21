@@ -14,17 +14,59 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
   ],
-  "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
-  "entryCreated": "2026-04-13",
-  "entryModified": "2026-10-16",
-  "entryCreator": {
-    "@type": "foaf:Person",
-    "name": "@rcasteran"
-  },
   "related": [
     "https://www.3se.info/3se-onto/terms/functional-element-attribute-breakdown-structure-3se-069ebabe8f347361",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-breakdown-structure-3se-069ebabe8f8b77c3",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
     "https://www.3se.info/3se-onto/terms/system-state-attribute-variant-3se-06a8873e38fe7bff"
-  ]
+  ],
+  "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c",
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c#system-element-state-attribute-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system state attribute is composed of at least one system element state attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c#system-function-attribute-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-function-attribute-3se-069dcf9369c8775d"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system state attribute allocates at least one system function attribute."
+    }
+  ],
+  "entryCreated": "2026-04-13",
+  "entryModified": "2026-10-16",
+  "entryCreator": {
+    "@type": "foaf:Person",
+    "name": "@rcasteran"
+  }
 }

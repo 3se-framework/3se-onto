@@ -22,6 +22,28 @@
   "conveys": [
     "https://www.3se.info/3se-onto/terms/exchange-3se-069bc4ea5316749f"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c#software-component-interface-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-interface-3se-069bd66fb64b7c7c"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-component-interface-3se-069dc11872d97b8a"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software interface is composed of at least one software component interface."
+    }
+  ],
   "entryCreated": "2026-03-20",
   "entryModified": "2026-09-17",
   "entryCreator": {

@@ -42,6 +42,48 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8#system-element-function-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system function is composed of at least one system element function."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8#system-activity-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system function allocates at least one system activity."
+    }
+  ],
   "entryCreated": "2026-03-21",
   "entryModified": "2026-11-12",
   "entryCreator": {

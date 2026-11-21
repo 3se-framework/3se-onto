@@ -18,6 +18,28 @@
     "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971",
     "https://www.3se.info/3se-onto/terms/system-interface-attribute-breakdown-structure-3se-069cd5b860b47815"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6#system-element-interface-attribute-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-interface-attribute-3se-069ebbb4e70f70e6"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-interface-attribute-3se-069ebbb4e70678ed"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system interface attribute is composed of at least one system element interface attribute."
+    }
+  ],
   "entryCreated": "2026-04-24",
   "entryModified": "2026-10-16",
   "entryCreator": {

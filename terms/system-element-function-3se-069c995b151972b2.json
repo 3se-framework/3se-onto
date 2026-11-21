@@ -39,6 +39,30 @@
     "https://www.3se.info/3se-onto/terms/system-failure-3se-069efaf702f27778",
     "https://www.3se.info/3se-onto/terms/system-weakness-3se-069efaf7031577c5"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2#system-function-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system function may be an instance of a system element function."
+    }
+  ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-11-08",
   "entryCreator": {

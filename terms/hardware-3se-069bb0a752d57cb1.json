@@ -41,6 +41,68 @@
   "exposes": [
     "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1#hardware-block-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware is composed of at least one hardware block."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1#hardware-interface-exposure",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/exposes-3se-069cd94b8959766f"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-interface-3se-069bd66fb6017920"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware exposes at least one hardware interface."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1#hardware-state-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware allocates at least one hardware state."
+    }
+  ],
   "entryCreated": "2026-03-18",
   "entryModified": "2026-10-16",
   "entryCreator": {

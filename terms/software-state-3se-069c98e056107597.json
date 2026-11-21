@@ -23,6 +23,48 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597#software-component-state-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software state is composed of at least one software component state."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597#software-function-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software state allocates at least one software function."
+    }
+  ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-09-17",
   "entryCreator": {

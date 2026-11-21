@@ -17,6 +17,30 @@
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec",
     "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241#system-functional-req-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system functional requirement may be an instance of a system element functional requirement."
+    }
+  ],
   "entryCreated": "2026-04-26",
   "entryModified": "2026-11-08",
   "entryCreator": {

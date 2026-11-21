@@ -18,6 +18,28 @@
     "https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a",
     "https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625#software-component-function-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A software component state allocates at least one software component function."
+    }
+  ],
   "entryCreated": "2026-04-12",
   "entryModified": "2026-09-17",
   "entryCreator": {

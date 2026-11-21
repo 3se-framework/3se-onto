@@ -32,6 +32,48 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af#system-element-state-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-state-3se-069c995b153b7534"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system state is composed of at least one system element state."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af#system-function-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-state-3se-069c98e0564a72af"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system state allocates at least one system function."
+    }
+  ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-11-13",
   "entryCreator": {

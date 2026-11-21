@@ -19,6 +19,48 @@
     "https://www.3se.info/3se-onto/terms/system-attribute-analysis-3se-069dcf9368b37c5a",
     "https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3#system-element-attribute-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system attribute is composed of at least one system element attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3#high-level-physical-element-attribute-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-attribute-3se-069dcf9369b672e3"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/high-level-physical-element-attribute-3se-069ebabe8f6076e4"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system attribute allocates at least one high level physical element attribute."
+    }
+  ],
   "entryCreated": "2026-04-13",
   "entryModified": "2026-11-21",
   "entryCreator": {

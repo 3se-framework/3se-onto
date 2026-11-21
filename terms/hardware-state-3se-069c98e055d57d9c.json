@@ -23,6 +23,48 @@
   "isComposedOf": [
     "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c#hardware-block-state-composition",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware state is composed of at least one hardware block state."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c#hardware-function-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A hardware state allocates at least one hardware function."
+    }
+  ],
   "entryCreated": "2026-03-29",
   "entryModified": "2026-09-17",
   "entryCreator": {

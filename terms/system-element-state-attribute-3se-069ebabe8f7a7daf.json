@@ -21,6 +21,63 @@
     "https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce",
     "https://www.3se.info/3se-onto/terms/system-req-breakdown-structure-3se-069ee3cda6097bec"
   ],
+  "hasShape": [
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-element-function-attribute-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
+      },
+      "sh:or": {
+        "@list": [
+          {
+            "@type": "sh:NodeShape",
+            "sh:class": {
+              "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+            }
+          },
+          {
+            "@type": "sh:NodeShape",
+            "sh:property": {
+              "@type": "sh:PropertyShape",
+              "sh:path": {
+                "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+              },
+              "sh:qualifiedValueShape": {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b"
+                }
+              },
+              "sh:qualifiedMinCount": 1
+            }
+          }
+        ]
+      },
+      "sh:message": "A leaf system element state attribute allocates at least one system element function attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-state-attribute-can-be",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/can-be-3se-069c8410611d7975"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system state attribute may be an instance of a system element state attribute."
+    }
+  ],
   "entryCreated": "2026-04-24",
   "entryModified": "2026-11-21",
   "entryCreator": {
