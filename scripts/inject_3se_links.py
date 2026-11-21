@@ -31,11 +31,18 @@ import inflect
 import nltk
 
 # Ensure required NLTK data is available (downloaded once, cached locally)
-for _pkg in ("punkt_tab", "averaged_perceptron_tagger_eng"):
+for _pkg in ("punkt_tab", "averaged_perceptron_tagger_eng", "wordnet"):
     try:
-        nltk.data.find(f"tokenizers/{_pkg}" if "punkt" in _pkg else f"taggers/{_pkg}")
+        nltk.data.find({"punkt_tab": "tokenizers/punkt_tab", "wordnet": "corpora/wordnet"}.get(_pkg, f"taggers/{_pkg}"))
     except LookupError:
         nltk.download(_pkg, quiet=True)
+
+
+def can_be_verb(word: str) -> bool:
+    """Return True if WordNet lists `word` as a verb (e.g. 'exchange', 'flow'), False for
+    nouns only (e.g. 'hardware', 'software')."""
+    from nltk.corpus import wordnet
+    return bool(wordnet.synsets(word.lower(), pos="v"))
 
 
 def is_noun_in_context(word: str, sentence: str) -> bool:
@@ -46,8 +53,10 @@ def is_noun_in_context(word: str, sentence: str) -> bool:
 
     Rejects the match if:
     - The token is tagged as a verb (VB*), OR
-    - It is preceded by a coordinating conjunction ('and', 'or', 'and/or'),
-      which signals a coordinated verb phrase (e.g. 'meet and exchange flows')
+    - It can be a verb (WordNet) and is preceded by a coordinating conjunction
+      ('and', 'or', 'and/or'), which signals a coordinated verb phrase
+      (e.g. 'meet and exchange flows'). A word that is only a noun (e.g.
+      'software and hardware') is not rejected: it is a coordinated noun.
     """
     tokens = nltk.word_tokenize(sentence)
     tags = nltk.pos_tag(tokens)
@@ -57,9 +66,9 @@ def is_noun_in_context(word: str, sentence: str) -> bool:
         # Reject if tagged as a verb
         if tag.startswith("VB"):
             return False
-        # Reject if immediately preceded by a coordinating conjunction
-        # (covers "meet and exchange", "interact and/or exchange")
-        if i > 0:
+        # Reject if immediately preceded by a coordinating conjunction and the word can
+        # be a verb (covers "meet and exchange", "interact and/or exchange")
+        if i > 0 and can_be_verb(token):
             prev_token = tags[i - 1][0].lower()
             if prev_token in ("and", "or", "and/or", "/"):
                 return False
