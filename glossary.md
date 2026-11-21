@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-11-21 17:01 UTC*
+*Generated on 2026-11-21 18:23 UTC*
 
 This glossary contains **8 3SE domain(s)**, **465 3SE term(s)**, **122 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
 
@@ -2890,7 +2890,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [service-analysis-3se-069c5aee69fd7eeb](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93), [feature-breakdown-structure-3se-069c96f861447442](https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442), [goal-breakdown-structure-3se-069c96f8615f7b6a](https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a), [safety-hardware-feature-3se-069c058ef4e6774e](https://www.3se.info/3se-onto/terms/safety-hardware-feature-3se-069c058ef4e6774e), [safety-software-feature-3se-069c058ef4f372bc](https://www.3se.info/3se-onto/terms/safety-software-feature-3se-069c058ef4f372bc), [security-hardware-feature-3se-069c058ef5007083](https://www.3se.info/3se-onto/terms/security-hardware-feature-3se-069c058ef5007083), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-system-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336), [security-software-feature-3se-069c058ef50c77bb](https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb), [security-system-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269), [stakeholder-req-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [stakeholder-validation-3se-06ab8e3756a37932](https://www.3se.info/3se-onto/terms/stakeholder-validation-3se-06ab8e3756a37932), [stakeholder-constraint-validation-3se-06abfeeeb9a17d5f](https://www.3se.info/3se-onto/terms/stakeholder-constraint-validation-3se-06abfeeeb9a17d5f), [stakeholder-functional-validation-3se-06abfeeeb9d9753d](https://www.3se.info/3se-onto/terms/stakeholder-functional-validation-3se-06abfeeeb9d9753d), [stakeholder-non-functional-validation-3se-06abfeeeb9ea7517](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-validation-3se-06abfeeeb9ea7517), [stakeholder-req-validation-3se-06ac91123b6d79dc](https://www.3se.info/3se-onto/terms/stakeholder-req-validation-3se-06ac91123b6d79dc), [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7) |
+| Related | [acceptance-3se-069b5a9129b27d3e](https://www.3se.info/3se-onto/terms/acceptance-3se-069b5a9129b27d3e), [feature-analysis-3se-069b9d2c8d747c84](https://www.3se.info/3se-onto/terms/feature-analysis-3se-069b9d2c8d747c84), [functional-req-3se-069b88438050789a](https://www.3se.info/3se-onto/terms/functional-req-3se-069b88438050789a), [goal-analysis-3se-069b9d2c8da575a4](https://www.3se.info/3se-onto/terms/goal-analysis-3se-069b9d2c8da575a4), [product-analysis-3se-069b9d2c8dd77a8d](https://www.3se.info/3se-onto/terms/product-analysis-3se-069b9d2c8dd77a8d), [release-3se-069b48ef5d6a7595](https://www.3se.info/3se-onto/terms/release-3se-069b48ef5d6a7595), [service-analysis-3se-069c5aee69fd7eeb](https://www.3se.info/3se-onto/terms/service-analysis-3se-069c5aee69fd7eeb), [feature-breakdown-structure-3se-069c96f861447442](https://www.3se.info/3se-onto/terms/feature-breakdown-structure-3se-069c96f861447442), [goal-breakdown-structure-3se-069c96f8615f7b6a](https://www.3se.info/3se-onto/terms/goal-breakdown-structure-3se-069c96f8615f7b6a), [safety-hardware-feature-3se-069c058ef4e6774e](https://www.3se.info/3se-onto/terms/safety-hardware-feature-3se-069c058ef4e6774e), [safety-software-feature-3se-069c058ef4f372bc](https://www.3se.info/3se-onto/terms/safety-software-feature-3se-069c058ef4f372bc), [security-hardware-feature-3se-069c058ef5007083](https://www.3se.info/3se-onto/terms/security-hardware-feature-3se-069c058ef5007083), [conceptual-model-3se-069d3d5560bf7635](https://www.3se.info/3se-onto/terms/conceptual-model-3se-069d3d5560bf7635), [model-3se-069d3d5560f07cc9](https://www.3se.info/3se-onto/terms/model-3se-069d3d5560f07cc9), [value-3se-069d52ba2c5171d4](https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4), [stakeholder-req-breakdown-structure-3se-069da425d0607787](https://www.3se.info/3se-onto/terms/stakeholder-req-breakdown-structure-3se-069da425d0607787), [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435), [safety-system-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336), [security-software-feature-3se-069c058ef50c77bb](https://www.3se.info/3se-onto/terms/security-software-feature-3se-069c058ef50c77bb), [security-system-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269), [stakeholder-req-analysis-3se-069b9d2c8df07af5](https://www.3se.info/3se-onto/terms/stakeholder-req-analysis-3se-069b9d2c8df07af5), [stakeholder-3se-069bc40b97d97d03](https://www.3se.info/3se-onto/terms/stakeholder-3se-069bc40b97d97d03), [release-analysis-3se-069b9d2c8de871b3](https://www.3se.info/3se-onto/terms/release-analysis-3se-069b9d2c8de871b3), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [stakeholder-validation-3se-06ab8e3756a37932](https://www.3se.info/3se-onto/terms/stakeholder-validation-3se-06ab8e3756a37932), [stakeholder-constraint-validation-3se-06abfeeeb9a17d5f](https://www.3se.info/3se-onto/terms/stakeholder-constraint-validation-3se-06abfeeeb9a17d5f), [stakeholder-functional-validation-3se-06abfeeeb9d9753d](https://www.3se.info/3se-onto/terms/stakeholder-functional-validation-3se-06abfeeeb9d9753d), [stakeholder-non-functional-validation-3se-06abfeeeb9ea7517](https://www.3se.info/3se-onto/terms/stakeholder-non-functional-validation-3se-06abfeeeb9ea7517), [stakeholder-req-validation-3se-06ac91123b6d79dc](https://www.3se.info/3se-onto/terms/stakeholder-req-validation-3se-06ac91123b6d79dc), [entity-3se-06ad9ee61f8977f7](https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7) |
 | Subclass of | [disposition-bfo-2-0-069f666ab4e77a92](https://www.3se.info/3se-onto/terms/disposition-bfo-2-0-069f666ab4e77a92) |
 | Superclass of | [hardware-feature-3se-069c058ef4b77346](https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346), [software-feature-3se-069c058ef5187d78](https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
 | Close match | [feature-safe-6-0-069a9f3e92177c2b](https://www.3se.info/3se-onto/terms/feature-safe-6-0-069a9f3e92177c2b) |
@@ -2899,7 +2899,7 @@ graph TD
 | Component of | [high-level-feature-3se-069c96f861687327](https://www.3se.info/3se-onto/terms/high-level-feature-3se-069c96f861687327) |
 | Evaluated by | [acceptance-case-3se-069f3686baba7c7e](https://www.3se.info/3se-onto/terms/acceptance-case-3se-069f3686baba7c7e) |
 | Has variant | [feature-variant-3se-06a8873e37477117](https://www.3se.info/3se-onto/terms/feature-variant-3se-06a8873e37477117) |
-| Responsible role | [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44), [product-owner-3se-069c451bef057221](https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221), [service-owner-3se-069c5aee6a3d714d](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d), [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
+| Responsible role | [business-owner-3se-069c451beeec7a44](https://www.3se.info/3se-onto/terms/business-owner-3se-069c451beeec7a44), [product-owner-3se-069c451bef057221](https://www.3se.info/3se-onto/terms/product-owner-3se-069c451bef057221), [service-owner-3se-069c5aee6a3d714d](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3) |
 
 **Classification**
 
@@ -3457,18 +3457,18 @@ graph TD
     N2 -.->|allocates| N20
     N2 -.->|allocates| N14
     N2 -.->|allocates| N21
-    N19 -.->|allocates| N17
-    N18 -.->|allocates| N14
-    N20 -.->|allocates| N16
-    N13 -.->|allocates| N14
-    N3 -.->|allocates| N21
     N21 -.->|allocates| N14
     N21 -.->|allocates| N18
-    N10 -->|subclass of| N4
+    N18 -.->|allocates| N14
+    N19 -.->|allocates| N17
+    N3 -.->|allocates| N21
+    N20 -.->|allocates| N16
+    N13 -.->|allocates| N14
     N12 -->|subclass of| N10
+    N9 -->|subclass of| N4
+    N10 -->|subclass of| N4
     N8 -->|subclass of| N4
     N11 -->|subclass of| N10
-    N9 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -4765,7 +4765,7 @@ graph TD
     N3 -.->|allocates| N4
 ```
 
-*Created: 2026-03-18 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -5011,7 +5011,7 @@ graph TD
     N2 -.->|allocates| N3
 ```
 
-*Created: 2026-03-05 · Modified: 2026-09-21 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -5064,7 +5064,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [hardware-architecture-constraint-3se-06aabef1fcbb721b](https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b) |
+| Related | [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [hardware-architecture-constraint-3se-06aabef1fcbb721b](https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Composed of | [hardware-component-function-3se-069dc0c118257eea](https://www.3se.info/3se-onto/terms/hardware-component-function-3se-069dc0c118257eea) |
 | Produces | [flow-3se-069bc4ea53207933](https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933) |
@@ -5098,7 +5098,7 @@ graph TD
     N3 -.->|allocates| N2
 ```
 
-*Created: 2026-04-12 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -5139,7 +5139,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [hardware-architecture-constraint-3se-06aabef1fcbb721b](https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b) |
+| Related | [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [hardware-architecture-constraint-3se-06aabef1fcbb721b](https://www.3se.info/3se-onto/terms/hardware-architecture-constraint-3se-06aabef1fcbb721b), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Allocates | [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be) |
 | Fires | [transition-3se-06a087faa8137596](https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596) |
@@ -5170,22 +5170,22 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
 ### Hardware breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the hardware that supports the hardware architecture by following the principles below:
 (1) A hardware is composed of at least one hardware block.
-(2) A hardware allocates a hardware function.
-(3) A hardware block allocates a hardware block function.
+(2) A hardware allocates a hardware state.
+(3) A hardware block allocates a hardware block state.
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516), [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be), [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488) |
+| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516), [hardware-block-3se-069a9bc4a33c79b5](https://www.3se.info/3se-onto/terms/hardware-block-3se-069a9bc4a33c79b5), [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86), [hardware-state-3se-069c98e055d57d9c](https://www.3se.info/3se-onto/terms/hardware-state-3se-069c98e055d57d9c) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 
 **Classification**
@@ -5208,20 +5208,15 @@ graph TD
     N4["Hardware component"]
     N5["Hardware block state"]
     N6["Hardware block function"]
-    N7["Hardware component function"]
-    N8["Hardware function"]
-    N9["Hardware feature"]
+    N7["Hardware function"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
     N2 -->|composed of| N4
     N2 -.->|allocates| N5
-    N6 -->|composed of| N7
-    N8 -->|composed of| N6
-    N8 -.->|allocates| N9
-    N4 -.->|allocates| N7
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
+    N3 -->|composed of| N5
+    N3 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -5250,7 +5245,7 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-03-05 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-05 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -5466,7 +5461,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce) |
+| Related | [hardware-3se-069bb0a752d57cb1](https://www.3se.info/3se-onto/terms/hardware-3se-069bb0a752d57cb1), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Composed of | [hardware-block-function-3se-069dc0c1181373be](https://www.3se.info/3se-onto/terms/hardware-block-function-3se-069dc0c1181373be) |
 | Allocates | [hardware-feature-3se-069c058ef4b77346](https://www.3se.info/3se-onto/terms/hardware-feature-3se-069c058ef4b77346) |
@@ -5529,7 +5524,7 @@ graph TD
     N12 -.->|allocates| N14
 ```
 
-*Created: 2026-03-21 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -5595,7 +5590,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -5774,7 +5769,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce) |
+| Related | [hardware-architecture-3se-069cfeb60f3b7516](https://www.3se.info/3se-onto/terms/hardware-architecture-3se-069cfeb60f3b7516), [hardware-state-breakdown-structure-3se-069dc15cd10e7f98](https://www.3se.info/3se-onto/terms/hardware-state-breakdown-structure-3se-069dc15cd10e7f98), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce), [hardware-breakdown-structure-3se-069dc0c1181c7f71](https://www.3se.info/3se-onto/terms/hardware-breakdown-structure-3se-069dc0c1181c7f71) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Composed of | [hardware-block-state-3se-069dc15cd0fc7d86](https://www.3se.info/3se-onto/terms/hardware-block-state-3se-069dc15cd0fc7d86) |
 | Allocates | [hardware-function-3se-069be64e184f7488](https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488) |
@@ -5827,7 +5822,7 @@ graph TD
     N11 -.->|allocates| N12
 ```
 
-*Created: 2026-03-29 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -8360,16 +8355,16 @@ graph TD
     N16 -.->|allocates| N17
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
-    N2 -.->|allocates| N15
-    N14 -.->|allocates| N15
     N17 -.->|allocates| N14
     N17 -.->|allocates| N15
+    N2 -.->|allocates| N15
+    N14 -.->|allocates| N15
     N5 -.->|allocates| N3
-    N9 -->|subclass of| N8
-    N11 -->|subclass of| N8
-    N10 -->|subclass of| N8
     N12 -->|subclass of| N11
+    N10 -->|subclass of| N8
     N13 -->|subclass of| N11
+    N11 -->|subclass of| N8
+    N9 -->|subclass of| N8
 ```
 
 **Architecture**
@@ -8830,8 +8825,8 @@ graph TD
     N3 -->|composed of| N5
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
-    N4 -.->|allocates| N11
     N6 -.->|allocates| N9
+    N4 -.->|allocates| N11
 ```
 
 *Created: 2026-03-22 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -9543,7 +9538,7 @@ graph TD
     N10 -.->|allocates| N13
 ```
 
-*Created: 2026-03-13 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -9594,8 +9589,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-17 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -9689,18 +9684,18 @@ graph TD
 
 ### Product breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the product that supports the product architecture by following the principles below:
 (1) A product is composed of at least one product element.
-(2) A product allocates at least one feature.
+(2) A product allocates at least one system feature.
 (3) A product is represented by a system.
 (4) A product can be an asset
 (5) A product element can be a product.
 
 | Relation | Terms |
 |---|---|
-| Related | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580), [product-architecture-3se-069d3f26ae3773b9](https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9) |
+| Related | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-element-3se-069c01ba91f77631](https://www.3se.info/3se-onto/terms/product-element-3se-069c01ba91f77631), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [product-architecture-model-3se-069d3f26ae3f7580](https://www.3se.info/3se-onto/terms/product-architecture-model-3se-069d3f26ae3f7580), [product-architecture-3se-069d3f26ae3773b9](https://www.3se.info/3se-onto/terms/product-architecture-3se-069d3f26ae3773b9), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 | Narrow match | [product-breakdown-structure-24765-2017-069c01ba91c37ce8](https://www.3se.info/3se-onto/terms/product-breakdown-structure-24765-2017-069c01ba91c37ce8) |
 | Accountable role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) |
@@ -9720,42 +9715,30 @@ graph TD
 
 ```mermaid
 graph TD
-    N1["Feature"]
-    N2["Goal"]
-    N3["Stakeholder functional requirement"]
-    N4["Stakeholder non-functional requirement"]
-    N5["Stakeholder constraint"]
-    N6["High level feature"]
-    N7["Product"]
-    N8["Product element"]
-    N9["System"]
-    N10["System feature"]
-    N11["System attribute"]
-    N12["Asset"]
-    N13["Service mean"]
-    N14["System element"]
-    N15["High level physical element"]
-    N16["Service"]
+    N1["Product"]
+    N2["Product element"]
+    N3["System"]
+    N4["System feature"]
+    N5["System attribute"]
+    N6["Asset"]
+    N7["Service mean"]
+    N8["System element"]
+    N9["High level physical element"]
+    N10["Service"]
 
-    N1 -.->|allocates| N2
-    N1 -.->|allocates| N3
+    N1 -->|composed of| N2
+    N1 -.->|represented by| N3
     N1 -.->|allocates| N4
     N1 -.->|allocates| N5
     N1 -.->|can be| N6
-    N7 -->|composed of| N8
-    N7 -.->|represented by| N9
-    N7 -.->|allocates| N10
-    N7 -.->|allocates| N11
-    N7 -.->|can be| N12
-    N7 -.->|can be| N13
-    N8 -.->|can be| N7
-    N9 -->|composed of| N14
-    N9 -.->|allocates| N15
-    N9 -.->|allocates| N11
-    N16 -.->|represented by| N9
-    N10 -->|subclass of| N1
-    N16 -.->|allocates| N10
-    N16 -.->|allocates| N11
+    N1 -.->|can be| N7
+    N2 -.->|can be| N1
+    N3 -->|composed of| N8
+    N3 -.->|allocates| N9
+    N3 -.->|allocates| N5
+    N10 -.->|represented by| N3
+    N10 -.->|allocates| N4
+    N10 -.->|allocates| N5
 ```
 
 *Created: 2026-03-22 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -9776,7 +9759,7 @@ graph TD
 | Has variant | [product-element-variant-3se-06a8873e37d6705b](https://www.3se.info/3se-onto/terms/product-element-variant-3se-06a8873e37d6705b) |
 | Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) |
 
-*Created: 2026-03-22 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-22 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -10285,17 +10268,17 @@ graph TD
     N8 -.->|allocates| N10
     N8 -.->|allocates| N11
     N8 -.->|allocates| N12
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
     N13 -.->|allocates| N9
     N13 -.->|allocates| N11
     N13 -.->|allocates| N12
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
-    N2 -->|subclass of| N8
     N3 -->|subclass of| N13
+    N2 -->|subclass of| N8
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -12833,7 +12816,7 @@ graph TD
     N10 -.->|allocates| N13
 ```
 
-*Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -12883,8 +12866,8 @@ graph TD
     N9 -.->|allocates| N2
     N9 -.->|allocates| N4
     N9 -.->|allocates| N5
-    N7 -->|subclass of| N1
     N8 -->|subclass of| N9
+    N7 -->|subclass of| N1
 ```
 
 *Created: 2026-03-26 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -12982,18 +12965,18 @@ graph TD
 
 ### Service breakdown structure - 3SE
 
-![approved](https://img.shields.io/badge/status-approved-green)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the service that supports the service architecture by following the principles below:
 (1) A service is composed of one or more service means, a service contract and a service level agreement.
-(2) A service allocates at least one feature.
+(2) A service allocates at least one system feature.
 (3) A service is represented by a system.
 (4) A service can be an asset
 (5) A service mean can be a service.
 
 | Relation | Terms |
 |---|---|
-| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [service-architecture-3se-069d3f26ae477c53](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53), [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a) |
+| Related | [asset-3se-069c16c95ac27b16](https://www.3se.info/3se-onto/terms/asset-3se-069c16c95ac27b16), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-level-agreement-3se-069c5aee6a2a7ae1](https://www.3se.info/3se-onto/terms/service-level-agreement-3se-069c5aee6a2a7ae1), [service-mean-3se-069c5aee6a337c05](https://www.3se.info/3se-onto/terms/service-mean-3se-069c5aee6a337c05), [system-3se-069b85f238f3792d](https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d), [service-architecture-model-3se-069d3f26ae4f7f1c](https://www.3se.info/3se-onto/terms/service-architecture-model-3se-069d3f26ae4f7f1c), [service-architecture-3se-069d3f26ae477c53](https://www.3se.info/3se-onto/terms/service-architecture-3se-069d3f26ae477c53), [service-contract-3se-069c5aee6a10702a](https://www.3se.info/3se-onto/terms/service-contract-3se-069c5aee6a10702a), [system-feature-3se-069da52308aa7bcf](https://www.3se.info/3se-onto/terms/system-feature-3se-069da52308aa7bcf) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 | Accountable role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) |
 | Supporting role | [service-owner-3se-069c5aee6a3d714d](https://www.3se.info/3se-onto/terms/service-owner-3se-069c5aee6a3d714d), [system-configuration-engineer-3se-069c451bef2e74e7](https://www.3se.info/3se-onto/terms/system-configuration-engineer-3se-069c451bef2e74e7), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-quality-engineer-3se-06a49189cbed7a22](https://www.3se.info/3se-onto/terms/system-quality-engineer-3se-06a49189cbed7a22), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc), [system-validation-engineer-3se-069c451bef3c7b63](https://www.3se.info/3se-onto/terms/system-validation-engineer-3se-069c451bef3c7b63) |
@@ -13012,47 +12995,35 @@ graph TD
 
 ```mermaid
 graph TD
-    N1["Feature"]
-    N2["Goal"]
-    N3["Stakeholder functional requirement"]
-    N4["Stakeholder non-functional requirement"]
-    N5["Stakeholder constraint"]
-    N6["High level feature"]
-    N7["Service"]
-    N8["Service mean"]
-    N9["Service contract"]
-    N10["Service level agreement"]
-    N11["System"]
-    N12["System feature"]
-    N13["System attribute"]
-    N14["Asset"]
-    N15["System element"]
-    N16["High level physical element"]
-    N17["Product"]
+    N1["Service"]
+    N2["Service mean"]
+    N3["Service contract"]
+    N4["Service level agreement"]
+    N5["System"]
+    N6["System feature"]
+    N7["System attribute"]
+    N8["Asset"]
+    N9["System element"]
+    N10["High level physical element"]
+    N11["Product"]
 
-    N1 -.->|allocates| N2
-    N1 -.->|allocates| N3
-    N1 -.->|allocates| N4
-    N1 -.->|allocates| N5
-    N1 -.->|can be| N6
-    N7 -->|composed of| N8
-    N7 -->|composed of| N9
-    N7 -->|composed of| N10
-    N7 -.->|represented by| N11
-    N7 -.->|allocates| N12
-    N7 -.->|allocates| N13
-    N7 -.->|can be| N14
-    N8 -.->|can be| N7
-    N11 -->|composed of| N15
-    N11 -.->|allocates| N16
-    N11 -.->|allocates| N13
-    N17 -.->|represented by| N11
-    N17 -.->|allocates| N12
-    N17 -.->|allocates| N13
-    N12 -->|subclass of| N1
+    N1 -->|composed of| N2
+    N1 -->|composed of| N3
+    N1 -->|composed of| N4
+    N1 -.->|represented by| N5
+    N1 -.->|allocates| N6
+    N1 -.->|allocates| N7
+    N1 -.->|can be| N8
+    N2 -.->|can be| N1
+    N5 -->|composed of| N9
+    N5 -.->|allocates| N10
+    N5 -.->|allocates| N7
+    N11 -.->|represented by| N5
+    N11 -.->|allocates| N6
+    N11 -.->|allocates| N7
 ```
 
-*Created: 2026-03-26 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -13158,7 +13129,7 @@ graph TD
 | Has variant | [service-mean-variant-3se-06a8873e37ff788c](https://www.3se.info/3se-onto/terms/service-mean-variant-3se-06a8873e37ff788c) |
 | Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68) |
 
-*Created: 2026-03-26 · Modified: 2026-10-22 · Creator: @rcasteran*
+*Created: 2026-03-26 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -13416,7 +13387,7 @@ graph TD
     N3 -.->|allocates| N4
 ```
 
-*Created: 2026-03-18 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-03-18 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -13638,16 +13609,16 @@ graph TD
 
 ### Software breakdown structure - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
 > Breakdown structure of the software that supports the software architecture by following the principles below:
 (1) A software is composed of at least one software component.
-(2) A software allocates a software function.
-(3) A software component allocates a software component function.
+(2) A software allocates a software state.
+(3) A software component allocates a software component state.
 
 | Relation | Terms |
 |---|---|
-| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b), [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da), [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd) |
+| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b), [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625), [software-state-3se-069c98e056107597](https://www.3se.info/3se-onto/terms/software-state-3se-069c98e056107597) |
 | Subclass of | [breakdown-structure-3se-069d166fa9037b67](https://www.3se.info/3se-onto/terms/breakdown-structure-3se-069d166fa9037b67) |
 
 **Classification**
@@ -13670,20 +13641,15 @@ graph TD
     N4["Software unit"]
     N5["Software component state"]
     N6["Software component function"]
-    N7["Software unit function"]
-    N8["Software function"]
-    N9["Software feature"]
+    N7["Software function"]
 
     N1 -->|composed of| N2
     N1 -.->|allocates| N3
     N2 -->|composed of| N4
     N2 -.->|allocates| N5
-    N6 -->|composed of| N7
-    N8 -->|composed of| N6
-    N8 -.->|allocates| N9
-    N3 -.->|allocates| N8
     N5 -.->|allocates| N6
-    N4 -.->|allocates| N7
+    N3 -->|composed of| N5
+    N3 -.->|allocates| N7
 ```
 
 *Created: 2026-04-12 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -13717,7 +13683,7 @@ graph TD
     N2 -.->|allocates| N3
 ```
 
-*Created: 2026-03-16 · Modified: 2026-09-21 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -13770,7 +13736,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [software-architecture-constraint-3se-06aabef1fcf57c81](https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81) |
+| Related | [software-component-3se-069b85f238e370c5](https://www.3se.info/3se-onto/terms/software-component-3se-069b85f238e370c5), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [software-architecture-constraint-3se-06aabef1fcf57c81](https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Composed of | [software-unit-function-3se-069dc076d3ee71b8](https://www.3se.info/3se-onto/terms/software-unit-function-3se-069dc076d3ee71b8) |
 | Produces | [data-3se-069bc4ea52e671c7](https://www.3se.info/3se-onto/terms/data-3se-069bc4ea52e671c7) |
@@ -13804,7 +13770,7 @@ graph TD
     N3 -.->|allocates| N2
 ```
 
-*Created: 2026-03-21 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -13870,7 +13836,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [software-architecture-constraint-3se-06aabef1fcf57c81](https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81) |
+| Related | [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [software-architecture-constraint-3se-06aabef1fcf57c81](https://www.3se.info/3se-onto/terms/software-architecture-constraint-3se-06aabef1fcf57c81), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Allocates | [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da) |
 | Fires | [transition-3se-06a087faa8137596](https://www.3se.info/3se-onto/terms/transition-3se-06a087faa8137596) |
@@ -13901,7 +13867,7 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-04-12 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-04-12 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -14099,7 +14065,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce) |
+| Related | [software-3se-069bb0a752e7712e](https://www.3se.info/3se-onto/terms/software-3se-069bb0a752e7712e), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce) |
 | Subclass of | [function-3se-069b48ef5d187435](https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435) |
 | Composed of | [software-component-function-3se-069dc076d3e579da](https://www.3se.info/3se-onto/terms/software-component-function-3se-069dc076d3e579da) |
 | Allocates | [software-feature-3se-069c058ef5187d78](https://www.3se.info/3se-onto/terms/software-feature-3se-069c058ef5187d78) |
@@ -14162,7 +14128,7 @@ graph TD
     N12 -.->|allocates| N14
 ```
 
-*Created: 2026-03-21 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -14228,7 +14194,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-03-20 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -14408,7 +14374,7 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce) |
+| Related | [software-architecture-3se-069cfeb60f46731b](https://www.3se.info/3se-onto/terms/software-architecture-3se-069cfeb60f46731b), [software-state-breakdown-structure-3se-069dc118730a787a](https://www.3se.info/3se-onto/terms/software-state-breakdown-structure-3se-069dc118730a787a), [system-element-architecture-constraint-3se-06aac05ed9c4742e](https://www.3se.info/3se-onto/terms/system-element-architecture-constraint-3se-06aac05ed9c4742e), [system-element-req-breakdown-structure-3se-06aac05ed9f178ce](https://www.3se.info/3se-onto/terms/system-element-req-breakdown-structure-3se-06aac05ed9f178ce), [software-breakdown-structure-3se-069dc076d3b77fa1](https://www.3se.info/3se-onto/terms/software-breakdown-structure-3se-069dc076d3b77fa1) |
 | Subclass of | [state-3se-069b48ef5d787fea](https://www.3se.info/3se-onto/terms/state-3se-069b48ef5d787fea) |
 | Composed of | [software-component-state-3se-069dc11872f97625](https://www.3se.info/3se-onto/terms/software-component-state-3se-069dc11872f97625) |
 | Allocates | [software-function-3se-069be64e18717acd](https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd) |
@@ -14461,7 +14427,7 @@ graph TD
     N11 -.->|allocates| N12
 ```
 
-*Created: 2026-03-29 · Modified: 2026-09-17 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -14535,7 +14501,7 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-03-16 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-03-16 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -14806,7 +14772,7 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -14909,7 +14875,7 @@ graph TD
     N2 -.->|allocates| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-10-02 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -15026,7 +14992,7 @@ graph TD
     N3 -.->|allocates| N1
 ```
 
-*Created: 2026-03-20 · Modified: 2026-10-02 · Creator: @rcasteran*
+*Created: 2026-03-20 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -15971,7 +15937,7 @@ graph TD
     N22 -.->|allocates| N1
 ```
 
-*Created: 2026-03-29 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -16495,9 +16461,9 @@ graph TD
     N7 -.->|allocates| N12
     N7 -.->|allocates| N13
     N7 -.->|can be| N3
-    N5 -.->|allocates| N4
     N8 -.->|allocates| N12
     N4 -.->|allocates| N10
+    N5 -.->|allocates| N4
     N6 -.->|allocates| N4
 ```
 
@@ -16893,7 +16859,7 @@ graph TD
     N9 -.->|allocates| N1
 ```
 
-*Created: 2026-04-13 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -17027,7 +16993,7 @@ graph TD
     N2 -->|subclass of| N3
 ```
 
-*Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -17131,7 +17097,7 @@ graph TD
     N14 -.->|allocates| N15
 ```
 
-*Created: 2026-03-29 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -17224,7 +17190,7 @@ graph TD
     N4 -.->|allocates| N13
 ```
 
-*Created: 2026-04-24 · Modified: 2026-09-11 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -17399,7 +17365,7 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -17555,7 +17521,7 @@ graph TD
     N6 -.->|allocates| N1
 ```
 
-*Created: 2026-04-24 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -17847,7 +17813,7 @@ graph TD
     N4 -->|subclass of| N3
 ```
 
-*Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
+*Created: 2026-04-26 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -18042,15 +18008,15 @@ graph TD
     N17 -.->|exposes| N36
     N28 -->|subclass of| N31
     N30 -->|subclass of| N31
-    N18 -.->|allocates| N24
-    N29 -->|subclass of| N32
-    N16 -.->|allocates| N11
-    N26 -.->|allocates| N22
-    N20 -.->|exposes| N35
-    N36 -.->|allocates| N22
     N34 -.->|allocates| N2
     N27 -.->|allocates| N29
+    N29 -->|subclass of| N32
+    N26 -.->|allocates| N22
     N2 -->|subclass of| N32
+    N16 -.->|allocates| N11
+    N36 -.->|allocates| N22
+    N20 -.->|exposes| N35
+    N18 -.->|allocates| N24
     N9 -.->|allocates| N4
 ```
 
@@ -18167,7 +18133,7 @@ graph TD
     N16 -.->|allocates| N17
 ```
 
-*Created: 2026-03-29 · Modified: 2026-11-13 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -18802,12 +18768,12 @@ graph TD
 
 | Relation | Terms |
 |---|---|
-| Related | [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [opportunity-analysis-3se-06ae7841100d7f9d](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d) |
+| Related | [operational-analysis-3se-069b9d2c8dbe721c](https://www.3se.info/3se-onto/terms/operational-analysis-3se-069b9d2c8dbe721c), [opportunity-analysis-3se-06ae7841100d7f9d](https://www.3se.info/3se-onto/terms/opportunity-analysis-3se-06ae7841100d7f9d), [product-breakdown-structure-3se-069c01ba91ef747d](https://www.3se.info/3se-onto/terms/product-breakdown-structure-3se-069c01ba91ef747d), [service-breakdown-structure-3se-069c5aee6a067e93](https://www.3se.info/3se-onto/terms/service-breakdown-structure-3se-069c5aee6a067e93) |
 | Subclass of | [feature-3se-069b48ef5d0f7505](https://www.3se.info/3se-onto/terms/feature-3se-069b48ef5d0f7505) |
 | Superclass of | [emergent-system-feature-3se-06af62da8e88712d](https://www.3se.info/3se-onto/terms/emergent-system-feature-3se-06af62da8e88712d), [safety-system-feature-3se-069ab4192b867336](https://www.3se.info/3se-onto/terms/safety-system-feature-3se-069ab4192b867336), [security-system-feature-3se-069ab4192b977269](https://www.3se.info/3se-onto/terms/security-system-feature-3se-069ab4192b977269) |
 | Allocated by | [product-3se-069b48ef5d4e7ef8](https://www.3se.info/3se-onto/terms/product-3se-069b48ef5d4e7ef8), [product-variant-3se-06a8873e37e070c6](https://www.3se.info/3se-onto/terms/product-variant-3se-06a8873e37e070c6), [service-3se-069c5aee69f47c9d](https://www.3se.info/3se-onto/terms/service-3se-069c5aee69f47c9d), [service-variant-3se-06a8873e380978f4](https://www.3se.info/3se-onto/terms/service-variant-3se-06a8873e380978f4), [system-activity-3se-069b48ef5cd47253](https://www.3se.info/3se-onto/terms/system-activity-3se-069b48ef5cd47253), [system-activity-variant-3se-06a8873e38137fb6](https://www.3se.info/3se-onto/terms/system-activity-variant-3se-06a8873e38137fb6) |
 | Has variant | [system-feature-variant-3se-06a8873e38b07bb8](https://www.3se.info/3se-onto/terms/system-feature-variant-3se-06a8873e38b07bb8) |
-| Responsible role | [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
+| Responsible role | [system-architect-3se-069c451bef267e68](https://www.3se.info/3se-onto/terms/system-architect-3se-069c451bef267e68), [system-engineer-3se-069c451bef3578a3](https://www.3se.info/3se-onto/terms/system-engineer-3se-069c451bef3578a3), [system-risk-engineer-3se-069cd88d518b7cdc](https://www.3se.info/3se-onto/terms/system-risk-engineer-3se-069cd88d518b7cdc) |
 
 **Classification**
 
@@ -18888,7 +18854,7 @@ graph TD
     N21 -.->|allocates| N23
 ```
 
-*Created: 2026-04-11 · Modified: 2026-11-01 · Creator: @rcasteran*
+*Created: 2026-04-11 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -19026,7 +18992,7 @@ graph TD
     N14 -.->|allocates| N15
 ```
 
-*Created: 2026-03-21 · Modified: 2026-11-12 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -19144,7 +19110,7 @@ graph TD
     N12 -.->|allocates| N29
 ```
 
-*Created: 2026-04-13 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -19551,7 +19517,7 @@ graph TD
     N11 -.->|allocates| N12
 ```
 
-*Created: 2026-03-21 · Modified: 2026-11-01 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -19738,7 +19704,7 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-04-24 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-24 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -19900,13 +19866,13 @@ graph TD
     N9 -.->|can be| N8
     N8 -.->|exposes| N7
     N9 -.->|exposes| N5
-    N6 -.->|allocates| N2
-    N6 -.->|allocates| N4
+    N2 -.->|allocates| N4
     N12 -.->|allocates| N11
     N14 -.->|exposes| N1
-    N3 -.->|allocates| N4
-    N2 -.->|allocates| N4
+    N6 -.->|allocates| N2
+    N6 -.->|allocates| N4
     N13 -.->|allocates| N11
+    N3 -.->|allocates| N4
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20127,7 +20093,7 @@ graph TD
     N49 -.->|allocates| N1
 ```
 
-*Created: 2026-03-21 · Modified: 2026-11-01 · Creator: @rcasteran*
+*Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -20521,25 +20487,25 @@ graph TD
     N2 -->|subclass of| N35
     N33 -->|subclass of| N36
     N34 -->|subclass of| N36
+    N44 -.->|allocates| N2
+    N43 -->|subclass of| N41
     N32 -.->|allocates| N2
     N5 -.->|allocates| N37
     N5 -.->|allocates| N2
+    N38 -.->|allocates| N1
+    N40 -->|subclass of| N38
     N41 -->|subclass of| N38
+    N39 -->|subclass of| N38
     N10 -.->|allocates| N3
     N10 -.->|allocates| N2
+    N42 -->|subclass of| N41
+    N29 -.->|allocates| N22
+    N29 -.->|allocates| N37
     N27 -.->|allocates| N20
-    N43 -->|subclass of| N41
-    N44 -.->|allocates| N2
-    N39 -->|subclass of| N38
-    N38 -.->|allocates| N1
     N9 -.->|exposes| N15
     N9 -.->|allocates| N26
     N9 -.->|allocates| N3
     N28 -.->|allocates| N19
-    N42 -->|subclass of| N41
-    N29 -.->|allocates| N22
-    N29 -.->|allocates| N37
-    N40 -->|subclass of| N38
 ```
 
 *Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -20734,7 +20700,7 @@ graph TD
     N14 -.->|allocates| N15
 ```
 
-*Created: 2026-03-29 · Modified: 2026-11-13 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -20841,7 +20807,7 @@ graph TD
     N11 -.->|allocates| N26
 ```
 
-*Created: 2026-04-13 · Modified: 2026-10-16 · Creator: @rcasteran*
+*Created: 2026-04-13 · Modified: 2026-11-21 · Creator: @rcasteran*
 
 ---
 
@@ -21017,12 +20983,12 @@ graph TD
     N2 -.->|allocates| N12
     N2 -.->|allocates| N15
     N2 -.->|can be| N1
+    N13 -.->|allocates| N10
+    N4 -.->|allocates| N8
+    N14 -.->|allocates| N9
+    N11 -.->|allocates| N12
     N15 -.->|allocates| N12
     N15 -.->|allocates| N11
-    N14 -.->|allocates| N9
-    N4 -.->|allocates| N8
-    N13 -.->|allocates| N10
-    N11 -.->|allocates| N12
 ```
 
 *Created: 2026-03-22 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -21595,21 +21561,21 @@ graph TD
     N19 -.->|allocates| N22
     N23 -.->|represented by| N19
     N24 -.->|represented by| N19
-    N2 -.->|allocates| N8
-    N2 -.->|allocates| N10
-    N2 -.->|allocates| N12
+    N20 -.->|allocates| N4
+    N20 -.->|allocates| N6
     N15 -.->|allocates| N10
-    N18 -.->|allocates| N10
-    N18 -.->|allocates| N11
     N16 -.->|allocates| N20
     N16 -.->|allocates| N21
     N24 -.->|allocates| N21
     N24 -.->|allocates| N22
-    N20 -.->|allocates| N4
-    N20 -.->|allocates| N6
+    N2 -.->|allocates| N8
+    N2 -.->|allocates| N10
+    N2 -.->|allocates| N12
     N21 -.->|allocates| N6
     N23 -.->|allocates| N21
     N23 -.->|allocates| N22
+    N18 -.->|allocates| N10
+    N18 -.->|allocates| N11
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -22456,33 +22422,33 @@ graph TD
     N43 -.->|allocates| N38
     N43 -.->|allocates| N45
     N43 -.->|allocates| N42
-    N41 -.->|allocates| N10
-    N25 -.->|allocates| N15
-    N25 -.->|allocates| N10
-    N31 -.->|allocates| N21
-    N31 -.->|allocates| N17
-    N20 -.->|allocates| N30
-    N13 -.->|allocates| N17
-    N13 -.->|allocates| N8
-    N24 -.->|allocates| N13
-    N24 -.->|allocates| N15
-    N9 -.->|allocates| N17
-    N9 -.->|allocates| N18
-    N21 -.->|allocates| N17
     N45 -.->|allocates| N41
     N45 -.->|allocates| N10
+    N41 -.->|allocates| N10
+    N9 -.->|allocates| N17
+    N9 -.->|allocates| N18
     N44 -.->|allocates| N33
     N44 -.->|allocates| N39
     N44 -.->|allocates| N41
-    N15 -.->|allocates| N8
-    N15 -.->|allocates| N10
     N8 -.->|allocates| N17
-    N14 -.->|allocates| N17
-    N14 -.->|allocates| N18
-    N14 -.->|allocates| N9
+    N20 -.->|allocates| N30
+    N31 -.->|allocates| N21
+    N31 -.->|allocates| N17
+    N13 -.->|allocates| N17
+    N13 -.->|allocates| N8
+    N25 -.->|allocates| N15
+    N25 -.->|allocates| N10
     N32 -.->|allocates| N20
     N32 -.->|allocates| N21
     N32 -.->|allocates| N17
+    N24 -.->|allocates| N13
+    N24 -.->|allocates| N15
+    N15 -.->|allocates| N8
+    N15 -.->|allocates| N10
+    N14 -.->|allocates| N17
+    N14 -.->|allocates| N18
+    N14 -.->|allocates| N9
+    N21 -.->|allocates| N17
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-08 · Creator: @rcasteran*
