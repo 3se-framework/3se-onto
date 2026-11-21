@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Interdependent system - 3SE",
   "description": "System whose own interdependent system activities within the milieu of the system of interest mutually and durably shape the system activities of the system of interest over time.",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/interdependent-system-3se-069c2e3021d47617",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"

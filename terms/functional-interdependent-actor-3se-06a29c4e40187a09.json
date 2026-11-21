@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Functional interdependent actor - 3SE",
   "description": "Part of an interdependent actor responsible for carrying out some of the interdependent functions which mutually and durably shape the system functions over time.",
-  "status": "draft",
+  "status": "reviewed",
   "allocates": [
     "https://www.3se.info/3se-onto/terms/interdependent-state-3se-06a29c4e404d78ed"
   ],

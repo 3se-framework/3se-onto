@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Catalogue - 3SE",
   "description": "A structured collection of things which instantiate an entity, that is organized into categories and identified for the purpose of selection, reference or traceability.",
-  "status": "draft",
+  "status": "reviewed",
   "@id": "https://www.3se.info/3se-onto/terms/catalogue-3se-06ada0e7043e799c",
   "related": [
     "https://www.3se.info/3se-onto/terms/entity-3se-06ad9ee61f8977f7",

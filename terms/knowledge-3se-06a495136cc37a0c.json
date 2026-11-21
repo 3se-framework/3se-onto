@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "Knowledge - 3SE",
   "description": "Set of information:\n(1) in which the relationships between the information are explained,\n(2) that is held to be true by domain experts, who define its conditions of application and subject it to their review,\n(3) whose relevance is justified using evaluation method specific to the domain.",
-  "status": "draft",
+  "status": "reviewed",
   "broadMatch": [
     "https://www.3se.info/3se-onto/terms/knowledge-30401-2018-06a495136c807dfd"
   ],
