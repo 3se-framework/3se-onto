@@ -88,6 +88,44 @@
       "sh:message": "A leaf value is allocated to exactly one leaf goal."
     },
     {
+      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#leaf-goal-value-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
+      },
+      "sh:or": {
+        "@list": [
+          {
+            "@type": "sh:NodeShape",
+            "sh:class": {
+              "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
+            }
+          },
+          {
+            "@type": "sh:NodeShape",
+            "sh:property": {
+              "@type": "sh:PropertyShape",
+              "sh:path": {
+                "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+              },
+              "sh:qualifiedValueShape": {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/value-3se-069d52ba2c5171d4"
+                },
+                "sh:not": {
+                  "sh:class": {
+                    "@id": "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608"
+                  }
+                }
+              },
+              "sh:qualifiedMinCount": 1
+            }
+          }
+        ]
+      },
+      "sh:message": "A leaf goal allocates at least one leaf value."
+    },
+    {
       "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#high-level-goal-can-be-06b01cd641407573",
       "@type": "sh:NodeShape",
       "sh:targetClass": {

@@ -58,6 +58,26 @@
         "sh:qualifiedMaxCount": 1
       },
       "sh:message": "A high level value is allocated to exactly one high level goal."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0#high-level-goal-value-allocation",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/high-level-goal-3se-069c96f8617073e0"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/high-level-value-3se-069d6aadc03d7608"
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A high level goal allocates at least one high level value."
     }
   ],
   "entryCreated": "2026-03-29",
