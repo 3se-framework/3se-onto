@@ -61,6 +61,28 @@
         "sh:qualifiedMinCount": 1
       },
       "sh:message": "A system state attribute allocates at least one system function attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c#system-non-functional-req-allocation-06b022eb49c27784",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system non-functional requirement is allocated to a system state attribute."
     }
   ],
   "entryCreated": "2026-04-13",

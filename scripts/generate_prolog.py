@@ -21,12 +21,12 @@
 # as are URIs that do not resolve to a term in terms/ (reported on stderr).
 #
 # SHACL shapes declared in a term's `hasShape` field become
-#   shape_count(Owner, Shape, Target, Exempt, Path, Class, Except, Min, Max).
+#   shape_count(Owner, Shape, Target, Exempt, Path, Classes, Except, Min, Max).
 # where Owner is the declaring term, Shape the fragment of the shape's @id (its
 # position in hasShape when it has none), Target the sh:targetClass, Exempt the
 # classes of an sh:or alternative that exempts an instance, Path is
-# direct(Relation) or inverse(Relation), Class the sh:class of the
-# sh:qualifiedValueShape, Except the classes its sh:not excludes (a leaf goal is
+# direct(Relation) or inverse(Relation), Classes the alternative classes of the
+# sh:qualifiedValueShape (its sh:class, or the sh:class entries of its sh:or), Except the classes its sh:not excludes (a leaf goal is
 # a goal that is not a high level goal) and Min/Max the qualified counts (Max =
 # none when unbounded). Only that subset is supported; anything else is an error.
 #
@@ -167,7 +167,19 @@ def translate_counted_shape(owner: str, label: str, shape: dict, index: dict[str
     value_shape = property_shape.get("sh:qualifiedValueShape")
     if not isinstance(value_shape, dict):
         raise ShapeError("only qualified counts are supported (sh:qualifiedValueShape)")
-    value_class = term_slug(iri(value_shape.get("sh:class"), "sh:class"), index, "sh:class")
+    value_classes: list[str] = []
+    if "sh:or" in value_shape:
+        if "sh:class" in value_shape:
+            raise ShapeError("sh:or next to sh:class in a sh:qualifiedValueShape is not supported")
+        alternatives = value_shape["sh:or"].get("@list") if isinstance(value_shape["sh:or"], dict) else None
+        if not alternatives:
+            raise ShapeError("sh:or in a sh:qualifiedValueShape must be a non-empty @list")
+        for alternative in alternatives:
+            if not isinstance(alternative, dict) or set(alternative) != {"sh:class"}:
+                raise ShapeError("sh:or alternatives in a sh:qualifiedValueShape must each be a single sh:class")
+            value_classes.append(term_slug(iri(alternative["sh:class"], "sh:class"), index, "sh:class"))
+    else:
+        value_classes.append(term_slug(iri(value_shape.get("sh:class"), "sh:class"), index, "sh:class"))
     excluded: list[str] = []
     if "sh:not" in value_shape:
         negated = value_shape["sh:not"]
@@ -178,10 +190,11 @@ def translate_counted_shape(owner: str, label: str, shape: dict, index: dict[str
     maximum = property_shape.get("sh:qualifiedMaxCount", "none")
 
     exempt_list = "[" + ", ".join(atom(e) for e in exempt) + "]"
+    class_list = "[" + ", ".join(atom(c) for c in value_classes) + "]"
     except_list = "[" + ", ".join(atom(e) for e in excluded) + "]"
     return (
         f"shape_count({atom(owner)}, {label}, {atom(target)}, {exempt_list}, "
-        f"{path}, {atom(value_class)}, {except_list}, {minimum}, {maximum})."
+        f"{path}, {class_list}, {except_list}, {minimum}, {maximum})."
     )
 
 

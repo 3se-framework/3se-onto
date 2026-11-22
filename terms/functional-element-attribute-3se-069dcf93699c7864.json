@@ -75,6 +75,28 @@
         "sh:qualifiedMinCount": 0
       },
       "sh:message": "A high level functional element attribute may be an instance of a functional element attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864#system-non-functional-req-allocation-06b022eb48b273fe",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-non-functional-req-3se-069be64e18a67d6e"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/functional-element-attribute-3se-069dcf93699c7864"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system non-functional requirement is allocated to a functional element attribute."
     }
   ],
   "entryCreated": "2026-04-13",

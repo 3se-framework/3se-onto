@@ -88,6 +88,28 @@
         "sh:qualifiedMinCount": 0
       },
       "sh:message": "A high level physical element may be an instance of a physical element."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b#system-constraint-allocation-06b022eb49307870",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-constraint-3se-069be64e188b7d26"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system constraint is allocated to a physical element."
     }
   ],
   "entryCreated": "2026-03-17",

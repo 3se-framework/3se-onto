@@ -82,6 +82,28 @@
         "sh:qualifiedMinCount": 1
       },
       "sh:message": "A system function allocates at least one system activity."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8#system-functional-req-allocation-06b022eb49c27784",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-functional-req-3se-069be64e189d7ee9"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-function-3se-069be64e18947ea8"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system functional requirement is allocated to a system function."
     }
   ],
   "entryCreated": "2026-03-21",

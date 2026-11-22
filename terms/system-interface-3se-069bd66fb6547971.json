@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System interface - 3SE",
   "description": "Boundary across which two systems and/or enabling systems and/or actors and/or interdependent systems and/or interdependent actors meet and exchange flows.",
-  "status": "reviewed",
+  "status": "draft",
   "narrowMatch": [
     "https://www.3se.info/3se-onto/terms/interface-24765-2017-069bd66fb62f7f5f"
   ],
@@ -21,6 +21,9 @@
   ],
   "conveys": [
     "https://www.3se.info/3se-onto/terms/flow-3se-069bc4ea53207933"
+  ],
+  "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
   ],
   "hasShape": [
     {
@@ -42,6 +45,28 @@
         "sh:qualifiedMinCount": 1
       },
       "sh:message": "A system interface is composed of at least one system element interface."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971#system-element-constraint-allocation-06b023233d88769c",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-interface-3se-069bd66fb6547971"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system element constraint is allocated to a system interface."
     }
   ],
   "entryCreated": "2026-03-20",

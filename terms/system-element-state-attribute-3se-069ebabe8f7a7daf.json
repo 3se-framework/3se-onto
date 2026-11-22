@@ -8,8 +8,9 @@
     "https://www.3se.info/3se-onto/terms/attribute-3se-069b72bee1327dcf"
   ],
   "allocates": [
+    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49",
-    "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b"
+    "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/system-state-attribute-3se-069dcf9369d1703c"
@@ -76,6 +77,50 @@
         "sh:qualifiedMinCount": 0
       },
       "sh:message": "A system state attribute may be an instance of a system element state attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-architecture-constraint-allocation-06b022eb49c27784",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system architecture constraint is allocated to a system element state attribute."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf#system-element-non-functional-req-allocation-06b023187ab17fa6",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-state-attribute-3se-069ebabe8f7a7daf"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system element non-functional requirement is allocated to a system element state attribute."
     }
   ],
   "entryCreated": "2026-04-24",

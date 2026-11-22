@@ -39,6 +39,37 @@
         "sh:qualifiedMinCount": 0
       },
       "sh:message": "A system non-functional requirement may be an instance of a system element non-functional requirement."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc#software-hardware-composition-06b022bd5ab87a4a",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-element-non-functional-req-3se-069ee425ebbb7edc"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "@id": "https://www.3se.info/3se-onto/properties/is-composed-of-3se-069c8410612d7439"
+        },
+        "sh:qualifiedValueShape": {
+          "sh:or": {
+            "@list": [
+              {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/software-non-functional-req-3se-069be64e18827c2c"
+                }
+              },
+              {
+                "sh:class": {
+                  "@id": "https://www.3se.info/3se-onto/terms/hardware-non-functional-req-3se-069be64e186075ed"
+                }
+              }
+            ]
+          }
+        },
+        "sh:qualifiedMinCount": 1
+      },
+      "sh:message": "A system element non functional requirement is composed of at least one software non functional requirement or hardware non functional requirement."
     }
   ],
   "entryCreated": "2026-04-26",

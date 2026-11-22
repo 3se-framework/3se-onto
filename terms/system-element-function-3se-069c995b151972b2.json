@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System element function - 3SE",
   "description": "Function of a system element.",
-  "status": "approved",
+  "status": "draft",
   "subClassOf": [
     "https://www.3se.info/3se-onto/terms/function-3se-069b48ef5d187435"
   ],
@@ -20,6 +20,7 @@
     "https://www.3se.info/3se-onto/terms/software-function-3se-069be64e18717acd",
     "https://www.3se.info/3se-onto/terms/hardware-function-3se-069be64e184f7488",
     "https://www.3se.info/3se-onto/terms/system-element-function-attribute-3se-069ebabe8f72788b",
+    "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241",
     "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
   ],
   "canBe": [
@@ -61,6 +62,50 @@
         "sh:qualifiedMinCount": 0
       },
       "sh:message": "A system function may be an instance of a system element function."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2#system-architecture-constraint-allocation-06b022eb49c1729b",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-architecture-constraint-3se-069c957ec9bf7e49"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system architecture constraint is allocated to a system element function."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2#system-element-functional-req-allocation-06b023187ab17fa6",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-element-functional-req-3se-069ee425ebb17241"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-function-3se-069c995b151972b2"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system element functional requirement is allocated to a system element function."
     }
   ],
   "entryCreated": "2026-03-29",

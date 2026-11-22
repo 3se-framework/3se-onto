@@ -3,7 +3,7 @@
   "@type": "skos:Concept",
   "title": "System element - 3SE",
   "description": "Discrete part of a system that can be implemented to fulfil specified requirements.",
-  "status": "reviewed",
+  "status": "draft",
   "exactMatch": [
     "https://www.3se.info/3se-onto/terms/system-element-15288-2023-069a98bf0f7e7b8e"
   ],
@@ -34,7 +34,8 @@
   ],
   "allocates": [
     "https://www.3se.info/3se-onto/terms/physical-element-3se-069b9d2c8dce7f9b",
-    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4"
+    "https://www.3se.info/3se-onto/terms/system-element-attribute-3se-069dd064716473a4",
+    "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
   ],
   "canBe": [
     "https://www.3se.info/3se-onto/terms/system-3se-069b85f238f3792d"
@@ -117,6 +118,28 @@
         "sh:qualifiedMinCount": 1
       },
       "sh:message": "A system element exposes at least one system element interface."
+    },
+    {
+      "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb#system-element-constraint-allocation-06b023233d88769c",
+      "@type": "sh:NodeShape",
+      "sh:targetClass": {
+        "@id": "https://www.3se.info/3se-onto/terms/system-element-constraint-3se-069ee425eb8a748f"
+      },
+      "sh:property": {
+        "@type": "sh:PropertyShape",
+        "sh:path": {
+          "sh:inversePath": {
+            "@id": "https://www.3se.info/3se-onto/properties/allocates-3se-069c8410610d7a32"
+          }
+        },
+        "sh:qualifiedValueShape": {
+          "sh:class": {
+            "@id": "https://www.3se.info/3se-onto/terms/system-element-3se-069b85f238fb79eb"
+          }
+        },
+        "sh:qualifiedMinCount": 0
+      },
+      "sh:message": "A system element constraint is allocated to a system element."
     }
   ],
   "entryCreated": "2026-03-16",
