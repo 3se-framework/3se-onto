@@ -88,7 +88,7 @@
       "sh:message": "A leaf value is allocated to exactly one leaf goal."
     },
     {
-      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#leaf-goal-value-allocation",
+      "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed#leaf-goal-value-allocation-06b036b3b4067f78",
       "@type": "sh:NodeShape",
       "sh:targetClass": {
         "@id": "https://www.3se.info/3se-onto/terms/goal-3se-069b48ef5d2171ed"
@@ -149,7 +149,7 @@
     }
   ],
   "entryCreated": "2026-03-13",
-  "entryModified": "2026-11-21",
+  "entryModified": "2026-11-22",
   "entryCreator": {
     "@type": "foaf:Person",
     "name": "@rcasteran"
