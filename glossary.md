@@ -1,6 +1,6 @@
 # 3SE Glossary
 
-*Generated on 2026-11-22 00:13 UTC*
+*Generated on 2026-11-25 09:26 UTC*
 
 This glossary contains **8 3SE domain(s)**, **469 3SE term(s)**, **122 other term(s)**, **25 3SE property(ies)**, **12 other property(ies)**, and **35 reference(s)**.
 
@@ -2940,9 +2940,9 @@ graph TD
 
 ### Feature - 3SE
 
-![reviewed](https://img.shields.io/badge/status-reviewed-blue)
+![draft](https://img.shields.io/badge/status-draft-lightgrey)
 
-> A Feature represents a set of cohesive functions of a entity that delivers value by achieving a goal, is evaluated against some acceptance criteria, and is delivered in a release.
+> A Feature represents a set of cohesive functions of an entity that delivers value by achieving a goal, is evaluated against some acceptance criteria, and is delivered in a release.
 
 | Relation | Terms |
 |---|---|
@@ -3029,7 +3029,7 @@ graph TD
     N8 -.->|allocates| N15
 ```
 
-*Created: 2026-03-13 · Modified: 2026-11-21 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-11-25 · Creator: @rcasteran*
 
 ---
 
@@ -3568,18 +3568,18 @@ graph TD
     N2 -.->|allocates| N21
     N2 -.->|allocates| N14
     N2 -.->|allocates| N22
-    N21 -.->|allocates| N16
+    N20 -.->|allocates| N17
+    N3 -.->|allocates| N22
+    N13 -.->|allocates| N14
     N22 -.->|allocates| N18
     N22 -.->|allocates| N14
-    N3 -.->|allocates| N22
+    N21 -.->|allocates| N16
     N18 -.->|allocates| N14
-    N20 -.->|allocates| N17
-    N13 -.->|allocates| N14
+    N9 -->|subclass of| N4
+    N10 -->|subclass of| N4
     N11 -->|subclass of| N10
     N12 -->|subclass of| N10
-    N9 -->|subclass of| N4
     N8 -->|subclass of| N4
-    N10 -->|subclass of| N4
 ```
 
 **Architecture**
@@ -3897,8 +3897,8 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N9
     N5 -.->|allocates| N3
-    N6 -.->|allocates| N7
     N9 -.->|allocates| N3
+    N6 -.->|allocates| N7
 ```
 
 *Created: 2026-04-24 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -4055,10 +4055,10 @@ graph TD
     N5 -->|composed of| N2
     N5 -.->|allocates| N12
     N5 -.->|allocates| N13
-    N11 -.->|allocates| N10
     N3 -.->|allocates| N11
     N6 -.->|allocates| N13
     N7 -.->|allocates| N10
+    N11 -.->|allocates| N10
 ```
 
 *Created: 2026-03-22 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -4744,7 +4744,7 @@ graph TD
     N12 -.->|allocates| N13
 ```
 
-*Created: 2026-03-13 · Modified: 2026-11-21 · Creator: @rcasteran*
+*Created: 2026-03-13 · Modified: 2026-11-22 · Creator: @rcasteran*
 
 ---
 
@@ -6573,7 +6573,7 @@ graph TD
     N1 -.->|allocates| N2
 ```
 
-*Created: 2026-03-29 · Modified: 2026-11-21 · Creator: @rcasteran*
+*Created: 2026-03-29 · Modified: 2026-11-22 · Creator: @rcasteran*
 
 ---
 
@@ -8493,14 +8493,14 @@ graph TD
     N16 -.->|allocates| N7
     N16 -.->|allocates| N15
     N16 -.->|allocates| N6
-    N17 -.->|allocates| N14
-    N17 -.->|allocates| N15
     N2 -.->|allocates| N15
     N14 -.->|allocates| N15
+    N17 -.->|allocates| N14
+    N17 -.->|allocates| N15
     N5 -.->|allocates| N3
     N12 -->|subclass of| N11
-    N13 -->|subclass of| N11
     N9 -->|subclass of| N8
+    N13 -->|subclass of| N11
     N10 -->|subclass of| N8
     N11 -->|subclass of| N8
 ```
@@ -10433,15 +10433,15 @@ graph TD
     N2 -.->|allocates| N9
     N2 -.->|allocates| N10
     N2 -.->|allocates| N11
-    N5 -.->|allocates| N2
-    N5 -.->|allocates| N3
     N6 -.->|allocates| N2
     N6 -.->|allocates| N3
-    N7 -.->|allocates| N2
-    N7 -.->|allocates| N3
+    N5 -.->|allocates| N2
+    N5 -.->|allocates| N3
     N3 -.->|allocates| N8
     N3 -.->|allocates| N10
     N3 -.->|allocates| N11
+    N7 -.->|allocates| N2
+    N7 -.->|allocates| N3
 ```
 
 *Created: 2026-03-17 · Modified: 2026-10-16 · Creator: @rcasteran*
@@ -16684,10 +16684,10 @@ graph TD
     N8 -.->|allocates| N15
     N8 -.->|can be| N3
     N6 -.->|allocates| N4
-    N9 -.->|allocates| N14
-    N7 -.->|allocates| N4
     N5 -.->|allocates| N4
     N4 -.->|allocates| N12
+    N9 -.->|allocates| N14
+    N7 -.->|allocates| N4
 ```
 
 *Created: 2026-03-21 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -18379,16 +18379,16 @@ graph TD
     N18 -.->|exposes| N36
     N28 -->|subclass of| N31
     N3 -->|subclass of| N31
-    N30 -->|subclass of| N32
-    N19 -.->|allocates| N25
+    N10 -.->|allocates| N5
+    N34 -.->|allocates| N2
+    N22 -.->|exposes| N35
     N17 -.->|allocates| N12
     N36 -.->|allocates| N24
+    N30 -->|subclass of| N32
+    N29 -.->|allocates| N30
     N2 -->|subclass of| N32
     N27 -.->|allocates| N24
-    N10 -.->|allocates| N5
-    N29 -.->|allocates| N30
-    N22 -.->|exposes| N35
-    N34 -.->|allocates| N2
+    N19 -.->|allocates| N25
 ```
 
 *Created: 2026-09-17 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -20234,14 +20234,14 @@ graph TD
     N10 -.->|exposes| N8
     N11 -.->|exposes| N6
     N15 -.->|allocates| N13
-    N3 -.->|allocates| N4
-    N16 -.->|allocates| N13
-    N2 -.->|allocates| N4
     N17 -.->|exposes| N1
     N17 -.->|allocates| N5
+    N2 -.->|allocates| N4
+    N3 -.->|allocates| N4
     N14 -.->|allocates| N13
     N7 -.->|allocates| N2
     N7 -.->|allocates| N4
+    N16 -.->|allocates| N13
 ```
 
 *Created: 2026-04-01 · Modified: 2026-09-11 · Creator: @rcasteran*
@@ -20974,26 +20974,26 @@ graph TD
     N2 -->|subclass of| N35
     N23 -->|subclass of| N36
     N3 -->|subclass of| N36
-    N42 -->|subclass of| N41
-    N30 -.->|allocates| N20
-    N43 -->|subclass of| N41
-    N11 -.->|allocates| N4
-    N11 -.->|allocates| N2
-    N44 -.->|allocates| N2
+    N34 -.->|allocates| N2
+    N29 -.->|allocates| N21
     N40 -->|subclass of| N38
-    N39 -->|subclass of| N38
-    N27 -.->|allocates| N18
     N41 -->|subclass of| N38
-    N38 -.->|allocates| N1
     N10 -.->|exposes| N16
     N10 -.->|allocates| N28
     N10 -.->|allocates| N4
+    N44 -.->|allocates| N2
     N6 -.->|allocates| N37
     N6 -.->|allocates| N2
-    N29 -.->|allocates| N21
-    N34 -.->|allocates| N2
+    N42 -->|subclass of| N41
+    N43 -->|subclass of| N41
+    N11 -.->|allocates| N4
+    N11 -.->|allocates| N2
+    N39 -->|subclass of| N38
+    N27 -.->|allocates| N18
+    N30 -.->|allocates| N20
     N31 -.->|allocates| N24
     N31 -.->|allocates| N37
+    N38 -.->|allocates| N1
 ```
 
 *Created: 2026-04-26 · Modified: 2026-11-08 · Creator: @rcasteran*
@@ -21591,11 +21591,11 @@ graph TD
     N2 -.->|allocates| N13
     N2 -.->|allocates| N16
     N2 -.->|can be| N1
-    N11 -.->|allocates| N13
-    N16 -.->|allocates| N11
-    N16 -.->|allocates| N13
     N15 -.->|allocates| N9
     N14 -.->|allocates| N10
+    N16 -.->|allocates| N11
+    N16 -.->|allocates| N13
+    N11 -.->|allocates| N13
     N4 -.->|allocates| N8
 ```
 
@@ -22171,21 +22171,21 @@ graph TD
     N20 -.->|allocates| N23
     N24 -.->|represented by| N20
     N25 -.->|represented by| N20
+    N24 -.->|allocates| N22
+    N24 -.->|allocates| N23
+    N25 -.->|allocates| N22
+    N25 -.->|allocates| N23
+    N21 -.->|allocates| N4
+    N21 -.->|allocates| N6
     N15 -.->|allocates| N10
+    N17 -.->|allocates| N21
+    N17 -.->|allocates| N22
+    N22 -.->|allocates| N6
+    N19 -.->|allocates| N10
+    N19 -.->|allocates| N11
     N2 -.->|allocates| N8
     N2 -.->|allocates| N10
     N2 -.->|allocates| N12
-    N25 -.->|allocates| N22
-    N25 -.->|allocates| N23
-    N17 -.->|allocates| N21
-    N17 -.->|allocates| N22
-    N24 -.->|allocates| N22
-    N24 -.->|allocates| N23
-    N19 -.->|allocates| N10
-    N19 -.->|allocates| N11
-    N22 -.->|allocates| N6
-    N21 -.->|allocates| N4
-    N21 -.->|allocates| N6
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-21 · Creator: @rcasteran*
@@ -23060,33 +23060,33 @@ graph TD
     N43 -.->|allocates| N38
     N43 -.->|allocates| N45
     N43 -.->|allocates| N42
-    N32 -.->|allocates| N20
-    N32 -.->|allocates| N21
-    N32 -.->|allocates| N17
-    N31 -.->|allocates| N21
-    N31 -.->|allocates| N17
-    N9 -.->|allocates| N17
-    N9 -.->|allocates| N18
-    N25 -.->|allocates| N15
-    N25 -.->|allocates| N10
-    N8 -.->|allocates| N17
+    N41 -.->|allocates| N10
+    N45 -.->|allocates| N41
+    N45 -.->|allocates| N10
     N15 -.->|allocates| N8
     N15 -.->|allocates| N10
-    N13 -.->|allocates| N17
-    N13 -.->|allocates| N8
-    N14 -.->|allocates| N17
-    N14 -.->|allocates| N18
-    N14 -.->|allocates| N9
-    N20 -.->|allocates| N30
     N24 -.->|allocates| N13
     N24 -.->|allocates| N15
     N21 -.->|allocates| N17
-    N41 -.->|allocates| N10
+    N32 -.->|allocates| N20
+    N32 -.->|allocates| N21
+    N32 -.->|allocates| N17
+    N8 -.->|allocates| N17
+    N25 -.->|allocates| N15
+    N25 -.->|allocates| N10
     N44 -.->|allocates| N33
     N44 -.->|allocates| N39
     N44 -.->|allocates| N41
-    N45 -.->|allocates| N41
-    N45 -.->|allocates| N10
+    N14 -.->|allocates| N17
+    N14 -.->|allocates| N18
+    N14 -.->|allocates| N9
+    N13 -.->|allocates| N17
+    N13 -.->|allocates| N8
+    N31 -.->|allocates| N21
+    N31 -.->|allocates| N17
+    N20 -.->|allocates| N30
+    N9 -.->|allocates| N17
+    N9 -.->|allocates| N18
 ```
 
 *Created: 2026-08-21 · Modified: 2026-11-21 · Creator: @rcasteran*
